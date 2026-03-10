@@ -1,0 +1,89 @@
+{
+  "page": {
+    "title": "Lina — Delat föräldraskap, förenklat"
+  },
+  "nav": {
+    "appstore": "App Store",
+    "appstoreAria": "Ladda ner på App Store",
+    "langLabel": "Språk"
+  },
+  "hero": {
+    "title": "En gemensam översikt - över hem",
+    "description": "Lina samlar allt ditt barn behöver: samtal, minnen, scheman och praktisk information — allt på ett lugnt, organiserat ställe.",
+    "cta": "Ladda ner på App Store"
+  },
+  "how": {
+    "label": "Så här fungerar det",
+    "title": "Kom igång på minuter, använd det varje dag",
+    "step1": {
+      "title": "Skapa ett gemensamt utrymme",
+      "description": "En förälder skapar ett utrymme för barnet. Den andra får en inbjudan att gå med. Ingen komplicerad installation krävs."
+    },
+    "step2": {
+      "title": "Lägg till det som är viktigt",
+      "description": "Lägg till kontakter, medicinsk information, utrustningslistor och allt annat som behöver följa barnet mellan hemmen."
+    },
+    "step3": {
+      "title": "Håll er synkroniserade",
+      "description": "Använd trådar för praktiska samtal och det delade albumet för foton. Båda föräldrarna ser samma information, alltid uppdaterad."
+    }
+  },
+  "features": {
+    "label": "Funktioner",
+    "title": "Allt på ett ställe",
+    "threads": {
+      "title": "Trådar",
+      "description": "Organiserade ämneskonversationer istället för en enda chatt. Håll logistik, skolfrågor och hälsouppdateringar separata och lätta att hitta."
+    },
+    "album": {
+      "title": "Delat album",
+      "description": "Ett privat fotoalbum som båda föräldrarna kan lägga till och visa. Så ingen förälder missar de ögonblick som händer i det andra hemmet."
+    },
+    "childInfo": {
+      "title": "Barnuppgifter",
+      "description": "Lagra medicinska detaljer, allergier och andra viktiga fakta om ditt barn på ett ställe som båda föräldrarna kan komma åt och uppdatera."
+    },
+    "equipment": {
+      "title": "Utrustningslista",
+      "description": "Håll koll på vad barnet har och var det befinner sig — sportutrustning, skolmaterial, säsongssaker — så inget försvinner vid överlämningarna."
+    },
+    "contacts": {
+      "title": "Delade kontakter",
+      "description": "Håll läkare, lärare och andra viktiga kontakter i en gemensam katalog. Båda föräldrarna har alltid rätt nummer när de behöver det."
+    },
+    "households": {
+      "title": "Byggt för två hushåll",
+      "description": "Lina är speciellt utformad för delat föräldraskap. Enkel, fokuserad och fri från bruset i en vanlig familjeapp."
+    }
+  },
+  "footer": {
+    "terms": "Användarvillkor",
+    "privacy": "Integritetspolicy",
+    "contact": "Kontakt",
+    "copy": "© 2026 Lina. Alla rättigheter förbehållna."
+  },
+  "cs": {
+    "pageTitle": "Vårdschema — Lina",
+    "heading": "Vårdschema",
+    "labelParentA": "Namn förälder A",
+    "labelParentB": "Namn förälder B",
+    "labelStartDate": "Startdatum",
+    "startDateHint": "Måste vara en måndag",
+    "labelWeeks": "Antal veckor",
+    "addWeek": "Lägg till vecka",
+    "removeWeek": "Ta bort vecka",
+    "reset": "Återställ",
+    "exportPdf": "Exportera till PDF",
+    "week": "Vecka",
+    "unassigned": "Ej tilldelad",
+    "mon": "Mån", "tue": "Tis", "wed": "Ons", "thu": "Tor",
+    "fri": "Fre", "sat": "Lör", "sun": "Sön",
+    "statsTitle": "Sammanfattning",
+    "statsDaySplit": "Dagfördelning",
+    "statsWeekendSplit": "Helgfördelning (fre–sön)",
+    "statsFullWeekends": "Hela helger",
+    "statsSwitches": "Totalt antal byten",
+    "days": "dagar",
+    "of": "av"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "page": {
+    "title": "Lina — Delt forældreskab, forenklet"
+  },
+  "nav": {
+    "appstore": "App Store",
+    "appstoreAria": "Hent på App Store",
+    "langLabel": "Sprog"
+  },
+  "hero": {
+    "title": "Én samlet oversigt på tværs af hjem",
+    "description": "Lina samler alt, hvad dit barn har brug for: samtaler, minder, planer og praktisk information — alt på ét roligt, organiseret sted.",
+    "cta": "Hent på App Store"
+  },
+  "how": {
+    "label": "Sådan fungerer det",
+    "title": "Kom i gang på minutter, brug det hver dag",
+    "step1": {
+      "title": "Opret et fælles rum",
+      "description": "Den ene forælder opretter et rum til barnet. Den anden modtager en invitation til at deltage. Ingen kompliceret opsætning kræves."
+    },
+    "step2": {
+      "title": "Tilføj det, der betyder noget",
+      "description": "Tilføj kontakter, medicinske oplysninger, udstyrslisteer og alt andet, der skal følge barnet mellem hjemmene."
+    },
+    "step3": {
+      "title": "Hold jer synkroniserede",
+      "description": "Brug tråde til praktiske samtaler og det delte album til fotos. Begge forældre ser den samme information, altid opdateret."
+    }
+  },
+  "features": {
+    "label": "Funktioner",
+    "title": "Alt på ét sted",
+    "threads": {
+      "title": "Tråde",
+      "description": "Organiserede emnesamtaler i stedet for én enkelt chat. Hold logistik, skoleforhold og sundhedsopdateringer adskilt og nemme at finde."
+    },
+    "album": {
+      "title": "Delt album",
+      "description": "Et privat fotoalbum, som begge forældre kan tilføje til og se. Så ingen forælder går glip af de øjeblikke, der sker i det andet hjem."
+    },
+    "childInfo": {
+      "title": "Barneinformation",
+      "description": "Gem medicinske detaljer, allergier og andre vigtige fakta om dit barn på ét sted, som begge forældre kan tilgå og opdatere."
+    },
+    "equipment": {
+      "title": "Udstyrliste",
+      "description": "Hold styr på, hvilket udstyr barnet har, og hvor det er — sportsudstyr, skoletasker, sæsonvarer — så intet går tabt ved overdragelser."
+    },
+    "contacts": {
+      "title": "Delte kontakter",
+      "description": "Hold læger, lærere og andre vigtige kontakter i en fælles mappe. Begge forældre har altid det rigtige nummer, når de har brug for det."
+    },
+    "households": {
+      "title": "Bygget til to hjem",
+      "description": "Lina er specielt designet til delt forældreskab. Enkel, fokuseret og fri for støjen fra en generel familie-app."
+    }
+  },
+  "footer": {
+    "terms": "Vilkår for brug",
+    "privacy": "Privatlivspolitik",
+    "contact": "Kontakt",
+    "copy": "© 2026 Lina. Alle rettigheder forbeholdes."
+  },
+  "cs": {
+    "pageTitle": "Samværsplan — Lina",
+    "heading": "Samværsplan",
+    "labelParentA": "Navn på forælder A",
+    "labelParentB": "Navn på forælder B",
+    "labelStartDate": "Startdato",
+    "startDateHint": "Skal være en mandag",
+    "labelWeeks": "Antal uger",
+    "addWeek": "Tilføj uge",
+    "removeWeek": "Fjern uge",
+    "reset": "Nulstil",
+    "exportPdf": "Eksporter til PDF",
+    "week": "Uge",
+    "unassigned": "Ikke tildelt",
+    "mon": "Man", "tue": "Tir", "wed": "Ons", "thu": "Tor",
+    "fri": "Fre", "sat": "Lør", "sun": "Søn",
+    "statsTitle": "Opsummering",
+    "statsDaySplit": "Dagfordeling",
+    "statsWeekendSplit": "Weekendfordeling (fre–søn)",
+    "statsFullWeekends": "Hele weekender",
+    "statsSwitches": "Antal skift",
+    "days": "dage",
+    "of": "af"
+  }
+}

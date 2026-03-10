@@ -1,0 +1,89 @@
+{
+  "page": {
+    "title": "Lina — Yhteishuoltajuus, yksinkertaistettuna"
+  },
+  "nav": {
+    "appstore": "App Store",
+    "appstoreAria": "Lataa App Storesta",
+    "langLabel": "Kieli"
+  },
+  "hero": {
+    "title": "Yhteinen kokonaiskuva yli kotien",
+    "description": "Lina kokoaa kaiken, mitä lapsesi tarvitsee: keskustelut, muistot, aikataulut ja käytännön tiedot — kaikki yhdessä rauhallisessa, järjestyneessä paikassa.",
+    "cta": "Lataa App Storesta"
+  },
+  "how": {
+    "label": "Näin se toimii",
+    "title": "Aloita muutamassa minuutissa, käytä joka päivä",
+    "step1": {
+      "title": "Luo yhteinen tila",
+      "description": "Toinen vanhemmista luo lapselle tilan. Toinen saa kutsun liittyä. Ei monimutkaista asennusta."
+    },
+    "step2": {
+      "title": "Lisää tärkeät tiedot",
+      "description": "Lisää yhteystiedot, lääketieteelliset tiedot, varustelista ja kaikki muu, mikä tarvitsee seurata lapsen mukana kotien välillä."
+    },
+    "step3": {
+      "title": "Pysykää ajan tasalla",
+      "description": "Käytä säikeitä käytännön keskusteluihin ja jaettua albumia kuviin. Molemmat vanhemmat näkevät saman tiedon, aina ajan tasalla."
+    }
+  },
+  "features": {
+    "label": "Ominaisuudet",
+    "title": "Kaikki yhdessä paikassa",
+    "threads": {
+      "title": "Säikeet",
+      "description": "Organisoidut aihekohtaiset keskustelut yhden chatin sijaan. Pidä logistiikka, kouluasiat ja terveyspäivitykset erillään ja helposti löydettävissä."
+    },
+    "album": {
+      "title": "Jaettu albumi",
+      "description": "Yksityinen valokuva-albumi, johon molemmat vanhemmat voivat lisätä kuvia ja katsella niitä. Niin kumpikin vanhempi ei missaa toisen kodin hetkiä."
+    },
+    "childInfo": {
+      "title": "Lapsen tiedot",
+      "description": "Tallenna lääketieteelliset tiedot, allergiat ja muut tärkeät tiedot lapsestasi yhteen paikkaan, johon molemmilla vanhemmilla on pääsy ja päivitysoikeus."
+    },
+    "equipment": {
+      "title": "Varustelista",
+      "description": "Seuraa, mitä varusteita lapsella on ja missä ne ovat — urheiluvälineet, koulutarvikkeet, sesonkituotteet — ettei mitään häviä luovutusten välillä."
+    },
+    "contacts": {
+      "title": "Jaetut yhteystiedot",
+      "description": "Pidä lääkärit, opettajat ja muut tärkeät yhteystiedot yhteisessä hakemistossa. Molemmilla vanhemmilla on aina oikea numero tarvittaessa."
+    },
+    "households": {
+      "title": "Rakennettu kahdelle kodille",
+      "description": "Lina on suunniteltu erityisesti yhteishuoltajuuteen. Yksinkertainen, keskittynyt ja vapaa yleisen perhe-sovelluksen hälinästä."
+    }
+  },
+  "footer": {
+    "terms": "Käyttöehdot",
+    "privacy": "Tietosuojakäytäntö",
+    "contact": "Ota yhteyttä",
+    "copy": "© 2026 Lina. Kaikki oikeudet pidätetään."
+  },
+  "cs": {
+    "pageTitle": "Hoitoaikataulu — Lina",
+    "heading": "Hoitoaikataulu",
+    "labelParentA": "Vanhempi A:n nimi",
+    "labelParentB": "Vanhempi B:n nimi",
+    "labelStartDate": "Aloituspäivä",
+    "startDateHint": "Täytyy olla maanantai",
+    "labelWeeks": "Viikkojen määrä",
+    "addWeek": "Lisää viikko",
+    "removeWeek": "Poista viikko",
+    "reset": "Nollaa",
+    "exportPdf": "Vie PDF:ksi",
+    "week": "Viikko",
+    "unassigned": "Ei määritetty",
+    "mon": "Ma", "tue": "Ti", "wed": "Ke", "thu": "To",
+    "fri": "Pe", "sat": "La", "sun": "Su",
+    "statsTitle": "Yhteenveto",
+    "statsDaySplit": "Päivien jako",
+    "statsWeekendSplit": "Viikonloppujen jako (pe–su)",
+    "statsFullWeekends": "Kokonaiset viikonloput",
+    "statsSwitches": "Vaihtoja yhteensä",
+    "days": "päivää",
+    "of": "/"
+  }
+}

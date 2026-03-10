@@ -1,0 +1,89 @@
+{
+  "page": {
+    "title": "Lina — Co-parenting, simplified"
+  },
+  "nav": {
+    "appstore": "App Store",
+    "appstoreAria": "Download on the App Store",
+    "langLabel": "Language"
+  },
+  "hero": {
+    "title": "One shared place for your child — across homes",
+    "description": "Lina brings together everything your child needs: conversations, memories, schedules, and practical information — all in one calm, organized space.",
+    "cta": "Download on the App Store"
+  },
+  "how": {
+    "label": "How it works",
+    "title": "Set up in minutes, use every day",
+    "step1": {
+      "title": "Create a shared space",
+      "description": "One parent sets up a space for the child. The other gets an invite to join. No complicated setup required."
+    },
+    "step2": {
+      "title": "Add what matters",
+      "description": "Add contacts, medical information, equipment lists, and anything else that needs to follow the child between homes."
+    },
+    "step3": {
+      "title": "Stay in sync",
+      "description": "Use threads for practical conversations and the shared album for photos. Both parents see the same information, always up to date."
+    }
+  },
+  "features": {
+    "label": "Features",
+    "title": "Everything in one place",
+    "threads": {
+      "title": "Threads",
+      "description": "Organized topic conversations instead of a single chat. Keep logistics, school matters, and health updates separate and easy to find."
+    },
+    "album": {
+      "title": "Shared album",
+      "description": "A private photo album that both parents can add to and view. So neither parent misses the moments that happen in the other home."
+    },
+    "childInfo": {
+      "title": "Child information",
+      "description": "Store medical details, allergies, and other important facts about your child in one place that both parents can access and update."
+    },
+    "equipment": {
+      "title": "Equipment list",
+      "description": "Track what gear the child has and where it is — sports equipment, school supplies, seasonal items — so nothing gets lost between handovers."
+    },
+    "contacts": {
+      "title": "Shared contacts",
+      "description": "Keep doctors, teachers, and other important contacts in a shared directory. Both parents always have the right number when they need it."
+    },
+    "households": {
+      "title": "Built for two households",
+      "description": "Lina is designed specifically for co-parenting. Simple, focused, and free from the noise of a general family app."
+    }
+  },
+  "footer": {
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "copy": "© 2026 Lina. All rights reserved."
+  },
+  "cs": {
+    "pageTitle": "Care Schedule — Lina",
+    "heading": "Care Schedule",
+    "labelParentA": "Parent A name",
+    "labelParentB": "Parent B name",
+    "labelStartDate": "Start date",
+    "startDateHint": "Must be a Monday",
+    "labelWeeks": "Number of weeks",
+    "addWeek": "Add week",
+    "removeWeek": "Remove week",
+    "reset": "Reset",
+    "exportPdf": "Export to PDF",
+    "week": "Week",
+    "unassigned": "Unassigned",
+    "mon": "Mon", "tue": "Tue", "wed": "Wed", "thu": "Thu",
+    "fri": "Fri", "sat": "Sat", "sun": "Sun",
+    "statsTitle": "Summary",
+    "statsDaySplit": "Day split",
+    "statsWeekendSplit": "Weekend split (Fri–Sun)",
+    "statsFullWeekends": "Full weekends",
+    "statsSwitches": "Total switches",
+    "days": "days",
+    "of": "of"
+  }
+}
