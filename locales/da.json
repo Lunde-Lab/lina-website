@@ -10,7 +10,15 @@
   "hero": {
     "title": "Én samlet oversigt på tværs af hjem",
     "description": "Lina samler alt, hvad dit barn har brug for: samtaler, minder, planer og praktisk information — alt på ét roligt, organiseret sted.",
-    "cta": "Hent på App Store"
+    "cta": "Hent på App Store",
+    "ctaPlay": "Hent på Google Play",
+    "ctaPlayAria": "Hent på Google Play"
+  },
+  "csSection": {
+    "label": "Samværsplan",
+    "title": "Planlæg samværet sammen",
+    "description": "Linas interaktive samværsplan lader begge forældre planlægge og visualisere, hvordan tid fordeles mellem hjemmene uge for uge. Se dagfordeling, weekendmønstre og overdragelsesfrekvens — alt i ét klart overblik.",
+    "cta": "Åbn samværsplan"
   },
   "how": {
     "label": "Sådan fungerer det",

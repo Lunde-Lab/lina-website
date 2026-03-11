@@ -10,7 +10,15 @@
   "hero": {
     "title": "Yhteinen kokonaiskuva yli kotien",
     "description": "Lina kokoaa kaiken, mitä lapsesi tarvitsee: keskustelut, muistot, aikataulut ja käytännön tiedot — kaikki yhdessä rauhallisessa, järjestyneessä paikassa.",
-    "cta": "Lataa App Storesta"
+    "cta": "Lataa App Storesta",
+    "ctaPlay": "Hanki Google Playsta",
+    "ctaPlayAria": "Hanki Google Playsta"
+  },
+  "csSection": {
+    "label": "Hoitoaikataulu",
+    "title": "Suunnittele hoitoaikataulu yhdessä",
+    "description": "Linan interaktiivinen hoitoaikataulu antaa molempien vanhempien suunnitella ja visualisoida, miten aika jakautuu kotien välillä viikko viikolta. Näe päivien jako, viikonloppumallit ja luovutusten tiheys — kaikki yhdessä selkeässä näkymässä.",
+    "cta": "Avaa hoitoaikataulu"
   },
   "how": {
     "label": "Näin se toimii",

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Lina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .lang-switcher { display: flex; gap: 2px; }
+    .lang-btn {
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      padding: 5px 7px;
+      border-radius: 5px;
+      transition: color 0.15s, background 0.15s;
+      letter-spacing: 0.02em;
+    }
+    .lang-btn:hover { color: var(--text); background: var(--border); }
+    .lang-btn.active { color: var(--primary); font-weight: 600; }
+
+    /* ── Footer ── */
+    footer { border-top: 1px solid var(--border); padding: 40px 24px; }
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-links a { font-size: 14px; color: var(--text-secondary); transition: color 0.15s; }
+    .footer-links a:hover { color: var(--text); }
+    .footer-copy { width: 100%; font-size: 13px; color: var(--text-secondary); margin-top: 8px; }
+    @media (max-width: 600px) {
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ── Privacy content ── */
+    .privacy-main { padding: 56px 24px 96px; }
+
+    .privacy-container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .privacy-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .last-updated {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+    }
+
+    .privacy-intro {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+
+    .privacy-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0;
+    }
+
+    .privacy-section { margin-bottom: 36px; }
+
+    .privacy-section h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .privacy-section h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    .privacy-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .privacy-section p:last-child { margin-bottom: 0; }
+
+    .privacy-section ul {
+      margin: 8px 0 12px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .privacy-section ul li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .privacy-section .legal-basis-list {
+      list-style: none;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .privacy-section .legal-basis-list li {
+      padding-left: 16px;
+      border-left: 2px solid var(--border);
+    }
+
+    .privacy-section .legal-basis-list li strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    /* Summary box */
+    .privacy-summary {
+      margin-top: 48px;
+      padding: 28px 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .privacy-summary h2 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .privacy-summary p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 10px;
+    }
+
+    .privacy-summary p:last-child { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html"><img src="assets/logos/Logomark_1.svg" alt="Lina" height="32" /></a>
+      <div class="lang-switcher" role="group" data-i18n-aria="nav.langLabel" aria-label="Language">
+        <button class="lang-btn" data-lang="en" aria-current="true">EN</button>
+        <button class="lang-btn" data-lang="no" aria-current="false">NO</button>
+        <button class="lang-btn" data-lang="sv" aria-current="false">SV</button>
+        <button class="lang-btn" data-lang="da" aria-current="false">DA</button>
+        <button class="lang-btn" data-lang="fi" aria-current="false">FI</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="privacy-main">
+    <div class="privacy-container">
+
+      <h1>Privacy Policy – Lina</h1>
+      <p class="last-updated">Last updated: 05. February 2026</p>
+
+      <p class="privacy-intro">Lina is a digital service designed to support cooperation between parents who share responsibility for a child.</p>
+      <p class="privacy-intro">Protecting your privacy — and your child's privacy — is a core principle of Lina.</p>
+      <p class="privacy-intro">This Privacy Policy explains how we process personal data in accordance with the EU General Data Protection Regulation (GDPR).</p>
+
+      <hr class="privacy-divider" />
+
+      <div class="privacy-section">
+        <h2>1. Data Controller</h2>
+        <p>Lina is the data controller responsible for the processing of personal data under this Privacy Policy.</p>
+        <p>If you have questions regarding privacy or data protection, you can contact us through the Lina app or via the contact details provided in the service.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>2. Scope</h2>
+        <p>This Privacy Policy applies to:</p>
+        <ul>
+          <li>the Lina mobile and web applications</li>
+          <li>all features and paid and unpaid functionality within Lina</li>
+          <li>all users located in the European Economic Area (EEA)</li>
+        </ul>
+        <p>This includes the use of strictly necessary local storage required for core service functionality.</p>
+        <p>It does not apply to third-party services linked from Lina.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>3. Personal Data We Process</h2>
+        <p>We process only data that is necessary to provide and operate the Lina service.</p>
+
+        <h3>3.1 Data You Provide</h3>
+        <p>This may include:</p>
+        <ul>
+          <li>name and email address</li>
+          <li>account and authentication details</li>
+          <li>messages and communication content</li>
+          <li>photos and media you upload</li>
+          <li>lists, notes, and child-related information</li>
+          <li>support requests and correspondence</li>
+        </ul>
+
+        <h3>3.2 Child-Related Data</h3>
+        <p>Parents may choose to store information about a child, such as:</p>
+        <ul>
+          <li>name and date of birth</li>
+          <li>practical information (e.g. allergies, medical notes, routines)</li>
+          <li>photos and shared records</li>
+        </ul>
+        <p>This data is provided by parents or legal guardians and is processed solely to support parental cooperation.</p>
+
+        <h3>3.3 Subscription and Payment Information</h3>
+        <p>Lina is a paid subscription service. We process limited subscription-related data, such as:</p>
+        <ul>
+          <li>subscription status (active, cancelled, expired)</li>
+          <li>subscription type and billing period</li>
+          <li>platform used for purchase (e.g. Apple App Store or Google Play)</li>
+        </ul>
+        <p>Lina does not process or store payment card details. All payments are handled by the platform provider in accordance with their own privacy policies.</p>
+
+        <h3>3.4 Technical and Usage Data</h3>
+        <p>We may automatically collect:</p>
+        <ul>
+          <li>device and browser information</li>
+          <li>IP address</li>
+          <li>timestamps and usage logs</li>
+          <li>audit logs related to actions within the service</li>
+        </ul>
+        <p>This data is used solely for security, stability, troubleshooting, and service integrity.</p>
+
+        <h3>3.5 Local Storage and Essential Cookies</h3>
+        <p>Lina uses limited local storage (such as cookies or browser storage) solely to remember user-selected settings related to the Care Schedule feature.</p>
+        <p>This storage is strictly necessary for the functionality of the service and is used to ensure a consistent user experience, such as preserving schedule preferences between visits.</p>
+        <p>No tracking, analytics, profiling, or marketing cookies are used.</p>
+        <p>This storage does not involve third-party access and does not enable tracking or identification of users across websites or services.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>4. Legal Basis for Processing</h2>
+        <p>Under GDPR Article 6, we process personal data based on:</p>
+        <ul class="legal-basis-list">
+          <li>
+            <strong>Performance of a contract</strong>
+            (Article 6(1)(b)) — to provide the Lina service, including paid features.
+          </li>
+          <li>
+            <strong>Legal obligations</strong>
+            (Article 6(1)(c)) — where required by applicable law.
+          </li>
+          <li>
+            <strong>Legitimate interests</strong>
+            (Article 6(1)(f)) — limited to operating, securing, and improving the service, without overriding your rights.
+          </li>
+        </ul>
+        <p>We do not rely on consent as the primary legal basis for core service functionality.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>5. Purpose of Processing</h2>
+        <p>We process personal data to:</p>
+        <ul>
+          <li>provide and operate Lina</li>
+          <li>enable secure cooperation between parents</li>
+          <li>manage subscriptions and access to paid features</li>
+          <li>maintain service security and reliability</li>
+          <li>respond to support requests</li>
+          <li>comply with legal obligations</li>
+          <li>remember user-selected settings required for core functionality (such as Care Schedule preferences)</li>
+        </ul>
+        <p>We do not use personal data for advertising, profiling, or marketing.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>6. Data Minimisation and Retention</h2>
+        <p>We follow GDPR principles of data minimisation and storage limitation.</p>
+        <ul>
+          <li>Only necessary data is collected.</li>
+          <li>Data is retained only as long as required to provide the service or meet legal obligations.</li>
+          <li>Data is deleted or anonymised when no longer needed.</li>
+        </ul>
+        <p>Retention periods may vary depending on data type and legal requirements.</p>
+        <p>Users can request deletion of their Lina account through the app or by contacting support.</p>
+        <p>When an account is deleted, personal account data such as login credentials and profile information is removed.</p>
+        <p>Content that is shared with another parent (such as messages, photos, and lists) is not automatically deleted, as it may be jointly used or required for the other parent's continued use of the service.</p>
+        <p>Certain data may be retained for a limited period where required by law or for security purposes, after which it is deleted or anonymised.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>7. Data Sharing and Processors</h2>
+        <p>We do not sell or rent personal data.</p>
+        <p>Personal data may be shared only with:</p>
+        <ul>
+          <li>trusted service providers acting as data processors (e.g. hosting, infrastructure, storage)</li>
+          <li>public authorities where legally required</li>
+        </ul>
+        <p>All processors are bound by GDPR-compliant data processing agreements.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>8. Data Security</h2>
+        <p>We implement appropriate technical and organisational measures, including:</p>
+        <ul>
+          <li>private and isolated storage environments</li>
+          <li>access control and authentication</li>
+          <li>encrypted connections</li>
+          <li>signed and time-limited access to files</li>
+          <li>audit logging for accountability and security</li>
+        </ul>
+        <p>Access to personal data is restricted to authorised personnel only.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>9. International Transfers</h2>
+        <p>Where personal data is processed outside the EEA, we ensure:</p>
+        <ul>
+          <li>adequate protection levels, or</li>
+          <li>appropriate safeguards such as Standard Contractual Clauses (SCCs)</li>
+        </ul>
+        <p>We take steps to ensure GDPR-level protection regardless of processing location.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>10. Your Rights Under GDPR</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>access your personal data</li>
+          <li>correct inaccurate or incomplete data</li>
+          <li>request deletion of your account and personal data, where applicable</li>
+          <li>restrict or object to certain processing</li>
+          <li>receive your personal data in a portable format</li>
+          <li>lodge a complaint with a supervisory authority</li>
+        </ul>
+        <p>Account deletion requests can be made through the Lina app or by contacting support.</p>
+        <p>When an account is deleted, personal account data such as login credentials and profile information is removed.</p>
+        <p>Content that is shared with another parent (such as messages, photos, and lists) is not automatically deleted, as it may be jointly used or required for the other parent's continued use of the service.</p>
+        <p>Certain data may be retained for a limited period where required by law or for security purposes, after which it is deleted or anonymized.</p>
+        <p>We respond to requests without undue delay and within the time limits set by applicable data protection laws.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>11. Children's Privacy</h2>
+        <p>Lina is intended for use by adults only.</p>
+        <p>We do not knowingly collect personal data directly from children.</p>
+        <p>All child-related data is provided and managed by parents or legal guardians.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>12. Audit Logs and Transparency</h2>
+        <p>Lina maintains internal audit logs to:</p>
+        <ul>
+          <li>ensure transparency between connected parents</li>
+          <li>support security and accountability</li>
+          <li>investigate misuse or technical issues</li>
+        </ul>
+        <p>These logs are used solely for service integrity and not for behavioural profiling.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>13. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy to reflect:</p>
+        <ul>
+          <li>legal or regulatory changes</li>
+          <li>service improvements</li>
+          <li>security requirements</li>
+        </ul>
+        <p>The current version will always be available within the service.</p>
+        <p>Material changes will be communicated where appropriate.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>14. Contact</h2>
+        <p>For questions about privacy or data protection, contact us via:</p>
+        <ul>
+          <li>the Lina app, or</li>
+          <li>the contact details provided in the service</li>
+        </ul>
+      </div>
+
+      <div class="privacy-summary">
+        <h2>Privacy summary</h2>
+        <p>Lina is built with privacy as a core principle.</p>
+        <p>We process only personal data that is necessary to provide the service and support cooperation between parents. We do not use advertising, tracking, or marketing cookies.</p>
+        <p>Only strictly necessary local storage is used to remember essential settings, such as Care Schedule preferences.</p>
+        <p>When an account is deleted, personal account data is removed. Shared content may remain available to the other parent, as it may be jointly used within the service.</p>
+        <p>All child-related data is provided and managed by parents or legal guardians.</p>
+        <p>No personal data is sold or shared for commercial purposes.</p>
+        <p>For full details, please refer to this Privacy Policy.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="assets/logos/Logomark_1.svg" alt="Lina" height="24" />
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer.contact">Contact</a>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+</body>
+</html>

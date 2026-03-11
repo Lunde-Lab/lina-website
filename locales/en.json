@@ -10,7 +10,15 @@
   "hero": {
     "title": "One shared place for your child — across homes",
     "description": "Lina brings together everything your child needs: conversations, memories, schedules, and practical information — all in one calm, organized space.",
-    "cta": "Download on the App Store"
+    "cta": "Download on the App Store",
+    "ctaPlay": "Get on Google Play",
+    "ctaPlayAria": "Get it on Google Play"
+  },
+  "csSection": {
+    "label": "Care Schedule",
+    "title": "Plan your custody schedule together",
+    "description": "Lina's interactive care schedule lets both parents plan and visualize how time is shared across weeks. See day splits, weekend patterns, and handover frequency — all in one clear view.",
+    "cta": "Open Care Schedule"
   },
   "how": {
     "label": "How it works",

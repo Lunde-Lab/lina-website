@@ -10,7 +10,15 @@
   "hero": {
     "title": "En gemensam översikt - över hem",
     "description": "Lina samlar allt ditt barn behöver: samtal, minnen, scheman och praktisk information — allt på ett lugnt, organiserat ställe.",
-    "cta": "Ladda ner på App Store"
+    "cta": "Ladda ner på App Store",
+    "ctaPlay": "Hämta på Google Play",
+    "ctaPlayAria": "Hämta på Google Play"
+  },
+  "csSection": {
+    "label": "Vårdschema",
+    "title": "Planera vårdtiden tillsammans",
+    "description": "Linas interaktiva vårdschema låter båda föräldrarna planera och visualisera hur tid fördelas mellan hemmen vecka för vecka. Se dagfördelning, helgmönster och överlämningsfrekvens — allt i en tydlig vy.",
+    "cta": "Öppna vårdschema"
   },
   "how": {
     "label": "Så här fungerar det",
