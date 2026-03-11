@@ -41,28 +41,28 @@
     "title": "Everything in one place",
     "threads": {
       "title": "Threads",
-      "description": "Organized topic conversations instead of a single chat. Keep logistics, school matters, and health updates separate and easy to find."
+      "description": "Keep communication organized by topic. Archive threads when they are no longer needed, and export them if you ever need a record."
+    },
+    "messages": {
+      "title": "Messages",
+      "description": "Messages cannot be edited or deleted after sending. Search conversations and mark important messages. A reliable, unalterable record between two parents."
     },
     "album": {
       "title": "Shared album",
       "description": "A private photo album that both parents can add to and view. So neither parent misses the moments that happen in the other home."
     },
-    "childInfo": {
-      "title": "Child information",
-      "description": "Store medical details, allergies, and other important facts about your child in one place that both parents can access and update."
-    },
-    "equipment": {
-      "title": "Equipment list",
-      "description": "Track what gear the child has and where it is — sports equipment, school supplies, seasonal items — so nothing gets lost between handovers."
-    },
-    "contacts": {
-      "title": "Shared contacts",
-      "description": "Keep doctors, teachers, and other important contacts in a shared directory. Both parents always have the right number when they need it."
-    },
-    "households": {
-      "title": "Built for two households",
-      "description": "Lina is designed specifically for co-parenting. Simple, focused, and free from the noise of a general family app."
-    }
+    "more": "Lina also includes shared contacts, child information, equipment lists, and a care schedule for planning custody arrangements."
+  },
+  "problem": {
+    "label": "The problem",
+    "title": "When care is split across two homes, details get lost",
+    "description": "When plans, messages and photos live in different apps, important things fall through the cracks. Lina brings everything into one shared structure — calm, clear and predictable."
+  },
+  "forWhom": {
+    "forTitle": "Who Lina is for",
+    "forDescription": "Parents who share care across two homes and want less friction in everyday cooperation. For those who value structure over noise and clarity over constant messaging.",
+    "notTitle": "What Lina is not",
+    "notDescription": "Not a social network, not a general family chat, and not built for endless conversation. Lina is a focused tool designed specifically for cooperation around your child."
   },
   "footer": {
     "terms": "Terms of Service",
