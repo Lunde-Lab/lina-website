@@ -7,22 +7,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --primary: #0D6B64;
-      --primary-dark: #0a5650;
+      --primary-dark: #0B6057;
       --amber: #E0A040;
       --amber-dark: #c8902e;
       --bg: #F8F8F6;
       --text: #1A1E23;
       --text-secondary: #50565E;
-      --border: #E2E2DE;
-      --cell-a: #0D6B64;
-      --cell-b: #E0A040;
-      --weekend-bg: #F4F4F0;
+      --text-muted: #A1A7AF;
+      --border: #DEDFE2;
+      --border-subtle: #E8E8EA;
+      --surface-card: #FFFFFF;
+      --surface-subtle: #F3F3F1;
     }
 
     html { scroll-behavior: smooth; }
@@ -55,12 +55,6 @@
       align-items: center;
       justify-content: space-between;
     }
-    .logo {
-      font-size: 20px;
-      font-weight: 600;
-      color: var(--primary);
-      letter-spacing: -0.02em;
-    }
     .lang-switcher { display: flex; gap: 2px; }
     .lang-btn {
       background: none;
@@ -77,23 +71,8 @@
     }
     .lang-btn:hover { color: var(--text); background: var(--border); }
     .lang-btn.active { color: var(--primary); font-weight: 600; }
-    .btn-appstore {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--text);
-      color: #fff;
-      border-radius: 8px;
-      padding: 8px 16px;
-      font-size: 13px;
-      font-weight: 500;
-      transition: background 0.15s;
-      white-space: nowrap;
-    }
-    .btn-appstore:hover { background: #2c333b; }
-    .btn-appstore svg { flex-shrink: 0; }
 
-    /* ── Main layout ── */
+    /* ── Main ── */
     main { padding: 48px 24px 80px; }
     .container { max-width: 1080px; margin: 0 auto; }
 
@@ -103,273 +82,365 @@
       font-weight: 600;
       letter-spacing: -0.02em;
     }
+    .page-header p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-top: 6px;
+    }
 
-    /* ── Inputs ── */
-    .inputs-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-bottom: 28px;
-      padding: 24px;
-      background: #fff;
+    /* ── Card ── */
+    .card {
+      background: var(--surface-card);
       border: 1px solid var(--border);
       border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(26,30,35,0.06);
     }
-    .input-group {
+
+    /* ── Top controls ── */
+    .controls-bar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .inputs-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .input-field {
       display: flex;
       flex-direction: column;
-      gap: 6px;
-      flex: 1;
-      min-width: 140px;
+      gap: 4px;
     }
-    .input-group label {
+    .input-field label {
       font-size: 11px;
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.07em;
       color: var(--text-secondary);
     }
-    .input-group input {
-      padding: 8px 12px;
+    .input-field input {
+      height: 34px;
+      padding: 0 10px;
       border: 1px solid var(--border);
       border-radius: 8px;
       font-family: inherit;
-      font-size: 14px;
-      background: var(--bg);
+      font-size: 13px;
+      font-weight: 500;
       color: var(--text);
-      transition: border-color 0.15s;
-    }
-    .input-group input:focus {
+      background: var(--surface-card);
       outline: none;
-      border-color: var(--primary);
+      transition: border-color 0.15s, box-shadow 0.15s;
+      width: 148px;
     }
-    .input-hint {
-      font-size: 11px;
-      color: var(--text-secondary);
-      margin-top: 2px;
+    .input-field input:focus {
+      border-color: #B4DAD6;
+      box-shadow: 0 0 0 3px #E9F5F3;
     }
-    .input-group input[type="number"] { max-width: 100px; }
 
-    /* ── Parent legend ── */
-    .legend {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      margin-bottom: 16px;
-      flex-wrap: wrap;
-    }
-    .legend-item {
+    .btn-row {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 13px;
-      font-weight: 500;
-    }
-    .legend-dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 3px;
-      flex-shrink: 0;
-    }
-    .legend-dot-a { background: var(--cell-a); }
-    .legend-dot-b { background: var(--cell-b); }
-
-    /* ── Grid ── */
-    .grid-wrapper {
-      overflow-x: auto;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: #fff;
-      margin-bottom: 20px;
-    }
-    .grid-table { min-width: 580px; width: 100%; }
-
-    .grid-header,
-    .grid-row {
-      display: grid;
-      grid-template-columns: 130px repeat(7, 1fr);
-    }
-    .grid-header {
-      border-bottom: 2px solid var(--border);
-      background: var(--bg);
-      border-radius: 11px 11px 0 0;
-    }
-    .grid-row { border-bottom: 1px solid var(--border); }
-    .grid-row:last-child { border-bottom: none; }
-
-    .grid-week-col { /* header spacer */ }
-
-    .grid-day-header {
-      padding: 10px 4px;
-      text-align: center;
-      font-size: 11px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-secondary);
-      border-left: 1px solid var(--border);
-    }
-    .grid-day-header.weekend { background: var(--weekend-bg); }
-    .grid-day-header.sep { border-left: 2px solid #C8C8C2; }
-
-    .grid-week-label {
-      padding: 0 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      justify-content: center;
-      border-right: 1px solid var(--border);
-      min-height: 60px;
-    }
-    .week-num {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text);
-    }
-    .week-dates {
-      font-size: 11px;
-      color: var(--text-secondary);
-      white-space: nowrap;
-    }
-
-    .grid-cell {
-      min-height: 60px;
-      border-left: 1px solid var(--border);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.1s, background 0.12s;
-      user-select: none;
-      font-size: 13px;
-      font-weight: 600;
-      position: relative;
-    }
-    .grid-cell.weekend { background: var(--weekend-bg); }
-    .grid-cell.sep { border-left: 2px solid #C8C8C2; }
-    .grid-cell:hover { opacity: 0.8; }
-    .grid-cell:focus-visible {
-      outline: 2px solid var(--primary);
-      outline-offset: -2px;
-      z-index: 1;
-    }
-    .grid-cell.cell-a { background: var(--cell-a) !important; color: #fff; }
-    .grid-cell.cell-b { background: var(--cell-b) !important; color: #fff; }
-    .grid-cell .cell-label {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      pointer-events: none;
-      max-width: 90%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      text-align: center;
-      padding: 0 4px;
-    }
-
-    /* ── Actions ── */
-    .actions-row {
-      display: flex;
-      gap: 10px;
       flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 36px;
     }
+
+    /* Stepper */
+    .stepper {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--surface-card);
+    }
+    .stepper-btn {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      width: 36px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text);
+      transition: background 0.13s;
+      line-height: 1;
+    }
+    .stepper-btn:hover { background: var(--surface-subtle); }
+    .stepper-btn:active { background: var(--border); }
+    .stepper-label {
+      height: 34px;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      border-left: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      background: var(--surface-subtle);
+      white-space: nowrap;
+      min-width: 80px;
+      justify-content: center;
+    }
+
     .btn {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 8px 14px;
+      height: 34px;
+      padding: 0 14px;
       border-radius: 8px;
       font-family: inherit;
       font-size: 13px;
       font-weight: 500;
       cursor: pointer;
-      transition: background 0.15s, color 0.15s, border-color 0.15s;
+      transition: background 0.13s, border-color 0.13s;
       border: 1px solid var(--border);
-      background: #fff;
+      background: var(--surface-subtle);
       color: var(--text);
       white-space: nowrap;
     }
-    .btn:hover { background: var(--bg); }
-    .btn:disabled { opacity: 0.4; cursor: not-allowed; }
-    .btn-ghost-danger {
-      color: #b94040;
-      border-color: var(--border);
-    }
-    .btn-ghost-danger:hover { background: #fff5f5; border-color: #e8c0c0; }
-    .btn-dark {
+    .btn:hover { background: var(--border-subtle); }
+    .btn-danger { color: #C1443A; }
+    .btn-danger:hover { background: #F5D6D3; border-color: #e8c0c0; }
+    .btn-primary {
       background: var(--text);
       color: #fff;
       border-color: var(--text);
-      margin-left: auto;
     }
-    .btn-dark:hover { background: #2c333b; }
-    .btn i, .btn [data-lucide] { width: 14px; height: 14px; }
+    .btn-primary:hover { background: #2c333b; }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .legend-swatch {
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+    .legend-swatch-a { background: var(--primary); }
+    .legend-swatch-b { background: var(--amber); }
+
+    /* ── Grid ── */
+    .grid-scroll {
+      overflow-x: auto;
+      border-radius: 8px;
+      width: 100%;
+    }
+    #schedule-grid {
+      width: fit-content;
+    }
+    .grid-scroll::-webkit-scrollbar { height: 8px; }
+    .grid-scroll::-webkit-scrollbar-track { background: transparent; }
+    .grid-scroll::-webkit-scrollbar-thumb {
+      background: rgba(80,86,94,0.2);
+      border-radius: 999px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+
+    .schedule-table {
+      border-collapse: separate;
+      border-spacing: 4px;
+      width: max-content;
+    }
+
+    /* Week header row */
+    .th-week {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-align: center;
+      padding: 2px 6px 6px;
+      letter-spacing: 0.04em;
+    }
+    .th-week-spacer { width: 120px; }
+
+    /* Day header row */
+    .th-day {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-align: center;
+      padding: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      min-width: 34px;
+    }
+    .th-day.weekend { color: var(--text-secondary); }
+    .th-day.week-sep { padding-left: 10px; }
+
+    /* Row label */
+    .td-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text);
+      padding: 0 10px 4px 0;
+      white-space: nowrap;
+      vertical-align: middle;
+      position: sticky;
+      left: 0;
+      background: var(--surface-card);
+      z-index: 2;
+    }
+    .td-label-inner {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      border-left: 3px solid transparent;
+      padding-left: 8px;
+      height: 34px;
+    }
+    .td-label-inner.label-a { border-color: var(--primary); }
+    .td-label-inner.label-b { border-color: var(--amber); }
+
+    /* Week separator in data row */
+    .td-week-sep { padding-left: 6px; }
+
+    /* Cell */
+    .cell-wrap {
+      padding: 2px;
+    }
+    .cell-wrap.weekend { background: rgba(243,243,241,0.5); border-radius: 4px; }
+
+    .cell {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.12s, border-color 0.12s, box-shadow 0.12s;
+      user-select: none;
+    }
+    .cell:hover { background: var(--surface-subtle); border-color: #C8CBCF; }
+    .cell:active { transform: scale(0.96); }
+    .cell:focus-visible {
+      outline: none;
+      border-color: #B4DAD6;
+      box-shadow: 0 0 0 3px #E9F5F3;
+    }
+
+    .cell.on-a {
+      background: rgba(13, 107, 100, 0.15);
+      border-color: rgba(13, 107, 100, 0.45);
+      box-shadow: inset 0 0 0 1px rgba(13, 107, 100, 0.2);
+    }
+    .cell.on-a:hover { background: rgba(13, 107, 100, 0.22); }
+
+    .cell.on-b {
+      background: rgba(224, 160, 64, 0.15);
+      border-color: rgba(224, 160, 64, 0.45);
+      box-shadow: inset 0 0 0 1px rgba(224, 160, 64, 0.2);
+    }
+    .cell.on-b:hover { background: rgba(224, 160, 64, 0.22); }
+
+    /* Divider between week groups in table body */
+    .td-sep { padding-left: 8px; }
+    .row-divider { height: 8px; }
 
     /* ── Stats ── */
-    .stats-panel {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 28px;
-    }
-    .stats-heading {
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--text-secondary);
-      margin-bottom: 24px;
-    }
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 28px;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 24px;
     }
-    .stat-block { display: flex; flex-direction: column; gap: 10px; }
-    .stat-block-label {
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--text-secondary);
+    .stat-card {
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .stat-title {
+      font-size: 11px;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.07em;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
     }
     .stat-row {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 8px;
-      font-size: 14px;
+      font-size: 13px;
       color: var(--text);
+      margin-bottom: 6px;
     }
-    .stat-swatch {
-      width: 10px;
-      height: 10px;
-      border-radius: 2px;
-      flex-shrink: 0;
-    }
-    .stat-swatch-a { background: var(--cell-a); }
-    .stat-swatch-b { background: var(--cell-b); }
+    .stat-row:last-child { margin-bottom: 0; }
+    .stat-row.muted { color: var(--text-secondary); }
+    .stat-val { font-weight: 500; }
     .stat-bar-wrap {
-      height: 4px;
+      height: 3px;
       background: var(--border);
       border-radius: 2px;
       overflow: hidden;
-      margin-top: 2px;
+      margin: 4px 0 8px;
     }
     .stat-bar-fill {
       height: 100%;
       border-radius: 2px;
-      transition: width 0.35s ease;
+      transition: width 0.3s ease;
     }
-    .stat-bar-fill-a { background: var(--cell-a); }
-    .stat-bar-fill-b { background: var(--cell-b); }
-    .stat-single {
-      font-size: 22px;
+    .stat-bar-a { background: var(--primary); }
+    .stat-bar-b { background: var(--amber); }
+    .stat-big {
+      font-size: 28px;
       font-weight: 600;
       letter-spacing: -0.02em;
       color: var(--text);
+      margin-bottom: 4px;
+    }
+    .stat-sub { font-size: 13px; color: var(--text-secondary); }
+    .stat-divider {
+      border: none;
+      border-top: 1px solid var(--border-subtle);
+      margin: 12px 0;
+    }
+
+    /* ── Export card ── */
+    .export-card {
+      margin-top: 12px;
+    }
+    .export-card .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .export-info h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .export-info p {
+      font-size: 13px;
+      color: var(--text-secondary);
     }
 
     /* ── Footer ── */
@@ -378,23 +449,30 @@
       max-width: 1080px;
       margin: 0 auto;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
+      gap: 20px;
     }
-    .footer-logo { font-size: 16px; font-weight: 600; color: var(--primary); }
-    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-top {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
     .footer-links a { font-size: 14px; color: var(--text-secondary); transition: color 0.15s; }
     .footer-links a:hover { color: var(--text); }
-    .footer-copy { width: 100%; font-size: 13px; color: var(--text-secondary); margin-top: 8px; }
+    .footer-copy { font-size: 13px; color: var(--text-secondary); }
 
     @media (max-width: 600px) {
-      .footer-inner { flex-direction: column; align-items: flex-start; }
-      .btn-dark { margin-left: 0; }
+      .stats-grid { grid-template-columns: 1fr; }
+      .controls-bar { flex-direction: column; }
+      .input-field input { width: 100%; }
+      .export-card .card { flex-direction: column; align-items: flex-start; }
     }
 
-    @media print { nav, footer, .actions-row, .inputs-row { display: none !important; } }
+    @media print { nav, footer, .btn-row, .export-card { display: none !important; } }
   </style>
 </head>
 <body>
@@ -410,85 +488,72 @@
         <button class="lang-btn" data-lang="da" aria-current="false">DA</button>
         <button class="lang-btn" data-lang="fi" aria-current="false">FI</button>
       </div>
-      <a href="#" class="btn-appstore" aria-label="Download on the App Store" data-i18n-aria="nav.appstoreAria">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-        </svg>
-        <span data-i18n="nav.appstore">App Store</span>
-      </a>
     </div>
   </nav>
 
-  <!-- Main -->
   <main>
     <div class="container">
 
       <div class="page-header">
         <h1 data-i18n="cs.heading">Care Schedule</h1>
+        <p id="page-subhead">Plan and visualize how time is shared between homes.</p>
       </div>
 
-      <!-- Inputs -->
-      <div class="inputs-row">
-        <div class="input-group">
-          <label for="input-parent-a" data-i18n="cs.labelParentA">Parent A name</label>
-          <input id="input-parent-a" type="text" autocomplete="off" spellcheck="false" />
-        </div>
-        <div class="input-group">
-          <label for="input-parent-b" data-i18n="cs.labelParentB">Parent B name</label>
-          <input id="input-parent-b" type="text" autocomplete="off" spellcheck="false" />
-        </div>
-        <div class="input-group">
-          <label for="input-start-date" data-i18n="cs.labelStartDate">Start date</label>
-          <input id="input-start-date" type="date" />
-          <span class="input-hint" data-i18n="cs.startDateHint">Must be a Monday</span>
-        </div>
-        <div class="input-group">
-          <label for="input-weeks" data-i18n="cs.labelWeeks">Number of weeks</label>
-          <input id="input-weeks" type="number" min="2" max="12" />
-        </div>
-      </div>
+      <div class="card" style="margin-bottom: 12px;">
 
-      <!-- Legend -->
-      <div class="legend" id="legend">
-        <div class="legend-item">
-          <span class="legend-dot legend-dot-a"></span>
-          <span id="legend-a">Parent A</span>
+        <!-- Controls -->
+        <div class="controls-bar">
+          <div class="inputs-group">
+            <div class="input-field">
+              <label for="input-a" data-i18n="cs.labelParentA">Parent A name</label>
+              <input id="input-a" type="text" autocomplete="off" spellcheck="false" placeholder="Parent A" />
+            </div>
+            <div class="input-field">
+              <label for="input-b" data-i18n="cs.labelParentB">Parent B name</label>
+              <input id="input-b" type="text" autocomplete="off" spellcheck="false" placeholder="Parent B" />
+            </div>
+          </div>
+          <div class="btn-row">
+            <div class="stepper">
+              <button class="stepper-btn" id="btn-minus" aria-label="Remove week">−</button>
+              <div class="stepper-label" id="stepper-label">2 weeks</div>
+              <button class="stepper-btn" id="btn-plus" aria-label="Add week">+</button>
+            </div>
+            <button class="btn btn-danger" id="btn-reset" data-i18n="cs.reset">Reset</button>
+          </div>
         </div>
-        <div class="legend-item">
-          <span class="legend-dot legend-dot-b"></span>
-          <span id="legend-b">Parent B</span>
+
+        <!-- Legend -->
+        <div class="legend">
+          <div class="legend-item">
+            <span class="legend-swatch legend-swatch-a"></span>
+            <span id="legend-a">Parent A</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-swatch legend-swatch-b"></span>
+            <span id="legend-b">Parent B</span>
+          </div>
         </div>
-      </div>
 
-      <!-- Grid -->
-      <div class="grid-wrapper">
-        <div id="schedule-grid"></div>
-      </div>
+        <!-- Schedule grid -->
+        <div class="grid-scroll" id="grid-scroll">
+          <div id="schedule-grid"></div>
+        </div>
 
-      <!-- Actions -->
-      <div class="actions-row">
-        <button class="btn" id="btn-add-week">
-          <span data-lucide="plus"></span>
-          <span data-i18n="cs.addWeek">Add week</span>
-        </button>
-        <button class="btn" id="btn-remove-week">
-          <span data-lucide="minus"></span>
-          <span data-i18n="cs.removeWeek">Remove week</span>
-        </button>
-        <button class="btn btn-ghost-danger" id="btn-reset">
-          <span data-lucide="rotate-ccw"></span>
-          <span data-i18n="cs.reset">Reset</span>
-        </button>
-        <button class="btn btn-dark" id="btn-export">
-          <span data-lucide="download"></span>
-          <span data-i18n="cs.exportPdf">Export to PDF</span>
-        </button>
       </div>
 
       <!-- Stats -->
-      <div class="stats-panel">
-        <div class="stats-heading" data-i18n="cs.statsTitle">Summary</div>
-        <div class="stats-grid" id="stats-grid"></div>
+      <div class="stats-grid" id="stats-grid"></div>
+
+      <!-- Export -->
+      <div class="export-card">
+        <div class="card">
+          <div class="export-info">
+            <h3 data-i18n="cs.exportPdf">Export to PDF</h3>
+            <p>Print or save the schedule as a PDF.</p>
+          </div>
+          <button class="btn btn-primary" id="btn-export" data-i18n="cs.exportPdf">Export to PDF</button>
+        </div>
       </div>
 
     </div>
@@ -497,13 +562,15 @@
   <!-- Footer -->
   <footer>
     <div class="footer-inner">
-      <img src="assets/logos/Logomark_1.svg" alt="Lina" height="24" />
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
-        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-        <a href="account-deletion.html">Account deletion</a>
-        <a href="#" data-i18n="footer.contact">Contact</a>
-      </nav>
+      <div class="footer-top">
+        <img src="assets/logos/Logomark_1.svg" alt="Lina" height="24" />
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="account-deletion.html">Account deletion</a>
+          <a href="#" data-i18n="footer.contact">Contact</a>
+        </nav>
+      </div>
       <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
     </div>
   </footer>
@@ -513,470 +580,442 @@
   (function () {
     'use strict';
 
-    const STORAGE_KEY = 'lina-care-schedule';
-    const DAY_KEYS = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+    const STORAGE_KEY = 'lina-care-schedule-v2';
+    const DAYS = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+    const DAYS_I18N = ['cs.mon','cs.tue','cs.wed','cs.thu','cs.fri','cs.sat','cs.sun'];
     const MAX_WEEKS = 12;
     const MIN_WEEKS = 2;
+    const WEEKS_PER_ROW = 2;
 
-    // ── State ────────────────────────────────────────────────────────────────
-
+    let T = null;
     let state = defaultState();
-    let T = null; // current translation object
 
     function defaultState() {
       return {
-        parentA: '',
-        parentB: '',
-        startDate: nextMonday(),
+        nameA: '',
+        nameB: '',
         weeks: 2,
-        cells: Array(14).fill(null)
+        // assignment[i] = 'A' | 'B' | null per day
+        assignment: Array(14).fill(null)
       };
     }
 
-    function nextMonday() {
-      const d = new Date();
-      const day = d.getDay();
-      const diff = day === 1 ? 0 : (8 - day) % 7;
-      d.setDate(d.getDate() + diff);
-      return toDateStr(d);
+    // ── Persistence ──────────────────────────────────────────────────────────
+    function save() {
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(_) {}
     }
 
-    function toDateStr(d) {
-      const y = d.getFullYear();
-      const m = String(d.getMonth() + 1).padStart(2, '0');
-      const dd = String(d.getDate()).padStart(2, '0');
-      return `${y}-${m}-${dd}`;
-    }
-
-    function mondayOf(dateStr) {
-      const [y, m, d] = dateStr.split('-').map(Number);
-      const date = new Date(y, m - 1, d);
-      const day = date.getDay();
-      const diff = day === 0 ? -6 : 1 - day;
-      date.setDate(date.getDate() + diff);
-      return toDateStr(date);
-    }
-
-    function saveState() {
-      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (_) {}
-    }
-
-    function loadState() {
+    function load() {
       try {
         const raw = localStorage.getItem(STORAGE_KEY);
         if (!raw) return;
-        const parsed = JSON.parse(raw);
-        state = { ...defaultState(), ...parsed };
-        state.weeks = Math.max(MIN_WEEKS, Math.min(MAX_WEEKS, state.weeks | 0));
-        const expectedLen = state.weeks * 7;
-        if (state.cells.length !== expectedLen) {
-          const cells = Array(expectedLen).fill(null);
-          for (let i = 0; i < Math.min(state.cells.length, expectedLen); i++) {
-            cells[i] = state.cells[i];
-          }
-          state.cells = cells;
+        const p = JSON.parse(raw);
+        state.nameA = p.nameA || '';
+        state.nameB = p.nameB || '';
+        state.weeks = Math.max(MIN_WEEKS, Math.min(MAX_WEEKS, p.weeks | 0)) || MIN_WEEKS;
+        const len = state.weeks * 7;
+        if (Array.isArray(p.assignment)) {
+          const a = p.assignment.slice(0, len);
+          while (a.length < len) a.push(null);
+          state.assignment = a;
         }
-      } catch (_) {}
+      } catch(_) {}
     }
 
-    // ── Stats ─────────────────────────────────────────────────────────────────
-
+    // ── Stats ────────────────────────────────────────────────────────────────
     function calcStats() {
-      const { cells, weeks } = state;
-      const totalDays = weeks * 7;
-      const totalWeekendDays = weeks * 3;
+      const { assignment, weeks } = state;
       let aTotal = 0, bTotal = 0, aWknd = 0, bWknd = 0;
-      let fullWkndA = 0, fullWkndB = 0;
-      let switches = 0;
+      let fullWkA = 0, fullWkB = 0, switches = 0;
+
+      for (let i = 0; i < assignment.length; i++) {
+        const v = assignment[i];
+        const dow = i % 7;
+        if (v === 'A') { aTotal++; if (dow >= 4) aWknd++; }
+        if (v === 'B') { bTotal++; if (dow >= 4) bWknd++; }
+      }
 
       for (let w = 0; w < weeks; w++) {
-        const fri = cells[w * 7 + 4];
-        const sat = cells[w * 7 + 5];
-        const sun = cells[w * 7 + 6];
-        if (fri === 'A' && sat === 'A' && sun === 'A') fullWkndA++;
-        if (fri === 'B' && sat === 'B' && sun === 'B') fullWkndB++;
+        const base = w * 7;
+        const fri = assignment[base + 4];
+        const sat = assignment[base + 5];
+        const sun = assignment[base + 6];
+        if (fri === 'A' && sat === 'A' && sun === 'A') fullWkA++;
+        if (fri === 'B' && sat === 'B' && sun === 'B') fullWkB++;
       }
 
-      let lastAssigned = null;
-      for (let i = 0; i < totalDays; i++) {
-        const c = cells[i];
-        const dow = i % 7; // 0=Mon…6=Sun
-        if (c === 'A') { aTotal++; if (dow >= 4) aWknd++; }
-        else if (c === 'B') { bTotal++; if (dow >= 4) bWknd++; }
-        if (c && lastAssigned && c !== lastAssigned) switches++;
-        if (c) lastAssigned = c;
+      let last = null;
+      for (let i = 0; i < assignment.length; i++) {
+        const v = assignment[i];
+        if (v && last && v !== last) switches++;
+        if (v) last = v;
       }
 
-      return {
-        totalDays, totalWeekendDays, totalFullWeekends: weeks,
-        aTotal, bTotal, aWknd, bWknd,
-        fullWkndA, fullWkndB, switches
-      };
+      const totalDays = weeks * 7;
+      const totalWknd = weeks * 3;
+      return { aTotal, bTotal, aWknd, bWknd, fullWkA, fullWkB, switches, totalDays, totalWknd };
     }
 
-    // ── Rendering ─────────────────────────────────────────────────────────────
+    // ── Label helpers ────────────────────────────────────────────────────────
+    function nameA() { return state.nameA.trim() || 'Parent A'; }
+    function nameB() { return state.nameB.trim() || 'Parent B'; }
+    function dayLabel(i) { return (T && T.cs) ? (T.cs[['mon','tue','wed','thu','fri','sat','sun'][i]] || DAYS[i]) : DAYS[i]; }
+    function weeksLabel(n) { return (T && T.cs) ? n + ' ' + (T.cs.labelWeeks || 'weeks') : n + ' weeks'; }
 
-    function parentLabel(who) {
-      const name = who === 'A' ? state.parentA : state.parentB;
-      return name && name.trim() ? name.trim() : (who === 'A' ? 'A' : 'B');
+    // ── Render grid ──────────────────────────────────────────────────────────
+    function renderGrid() {
+      const container = document.getElementById('schedule-grid');
+      if (!container) return;
+
+      const rowCount = Math.ceil(state.weeks / WEEKS_PER_ROW);
+      let html = '';
+
+      for (let row = 0; row < rowCount; row++) {
+        const startWeek = row * WEEKS_PER_ROW;
+        const weeksInRow = Math.min(WEEKS_PER_ROW, state.weeks - startWeek);
+        const daysInRow = weeksInRow * 7;
+        const baseDayIdx = startWeek * 7;
+
+        if (row > 0) {
+          html += `<div style="height:10px;margin:10px 0 0;border-top:1px solid var(--border-subtle);"></div>`;
+        }
+
+        html += `<table class="schedule-table" role="grid">`;
+
+        // Row 1: week headers
+        html += `<thead><tr>`;
+        html += `<th class="th-week-spacer"></th>`;
+        for (let w = 0; w < weeksInRow; w++) {
+          const wn = startWeek + w + 1;
+          html += `<th colspan="7" class="th-week">${(T && T.cs && T.cs.week) || 'Week'} ${wn}</th>`;
+          if (w < weeksInRow - 1) html += `<th style="width:14px;"></th>`;
+        }
+        html += `</tr>`;
+
+        // Row 2: day headers
+        html += `<tr>`;
+        html += `<th class="th-week-spacer"></th>`;
+        for (let w = 0; w < weeksInRow; w++) {
+          for (let d = 0; d < 7; d++) {
+            const dow = d;
+            const isWe = dow >= 5;
+            const isSep = d === 4; // visual gap after Thu before Fri
+            html += `<th class="th-day${isWe ? ' weekend' : ''}${isSep ? ' week-sep' : ''}" style="${isSep ? 'padding-left:10px' : ''}">${dayLabel(d)}</th>`;
+          }
+          if (w < weeksInRow - 1) html += `<th style="width:14px;"></th>`;
+        }
+        html += `</tr></thead><tbody>`;
+
+        // Data rows: one per parent
+        for (const [ri, who] of [['A'], ['B']].entries()) {
+          const parent = who[0];
+          const isA = parent === 'A';
+          const lbl = isA ? nameA() : nameB();
+
+          html += `<tr>`;
+          html += `<td class="td-label"><div class="td-label-inner label-${parent.toLowerCase()}">${esc(lbl)}</div></td>`;
+
+          for (let w = 0; w < weeksInRow; w++) {
+            for (let d = 0; d < 7; d++) {
+              const globalIdx = baseDayIdx + w * 7 + d;
+              const val = state.assignment[globalIdx];
+              const isOn = val === parent;
+              const isWe = d >= 5;
+              const isFriSep = d === 4;
+              const onClass = isOn ? (isA ? 'on-a' : 'on-b') : '';
+              const sepStyle = isFriSep ? 'padding-left:10px;' : '';
+              html += `<td style="${sepStyle}">`;
+              html += `<div class="cell ${onClass}" data-idx="${globalIdx}" data-who="${parent}" tabindex="0" role="button" aria-label="${esc(lbl)} day ${globalIdx + 1}" aria-pressed="${isOn}"></div>`;
+              html += `</td>`;
+            }
+            if (w < weeksInRow - 1) html += `<td style="width:14px;"></td>`;
+          }
+          html += `</tr>`;
+
+          // Small gap row between A and B
+          if (isA) html += `<tr><td style="height:4px;"></td></tr>`;
+        }
+
+        html += `</tbody></table>`;
+      }
+
+      container.innerHTML = html;
+
+      // Attach events via delegation
+      container.querySelectorAll('.cell').forEach(cell => {
+        cell.addEventListener('click', onCellClick);
+        cell.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            onCellClick.call(cell, e);
+          }
+        });
+      });
     }
 
-    function fmtDate(d) {
-      if (!d) return '';
-      const lang = document.documentElement.lang || 'en';
-      return d.toLocaleDateString(lang, { month: 'short', day: 'numeric' });
-    }
-
-    function weekDates(weekIdx) {
-      if (!state.startDate) return '';
-      const [y, m, d] = state.startDate.split('-').map(Number);
-      const start = new Date(y, m - 1, d + weekIdx * 7);
-      const end = new Date(y, m - 1, d + weekIdx * 7 + 6);
-      return `${fmtDate(start)} – ${fmtDate(end)}`;
+    function onCellClick() {
+      const idx = parseInt(this.dataset.idx, 10);
+      const who = this.dataset.who;
+      const cur = state.assignment[idx];
+      state.assignment[idx] = (cur === who) ? null : who;
+      save();
+      renderGrid();
+      renderStats();
     }
 
     function esc(s) {
-      return String(s)
-        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
     }
 
-    function renderGrid() {
-      if (!T) return;
-      const cs = T.cs;
-      const grid = document.getElementById('schedule-grid');
-      if (!grid) return;
-
-      let html = '<div class="grid-table" role="grid">';
-
-      // Header row
-      html += '<div class="grid-header" role="row">';
-      html += '<div class="grid-week-col" role="columnheader" aria-label=""></div>';
-      DAY_KEYS.forEach((key, i) => {
-        const isWeekend = i >= 4;
-        const isSep = i === 4;
-        const cls = ['grid-day-header', isWeekend ? 'weekend' : '', isSep ? 'sep' : ''].filter(Boolean).join(' ');
-        html += `<div class="${cls}" role="columnheader">${esc(cs[key])}</div>`;
-      });
-      html += '</div>';
-
-      // Week rows
-      for (let w = 0; w < state.weeks; w++) {
-        const dates = weekDates(w);
-        html += '<div class="grid-row" role="row">';
-        html += `<div class="grid-week-label" role="rowheader">
-          <span class="week-num">${esc(cs.week)} ${w + 1}</span>
-          ${dates ? `<span class="week-dates">${esc(dates)}</span>` : ''}
-        </div>`;
-
-        for (let d = 0; d < 7; d++) {
-          const idx = w * 7 + d;
-          const val = state.cells[idx];
-          const isWeekend = d >= 4;
-          const isSep = d === 4;
-          const cls = [
-            'grid-cell',
-            isWeekend ? 'weekend' : '',
-            isSep ? 'sep' : '',
-            val === 'A' ? 'cell-a' : val === 'B' ? 'cell-b' : ''
-          ].filter(Boolean).join(' ');
-          const ariaLabel = val ? esc(parentLabel(val)) : esc(cs.unassigned);
-          const label = val ? esc(parentLabel(val)) : '';
-          html += `<div class="${cls}" data-idx="${idx}" role="gridcell" tabindex="0" aria-label="${ariaLabel}">
-            ${label ? `<span class="cell-label">${label}</span>` : ''}
-          </div>`;
-        }
-        html += '</div>';
-      }
-
-      html += '</div>';
-      grid.innerHTML = html;
-      renderStats();
-      updateLegend();
-      updateButtonStates();
-    }
-
+    // ── Render stats ─────────────────────────────────────────────────────────
     function renderStats() {
-      if (!T) return;
-      const cs = T.cs;
       const sg = document.getElementById('stats-grid');
       if (!sg) return;
       const s = calcStats();
-      const pct = (n, total) => total > 0 ? Math.round(n / total * 100) : 0;
-      const labelA = esc(parentLabel('A'));
-      const labelB = esc(parentLabel('B'));
+      const pct = (n, tot) => tot > 0 ? Math.round(n / tot * 100) : 0;
+      const la = esc(nameA());
+      const lb = esc(nameB());
 
       const aPct = pct(s.aTotal, s.totalDays);
       const bPct = pct(s.bTotal, s.totalDays);
-      const aWPct = pct(s.aWknd, s.totalWeekendDays);
-      const bWPct = pct(s.bWknd, s.totalWeekendDays);
+      const aWPct = pct(s.aWknd, s.totalWknd);
+      const bWPct = pct(s.bWknd, s.totalWknd);
+
+      const daysTxt = (T && T.cs && T.cs.days) || 'days';
+      const ofTxt = (T && T.cs && T.cs.of) || 'of';
+      const splitTitle = (T && T.cs && T.cs.statsDaySplit) || 'Day split';
+      const wkndTitle = (T && T.cs && T.cs.statsWeekendSplit) || 'Weekend split (Fri–Sun)';
+      const fullWkTitle = (T && T.cs && T.cs.statsFullWeekends) || 'Full weekends';
+      const switchTitle = (T && T.cs && T.cs.statsSwitches) || 'Total switches';
 
       sg.innerHTML = `
-        <div class="stat-block">
-          <div class="stat-block-label" data-i18n="cs.statsDaySplit">${esc(cs.statsDaySplit)}</div>
-          <div class="stat-row"><span class="stat-swatch stat-swatch-a"></span>${labelA}: ${s.aTotal} ${esc(cs.days)} (${aPct}%)</div>
-          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-fill-a" style="width:${aPct}%"></div></div>
-          <div class="stat-row"><span class="stat-swatch stat-swatch-b"></span>${labelB}: ${s.bTotal} ${esc(cs.days)} (${bPct}%)</div>
-          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-fill-b" style="width:${bPct}%"></div></div>
+        <div class="stat-card">
+          <div class="stat-title">${esc(splitTitle)}</div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--primary);display:inline-block;flex-shrink:0;"></span>${la}</span>
+            <span class="stat-val">${s.aTotal} ${daysTxt} · ${aPct}%</span>
+          </div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-a" style="width:${aPct}%"></div></div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--amber);display:inline-block;flex-shrink:0;"></span>${lb}</span>
+            <span class="stat-val">${s.bTotal} ${daysTxt} · ${bPct}%</span>
+          </div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-b" style="width:${bPct}%"></div></div>
         </div>
-        <div class="stat-block">
-          <div class="stat-block-label" data-i18n="cs.statsWeekendSplit">${esc(cs.statsWeekendSplit)}</div>
-          <div class="stat-row"><span class="stat-swatch stat-swatch-a"></span>${labelA}: ${s.aWknd} ${esc(cs.of)} ${s.totalWeekendDays} (${aWPct}%)</div>
-          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-fill-a" style="width:${aWPct}%"></div></div>
-          <div class="stat-row"><span class="stat-swatch stat-swatch-b"></span>${labelB}: ${s.bWknd} ${esc(cs.of)} ${s.totalWeekendDays} (${bWPct}%)</div>
-          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-fill-b" style="width:${bWPct}%"></div></div>
+
+        <div class="stat-card">
+          <div class="stat-title">${esc(wkndTitle)}</div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--primary);display:inline-block;flex-shrink:0;"></span>${la}</span>
+            <span class="stat-val">${s.aWknd} ${daysTxt} · ${aWPct}%</span>
+          </div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-a" style="width:${aWPct}%"></div></div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--amber);display:inline-block;flex-shrink:0;"></span>${lb}</span>
+            <span class="stat-val">${s.bWknd} ${daysTxt} · ${bWPct}%</span>
+          </div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-b" style="width:${bWPct}%"></div></div>
+          <hr class="stat-divider" />
+          <div class="stat-title" style="margin-bottom:8px;">${esc(fullWkTitle)}</div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--primary);display:inline-block;flex-shrink:0;"></span>${la}</span>
+            <span class="stat-val">${s.fullWkA} ${ofTxt} ${state.weeks}</span>
+          </div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--amber);display:inline-block;flex-shrink:0;"></span>${lb}</span>
+            <span class="stat-val">${s.fullWkB} ${ofTxt} ${state.weeks}</span>
+          </div>
         </div>
-        <div class="stat-block">
-          <div class="stat-block-label" data-i18n="cs.statsFullWeekends">${esc(cs.statsFullWeekends)}</div>
-          <div class="stat-row"><span class="stat-swatch stat-swatch-a"></span>${labelA}: ${s.fullWkndA} ${esc(cs.of)} ${s.totalFullWeekends}</div>
-          <div class="stat-row"><span class="stat-swatch stat-swatch-b"></span>${labelB}: ${s.fullWkndB} ${esc(cs.of)} ${s.totalFullWeekends}</div>
-        </div>
-        <div class="stat-block">
-          <div class="stat-block-label" data-i18n="cs.statsSwitches">${esc(cs.statsSwitches)}</div>
-          <div class="stat-single">${s.switches}</div>
+
+        <div class="stat-card" style="grid-column: 1 / -1; display:flex; align-items:center; gap:24px; flex-wrap:wrap;">
+          <div>
+            <div class="stat-big">${s.switches}</div>
+            <div class="stat-sub">${esc(switchTitle)}</div>
+          </div>
+          <div style="height:40px;width:1px;background:var(--border-subtle);"></div>
+          <div>
+            <div class="stat-big">${state.weeks * 7}</div>
+            <div class="stat-sub">Total days planned</div>
+          </div>
+          <div style="height:40px;width:1px;background:var(--border-subtle);"></div>
+          <div>
+            <div class="stat-big">${s.totalDays - s.aTotal - s.bTotal}</div>
+            <div class="stat-sub">Unassigned days</div>
+          </div>
         </div>
       `;
     }
 
+    // ── Controls ─────────────────────────────────────────────────────────────
     function updateLegend() {
       const a = document.getElementById('legend-a');
       const b = document.getElementById('legend-b');
-      if (a) a.textContent = parentLabel('A');
-      if (b) b.textContent = parentLabel('B');
+      if (a) a.textContent = nameA();
+      if (b) b.textContent = nameB();
     }
 
-    function updateButtonStates() {
-      const add = document.getElementById('btn-add-week');
-      const rem = document.getElementById('btn-remove-week');
-      if (add) add.disabled = state.weeks >= MAX_WEEKS;
-      if (rem) rem.disabled = state.weeks <= MIN_WEEKS;
+    function updateStepperLabel() {
+      const el = document.getElementById('stepper-label');
+      if (el) el.textContent = weeksLabel(state.weeks);
     }
-
-    // ── Cell interaction ───────────────────────────────────────────────────────
-
-    function toggleCell(idx) {
-      const cur = state.cells[idx];
-      state.cells[idx] = cur === null ? 'A' : cur === 'A' ? 'B' : null;
-      saveState();
-      renderGrid();
-    }
-
-    // ── Week add/remove ────────────────────────────────────────────────────────
 
     function setWeeks(n) {
       n = Math.max(MIN_WEEKS, Math.min(MAX_WEEKS, n));
       if (n === state.weeks) return;
       if (n > state.weeks) {
-        state.cells = [...state.cells, ...Array((n - state.weeks) * 7).fill(null)];
+        const extra = (n - state.weeks) * 7;
+        state.assignment = [...state.assignment, ...Array(extra).fill(null)];
       } else {
-        state.cells = state.cells.slice(0, n * 7);
+        state.assignment = state.assignment.slice(0, n * 7);
       }
       state.weeks = n;
-      document.getElementById('input-weeks').value = n;
-      saveState();
+      save();
+      updateStepperLabel();
       renderGrid();
+      renderStats();
     }
 
-    // ── PDF export ─────────────────────────────────────────────────────────────
+    // ── PDF export ────────────────────────────────────────────────────────────
+    function exportPDF() {
+      const la = nameA(), lb = nameB();
+      const s = calcStats();
+      const pct = (n,tot) => tot > 0 ? Math.round(n/tot*100)+'%' : '0%';
+      const rowCount = Math.ceil(state.weeks / WEEKS_PER_ROW);
 
-    function buildScheduleHTML() {
-      const cs = T.cs;
-      const lang = document.documentElement.lang || 'en';
-      const { parentA, parentB, startDate, weeks, cells } = state;
-      const nameA = parentLabel('A');
-      const nameB = parentLabel('B');
+      let tablesHtml = '';
+      for (let row = 0; row < rowCount; row++) {
+        const startWeek = row * WEEKS_PER_ROW;
+        const weeksInRow = Math.min(WEEKS_PER_ROW, state.weeks - startWeek);
+        const baseDayIdx = startWeek * 7;
 
-      const [y, m, d] = startDate ? startDate.split('-').map(Number) : [0, 0, 0];
-      const startD = startDate ? new Date(y, m - 1, d) : null;
-      const endD = startDate ? new Date(y, m - 1, d + weeks * 7 - 1) : null;
-      const dateRange = startD
-        ? `${fmtDate(startD)} – ${fmtDate(endD)}`
-        : '';
+        const weekHeaders = Array.from({length: weeksInRow}).map((_,w) =>
+          `<th colspan="7" style="font-size:10px;font-weight:600;color:#50565E;text-align:center;padding:4px 0;">Week ${startWeek+w+1}</th>`
+        ).join('');
 
-      const cellBg = v => v === 'A' ? '#0D6B64' : v === 'B' ? '#E0A040' : '#F4F4F2';
-      const cellFg = v => (v === 'A' || v === 'B') ? '#fff' : '#888';
-      const cellTxt = v => v === 'A' ? nameA : v === 'B' ? nameB : '';
+        const dayHeaders = Array.from({length: weeksInRow * 7}).map((_,i) =>
+          `<th style="font-size:9px;font-weight:600;color:#A1A7AF;text-align:center;padding:0 0 4px;min-width:20px;">${DAYS[i%7]}</th>`
+        ).join('');
 
-      const thStyle = 'font-size:10px;text-align:center;padding:7px 6px;background:#f5f5f3;border:1px solid #ddd;text-transform:uppercase;letter-spacing:0.05em;color:#555;';
-      const dayHeaders = DAY_KEYS.map((k, i) =>
-        `<th style="${thStyle}${i >= 4 ? 'background:#eeede8;' : ''}">${esc(cs[k])}</th>`
-      ).join('');
+        const makeRow = (parent, label, color) => {
+          const cells = Array.from({length: weeksInRow * 7}).map((_,i) => {
+            const gi = baseDayIdx + i;
+            const on = state.assignment[gi] === parent;
+            const bg = on ? (parent === 'A' ? '#D4EAE8' : '#FAE8C8') : '#F3F3F1';
+            const border = on ? (parent === 'A' ? '#7BB8B3' : '#D4A055') : '#DEDFE2';
+            return `<td style="width:28px;height:28px;border-radius:6px;border:1px solid ${border};background:${bg};"></td>`;
+          }).join('');
+          return `<tr>
+            <td style="font-size:11px;font-weight:600;padding-right:8px;border-left:3px solid ${color};padding-left:6px;white-space:nowrap;">${esc(label)}</td>
+            ${cells}
+          </tr>`;
+        };
 
-      let rows = '';
-      for (let w = 0; w < weeks; w++) {
-        const wStart = startDate ? new Date(y, m - 1, d + w * 7) : null;
-        const wEnd = startDate ? new Date(y, m - 1, d + w * 7 + 6) : null;
-        const wDates = wStart ? `${fmtDate(wStart)} – ${fmtDate(wEnd)}` : '';
-        let tds = '';
-        for (let dd2 = 0; dd2 < 7; dd2++) {
-          const idx = w * 7 + dd2;
-          const v = cells[idx];
-          const bg = cellBg(v);
-          const fg = cellFg(v);
-          const sepBorder = dd2 === 4 ? 'border-left:2px solid #ccc;' : '';
-          tds += `<td style="background:${bg};color:${fg};font-size:11px;font-weight:600;text-align:center;padding:9px 4px;border:1px solid #ddd;${sepBorder}">${esc(cellTxt(v))}</td>`;
-        }
-        rows += `<tr>
-          <td style="font-size:11px;padding:8px 14px;border:1px solid #ddd;white-space:nowrap;background:#fafaf8;">
-            <strong>${esc(cs.week)} ${w + 1}</strong>${wDates ? `<br><span style="color:#888;font-size:10px;">${esc(wDates)}</span>` : ''}
-          </td>${tds}
-        </tr>`;
+        tablesHtml += `<table style="border-collapse:separate;border-spacing:4px;margin-bottom:12px;">
+          <thead>
+            <tr><th></th>${weekHeaders}</tr>
+            <tr><th></th>${dayHeaders}</tr>
+          </thead>
+          <tbody>
+            ${makeRow('A', la, '#0D6B64')}
+            <tr><td style="height:4px;"></td></tr>
+            ${makeRow('B', lb, '#E0A040')}
+          </tbody>
+        </table>`;
       }
 
-      const s = calcStats();
-      const pct = (n, total) => total > 0 ? Math.round(n / total * 100) : 0;
+      const daysTxt = 'days';
+      const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"/>
+        <title>Care Schedule</title>
+        <style>
+          body{font-family:system-ui,-apple-system,sans-serif;margin:32px;color:#1A1E23;font-size:13px;}
+          h1{font-size:18px;font-weight:600;margin:0 0 4px;letter-spacing:-0.01em;}
+          .meta{font-size:12px;color:#50565E;margin-bottom:20px;}
+          .stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:20px;}
+          .stat-card{border:1px solid #DEDFE2;border-radius:8px;padding:10px 14px;}
+          .st{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:#50565E;margin-bottom:6px;}
+          .sr{display:flex;justify-content:space-between;font-size:11px;margin-bottom:2px;}
+          * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+          @media print{@page{margin:12mm;}}
+        </style>
+      </head><body>
+        <h1>Care Schedule</h1>
+        <p class="meta">${esc(la)} &amp; ${esc(lb)} · ${state.weeks} weeks · ${state.weeks * 7} days</p>
+        <div class="stats">
+          <div class="stat-card">
+            <div class="st">Day split</div>
+            <div class="sr"><span>${esc(la)}</span><span>${s.aTotal} ${daysTxt} · ${pct(s.aTotal,s.totalDays)}</span></div>
+            <div class="sr"><span>${esc(lb)}</span><span>${s.bTotal} ${daysTxt} · ${pct(s.bTotal,s.totalDays)}</span></div>
+          </div>
+          <div class="stat-card">
+            <div class="st">Weekend split (Fri–Sun)</div>
+            <div class="sr"><span>${esc(la)}</span><span>${s.aWknd} ${daysTxt} · ${pct(s.aWknd,s.totalWknd)}</span></div>
+            <div class="sr"><span>${esc(lb)}</span><span>${s.bWknd} ${daysTxt} · ${pct(s.bWknd,s.totalWknd)}</span></div>
+          </div>
+          <div class="stat-card">
+            <div class="st">Overview</div>
+            <div class="sr"><span>Switches</span><span>${s.switches}</span></div>
+            <div class="sr"><span>Full weekends ${esc(la)}</span><span>${s.fullWkA}</span></div>
+            <div class="sr"><span>Full weekends ${esc(lb)}</span><span>${s.fullWkB}</span></div>
+          </div>
+        </div>
+        ${tablesHtml}
+      </body></html>`;
 
-      return `<!DOCTYPE html>
-<html lang="${lang}">
-<head>
-  <meta charset="UTF-8" />
-  <title>${esc(cs.heading)} — ${esc(nameA)} &amp; ${esc(nameB)}</title>
-  <style>
-    body { font-family: -apple-system, Helvetica Neue, sans-serif; margin: 40px; color: #1A1E23; }
-    h1 { font-size: 20px; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.02em; }
-    .sub { color: #666; font-size: 13px; margin: 0 0 28px; }
-    table { border-collapse: collapse; width: 100%; }
-    .stats { margin-top: 32px; font-size: 13px; }
-    .stats h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #666; margin: 0 0 12px; }
-    .stats table { width: auto; }
-    .stats td { padding: 3px 20px 3px 0; color: #333; }
-    @media print { @page { margin: 20mm; } }
-  </style>
-</head>
-<body>
-  <h1>${esc(cs.heading)}</h1>
-  <p class="sub">${esc(nameA)} &amp; ${esc(nameB)}${dateRange ? ' · ' + esc(dateRange) : ''}</p>
-  <table>
-    <thead>
-      <tr>
-        <th style="font-size:10px;padding:7px 14px;background:#f5f5f3;border:1px solid #ddd;text-align:left;"></th>
-        ${dayHeaders}
-      </tr>
-    </thead>
-    <tbody>${rows}</tbody>
-  </table>
-  <div class="stats">
-    <h2>${esc(cs.statsTitle)}</h2>
-    <table>
-      <tr><td style="color:#0D6B64;font-weight:600;">${esc(nameA)}</td><td>${s.aTotal} ${esc(cs.days)} (${pct(s.aTotal, s.totalDays)}%)</td></tr>
-      <tr><td style="color:#E0A040;font-weight:600;">${esc(nameB)}</td><td>${s.bTotal} ${esc(cs.days)} (${pct(s.bTotal, s.totalDays)}%)</td></tr>
-      <tr><td colspan="2" style="padding-top:8px;"></td></tr>
-      <tr><td style="color:#666;">${esc(cs.statsFullWeekends)}</td><td>${esc(nameA)}: ${s.fullWkndA}, ${esc(nameB)}: ${s.fullWkndB}</td></tr>
-      <tr><td style="color:#666;">${esc(cs.statsSwitches)}</td><td>${s.switches}</td></tr>
-    </table>
-  </div>
-</body>
-</html>`;
-    }
-
-    function exportToPDF() {
-      const html = buildScheduleHTML();
       const win = window.open('', '_blank');
-      if (!win) { alert('Please allow popups to export PDF.'); return; }
+      if (!win) { alert('Please allow popups to export.'); return; }
       win.document.write(html);
       win.document.close();
-      setTimeout(() => win.print(), 400);
+      setTimeout(() => win.print(), 300);
     }
 
-    // ── Input binding ──────────────────────────────────────────────────────────
+    // ── Boot ─────────────────────────────────────────────────────────────────
+    load();
 
-    function bindInputs() {
-      const inputA = document.getElementById('input-parent-a');
-      const inputB = document.getElementById('input-parent-b');
-      const inputDate = document.getElementById('input-start-date');
-      const inputWeeks = document.getElementById('input-weeks');
+    // Bind name inputs
+    const inputA = document.getElementById('input-a');
+    const inputB = document.getElementById('input-b');
+    inputA.value = state.nameA;
+    inputB.value = state.nameB;
 
-      // Set initial values
-      inputA.value = state.parentA;
-      inputB.value = state.parentB;
-      inputDate.value = state.startDate;
-      inputWeeks.value = state.weeks;
+    inputA.addEventListener('input', () => {
+      state.nameA = inputA.value;
+      save();
+      updateLegend();
+      renderGrid();
+      renderStats();
+    });
+    inputB.addEventListener('input', () => {
+      state.nameB = inputB.value;
+      save();
+      updateLegend();
+      renderGrid();
+      renderStats();
+    });
 
-      inputA.addEventListener('input', () => {
-        state.parentA = inputA.value;
-        saveState();
-        updateLegend();
-        renderStats();
-      });
+    document.getElementById('btn-minus').addEventListener('click', () => setWeeks(state.weeks - 1));
+    document.getElementById('btn-plus').addEventListener('click', () => setWeeks(state.weeks + 1));
+    document.getElementById('btn-reset').addEventListener('click', () => {
+      state.assignment = Array(state.weeks * 7).fill(null);
+      save();
+      renderGrid();
+      renderStats();
+    });
+    document.getElementById('btn-export').addEventListener('click', exportPDF);
 
-      inputB.addEventListener('input', () => {
-        state.parentB = inputB.value;
-        saveState();
-        updateLegend();
-        renderStats();
-      });
-
-      inputDate.addEventListener('change', () => {
-        const val = inputDate.value;
-        if (!val) return;
-        const snapped = mondayOf(val);
-        state.startDate = snapped;
-        inputDate.value = snapped;
-        saveState();
-        renderGrid();
-      });
-
-      inputWeeks.addEventListener('change', () => {
-        const n = parseInt(inputWeeks.value, 10);
-        if (!isNaN(n)) setWeeks(n);
-      });
-
-      document.getElementById('btn-add-week').addEventListener('click', () => {
-        setWeeks(state.weeks + 1);
-      });
-
-      document.getElementById('btn-remove-week').addEventListener('click', () => {
-        setWeeks(state.weeks - 1);
-      });
-
-      document.getElementById('btn-reset').addEventListener('click', () => {
-        const fresh = defaultState();
-        state.cells = Array(state.weeks * 7).fill(null);
-        saveState();
-        renderGrid();
-      });
-
-      document.getElementById('btn-export').addEventListener('click', exportToPDF);
-
-      // Grid interaction via event delegation
-      const gridEl = document.getElementById('schedule-grid');
-      gridEl.addEventListener('click', e => {
-        const cell = e.target.closest('[data-idx]');
-        if (!cell) return;
-        toggleCell(parseInt(cell.dataset.idx, 10));
-      });
-      gridEl.addEventListener('keydown', e => {
-        if (e.key !== 'Enter' && e.key !== ' ') return;
-        const cell = e.target.closest('[data-idx]');
-        if (!cell) return;
-        e.preventDefault();
-        const idx = parseInt(cell.dataset.idx, 10);
-        toggleCell(idx);
-        requestAnimationFrame(() => {
-          const restored = document.querySelector(`[data-idx="${idx}"]`);
-          if (restored) restored.focus();
-        });
-      });
-    }
-
-    // ── Boot ───────────────────────────────────────────────────────────────────
-
-    loadState();
-    bindInputs();
+    updateStepperLabel();
+    updateLegend();
+    renderGrid();
+    renderStats();
 
     document.addEventListener('lina:langchange', e => {
       T = e.detail.t;
+      updateStepperLabel();
       renderGrid();
+      renderStats();
     });
-
-    // Init Lucide icons once DOM is ready (i18n.js already waits for DOMContentLoaded)
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => lucide.createIcons());
-    } else {
-      lucide.createIcons();
-    }
 
   }());
   </script>
+
 </body>
 </html>

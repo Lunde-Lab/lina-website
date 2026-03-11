@@ -122,7 +122,7 @@
 
     /* ── Sections ── */
     section {
-      padding: 96px 24px;
+      padding: 64px 24px;
     }
 
     .container {
@@ -298,13 +298,13 @@
     }
 
     .step h3 {
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 600;
       letter-spacing: -0.01em;
     }
 
     .step p {
-      font-size: 15px;
+      font-size: 14px;
       color: var(--text-secondary);
       line-height: 1.6;
     }
@@ -348,7 +348,7 @@
     }
 
     .feature-card h3 {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
       letter-spacing: -0.01em;
     }
@@ -361,22 +361,24 @@
 
     .features-more {
       margin-top: 32px;
-      font-size: 15px;
+      font-size: 14px;
       color: var(--text-secondary);
       line-height: 1.65;
+      text-align: center;
     }
 
-    /* ── Two-col grid ── */
-    .two-col-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+    .problem-title {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
     }
 
-    @media (max-width: 680px) {
-      .two-col-grid {
-        grid-template-columns: 1fr;
-      }
+    .problem-description {
+      font-size: 15px;
+      color: var(--text-secondary);
+      max-width: 600px;
+      line-height: 1.75;
     }
 
     /* ── Privacy ── */
@@ -456,22 +458,24 @@
       max-width: 1080px;
       margin: 0 auto;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
+      gap: 20px;
     }
 
-    .footer-logo {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--primary);
+    .footer-top {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .footer-links {
       display: flex;
       gap: 24px;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     .footer-links a {
@@ -485,17 +489,34 @@
     }
 
     .footer-copy {
-      width: 100%;
       font-size: 13px;
       color: var(--text-secondary);
-      margin-top: 8px;
     }
 
-    @media (max-width: 600px) {
-      .footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    /* ── CTA ── */
+    #cta {
+      background: var(--primary);
+    }
+
+    .cta-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+
+    #cta h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    #cta p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 8px;
     }
 
     /* ── Hero CTAs ── */
@@ -646,13 +667,13 @@
           <h1 data-i18n="hero.title">One shared place for your child — across homes</h1>
           <p data-i18n="hero.description">Lina brings together everything your child needs: conversations, memories, schedules, and practical information — all in one calm, organized space.</p>
           <div class="hero-ctas">
-            <a href="#" class="btn-appstore" aria-label="Download on the App Store" data-i18n-aria="nav.appstoreAria">
+            <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store" data-i18n-aria="nav.appstoreAria">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
               </svg>
               <span data-i18n="hero.cta">Download on the App Store</span>
             </a>
-            <a href="#" class="btn-appstore" aria-label="Get it on Google Play" data-i18n-aria="hero.ctaPlayAria">
+            <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play" data-i18n-aria="hero.ctaPlayAria">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
               </svg>
@@ -720,7 +741,7 @@
   <section id="how-it-works">
     <div class="container">
       <p class="section-label" data-i18n="how.label">How it works</p>
-      <h2 data-i18n="how.title">Set up in minutes, use every day</h2>
+      <h2 data-i18n="how.title">Get started in minutes. Use it every day.</h2>
       <div class="steps">
         <div class="step">
           <div class="step-number">1</div>
@@ -744,9 +765,9 @@
   <!-- Problem -->
   <section id="problem">
     <div class="container">
-      <p class="section-label" data-i18n="problem.label">The problem</p>
-      <h2 style="font-size:28px;font-weight:600;letter-spacing:-0.02em;margin-bottom:20px;" data-i18n="problem.title">When care is split across two homes, details get lost</h2>
-      <p style="font-size:15px;color:var(--text-secondary);max-width:600px;line-height:1.75;" data-i18n="problem.description">When plans, messages and photos live in different apps, important things fall through the cracks. Lina brings everything into one shared structure — calm, clear and predictable.</p>
+      <p class="section-label" data-i18n="problem.label">Why Lina</p>
+      <h2 class="problem-title" data-i18n="problem.title">When care is split across two homes, details get lost</h2>
+      <p class="problem-description" data-i18n="problem.description">When plans, messages and photos live in different apps, important things fall through the cracks. Lina brings everything into one shared structure — calm, clear and predictable.</p>
     </div>
   </section>
 
@@ -772,7 +793,7 @@
             </svg>
           </div>
           <h3 data-i18n="features.messages.title">Messages</h3>
-          <p data-i18n="features.messages.description">Messages cannot be edited or deleted after sending. Search conversations and mark important messages. A reliable, unalterable record between two parents.</p>
+          <p data-i18n="features.messages.description">Messages cannot be edited or deleted after sending. Search conversations and mark important messages. A clear, permanent record between two parents.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -786,37 +807,7 @@
           <p data-i18n="features.album.description">A private photo album that both parents can add to and view. So neither parent misses the moments that happen in the other home.</p>
         </div>
       </div>
-      <p class="features-more" data-i18n="features.more">Lina also includes shared contacts, child information, equipment lists, and a care schedule for planning custody arrangements.</p>
-    </div>
-  </section>
-
-  <!-- For whom -->
-  <section id="for-whom">
-    <div class="container">
-      <div class="two-col-grid">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-          </div>
-          <h3 data-i18n="forWhom.forTitle">Who Lina is for</h3>
-          <p data-i18n="forWhom.forDescription">Parents who share care across two homes and want less friction in everyday cooperation. For those who value structure over noise and clarity over constant messaging.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"/>
-              <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
-            </svg>
-          </div>
-          <h3 data-i18n="forWhom.notTitle">What Lina is not</h3>
-          <p data-i18n="forWhom.notDescription">Not a social network, not a general family chat, and not built for endless conversation. Lina is a focused tool designed specifically for cooperation around your child.</p>
-        </div>
-      </div>
+      <p class="features-more" data-i18n="features.more">Also includes shared contacts, child information, equipment lists, and a care schedule.</p>
     </div>
   </section>
 
@@ -827,7 +818,7 @@
       <div class="privacy-inner">
 
         <div class="privacy-text">
-          <h2 data-i18n="privacy.title">Private by design.</h2>
+          <h2 data-i18n="privacy.title">Private by design</h2>
           <p class="privacy-lead" data-i18n="privacy.description">Lina is built with privacy as its foundation. Your data is protected through secure infrastructure, controlled access and signed links. There is no advertising, no data sharing and no algorithm deciding what you should see — only a secure, structured space for cooperation.</p>
         </div>
 
@@ -870,7 +861,7 @@
         </div>
 
       </div>
-      <p class="privacy-tagline" data-i18n="privacy.tagline">Lina is made for parents who share care across homes.</p>
+      <p class="privacy-tagline" data-i18n="privacy.tagline">Structured for cooperation. Private by default.</p>
     </div>
   </section>
 
@@ -881,7 +872,7 @@
 
         <div class="cs-promo-text">
           <p class="section-label" data-i18n="csSection.label">Care Schedule</p>
-          <h2 data-i18n="csSection.title">Plan your custody schedule together</h2>
+          <h2 data-i18n="csSection.title">Plan your care schedule together</h2>
           <p data-i18n="csSection.description">Lina's interactive care schedule lets both parents plan and visualize how time is shared across weeks. See day splits, weekend patterns, and handover frequency — all in one clear view.</p>
           <a href="care-schedule.html" class="btn-primary">
             <span data-i18n="csSection.cta">Open Care Schedule</span>
@@ -931,16 +922,42 @@
     </div>
   </section>
 
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-inner">
+        <h2 data-i18n="cta.title">One safe line between two parents.</h2>
+        <p data-i18n="cta.description">Download Lina and get started in minutes.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Download on the App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Get on Google Play</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
     <div class="footer-inner">
-      <img src="assets/logos/Logomark_1.svg" alt="Lina" height="24" />
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
-        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-        <a href="account-deletion.html">Account deletion</a>
-        <a href="#" data-i18n="footer.contact">Contact</a>
-      </nav>
+      <div class="footer-top">
+        <img src="assets/logos/Logomark_1.svg" alt="Lina" height="24" />
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="account-deletion.html">Account deletion</a>
+          <a href="#" data-i18n="footer.contact">Contact</a>
+        </nav>
+      </div>
       <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
     </div>
   </footer>

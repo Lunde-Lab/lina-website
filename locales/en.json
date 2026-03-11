@@ -16,13 +16,13 @@
   },
   "csSection": {
     "label": "Care Schedule",
-    "title": "Plan your custody schedule together",
+    "title": "Plan your care schedule together",
     "description": "Lina's interactive care schedule lets both parents plan and visualize how time is shared across weeks. See day splits, weekend patterns, and handover frequency — all in one clear view.",
     "cta": "Open Care Schedule"
   },
   "how": {
     "label": "How it works",
-    "title": "Set up in minutes, use every day",
+    "title": "Get started in minutes. Use it every day.",
     "step1": {
       "title": "Create a shared space",
       "description": "One parent sets up a space for the child. The other gets an invite to join. No complicated setup required."
@@ -45,16 +45,16 @@
     },
     "messages": {
       "title": "Messages",
-      "description": "Messages cannot be edited or deleted after sending. Search conversations and mark important messages. A reliable, unalterable record between two parents."
+      "description": "Messages cannot be edited or deleted after sending. Search conversations and mark important messages. A clear, permanent record between two parents."
     },
     "album": {
       "title": "Shared album",
       "description": "A private photo album that both parents can add to and view. So neither parent misses the moments that happen in the other home."
     },
-    "more": "Lina also includes shared contacts, child information, equipment lists, and a care schedule for planning custody arrangements."
+    "more": "Also includes shared contacts, child information, equipment lists, and a care schedule."
   },
   "problem": {
-    "label": "The problem",
+    "label": "Why Lina",
     "title": "When care is split across two homes, details get lost",
     "description": "When plans, messages and photos live in different apps, important things fall through the cracks. Lina brings everything into one shared structure — calm, clear and predictable."
   },
@@ -63,6 +63,10 @@
     "forDescription": "Parents who share care across two homes and want less friction in everyday cooperation. For those who value structure over noise and clarity over constant messaging.",
     "notTitle": "What Lina is not",
     "notDescription": "Not a social network, not a general family chat, and not built for endless conversation. Lina is a focused tool designed specifically for cooperation around your child."
+  },
+  "cta": {
+    "title": "One safe line between two parents.",
+    "description": "Download Lina and get started in minutes."
   },
   "footer": {
     "terms": "Terms of Service",
