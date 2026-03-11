@@ -62,7 +62,39 @@
     "households": {
       "title": "Rakennettu kahdelle kodille",
       "description": "Lina on suunniteltu erityisesti yhteishuoltajuuteen. Yksinkertainen, keskittynyt ja vapaa yleisen perhe-sovelluksen hälinästä."
-    }
+    },
+    "messages": {
+      "title": "Viestit",
+      "description": "Viestejä ei voi muokata tai poistaa lähettämisen jälkeen. Etsi keskusteluja ja merkitse tärkeitä viestejä. Selkeä, pysyvä kirjanpito kahden vanhemman välillä."
+    },
+    "more": "Sisältää myös jaetut yhteystiedot, lapsen tiedot, varustelistan ja hoitoaikataulun."
+  },
+  "problem": {
+    "label": "Miksi Lina",
+    "title": "Kun hoito jakautuu kahteen kotiin, yksityiskohdat katoavat",
+    "description": "Kun suunnitelmat, viestit ja kuvat asuvat eri sovelluksissa, tärkeät asiat putoavat halkeamiin. Lina kokoaa kaiken yhteen jaettuun rakenteeseen — rauhallinen, selkeä ja ennakoitava."
+  },
+  "privacy": {
+    "label": "Yksityisyys",
+    "title": "Yksityinen rakenteesta alkaen",
+    "description": "Lina on rakennettu yksityisyys perustanaan. Tietosi on suojattu turvallisen infrastruktuurin, hallitun pääsyn ja allekirjoitettujen linkkien avulla. Ei mainontaa, ei tietojen jakamista eikä algoritmia, joka päättää mitä näet — vain turvallinen, jäsennelty tila yhteistyölle.",
+    "point1": {
+      "title": "Ei mainontaa",
+      "description": "Kokemustasi ei koskaan muokkaa mainokset tai kaupalliset intressit."
+    },
+    "point2": {
+      "title": "Ei tietojen jakamista",
+      "description": "Tietosi pysyvät sinulla. Niitä ei koskaan jaeta kolmansille osapuolille."
+    },
+    "point3": {
+      "title": "Ei algoritmia",
+      "description": "Sinä päätät mitä näet — ei algoritmi, joka optimoi sitoutumista varten."
+    },
+    "tagline": "Jäsennelty yhteistyöhön. Yksityinen oletuksena."
+  },
+  "cta": {
+    "title": "Turvallinen yhteys kahden vanhemman välillä.",
+    "description": "Lataa Lina ja aloita muutamassa minuutissa."
   },
   "footer": {
     "terms": "Käyttöehdot",

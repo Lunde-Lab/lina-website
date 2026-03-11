@@ -64,6 +64,24 @@
     "notTitle": "What Lina is not",
     "notDescription": "Not a social network, not a general family chat, and not built for endless conversation. Lina is a focused tool designed specifically for cooperation around your child."
   },
+  "privacy": {
+    "label": "Privacy",
+    "title": "Private by design",
+    "description": "Lina is built with privacy as its foundation. Your data is protected through secure infrastructure, controlled access and signed links. There is no advertising, no data sharing and no algorithm deciding what you should see — only a secure, structured space for cooperation.",
+    "point1": {
+      "title": "No advertising",
+      "description": "Your experience is never shaped by ads or commercial interests."
+    },
+    "point2": {
+      "title": "No data sharing",
+      "description": "Your data stays yours. It is never shared with third parties."
+    },
+    "point3": {
+      "title": "No algorithm",
+      "description": "You decide what you see — not an algorithm optimizing for engagement."
+    },
+    "tagline": "Structured for cooperation. Private by default."
+  },
   "cta": {
     "title": "One safe line between two parents.",
     "description": "Download Lina and get started in minutes."

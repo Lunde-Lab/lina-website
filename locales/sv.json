@@ -62,7 +62,39 @@
     "households": {
       "title": "Byggt för två hushåll",
       "description": "Lina är speciellt utformad för delat föräldraskap. Enkel, fokuserad och fri från bruset i en vanlig familjeapp."
-    }
+    },
+    "messages": {
+      "title": "Meddelanden",
+      "description": "Meddelanden kan inte redigeras eller raderas efter att de har skickats. Sök i konversationer och markera viktiga meddelanden. Ett tydligt, permanent register mellan två föräldrar."
+    },
+    "more": "Inkluderar även delade kontakter, barnuppgifter, utrustningslistor och ett vårdschema."
+  },
+  "problem": {
+    "label": "Varför Lina",
+    "title": "När omsorgen delas mellan två hem, tappas detaljer bort",
+    "description": "När planer, meddelanden och foton lever i olika appar, faller viktiga saker mellan stolarna. Lina samlar allt i en gemensam struktur — lugn, tydlig och förutsägbar."
+  },
+  "privacy": {
+    "label": "Integritet",
+    "title": "Privat från grunden",
+    "description": "Lina är byggd med integritet som grund. Dina data skyddas genom säker infrastruktur, kontrollerad åtkomst och signerade länkar. Det finns ingen reklam, ingen datadelning och ingen algoritm som bestämmer vad du ska se — bara ett säkert, strukturerat utrymme för samarbete.",
+    "point1": {
+      "title": "Ingen reklam",
+      "description": "Din upplevelse formas aldrig av annonser eller kommersiella intressen."
+    },
+    "point2": {
+      "title": "Ingen datadelning",
+      "description": "Dina data är dina. De delas aldrig med tredje part."
+    },
+    "point3": {
+      "title": "Ingen algoritm",
+      "description": "Du bestämmer vad du ser — inte en algoritm som optimerar för engagemang."
+    },
+    "tagline": "Strukturerad för samarbete. Privat som standard."
+  },
+  "cta": {
+    "title": "En säker linje mellan två föräldrar.",
+    "description": "Ladda ner Lina och kom igång på minuter."
   },
   "footer": {
     "terms": "Användarvillkor",

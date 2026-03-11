@@ -48,7 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const saved = localStorage.getItem('lina-lang');
-  const browser = navigator.language.split('-')[0];
+  const rawBrowser = navigator.language.split('-')[0];
+  const browser = rawBrowser === 'nb' || rawBrowser === 'nn' ? 'no' : rawBrowser;
   const initial = SUPPORTED_LANGS.includes(saved) ? saved
     : SUPPORTED_LANGS.includes(browser) ? browser
     : DEFAULT_LANG;

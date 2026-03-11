@@ -62,7 +62,39 @@
     "households": {
       "title": "Bygget for to hjem",
       "description": "Lina er spesielt utviklet for delt omsorg. Enkelt, fokusert og fritt fra støyen i en generell familie-app."
-    }
+    },
+    "messages": {
+      "title": "Meldinger",
+      "description": "Meldinger kan ikke redigeres eller slettes etter sending. Søk i samtaler og merk viktige meldinger. Et tydelig, permanent register mellom to foreldre."
+    },
+    "more": "Inkluderer også delte kontakter, barneinformasjon, utstyrslister og samværsplan."
+  },
+  "problem": {
+    "label": "Hvorfor Lina",
+    "title": "Når omsorgen er fordelt mellom to hjem, går detaljer tapt",
+    "description": "Når planer, meldinger og bilder lever i forskjellige apper, faller viktige ting mellom stolene. Lina samler alt i én felles struktur — rolig, tydelig og forutsigbar."
+  },
+  "privacy": {
+    "label": "Personvern",
+    "title": "Privatliv fra grunnen av",
+    "description": "Lina er bygget med personvern som fundament. Dine data er beskyttet gjennom sikker infrastruktur, kontrollert tilgang og signerte lenker. Det er ingen reklame, ingen datadeling og ingen algoritme som bestemmer hva du skal se — bare et trygt, strukturert sted for samarbeid.",
+    "point1": {
+      "title": "Ingen reklame",
+      "description": "Din opplevelse er aldri påvirket av annonser eller kommersielle interesser."
+    },
+    "point2": {
+      "title": "Ingen datadeling",
+      "description": "Dine data er dine. De deles aldri med tredjeparter."
+    },
+    "point3": {
+      "title": "Ingen algoritme",
+      "description": "Du bestemmer hva du ser — ikke en algoritme som optimerer for engasjement."
+    },
+    "tagline": "Strukturert for samarbeid. Privat som standard."
+  },
+  "cta": {
+    "title": "En trygg linje mellom to foreldre.",
+    "description": "Last ned Lina og kom i gang på minutter."
   },
   "footer": {
     "terms": "Vilkår for bruk",
