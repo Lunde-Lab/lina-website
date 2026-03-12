@@ -102,6 +102,12 @@
     "contact": "Kontakt",
     "copy": "© 2026 Lina. Alle rettigheder forbeholdes."
   },
+  "contact": {
+    "pageTitle": "Kontakt — Lina",
+    "heading": "Kontakt",
+    "intro": "Har du spørgsmål om Lina eller brug for hjælp med din konto? Vi er her for at hjælpe — skriv til os, så vender vi tilbage hurtigst muligt.",
+    "emailLabel": "Send os en e-mail"
+  },
   "cs": {
     "pageTitle": "Samværsplan — Lina",
     "heading": "Samværsplan",

@@ -92,6 +92,12 @@
     "contact": "Contact",
     "copy": "© 2026 Lina. All rights reserved."
   },
+  "contact": {
+    "pageTitle": "Contact — Lina",
+    "heading": "Contact",
+    "intro": "Have a question about Lina or need help with your account? We're here to help — reach out and we'll get back to you as soon as we can.",
+    "emailLabel": "Send us an email"
+  },
   "cs": {
     "pageTitle": "Care Schedule — Lina",
     "heading": "Care Schedule",

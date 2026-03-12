@@ -102,6 +102,12 @@
     "contact": "Kontakt",
     "copy": "© 2026 Lina. Alla rättigheter förbehållna."
   },
+  "contact": {
+    "pageTitle": "Kontakt — Lina",
+    "heading": "Kontakt",
+    "intro": "Har du frågor om Lina eller behöver hjälp med ditt konto? Vi finns här — hör av dig så svarar vi så snart vi kan.",
+    "emailLabel": "Skicka ett e-postmeddelande"
+  },
   "cs": {
     "pageTitle": "Vårdschema — Lina",
     "heading": "Vårdschema",

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="assets/logos/Logomark_1.svg" />
   <title>Care Schedule — Lina</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -569,7 +570,7 @@
           <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
           <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
           <a href="account-deletion.html">Account deletion</a>
-          <a href="#" data-i18n="footer.contact">Contact</a>
+          <a href="contact.html" data-i18n="footer.contact">Contact</a>
         </nav>
       </div>
       <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
@@ -925,6 +926,7 @@
       }
 
       const daysTxt = 'days';
+      const logoSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 189.82" height="28" style="display:block;margin-bottom:12px;"><defs><style>.cls-1{fill:#0d6b64;}</style></defs><g><g><path class="cls-1" d="M90.12,142.08V45.36c0-.11,0-.22,0-.32s0-.22,0-.33V41.87H90A45,45,0,0,0,45.11,0,45.08,45.08,0,0,0,0,45v71.17l0,0v71H45.08a45,45,0,0,0,45-45"/><path class="cls-1" d="M174,110.28a45,45,0,0,0-76.89,31.79A51.88,51.88,0,0,1,71,187.17h71.18A45.06,45.06,0,0,0,174,110.28"/><polygon class="cls-1" points="223.55 187.42 223.55 9.32 265.87 9.32 265.87 152.52 341.29 152.52 341.29 187.42 223.55 187.42"/><path class="cls-1" d="M382.64,40.52a22,22,0,0,1-15.53-5.86,18.75,18.75,0,0,1-6.34-14.34,18.88,18.88,0,0,1,6.34-14.46,23.36,23.36,0,0,1,30.95,0,18.88,18.88,0,0,1,6.34,14.46,18.75,18.75,0,0,1-6.34,14.34,21.86,21.86,0,0,1-15.42,5.86M361.85,55.46h41.6v132h-41.6Z"/><path class="cls-1" d="M471.58,112.84v74.58H430v-132h39.57l.6,33.71H467.4Q472.53,73,483.12,63.29t28.38-9.74q14,0,24.21,6.15a41.41,41.41,0,0,1,15.84,17.45q5.61,11.31,5.61,26.48v83.79H515.57V111.76q0-11.24-5.68-17.51T494.05,88a23.15,23.15,0,0,0-11.77,2.93,19.93,19.93,0,0,0-7.89,8.43,29.36,29.36,0,0,0-2.81,13.51"/><path class="cls-1" d="M621.35,189.82a55.86,55.86,0,0,1-22.71-4.37,34.74,34.74,0,0,1-15.54-13q-5.62-8.59-5.62-21.75,0-11,3.89-18.53A32.87,32.87,0,0,1,592.12,120,52.74,52.74,0,0,1,608,112.72a101.47,101.47,0,0,1,19.13-3.35q11.34-1,18.28-2.09t10-3.35a7.13,7.13,0,0,0,3.1-6.16v-.59a13.21,13.21,0,0,0-2.15-7.59,13.43,13.43,0,0,0-6.15-4.84,25.24,25.24,0,0,0-9.75-1.68,27.36,27.36,0,0,0-10.1,1.73,18.81,18.81,0,0,0-7.17,4.85,15.93,15.93,0,0,0-3.76,7.29l-37.89-3.82a44.32,44.32,0,0,1,9.86-20.87q7.58-8.9,20.14-13.8t29.64-4.9a89.12,89.12,0,0,1,23.43,2.93,58.17,58.17,0,0,1,18.7,8.6A38.6,38.6,0,0,1,700,98v89.4H660.55V168.9h-.95a38.42,38.42,0,0,1-9,11.47,36.91,36.91,0,0,1-12.73,7,52.63,52.63,0,0,1-16.49,2.4M634,162.32a28,28,0,0,0,12.61-2.81,22.41,22.41,0,0,0,9-7.77,20.1,20.1,0,0,0,3.29-11.41V127.78a19.83,19.83,0,0,1-4.3,1.73q-2.64.78-5.74,1.5t-6.39,1.25l-6.4,1a35.51,35.51,0,0,0-10.28,2.86,16.74,16.74,0,0,0-6.57,5.15,12.36,12.36,0,0,0-2.27,7.52,12.18,12.18,0,0,0,2.21,7.36,13.56,13.56,0,0,0,6,4.6,23.5,23.5,0,0,0,8.85,1.55"/></g></g></svg>`;
       const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"/>
         <title>Care Schedule</title>
         <style>
@@ -935,10 +937,12 @@
           .stat-card{border:1px solid #DEDFE2;border-radius:8px;padding:10px 14px;}
           .st{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:#50565E;margin-bottom:6px;}
           .sr{display:flex;justify-content:space-between;font-size:11px;margin-bottom:2px;}
+          .pdf-footer{margin-top:32px;padding-top:16px;border-top:1px solid #DEDFE2;}
           * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
           @media print{@page{margin:12mm;}}
         </style>
       </head><body>
+        ${logoSvg}
         <h1>Care Schedule</h1>
         <p class="meta">${esc(la)} &amp; ${esc(lb)} · ${state.weeks} weeks · ${state.weeks * 7} days</p>
         <div class="stats">
@@ -960,6 +964,11 @@
           </div>
         </div>
         ${tablesHtml}
+        <div class="pdf-footer">
+          <p style="font-size:12px;color:#50565E;margin:0 0 4px;">One shared place for your child — across homes</p>
+          <p style="font-size:12px;color:#0D6B64;font-weight:600;margin:0 0 4px;">Download Lina on the App Store and Google Play</p>
+          <p style="font-size:12px;color:#A1A7AF;margin:0;">getlina.app</p>
+        </div>
       </body></html>`;
 
       const win = window.open('', '_blank');
