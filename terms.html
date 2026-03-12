@@ -68,22 +68,48 @@
     .lang-btn.active { color: var(--primary); font-weight: 600; }
 
     /* ── Footer ── */
-    footer { border-top: 1px solid var(--border); padding: 40px 24px; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+    }
+
     .footer-inner {
       max-width: 1080px;
       margin: 0 auto;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
+      gap: 20px;
     }
-    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
-    .footer-links a { font-size: 14px; color: var(--text-secondary); transition: color 0.15s; }
-    .footer-links a:hover { color: var(--text); }
-    .footer-copy { width: 100%; font-size: 13px; color: var(--text-secondary); margin-top: 8px; }
-    @media (max-width: 600px) {
-      .footer-inner { flex-direction: column; align-items: flex-start; }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      font-size: 14px;
+      color: var(--text-secondary);
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-secondary);
     }
 
     /* ── Terms content ── */
@@ -441,13 +467,15 @@
   <!-- Footer -->
   <footer>
     <div class="footer-inner">
-      <img src="assets/logos/Logomark_1.svg" alt="Lina" height="24" />
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
-        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-        <a href="account-deletion.html">Account deletion</a>
-        <a href="#" data-i18n="footer.contact">Contact</a>
-      </nav>
+      <div class="footer-top">
+        <img src="assets/logos/Logomark_1.svg" alt="Lina" height="24" />
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="account-deletion.html">Account deletion</a>
+          <a href="#" data-i18n="footer.contact">Contact</a>
+        </nav>
+      </div>
       <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
     </div>
   </footer>
