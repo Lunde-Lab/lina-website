@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="assets/logos/Logomark_1.svg" />
   <title>Lina — Co-parenting, simplified</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -566,67 +567,11 @@
 
     .cs-promo-visual { flex-shrink: 0; }
 
-    .mini-schedule {
-      width: 316px;
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
-    }
-
-    .mini-sch-header,
-    .mini-sch-row {
-      display: grid;
-      grid-template-columns: 32px repeat(7, 1fr);
-    }
-
-    .mini-sch-header {
-      background: var(--bg);
-      border-bottom: 2px solid var(--border);
-    }
-
-    .mini-sch-header > div {
-      padding: 7px 2px;
-      text-align: center;
-      font-size: 9px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-secondary);
-    }
-
-    .mini-sch-header > .mc-we-h { background: #F4F4F0; }
-
-    .mini-sch-row { border-bottom: 1px solid var(--border); }
-    .mini-sch-row:last-child { border-bottom: none; }
-
-    .mini-sch-label {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 9px;
-      font-weight: 600;
-      color: var(--text-secondary);
-      border-right: 1px solid var(--border);
-    }
-
-    .mini-cell {
-      height: 32px;
-      border-left: 1px solid var(--border);
-    }
-
-    .mini-cell.mc-we:not(.mc-a):not(.mc-b) { background: #F4F4F0; }
-    .mini-cell.mc-sep { border-left: 2px solid #C8C8C2; }
-    .mini-cell.mc-a { background: var(--primary); }
-    .mini-cell.mc-b { background: #E0A040; }
-
     @media (max-width: 800px) {
       .cs-promo-inner {
         flex-direction: column;
         gap: 40px;
       }
-      .mini-schedule { width: 100%; max-width: 316px; }
     }
   </style>
 </head>
@@ -861,41 +806,7 @@
         </div>
 
         <div class="cs-promo-visual" aria-hidden="true">
-          <div class="mini-schedule">
-            <div class="mini-sch-header">
-              <div></div>
-              <div>M</div><div>T</div><div>W</div><div>T</div>
-              <div class="mc-we-h">F</div><div class="mc-we-h">S</div><div class="mc-we-h">S</div>
-            </div>
-            <div class="mini-sch-row">
-              <div class="mini-sch-label">W1</div>
-              <div class="mini-cell mc-a"></div><div class="mini-cell mc-a"></div>
-              <div class="mini-cell mc-a"></div><div class="mini-cell mc-b mc-sep"></div>
-              <div class="mini-cell mc-b mc-we"></div><div class="mini-cell mc-b mc-we"></div>
-              <div class="mini-cell mc-b mc-we"></div>
-            </div>
-            <div class="mini-sch-row">
-              <div class="mini-sch-label">W2</div>
-              <div class="mini-cell mc-b"></div><div class="mini-cell mc-b"></div>
-              <div class="mini-cell mc-b"></div><div class="mini-cell mc-a mc-sep"></div>
-              <div class="mini-cell mc-a mc-we"></div><div class="mini-cell mc-a mc-we"></div>
-              <div class="mini-cell mc-a mc-we"></div>
-            </div>
-            <div class="mini-sch-row">
-              <div class="mini-sch-label">W3</div>
-              <div class="mini-cell mc-a"></div><div class="mini-cell mc-a"></div>
-              <div class="mini-cell mc-b"></div><div class="mini-cell mc-b mc-sep"></div>
-              <div class="mini-cell mc-b mc-we"></div><div class="mini-cell mc-b mc-we"></div>
-              <div class="mini-cell mc-b mc-we"></div>
-            </div>
-            <div class="mini-sch-row">
-              <div class="mini-sch-label">W4</div>
-              <div class="mini-cell mc-a"></div><div class="mini-cell mc-a"></div>
-              <div class="mini-cell mc-a"></div><div class="mini-cell mc-a mc-sep"></div>
-              <div class="mini-cell mc-a mc-we"></div><div class="mini-cell mc-a mc-we"></div>
-              <div class="mini-cell mc-b mc-we"></div>
-            </div>
-          </div>
+          <img src="assets/images/CareSchedule.png" alt="Care Schedule" style="width: 417px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);" />
         </div>
 
       </div>
