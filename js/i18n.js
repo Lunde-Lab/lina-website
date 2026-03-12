@@ -8,7 +8,7 @@ function get(obj, path) {
 
 async function load(lang) {
   if (cache[lang]) return cache[lang];
-  const res = await fetch(`locales/${lang}.json`);
+  const res = await fetch(`/locales/${lang}.json`);
   cache[lang] = await res.json();
   return cache[lang];
 }
