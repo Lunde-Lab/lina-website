@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n-title="contact.pageTitle">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Account deletion — Lina</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logos/Logomark_1.svg" />
+  <title>Contact — Lina</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -103,94 +104,68 @@
       transition: color 0.15s;
     }
 
-    .footer-links a:hover {
-      color: var(--text);
-    }
+    .footer-links a:hover { color: var(--text); }
 
     .footer-copy {
       font-size: 13px;
       color: var(--text-secondary);
     }
 
-    /* ── Page content ── */
-    .deletion-main { padding: 56px 24px 96px; }
+    /* ── Contact content ── */
+    .contact-main { padding: 56px 24px 96px; }
 
-    .deletion-container {
+    .contact-container {
       max-width: 720px;
       margin: 0 auto;
     }
 
-    .deletion-container h1 {
+    .contact-container h1 {
       font-size: 28px;
       font-weight: 600;
       letter-spacing: -0.02em;
       color: var(--text);
-      margin-bottom: 40px;
+      margin-bottom: 16px;
     }
 
-    .deletion-divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 48px 0;
-    }
-
-    .deletion-section { margin-bottom: 36px; }
-
-    .deletion-section h2 {
+    .contact-intro {
       font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      letter-spacing: -0.01em;
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .deletion-section h3 {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text);
-      margin-top: 20px;
-      margin-bottom: 8px;
-    }
-
-    .deletion-section p {
-      font-size: 15px;
-      color: var(--text-secondary);
       line-height: 1.75;
-      margin-bottom: 12px;
-    }
-
-    .deletion-section p:last-child { margin-bottom: 0; }
-
-    .deletion-section ul {
-      margin: 8px 0 12px 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .deletion-section ul li {
-      font-size: 15px;
       color: var(--text-secondary);
-      line-height: 1.7;
+      margin-bottom: 40px;
+      max-width: 520px;
     }
 
-    .deletion-section ol {
-      margin: 8px 0 12px 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
+    .contact-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 24px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 10px;
+      transition: background 0.15s;
+      text-decoration: none;
     }
 
-    .deletion-section ol li {
+    .contact-cta:hover { background: var(--primary-dark); }
+
+    .contact-cta-icon {
+      flex-shrink: 0;
+      opacity: 0.9;
+    }
+
+    .contact-cta-label {
       font-size: 15px;
-      color: var(--text-secondary);
-      line-height: 1.7;
+      font-weight: 600;
+      display: block;
+      line-height: 1.3;
     }
 
-    .link-primary {
-      color: var(--primary);
+    .contact-cta-address {
+      font-size: 13px;
+      opacity: 0.75;
+      display: block;
+      line-height: 1.3;
     }
   </style>
 </head>
@@ -210,39 +185,22 @@
     </div>
   </nav>
 
-  <main class="deletion-main">
-    <div class="deletion-container">
+  <main class="contact-main">
+    <div class="contact-container">
 
-      <h1>Account deletion</h1>
+      <h1 data-i18n="contact.heading">Contact</h1>
+      <p class="contact-intro" data-i18n="contact.intro">Have a question about Lina or need help with your account? We're here to help — reach out and we'll get back to you as soon as we can.</p>
 
-      <div class="deletion-section">
-        <h2>How to delete your account</h2>
-        <p>Users can request deletion of their Lina account in one of the following ways.</p>
-
-        <h3>In the app</h3>
-        <ol>
-          <li>Open Lina</li>
-          <li>Go to Settings</li>
-          <li>Select "Delete account"</li>
-          <li>Confirm the request</li>
-        </ol>
-
-        <h3>By email</h3>
-        <p>If you cannot access the app, contact us at: <a href="mailto:support@getlina.app" class="link-primary">support@getlina.app</a> — please include the email address associated with your Lina account.</p>
-      </div>
-
-      <hr class="deletion-divider" />
-
-      <div class="deletion-section">
-        <h2>What happens when you delete your account</h2>
-        <p>When your account is deleted:</p>
-        <ul>
-          <li>Your personal account information (such as email address and profile data) is removed</li>
-          <li>Your access to Lina is permanently disabled</li>
-        </ul>
-        <p>Shared content (such as messages, photos, and lists) is not automatically deleted, as it may be shared with another parent. This data remains available to the other connected parent.</p>
-        <p>Some information may be retained temporarily where required by law or for security purposes, after which it is deleted or anonymised.</p>
-      </div>
+      <a href="mailto:hello@lina.app" class="contact-cta">
+        <svg class="contact-cta-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        <span>
+          <span class="contact-cta-label" data-i18n="contact.emailLabel">Send us an email</span>
+          <span class="contact-cta-address">hello@lina.app</span>
+        </span>
+      </a>
 
     </div>
   </main>
@@ -253,10 +211,10 @@
       <div class="footer-top">
         <img src="assets/logos/Logomark_1.svg" alt="Lina" height="24" />
         <nav class="footer-links" aria-label="Footer navigation">
-          <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
-          <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
           <a href="account-deletion.html">Account deletion</a>
-          <a href="#" data-i18n="footer.contact">Contact</a>
+          <a href="contact.html" data-i18n="footer.contact">Contact</a>
         </nav>
       </div>
       <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
