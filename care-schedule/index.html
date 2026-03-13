@@ -244,6 +244,13 @@
     .legend-swatch-a { background: var(--primary); }
     .legend-swatch-b { background: var(--amber); }
 
+    .btn-active {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+    .btn-active:hover { background: #2c333b; }
+
     /* ── Grid ── */
     .grid-scroll {
       overflow-x: auto;
@@ -289,6 +296,14 @@
       min-width: 34px;
     }
     .th-day.weekend { color: var(--text-secondary); }
+    .th-date {
+      font-size: 9px;
+      font-weight: 400;
+      color: var(--text-muted);
+      text-transform: none;
+      letter-spacing: 0;
+      margin-top: 2px;
+    }
 
     /* Week separator in data row */
     .td-week-sep { padding-left: 6px; }
@@ -455,7 +470,42 @@
       .cell { width: 100%; height: auto; aspect-ratio: 1; border-radius: 6px; }
     }
 
-    @media print { nav, footer, .btn-row, .export-card { display: none !important; } }
+    /* ── CTA section ── */
+    #cta { background: var(--primary); padding: 64px 24px; }
+    .cta-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+    #cta h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    #cta p { font-size: 16px; color: rgba(255,255,255,0.75); margin-bottom: 8px; }
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--text);
+      color: #fff;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    @media print { nav, footer, .btn-row, .export-card, #cta { display: none !important; } }
   </style>
 </head>
 <body>
@@ -495,8 +545,13 @@
               <label for="input-b" data-i18n="cs.labelParentB">Parent B name</label>
               <input id="input-b" type="text" autocomplete="off" spellcheck="false" placeholder="Parent B" />
             </div>
+            <div class="input-field" id="date-field" style="display:none;">
+              <label for="input-start-date" data-i18n="cs.labelStartDate">Start date</label>
+              <input id="input-start-date" type="date" />
+            </div>
           </div>
           <div class="btn-row">
+            <button class="btn" id="btn-toggle-dates" data-i18n="cs.toggleDates">Dates</button>
             <div class="stepper">
               <button class="stepper-btn" id="btn-minus" aria-label="Remove week">−</button>
               <div class="stepper-label" id="stepper-label">2 weeks</div>
@@ -542,6 +597,28 @@
     </div>
   </main>
 
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-inner">
+      <h2 data-i18n="cta.title">One safe line between two parents.</h2>
+      <p data-i18n="cta.description">Download Lina and get started in minutes.</p>
+      <div class="hero-ctas">
+        <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          <span data-i18n="hero.cta">Download on the App Store</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+          </svg>
+          <span data-i18n="hero.ctaPlay">Get on Google Play</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
     <div class="footer-inner">
@@ -579,6 +656,8 @@
         nameA: '',
         nameB: '',
         weeks: 2,
+        useDates: false,
+        startDate: '',
         // assignment[i] = 'A' | 'B' | null per day
         assignment: Array(14).fill(null)
       };
@@ -597,6 +676,8 @@
         state.nameA = p.nameA || '';
         state.nameB = p.nameB || '';
         state.weeks = Math.max(MIN_WEEKS, Math.min(MAX_WEEKS, p.weeks | 0)) || MIN_WEEKS;
+        state.useDates = !!p.useDates;
+        state.startDate = p.startDate || '';
         const len = state.weeks * 7;
         if (Array.isArray(p.assignment)) {
           const a = p.assignment.slice(0, len);
@@ -646,6 +727,22 @@
     function dayLabel(i) { return (T && T.cs) ? (T.cs[['mon','tue','wed','thu','fri','sat','sun'][i]] || DAYS[i]) : DAYS[i]; }
     function weeksLabel(n) { return (T && T.cs) ? n + ' ' + (T.cs.labelWeeks || 'weeks') : n + ' weeks'; }
 
+    // ── Date helpers ─────────────────────────────────────────────────────────
+    function snapToMonday(dateStr) {
+      const d = new Date(dateStr + 'T00:00:00');
+      const dow = d.getDay(); // 0=Sun
+      const diff = dow === 0 ? -6 : 1 - dow;
+      d.setDate(d.getDate() + diff);
+      return d.toISOString().slice(0, 10);
+    }
+    function dateForIdx(globalDayIdx) {
+      if (!state.useDates || !state.startDate) return null;
+      const d = new Date(state.startDate + 'T00:00:00');
+      d.setDate(d.getDate() + globalDayIdx);
+      return d;
+    }
+    function formatDateShort(d) { return d.getDate(); }
+
     // ── Render grid ──────────────────────────────────────────────────────────
     function renderGrid() {
       const container = document.getElementById('schedule-grid');
@@ -680,9 +777,10 @@
         html += `<tr>`;
         for (let w = 0; w < weeksInRow; w++) {
           for (let d = 0; d < 7; d++) {
-            const dow = d;
-            const isWe = dow >= 5;
-            html += `<th class="th-day${isWe ? ' weekend' : ''}">${dayLabel(d)}</th>`;
+            const isWe = d >= 5;
+            const dateD = dateForIdx(baseDayIdx + w * 7 + d);
+            const dateSub = dateD ? `<div class="th-date">${formatDateShort(dateD)}</div>` : '';
+            html += `<th class="th-day${isWe ? ' weekend' : ''}">${dayLabel(d)}${dateSub}</th>`;
           }
           if (w < weeksInRow - 1) html += `<th style="width:14px;"></th>`;
         }
@@ -867,13 +965,22 @@
         const weeksInRow = Math.min(WEEKS_PER_ROW_DESKTOP, state.weeks - startWeek);
         const baseDayIdx = startWeek * 7;
 
+        const showLabel = row === 0;
+        const labelSpacer = showLabel ? `<th style="width:80px;"></th>` : '';
+
         const weekHeaders = Array.from({length: weeksInRow}).map((_,w) =>
           `<th colspan="7" style="font-size:10px;font-weight:600;color:#50565E;text-align:center;padding:4px 0;">Week ${startWeek+w+1}</th>`
         ).join('');
 
-        const dayHeaders = Array.from({length: weeksInRow * 7}).map((_,i) =>
-          `<th style="font-size:9px;font-weight:600;color:#A1A7AF;text-align:center;padding:0 0 4px;min-width:20px;">${DAYS[i%7]}</th>`
-        ).join('');
+        const dayHeaders = Array.from({length: weeksInRow * 7}).map((_,i) => {
+          const dateD = state.useDates && state.startDate ? (() => {
+            const d = new Date(state.startDate + 'T00:00:00');
+            d.setDate(d.getDate() + baseDayIdx + i);
+            return d;
+          })() : null;
+          const dateSub = dateD ? `<div style="font-size:8px;font-weight:400;color:#A1A7AF;margin-top:1px;">${dateD.getDate()}</div>` : '';
+          return `<th style="font-size:9px;font-weight:600;color:#A1A7AF;text-align:center;padding:0 0 4px;min-width:20px;">${DAYS[i%7]}${dateSub}</th>`;
+        }).join('');
 
         const makeRow = (parent, label, color) => {
           const cells = Array.from({length: weeksInRow * 7}).map((_,i) => {
@@ -883,13 +990,16 @@
             const border = on ? (parent === 'A' ? '#7BB8B3' : '#D4A055') : '#DEDFE2';
             return `<td style="width:28px;height:28px;border-radius:6px;border:1px solid ${border};background:${bg};"></td>`;
           }).join('');
-          return `<tr>${cells}</tr>`;
+          const labelTd = showLabel
+            ? `<td style="font-size:11px;font-weight:600;color:#1A1E23;white-space:nowrap;padding-right:10px;border-left:3px solid ${color};padding-left:6px;vertical-align:middle;">${esc(label)}</td>`
+            : '';
+          return `<tr>${labelTd}${cells}</tr>`;
         };
 
         tablesHtml += `<table style="border-collapse:separate;border-spacing:4px;margin-bottom:12px;">
           <thead>
-            <tr>${weekHeaders}</tr>
-            <tr>${dayHeaders}</tr>
+            <tr>${labelSpacer}${weekHeaders}</tr>
+            <tr>${labelSpacer}${dayHeaders}</tr>
           </thead>
           <tbody>
             ${makeRow('A', la, '#0D6B64')}
@@ -943,7 +1053,7 @@
         ${tablesHtml}
         <div class="pdf-footer" style="text-align:center;">
           <p style="margin:0 0 4px;font-size:12px;color:#50565E;">One shared place for your child — across homes</p>
-          <p style="margin:0;font-size:12px;font-weight:600;color:#0D6B64;">Download Lina on the App Store and Google Play · <span style="font-weight:400;color:#A1A7AF;">getlina.app</span></p>
+          <p style="margin:0;font-size:12px;font-weight:600;color:#0D6B64;">Download Lina on <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" style="color:#0D6B64;">the App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" style="color:#0D6B64;">Google Play</a> · <span style="font-weight:400;color:#A1A7AF;">getlina.app</span></p>
         </div>
       </body></html>`;
 
@@ -978,6 +1088,47 @@
       renderStats();
     });
 
+    // Bind date toggle
+    const btnToggleDates = document.getElementById('btn-toggle-dates');
+    const dateField = document.getElementById('date-field');
+    const inputStartDate = document.getElementById('input-start-date');
+
+    function applyDateToggleUI() {
+      if (state.useDates) {
+        btnToggleDates.classList.add('btn-active');
+        dateField.style.display = '';
+      } else {
+        btnToggleDates.classList.remove('btn-active');
+        dateField.style.display = 'none';
+      }
+    }
+
+    inputStartDate.value = state.startDate;
+    applyDateToggleUI();
+
+    btnToggleDates.addEventListener('click', () => {
+      state.useDates = !state.useDates;
+      if (state.useDates && !state.startDate) {
+        const today = new Date().toISOString().slice(0, 10);
+        state.startDate = snapToMonday(today);
+        inputStartDate.value = state.startDate;
+      }
+      save();
+      applyDateToggleUI();
+      renderGrid();
+    });
+
+    inputStartDate.addEventListener('change', () => {
+      if (inputStartDate.value) {
+        state.startDate = snapToMonday(inputStartDate.value);
+        inputStartDate.value = state.startDate;
+      } else {
+        state.startDate = '';
+      }
+      save();
+      renderGrid();
+    });
+
     document.getElementById('btn-minus').addEventListener('click', () => setWeeks(state.weeks - 1));
     document.getElementById('btn-plus').addEventListener('click', () => setWeeks(state.weeks + 1));
     document.getElementById('btn-reset').addEventListener('click', () => {
@@ -996,6 +1147,7 @@
     document.addEventListener('lina:langchange', e => {
       T = e.detail.t;
       updateStepperLabel();
+      if (T && T.cs && T.cs.toggleDates) btnToggleDates.textContent = T.cs.toggleDates;
       renderGrid();
       renderStats();
     });

@@ -108,6 +108,7 @@
     "labelWeeks": "Number of weeks",
     "addWeek": "Add week",
     "removeWeek": "Remove week",
+    "toggleDates": "Dates",
     "reset": "Reset",
     "exportPdf": "Export to PDF",
     "week": "Week",
