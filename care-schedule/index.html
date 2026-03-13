@@ -277,8 +277,6 @@
       padding: 2px 6px 6px;
       letter-spacing: 0.04em;
     }
-    .th-week-spacer { width: 120px; }
-
     /* Day header row */
     .th-day {
       font-size: 10px;
@@ -291,31 +289,6 @@
       min-width: 34px;
     }
     .th-day.weekend { color: var(--text-secondary); }
-    .th-day.week-sep { padding-left: 10px; }
-
-    /* Row label */
-    .td-label {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text);
-      padding: 0 10px 4px 0;
-      white-space: nowrap;
-      vertical-align: middle;
-      position: sticky;
-      left: 0;
-      background: var(--surface-card);
-      z-index: 2;
-    }
-    .td-label-inner {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      border-left: 3px solid transparent;
-      padding-left: 8px;
-      height: 34px;
-    }
-    .td-label-inner.label-a { border-color: var(--primary); }
-    .td-label-inner.label-b { border-color: var(--amber); }
 
     /* Week separator in data row */
     .td-week-sep { padding-left: 6px; }
@@ -475,6 +448,12 @@
       .export-card .card { flex-direction: column; align-items: flex-start; }
     }
 
+    @media (max-width: 480px) {
+      .cell { width: 26px; height: 26px; border-radius: 6px; }
+      .schedule-table { border-spacing: 3px; }
+      .th-day { min-width: 26px; }
+    }
+
     @media print { nav, footer, .btn-row, .export-card { display: none !important; } }
   </style>
 </head>
@@ -588,7 +567,8 @@
     const DAYS_I18N = ['cs.mon','cs.tue','cs.wed','cs.thu','cs.fri','cs.sat','cs.sun'];
     const MAX_WEEKS = 12;
     const MIN_WEEKS = 2;
-    const WEEKS_PER_ROW = 2;
+    const WEEKS_PER_ROW_DESKTOP = 2;
+    function getWeeksPerRow() { return window.innerWidth <= 640 ? 1 : WEEKS_PER_ROW_DESKTOP; }
 
     let T = null;
     let state = defaultState();
@@ -670,12 +650,13 @@
       const container = document.getElementById('schedule-grid');
       if (!container) return;
 
-      const rowCount = Math.ceil(state.weeks / WEEKS_PER_ROW);
+      const wpr = getWeeksPerRow();
+      const rowCount = Math.ceil(state.weeks / wpr);
       let html = '';
 
       for (let row = 0; row < rowCount; row++) {
-        const startWeek = row * WEEKS_PER_ROW;
-        const weeksInRow = Math.min(WEEKS_PER_ROW, state.weeks - startWeek);
+        const startWeek = row * wpr;
+        const weeksInRow = Math.min(wpr, state.weeks - startWeek);
         const daysInRow = weeksInRow * 7;
         const baseDayIdx = startWeek * 7;
 
@@ -687,7 +668,6 @@
 
         // Row 1: week headers
         html += `<thead><tr>`;
-        html += `<th class="th-week-spacer"></th>`;
         for (let w = 0; w < weeksInRow; w++) {
           const wn = startWeek + w + 1;
           html += `<th colspan="7" class="th-week">${(T && T.cs && T.cs.week) || 'Week'} ${wn}</th>`;
@@ -697,13 +677,11 @@
 
         // Row 2: day headers
         html += `<tr>`;
-        html += `<th class="th-week-spacer"></th>`;
         for (let w = 0; w < weeksInRow; w++) {
           for (let d = 0; d < 7; d++) {
             const dow = d;
             const isWe = dow >= 5;
-            const isSep = d === 4; // visual gap after Thu before Fri
-            html += `<th class="th-day${isWe ? ' weekend' : ''}${isSep ? ' week-sep' : ''}" style="${isSep ? 'padding-left:10px' : ''}">${dayLabel(d)}</th>`;
+            html += `<th class="th-day${isWe ? ' weekend' : ''}">${dayLabel(d)}</th>`;
           }
           if (w < weeksInRow - 1) html += `<th style="width:14px;"></th>`;
         }
@@ -716,7 +694,6 @@
           const lbl = isA ? nameA() : nameB();
 
           html += `<tr>`;
-          html += `<td class="td-label"><div class="td-label-inner label-${parent.toLowerCase()}">${esc(lbl)}</div></td>`;
 
           for (let w = 0; w < weeksInRow; w++) {
             for (let d = 0; d < 7; d++) {
@@ -724,10 +701,8 @@
               const val = state.assignment[globalIdx];
               const isOn = val === parent;
               const isWe = d >= 5;
-              const isFriSep = d === 4;
               const onClass = isOn ? (isA ? 'on-a' : 'on-b') : '';
-              const sepStyle = isFriSep ? 'padding-left:10px;' : '';
-              html += `<td style="${sepStyle}">`;
+              html += `<td>`;
               html += `<div class="cell ${onClass}" data-idx="${globalIdx}" data-who="${parent}" tabindex="0" role="button" aria-label="${esc(lbl)} day ${globalIdx + 1}" aria-pressed="${isOn}"></div>`;
               html += `</td>`;
             }
@@ -907,16 +882,13 @@
             const border = on ? (parent === 'A' ? '#7BB8B3' : '#D4A055') : '#DEDFE2';
             return `<td style="width:28px;height:28px;border-radius:6px;border:1px solid ${border};background:${bg};"></td>`;
           }).join('');
-          return `<tr>
-            <td style="font-size:11px;font-weight:600;padding-right:8px;border-left:3px solid ${color};padding-left:6px;white-space:nowrap;">${esc(label)}</td>
-            ${cells}
-          </tr>`;
+          return `<tr>${cells}</tr>`;
         };
 
         tablesHtml += `<table style="border-collapse:separate;border-spacing:4px;margin-bottom:12px;">
           <thead>
-            <tr><th></th>${weekHeaders}</tr>
-            <tr><th></th>${dayHeaders}</tr>
+            <tr>${weekHeaders}</tr>
+            <tr>${dayHeaders}</tr>
           </thead>
           <tbody>
             ${makeRow('A', la, '#0D6B64')}
@@ -934,7 +906,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
         <style>
-          body{font-family:'Inter',system-ui,-apple-system,sans-serif;margin:32px;color:#1A1E23;font-size:13px;}
+          body{font-family:'Inter',system-ui,-apple-system,sans-serif;margin:32px;color:#1A1E23;font-size:13px;background:#F8F8F6;}
           h1{font-size:18px;font-weight:600;margin:0 0 4px;letter-spacing:-0.01em;}
           .meta{font-size:12px;color:#50565E;margin-bottom:20px;}
           .stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:20px;}
@@ -1025,6 +997,12 @@
       updateStepperLabel();
       renderGrid();
       renderStats();
+    });
+
+    let _resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(_resizeTimer);
+      _resizeTimer = setTimeout(renderGrid, 120);
     });
 
   }());
