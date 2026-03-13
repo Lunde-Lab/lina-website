@@ -118,6 +118,7 @@
     "labelWeeks": "Viikkojen määrä",
     "addWeek": "Lisää viikko",
     "removeWeek": "Poista viikko",
+    "toggleDates": "Päivämäärät",
     "reset": "Nollaa",
     "exportPdf": "Vie PDF:ksi",
     "week": "Viikko",

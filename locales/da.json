@@ -118,6 +118,7 @@
     "labelWeeks": "Antal uger",
     "addWeek": "Tilføj uge",
     "removeWeek": "Fjern uge",
+    "toggleDates": "Datoer",
     "reset": "Nulstil",
     "exportPdf": "Eksporter til PDF",
     "week": "Uge",

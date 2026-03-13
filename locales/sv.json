@@ -118,6 +118,7 @@
     "labelWeeks": "Antal veckor",
     "addWeek": "Lägg till vecka",
     "removeWeek": "Ta bort vecka",
+    "toggleDates": "Datum",
     "reset": "Återställ",
     "exportPdf": "Exportera till PDF",
     "week": "Vecka",

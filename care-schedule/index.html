@@ -244,6 +244,13 @@
     .legend-swatch-a { background: var(--primary); }
     .legend-swatch-b { background: var(--amber); }
 
+    .btn-active {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+    .btn-active:hover { background: #2c333b; }
+
     /* ── Grid ── */
     .grid-scroll {
       overflow-x: auto;
@@ -289,6 +296,14 @@
       min-width: 34px;
     }
     .th-day.weekend { color: var(--text-secondary); }
+    .th-date {
+      font-size: 9px;
+      font-weight: 400;
+      color: var(--text-muted);
+      text-transform: none;
+      letter-spacing: 0;
+      margin-top: 2px;
+    }
 
     /* Week separator in data row */
     .td-week-sep { padding-left: 6px; }
@@ -495,8 +510,13 @@
               <label for="input-b" data-i18n="cs.labelParentB">Parent B name</label>
               <input id="input-b" type="text" autocomplete="off" spellcheck="false" placeholder="Parent B" />
             </div>
+            <div class="input-field" id="date-field" style="display:none;">
+              <label for="input-start-date" data-i18n="cs.labelStartDate">Start date</label>
+              <input id="input-start-date" type="date" />
+            </div>
           </div>
           <div class="btn-row">
+            <button class="btn" id="btn-toggle-dates" data-i18n="cs.toggleDates">Dates</button>
             <div class="stepper">
               <button class="stepper-btn" id="btn-minus" aria-label="Remove week">−</button>
               <div class="stepper-label" id="stepper-label">2 weeks</div>
@@ -579,6 +599,8 @@
         nameA: '',
         nameB: '',
         weeks: 2,
+        useDates: false,
+        startDate: '',
         // assignment[i] = 'A' | 'B' | null per day
         assignment: Array(14).fill(null)
       };
@@ -597,6 +619,8 @@
         state.nameA = p.nameA || '';
         state.nameB = p.nameB || '';
         state.weeks = Math.max(MIN_WEEKS, Math.min(MAX_WEEKS, p.weeks | 0)) || MIN_WEEKS;
+        state.useDates = !!p.useDates;
+        state.startDate = p.startDate || '';
         const len = state.weeks * 7;
         if (Array.isArray(p.assignment)) {
           const a = p.assignment.slice(0, len);
@@ -646,6 +670,22 @@
     function dayLabel(i) { return (T && T.cs) ? (T.cs[['mon','tue','wed','thu','fri','sat','sun'][i]] || DAYS[i]) : DAYS[i]; }
     function weeksLabel(n) { return (T && T.cs) ? n + ' ' + (T.cs.labelWeeks || 'weeks') : n + ' weeks'; }
 
+    // ── Date helpers ─────────────────────────────────────────────────────────
+    function snapToMonday(dateStr) {
+      const d = new Date(dateStr + 'T00:00:00');
+      const dow = d.getDay(); // 0=Sun
+      const diff = dow === 0 ? -6 : 1 - dow;
+      d.setDate(d.getDate() + diff);
+      return d.toISOString().slice(0, 10);
+    }
+    function dateForIdx(globalDayIdx) {
+      if (!state.useDates || !state.startDate) return null;
+      const d = new Date(state.startDate + 'T00:00:00');
+      d.setDate(d.getDate() + globalDayIdx);
+      return d;
+    }
+    function formatDateShort(d) { return d.getDate(); }
+
     // ── Render grid ──────────────────────────────────────────────────────────
     function renderGrid() {
       const container = document.getElementById('schedule-grid');
@@ -680,9 +720,10 @@
         html += `<tr>`;
         for (let w = 0; w < weeksInRow; w++) {
           for (let d = 0; d < 7; d++) {
-            const dow = d;
-            const isWe = dow >= 5;
-            html += `<th class="th-day${isWe ? ' weekend' : ''}">${dayLabel(d)}</th>`;
+            const isWe = d >= 5;
+            const dateD = dateForIdx(baseDayIdx + w * 7 + d);
+            const dateSub = dateD ? `<div class="th-date">${formatDateShort(dateD)}</div>` : '';
+            html += `<th class="th-day${isWe ? ' weekend' : ''}">${dayLabel(d)}${dateSub}</th>`;
           }
           if (w < weeksInRow - 1) html += `<th style="width:14px;"></th>`;
         }
@@ -874,9 +915,15 @@
           `<th colspan="7" style="font-size:10px;font-weight:600;color:#50565E;text-align:center;padding:4px 0;">Week ${startWeek+w+1}</th>`
         ).join('');
 
-        const dayHeaders = Array.from({length: weeksInRow * 7}).map((_,i) =>
-          `<th style="font-size:9px;font-weight:600;color:#A1A7AF;text-align:center;padding:0 0 4px;min-width:20px;">${DAYS[i%7]}</th>`
-        ).join('');
+        const dayHeaders = Array.from({length: weeksInRow * 7}).map((_,i) => {
+          const dateD = state.useDates && state.startDate ? (() => {
+            const d = new Date(state.startDate + 'T00:00:00');
+            d.setDate(d.getDate() + baseDayIdx + i);
+            return d;
+          })() : null;
+          const dateSub = dateD ? `<div style="font-size:8px;font-weight:400;color:#A1A7AF;margin-top:1px;">${dateD.getDate()}</div>` : '';
+          return `<th style="font-size:9px;font-weight:600;color:#A1A7AF;text-align:center;padding:0 0 4px;min-width:20px;">${DAYS[i%7]}${dateSub}</th>`;
+        }).join('');
 
         const makeRow = (parent, label, color) => {
           const cells = Array.from({length: weeksInRow * 7}).map((_,i) => {
@@ -984,6 +1031,47 @@
       renderStats();
     });
 
+    // Bind date toggle
+    const btnToggleDates = document.getElementById('btn-toggle-dates');
+    const dateField = document.getElementById('date-field');
+    const inputStartDate = document.getElementById('input-start-date');
+
+    function applyDateToggleUI() {
+      if (state.useDates) {
+        btnToggleDates.classList.add('btn-active');
+        dateField.style.display = '';
+      } else {
+        btnToggleDates.classList.remove('btn-active');
+        dateField.style.display = 'none';
+      }
+    }
+
+    inputStartDate.value = state.startDate;
+    applyDateToggleUI();
+
+    btnToggleDates.addEventListener('click', () => {
+      state.useDates = !state.useDates;
+      if (state.useDates && !state.startDate) {
+        const today = new Date().toISOString().slice(0, 10);
+        state.startDate = snapToMonday(today);
+        inputStartDate.value = state.startDate;
+      }
+      save();
+      applyDateToggleUI();
+      renderGrid();
+    });
+
+    inputStartDate.addEventListener('change', () => {
+      if (inputStartDate.value) {
+        state.startDate = snapToMonday(inputStartDate.value);
+        inputStartDate.value = state.startDate;
+      } else {
+        state.startDate = '';
+      }
+      save();
+      renderGrid();
+    });
+
     document.getElementById('btn-minus').addEventListener('click', () => setWeeks(state.weeks - 1));
     document.getElementById('btn-plus').addEventListener('click', () => setWeeks(state.weeks + 1));
     document.getElementById('btn-reset').addEventListener('click', () => {
@@ -1002,6 +1090,7 @@
     document.addEventListener('lina:langchange', e => {
       T = e.detail.t;
       updateStepperLabel();
+      if (T && T.cs && T.cs.toggleDates) btnToggleDates.textContent = T.cs.toggleDates;
       renderGrid();
       renderStats();
     });
