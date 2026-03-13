@@ -448,10 +448,11 @@
       .export-card .card { flex-direction: column; align-items: flex-start; }
     }
 
-    @media (max-width: 480px) {
-      .cell { width: 26px; height: 26px; border-radius: 6px; }
-      .schedule-table { border-spacing: 3px; }
-      .th-day { min-width: 26px; }
+    @media (max-width: 640px) {
+      #schedule-grid { width: 100%; }
+      .schedule-table { width: 100%; border-spacing: 3px; }
+      .th-day { min-width: unset; width: calc(100% / 7); }
+      .cell { width: 100%; height: auto; aspect-ratio: 1; border-radius: 6px; }
     }
 
     @media print { nav, footer, .btn-row, .export-card { display: none !important; } }
