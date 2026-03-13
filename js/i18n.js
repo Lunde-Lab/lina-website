@@ -34,19 +34,10 @@ async function setLang(lang) {
   apply(t);
   document.documentElement.lang = lang;
   localStorage.setItem('lina-lang', lang);
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    const active = btn.dataset.lang === lang;
-    btn.classList.toggle('active', active);
-    btn.setAttribute('aria-current', active ? 'true' : 'false');
-  });
   document.dispatchEvent(new CustomEvent('lina:langchange', { detail: { lang, t } }));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => setLang(btn.dataset.lang));
-  });
-
   const saved = localStorage.getItem('lina-lang');
   const rawBrowser = navigator.language.split('-')[0];
   const browser = rawBrowser === 'nb' || rawBrowser === 'nn' ? 'no' : rawBrowser;

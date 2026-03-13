@@ -70,36 +70,6 @@
       letter-spacing: -0.02em;
     }
 
-    /* ── Language switcher ── */
-    .lang-switcher {
-      display: flex;
-      gap: 2px;
-    }
-
-    .lang-btn {
-      background: none;
-      border: none;
-      font-family: inherit;
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-secondary);
-      cursor: pointer;
-      padding: 5px 7px;
-      border-radius: 5px;
-      transition: color 0.15s, background 0.15s;
-      letter-spacing: 0.02em;
-    }
-
-    .lang-btn:hover {
-      color: var(--text);
-      background: var(--border);
-    }
-
-    .lang-btn.active {
-      color: var(--primary);
-      font-weight: 600;
-    }
-
     /* ── App Store Button ── */
     .btn-appstore {
       display: inline-flex;
@@ -183,6 +153,35 @@
       flex-direction: column;
       align-items: center;
       gap: 20px;
+    }
+
+    .phone-frame-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .carousel-arrow {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
+      background: #fff;
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+      padding: 0;
+    }
+
+    .carousel-arrow:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
     }
 
     .phone-frame {
@@ -582,13 +581,6 @@
   <nav>
     <div class="nav-inner">
       <a href="index.html"><img src="assets/logos/Logomark_1.svg" alt="Lina" height="32" /></a>
-      <div class="lang-switcher" role="group" data-i18n-aria="nav.langLabel" aria-label="Language">
-        <button class="lang-btn" data-lang="en" aria-current="true">EN</button>
-        <button class="lang-btn" data-lang="no" aria-current="false">NO</button>
-        <button class="lang-btn" data-lang="sv" aria-current="false">SV</button>
-        <button class="lang-btn" data-lang="da" aria-current="false">DA</button>
-        <button class="lang-btn" data-lang="fi" aria-current="false">FI</button>
-      </div>
     </div>
   </nav>
 
@@ -617,15 +609,23 @@
         </div>
 
         <div class="hero-carousel" aria-label="App screenshots" role="region">
-          <div class="phone-frame" id="carousel-frame">
-            <div class="carousel-slide active"><img src="assets/images/ThreadsScreen.png" alt="Threads" draggable="false" /></div>
-            <div class="carousel-slide"><img src="assets/images/ThreadDetailScreen.png" alt="Thread detail" draggable="false" /></div>
-            <div class="carousel-slide"><img src="assets/images/AlbumScreen.png" alt="Shared album" draggable="false" /></div>
-<div class="carousel-slide"><img src="assets/images/ToolScreen.png" alt="Tools" draggable="false" /></div>
-            <div class="carousel-slide"><img src="assets/images/EquipmentList.png" alt="Equipment list" draggable="false" /></div>
-            <div class="carousel-slide"><img src="assets/images/ContactList.png" alt="Contacts" draggable="false" /></div>
-            <div class="carousel-slide"><img src="assets/images/ChildList.png" alt="Child info" draggable="false" /></div>
-            <div class="carousel-slide"><img src="assets/images/CareScheduleApp.png" alt="Care schedule" draggable="false" /></div>
+          <div class="phone-frame-wrapper">
+            <button class="carousel-arrow" id="carousel-prev" aria-label="Previous screenshot">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="phone-frame" id="carousel-frame">
+              <div class="carousel-slide active"><img src="assets/images/ThreadsScreen.png" alt="Threads" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/images/ThreadDetailScreen.png" alt="Thread detail" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/images/AlbumScreen.png" alt="Shared album" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/images/ToolScreen.png" alt="Tools" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/images/EquipmentList.png" alt="Equipment list" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/images/ContactList.png" alt="Contacts" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/images/ChildList.png" alt="Child info" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/images/CareScheduleApp.png" alt="Care schedule" draggable="false" /></div>
+            </div>
+            <button class="carousel-arrow" id="carousel-next" aria-label="Next screenshot">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
           </div>
           <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Select slide"></div>
         </div>
@@ -661,6 +661,10 @@
       dotsEl.children[current].classList.add('active');
       dotsEl.children[current].setAttribute('aria-selected', 'true');
     }
+
+    // Arrow buttons
+    document.getElementById('carousel-prev').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('carousel-next').addEventListener('click', () => goTo(current + 1));
 
     // Touch / swipe
     let tx = 0;
