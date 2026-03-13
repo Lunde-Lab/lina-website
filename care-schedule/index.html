@@ -867,6 +867,9 @@
         const weeksInRow = Math.min(WEEKS_PER_ROW_DESKTOP, state.weeks - startWeek);
         const baseDayIdx = startWeek * 7;
 
+        const showLabel = row === 0;
+        const labelSpacer = showLabel ? `<th style="width:80px;"></th>` : '';
+
         const weekHeaders = Array.from({length: weeksInRow}).map((_,w) =>
           `<th colspan="7" style="font-size:10px;font-weight:600;color:#50565E;text-align:center;padding:4px 0;">Week ${startWeek+w+1}</th>`
         ).join('');
@@ -883,13 +886,16 @@
             const border = on ? (parent === 'A' ? '#7BB8B3' : '#D4A055') : '#DEDFE2';
             return `<td style="width:28px;height:28px;border-radius:6px;border:1px solid ${border};background:${bg};"></td>`;
           }).join('');
-          return `<tr>${cells}</tr>`;
+          const labelTd = showLabel
+            ? `<td style="font-size:11px;font-weight:600;color:#1A1E23;white-space:nowrap;padding-right:10px;border-left:3px solid ${color};padding-left:6px;vertical-align:middle;">${esc(label)}</td>`
+            : '';
+          return `<tr>${labelTd}${cells}</tr>`;
         };
 
         tablesHtml += `<table style="border-collapse:separate;border-spacing:4px;margin-bottom:12px;">
           <thead>
-            <tr>${weekHeaders}</tr>
-            <tr>${dayHeaders}</tr>
+            <tr>${labelSpacer}${weekHeaders}</tr>
+            <tr>${labelSpacer}${dayHeaders}</tr>
           </thead>
           <tbody>
             ${makeRow('A', la, '#0D6B64')}
