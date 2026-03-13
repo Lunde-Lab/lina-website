@@ -448,6 +448,12 @@
       .export-card .card { flex-direction: column; align-items: flex-start; }
     }
 
+    @media (max-width: 480px) {
+      .cell { width: 26px; height: 26px; border-radius: 6px; }
+      .schedule-table { border-spacing: 3px; }
+      .th-day { min-width: 26px; }
+    }
+
     @media print { nav, footer, .btn-row, .export-card { display: none !important; } }
   </style>
 </head>
@@ -561,7 +567,8 @@
     const DAYS_I18N = ['cs.mon','cs.tue','cs.wed','cs.thu','cs.fri','cs.sat','cs.sun'];
     const MAX_WEEKS = 12;
     const MIN_WEEKS = 2;
-    const WEEKS_PER_ROW = 2;
+    const WEEKS_PER_ROW_DESKTOP = 2;
+    function getWeeksPerRow() { return window.innerWidth <= 640 ? 1 : WEEKS_PER_ROW_DESKTOP; }
 
     let T = null;
     let state = defaultState();
@@ -643,12 +650,13 @@
       const container = document.getElementById('schedule-grid');
       if (!container) return;
 
-      const rowCount = Math.ceil(state.weeks / WEEKS_PER_ROW);
+      const wpr = getWeeksPerRow();
+      const rowCount = Math.ceil(state.weeks / wpr);
       let html = '';
 
       for (let row = 0; row < rowCount; row++) {
-        const startWeek = row * WEEKS_PER_ROW;
-        const weeksInRow = Math.min(WEEKS_PER_ROW, state.weeks - startWeek);
+        const startWeek = row * wpr;
+        const weeksInRow = Math.min(wpr, state.weeks - startWeek);
         const daysInRow = weeksInRow * 7;
         const baseDayIdx = startWeek * 7;
 
@@ -989,6 +997,12 @@
       updateStepperLabel();
       renderGrid();
       renderStats();
+    });
+
+    let _resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(_resizeTimer);
+      _resizeTimer = setTimeout(renderGrid, 120);
     });
 
   }());
