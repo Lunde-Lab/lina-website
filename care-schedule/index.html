@@ -277,8 +277,6 @@
       padding: 2px 6px 6px;
       letter-spacing: 0.04em;
     }
-    .th-week-spacer { width: 120px; }
-
     /* Day header row */
     .th-day {
       font-size: 10px;
@@ -291,30 +289,6 @@
       min-width: 34px;
     }
     .th-day.weekend { color: var(--text-secondary); }
-
-    /* Row label */
-    .td-label {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text);
-      padding: 0 10px 4px 0;
-      white-space: nowrap;
-      vertical-align: middle;
-      position: sticky;
-      left: 0;
-      background: var(--surface-card);
-      z-index: 2;
-    }
-    .td-label-inner {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      border-left: 3px solid transparent;
-      padding-left: 8px;
-      height: 34px;
-    }
-    .td-label-inner.label-a { border-color: var(--primary); }
-    .td-label-inner.label-b { border-color: var(--amber); }
 
     /* Week separator in data row */
     .td-week-sep { padding-left: 6px; }
@@ -686,7 +660,6 @@
 
         // Row 1: week headers
         html += `<thead><tr>`;
-        html += `<th class="th-week-spacer"></th>`;
         for (let w = 0; w < weeksInRow; w++) {
           const wn = startWeek + w + 1;
           html += `<th colspan="7" class="th-week">${(T && T.cs && T.cs.week) || 'Week'} ${wn}</th>`;
@@ -696,7 +669,6 @@
 
         // Row 2: day headers
         html += `<tr>`;
-        html += `<th class="th-week-spacer"></th>`;
         for (let w = 0; w < weeksInRow; w++) {
           for (let d = 0; d < 7; d++) {
             const dow = d;
@@ -714,7 +686,6 @@
           const lbl = isA ? nameA() : nameB();
 
           html += `<tr>`;
-          html += `<td class="td-label"><div class="td-label-inner label-${parent.toLowerCase()}">${esc(lbl)}</div></td>`;
 
           for (let w = 0; w < weeksInRow; w++) {
             for (let d = 0; d < 7; d++) {
@@ -903,16 +874,13 @@
             const border = on ? (parent === 'A' ? '#7BB8B3' : '#D4A055') : '#DEDFE2';
             return `<td style="width:28px;height:28px;border-radius:6px;border:1px solid ${border};background:${bg};"></td>`;
           }).join('');
-          return `<tr>
-            <td style="font-size:11px;font-weight:600;padding-right:8px;border-left:3px solid ${color};padding-left:6px;white-space:nowrap;">${esc(label)}</td>
-            ${cells}
-          </tr>`;
+          return `<tr>${cells}</tr>`;
         };
 
         tablesHtml += `<table style="border-collapse:separate;border-spacing:4px;margin-bottom:12px;">
           <thead>
-            <tr><th></th>${weekHeaders}</tr>
-            <tr><th></th>${dayHeaders}</tr>
+            <tr>${weekHeaders}</tr>
+            <tr>${dayHeaders}</tr>
           </thead>
           <tbody>
             ${makeRow('A', la, '#0D6B64')}
