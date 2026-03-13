@@ -859,12 +859,12 @@
       const la = nameA(), lb = nameB();
       const s = calcStats();
       const pct = (n,tot) => tot > 0 ? Math.round(n/tot*100)+'%' : '0%';
-      const rowCount = Math.ceil(state.weeks / WEEKS_PER_ROW);
+      const rowCount = Math.ceil(state.weeks / WEEKS_PER_ROW_DESKTOP);
 
       let tablesHtml = '';
       for (let row = 0; row < rowCount; row++) {
-        const startWeek = row * WEEKS_PER_ROW;
-        const weeksInRow = Math.min(WEEKS_PER_ROW, state.weeks - startWeek);
+        const startWeek = row * WEEKS_PER_ROW_DESKTOP;
+        const weeksInRow = Math.min(WEEKS_PER_ROW_DESKTOP, state.weeks - startWeek);
         const baseDayIdx = startWeek * 7;
 
         const weekHeaders = Array.from({length: weeksInRow}).map((_,w) =>
