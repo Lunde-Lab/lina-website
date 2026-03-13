@@ -717,7 +717,11 @@
       d.setDate(d.getDate() + globalDayIdx);
       return d;
     }
-    function formatDateShort(d) { return d.getDate(); }
+    function formatDateShort(d) {
+      const dd = String(d.getDate()).padStart(2, '0');
+      const mm = String(d.getMonth() + 1).padStart(2, '0');
+      return `${dd}.${mm}`;
+    }
 
     // ── Render grid ──────────────────────────────────────────────────────────
     function renderGrid() {
@@ -941,8 +945,8 @@
         const weeksInRow = Math.min(WEEKS_PER_ROW_DESKTOP, state.weeks - startWeek);
         const baseDayIdx = startWeek * 7;
 
-        const showLabel = row === 0;
-        const labelSpacer = showLabel ? `<th style="width:80px;"></th>` : '';
+        const showLabel = row % 2 === 0;
+        const labelSpacer = `<th style="width:80px;"></th>`;
 
         const weekHeaders = Array.from({length: weeksInRow}).map((_,w) =>
           `<th colspan="7" style="font-size:10px;font-weight:600;color:#50565E;text-align:center;padding:4px 0;">Week ${startWeek+w+1}</th>`
@@ -954,7 +958,7 @@
             d.setDate(d.getDate() + baseDayIdx + i);
             return d;
           })() : null;
-          const dateSub = dateD ? `<div style="font-size:8px;font-weight:400;color:#A1A7AF;margin-top:1px;">${dateD.getDate()}</div>` : '';
+          const dateSub = dateD ? (() => { const dd = String(dateD.getDate()).padStart(2,'0'); const mm = String(dateD.getMonth()+1).padStart(2,'0'); return `<div style="font-size:8px;font-weight:400;color:#A1A7AF;margin-top:1px;">${dd}.${mm}</div>`; })() : '';
           return `<th style="font-size:9px;font-weight:600;color:#A1A7AF;text-align:center;padding:0 0 4px;min-width:20px;">${DAYS[i%7]}${dateSub}</th>`;
         }).join('');
 
@@ -968,7 +972,7 @@
           }).join('');
           const labelTd = showLabel
             ? `<td style="font-size:11px;font-weight:600;color:#1A1E23;white-space:nowrap;padding-right:10px;border-left:3px solid ${color};padding-left:6px;vertical-align:middle;">${esc(label)}</td>`
-            : '';
+            : `<td></td>`;
           return `<tr>${labelTd}${cells}</tr>`;
         };
 
