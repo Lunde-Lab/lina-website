@@ -291,7 +291,6 @@
       min-width: 34px;
     }
     .th-day.weekend { color: var(--text-secondary); }
-    .th-day.week-sep { padding-left: 10px; }
 
     /* Row label */
     .td-label {
@@ -702,8 +701,7 @@
           for (let d = 0; d < 7; d++) {
             const dow = d;
             const isWe = dow >= 5;
-            const isSep = d === 4; // visual gap after Thu before Fri
-            html += `<th class="th-day${isWe ? ' weekend' : ''}${isSep ? ' week-sep' : ''}" style="${isSep ? 'padding-left:10px' : ''}">${dayLabel(d)}</th>`;
+            html += `<th class="th-day${isWe ? ' weekend' : ''}">${dayLabel(d)}</th>`;
           }
           if (w < weeksInRow - 1) html += `<th style="width:14px;"></th>`;
         }
@@ -724,10 +722,8 @@
               const val = state.assignment[globalIdx];
               const isOn = val === parent;
               const isWe = d >= 5;
-              const isFriSep = d === 4;
               const onClass = isOn ? (isA ? 'on-a' : 'on-b') : '';
-              const sepStyle = isFriSep ? 'padding-left:10px;' : '';
-              html += `<td style="${sepStyle}">`;
+              html += `<td>`;
               html += `<div class="cell ${onClass}" data-idx="${globalIdx}" data-who="${parent}" tabindex="0" role="button" aria-label="${esc(lbl)} day ${globalIdx + 1}" aria-pressed="${isOn}"></div>`;
               html += `</td>`;
             }
