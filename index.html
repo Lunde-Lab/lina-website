@@ -70,36 +70,6 @@
       letter-spacing: -0.02em;
     }
 
-    /* ── Language switcher ── */
-    .lang-switcher {
-      display: flex;
-      gap: 2px;
-    }
-
-    .lang-btn {
-      background: none;
-      border: none;
-      font-family: inherit;
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-secondary);
-      cursor: pointer;
-      padding: 5px 7px;
-      border-radius: 5px;
-      transition: color 0.15s, background 0.15s;
-      letter-spacing: 0.02em;
-    }
-
-    .lang-btn:hover {
-      color: var(--text);
-      background: var(--border);
-    }
-
-    .lang-btn.active {
-      color: var(--primary);
-      font-weight: 600;
-    }
-
     /* ── App Store Button ── */
     .btn-appstore {
       display: inline-flex;
@@ -611,13 +581,6 @@
   <nav>
     <div class="nav-inner">
       <a href="index.html"><img src="assets/logos/Logomark_1.svg" alt="Lina" height="32" /></a>
-      <div class="lang-switcher" role="group" data-i18n-aria="nav.langLabel" aria-label="Language">
-        <button class="lang-btn" data-lang="en" aria-current="true">EN</button>
-        <button class="lang-btn" data-lang="no" aria-current="false">NO</button>
-        <button class="lang-btn" data-lang="sv" aria-current="false">SV</button>
-        <button class="lang-btn" data-lang="da" aria-current="false">DA</button>
-        <button class="lang-btn" data-lang="fi" aria-current="false">FI</button>
-      </div>
     </div>
   </nav>
 
