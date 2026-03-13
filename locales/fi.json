@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Yhteinen kokonaiskuva yli kotien",
-    "description": "Lina kokoaa kaiken, mitä lapsesi tarvitsee: keskustelut, muistot, aikataulut ja käytännön tiedot — kaikki yhdessä rauhallisessa, järjestyneessä paikassa.",
+    "description": "Sinun ei tarvitse aina olla se, joka muistaa kaiken. Lina pitää käytännön tiedot — lääketieteellinen info, varusteet, yhteystiedot, aikataulut — ajan tasalla ja saatavilla molemmille kodeille.",
     "cta": "Lataa App Storesta",
     "ctaPlay": "Hanki Google Playsta",
     "ctaPlayAria": "Hanki Google Playsta"
@@ -22,30 +22,30 @@
   },
   "how": {
     "label": "Näin se toimii",
-    "title": "Aloita muutamassa minuutissa, käytä joka päivä",
+    "title": "Aseta se kerran. Loput jaetaan automaattisesti.",
     "step1": {
       "title": "Luo yhteinen tila",
       "description": "Toinen vanhemmista luo lapselle tilan. Toinen saa kutsun liittyä. Ei monimutkaista asennusta."
     },
     "step2": {
       "title": "Lisää tärkeät tiedot",
-      "description": "Lisää yhteystiedot, lääketieteelliset tiedot, varustelista ja kaikki muu, mikä tarvitsee seurata lapsen mukana kotien välillä."
+      "description": "Lääketieteelliset tiedot, allergiat, yhteystiedot, varustelista — lisää ne kerran, ja ne ovat saatavilla molemmille vanhemmille."
     },
     "step3": {
-      "title": "Pysykää ajan tasalla",
-      "description": "Käytä säikeitä käytännön keskusteluihin ja jaettua albumia kuviin. Molemmat vanhemmat näkevät saman tiedon, aina ajan tasalla."
+      "title": "Kenenkään ei tarvitse kysyä kahdesti",
+      "description": "Päivitykset näkyvät molemmille vanhemmille reaaliajassa. Ei enää toistamista, eikä pohtimista, onko toisella kodilla uusin tieto."
     }
   },
   "features": {
     "label": "Ominaisuudet",
-    "title": "Kaikki yhdessä paikassa",
+    "title": "Kaikki yksityiskohdat, jaettu toiselle kodille",
     "threads": {
       "title": "Säikeet",
-      "description": "Organisoidut aihekohtaiset keskustelut yhden chatin sijaan. Pidä logistiikka, kouluasiat ja terveyspäivitykset erillään ja helposti löydettävissä."
+      "description": "Erilliset keskustelut jokaiselle aiheelle — logistiikka, koulu, terveys. Mikään ei huku yhteen pitkään chattiin."
     },
     "album": {
       "title": "Jaettu albumi",
-      "description": "Yksityinen valokuva-albumi, johon molemmat vanhemmat voivat lisätä kuvia ja katsella niitä. Niin kumpikin vanhempi ei missaa toisen kodin hetkiä."
+      "description": "Yksityinen albumi, jossa molemmat vanhemmat voivat jakaa kuvia. Yhdessä kodissa tapahtuvat hetket näkyvät molemmissa."
     },
     "childInfo": {
       "title": "Lapsen tiedot",
@@ -65,9 +65,9 @@
     },
     "messages": {
       "title": "Viestit",
-      "description": "Viestejä ei voi muokata tai poistaa lähettämisen jälkeen. Etsi keskusteluja ja merkitse tärkeitä viestejä. Selkeä, pysyvä kirjanpito kahden vanhemman välillä."
+      "description": "Viestejä ei voi muokata tai poistaa. Etsi keskusteluista, merkitse tärkeät, ja sinulla on aina selkeä kuva siitä, mistä on sovittu."
     },
-    "more": "Lisää työkaluja mukana — yhteystiedot, varustelista, lapsen tiedot, hoitoaikataulu ja kaikkien viestien vienti."
+    "more": "Myös mukana: yhteystiedot, varustelista, lapsen tiedot ja hoitoaikataulu — jotta molemmilla vanhemmilla on tarvitsemansa, riippumatta siitä, missä lapsi on."
   },
   "problem": {
     "label": "Miksi Lina",
@@ -77,7 +77,7 @@
   "privacy": {
     "label": "Yksityisyys",
     "title": "Yksityinen rakenteesta alkaen",
-    "description": "Lina on rakennettu yksityisyys perustanaan. Tietosi on suojattu turvallisen infrastruktuurin, hallitun pääsyn ja allekirjoitettujen linkkien avulla. Ei mainontaa, ei tietojen jakamista eikä algoritmia, joka päättää mitä näet — vain turvallinen, jäsennelty tila yhteistyölle.",
+    "description": "Mitä Linassa tapahtuu, jää teidän kahden välille. Ei mainontaa, ei kolmansia osapuolia, ei algoritmia, joka päättää mitä näet. Lapsen tiedot ovat yksityisiä — niin kuin pitääkin.",
     "point1": {
       "title": "Ei mainontaa",
       "description": "Kokemustasi ei koskaan muokkaa mainokset tai kaupalliset intressit."
@@ -94,7 +94,7 @@
   },
   "cta": {
     "title": "Turvallinen yhteys kahden vanhemman välillä.",
-    "description": "Lataa Lina ja aloita muutamassa minuutissa."
+    "description": "Lina pitää käytännön tiedot järjestyksessä ja näkyvissä molemmille vanhemmille. Lataa ja aloita muutamassa minuutissa."
   },
   "footer": {
     "terms": "Käyttöehdot",

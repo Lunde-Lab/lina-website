@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "One shared place for your child — across homes",
-    "description": "Lina brings together everything your child needs: conversations, memories, schedules, and practical information — all in one calm, organized space.",
+    "description": "You should not have to be the one who always remembers. Lina keeps the practical details — medical info, equipment, contacts, schedules — shared and up to date across both homes.",
     "cta": "Download on the App Store",
     "ctaPlay": "Get on Google Play",
     "ctaPlayAria": "Get it on Google Play"
@@ -22,36 +22,36 @@
   },
   "how": {
     "label": "How it works",
-    "title": "Get started in minutes. Use it every day.",
+    "title": "Set it up once. The rest is shared automatically.",
     "step1": {
       "title": "Create a shared space",
       "description": "One parent sets up a space for the child. The other gets an invite to join. No complicated setup required."
     },
     "step2": {
       "title": "Add what matters",
-      "description": "Add contacts, medical information, equipment lists, and anything else that needs to follow the child between homes."
+      "description": "Medical information, allergies, contacts, equipment lists — add it once, and it is there for both parents."
     },
     "step3": {
-      "title": "Stay in sync",
-      "description": "Use threads for practical conversations and the shared album for photos. Both parents see the same information, always up to date."
+      "title": "No one needs to ask twice",
+      "description": "Updates are visible to both parents in real time. No more repeating yourself, or wondering if the other home has the latest."
     }
   },
   "features": {
     "label": "Features",
-    "title": "Everything in one place",
+    "title": "All the details, shared with the other home",
     "threads": {
       "title": "Threads",
-      "description": "Keep communication organized by topic. Archive threads when they are no longer needed, and export them if you ever need a record."
+      "description": "Separate conversations for each topic — logistics, school, health. Nothing gets buried in one long chat."
     },
     "messages": {
       "title": "Messages",
-      "description": "Messages cannot be edited or deleted after sending. Search conversations and mark important messages. A clear, permanent record between two parents."
+      "description": "Messages cannot be edited or deleted. Search conversations, mark what matters, and always have a clear record of what was agreed."
     },
     "album": {
       "title": "Shared album",
-      "description": "A private photo album that both parents can add to and view. So neither parent misses the moments that happen in the other home."
+      "description": "A private album where both parents can share photos. The moments that happen in one home are visible in both."
     },
-    "more": "More tools included — contacts, equipment lists, child information, care schedule and export of all messages."
+    "more": "Also included: contacts, equipment lists, child information, and care schedule — so both parents have what they need, wherever the child is."
   },
   "problem": {
     "label": "Why Lina",
@@ -67,7 +67,7 @@
   "privacy": {
     "label": "Privacy",
     "title": "Private by design",
-    "description": "Lina is built with privacy as its foundation. Your data is protected through secure infrastructure, controlled access and signed links. There is no advertising, no data sharing and no algorithm deciding what you should see — only a secure, structured space for cooperation.",
+    "description": "What happens in Lina stays between the two of you. No ads, no third parties, no algorithm deciding what you see. Your child's information is private — and that is how it should be.",
     "point1": {
       "title": "No advertising",
       "description": "Your experience is never shaped by ads or commercial interests."
@@ -84,7 +84,7 @@
   },
   "cta": {
     "title": "One safe line between two parents.",
-    "description": "Download Lina and get started in minutes."
+    "description": "Lina keeps the practical details organized and visible to both parents. Download and get started in minutes."
   },
   "footer": {
     "terms": "Terms of Service",

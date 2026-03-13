@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "En gemensam översikt - över hem",
-    "description": "Lina samlar allt ditt barn behöver: samtal, minnen, scheman och praktisk information — allt på ett lugnt, organiserat ställe.",
+    "description": "Du ska inte alltid vara den som minns allt. Lina håller de praktiska detaljerna — medicinsk info, utrustning, kontakter, scheman — uppdaterade och tillgängliga för båda hemmen.",
     "cta": "Ladda ner på App Store",
     "ctaPlay": "Hämta på Google Play",
     "ctaPlayAria": "Hämta på Google Play"
@@ -22,30 +22,30 @@
   },
   "how": {
     "label": "Så här fungerar det",
-    "title": "Kom igång på minuter, använd det varje dag",
+    "title": "Ställ in det en gång. Resten delas automatiskt.",
     "step1": {
       "title": "Skapa ett gemensamt utrymme",
       "description": "En förälder skapar ett utrymme för barnet. Den andra får en inbjudan att gå med. Ingen komplicerad installation krävs."
     },
     "step2": {
       "title": "Lägg till det som är viktigt",
-      "description": "Lägg till kontakter, medicinsk information, utrustningslistor och allt annat som behöver följa barnet mellan hemmen."
+      "description": "Medicinsk information, allergier, kontakter, utrustningslistor — lägg in det en gång, och det är tillgängligt för båda föräldrarna."
     },
     "step3": {
-      "title": "Håll er synkroniserade",
-      "description": "Använd trådar för praktiska samtal och det delade albumet för foton. Båda föräldrarna ser samma information, alltid uppdaterad."
+      "title": "Ingen behöver fråga två gånger",
+      "description": "Uppdateringar är synliga för båda föräldrarna i realtid. Inte mer att upprepa sig, eller undra om det andra hemmet har det senaste."
     }
   },
   "features": {
     "label": "Funktioner",
-    "title": "Allt på ett ställe",
+    "title": "Alla detaljer, delade med det andra hemmet",
     "threads": {
       "title": "Trådar",
-      "description": "Organiserade ämneskonversationer istället för en enda chatt. Håll logistik, skolfrågor och hälsouppdateringar separata och lätta att hitta."
+      "description": "Separata konversationer för varje ämne — logistik, skola, hälsa. Inget försvinner i en lång chatt."
     },
     "album": {
       "title": "Delat album",
-      "description": "Ett privat fotoalbum som båda föräldrarna kan lägga till och visa. Så ingen förälder missar de ögonblick som händer i det andra hemmet."
+      "description": "Ett privat album där båda föräldrarna kan dela bilder. De ögonblick som händer i ett hem är synliga i båda."
     },
     "childInfo": {
       "title": "Barnuppgifter",
@@ -65,9 +65,9 @@
     },
     "messages": {
       "title": "Meddelanden",
-      "description": "Meddelanden kan inte redigeras eller raderas efter att de har skickats. Sök i konversationer och markera viktiga meddelanden. Ett tydligt, permanent register mellan två föräldrar."
+      "description": "Meddelanden kan inte redigeras eller raderas. Sök i konversationer, markera det viktiga, och ha alltid en tydlig bild av vad som har avtalats."
     },
-    "more": "Fler verktyg ingår — kontakter, utrustningslistor, barnuppgifter, vårdschema och export av alla meddelanden."
+    "more": "Också inkluderat: kontakter, utrustningslistor, barnuppgifter och vårdschema — så att båda föräldrarna har vad de behöver, oavsett var barnet är."
   },
   "problem": {
     "label": "Varför Lina",
@@ -77,7 +77,7 @@
   "privacy": {
     "label": "Integritet",
     "title": "Privat från grunden",
-    "description": "Lina är byggd med integritet som grund. Dina data skyddas genom säker infrastruktur, kontrollerad åtkomst och signerade länkar. Det finns ingen reklam, ingen datadelning och ingen algoritm som bestämmer vad du ska se — bara ett säkert, strukturerat utrymme för samarbete.",
+    "description": "Det som händer i Lina stannar mellan er två. Ingen reklam, inga tredjeparter, ingen algoritm som bestämmer vad du ser. Barnets information är privat — så som det ska vara.",
     "point1": {
       "title": "Ingen reklam",
       "description": "Din upplevelse formas aldrig av annonser eller kommersiella intressen."
@@ -94,7 +94,7 @@
   },
   "cta": {
     "title": "En säker linje mellan två föräldrar.",
-    "description": "Ladda ner Lina och kom igång på minuter."
+    "description": "Lina håller de praktiska detaljerna organiserade och synliga för båda föräldrarna. Ladda ner och kom igång på minuter."
   },
   "footer": {
     "terms": "Användarvillkor",

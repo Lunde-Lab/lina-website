@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Én oversikt - på tvers av hjem",
-    "description": "Lina samler alt barnet ditt trenger: samtaler, minner, planer og praktisk informasjon — alt på ett rolig, organisert sted.",
+    "description": "Du skal ikke alltid være den som husker alt. Lina holder de praktiske detaljene — medisinsk info, utstyr, kontakter, planer — oppdatert og tilgjengelig for begge hjem.",
     "cta": "Last ned på App Store",
     "ctaPlay": "Last ned på Google Play",
     "ctaPlayAria": "Last ned på Google Play"
@@ -22,30 +22,30 @@
   },
   "how": {
     "label": "Slik fungerer det",
-    "title": "Kom i gang på minutter, bruk det hver dag",
+    "title": "Sett det opp én gang. Resten deles automatisk.",
     "step1": {
       "title": "Opprett et felles sted",
       "description": "Den ene forelderen oppretter et sted for barnet. Den andre får en invitasjon til å bli med. Ingen komplisert oppsett kreves."
     },
     "step2": {
       "title": "Legg til det som er viktig",
-      "description": "Legg til kontakter, medisinske opplysninger, utstyrslister og alt annet som skal følge barnet mellom hjemmene."
+      "description": "Medisinske opplysninger, allergier, kontakter, utstyrslister — legg det inn én gang, og det er tilgjengelig for begge foreldre."
     },
     "step3": {
-      "title": "Hold deg oppdatert",
-      "description": "Bruk tråder til praktiske samtaler og det delte albumet til bilder. Begge foreldre ser den samme informasjonen, alltid oppdatert."
+      "title": "Ingen trenger å spørre to ganger",
+      "description": "Oppdateringer er synlige for begge foreldre i sanntid. Ikke mer å gjenta seg selv, eller lure på om det andre hjemmet har det siste."
     }
   },
   "features": {
     "label": "Funksjoner",
-    "title": "Alt på ett sted",
+    "title": "Alle detaljene, delt med det andre hjemmet",
     "threads": {
       "title": "Tråder",
-      "description": "Organiserte emnesamtaler i stedet for én enkelt chat. Hold logistikk, skoleandliggender og helseoppdateringer separate og lette å finne."
+      "description": "Separate samtaler for hvert tema — logistikk, skole, helse. Ingenting forsvinner i én lang chat."
     },
     "album": {
       "title": "Delt album",
-      "description": "Et privat fotoalbum som begge foreldre kan legge til og se. Så ingen forelder går glipp av øyeblikkene som skjer i det andre hjemmet."
+      "description": "Et privat album der begge foreldre kan dele bilder. Øyeblikkene som skjer i ett hjem, er synlige i begge."
     },
     "childInfo": {
       "title": "Barneinformasjon",
@@ -65,9 +65,9 @@
     },
     "messages": {
       "title": "Meldinger",
-      "description": "Meldinger kan ikke redigeres eller slettes etter sending. Søk i samtaler og merk viktige meldinger. Et tydelig, permanent register mellom to foreldre."
+      "description": "Meldinger kan ikke redigeres eller slettes. Søk i samtaler, merk det viktige, og ha alltid et tydelig bilde av hva som er avtalt."
     },
-    "more": "Flere verktøy inkludert — kontakter, utstyrslister, barneinformasjon, samværsplan og eksport av alle meldinger."
+    "more": "Også inkludert: kontakter, utstyrslister, barneinformasjon og samværsplan — slik at begge foreldre har det de trenger, uansett hvor barnet er."
   },
   "problem": {
     "label": "Hvorfor Lina",
@@ -77,7 +77,7 @@
   "privacy": {
     "label": "Personvern",
     "title": "Privatliv fra grunnen av",
-    "description": "Lina er bygget med personvern som fundament. Dine data er beskyttet gjennom sikker infrastruktur, kontrollert tilgang og signerte lenker. Det er ingen reklame, ingen datadeling og ingen algoritme som bestemmer hva du skal se — bare et trygt, strukturert sted for samarbeid.",
+    "description": "Det som skjer i Lina, forblir mellom dere to. Ingen reklame, ingen tredjeparter, ingen algoritme som bestemmer hva du ser. Barnets informasjon er privat — slik det skal være.",
     "point1": {
       "title": "Ingen reklame",
       "description": "Din opplevelse er aldri påvirket av annonser eller kommersielle interesser."
@@ -94,7 +94,7 @@
   },
   "cta": {
     "title": "En trygg linje mellom to foreldre.",
-    "description": "Last ned Lina og kom i gang på minutter."
+    "description": "Lina holder de praktiske detaljene organisert og synlige for begge foreldre. Last ned og kom i gang på minutter."
   },
   "footer": {
     "terms": "Vilkår for bruk",
