@@ -1028,6 +1028,7 @@
     });
     options.forEach(o => {
       o.addEventListener('click', () => {
+        console.log('lang clicked:', o.dataset.lang, 'linaSetLang:', typeof window.linaSetLang);
         window.linaSetLang(o.dataset.lang);
         switcher.classList.remove('open');
         btn.setAttribute('aria-expanded', 'false');
