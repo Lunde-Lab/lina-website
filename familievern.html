@@ -133,6 +133,39 @@
       margin-bottom: 36px;
     }
 
+    .fv-hero-inner {
+      display: flex;
+      align-items: center;
+      gap: 64px;
+    }
+
+    .fv-hero-content { flex: 1; min-width: 0; }
+    .fv-hero-visual { flex-shrink: 0; }
+
+    .fv-hero-phone {
+      width: 200px;
+      height: 420px;
+      border-radius: 36px;
+      border: 7px solid #1C2027;
+      background: #fff;
+      overflow: hidden;
+      box-shadow:
+        0 24px 56px rgba(0,0,0,0.15),
+        0 4px 12px rgba(0,0,0,0.07);
+    }
+
+    .fv-hero-phone img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 720px) {
+      .fv-hero-inner { flex-direction: column; gap: 40px; }
+      .fv-hero-visual { display: none; }
+    }
+
     /* ── About ── */
     #fv-about { background: var(--bg); }
 
@@ -537,16 +570,25 @@
   <!-- Hero -->
   <section class="fv-hero">
     <div class="container">
-      <div class="fv-hero-pill">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-          <polyline points="9 22 9 12 15 12 15 22"/>
-        </svg>
-        <span data-i18n="familievern.hero.label">For Familievernkontor</span>
+      <div class="fv-hero-inner">
+        <div class="fv-hero-content">
+          <div class="fv-hero-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            <span data-i18n="familievern.hero.label">For Familievernkontor</span>
+          </div>
+          <h1 data-i18n="familievern.hero.title">Et verktøy du kan anbefale til foreldre som deler omsorg</h1>
+          <p class="fv-hero-description" data-i18n="familievern.hero.description">Lina hjelper foreldre å holde hverdagens praktiske detaljer samlet og tilgjengelig på tvers av to hjem. Her finner du informasjon om appen beregnet for deg som fagperson.</p>
+          <a href="#fv-contact" class="btn-primary" style="align-self:flex-start; text-decoration:none;" data-i18n="familievern.hero.cta">Ta kontakt</a>
+        </div>
+        <div class="fv-hero-visual" aria-hidden="true">
+          <div class="fv-hero-phone">
+            <img src="assets/images/ThreadsScreen.png" alt="" />
+          </div>
+        </div>
       </div>
-      <h1 data-i18n="familievern.hero.title">Et verktøy du kan anbefale til foreldre som deler omsorg</h1>
-      <p class="fv-hero-description" data-i18n="familievern.hero.description">Lina hjelper foreldre å holde hverdagens praktiske detaljer samlet og tilgjengelig på tvers av to hjem. Her finner du informasjon om appen beregnet for deg som fagperson.</p>
-      <a href="#fv-contact" class="btn-primary" style="align-self:flex-start; text-decoration:none;" data-i18n="familievern.hero.cta">Ta kontakt</a>
     </div>
   </section>
 
