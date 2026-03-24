@@ -507,6 +507,79 @@
     .btn-appstore svg { flex-shrink: 0; }
 
     @media print { nav, footer, .btn-row, .export-card, #cta { display: none !important; } }
+
+    /* ── Language switcher ── */
+    .lang-switcher {
+      position: relative;
+    }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover {
+      border-color: var(--primary);
+      color: var(--text);
+    }
+    .lang-btn svg {
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .lang-switcher.open .lang-btn svg {
+      transform: rotate(180deg);
+    }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown {
+      display: block;
+    }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover {
+      background: var(--bg);
+    }
+    .lang-option.active {
+      color: var(--primary);
+      font-weight: 500;
+    }
+    .lang-flag {
+      font-size: 16px;
+      line-height: 1;
+    }
   </style>
 </head>
 <body>
@@ -515,6 +588,25 @@
   <nav>
     <div class="nav-inner">
       <a href="/"><img src="../assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span id="lang-current">EN</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </button>
+        <div class="lang-dropdown" role="menu">
+          <button class="lang-option" data-lang="no" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</button>
+          <button class="lang-option" data-lang="en" role="menuitem"><span class="lang-flag">🇬🇧</span> English</button>
+          <button class="lang-option" data-lang="sv" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</button>
+          <button class="lang-option" data-lang="da" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</button>
+          <button class="lang-option" data-lang="fi" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</button>
+        </div>
+      </div>
     </div>
   </nav>
 
@@ -1156,6 +1248,37 @@
       _resizeTimer = setTimeout(renderGrid, 120);
     });
 
+  }());
+  </script>
+  <script>
+  (function () {
+    const LABELS = { no: 'NO', en: 'EN', sv: 'SV', da: 'DA', fi: 'FI' };
+    const switcher = document.getElementById('lang-switcher');
+    const btn = document.getElementById('lang-btn');
+    const current = document.getElementById('lang-current');
+    const options = document.querySelectorAll('.lang-option');
+    function updateActive(lang) {
+      current.textContent = LABELS[lang] || lang.toUpperCase();
+      options.forEach(o => o.classList.toggle('active', o.dataset.lang === lang));
+    }
+    btn.addEventListener('click', () => {
+      const open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', e => {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    options.forEach(o => {
+      o.addEventListener('click', () => {
+        window.linaSetLang(o.dataset.lang);
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('lina:langchange', e => updateActive(e.detail.lang));
   }());
   </script>
 

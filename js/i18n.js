@@ -37,6 +37,8 @@ async function setLang(lang) {
   document.dispatchEvent(new CustomEvent('lina:langchange', { detail: { lang, t } }));
 }
 
+window.linaSetLang = setLang;
+
 document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('lina-lang');
   const rawBrowser = navigator.language.split('-')[0];
