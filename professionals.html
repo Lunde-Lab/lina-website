@@ -428,18 +428,29 @@
       margin-bottom: 12px;
     }
 
-    #fv-contact > .container > p {
+    .fv-contact .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .fv-contact-description {
       font-size: 16px;
       color: var(--text-secondary);
       max-width: 520px;
       line-height: 1.65;
       margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .fv-form {
       max-width: 560px;
+      width: 100%;
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 12px;
     }
 
@@ -447,6 +458,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
+      width: 100%;
     }
 
     @media (max-width: 540px) {
@@ -490,7 +502,7 @@
       font-weight: 500;
       cursor: pointer;
       transition: background 0.15s;
-      align-self: flex-start;
+      align-self: center;
     }
 
     .btn-submit:hover { background: var(--primary-dark); }
@@ -900,11 +912,11 @@
   </section>
 
   <!-- Contact -->
-  <section id="fv-contact">
+  <section id="fv-contact" class="fv-contact">
     <div class="container">
       <p class="section-label" data-i18n="familievern.contact.label">Kontakt</p>
       <h2 data-i18n="familievern.contact.title">Ta kontakt</h2>
-      <p data-i18n="familievern.contact.description">Har du spørsmål om Lina, eller ønsker du å drøfte om appen kan passe for familier du arbeider med? Vi svarer gjerne.</p>
+      <p class="fv-contact-description" data-i18n="familievern.contact.description">Har du spørsmål om Lina, eller ønsker du å drøfte om appen kan passe for familier du arbeider med? Vi svarer gjerne.</p>
 
       <form class="fv-form" id="fv-contact-form" novalidate>
         <div class="fv-form-row">
