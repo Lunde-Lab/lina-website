@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="no" data-i18n-title="familievern.pageTitle">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/familievern.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <title>Lina for familievern — ett felles sted for barnet</title>
+  <meta name="description" content="Lina hjelper foreldre som er i kontakt med familievernkontor med å koordinere samvær på tvers av to hjem." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getlina.app/familievern.html" />
+  <meta property="og:title" content="Lina for familievern" />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Primary Button ── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 8px;
+      padding: 12px 22px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: background 0.15s;
+    }
+
+    .btn-primary:hover { background: var(--primary-dark); }
+
+    /* ── Sections ── */
+    section { padding: 64px 24px; }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    /* ── Hero ── */
+    .fv-hero {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 80px 24px 96px;
+    }
+
+    .fv-hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: #E9F5F3;
+      color: var(--primary);
+      border-radius: 100px;
+      padding: 5px 14px 5px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      margin-bottom: 28px;
+    }
+
+    .fv-hero .container h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      max-width: 680px;
+      margin-bottom: 20px;
+    }
+
+    .fv-hero-description {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 560px;
+      line-height: 1.65;
+      margin-bottom: 36px;
+    }
+
+    /* ── About ── */
+    #fv-about { background: var(--bg); }
+
+    .fv-about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    @media (max-width: 720px) {
+      .fv-about-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+
+    .fv-about-grid h2 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-top: 12px;
+    }
+
+    .fv-about-description {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      padding-top: 4px;
+    }
+
+    /* ── When ── */
+    .fv-when { background: #fff; }
+
+    .fv-when-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin-top: 32px;
+    }
+
+    .fv-when-col h3 {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    .fv-when-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .fv-when-list li {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .fv-when-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--border);
+    }
+
+    #fv-when-fits .fv-when-list li::before { background: var(--primary); }
+
+    @media (max-width: 720px) {
+      .fv-when-inner { grid-template-columns: 1fr; gap: 32px; }
+    }
+
+    /* ── Features ── */
+    #fv-features { background: var(--bg); }
+
+    #fv-features h2 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 56px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 720px) {
+      .features-grid { grid-template-columns: 1fr; }
+    }
+
+    .feature-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: #EAF4F3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .feature-icon svg { color: var(--primary); }
+
+    .feature-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .feature-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ── Privacy ── */
+    #fv-privacy { background: #fff; }
+
+    #fv-privacy h2 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .privacy-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    @media (max-width: 720px) {
+      .privacy-inner { grid-template-columns: 1fr; gap: 40px; }
+    }
+
+    .privacy-lead {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    .privacy-points {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 4px;
+    }
+
+    .privacy-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .privacy-point-text h3 {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 4px;
+    }
+
+    .privacy-point-text p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ── Screenshots ── */
+    #fv-screenshots { background: #fff; }
+
+    .fv-screenshots-grid {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .fv-phone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .fv-phone-frame {
+      width: 176px;
+      height: 370px;
+      border-radius: 32px;
+      border: 7px solid #1C2027;
+      background: #fff;
+      overflow: hidden;
+      box-shadow:
+        0 20px 48px rgba(0,0,0,0.13),
+        0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .fv-phone--featured .fv-phone-frame {
+      width: 200px;
+      height: 420px;
+      border-radius: 36px;
+    }
+
+    .fv-phone-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .fv-phone-label {
+      font-size: 13px;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    @media (max-width: 900px) {
+      .fv-screenshots-grid {
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .fv-screenshots-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .fv-phone--featured .fv-phone-frame {
+        width: 176px;
+        height: 370px;
+      }
+    }
+
+    /* ── Contact ── */
+    #fv-contact { background: var(--bg); }
+
+    #fv-contact h2 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    #fv-contact > .container > p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 520px;
+      line-height: 1.65;
+      margin-bottom: 40px;
+    }
+
+    .fv-form {
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .fv-form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 540px) {
+      .fv-form-row { grid-template-columns: 1fr; }
+    }
+
+    .fv-form input,
+    .fv-form textarea {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      color: var(--text);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      width: 100%;
+      outline: none;
+      transition: border-color 0.15s;
+      resize: vertical;
+    }
+
+    .fv-form input::placeholder,
+    .fv-form textarea::placeholder { color: var(--text-secondary); opacity: 0.7; }
+
+    .fv-form input:focus,
+    .fv-form textarea:focus { border-color: var(--primary); }
+
+    .fv-form textarea { min-height: 140px; }
+
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 22px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+      align-self: flex-start;
+    }
+
+    .btn-submit:hover { background: var(--primary-dark); }
+    .btn-submit svg { flex-shrink: 0; }
+
+    #fv-success {
+      display: none;
+      max-width: 560px;
+    }
+
+    #fv-success h3 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    #fv-success p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      font-size: 14px;
+      color: var(--text-secondary);
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover { color: var(--text); }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html"><img src="assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="fv-hero">
+    <div class="container">
+      <div class="fv-hero-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <span data-i18n="familievern.hero.label">For Familievernkontor</span>
+      </div>
+      <h1 data-i18n="familievern.hero.title">Et verktøy du kan anbefale til foreldre som deler omsorg</h1>
+      <p class="fv-hero-description" data-i18n="familievern.hero.description">Lina hjelper foreldre å holde hverdagens praktiske detaljer samlet og tilgjengelig på tvers av to hjem. Her finner du informasjon om appen beregnet for deg som fagperson.</p>
+      <a href="#fv-contact" class="btn-primary" style="align-self:flex-start; text-decoration:none;" data-i18n="familievern.hero.cta">Ta kontakt</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="fv-about">
+    <div class="container">
+      <div class="fv-about-grid">
+        <div>
+          <p class="section-label" data-i18n="familievern.about.label">Om appen</p>
+          <h2 data-i18n="familievern.about.title">Én delt plass for barnet — på tvers av hjem</h2>
+        </div>
+        <div>
+          <p class="fv-about-description" data-i18n="familievern.about.description">Mange foreldre som deler omsorg mangler en felles struktur for hverdagssamarbeidet. Informasjon spres over SMS, e-post og muntlige avtaler, og en av foreldrene ender opp med å koordinere alt. Lina samler det praktiske — medisinsk informasjon, kontakter, utstyrslister, bilder og meldinger — i én delt løsning som begge foreldre har tilgang til.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- When Lina fits -->
+  <section id="fv-when" class="fv-when">
+    <div class="container">
+      <p class="section-label" data-i18n="familievern.when.label">Når passer Lina</p>
+      <div class="fv-when-inner">
+        <div class="fv-when-col">
+          <h3 data-i18n="familievern.when.fits.title">Lina passer når foreldre</h3>
+          <ul class="fv-when-list" id="fv-when-fits">
+            <li data-i18n="familievern.when.fits.item1">har et grunnleggende fungerende samarbeid, men sliter med det praktiske</li>
+            <li data-i18n="familievern.when.fits.item2">ønsker mer struktur og forutsigbarhet i hverdagen</li>
+            <li data-i18n="familievern.when.fits.item3">trenger en felles kommunikasjonskanal som holder samarbeidet saklig</li>
+            <li data-i18n="familievern.when.fits.item4">vil unngå at viktig informasjon om barnet forsvinner mellom hjemmene</li>
+          </ul>
+        </div>
+        <div class="fv-when-col">
+          <h3 data-i18n="familievern.when.notFits.title">Lina er ikke egnet når</h3>
+          <ul class="fv-when-list" id="fv-when-not">
+            <li data-i18n="familievern.when.notFits.item1">det er høykonflikt som krever rettslig eller terapeutisk oppfølging</li>
+            <li data-i18n="familievern.when.notFits.item2">en av foreldrene ikke ønsker digitalt samarbeid</li>
+            <li data-i18n="familievern.when.notFits.item3">situasjonen krever tiltak utover praktisk koordinering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section id="fv-privacy">
+    <div class="container">
+      <p class="section-label" data-i18n="familievern.privacy.label">Personvern</p>
+      <div class="privacy-inner">
+
+        <div class="privacy-text">
+          <h2 data-i18n="familievern.privacy.title">Trygg og privat av natur</h2>
+          <p class="privacy-lead" data-i18n="familievern.privacy.description">Lina er bygget med personvern som fundament. Ingen reklame, ingen deling av data og ingen algoritme som bestemmer hva brukerne ser. Som fagperson kan du anbefale appen med trygghet for at foreldrenes informasjon behandles forsvarlig.</p>
+        </div>
+
+        <div class="privacy-points">
+          <div class="privacy-point">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="privacy-point-text">
+              <h3 data-i18n="familievern.privacy.point1.title">Ingen reklame</h3>
+              <p data-i18n="familievern.privacy.point1.description">Ingen annonser eller kommersielle interesser påvirker brukeropplevelsen.</p>
+            </div>
+          </div>
+          <div class="privacy-point">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <div class="privacy-point-text">
+              <h3 data-i18n="familievern.privacy.point2.title">Ingen datadeling</h3>
+              <p data-i18n="familievern.privacy.point2.description">Foreldrenes data selges ikke og deles ikke med tredjeparter.</p>
+            </div>
+          </div>
+          <div class="privacy-point">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+              </svg>
+            </div>
+            <div class="privacy-point-text">
+              <h3 data-i18n="familievern.privacy.point3.title">Sikker infrastruktur</h3>
+              <p data-i18n="familievern.privacy.point3.description">Informasjon beskyttes gjennom sikker lagring, tilgangskontroll og signerte lenker.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="fv-features">
+    <div class="container">
+      <p class="section-label" data-i18n="familievern.features.label">Hvordan det fungerer i praksis</p>
+      <h2 data-i18n="familievern.features.title">Struktur som reduserer friksjon i hverdagen</h2>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.features.threads.title">Tråder</h3>
+          <p data-i18n="familievern.features.threads.description">Foreldre kommuniserer om ett tema av gangen — logistikk, skole eller helse — uten at viktig informasjon går tapt i en lang meldingstråd.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.features.messages.title">Meldinger</h3>
+          <p data-i18n="familievern.features.messages.description">Meldinger kan ikke redigeres eller slettes. Det gir en forutsigbar kommunikasjonskanal og en tydelig historikk over hva som er avtalt.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.features.album.title">Delt album</h3>
+          <p data-i18n="familievern.features.album.description">Begge foreldre kan dele bilder fra hverdagen. Barnet er synlig i begge hjem.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.features.info.title">Barneinformasjon</h3>
+          <p data-i18n="familievern.features.info.description">Medisinsk informasjon, allergier og viktige detaljer legges inn én gang og er tilgjengelig for begge — uavhengig av hvem barnet er hos.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/>
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.features.equipment.title">Utstyrslister</h3>
+          <p data-i18n="familievern.features.equipment.description">Oversikt over hva barnet trenger i hvert hjem reduserer antall avklaringer og misforståelser rundt praktiske detaljer.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.features.schedule.title">Omsorgsplan</h3>
+          <p data-i18n="familievern.features.schedule.description">Begge foreldre ser omsorgsfordelingen i samme visning. Færre diskusjoner om hvem som hadde barnet når.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section id="fv-screenshots">
+    <div class="container">
+      <div class="fv-screenshots-grid">
+        <div class="fv-phone">
+          <div class="fv-phone-frame">
+            <img src="assets/images/ThreadsScreen.png" alt="" aria-hidden="true" />
+          </div>
+          <span class="fv-phone-label" data-i18n="familievern.screenshots.label1"></span>
+        </div>
+        <div class="fv-phone">
+          <div class="fv-phone-frame">
+            <img src="assets/images/ThreadDetailScreen.png" alt="" aria-hidden="true" />
+          </div>
+          <span class="fv-phone-label" data-i18n="familievern.screenshots.label2"></span>
+        </div>
+        <div class="fv-phone fv-phone--featured">
+          <div class="fv-phone-frame">
+            <img src="assets/images/ChildList.png" alt="" aria-hidden="true" />
+          </div>
+          <span class="fv-phone-label" data-i18n="familievern.screenshots.label3"></span>
+        </div>
+        <div class="fv-phone">
+          <div class="fv-phone-frame">
+            <img src="assets/images/AlbumScreen.png" alt="" aria-hidden="true" />
+          </div>
+          <span class="fv-phone-label" data-i18n="familievern.screenshots.label4"></span>
+        </div>
+        <div class="fv-phone">
+          <div class="fv-phone-frame">
+            <img src="assets/images/CareScheduleApp.png" alt="" aria-hidden="true" />
+          </div>
+          <span class="fv-phone-label" data-i18n="familievern.screenshots.label5"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="fv-contact">
+    <div class="container">
+      <p class="section-label" data-i18n="familievern.contact.label">Kontakt</p>
+      <h2 data-i18n="familievern.contact.title">Ta kontakt</h2>
+      <p data-i18n="familievern.contact.description">Har du spørsmål om Lina, eller ønsker du å drøfte om appen kan passe for familier du arbeider med? Vi svarer gjerne.</p>
+
+      <form class="fv-form" id="fv-contact-form" novalidate>
+        <div class="fv-form-row">
+          <input type="text" name="name" data-i18n-placeholder="familievern.contact.namePlaceholder" placeholder="Navn" required />
+          <input type="email" name="email" data-i18n-placeholder="familievern.contact.emailPlaceholder" placeholder="E-postadresse" required />
+        </div>
+        <input type="text" name="office" data-i18n-placeholder="familievern.contact.officePlaceholder" placeholder="Kontor / arbeidsplass (valgfritt)" />
+        <textarea name="message" data-i18n-placeholder="familievern.contact.messagePlaceholder" placeholder="Din melding" required></textarea>
+        <button type="submit" class="btn-submit">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+          <span data-i18n="familievern.contact.submit">Send melding</span>
+        </button>
+      </form>
+
+      <div id="fv-success">
+        <h3 data-i18n="familievern.contact.successTitle">Takk for meldingen</h3>
+        <p data-i18n="familievern.contact.successDescription">Vi kommer tilbake til deg så snart vi kan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <img src="assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
+          <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="account-deletion.html">Account deletion</a>
+          <a href="/contact" data-i18n="footer.contact">Contact</a>
+          <a href="/familievern.html">For Familievernkontor</a>
+        </nav>
+      </div>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script>
+  document.getElementById('fv-contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    try {
+      const res = await fetch('https://formspree.io/f/mjganzgd', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        document.getElementById('fv-success').style.display = 'block';
+      } else {
+        window.location.href = 'mailto:support@getlina.app';
+      }
+    } catch(err) {
+      window.location.href = 'mailto:support@getlina.app';
+    }
+  });
+  </script>
+
+</body>
+</html>

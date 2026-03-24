@@ -100,6 +100,7 @@
     "terms": "Vilkår for bruk",
     "privacy": "Personvernregler",
     "contact": "Kontakt",
+    "familievern": "For Familievernkontor",
     "copy": "© 2026 Lina. Alle rettigheter forbeholdt."
   },
   "contact": {
@@ -132,5 +133,71 @@
     "statsSwitches": "Antall bytter",
     "days": "dager",
     "of": "av"
+  },
+  "familievern": {
+    "hero": {
+      "label": "For Familievernkontor",
+      "title": "Et verktøy du kan anbefale til foreldre som deler omsorg",
+      "description": "Lina hjelper foreldre å holde hverdagens praktiske detaljer samlet og tilgjengelig på tvers av to hjem. Her finner du informasjon om appen beregnet for deg som fagperson.",
+      "cta": "Ta kontakt"
+    },
+    "about": {
+      "label": "Om appen",
+      "title": "Én delt plass for barnet — på tvers av hjem",
+      "description": "Mange foreldre som deler omsorg mangler en felles struktur for hverdagssamarbeidet. Informasjon spres over SMS, e-post og muntlige avtaler, og en av foreldrene ender opp med å koordinere alt. Lina samler det praktiske — medisinsk informasjon, kontakter, utstyrslister, bilder og meldinger — i én delt løsning som begge foreldre har tilgang til."
+    },
+    "when": {
+      "label": "Når passer Lina",
+      "fits": {
+        "title": "Lina passer når foreldre",
+        "item1": "har et grunnleggende fungerende samarbeid, men sliter med det praktiske",
+        "item2": "ønsker mer struktur og forutsigbarhet i hverdagen",
+        "item3": "trenger en felles kommunikasjonskanal som holder samarbeidet saklig",
+        "item4": "vil unngå at viktig informasjon om barnet forsvinner mellom hjemmene"
+      },
+      "notFits": {
+        "title": "Lina er ikke egnet når",
+        "item1": "det er høykonflikt som krever rettslig eller terapeutisk oppfølging",
+        "item2": "en av foreldrene ikke ønsker digitalt samarbeid",
+        "item3": "situasjonen krever tiltak utover praktisk koordinering"
+      }
+    },
+    "privacy": {
+      "label": "Personvern",
+      "title": "Trygg og privat av natur",
+      "description": "Lina er bygget med personvern som fundament. Ingen reklame, ingen deling av data og ingen algoritme som bestemmer hva brukerne ser. Som fagperson kan du anbefale appen med trygghet for at foreldrenes informasjon behandles forsvarlig.",
+      "point1": { "title": "Ingen reklame", "description": "Ingen annonser eller kommersielle interesser påvirker brukeropplevelsen." },
+      "point2": { "title": "Ingen datadeling", "description": "Foreldrenes data selges ikke og deles ikke med tredjeparter." },
+      "point3": { "title": "Sikker infrastruktur", "description": "Informasjon beskyttes gjennom sikker lagring, tilgangskontroll og signerte lenker." }
+    },
+    "features": {
+      "label": "Hvordan det fungerer i praksis",
+      "title": "Struktur som reduserer friksjon i hverdagen",
+      "threads": { "title": "Tråder", "description": "Foreldre kommuniserer om ett tema av gangen — logistikk, skole eller helse — uten at viktig informasjon går tapt i en lang meldingstråd." },
+      "messages": { "title": "Meldinger", "description": "Meldinger kan ikke redigeres eller slettes. Det gir en forutsigbar kommunikasjonskanal og en tydelig historikk over hva som er avtalt." },
+      "album": { "title": "Delt album", "description": "Begge foreldre kan dele bilder fra hverdagen. Barnet er synlig i begge hjem." },
+      "info": { "title": "Barneinformasjon", "description": "Medisinsk informasjon, allergier og viktige detaljer legges inn én gang og er tilgjengelig for begge — uavhengig av hvem barnet er hos." },
+      "equipment": { "title": "Utstyrslister", "description": "Oversikt over hva barnet trenger i hvert hjem reduserer antall avklaringer og misforståelser rundt praktiske detaljer." },
+      "schedule": { "title": "Omsorgsplan", "description": "Begge foreldre ser omsorgsfordelingen i samme visning. Færre diskusjoner om hvem som hadde barnet når." }
+    },
+    "screenshots": {
+      "label1": "Tråder",
+      "label2": "Samtaledetalj",
+      "label3": "Barneinformasjon",
+      "label4": "Delt album",
+      "label5": "Omsorgsplan"
+    },
+    "contact": {
+      "label": "Kontakt",
+      "title": "Ta kontakt",
+      "description": "Har du spørsmål om Lina, eller ønsker du å drøfte om appen kan passe for familier du arbeider med? Vi svarer gjerne.",
+      "namePlaceholder": "Navn",
+      "emailPlaceholder": "E-postadresse",
+      "officePlaceholder": "Kontor / arbeidsplass (valgfritt)",
+      "messagePlaceholder": "Din melding",
+      "submit": "Send melding",
+      "successTitle": "Takk for meldingen",
+      "successDescription": "Vi kommer tilbake til deg så snart vi kan."
+    }
   }
 }

@@ -100,6 +100,7 @@
     "terms": "Käyttöehdot",
     "privacy": "Tietosuojakäytäntö",
     "contact": "Ota yhteyttä",
+    "familievern": "Perheasiain neuvottelukeskuksille",
     "copy": "© 2026 Lina. Kaikki oikeudet pidätetään."
   },
   "contact": {
@@ -132,5 +133,71 @@
     "statsSwitches": "Vaihtoja yhteensä",
     "days": "päivää",
     "of": "/"
+  },
+  "familievern": {
+    "hero": {
+      "label": "Perheasiain neuvottelukeskuksille",
+      "title": "Työkalu, jonka voit suositella huolenpidon jakavalle vanhemmille",
+      "description": "Lina auttaa vanhempia pitämään arjen käytännön yksityiskohdat koottuna ja saatavilla kahden kodin välillä. Tämä sivu on suunnattu ammattilaisille.",
+      "cta": "Ota yhteyttä"
+    },
+    "about": {
+      "label": "Sovelluksesta",
+      "title": "Yksi yhteinen paikka lapselle – kotien välillä",
+      "description": "Monilta huolenpidon jakavalta vanhemmalta puuttuu yhteinen rakenne arjen yhteistyölle. Tieto hajaantuu tekstiviesteihin, sähköposteihin ja suullisiin sopimuksiin, ja yksi vanhemmista päätyy koordinoimaan kaiken. Lina kokoaa käytännön asiat – lääketieteelliset tiedot, yhteystiedot, varustelistat, kuvat ja viestit – yhteen jaettuun paikkaan, joka on molempien vanhempien saatavilla."
+    },
+    "when": {
+      "label": "Milloin Lina sopii",
+      "fits": {
+        "title": "Lina sopii, kun vanhemmat",
+        "item1": "pystyvät periaatteessa yhteistyöhön, mutta kamppailevat käytännön koordinoinnin kanssa",
+        "item2": "haluavat enemmän rakennetta ja ennustettavuutta arkeen",
+        "item3": "tarvitsevat yhteisen viestintäkanavan, joka pitää yhteistyön asiallisena",
+        "item4": "haluavat varmistaa, että tärkeät tiedot lapsesta ovat saatavilla molemmissa kodeissa"
+      },
+      "notFits": {
+        "title": "Lina ei sovi, kun",
+        "item1": "kyseessä on korkea konflikti, joka vaatii oikeudellista tai terapeuttista seurantaa",
+        "item2": "toinen vanhemmista ei halua osallistua digitaaliseen yhteistyöhön",
+        "item3": "tilanne vaatii toimenpiteitä käytännön koordinoinnin lisäksi"
+      }
+    },
+    "privacy": {
+      "label": "Tietosuoja",
+      "title": "Turvallinen ja yksityinen luonnostaan",
+      "description": "Lina on rakennettu tietosuoja perustana. Ei mainontaa, ei tietojen jakamista eikä algoritmia, joka vaikuttaa siihen, mitä käyttäjät näkevät. Ammattilaisena voit suositella sovellusta luottavaisin mielin, että vanhempien tiedot käsitellään vastuullisesti.",
+      "point1": { "title": "Ei mainontaa", "description": "Mitkään mainokset tai kaupalliset intressit eivät vaikuta käyttäjäkokemukseen." },
+      "point2": { "title": "Ei tietojen jakamista", "description": "Vanhempien tietoja ei myydä eikä jaeta kolmansille osapuolille." },
+      "point3": { "title": "Turvallinen infrastruktuuri", "description": "Tiedot suojataan turvallisella tallennuksella, pääsynhallinnalla ja allekirjoitetuilla linkeillä." }
+    },
+    "features": {
+      "label": "Miten se toimii käytännössä",
+      "title": "Rakenne, joka vähentää kitkaa arjessa",
+      "threads": { "title": "Säikeet", "description": "Vanhemmat kommunikoivat yhdestä aiheesta kerrallaan – logistiikka, koulu tai terveys – ilman että tärkeä tieto hukkuu pitkään viestiketjuun." },
+      "messages": { "title": "Viestit", "description": "Viestejä ei voi muokata tai poistaa. Se luo ennustettavan viestintäkanavan ja selkeän historian siitä, mitä on sovittu." },
+      "album": { "title": "Jaettu albumi", "description": "Molemmat vanhemmat voivat jakaa kuvia arjesta. Lapsi on näkyvissä molemmissa kodeissa." },
+      "info": { "title": "Lapsen tiedot", "description": "Lääketieteelliset tiedot, allergiat ja tärkeät yksityiskohdat syötetään kerran ja ovat molempien saatavilla – riippumatta siitä, kummassa kodissa lapsi on." },
+      "equipment": { "title": "Varustelistat", "description": "Selkeä yleiskuva siitä, mitä lapsi tarvitsee kummassakin kodissa, vähentää selvitysten ja väärinkäsitysten määrää käytännön yksityiskohdissa." },
+      "schedule": { "title": "Hoitoaikataulu", "description": "Molemmat vanhemmat näkevät hoitoajan jakautumisen samassa näkymässä. Vähemmän keskusteluja siitä, kummalla vanhemmalla lapsi oli ja milloin." }
+    },
+    "screenshots": {
+      "label1": "Säikeet",
+      "label2": "Säieen tiedot",
+      "label3": "Lapsen tiedot",
+      "label4": "Jaettu albumi",
+      "label5": "Hoitoaikataulu"
+    },
+    "contact": {
+      "label": "Yhteystiedot",
+      "title": "Ota yhteyttä",
+      "description": "Onko sinulla kysymyksiä Linasta, tai haluatko keskustella siitä, voisiko sovellus sopia perheille, joiden kanssa työskentelet? Vastaamme mielellämme.",
+      "namePlaceholder": "Nimi",
+      "emailPlaceholder": "Sähköpostiosoite",
+      "officePlaceholder": "Toimisto / työpaikka (valinnainen)",
+      "messagePlaceholder": "Viestisi",
+      "submit": "Lähetä viesti",
+      "successTitle": "Kiitos viestistäsi",
+      "successDescription": "Palaamme asiaan mahdollisimman pian."
+    }
   }
 }

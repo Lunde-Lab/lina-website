@@ -90,6 +90,7 @@
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
     "contact": "Contact",
+    "familievern": "For Family Counseling Offices",
     "copy": "© 2026 Lina. All rights reserved."
   },
   "contact": {
@@ -122,5 +123,71 @@
     "statsSwitches": "Total switches",
     "days": "days",
     "of": "of"
+  },
+  "familievern": {
+    "hero": {
+      "label": "For Family Counseling Offices",
+      "title": "A tool you can recommend to parents who share care",
+      "description": "Lina helps parents keep the practical details of everyday co-parenting organized and accessible across two homes. This page is intended for professionals.",
+      "cta": "Get in touch"
+    },
+    "about": {
+      "label": "About the app",
+      "title": "One shared place for the child — across homes",
+      "description": "Many parents who share care lack a common structure for everyday cooperation. Information is scattered across texts, emails, and verbal agreements, and one parent ends up coordinating everything. Lina brings the practical details — medical information, contacts, equipment lists, photos, and messages — into one shared space that both parents can access."
+    },
+    "when": {
+      "label": "When Lina is a good fit",
+      "fits": {
+        "title": "Lina works well when parents",
+        "item1": "have a fundamentally workable co-parenting relationship but struggle with the practical coordination",
+        "item2": "want more structure and predictability in their everyday routines",
+        "item3": "need a shared communication channel that keeps cooperation focused",
+        "item4": "want to ensure important information about the child is available in both homes"
+      },
+      "notFits": {
+        "title": "Lina is not suitable when",
+        "item1": "there is high conflict requiring legal or therapeutic intervention",
+        "item2": "one parent is unwilling to engage in digital cooperation",
+        "item3": "the situation requires measures beyond practical coordination"
+      }
+    },
+    "privacy": {
+      "label": "Privacy",
+      "title": "Secure and private by design",
+      "description": "Lina is built with privacy as its foundation. No advertising, no data sharing, and no algorithm influencing what users see. As a professional, you can recommend the app with confidence that parents' information is handled responsibly.",
+      "point1": { "title": "No advertising", "description": "No ads or commercial interests affect the user experience." },
+      "point2": { "title": "No data sharing", "description": "Parents' data is not sold or shared with third parties." },
+      "point3": { "title": "Secure infrastructure", "description": "Information is protected through secure storage, access control, and signed links." }
+    },
+    "features": {
+      "label": "How it works in practice",
+      "title": "Structure that reduces friction in everyday life",
+      "threads": { "title": "Threads", "description": "Parents communicate about one topic at a time — logistics, school, or health — without important information getting lost in a long message thread." },
+      "messages": { "title": "Messages", "description": "Messages cannot be edited or deleted. This creates a predictable communication channel and a clear record of what has been agreed." },
+      "album": { "title": "Shared album", "description": "Both parents can share photos from everyday life. The child is visible in both homes." },
+      "info": { "title": "Child information", "description": "Medical information, allergies, and important details are entered once and available to both parents — regardless of which home the child is in." },
+      "equipment": { "title": "Equipment lists", "description": "A clear overview of what the child needs in each home reduces the number of clarifications and misunderstandings around practical details." },
+      "schedule": { "title": "Care schedule", "description": "Both parents see the care arrangement in the same view. Fewer discussions about who had the child and when." }
+    },
+    "screenshots": {
+      "label1": "Threads",
+      "label2": "Thread detail",
+      "label3": "Child information",
+      "label4": "Shared album",
+      "label5": "Care schedule"
+    },
+    "contact": {
+      "label": "Contact",
+      "title": "Get in touch",
+      "description": "Do you have questions about Lina, or would you like to discuss whether the app might suit families you work with? We are happy to help.",
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email address",
+      "officePlaceholder": "Office / workplace (optional)",
+      "messagePlaceholder": "Your message",
+      "submit": "Send message",
+      "successTitle": "Thank you for your message",
+      "successDescription": "We will get back to you as soon as we can."
+    }
   }
 }
