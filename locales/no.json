@@ -199,5 +199,8 @@
       "successTitle": "Takk for meldingen",
       "successDescription": "Vi kommer tilbake til deg så snart vi kan."
     }
-  }
+  },
+  "nav_home": "Hjem",
+  "nav_care_schedule": "Care Schedule",
+  "nav_download": "Last ned"
 }

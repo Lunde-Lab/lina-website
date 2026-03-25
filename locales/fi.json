@@ -199,5 +199,8 @@
       "successTitle": "Kiitos viestistäsi",
       "successDescription": "Palaamme asiaan mahdollisimman pian."
     }
-  }
+  },
+  "nav_home": "Koti",
+  "nav_care_schedule": "Care Schedule",
+  "nav_download": "Lataa"
 }

@@ -7,6 +7,45 @@
    ================================================================ */
 
 
+/* ── Nav links ────────────────────────────────────────────────── */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 6px 10px;
+  border-radius: 7px;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+.nav-cta {
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+}
+
+.nav-cta:hover {
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+
 /* ── Tablet: 600px – 900px ───────────────────────────────────── */
 /* Steps and features grids switch to 2 columns */
 
@@ -38,6 +77,21 @@
   nav .lang-btn {
     padding: 4px 5px;
     font-size: 12px;
+  }
+
+  .lang-dropdown {
+    right: auto;
+    left: 0;
+  }
+
+  .nav-right {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    padding: 4px 8px;
   }
 
   /* ── Sections: reduce horizontal and vertical padding ── */
