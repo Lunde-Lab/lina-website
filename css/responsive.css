@@ -18,31 +18,20 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 24px;
 }
 
-.nav-link {
+.nav-links a {
   font-size: 14px;
   font-weight: 500;
   color: var(--text-secondary);
-  padding: 6px 10px;
-  border-radius: 7px;
   transition: color 0.15s;
   white-space: nowrap;
 }
 
-.nav-link:hover {
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
   color: var(--text);
-}
-
-.nav-cta {
-  border: 1.5px solid var(--primary);
-  color: var(--primary);
-}
-
-.nav-cta:hover {
-  color: var(--primary-dark);
-  border-color: var(--primary-dark);
 }
 
 
@@ -89,9 +78,12 @@
     flex-wrap: wrap;
   }
 
-  .nav-link {
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
     font-size: 13px;
-    padding: 4px 8px;
   }
 
   /* ── Sections: reduce horizontal and vertical padding ── */
