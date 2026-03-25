@@ -40,6 +40,11 @@
     font-size: 12px;
   }
 
+  .lang-dropdown {
+    right: auto;
+    left: 0;
+  }
+
   /* ── Sections: reduce horizontal and vertical padding ── */
   body section {
     padding: 40px 16px;
