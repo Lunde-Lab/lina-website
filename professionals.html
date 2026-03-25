@@ -362,8 +362,16 @@
     .fv-screenshots-grid {
       display: flex;
       align-items: flex-end;
-      justify-content: center;
       gap: 16px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .fv-screenshots-grid::-webkit-scrollbar {
+      display: none;
     }
 
     .fv-phone {
@@ -371,12 +379,13 @@
       flex-direction: column;
       align-items: center;
       gap: 14px;
-      flex: 176;
-      min-width: 0;
+      flex: none;
+      width: 240px;
+      scroll-snap-align: start;
     }
 
     .fv-phone--featured {
-      flex: 200;
+      width: 260px;
     }
 
     .fv-phone-frame {
@@ -412,28 +421,20 @@
     }
 
     @media (max-width: 900px) {
-      .fv-screenshots-grid {
-        flex-wrap: wrap;
-        gap: 24px;
-      }
-      .fv-phone, .fv-phone--featured {
-        flex: none;
-      }
-      .fv-phone-frame {
-        width: 176px;
-      }
-      .fv-phone--featured .fv-phone-frame {
+      .fv-phone {
         width: 200px;
+      }
+      .fv-phone--featured {
+        width: 220px;
       }
     }
 
     @media (max-width: 560px) {
-      .fv-screenshots-grid {
-        flex-direction: column;
-        align-items: center;
+      .fv-phone {
+        width: 72vw;
       }
-      .fv-phone--featured .fv-phone-frame {
-        width: 176px;
+      .fv-phone--featured {
+        width: 76vw;
       }
     }
 
