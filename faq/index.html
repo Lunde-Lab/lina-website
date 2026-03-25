@@ -378,27 +378,64 @@
     .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 
     /* ── Footer ── */
-    footer { border-top: 1px solid var(--border); padding: 40px 24px; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
     .footer-inner {
       max-width: 1080px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: 24px;
     }
-    .footer-top {
+
+    .footer-nav {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 32px;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
       flex-wrap: wrap;
       justify-content: center;
     }
-    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
-    .footer-links a { font-size: 14px; color: var(--text-secondary); transition: color 0.15s; }
-    .footer-links a:hover,
-    .footer-links a[aria-current="page"] { color: var(--text); }
-    .footer-copy { font-size: 13px; color: var(--text-secondary); }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -734,20 +771,22 @@
   <!-- Footer -->
   <footer>
     <div class="footer-inner">
-      <div class="footer-top">
-        <img src="../assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
-          <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
-          <a href="/account-deletion.html">Account deletion</a>
+      <img src="../assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
           <a href="/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
           <a href="/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
+          <a href="/faq/" aria-current="page" data-i18n="footer.faq">FAQ</a>
           <a href="/professionals.html" data-i18n="footer.familievern">Fagfolk</a>
-          <a href="/contact.html" data-i18n="footer.contact">Contact</a>
-          <a href="/faq/" aria-current="page" data-i18n="footer.faq">Spørsmål og svar</a>
-        </nav>
-      </div>
-      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/terms/" data-i18n="footer.terms">Vilkår for bruk</a>
+          <a href="/privacy/" data-i18n="footer.privacy">Personvernregler</a>
+          <a href="/contact/" data-i18n="footer.contact">Kontakt</a>
+          <a href="/account-deletion.html">Account deletion</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rettigheter forbeholdt.</p>
     </div>
   </footer>
 
