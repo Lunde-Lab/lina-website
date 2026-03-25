@@ -199,5 +199,8 @@
       "successTitle": "Tack för ditt meddelande",
       "successDescription": "Vi återkommer till dig så snart vi kan."
     }
-  }
+  },
+  "nav_home": "Hem",
+  "nav_care_schedule": "Care Schedule",
+  "nav_download": "Ladda ner"
 }
