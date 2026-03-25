@@ -538,6 +538,10 @@
       background: var(--bg);
     }
 
+    #ca-promo {
+      background: #fff;
+    }
+
     .cs-promo-inner {
       display: flex;
       align-items: center;
@@ -706,6 +710,10 @@
   <nav>
     <div class="nav-inner">
       <a href="index.html"><img src="assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/care-schedule/" data-i18n="nav.careSchedule">Samværsplan</a>
+        <a href="/care-agreement/" data-i18n="nav.careAgreement">Samværsavtale</a>
+      </nav>
       <div class="nav-right">
         <div class="lang-switcher" id="lang-switcher">
           <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
@@ -965,6 +973,35 @@
     </div>
   </section>
 
+  <!-- Care Agreement Promo -->
+  <section id="ca-promo">
+    <div class="container">
+      <div class="cs-promo-inner">
+        <div class="cs-promo-text">
+          <p class="section-label" data-i18n="caSection.label">Samværsavtale</p>
+          <h2 data-i18n="caSection.title">Hva bør avtalen inneholde?</h2>
+          <p data-i18n="caSection.description">En god samværsavtale gir forutsigbarhet for barnet og begge foreldre. Les om hva avtalen bør dekke, se et eksempel, og finn lenker til offisielle ressurser.</p>
+          <a href="/care-agreement/" class="btn-primary">
+            <span data-i18n="caSection.cta">Les mer</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="cs-promo-visual" aria-hidden="true">
+          <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="36" y="20" width="128" height="160" rx="10" fill="#E9F5F3"/>
+            <rect x="36" y="20" width="128" height="160" rx="10" stroke="#0D6B64" stroke-width="1.5" stroke-opacity="0.2"/>
+            <line x1="60" y1="72" x2="140" y2="72" stroke="#0D6B64" stroke-width="3" stroke-linecap="round"/>
+            <line x1="60" y1="92" x2="140" y2="92" stroke="#0D6B64" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+            <line x1="60" y1="112" x2="120" y2="112" stroke="#0D6B64" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+            <line x1="60" y1="132" x2="130" y2="132" stroke="#0D6B64" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
+            <circle cx="148" cy="155" r="24" fill="#0D6B64"/>
+            <path d="M138 155 L145 162 L160 146" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section id="cta">
     <div class="container">
@@ -998,8 +1035,11 @@
           <a href="/terms" data-i18n="footer.terms">Terms of Service</a>
           <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
           <a href="/account-deletion.html">Account deletion</a>
-          <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+          <a href="/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
           <a href="/professionals.html" data-i18n="footer.familievern">Fagfolk</a>
+          <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/faq/" data-i18n="footer.faq">Spørsmål og svar</a>
         </nav>
       </div>
       <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
