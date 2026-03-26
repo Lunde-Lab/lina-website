@@ -277,7 +277,8 @@
     }
 
     #how-it-works h2,
-    #features h2 {
+    #features h2,
+    #more-tools h2 {
       font-size: 28px;
       font-weight: 600;
       letter-spacing: -0.02em;
@@ -379,14 +380,24 @@
       line-height: 1.6;
     }
 
-    .features-more {
-      margin-top: 32px;
-      font-size: 14px;
-      color: var(--text-secondary);
-      line-height: 1.65;
-      text-align: center;
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
     }
 
+    @media (max-width: 900px) {
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
     /* ── Privacy ── */
     #privacy {
@@ -908,7 +919,87 @@
           <p data-i18n="features.album.description">A private photo album that both parents can add to and view. So neither parent misses the moments that happen in the other home.</p>
         </div>
       </div>
-      <p class="features-more" data-i18n="features.more">More tools included — contacts, equipment lists, child information, care schedule and export of all messages.</p>
+    </div>
+  </section>
+
+  <!-- More tools -->
+  <section id="more-tools">
+    <div class="container">
+      <p class="section-label" data-i18n="tools.label">More in Lina</p>
+      <h2 data-i18n="tools.title">Tools built for shared care</h2>
+      <div class="tools-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+              <circle cx="12" cy="8" r="2"/>
+              <path d="M15 13a3 3 0 1 0-6 0"/>
+            </svg>
+          </div>
+          <h3 data-i18n="tools.contacts.title">Shared contacts</h3>
+          <p data-i18n="tools.contacts.description">Pediatrician, teacher, after-school program — keep important contacts available to both parents, always up to date.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m3 17 2 2 4-4"/>
+              <path d="m3 7 2 2 4-4"/>
+              <path d="M13 6h8"/>
+              <path d="M13 12h8"/>
+              <path d="M13 18h8"/>
+            </svg>
+          </div>
+          <h3 data-i18n="tools.equipment.title">Equipment lists</h3>
+          <p data-i18n="tools.equipment.description">Rain boots, gym bag, allergy medicine — shared lists make it easier to keep track of what needs to follow the child between homes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 12h.01"/>
+              <path d="M15 12h.01"/>
+              <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/>
+              <path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/>
+            </svg>
+          </div>
+          <h3 data-i18n="tools.childinfo.title">Child information</h3>
+          <p data-i18n="tools.childinfo.description">Birth date, allergies, medication, shoe size — everything both parents should know, gathered in one place and always accessible.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+              <line x1="16" x2="16" y1="2" y2="6"/>
+              <line x1="8" x2="8" y1="2" y2="6"/>
+              <line x1="3" x2="21" y1="10" y2="10"/>
+              <path d="M8 14h.01"/>
+              <path d="M12 14h.01"/>
+              <path d="M16 14h.01"/>
+              <path d="M8 18h.01"/>
+              <path d="M12 18h.01"/>
+              <path d="M16 18h.01"/>
+            </svg>
+          </div>
+          <h3 data-i18n="tools.schedule.title">Care schedule</h3>
+          <p data-i18n="tools.schedule.description">Create a visual overview of how time is shared between homes. See the full schedule at a glance, week by week.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="21" x2="14" y1="4" y2="4"/>
+              <line x1="10" x2="3" y1="4" y2="4"/>
+              <line x1="21" x2="12" y1="12" y2="12"/>
+              <line x1="8" x2="3" y1="12" y2="12"/>
+              <line x1="21" x2="16" y1="20" y2="20"/>
+              <line x1="12" x2="3" y1="20" y2="20"/>
+              <line x1="14" x2="14" y1="2" y2="6"/>
+              <line x1="8" x2="8" y1="10" y2="14"/>
+              <line x1="16" x2="16" y1="18" y2="22"/>
+            </svg>
+          </div>
+          <h3 data-i18n="tools.control.title">Built for difficult days too</h3>
+          <p data-i18n="tools.control.description">Export all messages for documentation. Blur photos to reduce emotional weight. Save the images you want to keep. Control what you see and when.</p>
+        </div>
+      </div>
     </div>
   </section>
 

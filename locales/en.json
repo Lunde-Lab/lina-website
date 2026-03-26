@@ -62,6 +62,30 @@
     },
     "more": "Also included: contacts, equipment lists, child information, and care schedule — so both parents have what they need, wherever the child is."
   },
+  "tools": {
+    "label": "More in Lina",
+    "title": "Tools built for shared care",
+    "contacts": {
+      "title": "Shared contacts",
+      "description": "Pediatrician, teacher, after-school program — keep important contacts available to both parents, always up to date."
+    },
+    "equipment": {
+      "title": "Equipment lists",
+      "description": "Rain boots, gym bag, allergy medicine — shared lists make it easier to keep track of what needs to follow the child between homes."
+    },
+    "childinfo": {
+      "title": "Child information",
+      "description": "Birth date, allergies, medication, shoe size — everything both parents should know, gathered in one place and always accessible."
+    },
+    "schedule": {
+      "title": "Care schedule",
+      "description": "Create a visual overview of how time is shared between homes. See the full schedule at a glance, week by week."
+    },
+    "control": {
+      "title": "Built for difficult days too",
+      "description": "Export all messages for documentation. Blur photos to reduce emotional weight. Save the images you want to keep. Control what you see and when."
+    }
+  },
   "problem": {
     "label": "Why Lina",
     "title": "When care is split across two homes, details get lost",
