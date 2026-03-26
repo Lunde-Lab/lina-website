@@ -7,80 +7,6 @@
    ================================================================ */
 
 
-/* ── Mobile nav toggle ── */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: 7px;
-  padding: 6px 8px;
-  cursor: pointer;
-  color: var(--text-secondary);
-  transition: border-color 0.15s, color 0.15s;
-}
-
-.nav-toggle:hover {
-  border-color: var(--primary);
-  color: var(--text);
-}
-
-.nav-mobile-dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: #fff;
-  border-bottom: 1px solid var(--border);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-  z-index: 99;
-  padding: 8px 0;
-}
-
-.nav-mobile-dropdown.open {
-  display: block;
-}
-
-.nav-mobile-dropdown a {
-  display: block;
-  padding: 12px 24px;
-  font-size: 15px;
-  color: var(--text);
-  transition: background 0.12s;
-  text-decoration: none;
-}
-
-.nav-mobile-dropdown a:hover {
-  background: var(--bg);
-}
-
-@media (max-width: 800px) {
-  .nav-links {
-    display: none;
-  }
-
-  .nav-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  nav .nav-inner {
-    flex-direction: row;
-    height: 64px;
-    padding: 0 24px;
-    align-items: center;
-    gap: 0;
-  }
-}
-
-@media (min-width: 801px) {
-  .nav-mobile-dropdown {
-    display: none !important;
-  }
-}
-
-
 /* ── Nav links ────────────────────────────────────────────────── */
 
 .nav-right {
@@ -89,9 +15,6 @@
   gap: 12px;
 }
 
-.nav-inner {
-  position: relative;
-}
 
 .nav-links {
   display: flex;

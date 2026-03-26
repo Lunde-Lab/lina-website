@@ -407,13 +407,6 @@
         <a href="/pricing/" data-i18n="footer.pricing">Pricing</a>
       </nav>
       <div class="nav-right">
-        <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <line x1="3" y1="12" x2="21" y2="12"/>
-            <line x1="3" y1="18" x2="21" y2="18"/>
-          </svg>
-        </button>
         <div class="lang-switcher" id="lang-switcher">
           <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -434,12 +427,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="nav-mobile-dropdown" id="nav-mobile-dropdown">
-      <a href="/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
-      <a href="/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
-      <a href="/faq/" data-i18n="nav.faq">FAQ</a>
-      <a href="/pricing/" data-i18n="footer.pricing">Pricing</a>
     </div>
   </nav>
 
@@ -632,23 +619,6 @@
       });
     });
     document.addEventListener('lina:langchange', e => updateActive(e.detail.lang));
-  }());
-  </script>
-  <script>
-  (function () {
-    var toggle = document.getElementById('nav-toggle');
-    var dropdown = document.getElementById('nav-mobile-dropdown');
-    if (!toggle || !dropdown) return;
-    toggle.addEventListener('click', function () {
-      var open = dropdown.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    document.addEventListener('click', function (e) {
-      if (!toggle.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
-    });
   }());
   </script>
 
