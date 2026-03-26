@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="about.pageTitle">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/about/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/about/" />
+  <link rel="alternate" hreflang="nb" href="https://getlina.app/about/" />
+  <link rel="alternate" hreflang="en" href="https://getlina.app/about/" />
+  <link rel="alternate" hreflang="sv" href="https://getlina.app/about/" />
+  <link rel="alternate" hreflang="da" href="https://getlina.app/about/" />
+  <link rel="alternate" hreflang="fi" href="https://getlina.app/about/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <title>About — Lina</title>
+  <meta name="description" content="Learn why Lina was built and who is behind it." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getlina.app/about/" />
+  <meta property="og:title" content="About — Lina" />
+  <meta property="og:description" content="Learn why Lina was built and who is behind it." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+
+    /* ── About content ── */
+    .about-main { padding: 56px 24px 96px; }
+
+    .about-container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .about-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .about-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .about-section {
+      margin-bottom: 36px;
+    }
+
+    .about-section h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+
+    .about-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .about-section p:last-child { margin-bottom: 0; }
+
+    .about-origin {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+
+    .about-origin .flag {
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    @media (max-width: 599px) {
+      .about-main { padding: 40px 16px 64px; }
+      .about-container h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="../"><img src="../assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/faq/" data-i18n="nav.faq">FAQ</a>
+        <a href="/pricing/" data-i18n="footer.pricing">Pricing</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <button class="lang-option" data-lang="no" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</button>
+            <button class="lang-option" data-lang="en" role="menuitem"><span class="lang-flag">🇬🇧</span> English</button>
+            <button class="lang-option" data-lang="sv" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</button>
+            <button class="lang-option" data-lang="da" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</button>
+            <button class="lang-option" data-lang="fi" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="about-main">
+    <div class="about-container">
+
+      <h1 data-i18n="about.heading">About Lina</h1>
+
+      <p class="about-lead" data-i18n="about.lead">Lina is a co-parenting app for parents who share care of a child across two homes. One calm place where both parents have the same information.</p>
+
+      <div class="about-section">
+        <h2 data-i18n="about.whyTitle">Why Lina exists</h2>
+        <p data-i18n="about.whyText1">Lina was created because there was no co-parenting app that felt calm and focused. Most tools were built around conflict or legal processes. We wanted something different — a quiet, structured space for everyday coordination between two parents.</p>
+        <p data-i18n="about.whyText2">The goal is to reduce the mental load that comes with shared care. When both parents have access to the same schedules, lists, and updates, no one has to carry everything alone.</p>
+      </div>
+
+      <div class="about-section">
+        <h2 data-i18n="about.focusTitle">What Lina focuses on</h2>
+        <p data-i18n="about.focusText1">Lina is built around structured communication and practical tools. Threads keep conversations organized. Shared lists, contacts, and information about the child are always available to both parents. Everything stays in one place.</p>
+        <p data-i18n="about.focusText2">There are no algorithms, no ads, and no social features. Lina is designed to be used when needed and to stay out of the way when it is not.</p>
+      </div>
+
+      <div class="about-origin">
+        <span class="flag" aria-hidden="true">🇳🇴</span>
+        <span data-i18n="about.origin">Designed and built in Norway.</span>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="../assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/care-schedule/" data-i18n="footer.careSchedule">Care Schedule</a>
+          <a href="/care-agreement/" data-i18n="footer.careAgreement">Care Agreement</a>
+          <a href="/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/professionals.html" data-i18n="footer.familievern">Professionals</a>
+          <a href="/stories/" data-i18n="footer.stories">Stories</a>
+          <a href="/pricing/" data-i18n="footer.pricing">Pricing</a>
+          <a href="/about/" aria-current="page" data-i18n="footer.about">About</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/terms/" data-i18n="footer.terms">Terms of Service</a>
+          <a href="/privacy/" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/account-deletion.html" data-i18n="footer.accountDeletion">Account deletion</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/i18n.js"></script>
+  <script>
+  (function () {
+    const LABELS = { no: 'NO', en: 'EN', sv: 'SV', da: 'DA', fi: 'FI' };
+    const switcher = document.getElementById('lang-switcher');
+    const btn = document.getElementById('lang-btn');
+    const current = document.getElementById('lang-current');
+    const options = document.querySelectorAll('.lang-option');
+
+    function updateActive(lang) {
+      current.textContent = LABELS[lang] || lang.toUpperCase();
+      options.forEach(o => o.classList.toggle('active', o.dataset.lang === lang));
+    }
+
+    document.addEventListener('lina:langchange', e => updateActive(e.detail.lang));
+
+    options.forEach(o => {
+      o.addEventListener('click', () => {
+        window.linaSetLang(o.dataset.lang);
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', e => {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+  </script>
+
+</body>
+</html>
