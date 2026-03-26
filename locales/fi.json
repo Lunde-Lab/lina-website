@@ -292,6 +292,12 @@
       "label4": "Jaettu albumi",
       "label5": "Hoitoaikataulu"
     },
+    "csPromo": {
+      "label": "Työkalut",
+      "title": "Hoitoaikataulu, jota vanhemmat voivat käyttää yhdessä",
+      "description": "Linassa on interaktiivinen hoitoaikataulu, jonka avulla molemmat vanhemmat näkevät, miten aika jakautuu viikko viikolta. Työkalu näyttää päiväjaon, viikonloppumallit ja vaihtojen määrän — ja sitä voidaan käyttää lähtökohtana keskusteluissa hoitojärjestelyistä.",
+      "cta": "Avaa hoitoaikataulu"
+    },
     "contact": {
       "label": "Yhteystiedot",
       "title": "Ota yhteyttä",
@@ -590,5 +596,22 @@
       "sharedContent": "Jaettua sisältöä (kuten viestejä, kuvia ja listoja) ei poisteta automaattisesti, koska se voi olla jaettu toisen vanhemman kanssa. Nämä tiedot pysyvät toisen yhdistetyn vanhemman saatavilla.",
       "retention": "Joitakin tietoja voidaan säilyttää tilapäisesti lain tai turvallisuussyiden niin vaatiessa, minkä jälkeen ne poistetaan tai anonymisoidaan."
     }
+  },
+  "storiesTeaser": {
+    "label": "Arjen hetkiä",
+    "title": "Rakennettu hetkille, joilla on merkitystä",
+    "s1": {
+      "title": "Allergia, josta toinen koti ei tiennyt",
+      "description": "Toinen vanhempi päivittää lapsen terveystiedot. Toinen näkee sen heti — erillistä viestiä ei tarvita."
+    },
+    "s2": {
+      "title": "Sadetakki, joka on aina väärässä kodissa",
+      "description": "Jaetut varustelistat näyttävät, mitä kummassakin kodissa on. Molemmat vanhemmat tarkistavat ja päivittävät, joten takki seuraa lasta."
+    },
+    "s3": {
+      "title": "Ensimmäinen pyöräretki, josta miltei jäit paitsi",
+      "description": "Kuvat menevät jaettuun albumiin. Molemmat vanhemmat näkevät suuret ja pienet hetket riippumatta siitä, missä kodissa lapsi on."
+    },
+    "cta": "Lue lisää tarinoita"
   }
 }

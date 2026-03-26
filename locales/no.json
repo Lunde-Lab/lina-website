@@ -292,6 +292,12 @@
       "label4": "Delt album",
       "label5": "Omsorgsplan"
     },
+    "csPromo": {
+      "label": "Verktøy",
+      "title": "Samværsplan foreldrene kan bruke sammen",
+      "description": "Lina har en interaktiv samværsplan som lar begge foreldre se hvordan tiden fordeles uke for uke. Verktøyet viser dagsfordeling, helgemønster og antall bytter — og kan brukes som utgangspunkt i samtaler om samvær.",
+      "cta": "Åpne samværsplanen"
+    },
     "contact": {
       "label": "Kontakt",
       "title": "Ta kontakt",
@@ -590,5 +596,22 @@
       "sharedContent": "Delt innhold (som meldinger, bilder og lister) slettes ikke automatisk, ettersom det kan være delt med den andre forelderen. Disse dataene forblir tilgjengelige for den andre tilknyttede forelderen.",
       "retention": "Noe informasjon kan bli beholdt midlertidig der det kreves av loven eller av sikkerhetshensyn, og slettes eller anonymiseres deretter."
     }
+  },
+  "storiesTeaser": {
+    "label": "Hverdagsøyeblikk",
+    "title": "Bygget for øyeblikkene som betyr noe",
+    "s1": {
+      "title": "Allergien det andre hjemmet ikke visste om",
+      "description": "Én forelder oppdaterer barnets helseinformasjon. Den andre ser det med en gang — ingen ekstra melding nødvendig."
+    },
+    "s2": {
+      "title": "Regnjakken som alltid er i feil hus",
+      "description": "Delte utstyrslister viser hva som er i hvert hjem. Begge foreldre sjekker og oppdaterer, slik at jakken følger barnet."
+    },
+    "s3": {
+      "title": "Den første sykkelturen du nesten gikk glipp av",
+      "description": "Bildene legges i det delte albumet. Begge foreldre ser de store og små øyeblikkene, uansett hvilket hjem barnet er i."
+    },
+    "cta": "Les flere historier"
   }
 }

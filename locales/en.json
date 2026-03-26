@@ -276,6 +276,12 @@
       "label4": "Shared album",
       "label5": "Care schedule"
     },
+    "csPromo": {
+      "label": "Tools",
+      "title": "A care schedule parents can use together",
+      "description": "Lina includes an interactive care schedule that lets both parents see how time is shared week by week. The tool shows day splits, weekend patterns, and handover frequency — and can be used as a starting point in conversations about care arrangements.",
+      "cta": "Open care schedule"
+    },
     "contact": {
       "label": "Contact",
       "title": "Get in touch",
@@ -574,5 +580,22 @@
       "sharedContent": "Shared content (such as messages, photos, and lists) is not automatically deleted, as it may be shared with another parent. This data remains available to the other connected parent.",
       "retention": "Some information may be retained temporarily where required by law or for security purposes, after which it is deleted or anonymised."
     }
+  },
+  "storiesTeaser": {
+    "label": "Everyday moments",
+    "title": "Built for the moments that matter",
+    "s1": {
+      "title": "The allergy the other home did not know about",
+      "description": "One parent updates the child's medical information. The other sees it immediately — no separate text needed."
+    },
+    "s2": {
+      "title": "The rain jacket that is always at the wrong house",
+      "description": "Shared equipment lists show what is at each home. Both parents check and update, so the jacket follows the child."
+    },
+    "s3": {
+      "title": "The first bicycle ride you almost missed",
+      "description": "Photos go into the shared album. Both parents see the big and small moments, regardless of which home the child is in."
+    },
+    "cta": "Read more stories"
   }
 }

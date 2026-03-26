@@ -292,6 +292,12 @@
       "label4": "Delat album",
       "label5": "Omsorgsschema"
     },
+    "csPromo": {
+      "label": "Verktyg",
+      "title": "Ett vårdschema föräldrarna kan använda tillsammans",
+      "description": "Lina har ett interaktivt vårdschema som låter båda föräldrarna se hur tiden fördelas vecka för vecka. Verktyget visar dagsfördelning, helgmönster och antal byten — och kan användas som utgångspunkt i samtal om vårdnad.",
+      "cta": "Öppna vårdschemat"
+    },
     "contact": {
       "label": "Kontakt",
       "title": "Ta kontakt",
@@ -590,5 +596,22 @@
       "sharedContent": "Delat innehåll (som meddelanden, foton och listor) raderas inte automatiskt, eftersom det kan vara delat med den andra föräldern. Dessa data förblir tillgängliga för den andra anslutna föräldern.",
       "retention": "Viss information kan behållas tillfälligt där det krävs av lag eller av säkerhetsskäl, och raderas eller anonymiseras därefter."
     }
+  },
+  "storiesTeaser": {
+    "label": "Vardagsögonblick",
+    "title": "Byggd för stunderna som betyder något",
+    "s1": {
+      "title": "Allergin som det andra hemmet inte kände till",
+      "description": "En förälder uppdaterar barnets hälsoinformation. Den andra ser det direkt — inget extra meddelande behövs."
+    },
+    "s2": {
+      "title": "Regnjackan som alltid är i fel hus",
+      "description": "Delade utrustningslistor visar vad som finns i varje hem. Båda föräldrarna kan kontrollera och uppdatera, så jackan följer barnet."
+    },
+    "s3": {
+      "title": "Den första cykelturen du nästan missade",
+      "description": "Bilderna läggs i det delade albumet. Båda föräldrarna ser de stora och små stunderna, oavsett vilket hem barnet är i."
+    },
+    "cta": "Läs fler berättelser"
   }
 }
