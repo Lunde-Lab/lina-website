@@ -331,28 +331,6 @@
     }
 
     /* ── Features ── */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    @media (max-width: 720px) {
-      .features-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .feature-card {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 28px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
     .feature-icon {
       width: 40px;
       height: 40px;
@@ -366,6 +344,84 @@
 
     .feature-icon svg {
       color: var(--primary);
+    }
+
+    .feature-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .feature-block:last-child {
+      border-bottom: none;
+    }
+
+    .feature-block.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .feature-block-text {
+      max-width: 480px;
+    }
+
+    .feature-block-text h3 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 16px 0 8px;
+    }
+
+    .feature-block-text p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      max-width: 440px;
+    }
+
+    .feature-block-visual {
+      flex-shrink: 0;
+    }
+
+    .feature-block-visual .phone-frame {
+      width: 160px;
+      height: 340px;
+      border-radius: 24px;
+      border: 2px solid var(--border);
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    }
+
+    .feature-block-visual .phone-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 800px) {
+      .feature-block,
+      .feature-block.reverse {
+        flex-direction: column;
+        gap: 32px;
+        text-align: center;
+      }
+      .feature-block-text p {
+        max-width: 100%;
+      }
+    }
+
+    .feature-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
 
     .feature-card h3 {
@@ -697,6 +753,114 @@
       font-size: 16px;
       line-height: 1;
     }
+
+    /* ── Scroll animations ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+
+    /* ── Subtle section accents ── */
+    .accent-left {
+      position: relative;
+    }
+
+    .accent-left::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(13, 107, 100, 0.06), transparent);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .accent-right {
+      position: relative;
+    }
+
+    .accent-right::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(to left, rgba(13, 107, 100, 0.06), transparent);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .accent-left > .container,
+    .accent-right > .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Sticky mobile CTA ── */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+      padding: 12px 16px;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .sticky-cta.visible {
+      transform: translateY(0);
+    }
+
+    .sticky-cta-inner {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .sticky-cta .btn-appstore {
+      flex: 1;
+      justify-content: center;
+      font-size: 12px;
+      padding: 10px 12px;
+    }
+
+    @media (max-width: 800px) {
+      .sticky-cta {
+        display: block;
+      }
+
+      footer {
+        padding-bottom: 80px;
+      }
+    }
   </style>
   <script type="application/ld+json">
 {
@@ -910,17 +1074,17 @@
       <p class="section-label" data-i18n="how.label">How it works</p>
       <h2 data-i18n="how.title">Get started in minutes. Use it every day.</h2>
       <div class="steps">
-        <div class="step">
+        <div class="step reveal">
           <div class="step-number">1</div>
           <h3 data-i18n="how.step1.title">Create a shared space</h3>
           <p data-i18n="how.step1.description">One parent sets up a space for the child. The other gets an invite to join. No complicated setup required.</p>
         </div>
-        <div class="step">
+        <div class="step reveal reveal-delay-1">
           <div class="step-number">2</div>
           <h3 data-i18n="how.step2.title">Add what matters</h3>
           <p data-i18n="how.step2.description">Add contacts, medical information, equipment lists, and anything else that needs to follow the child between homes.</p>
         </div>
-        <div class="step">
+        <div class="step reveal reveal-delay-2">
           <div class="step-number">3</div>
           <h3 data-i18n="how.step3.title">Stay in sync</h3>
           <p data-i18n="how.step3.description">Use threads for practical conversations and the shared album for photos. Both parents see the same information, always up to date.</p>
@@ -931,13 +1095,13 @@
 
 
   <!-- Features -->
-  <section id="features">
+  <section id="features" class="accent-left">
     <div class="container">
       <p class="section-label" data-i18n="features.label">Features</p>
       <h2 data-i18n="features.title">Everything in one place</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">
+      <div class="feature-block reveal">
+        <div class="feature-block-text">
+          <div class="feature-icon" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
             </svg>
@@ -945,8 +1109,16 @@
           <h3 data-i18n="features.threads.title">Threads</h3>
           <p data-i18n="features.threads.description">Keep communication organized by topic. Archive threads when they are no longer needed, and export them if you ever need a record.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">
+        <div class="feature-block-visual">
+          <div class="phone-frame">
+            <img src="assets/images/ThreadsScreen.png" alt="Threads screenshot" draggable="false" />
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-block reverse reveal">
+        <div class="feature-block-text">
+          <div class="feature-icon" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2 22l5-1.338A9.954 9.954 0 0 0 12 22z"/>
             </svg>
@@ -954,8 +1126,16 @@
           <h3 data-i18n="features.messages.title">Messages</h3>
           <p data-i18n="features.messages.description">Messages cannot be edited or deleted after sending. Search conversations and mark important messages. A clear, permanent record between two parents.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">
+        <div class="feature-block-visual">
+          <div class="phone-frame">
+            <img src="assets/images/ThreadDetailScreen.png" alt="Messages screenshot" draggable="false" />
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-block reveal">
+        <div class="feature-block-text">
+          <div class="feature-icon" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
               <circle cx="8.5" cy="8.5" r="1.5"/>
@@ -964,6 +1144,11 @@
           </div>
           <h3 data-i18n="features.album.title">Shared album</h3>
           <p data-i18n="features.album.description">A private photo album that both parents can add to and view. So neither parent misses the moments that happen in the other home.</p>
+        </div>
+        <div class="feature-block-visual">
+          <div class="phone-frame">
+            <img src="assets/images/AlbumScreen.png" alt="Shared album screenshot" draggable="false" />
+          </div>
         </div>
       </div>
     </div>
@@ -975,7 +1160,7 @@
       <p class="section-label" data-i18n="tools.label">More in Lina</p>
       <h2 data-i18n="tools.title">Tools built for shared care</h2>
       <div class="tools-grid">
-        <div class="feature-card">
+        <div class="feature-card reveal">
           <div class="feature-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
@@ -986,7 +1171,7 @@
           <h3 data-i18n="tools.contacts.title">Shared contacts</h3>
           <p data-i18n="tools.contacts.description">Pediatrician, teacher, after-school program — keep important contacts available to both parents, always up to date.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal reveal-delay-1">
           <div class="feature-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m3 17 2 2 4-4"/>
@@ -999,7 +1184,7 @@
           <h3 data-i18n="tools.equipment.title">Equipment lists</h3>
           <p data-i18n="tools.equipment.description">Rain boots, gym bag, allergy medicine — shared lists make it easier to keep track of what needs to follow the child between homes.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal reveal-delay-2">
           <div class="feature-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M9 12h.01"/>
@@ -1011,7 +1196,7 @@
           <h3 data-i18n="tools.childinfo.title">Child information</h3>
           <p data-i18n="tools.childinfo.description">Birth date, allergies, medication, shoe size — everything both parents should know, gathered in one place and always accessible.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal reveal-delay-3">
           <div class="feature-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
@@ -1029,7 +1214,7 @@
           <h3 data-i18n="tools.schedule.title">Care schedule</h3>
           <p data-i18n="tools.schedule.description">Create a visual overview of how time is shared between homes. See the full schedule at a glance, week by week.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal reveal-delay-4">
           <div class="feature-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <line x1="21" x2="14" y1="4" y2="4"/>
@@ -1051,17 +1236,17 @@
   </section>
 
   <!-- Privacy -->
-  <section id="privacy">
+  <section id="privacy" class="accent-right">
     <div class="container">
       <p class="section-label" data-i18n="privacy.label">Privacy</p>
       <div class="privacy-inner">
 
-        <div class="privacy-text">
+        <div class="privacy-text reveal">
           <h2 data-i18n="privacy.title">Private by design</h2>
           <p class="privacy-lead" data-i18n="privacy.description">Lina is built with privacy as its foundation. Your data is protected through secure infrastructure, controlled access and signed links. There is no advertising, no data sharing and no algorithm deciding what you should see — only a secure, structured space for cooperation.</p>
         </div>
 
-        <div class="privacy-points">
+        <div class="privacy-points reveal reveal-delay-1">
           <div class="privacy-point">
             <div class="feature-icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1105,11 +1290,11 @@
   </section>
 
   <!-- Care Schedule Promo -->
-  <section id="cs-promo">
+  <section id="cs-promo" class="accent-left">
     <div class="container">
       <div class="cs-promo-inner">
 
-        <div class="cs-promo-text">
+        <div class="cs-promo-text reveal">
           <p class="section-label" data-i18n="csSection.label">Care Schedule</p>
           <h2 data-i18n="csSection.title">Plan your care schedule together</h2>
           <p data-i18n="csSection.description">Lina's interactive care schedule lets both parents plan and visualize how time is shared across weeks. See day splits, weekend patterns, and handover frequency — all in one clear view.</p>
@@ -1119,7 +1304,7 @@
           </a>
         </div>
 
-        <div class="cs-promo-visual" aria-hidden="true">
+        <div class="cs-promo-visual reveal reveal-delay-1" aria-hidden="true">
           <img src="assets/images/CareSchedule.png" alt="Care Schedule" style="width: 500px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);" />
         </div>
 
@@ -1131,7 +1316,7 @@
   <section id="ca-promo">
     <div class="container">
       <div class="cs-promo-inner">
-        <div class="cs-promo-text">
+        <div class="cs-promo-text reveal">
           <p class="section-label" data-i18n="caSection.label">Samværsavtale</p>
           <h2 data-i18n="caSection.title">Hva bør avtalen inneholde?</h2>
           <p data-i18n="caSection.description">En god samværsavtale gir forutsigbarhet for barnet og begge foreldre. Les om hva avtalen bør dekke, se et eksempel, og finn lenker til offisielle ressurser.</p>
@@ -1140,7 +1325,7 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
-        <div class="cs-promo-visual" aria-hidden="true">
+        <div class="cs-promo-visual reveal reveal-delay-1" aria-hidden="true">
           <img src="assets/images/CareAgreement.png" alt="Samværsavtale eksempel" style="width: 320px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);" />
         </div>
       </div>
@@ -1150,7 +1335,7 @@
   <!-- CTA -->
   <section id="cta">
     <div class="container">
-      <div class="cta-inner">
+      <div class="cta-inner reveal">
         <h2 data-i18n="cta.title">One safe line between two parents.</h2>
         <p data-i18n="cta.description">Download Lina and get started in minutes.</p>
         <div class="hero-ctas">
@@ -1196,6 +1381,23 @@
     </div>
   </footer>
 
+  <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+    <div class="sticky-cta-inner">
+      <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        <span data-i18n="hero.cta">Download on the App Store</span>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+        </svg>
+        <span data-i18n="hero.ctaPlay">Get on Google Play</span>
+      </a>
+    </div>
+  </div>
+
   <script src="js/i18n.js"></script>
   <script>
   (function () {
@@ -1227,6 +1429,53 @@
       });
     });
     document.addEventListener('lina:langchange', e => updateActive(e.detail.lang));
+  }());
+  </script>
+  <script>
+  (function () {
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      observer.observe(el);
+    });
+  }());
+  </script>
+  <script>
+  (function () {
+    var stickyCta = document.getElementById('sticky-cta');
+    var heroCtas = document.querySelector('#hero .hero-ctas');
+    var ctaSection = document.getElementById('cta');
+    if (!stickyCta || !heroCtas || !ctaSection) return;
+
+    var observer = new IntersectionObserver(function () {
+      var heroRect = heroCtas.getBoundingClientRect();
+      var ctaRect = ctaSection.getBoundingClientRect();
+      var heroGone = heroRect.bottom < 0;
+      var ctaVisible = ctaRect.top < window.innerHeight;
+      var show = heroGone && !ctaVisible;
+      stickyCta.classList.toggle('visible', show);
+      stickyCta.setAttribute('aria-hidden', !show);
+    }, { threshold: 0 });
+
+    observer.observe(heroCtas);
+    observer.observe(ctaSection);
+
+    window.addEventListener('scroll', function () {
+      var heroRect = heroCtas.getBoundingClientRect();
+      var ctaRect = ctaSection.getBoundingClientRect();
+      var heroGone = heroRect.bottom < 0;
+      var ctaVisible = ctaRect.top < window.innerHeight;
+      var show = heroGone && !ctaVisible;
+      stickyCta.classList.toggle('visible', show);
+      stickyCta.setAttribute('aria-hidden', !show);
+    }, { passive: true });
   }());
   </script>
 </body>
