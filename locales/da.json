@@ -144,7 +144,8 @@
     "careAgreement": "Samværsaftale",
     "faq": "FAQ",
     "copy": "© 2026 Lina. Alle rettigheder forbeholdes.",
-    "accountDeletion": "Sletning af konto"
+    "accountDeletion": "Sletning af konto",
+    "stories": "Hverdagsscenarier"
   },
   "contact": {
     "pageTitle": "Kontakt — Lina",
@@ -428,5 +429,48 @@
     "cat5a3link": "Læs mere om samværsaftale",
     "cat5q4": "Hjælper Lina med samværsaftalen?",
     "cat5a4": "Lina tilbyder en informationsside om, hvad en samværsaftale bør indeholde, med eksempel og links til officielle ressourcer i Norge, Sverige, Danmark og Finland."
+  },
+  "stories": {
+    "pageTitle": "Sådan bruger forældre Lina",
+    "label": "Hverdagsscenarier",
+    "title": "Sådan bruger forældre Lina",
+    "description": "Små, hverdagslige øjeblikke hvor det at have ét fælles sted gør forskellen. Det er de situationer, Lina er bygget til.",
+    "s1": {
+      "label": "Barneinformation",
+      "title": "Allergien det andet hjem ikke kendte til",
+      "situation": "Et barn bliver diagnosticeret med en ny fødevareallergi ved et lægebesøg. Informationen skal nå det andet hjem inden næste overlevering.",
+      "resolution": "Med Lina: Forælderen opdaterer barnets medicinske information én gang. Den anden forælder ser det med det samme — ingen separat besked eller opkald nødvendigt."
+    },
+    "s2": {
+      "label": "Udstyrslister",
+      "title": "Regnjakken der altid er i det forkerte hus",
+      "situation": "Et barn møder op i skolen uden regntøj, fordi ingen var sikre på, hvilket hjem der havde det. Små ting som dette skaber unødvendig friktion.",
+      "resolution": "Med Lina: Delte udstyrslister viser, hvad der er i hvert hjem. Begge forældre kan tjekke og opdatere listen, så jakken følger barnet."
+    },
+    "s3": {
+      "label": "Tråde",
+      "title": "Skolearrangementet der forsvandt i en beskedtråd",
+      "situation": "Skolen sender information om et forældremøde. Én forælder videresender det som besked, men detaljerne forsvinder mellem praktiske beskeder om afhentning og aftensmad.",
+      "resolution": "Med Lina: En dedikeret tråd til skole holder alt ét sted. Begge forældre finder det, de har brug for, uden at scrolle gennem urelaterede beskeder."
+    },
+    "s4": {
+      "label": "Delt album",
+      "title": "Den første cykeltur du næsten gik glip af",
+      "situation": "Et barn lærer at cykle hjemme hos den ene forælder. Den anden forælder hører først om det flere dage senere og ser aldrig øjeblikket.",
+      "resolution": "Med Lina: Billeder lægges i det delte album. Begge forældre kan se de store og små øjeblikke, uanset hvilket hjem barnet er i."
+    },
+    "s5": {
+      "label": "Samværsplan",
+      "title": "Overleveringsforvirringen i ferieugen",
+      "situation": "Ferieuger ændrer den faste plan. Begge forældre husker en forskellig version, og barnet ender i midten.",
+      "resolution": "Med Lina: Samværsplanen viser begge forældre det samme overblik. Ændringer er synlige med det samme, så der kun findes én version."
+    },
+    "s6": {
+      "label": "Kontakter",
+      "title": "Tandlægenummeret ingen kunne finde",
+      "situation": "Et barn har tandpine hjemme hos den ene forælder. Forælderen skal ringe tandlægen, men har ikke nummeret — det var gemt i den anden forælders telefon.",
+      "resolution": "Med Lina: Delte kontakter betyder, at begge forældre har tandlæge-, læge- og skolenumre tilgængelige hele tiden."
+    },
+    "closing": "Det er ikke dramatiske problemer. Det er de stille, hverdagslige øjeblikke, hvor ét fælles sted sparer tid, reducerer stress og holder fokus på barnet."
   }
 }

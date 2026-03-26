@@ -144,7 +144,8 @@
     "careAgreement": "Huoltosopimus",
     "faq": "Usein kysytyt kysymykset",
     "copy": "© 2026 Lina. Kaikki oikeudet pidätetään.",
-    "accountDeletion": "Tilin poistaminen"
+    "accountDeletion": "Tilin poistaminen",
+    "stories": "Tarinoita"
   },
   "contact": {
     "pageTitle": "Ota yhteyttä — Lina",
@@ -428,5 +429,48 @@
     "cat5a3link": "Lue lisää huoltosopimuksesta",
     "cat5q4": "Auttaako Lina huoltosopimuksen tekemisessä?",
     "cat5a4": "Lina tarjoaa tietosivun siitä, mitä huoltosopimuksen tulisi sisältää, esimerkin kanssa ja linkkejä virallisiin resursseihin Norjassa, Ruotsissa, Tanskassa ja Suomessa."
+  },
+  "stories": {
+    "pageTitle": "Näin vanhemmat käyttävät Linaa",
+    "label": "Arjen tilanteita",
+    "title": "Näin vanhemmat käyttävät Linaa",
+    "description": "Pieniä, arkisia hetkiä, joissa yksi yhteinen paikka tekee eron. Näitä tilanteita varten Lina on tehty.",
+    "s1": {
+      "label": "Lapsen tiedot",
+      "title": "Allergia, josta toinen koti ei tiennyt",
+      "situation": "Lapsella todetaan uusi ruoka-allergia lääkärikäynnillä. Tiedon pitää tavoittaa toinen koti ennen seuraavaa vaihtoa.",
+      "resolution": "Linalla: Vanhempi päivittää lapsen terveystiedot kerran. Toinen vanhempi näkee sen heti — erillistä viestiä tai soittoa ei tarvita."
+    },
+    "s2": {
+      "label": "Varustelistat",
+      "title": "Sadetakki, joka on aina väärässä kodissa",
+      "situation": "Lapsi saapuu kouluun ilman sadetakkia, koska kukaan ei tiennyt, kummassa kodissa se oli. Pienet asiat kuten tämä luovat turhaa kitkaa.",
+      "resolution": "Linalla: Jaetut varustelistat näyttävät, mitä on missäkin kodissa. Molemmat vanhemmat voivat tarkistaa ja päivittää listaa, jotta takki seuraa lasta."
+    },
+    "s3": {
+      "label": "Keskusteluketjut",
+      "title": "Koulutapahtuma, joka hautautui viesteihin",
+      "situation": "Koulu lähettää tietoa vanhempainillasta. Toinen vanhempi välittää sen viestillä, mutta yksityiskohdat katoavat käytännön viestien sekaan hakuajoista ja päivällisistä.",
+      "resolution": "Linalla: Oma keskusteluketju koululle pitää kaiken yhdessä paikassa. Molemmat vanhemmat löytävät tarvitsemansa selaamatta asiattomia viestejä."
+    },
+    "s4": {
+      "label": "Jaettu albumi",
+      "title": "Ensimmäinen pyöräretki, josta meinasit jäädä paitsi",
+      "situation": "Lapsi oppii ajamaan pyörällä toisessa kodissa. Toinen vanhempi kuulee siitä vasta päiviä myöhemmin eikä näe hetkeä koskaan.",
+      "resolution": "Linalla: Kuvat menevät jaettuun albumiin. Molemmat vanhemmat voivat nähdä suuret ja pienet hetket riippumatta siitä, kummassa kodissa lapsi on."
+    },
+    "s5": {
+      "label": "Hoitoaikataulu",
+      "title": "Vaihdon sekaannus lomaviikoilla",
+      "situation": "Lomaviikot muuttavat normaalia aikataulua. Molemmat vanhemmat muistavat eri version suunnitelmasta, ja lapsi jää väliin.",
+      "resolution": "Linalla: Hoitoaikataulu näyttää molemmille vanhemmille saman näkymän. Muutokset näkyvät heti, joten totuudesta on vain yksi versio."
+    },
+    "s6": {
+      "label": "Yhteystiedot",
+      "title": "Hammaslääkärin numero, jota kukaan ei löytänyt",
+      "situation": "Lapsella on hammassärkyä toisessa kodissa. Vanhemman pitää soittaa hammaslääkärille, mutta numero on tallennettuna toisen vanhemman puhelimeen.",
+      "resolution": "Linalla: Jaetut yhteystiedot tarkoittavat, että molemmilla vanhemmilla on hammaslääkärin, lääkärin ja koulun numerot aina saatavilla."
+    },
+    "closing": "Nämä eivät ole dramaattisia ongelmia. Ne ovat hiljaisia, arkisia hetkiä, joissa yksi yhteinen paikka säästää aikaa, vähentää stressiä ja pitää fokuksen lapsessa."
   }
 }
