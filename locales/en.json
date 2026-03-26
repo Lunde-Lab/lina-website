@@ -528,5 +528,51 @@
       "resolution": "With Lina: Shared contacts mean both parents have the dentist, doctor, and school numbers available at all times."
     },
     "closing": "These are not dramatic problems. They are the quiet, everyday moments where having one shared place saves time, reduces stress, and keeps the focus on the child."
+  },
+  "termsSummary": {
+    "heading": "Terms summary",
+    "disclaimer": "This summary is provided for convenience only. In the event of any inconsistency, the English version of the Terms of Service above shall prevail.",
+    "p1": "Lina is a private cooperation tool for two parents who share responsibility for a child.",
+    "p2": "You must be at least 18 years old and a parent or legal guardian to use the service. Each Lina space is intended for two connected parents.",
+    "p3": "You keep ownership of all content you share in Lina. Lina only processes content to provide the service and does not sell or publicly share it.",
+    "p4": "Lina is offered as a paid subscription. Subscriptions renew automatically unless cancelled through your platform account settings.",
+    "p5": "Lina is a support tool and does not provide legal, medical, or professional advice, nor does it mediate disputes between parents.",
+    "p6": "Shared content may remain available to the other parent after account deletion.",
+    "p7": "For full details, see the Terms of Service."
+  },
+  "privacySummary": {
+    "heading": "Privacy summary",
+    "disclaimer": "This summary is provided for convenience only. In the event of any inconsistency, the English version of the Privacy Policy above shall prevail.",
+    "p1": "Lina is built with privacy as a core principle.",
+    "p2": "We process only personal data that is necessary to provide the service and support cooperation between parents. We do not use advertising, tracking, or marketing cookies.",
+    "p3": "Only strictly necessary local storage is used to remember essential settings, such as Care Schedule preferences. The website uses Cloudflare Web Analytics for anonymous page view statistics — no cookies, no personal data, no cross-site tracking.",
+    "p4": "When an account is deleted, personal account data is removed. Shared content may remain available to the other parent, as it may be jointly used within the service.",
+    "p5": "All child-related data is provided and managed by parents or legal guardians.",
+    "p6": "No personal data is sold or shared for commercial purposes.",
+    "p7": "For full details, please refer to this Privacy Policy."
+  },
+  "accountDeletion": {
+    "pageTitle": "Account deletion — Lina",
+    "heading": "Account deletion",
+    "howTo": {
+      "title": "How to delete your account",
+      "intro": "Users can request deletion of their Lina account in one of the following ways.",
+      "inApp": "In the app",
+      "step1": "Open Lina",
+      "step2": "Go to Settings",
+      "step3": "Select \"Delete account\"",
+      "step4": "Confirm the request",
+      "byEmail": "By email",
+      "emailBefore": "If you cannot access the app, contact us at:",
+      "emailAfter": " — please include the email address associated with your Lina account."
+    },
+    "whatHappens": {
+      "title": "What happens when you delete your account",
+      "intro": "When your account is deleted:",
+      "item1": "Your personal account information (such as email address and profile data) is removed",
+      "item2": "Your access to Lina is permanently disabled",
+      "sharedContent": "Shared content (such as messages, photos, and lists) is not automatically deleted, as it may be shared with another parent. This data remains available to the other connected parent.",
+      "retention": "Some information may be retained temporarily where required by law or for security purposes, after which it is deleted or anonymised."
+    }
   }
 }

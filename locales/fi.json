@@ -544,5 +544,51 @@
       "resolution": "Linalla: Jaetut yhteystiedot tarkoittavat, että molemmilla vanhemmilla on hammaslääkärin, lääkärin ja koulun numerot aina saatavilla."
     },
     "closing": "Nämä eivät ole dramaattisia ongelmia. Ne ovat hiljaisia, arkisia hetkiä, joissa yksi yhteinen paikka säästää aikaa, vähentää stressiä ja pitää fokuksen lapsessa."
+  },
+  "termsSummary": {
+    "heading": "Yhteenveto käyttöehdoista",
+    "disclaimer": "Tämä yhteenveto on tarkoitettu ainoastaan ohjeelliseksi. Mahdollisten ristiriitojen tapauksessa sovelletaan yllä olevia englanninkielisiä käyttöehtoja.",
+    "p1": "Lina on yksityinen yhteistyötyökalu kahdelle vanhemmalle, jotka jakavat lapsen hoidon.",
+    "p2": "Sinun on oltava vähintään 18-vuotias ja vanhempi tai huoltaja voidaksesi käyttää palvelua. Jokainen Lina-tila on tarkoitettu kahdelle yhdistetylle vanhemmalle.",
+    "p3": "Säilytät omistusoikeuden kaikkeen Linassa jakamaasi sisältöön. Lina käsittelee sisältöä ainoastaan palvelun tarjoamiseksi eikä myy tai jaa sitä julkisesti.",
+    "p4": "Lina tarjotaan maksullisena tilauksena. Tilaukset uusitaan automaattisesti, ellei niitä peruuteta alustan tiliasetuksista.",
+    "p5": "Lina on tukityökalu eikä tarjoa oikeudellista, lääketieteellistä tai ammatillista neuvontaa eikä sovittele vanhempien välisiä erimielisyyksiä.",
+    "p6": "Jaettu sisältö voi pysyä toisen vanhemman saatavilla tilin poistamisen jälkeen.",
+    "p7": "Katso täydelliset tiedot käyttöehdoista."
+  },
+  "privacySummary": {
+    "heading": "Yhteenveto tietosuojakäytännöstä",
+    "disclaimer": "Tämä yhteenveto on tarkoitettu ainoastaan ohjeelliseksi. Mahdollisten ristiriitojen tapauksessa sovelletaan yllä olevaa englanninkielistä tietosuojakäytäntöä.",
+    "p1": "Lina on rakennettu yksityisyys perusperiaatteena.",
+    "p2": "Käsittelemme vain henkilötietoja, jotka ovat välttämättömiä palvelun tarjoamiseksi ja vanhempien yhteistyön tukemiseksi. Emme käytä mainontaa, seurantaa tai markkinointievästeitä.",
+    "p3": "Ainoastaan välttämätöntä paikallista tallennustilaa käytetään tärkeiden asetusten, kuten huoltojärjestelyasetusten, muistamiseen. Verkkosivusto käyttää Cloudflare Web Analyticsiä anonymisoituun sivukatselustatistiikkaan — ei evästeitä, ei henkilötietoja, ei sivustojen välistä seurantaa.",
+    "p4": "Kun tili poistetaan, henkilökohtaiset tilitiedot poistetaan. Jaettu sisältö voi pysyä toisen vanhemman saatavilla, koska sitä voidaan käyttää yhteisesti palvelussa.",
+    "p5": "Kaikki lapsiin liittyvät tiedot annetaan ja hallitaan vanhempien tai huoltajien toimesta.",
+    "p6": "Henkilötietoja ei myydä eikä jaeta kaupallisiin tarkoituksiin.",
+    "p7": "Katso täydelliset tiedot tietosuojakäytännöstä."
+  },
+  "accountDeletion": {
+    "pageTitle": "Tilin poistaminen — Lina",
+    "heading": "Tilin poistaminen",
+    "howTo": {
+      "title": "Näin poistat tilisi",
+      "intro": "Voit pyytää Lina-tilisi poistamista jollakin seuraavista tavoista.",
+      "inApp": "Sovelluksessa",
+      "step1": "Avaa Lina",
+      "step2": "Siirry asetuksiin",
+      "step3": "Valitse «Poista tili»",
+      "step4": "Vahvista pyyntö",
+      "byEmail": "Sähköpostitse",
+      "emailBefore": "Jos et pääse sovellukseen, ota meihin yhteyttä osoitteessa:",
+      "emailAfter": " — ilmoita Lina-tiliisi liitetty sähköpostiosoite."
+    },
+    "whatHappens": {
+      "title": "Mitä tapahtuu, kun poistat tilisi",
+      "intro": "Kun tilisi poistetaan:",
+      "item1": "Henkilökohtaiset tilitietosi (kuten sähköpostiosoite ja profiilitiedot) poistetaan",
+      "item2": "Pääsysi Linaan poistetaan pysyvästi",
+      "sharedContent": "Jaettua sisältöä (kuten viestejä, kuvia ja listoja) ei poisteta automaattisesti, koska se voi olla jaettu toisen vanhemman kanssa. Nämä tiedot pysyvät toisen yhdistetyn vanhemman saatavilla.",
+      "retention": "Joitakin tietoja voidaan säilyttää tilapäisesti lain tai turvallisuussyiden niin vaatiessa, minkä jälkeen ne poistetaan tai anonymisoidaan."
+    }
   }
 }

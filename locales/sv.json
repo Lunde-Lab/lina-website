@@ -544,5 +544,51 @@
       "resolution": "Med Lina: Delade kontakter innebär att båda föräldrarna har tandläkare, läkare och skolnummer tillgängliga hela tiden."
     },
     "closing": "Det här är inte dramatiska problem. Det är de stilla, vardagliga ögonblicken där en gemensam plats sparar tid, minskar stress och håller fokus på barnet."
+  },
+  "termsSummary": {
+    "heading": "Sammanfattning av villkoren",
+    "disclaimer": "Denna sammanfattning tillhandahålls enbart som vägledning. Vid eventuella avvikelser gäller den engelska versionen av villkoren ovan.",
+    "p1": "Lina är ett privat samarbetsverktyg för två föräldrar som delar omsorgen om ett barn.",
+    "p2": "Du måste vara minst 18 år och förälder eller vårdnadshavare för att använda tjänsten. Varje Lina-rum är avsett för två anslutna föräldrar.",
+    "p3": "Du behåller äganderätten till allt innehåll du delar i Lina. Lina behandlar innehåll enbart för att tillhandahålla tjänsten och säljer eller delar det inte offentligt.",
+    "p4": "Lina erbjuds som en betald prenumeration. Prenumerationer förnyas automatiskt om de inte avbryts via plattformens kontoinställningar.",
+    "p5": "Lina är ett stödverktyg och ger inte juridisk, medicinsk eller professionell rådgivning, och medlar inte tvister mellan föräldrar.",
+    "p6": "Delat innehåll kan förbli tillgängligt för den andra föräldern efter kontoborttagning.",
+    "p7": "För fullständiga detaljer, se villkoren för tjänsten."
+  },
+  "privacySummary": {
+    "heading": "Sammanfattning av integritetspolicyn",
+    "disclaimer": "Denna sammanfattning tillhandahålls enbart som vägledning. Vid eventuella avvikelser gäller den engelska versionen av integritetspolicyn ovan.",
+    "p1": "Lina är byggt med integritet som en grundprincip.",
+    "p2": "Vi behandlar enbart personuppgifter som är nödvändiga för att tillhandahålla tjänsten och stödja samarbetet mellan föräldrar. Vi använder inte reklam, spårning eller marknadsföringscookies.",
+    "p3": "Enbart strikt nödvändig lokal lagring används för att spara viktiga inställningar, som inställningar för vårdnadsschemat. Webbplatsen använder Cloudflare Web Analytics för anonymiserad sidvisningsstatistik — inga cookies, inga personuppgifter, ingen spårning mellan webbplatser.",
+    "p4": "När ett konto raderas tas personliga kontouppgifter bort. Delat innehåll kan förbli tillgängligt för den andra föräldern, eftersom det kan vara i gemensam användning inom tjänsten.",
+    "p5": "All barnrelaterad information tillhandahålls och hanteras av föräldrar eller vårdnadshavare.",
+    "p6": "Inga personuppgifter säljs eller delas i kommersiellt syfte.",
+    "p7": "För fullständiga detaljer, se integritetspolicyn."
+  },
+  "accountDeletion": {
+    "pageTitle": "Radering av konto — Lina",
+    "heading": "Radering av konto",
+    "howTo": {
+      "title": "Så här raderar du ditt konto",
+      "intro": "Du kan begära radering av ditt Lina-konto på något av följande sätt.",
+      "inApp": "I appen",
+      "step1": "Öppna Lina",
+      "step2": "Gå till Inställningar",
+      "step3": "Välj «Radera konto»",
+      "step4": "Bekräfta begäran",
+      "byEmail": "Via e-post",
+      "emailBefore": "Om du inte har tillgång till appen, kontakta oss på:",
+      "emailAfter": " — ange den e-postadress som är kopplad till ditt Lina-konto."
+    },
+    "whatHappens": {
+      "title": "Vad händer när du raderar ditt konto",
+      "intro": "När ditt konto raderas:",
+      "item1": "Din personliga kontoinformation (som e-postadress och profildata) tas bort",
+      "item2": "Din åtkomst till Lina inaktiveras permanent",
+      "sharedContent": "Delat innehåll (som meddelanden, foton och listor) raderas inte automatiskt, eftersom det kan vara delat med den andra föräldern. Dessa data förblir tillgängliga för den andra anslutna föräldern.",
+      "retention": "Viss information kan behållas tillfälligt där det krävs av lag eller av säkerhetsskäl, och raderas eller anonymiseras därefter."
+    }
   }
 }

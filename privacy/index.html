@@ -237,6 +237,14 @@
     }
 
     .privacy-summary p:last-child { margin-bottom: 0; }
+
+    .summary-disclaimer {
+      font-size: 13px;
+      font-style: italic;
+      color: var(--text-secondary);
+      opacity: 0.8;
+      margin-bottom: 14px;
+    }
   </style>
 </head>
 <body>
@@ -475,14 +483,15 @@
       </div>
 
       <div class="privacy-summary">
-        <h2>Privacy summary</h2>
-        <p>Lina is built with privacy as a core principle.</p>
-        <p>We process only personal data that is necessary to provide the service and support cooperation between parents. We do not use advertising, tracking, or marketing cookies.</p>
-        <p>Only strictly necessary local storage is used to remember essential settings, such as Care Schedule preferences. The website uses Cloudflare Web Analytics for anonymous page view statistics — no cookies, no personal data, no cross-site tracking.</p>
-        <p>When an account is deleted, personal account data is removed. Shared content may remain available to the other parent, as it may be jointly used within the service.</p>
-        <p>All child-related data is provided and managed by parents or legal guardians.</p>
-        <p>No personal data is sold or shared for commercial purposes.</p>
-        <p>For full details, please refer to this Privacy Policy.</p>
+        <h2 data-i18n="privacySummary.heading">Privacy summary</h2>
+        <p class="summary-disclaimer" data-i18n="privacySummary.disclaimer"><em>This summary is provided for convenience only. In the event of any inconsistency, the English version of the Privacy Policy above shall prevail.</em></p>
+        <p data-i18n="privacySummary.p1">Lina is built with privacy as a core principle.</p>
+        <p data-i18n="privacySummary.p2">We process only personal data that is necessary to provide the service and support cooperation between parents. We do not use advertising, tracking, or marketing cookies.</p>
+        <p data-i18n="privacySummary.p3">Only strictly necessary local storage is used to remember essential settings, such as Care Schedule preferences. The website uses Cloudflare Web Analytics for anonymous page view statistics — no cookies, no personal data, no cross-site tracking.</p>
+        <p data-i18n="privacySummary.p4">When an account is deleted, personal account data is removed. Shared content may remain available to the other parent, as it may be jointly used within the service.</p>
+        <p data-i18n="privacySummary.p5">All child-related data is provided and managed by parents or legal guardians.</p>
+        <p data-i18n="privacySummary.p6">No personal data is sold or shared for commercial purposes.</p>
+        <p data-i18n="privacySummary.p7">For full details, please refer to this Privacy Policy.</p>
       </div>
 
     </div>

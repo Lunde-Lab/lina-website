@@ -544,5 +544,51 @@
       "resolution": "Med Lina: Delte kontakter betyder, at begge forældre har tandlæge-, læge- og skolenumre tilgængelige hele tiden."
     },
     "closing": "Det er ikke dramatiske problemer. Det er de stille, hverdagslige øjeblikke, hvor ét fælles sted sparer tid, reducerer stress og holder fokus på barnet."
+  },
+  "termsSummary": {
+    "heading": "Resumé af vilkårene",
+    "disclaimer": "Dette resumé er kun vejledende. I tilfælde af uoverensstemmelser gælder den engelske version af vilkårene ovenfor.",
+    "p1": "Lina er et privat samarbejdsværktøj for to forældre, der deler omsorgen for et barn.",
+    "p2": "Du skal være mindst 18 år og forælder eller værge for at bruge tjenesten. Hvert Lina-rum er beregnet til to tilknyttede forældre.",
+    "p3": "Du beholder ejerskabet over alt indhold, du deler i Lina. Lina behandler kun indhold for at levere tjenesten og sælger eller deler det ikke offentligt.",
+    "p4": "Lina tilbydes som et betalt abonnement. Abonnementer fornyes automatisk, medmindre de opsiges via platformens kontoindstillinger.",
+    "p5": "Lina er et støtteværktøj og yder ikke juridisk, medicinsk eller professionel rådgivning og mægler ikke tvister mellem forældre.",
+    "p6": "Delt indhold kan forblive tilgængeligt for den anden forælder efter sletning af konto.",
+    "p7": "For fuldstændige detaljer, se vilkårene for brug."
+  },
+  "privacySummary": {
+    "heading": "Resumé af privatlivspolitikken",
+    "disclaimer": "Dette resumé er kun vejledende. I tilfælde af uoverensstemmelser gælder den engelske version af privatlivspolitikken ovenfor.",
+    "p1": "Lina er bygget med privatlivsbeskyttelse som et kerneprincip.",
+    "p2": "Vi behandler kun personoplysninger, der er nødvendige for at levere tjenesten og understøtte samarbejdet mellem forældre. Vi bruger ikke reklame, sporing eller markedsføringscookies.",
+    "p3": "Kun strengt nødvendig lokal lagring bruges til at huske vigtige indstillinger, som samværsplanpræferencer. Hjemmesiden bruger Cloudflare Web Analytics til anonymiseret sidevisningsstatistik — ingen cookies, ingen personoplysninger, ingen sporing på tværs af hjemmesider.",
+    "p4": "Når en konto slettes, fjernes personlige kontooplysninger. Delt indhold kan forblive tilgængeligt for den anden forælder, da det kan være i fælles brug i tjenesten.",
+    "p5": "Alle barnerelaterede oplysninger leveres og administreres af forældre eller værger.",
+    "p6": "Ingen personoplysninger sælges eller deles til kommercielle formål.",
+    "p7": "For fuldstændige detaljer, se privatlivspolitikken."
+  },
+  "accountDeletion": {
+    "pageTitle": "Sletning af konto — Lina",
+    "heading": "Sletning af konto",
+    "howTo": {
+      "title": "Sådan sletter du din konto",
+      "intro": "Du kan anmode om sletning af din Lina-konto på en af følgende måder.",
+      "inApp": "I appen",
+      "step1": "Åbn Lina",
+      "step2": "Gå til Indstillinger",
+      "step3": "Vælg «Slet konto»",
+      "step4": "Bekræft anmodningen",
+      "byEmail": "Via e-mail",
+      "emailBefore": "Hvis du ikke har adgang til appen, kontakt os på:",
+      "emailAfter": " — angiv den e-mailadresse, der er tilknyttet din Lina-konto."
+    },
+    "whatHappens": {
+      "title": "Hvad sker der, når du sletter din konto",
+      "intro": "Når din konto slettes:",
+      "item1": "Dine personlige kontooplysninger (som e-mailadresse og profildata) fjernes",
+      "item2": "Din adgang til Lina deaktiveres permanent",
+      "sharedContent": "Delt indhold (som beskeder, fotos og lister) slettes ikke automatisk, da det kan være delt med den anden forælder. Disse data forbliver tilgængelige for den anden tilknyttede forælder.",
+      "retention": "Visse oplysninger kan opbevares midlertidigt, hvor det kræves af loven eller af sikkerhedshensyn, og slettes eller anonymiseres derefter."
+    }
   }
 }
