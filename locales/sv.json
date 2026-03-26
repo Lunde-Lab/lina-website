@@ -146,7 +146,8 @@
     "copy": "© 2026 Lina. Alla rättigheter förbehållna.",
     "accountDeletion": "Radering av konto",
     "stories": "Vardagsscenarier",
-    "pricing": "Pris"
+    "pricing": "Pris",
+    "about": "Om Lina"
   },
   "pricing": {
     "pageTitle": "Pris — Lina",
@@ -488,6 +489,18 @@
     "cat5a3link": "Läs mer om samarbetsavtal",
     "cat5q4": "Hjälper Lina med samarbetsavtalet?",
     "cat5a4": "Lina erbjuder en informationssida om vad ett samarbetsavtal bör innehålla, med exempel och länkar till officiella resurser i Norge, Sverige, Danmark och Finland."
+  },
+  "about": {
+    "pageTitle": "Om Lina — Lina",
+    "heading": "Om Lina",
+    "lead": "Lina är en app för föräldrar som delar omsorgen om ett barn mellan två hem. En lugn plats där båda föräldrarna har samma information.",
+    "whyTitle": "Därför finns Lina",
+    "whyText1": "Lina skapades för att det inte fanns någon app för delad omsorg som kändes lugn och fokuserad. De flesta verktygen var byggda kring konflikter eller juridiska processer. Vi ville ha något annat — ett stilla, strukturerat utrymme för vardaglig samordning mellan två föräldrar.",
+    "whyText2": "Målet är att minska den mentala belastningen som följer med delad omsorg. När båda föräldrarna har tillgång till samma scheman, listor och uppdateringar behöver ingen bära allt ensam.",
+    "focusTitle": "Vad Lina fokuserar på",
+    "focusText1": "Lina är byggt kring strukturerad kommunikation och praktiska verktyg. Trådar håller samtalen organiserade. Delade listor, kontakter och information om barnet är alltid tillgängliga för båda föräldrarna. Allt samlat på ett ställe.",
+    "focusText2": "Det finns inga algoritmer, inga annonser och inga sociala funktioner. Lina är gjort för att användas vid behov och hålla sig i bakgrunden annars.",
+    "origin": "Designad och byggd i Norge."
   },
   "stories": {
     "pageTitle": "Så använder föräldrar Lina",

@@ -146,7 +146,8 @@
     "copy": "© 2026 Lina. Kaikki oikeudet pidätetään.",
     "accountDeletion": "Tilin poistaminen",
     "stories": "Tarinoita",
-    "pricing": "Hinta"
+    "pricing": "Hinta",
+    "about": "Tietoa"
   },
   "pricing": {
     "pageTitle": "Hinta — Lina",
@@ -488,6 +489,18 @@
     "cat5a3link": "Lue lisää huoltosopimuksesta",
     "cat5q4": "Auttaako Lina huoltosopimuksen tekemisessä?",
     "cat5a4": "Lina tarjoaa tietosivun siitä, mitä huoltosopimuksen tulisi sisältää, esimerkin kanssa ja linkkejä virallisiin resursseihin Norjassa, Ruotsissa, Tanskassa ja Suomessa."
+  },
+  "about": {
+    "pageTitle": "Tietoa Linasta — Lina",
+    "heading": "Tietoa Linasta",
+    "lead": "Lina on sovellus vanhemmille, jotka jakavat lapsen hoidon kahden kodin välillä. Yksi rauhallinen paikka, jossa molemmilla vanhemmilla on sama tieto.",
+    "whyTitle": "Miksi Lina on olemassa",
+    "whyText1": "Lina luotiin, koska rauhallista ja keskittynyttä yhteishuoltajuussovellusta ei ollut olemassa. Useimmat työkalut oli rakennettu ristiriitojen tai oikeusprosessien ympärille. Halusimme jotain muuta — hiljaisen, jäsennellyn tilan arjen koordinointiin kahden vanhemman välillä.",
+    "whyText2": "Tavoitteena on vähentää jaetusta hoidosta aiheutuvaa henkistä kuormitusta. Kun molemmilla vanhemmilla on pääsy samoihin aikatauluihin, listoihin ja päivityksiin, kenenkään ei tarvitse kantaa kaikkea yksin.",
+    "focusTitle": "Mihin Lina keskittyy",
+    "focusText1": "Lina on rakennettu jäsennellyn viestinnän ja käytännön työkalujen ympärille. Keskusteluketjut pitävät viestit järjestyksessä. Jaetut listat, yhteystiedot ja lapsen tiedot ovat aina molempien vanhempien saatavilla. Kaikki yhdessä paikassa.",
+    "focusText2": "Algoritmeja, mainoksia tai sosiaalisia ominaisuuksia ei ole. Lina on suunniteltu käytettäväksi tarvittaessa ja pysymään poissa tieltä muulloin.",
+    "origin": "Suunniteltu ja rakennettu Norjassa."
   },
   "stories": {
     "pageTitle": "Näin vanhemmat käyttävät Linaa",
