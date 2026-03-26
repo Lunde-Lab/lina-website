@@ -230,6 +230,7 @@
     "statsSwitches": "Vaihtoja yhteensä",
     "days": "päivää",
     "of": "/",
+    "subhead": "Suunnittele ja visualisoi, miten aika jaetaan kotien välillä.",
     "intro": "Käytä tätä työkalua suunnitellaksesi, miten aika jaetaan kahden kodin välillä. Klikkaa päiviä määrittääksesi ne, ja näe jakauman päivittyvän automaattisesti. Voit myös viedä suunnitelman PDF-tiedostona.",
     "howTitle": "Näin käytät työkalua",
     "step1": "Syötä molempien vanhempien nimet",
