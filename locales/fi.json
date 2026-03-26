@@ -78,6 +78,30 @@
     },
     "more": "Myös mukana: yhteystiedot, varustelista, lapsen tiedot ja hoitoaikataulu — jotta molemmilla vanhemmilla on tarvitsemansa, riippumatta siitä, missä lapsi on."
   },
+  "tools": {
+    "label": "Lisää Linassa",
+    "title": "Jaettuun hoitoon rakennetut työkalut",
+    "contacts": {
+      "title": "Jaetut yhteystiedot",
+      "description": "Lastenlääkäri, opettaja, iltapäiväkerho — pidä tärkeät yhteystiedot molempien vanhempien saatavilla, aina ajan tasalla."
+    },
+    "equipment": {
+      "title": "Varustelistat",
+      "description": "Kumisaappaat, liikuntapussi, allergialääkkeet — jaetut listat helpottavat sen seuraamista, mitä lapsen täytyy kulkea kotien välillä."
+    },
+    "childinfo": {
+      "title": "Lapsen tiedot",
+      "description": "Syntymäpäivä, allergiat, lääkitys, kengännumero — kaikki mitä molempien vanhempien tulee tietää, koottuna yhteen paikkaan ja aina saatavilla."
+    },
+    "schedule": {
+      "title": "Hoitoaikataulu",
+      "description": "Luo visuaalinen yleiskatsaus siitä, miten aika jakautuu kotien välillä. Näe koko aikataulu yhdellä silmäyksellä, viikko viikolta."
+    },
+    "control": {
+      "title": "Rakennettu myös vaikeille päiville",
+      "description": "Vie kaikki viestit dokumentaatiota varten. Sumentaa kuvia emotionaalisen kuorman vähentämiseksi. Tallenna haluamasi kuvat. Hallitse mitä näet ja milloin."
+    }
+  },
   "problem": {
     "label": "Miksi Lina",
     "title": "Kun hoito jakautuu kahteen kotiin, yksityiskohdat katoavat",

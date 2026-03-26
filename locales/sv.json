@@ -78,6 +78,30 @@
     },
     "more": "Också inkluderat: kontakter, utrustningslistor, barnuppgifter och vårdschema — så att båda föräldrarna har vad de behöver, oavsett var barnet är."
   },
+  "tools": {
+    "label": "Mer i Lina",
+    "title": "Verktyg byggda för delad omsorg",
+    "contacts": {
+      "title": "Delade kontakter",
+      "description": "Barnläkare, lärare, fritids — håll viktiga kontakter tillgängliga för båda föräldrarna, alltid uppdaterade."
+    },
+    "equipment": {
+      "title": "Utrustningslistor",
+      "description": "Gummistövlar, gympapåse, allergiläkemedel — delade listor gör det enklare att hålla koll på vad som behöver följa barnet mellan hemmen."
+    },
+    "childinfo": {
+      "title": "Barnuppgifter",
+      "description": "Födelsedatum, allergier, mediciner, skostorlek — allt båda föräldrarna bör känna till, samlat på ett ställe och alltid tillgängligt."
+    },
+    "schedule": {
+      "title": "Omsorgsschema",
+      "description": "Skapa en visuell översikt över hur tid fördelas mellan hemmen. Se hela schemat i ett ögonkast, vecka för vecka."
+    },
+    "control": {
+      "title": "Byggt för svåra dagar också",
+      "description": "Exportera alla meddelanden för dokumentation. Sudda ut foton för att minska den känslomässiga belastningen. Spara de bilder du vill behålla. Kontrollera vad du ser och när."
+    }
+  },
   "problem": {
     "label": "Varför Lina",
     "title": "När omsorgen delas mellan två hem, tappas detaljer bort",

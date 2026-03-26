@@ -78,6 +78,30 @@
     },
     "more": "Også inkluderet: kontakter, udstyrlister, barneinformation og samværsplan — så begge forældre har det, de har brug for, uanset hvor barnet er."
   },
+  "tools": {
+    "label": "Mere i Lina",
+    "title": "Værktøjer bygget til delt omsorg",
+    "contacts": {
+      "title": "Delte kontakter",
+      "description": "Børnelæge, lærer, fritidshjem — hold vigtige kontakter tilgængelige for begge forældre, altid opdaterede."
+    },
+    "equipment": {
+      "title": "Udstyrlister",
+      "description": "Gummistøvler, gymnastikpose, allergimedecin — delte lister gør det nemmere at holde styr på, hvad der skal følge barnet mellem hjemmene."
+    },
+    "childinfo": {
+      "title": "Barneinformation",
+      "description": "Fødselsdato, allergier, medicin, skostørrelse — alt, begge forældre bør vide, samlet på ét sted og altid tilgængeligt."
+    },
+    "schedule": {
+      "title": "Samværsplan",
+      "description": "Lav et visuelt overblik over, hvordan tid fordeles mellem hjemmene. Se hele planen med ét blik, uge for uge."
+    },
+    "control": {
+      "title": "Bygget til svære dage også",
+      "description": "Eksporter alle beskeder til dokumentation. Slør billeder for at reducere følelsesmæssig belastning. Gem de billeder, du vil beholde. Kontroller, hvad du ser og hvornår."
+    }
+  },
   "problem": {
     "label": "Hvorfor Lina",
     "title": "Når omsorgen er delt mellem to hjem, går detaljer tabt",
