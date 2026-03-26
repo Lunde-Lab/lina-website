@@ -198,8 +198,13 @@
   "contact": {
     "pageTitle": "Kontakt — Lina",
     "heading": "Kontakt",
-    "intro": "Har du spørsmål om Lina eller trenger hjelp med kontoen din? Vi er her for å hjelpe — ta kontakt, så svarer vi så snart vi kan.",
-    "emailLabel": "Send oss en e-post"
+    "intro": "Har du spørsmål om Lina eller trenger hjelp med kontoen din? Vi er her for å hjelpe — send oss en melding, så svarer vi så snart vi kan.",
+    "namePlaceholder": "Navn",
+    "emailPlaceholder": "E-postadresse",
+    "messagePlaceholder": "Din melding",
+    "submit": "Send melding",
+    "successTitle": "Takk for meldingen",
+    "successDescription": "Vi kommer tilbake til deg så snart vi kan."
   },
   "cs": {
     "pageTitle": "Samværsplan — Lina",
