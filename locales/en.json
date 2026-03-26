@@ -129,7 +129,55 @@
     "faq": "FAQ",
     "copy": "© 2026 Lina. All rights reserved.",
     "accountDeletion": "Account deletion",
-    "stories": "Stories"
+    "stories": "Stories",
+    "pricing": "Pricing"
+  },
+  "pricing": {
+    "pageTitle": "Pricing — Lina",
+    "label": "Pricing",
+    "title": "One subscription. Both parents.",
+    "description": "Lina+ gives both parents full access with a single subscription. Start with a free trial — no payment required until you decide.",
+    "free": {
+      "name": "Free",
+      "price": "0 kr",
+      "period": "Always free",
+      "f1": "Up to 2 threads",
+      "f2": "Up to 100 photos in shared album",
+      "f3": "Messages",
+      "f4": "Child information and contacts",
+      "f5": "Equipment lists",
+      "f6": "Care schedule"
+    },
+    "plus": {
+      "badge": "Recommended",
+      "name": "Lina+",
+      "price": "79 kr",
+      "priceUnit": "/mo",
+      "period": "2 weeks free trial",
+      "both": "One subscription for both parents",
+      "includes": "Everything in Free, plus:",
+      "f1": "Unlimited threads",
+      "f2": "Larger album",
+      "f3": "Search in threads",
+      "f4": "Export threads",
+      "f5": "Important messages"
+    },
+    "whyLabel": "Why paid",
+    "whyTitle": "The subscription keeps Lina independent",
+    "whyText1": "Lina has no advertising and does not share data with third parties. The subscription is what makes that possible — it funds development, hosting, and support without compromising your privacy.",
+    "whyText2": "Both parents get full access with one subscription. The parent who subscribes covers both — so the other parent never has to pay.",
+    "p1": {
+      "title": "One subscription, two parents",
+      "description": "Both parents get full access. No extra cost for the other parent."
+    },
+    "p2": {
+      "title": "No advertising, no data sharing",
+      "description": "The subscription funds the app. Your data is never sold."
+    },
+    "p3": {
+      "title": "No commitment",
+      "description": "Cancel anytime in App Store or Google Play."
+    }
   },
   "contact": {
     "pageTitle": "Contact — Lina",
