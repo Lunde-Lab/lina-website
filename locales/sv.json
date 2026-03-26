@@ -78,10 +78,40 @@
     },
     "more": "Också inkluderat: kontakter, utrustningslistor, barnuppgifter och vårdschema — så att båda föräldrarna har vad de behöver, oavsett var barnet är."
   },
+  "tools": {
+    "label": "Mer i Lina",
+    "title": "Verktyg byggda för delad omsorg",
+    "contacts": {
+      "title": "Delade kontakter",
+      "description": "Barnläkare, lärare, fritids — håll viktiga kontakter tillgängliga för båda föräldrarna, alltid uppdaterade."
+    },
+    "equipment": {
+      "title": "Utrustningslistor",
+      "description": "Gummistövlar, gympapåse, allergiläkemedel — delade listor gör det enklare att hålla koll på vad som behöver följa barnet mellan hemmen."
+    },
+    "childinfo": {
+      "title": "Barnuppgifter",
+      "description": "Födelsedatum, allergier, mediciner, skostorlek — allt båda föräldrarna bör känna till, samlat på ett ställe och alltid tillgängligt."
+    },
+    "schedule": {
+      "title": "Omsorgsschema",
+      "description": "Skapa en visuell översikt över hur tid fördelas mellan hemmen. Se hela schemat i ett ögonkast, vecka för vecka."
+    },
+    "control": {
+      "title": "Byggt för svåra dagar också",
+      "description": "Exportera alla meddelanden för dokumentation. Sudda ut foton för att minska den känslomässiga belastningen. Spara de bilder du vill behålla. Kontrollera vad du ser och när."
+    }
+  },
   "problem": {
     "label": "Varför Lina",
     "title": "När omsorgen delas mellan två hem, tappas detaljer bort",
     "description": "När planer, meddelanden och foton lever i olika appar, faller viktiga saker mellan stolarna. Lina samlar allt i en gemensam struktur — lugn, tydlig och förutsägbar."
+  },
+  "forWhom": {
+    "forTitle": "Vem Lina är för",
+    "forDescription": "Föräldrar som delar omsorg mellan två hem och vill ha mindre friktion i det dagliga samarbetet. För dem som värdesätter struktur framför brus och tydlighet framför konstant meddelanden.",
+    "notTitle": "Vad Lina inte är",
+    "notDescription": "Inte ett socialt nätverk, inte en allmän familjechat och inte byggt för ändlösa konversationer. Lina är ett fokuserat verktyg designat specifikt för samarbete kring ditt barn."
   },
   "privacy": {
     "label": "Integritet",
