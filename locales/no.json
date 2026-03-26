@@ -224,7 +224,12 @@
     "statsFullWeekends": "Hele helger",
     "statsSwitches": "Antall bytter",
     "days": "dager",
-    "of": "av"
+    "of": "av",
+    "intro": "Bruk dette verktøyet til å planlegge hvordan tiden deles mellom to hjem. Klikk på dagene for å tildele dem, og se fordelingen oppdatere seg automatisk. Du kan også eksportere planen som PDF.",
+    "howTitle": "Slik bruker du verktøyet",
+    "step1": "Skriv inn navn på begge foreldre",
+    "step2": "Klikk på en dag for å veksle mellom forelder A, forelder B, eller ingen",
+    "step3": "Se fordelingen i oppsummeringen under kalenderen"
   },
   "familievern": {
     "hero": {

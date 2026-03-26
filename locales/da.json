@@ -224,7 +224,12 @@
     "statsFullWeekends": "Hele weekender",
     "statsSwitches": "Antal skift",
     "days": "dage",
-    "of": "af"
+    "of": "af",
+    "intro": "Brug dette værktøj til at planlægge, hvordan tiden deles mellem to hjem. Klik på dagene for at tildele dem, og se fordelingen opdatere sig automatisk. Du kan også eksportere planen som PDF.",
+    "howTitle": "Sådan bruger du værktøjet",
+    "step1": "Indtast begge forældres navne",
+    "step2": "Klik på en dag for at skifte mellem forælder A, forælder B, eller ingen",
+    "step3": "Se fordelingen i oversigten under kalenderen"
   },
   "familievern": {
     "hero": {

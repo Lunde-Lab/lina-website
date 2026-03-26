@@ -224,7 +224,12 @@
     "statsFullWeekends": "Hela helger",
     "statsSwitches": "Totalt antal byten",
     "days": "dagar",
-    "of": "av"
+    "of": "av",
+    "intro": "Använd det här verktyget för att planera hur tiden delas mellan två hem. Klicka på dagarna för att tilldela dem, och se fördelningen uppdateras automatiskt. Du kan också exportera planen som PDF.",
+    "howTitle": "Så här använder du verktyget",
+    "step1": "Skriv in namn på båda föräldrarna",
+    "step2": "Klicka på en dag för att växla mellan förälder A, förälder B, eller ingen",
+    "step3": "Se fördelningen i sammanfattningen under kalendern"
   },
   "familievern": {
     "hero": {
