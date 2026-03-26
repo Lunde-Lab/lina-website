@@ -107,6 +107,12 @@
     "title": "När omsorgen delas mellan två hem, tappas detaljer bort",
     "description": "När planer, meddelanden och foton lever i olika appar, faller viktiga saker mellan stolarna. Lina samlar allt i en gemensam struktur — lugn, tydlig och förutsägbar."
   },
+  "forWhom": {
+    "forTitle": "Vem Lina är för",
+    "forDescription": "Föräldrar som delar omsorg mellan två hem och vill ha mindre friktion i det dagliga samarbetet. För dem som värdesätter struktur framför brus och tydlighet framför konstant meddelanden.",
+    "notTitle": "Vad Lina inte är",
+    "notDescription": "Inte ett socialt nätverk, inte en allmän familjechat och inte byggt för ändlösa konversationer. Lina är ett fokuserat verktyg designat specifikt för samarbete kring ditt barn."
+  },
   "privacy": {
     "label": "Integritet",
     "title": "Privat från grunden",

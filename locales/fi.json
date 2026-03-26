@@ -107,6 +107,12 @@
     "title": "Kun hoito jakautuu kahteen kotiin, yksityiskohdat katoavat",
     "description": "Kun suunnitelmat, viestit ja kuvat asuvat eri sovelluksissa, tärkeät asiat putoavat halkeamiin. Lina kokoaa kaiken yhteen jaettuun rakenteeseen — rauhallinen, selkeä ja ennakoitava."
   },
+  "forWhom": {
+    "forTitle": "Kenelle Lina on tarkoitettu",
+    "forDescription": "Vanhemmille, jotka jakavat lapsen hoitoa kahden kodin välillä ja haluavat vähemmän kitkaa arjen yhteistyössä. Niille, jotka arvostavat rakennetta melun sijaan ja selkeyttä jatkuvan viestittelyn sijaan.",
+    "notTitle": "Mitä Lina ei ole",
+    "notDescription": "Ei sosiaalinen verkosto, ei yleinen perheviestintäsovellus eikä rakennettu loputtomiin keskusteluihin. Lina on tarkasti suunnattu työkalu, joka on suunniteltu erityisesti lapsesi ympärillä tehtävään yhteistyöhön."
+  },
   "privacy": {
     "label": "Yksityisyys",
     "title": "Yksityinen rakenteesta alkaen",
