@@ -128,7 +128,8 @@
     "careAgreement": "Care Agreement",
     "faq": "FAQ",
     "copy": "© 2026 Lina. All rights reserved.",
-    "accountDeletion": "Account deletion"
+    "accountDeletion": "Account deletion",
+    "stories": "Stories"
   },
   "contact": {
     "pageTitle": "Contact — Lina",
@@ -412,5 +413,48 @@
     "cat5a3link": "Learn more about care agreements",
     "cat5q4": "Does Lina help with care agreements?",
     "cat5a4": "Lina offers an information page about what a care agreement should include, with an example and links to official resources in Norway, Sweden, Denmark, and Finland."
+  },
+  "stories": {
+    "pageTitle": "How parents use Lina",
+    "label": "Everyday scenarios",
+    "title": "How parents use Lina",
+    "description": "Small, everyday moments where having one shared place makes the difference. These are the situations Lina is built for.",
+    "s1": {
+      "label": "Child information",
+      "title": "The allergy the other home did not know about",
+      "situation": "A child is diagnosed with a new food allergy at a doctor's visit. The information needs to reach the other home before the next handover.",
+      "resolution": "With Lina: The parent updates the child's medical information once. The other parent sees it immediately — no need for a separate text or call."
+    },
+    "s2": {
+      "label": "Equipment lists",
+      "title": "The rain jacket that is always at the wrong house",
+      "situation": "A child arrives at school without rain gear because no one was sure which home had it. Small things like this create unnecessary friction.",
+      "resolution": "With Lina: Shared equipment lists show what is at each home. Both parents can check and update the list, so the jacket follows the child."
+    },
+    "s3": {
+      "label": "Threads",
+      "title": "The school event buried in a text chain",
+      "situation": "School sends information about a parents' meeting. One parent forwards it by text, but the details get lost between practical messages about pickup and dinner.",
+      "resolution": "With Lina: A dedicated thread for school keeps everything in one place. Both parents find what they need without scrolling through unrelated messages."
+    },
+    "s4": {
+      "label": "Shared album",
+      "title": "The first bicycle ride you almost missed",
+      "situation": "A child learns to ride a bicycle at one home. The other parent only hears about it days later and never sees the moment.",
+      "resolution": "With Lina: Photos go into the shared album. Both parents can see the big and small moments, regardless of which home the child is in."
+    },
+    "s5": {
+      "label": "Care schedule",
+      "title": "The handover mix-up on a holiday week",
+      "situation": "Holiday weeks change the regular schedule. Both parents remember a different version of the plan, and the child ends up in the middle.",
+      "resolution": "With Lina: The care schedule shows both parents the same overview. Changes are visible immediately, so there is one version of the truth."
+    },
+    "s6": {
+      "label": "Contacts",
+      "title": "The dentist number no one could find",
+      "situation": "A child has a toothache at one home. The parent needs to call the dentist but does not have the number — it was saved in the other parent's phone.",
+      "resolution": "With Lina: Shared contacts mean both parents have the dentist, doctor, and school numbers available at all times."
+    },
+    "closing": "These are not dramatic problems. They are the quiet, everyday moments where having one shared place saves time, reduces stress, and keeps the focus on the child."
   }
 }
