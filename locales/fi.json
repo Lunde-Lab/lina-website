@@ -113,7 +113,8 @@
     "careSchedule": "Hoitoaikataulu",
     "careAgreement": "Huoltosopimus",
     "faq": "Usein kysytyt kysymykset",
-    "copy": "© 2026 Lina. Kaikki oikeudet pidätetään."
+    "copy": "© 2026 Lina. Kaikki oikeudet pidätetään.",
+    "accountDeletion": "Tilin poistaminen"
   },
   "contact": {
     "pageTitle": "Ota yhteyttä — Lina",
