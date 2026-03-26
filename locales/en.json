@@ -182,8 +182,13 @@
   "contact": {
     "pageTitle": "Contact — Lina",
     "heading": "Contact",
-    "intro": "Have a question about Lina or need help with your account? We're here to help — reach out and we'll get back to you as soon as we can.",
-    "emailLabel": "Send us an email"
+    "intro": "Have a question about Lina or need help with your account? We're here to help — send us a message and we'll get back to you as soon as we can.",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email address",
+    "messagePlaceholder": "Your message",
+    "submit": "Send message",
+    "successTitle": "Thank you for your message",
+    "successDescription": "We'll get back to you as soon as we can."
   },
   "cs": {
     "pageTitle": "Care Schedule — Lina",

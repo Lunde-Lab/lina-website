@@ -198,8 +198,13 @@
   "contact": {
     "pageTitle": "Kontakt — Lina",
     "heading": "Kontakt",
-    "intro": "Har du frågor om Lina eller behöver hjälp med ditt konto? Vi finns här — hör av dig så svarar vi så snart vi kan.",
-    "emailLabel": "Skicka ett e-postmeddelande"
+    "intro": "Har du frågor om Lina eller behöver hjälp med ditt konto? Vi finns här — skicka ett meddelande så svarar vi så snart vi kan.",
+    "namePlaceholder": "Namn",
+    "emailPlaceholder": "E-postadress",
+    "messagePlaceholder": "Ditt meddelande",
+    "submit": "Skicka meddelande",
+    "successTitle": "Tack för ditt meddelande",
+    "successDescription": "Vi återkommer så snart vi kan."
   },
   "cs": {
     "pageTitle": "Vårdschema — Lina",

@@ -198,8 +198,13 @@
   "contact": {
     "pageTitle": "Ota yhteyttä — Lina",
     "heading": "Ota yhteyttä",
-    "intro": "Onko sinulla kysyttävää Linasta tai tarvitsetko apua tilisi kanssa? Olemme täällä auttamassa — ota yhteyttä, niin vastaamme mahdollisimman pian.",
-    "emailLabel": "Lähetä meille sähköpostia"
+    "intro": "Onko sinulla kysyttävää Linasta tai tarvitsetko apua tilisi kanssa? Olemme täällä auttamassa — lähetä meille viesti, niin vastaamme mahdollisimman pian.",
+    "namePlaceholder": "Nimi",
+    "emailPlaceholder": "Sähköpostiosoite",
+    "messagePlaceholder": "Viestisi",
+    "submit": "Lähetä viesti",
+    "successTitle": "Kiitos viestistäsi",
+    "successDescription": "Palaamme asiaan mahdollisimman pian."
   },
   "cs": {
     "pageTitle": "Hoitoaikataulu — Lina",
