@@ -145,7 +145,55 @@
     "faq": "FAQ",
     "copy": "© 2026 Lina. Alle rettigheder forbeholdes.",
     "accountDeletion": "Sletning af konto",
-    "stories": "Hverdagsscenarier"
+    "stories": "Hverdagsscenarier",
+    "pricing": "Pris"
+  },
+  "pricing": {
+    "pageTitle": "Pris — Lina",
+    "label": "Pris",
+    "title": "Ét abonnement. Begge forældre.",
+    "description": "Lina+ giver begge forældre fuld adgang med ét abonnement. Start med en gratis prøveperiode — ingen betaling, før du beslutter dig.",
+    "free": {
+      "name": "Gratis",
+      "price": "0 kr",
+      "period": "Altid gratis",
+      "f1": "Op til 2 tråde",
+      "f2": "Op til 100 billeder i delt album",
+      "f3": "Beskeder",
+      "f4": "Barneinformation og kontakter",
+      "f5": "Udstyrslister",
+      "f6": "Samværsplan"
+    },
+    "plus": {
+      "badge": "Anbefalet",
+      "name": "Lina+",
+      "price": "79 kr",
+      "priceUnit": "/md",
+      "period": "2 ugers gratis prøveperiode",
+      "both": "Ét abonnement for begge forældre",
+      "includes": "Alt i Gratis, plus:",
+      "f1": "Ubegrænset antal tråde",
+      "f2": "Større album",
+      "f3": "Søg i tråde",
+      "f4": "Eksportér tråde",
+      "f5": "Vigtige beskeder"
+    },
+    "whyLabel": "Hvorfor betalt",
+    "whyTitle": "Abonnementet holder Lina uafhængigt",
+    "whyText1": "Lina har ingen reklame og deler ikke data med tredjeparter. Abonnementet er det, der gør det muligt — det finansierer udvikling, drift og support uden at gå på kompromis med dit privatliv.",
+    "whyText2": "Begge forældre får fuld adgang med ét abonnement. Forælderen, der abonnerer, dækker begge — så den anden behøver aldrig betale.",
+    "p1": {
+      "title": "Ét abonnement, to forældre",
+      "description": "Begge forældre får fuld adgang. Ingen ekstra omkostning for den anden."
+    },
+    "p2": {
+      "title": "Ingen reklame, ingen datadeling",
+      "description": "Abonnementet finansierer appen. Dine data sælges aldrig."
+    },
+    "p3": {
+      "title": "Ingen bindingsperiode",
+      "description": "Opsig når som helst i App Store eller Google Play."
+    }
   },
   "contact": {
     "pageTitle": "Kontakt — Lina",

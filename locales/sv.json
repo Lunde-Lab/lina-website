@@ -145,7 +145,55 @@
     "faq": "Vanliga frågor",
     "copy": "© 2026 Lina. Alla rättigheter förbehållna.",
     "accountDeletion": "Radering av konto",
-    "stories": "Vardagsscenarier"
+    "stories": "Vardagsscenarier",
+    "pricing": "Pris"
+  },
+  "pricing": {
+    "pageTitle": "Pris — Lina",
+    "label": "Pris",
+    "title": "Ett abonnemang. Båda föräldrarna.",
+    "description": "Lina+ ger båda föräldrarna full tillgång med ett abonnemang. Börja med en gratis provperiod — ingen betalning förrän du bestämmer dig.",
+    "free": {
+      "name": "Gratis",
+      "price": "0 kr",
+      "period": "Alltid gratis",
+      "f1": "Upp till 2 trådar",
+      "f2": "Upp till 100 bilder i delat album",
+      "f3": "Meddelanden",
+      "f4": "Barninformation och kontakter",
+      "f5": "Utrustningslistor",
+      "f6": "Omsorgsschema"
+    },
+    "plus": {
+      "badge": "Rekommenderat",
+      "name": "Lina+",
+      "price": "79 kr",
+      "priceUnit": "/mån",
+      "period": "2 veckor gratis provperiod",
+      "both": "Ett abonnemang för båda föräldrarna",
+      "includes": "Allt i Gratis, plus:",
+      "f1": "Obegränsat antal trådar",
+      "f2": "Större album",
+      "f3": "Sök i trådar",
+      "f4": "Exportera trådar",
+      "f5": "Viktiga meddelanden"
+    },
+    "whyLabel": "Varför betalt",
+    "whyTitle": "Abonnemanget håller Lina oberoende",
+    "whyText1": "Lina har ingen reklam och delar inte data med tredje part. Abonnemanget är det som gör det möjligt — det finansierar utveckling, drift och support utan att kompromissa med din integritet.",
+    "whyText2": "Båda föräldrarna får full tillgång med ett abonnemang. Föräldern som prenumererar täcker båda — så den andra behöver aldrig betala.",
+    "p1": {
+      "title": "Ett abonnemang, två föräldrar",
+      "description": "Båda föräldrarna får full tillgång. Ingen extra kostnad för den andra."
+    },
+    "p2": {
+      "title": "Ingen reklam, ingen datadelning",
+      "description": "Abonnemanget finansierar appen. Din data säljs aldrig."
+    },
+    "p3": {
+      "title": "Ingen bindningstid",
+      "description": "Avsluta när som helst i App Store eller Google Play."
+    }
   },
   "contact": {
     "pageTitle": "Kontakt — Lina",

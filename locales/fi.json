@@ -145,7 +145,55 @@
     "faq": "Usein kysytyt kysymykset",
     "copy": "© 2026 Lina. Kaikki oikeudet pidätetään.",
     "accountDeletion": "Tilin poistaminen",
-    "stories": "Tarinoita"
+    "stories": "Tarinoita",
+    "pricing": "Hinta"
+  },
+  "pricing": {
+    "pageTitle": "Hinta — Lina",
+    "label": "Hinta",
+    "title": "Yksi tilaus. Molemmat vanhemmat.",
+    "description": "Lina+ antaa molemmille vanhemmille täyden pääsyn yhdellä tilauksella. Aloita ilmaisella kokeilujaksolla — ei maksua ennen kuin päätät.",
+    "free": {
+      "name": "Ilmainen",
+      "price": "0 kr",
+      "period": "Aina ilmainen",
+      "f1": "Enintään 2 keskusteluketjua",
+      "f2": "Enintään 100 kuvaa jaetussa albumissa",
+      "f3": "Viestit",
+      "f4": "Lapsen tiedot ja yhteystiedot",
+      "f5": "Varustelistat",
+      "f6": "Hoitoaikataulu"
+    },
+    "plus": {
+      "badge": "Suositeltu",
+      "name": "Lina+",
+      "price": "79 kr",
+      "priceUnit": "/kk",
+      "period": "2 viikon ilmainen kokeilujakso",
+      "both": "Yksi tilaus molemmille vanhemmille",
+      "includes": "Kaikki ilmaisversiosta, plus:",
+      "f1": "Rajaton määrä keskusteluketjuja",
+      "f2": "Suurempi albumi",
+      "f3": "Haku keskusteluketjuissa",
+      "f4": "Vie keskusteluketjut",
+      "f5": "Tärkeät viestit"
+    },
+    "whyLabel": "Miksi maksullinen",
+    "whyTitle": "Tilaus pitää Linan riippumattomana",
+    "whyText1": "Linassa ei ole mainoksia eikä se jaa tietoja kolmansille osapuolille. Tilaus tekee tämän mahdolliseksi — se rahoittaa kehityksen, ylläpidon ja tuen vaarantamatta yksityisyyttäsi.",
+    "whyText2": "Molemmat vanhemmat saavat täyden pääsyn yhdellä tilauksella. Tilaava vanhempi kattaa molemmat — joten toisen ei tarvitse koskaan maksaa.",
+    "p1": {
+      "title": "Yksi tilaus, kaksi vanhempaa",
+      "description": "Molemmat vanhemmat saavat täyden pääsyn. Ei lisäkustannuksia toiselle."
+    },
+    "p2": {
+      "title": "Ei mainoksia, ei tietojen jakamista",
+      "description": "Tilaus rahoittaa sovelluksen. Tietojasi ei myydä koskaan."
+    },
+    "p3": {
+      "title": "Ei sitoutumisaikaa",
+      "description": "Peru milloin tahansa App Storessa tai Google Playssa."
+    }
   },
   "contact": {
     "pageTitle": "Ota yhteyttä — Lina",
