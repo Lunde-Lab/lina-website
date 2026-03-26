@@ -224,7 +224,12 @@
     "statsFullWeekends": "Kokonaiset viikonloput",
     "statsSwitches": "Vaihtoja yhteensä",
     "days": "päivää",
-    "of": "/"
+    "of": "/",
+    "intro": "Käytä tätä työkalua suunnitellaksesi, miten aika jaetaan kahden kodin välillä. Klikkaa päiviä määrittääksesi ne, ja näe jakauman päivittyvän automaattisesti. Voit myös viedä suunnitelman PDF-tiedostona.",
+    "howTitle": "Näin käytät työkalua",
+    "step1": "Syötä molempien vanhempien nimet",
+    "step2": "Klikkaa päivää vaihtaaksesi vanhemman A, vanhemman B tai ei kenenkään välillä",
+    "step3": "Katso jakautuminen kalenterin alla olevasta yhteenvedosta"
   },
   "familievern": {
     "hero": {

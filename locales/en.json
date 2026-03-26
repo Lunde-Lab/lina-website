@@ -208,7 +208,12 @@
     "statsFullWeekends": "Full weekends",
     "statsSwitches": "Total switches",
     "days": "days",
-    "of": "of"
+    "of": "of",
+    "intro": "Use this tool to plan how time is shared between two homes. Click on the days to assign them, and see the split update automatically. You can also export the plan as a PDF.",
+    "howTitle": "How to use",
+    "step1": "Enter both parents' names",
+    "step2": "Click a day to toggle between parent A, parent B, or unassigned",
+    "step3": "See the split in the summary below the calendar"
   },
   "familievern": {
     "hero": {
