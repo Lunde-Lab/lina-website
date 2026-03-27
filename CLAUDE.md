@@ -19,11 +19,25 @@ Lina is a co-parenting app. This repo is its marketing website — a static site
 | `js/i18n.js` | Client-side translation logic |
 | `locales/` | JSON translation files (en, no, sv, da, fi) |
 | `assets/logos/Logomark_1.svg` | Primary logomark |
+| `assets/logos/Logo_1.svg` | Full logo (wordmark + logomark) |
+| `assets/og-image.png` | Open Graph image for social sharing |
 | `assets/images/` | App screenshots |
+| `about/index.html` | About page |
 | `care-schedule/index.html` | Interactive care schedule tool |
+| `care-agreement/index.html` | Interactive care agreement tool |
+| `faq/index.html` | FAQ page |
+| `pricing/index.html` | Pricing page |
+| `stories/index.html` | Stories / testimonials page |
+| `professionals.html` | Professionals landing page |
 | `privacy/index.html` | Privacy policy |
 | `terms/index.html` | Terms of service |
 | `contact.html` | Contact page |
+| `account-deletion.html` | Account deletion request page |
+| `account-deletion-scheduled.html` | Account deletion confirmation page |
+| `account-deletion-cancelled.html` | Account deletion cancellation page |
+| `email-changed.html` | Email change confirmation page |
+| `docs/branding/` | Branding guidelines (brand-voice, taglines, branding) |
+| `docs/colors/` | Color system guidelines (color-system, color-usage) |
 
 ## Styling rule
 
@@ -31,7 +45,12 @@ Always match the look and feel of `index.html` when creating or editing any file
 
 ## Branding rule
 
-Always follow the branding guidelines defined in the project docs: `branding.md`, `color-system.md`, `color-usage.md`, `brand-voice.md`, and `taglines.md`. These live in the project knowledge and define Lina's visual identity, tone of voice, color palette, and approved taglines.
+Always follow the branding guidelines defined in the project docs:
+- `docs/branding/branding.md` — visual identity
+- `docs/branding/brand-voice.md` — tone of voice
+- `docs/branding/taglines.md` — approved taglines
+- `docs/colors/color-system.md` — color palette
+- `docs/colors/color-usage.md` — color usage rules
 
 ## i18n
 
