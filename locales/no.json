@@ -38,7 +38,7 @@
     },
     "step2": {
       "title": "Legg til det som er viktig",
-      "description": "Medisinske opplysninger, allergier, kontakter, utstyrslister — legg det inn én gang, og det er tilgjengelig for begge foreldre."
+      "description": "Medisinske opplysninger, allergier, kontakter, utstyrslister — legg det inn én gang, og det er tilgjengelig i begge hjem."
     },
     "step3": {
       "title": "Ingen trenger å spørre to ganger",
@@ -83,7 +83,7 @@
     "title": "Verktøy bygget for delt omsorg",
     "contacts": {
       "title": "Delte kontakter",
-      "description": "Barnelege, lærer, SFO — hold viktige kontakter tilgjengelig for begge foreldre, alltid oppdatert."
+      "description": "Barnelege, lærer, SFO — viktige kontakter samlet på ett sted, alltid oppdatert."
     },
     "equipment": {
       "title": "Utstyrslister",
@@ -91,7 +91,7 @@
     },
     "childinfo": {
       "title": "Barneinformasjon",
-      "description": "Fødselsdato, allergier, medisiner, skostørrelse — alt begge foreldre bør vite, samlet på ett sted og alltid tilgjengelig."
+      "description": "Fødselsdato, allergier, medisiner, skostørrelse — alt som trengs i begge hjem, samlet på ett sted."
     },
     "schedule": {
       "title": "Samværsplan",
@@ -116,7 +116,7 @@
   "privacy": {
     "label": "Personvern",
     "title": "Privatliv fra grunnen av",
-    "description": "Det som skjer i Lina, forblir mellom dere to. Ingen reklame, ingen tredjeparter, ingen algoritme som bestemmer hva du ser. Barnets informasjon er privat — slik det skal være.",
+    "description": "Det som skjer i Lina, forblir mellom dere to. Barnets informasjon er privat — og ingen utenfor har innsyn i det dere deler.",
     "point1": {
       "title": "Ingen reklame",
       "description": "Din opplevelse er aldri påvirket av annonser eller kommersielle interesser."
@@ -133,7 +133,7 @@
   },
   "cta": {
     "title": "En trygg linje mellom to foreldre.",
-    "description": "Lina holder de praktiske detaljene organisert og synlige for begge foreldre. Last ned og kom i gang på minutter."
+    "description": "Lina samler alt barnet trenger — synlig og oppdatert på tvers av hjem. Last ned og kom i gang på minutter."
   },
   "footer": {
     "terms": "Vilkår for bruk",
@@ -152,7 +152,7 @@
   "pricing": {
     "pageTitle": "Pris — Lina",
     "label": "Pris",
-    "title": "Eitt abonnement. Begge foreldre.",
+    "title": "Ett abonnement. Begge foreldre.",
     "description": "Lina+ gir begge foreldre full tilgang med ett abonnement. Start med en gratis prøveperiode — ingen betaling før du bestemmer deg.",
     "free": {
       "name": "Gratis",
@@ -606,11 +606,11 @@
     },
     "s2": {
       "title": "Regnjakken som alltid er i feil hus",
-      "description": "Delte utstyrslister viser hva som er i hvert hjem. Begge foreldre sjekker og oppdaterer, slik at jakken følger barnet."
+      "description": "Delte utstyrslister viser hva som er i hvert hjem. Oppdateringer er synlige med en gang, slik at jakken følger barnet."
     },
     "s3": {
       "title": "Den første sykkelturen du nesten gikk glipp av",
-      "description": "Bildene legges i det delte albumet. Begge foreldre ser de store og små øyeblikkene, uansett hvilket hjem barnet er i."
+      "description": "Bildene legges i det delte albumet. De store og små øyeblikkene deles automatisk — uansett hvilket hjem barnet er i."
     },
     "cta": "Les flere historier"
   }

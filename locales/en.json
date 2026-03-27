@@ -38,7 +38,7 @@
     },
     "step2": {
       "title": "Add what matters",
-      "description": "Medical information, allergies, contacts, equipment lists — add it once, and it is there for both parents."
+      "description": "Medical information, allergies, contacts, equipment lists — add it once, and it is available in both homes."
     },
     "step3": {
       "title": "No one needs to ask twice",
@@ -67,7 +67,7 @@
     "title": "Tools built for shared care",
     "contacts": {
       "title": "Shared contacts",
-      "description": "Pediatrician, teacher, after-school program — keep important contacts available to both parents, always up to date."
+      "description": "Pediatrician, teacher, after-school program — important contacts in one place, always up to date."
     },
     "equipment": {
       "title": "Equipment lists",
@@ -75,7 +75,7 @@
     },
     "childinfo": {
       "title": "Child information",
-      "description": "Birth date, allergies, medication, shoe size — everything both parents should know, gathered in one place and always accessible."
+      "description": "Birth date, allergies, medication, shoe size — all the details that matter, gathered in one place and always accessible."
     },
     "schedule": {
       "title": "Care schedule",
@@ -100,7 +100,7 @@
   "privacy": {
     "label": "Privacy",
     "title": "Private by design",
-    "description": "What happens in Lina stays between the two of you. No ads, no third parties, no algorithm deciding what you see. Your child's information is private — and that is how it should be.",
+    "description": "What happens in Lina stays between the two of you. Your child's information is private — and no one outside has access to what you share.",
     "point1": {
       "title": "No advertising",
       "description": "Your experience is never shaped by ads or commercial interests."
@@ -117,7 +117,7 @@
   },
   "cta": {
     "title": "One safe line between two parents.",
-    "description": "Lina keeps the practical details organized and visible to both parents. Download and get started in minutes."
+    "description": "Lina brings everything your child needs into one shared, organized space. Download and get started in minutes."
   },
   "footer": {
     "terms": "Terms of Service",
@@ -590,11 +590,11 @@
     },
     "s2": {
       "title": "The rain jacket that is always at the wrong house",
-      "description": "Shared equipment lists show what is at each home. Both parents check and update, so the jacket follows the child."
+      "description": "Shared equipment lists show what is at each home. Updates are visible right away, so the jacket follows the child."
     },
     "s3": {
       "title": "The first bicycle ride you almost missed",
-      "description": "Photos go into the shared album. Both parents see the big and small moments, regardless of which home the child is in."
+      "description": "Photos go into the shared album. The big and small moments are shared automatically — regardless of which home the child is in."
     },
     "cta": "Read more stories"
   }

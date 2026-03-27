@@ -11,7 +11,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "En gemensam översikt - över hem",
+    "title": "En gemensam översikt — i båda hemmen",
     "description": "Du ska inte alltid vara den som minns allt. Lina håller de praktiska detaljerna — medicinsk info, utrustning, kontakter, scheman — uppdaterade och tillgängliga för båda hemmen.",
     "cta": "Ladda ner på App Store",
     "ctaPlay": "Hämta på Google Play",
@@ -38,7 +38,7 @@
     },
     "step2": {
       "title": "Lägg till det som är viktigt",
-      "description": "Medicinsk information, allergier, kontakter, utrustningslistor — lägg in det en gång, och det är tillgängligt för båda föräldrarna."
+      "description": "Medicinsk information, allergier, kontakter, utrustningslistor — lägg in det en gång, och det är tillgängligt i båda hemmen."
     },
     "step3": {
       "title": "Ingen behöver fråga två gånger",
@@ -83,7 +83,7 @@
     "title": "Verktyg byggda för delad omsorg",
     "contacts": {
       "title": "Delade kontakter",
-      "description": "Barnläkare, lärare, fritids — håll viktiga kontakter tillgängliga för båda föräldrarna, alltid uppdaterade."
+      "description": "Barnläkare, lärare, fritids — viktiga kontakter samlade på ett ställe, alltid uppdaterade."
     },
     "equipment": {
       "title": "Utrustningslistor",
@@ -91,7 +91,7 @@
     },
     "childinfo": {
       "title": "Barnuppgifter",
-      "description": "Födelsedatum, allergier, mediciner, skostorlek — allt båda föräldrarna bör känna till, samlat på ett ställe och alltid tillgängligt."
+      "description": "Födelsedatum, allergier, mediciner, skostorlek — allt som behövs i båda hemmen, samlat på ett ställe."
     },
     "schedule": {
       "title": "Omsorgsschema",
@@ -116,7 +116,7 @@
   "privacy": {
     "label": "Integritet",
     "title": "Privat från grunden",
-    "description": "Det som händer i Lina stannar mellan er två. Ingen reklam, inga tredjeparter, ingen algoritm som bestämmer vad du ser. Barnets information är privat — så som det ska vara.",
+    "description": "Det som händer i Lina stannar mellan er två. Barnets information är privat — och ingen utomstående har insyn i det ni delar.",
     "point1": {
       "title": "Ingen reklam",
       "description": "Din upplevelse formas aldrig av annonser eller kommersiella intressen."
@@ -133,7 +133,7 @@
   },
   "cta": {
     "title": "En säker linje mellan två föräldrar.",
-    "description": "Lina håller de praktiska detaljerna organiserade och synliga för båda föräldrarna. Ladda ner och kom igång på minuter."
+    "description": "Lina samlar allt barnet behöver — synligt och uppdaterat, oavsett hem. Ladda ner och kom igång på minuter."
   },
   "footer": {
     "terms": "Användarvillkor",
@@ -606,11 +606,11 @@
     },
     "s2": {
       "title": "Regnjackan som alltid är i fel hus",
-      "description": "Delade utrustningslistor visar vad som finns i varje hem. Båda föräldrarna kan kontrollera och uppdatera, så jackan följer barnet."
+      "description": "Delade utrustningslistor visar vad som finns i varje hem. Uppdateringar syns direkt, så jackan följer barnet."
     },
     "s3": {
       "title": "Den första cykelturen du nästan missade",
-      "description": "Bilderna läggs i det delade albumet. Båda föräldrarna ser de stora och små stunderna, oavsett vilket hem barnet är i."
+      "description": "Bilderna läggs i det delade albumet. De stora och små stunderna delas automatiskt — oavsett vilket hem barnet är i."
     },
     "cta": "Läs fler berättelser"
   }

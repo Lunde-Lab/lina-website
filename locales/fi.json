@@ -11,8 +11,8 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Yhteinen kokonaiskuva yli kotien",
-    "description": "Sinun ei tarvitse aina olla se, joka muistaa kaiken. Lina pitää käytännön tiedot — lääketieteellinen info, varusteet, yhteystiedot, aikataulut — ajan tasalla ja saatavilla molemmille kodeille.",
+    "title": "Yhteinen kokonaiskuva — kotien välillä",
+    "description": "Sinun ei tarvitse aina olla se, joka muistaa kaiken. Lina pitää käytännön tiedot — lääketieteelliset tiedot, varusteet, yhteystiedot, aikataulut — ajan tasalla ja saatavilla molemmissa kodeissa.",
     "cta": "Lataa App Storesta",
     "ctaPlay": "Hanki Google Playsta",
     "ctaPlayAria": "Hanki Google Playsta"
@@ -38,7 +38,7 @@
     },
     "step2": {
       "title": "Lisää tärkeät tiedot",
-      "description": "Lääketieteelliset tiedot, allergiat, yhteystiedot, varustelista — lisää ne kerran, ja ne ovat saatavilla molemmille vanhemmille."
+      "description": "Lääketieteelliset tiedot, allergiat, yhteystiedot, varustelista — lisää ne kerran, ja ne ovat saatavilla molemmissa kodeissa."
     },
     "step3": {
       "title": "Kenenkään ei tarvitse kysyä kahdesti",
@@ -83,7 +83,7 @@
     "title": "Jaettuun hoitoon rakennetut työkalut",
     "contacts": {
       "title": "Jaetut yhteystiedot",
-      "description": "Lastenlääkäri, opettaja, iltapäiväkerho — pidä tärkeät yhteystiedot molempien vanhempien saatavilla, aina ajan tasalla."
+      "description": "Lastenlääkäri, opettaja, iltapäiväkerho — tärkeät yhteystiedot yhdessä paikassa, aina ajan tasalla."
     },
     "equipment": {
       "title": "Varustelistat",
@@ -91,7 +91,7 @@
     },
     "childinfo": {
       "title": "Lapsen tiedot",
-      "description": "Syntymäpäivä, allergiat, lääkitys, kengännumero — kaikki mitä molempien vanhempien tulee tietää, koottuna yhteen paikkaan ja aina saatavilla."
+      "description": "Syntymäpäivä, allergiat, lääkitys, kengännumero — kaikki tärkeä yhdessä paikassa, aina saatavilla."
     },
     "schedule": {
       "title": "Hoitoaikataulu",
@@ -116,7 +116,7 @@
   "privacy": {
     "label": "Yksityisyys",
     "title": "Yksityinen rakenteesta alkaen",
-    "description": "Mitä Linassa tapahtuu, jää teidän kahden välille. Ei mainontaa, ei kolmansia osapuolia, ei algoritmia, joka päättää mitä näet. Lapsen tiedot ovat yksityisiä — niin kuin pitääkin.",
+    "description": "Mitä Linassa tapahtuu, jää teidän kahden välille. Lapsen tiedot ovat yksityisiä — eikä kukaan ulkopuolinen pääse käsiksi siihen, mitä jaatte.",
     "point1": {
       "title": "Ei mainontaa",
       "description": "Kokemustasi ei koskaan muokkaa mainokset tai kaupalliset intressit."
@@ -133,7 +133,7 @@
   },
   "cta": {
     "title": "Turvallinen yhteys kahden vanhemman välillä.",
-    "description": "Lina pitää käytännön tiedot järjestyksessä ja näkyvissä molemmille vanhemmille. Lataa ja aloita muutamassa minuutissa."
+    "description": "Lina kokoaa kaiken lapsesi tarvitseman yhteen paikkaan — näkyviin ja ajan tasalle. Lataa ja aloita muutamassa minuutissa."
   },
   "footer": {
     "terms": "Käyttöehdot",
@@ -606,11 +606,11 @@
     },
     "s2": {
       "title": "Sadetakki, joka on aina väärässä kodissa",
-      "description": "Jaetut varustelistat näyttävät, mitä kummassakin kodissa on. Molemmat vanhemmat tarkistavat ja päivittävät, joten takki seuraa lasta."
+      "description": "Jaetut varustelistat näyttävät, mitä kummassakin kodissa on. Päivitykset näkyvät heti, joten takki seuraa lasta."
     },
     "s3": {
       "title": "Ensimmäinen pyöräretki, josta miltei jäit paitsi",
-      "description": "Kuvat menevät jaettuun albumiin. Molemmat vanhemmat näkevät suuret ja pienet hetket riippumatta siitä, missä kodissa lapsi on."
+      "description": "Kuvat menevät jaettuun albumiin. Suuret ja pienet hetket jakautuvat automaattisesti — riippumatta siitä, missä kodissa lapsi on."
     },
     "cta": "Lue lisää tarinoita"
   }

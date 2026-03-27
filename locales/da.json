@@ -38,7 +38,7 @@
     },
     "step2": {
       "title": "Tilføj det, der betyder noget",
-      "description": "Medicinske oplysninger, allergier, kontakter, udstyrlister — tilføj det én gang, og det er tilgængeligt for begge forældre."
+      "description": "Medicinske oplysninger, allergier, kontakter, udstyrlister — tilføj det én gang, og det er tilgængeligt i begge hjem."
     },
     "step3": {
       "title": "Ingen behøver spørge to gange",
@@ -62,7 +62,7 @@
     },
     "equipment": {
       "title": "Udstyrliste",
-      "description": "Hold styr på, hvilket udstyr barnet har, og hvor det er — sportsudstyr, skoletasker, sæsonvarer — så intet går tabt ved overdragelser."
+      "description": "Gummistøvler, gymnastikpose, allergimedicin — delte lister gør det nemmere at holde styr på, hvad der skal følge barnet mellem hjemmene."
     },
     "contacts": {
       "title": "Delte kontakter",
@@ -83,7 +83,7 @@
     "title": "Værktøjer bygget til delt omsorg",
     "contacts": {
       "title": "Delte kontakter",
-      "description": "Børnelæge, lærer, fritidshjem — hold vigtige kontakter tilgængelige for begge forældre, altid opdaterede."
+      "description": "Børnelæge, lærer, fritidshjem — vigtige kontakter samlet på ét sted, altid opdaterede."
     },
     "equipment": {
       "title": "Udstyrlister",
@@ -91,7 +91,7 @@
     },
     "childinfo": {
       "title": "Barneinformation",
-      "description": "Fødselsdato, allergier, medicin, skostørrelse — alt, begge forældre bør vide, samlet på ét sted og altid tilgængeligt."
+      "description": "Fødselsdato, allergier, medicin, skostørrelse — alt det vigtige, samlet på ét sted og altid tilgængeligt."
     },
     "schedule": {
       "title": "Samværsplan",
@@ -116,7 +116,7 @@
   "privacy": {
     "label": "Privatliv",
     "title": "Privat fra grunden",
-    "description": "Det, der sker i Lina, forbliver mellem jer to. Ingen reklame, ingen tredjeparter, ingen algoritme der bestemmer, hvad du ser. Barnets information er privat — sådan som det bør være.",
+    "description": "Det, der sker i Lina, forbliver mellem jer to. Barnets information er privat — og ingen udenforstående har adgang til det, I deler.",
     "point1": {
       "title": "Ingen reklame",
       "description": "Din oplevelse formes aldrig af annoncer eller kommercielle interesser."
@@ -133,7 +133,7 @@
   },
   "cta": {
     "title": "En sikker linje mellem to forældre.",
-    "description": "Lina holder de praktiske detaljer organiseret og synlige for begge forældre. Download og kom i gang på minutter."
+    "description": "Lina samler alt barnet har brug for — synligt og opdateret på tværs af hjem. Download og kom i gang på minutter."
   },
   "footer": {
     "terms": "Vilkår for brug",
@@ -606,11 +606,11 @@
     },
     "s2": {
       "title": "Regnjakken der altid er i det forkerte hus",
-      "description": "Delte udstyrslister viser, hvad der er i hvert hjem. Begge forældre tjekker og opdaterer, så jakken følger barnet."
+      "description": "Delte udstyrslister viser, hvad der er i hvert hjem. Opdateringer er synlige med det samme, så jakken følger barnet."
     },
     "s3": {
       "title": "Den første cykeltur du næsten gik glip af",
-      "description": "Billederne lægges i det delte album. Begge forældre ser de store og små øjeblikke, uanset hvilket hjem barnet er i."
+      "description": "Billederne lægges i det delte album. De store og små øjeblikke deles automatisk — uanset hvilket hjem barnet er i."
     },
     "cta": "Læs flere historier"
   }
