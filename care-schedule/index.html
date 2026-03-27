@@ -754,7 +754,7 @@
         <div class="card">
           <div class="export-info">
             <h3 data-i18n="cs.exportPdf">Export to PDF</h3>
-            <p>Print or save the schedule as a PDF.</p>
+            <p data-i18n="cs.exportDesc">Print or save the schedule as a PDF.</p>
           </div>
           <button class="btn btn-primary" id="btn-export" data-i18n="cs.exportPdf">Export to PDF</button>
         </div>
@@ -900,7 +900,7 @@
     function nameA() { return state.nameA.trim() || 'Parent A'; }
     function nameB() { return state.nameB.trim() || 'Parent B'; }
     function dayLabel(i) { return (T && T.cs) ? (T.cs[['mon','tue','wed','thu','fri','sat','sun'][i]] || DAYS[i]) : DAYS[i]; }
-    function weeksLabel(n) { return (T && T.cs) ? n + ' ' + (T.cs.labelWeeks || 'weeks') : n + ' weeks'; }
+    function weeksLabel(n) { return (T && T.cs) ? n + ' ' + (T.cs.weeksUnit || 'weeks') : n + ' weeks'; }
 
     // ── Date helpers ─────────────────────────────────────────────────────────
     function snapToMonday(dateStr) {
@@ -1091,12 +1091,12 @@
           <div style="height:40px;width:1px;background:var(--border-subtle);"></div>
           <div>
             <div class="stat-big">${state.weeks * 7}</div>
-            <div class="stat-sub">Total days planned</div>
+            <div class="stat-sub">${esc((T && T.cs && T.cs.totalDaysPlanned) || 'Total days planned')}</div>
           </div>
           <div style="height:40px;width:1px;background:var(--border-subtle);"></div>
           <div>
             <div class="stat-big">${s.totalDays - s.aTotal - s.bTotal}</div>
-            <div class="stat-sub">Unassigned days</div>
+            <div class="stat-sub">${esc((T && T.cs && T.cs.unassignedDays) || 'Unassigned days')}</div>
           </div>
         </div>
       `;

@@ -11,8 +11,8 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Yhteinen kokonaiskuva yli kotien",
-    "description": "Sinun ei tarvitse aina olla se, joka muistaa kaiken. Lina pitää käytännön tiedot — lääketieteellinen info, varusteet, yhteystiedot, aikataulut — ajan tasalla ja saatavilla molemmille kodeille.",
+    "title": "Yhteinen kokonaiskuva — kotien välillä",
+    "description": "Sinun ei tarvitse aina olla se, joka muistaa kaiken. Lina pitää käytännön tiedot — lääketieteelliset tiedot, varusteet, yhteystiedot, aikataulut — ajan tasalla ja saatavilla molemmissa kodeissa.",
     "cta": "Lataa App Storesta",
     "ctaPlay": "Hanki Google Playsta",
     "ctaPlayAria": "Hanki Google Playsta"
@@ -38,7 +38,7 @@
     },
     "step2": {
       "title": "Lisää tärkeät tiedot",
-      "description": "Lääketieteelliset tiedot, allergiat, yhteystiedot, varustelista — lisää ne kerran, ja ne ovat saatavilla molemmille vanhemmille."
+      "description": "Lääketieteelliset tiedot, allergiat, yhteystiedot, varustelista — lisää ne kerran, ja ne ovat saatavilla molemmissa kodeissa."
     },
     "step3": {
       "title": "Kenenkään ei tarvitse kysyä kahdesti",
@@ -83,7 +83,7 @@
     "title": "Jaettuun hoitoon rakennetut työkalut",
     "contacts": {
       "title": "Jaetut yhteystiedot",
-      "description": "Lastenlääkäri, opettaja, iltapäiväkerho — pidä tärkeät yhteystiedot molempien vanhempien saatavilla, aina ajan tasalla."
+      "description": "Lastenlääkäri, opettaja, iltapäiväkerho — tärkeät yhteystiedot yhdessä paikassa, aina ajan tasalla."
     },
     "equipment": {
       "title": "Varustelistat",
@@ -91,7 +91,7 @@
     },
     "childinfo": {
       "title": "Lapsen tiedot",
-      "description": "Syntymäpäivä, allergiat, lääkitys, kengännumero — kaikki mitä molempien vanhempien tulee tietää, koottuna yhteen paikkaan ja aina saatavilla."
+      "description": "Syntymäpäivä, allergiat, lääkitys, kengännumero — kaikki tärkeä yhdessä paikassa, aina saatavilla."
     },
     "schedule": {
       "title": "Hoitoaikataulu",
@@ -116,7 +116,7 @@
   "privacy": {
     "label": "Yksityisyys",
     "title": "Yksityinen rakenteesta alkaen",
-    "description": "Mitä Linassa tapahtuu, jää teidän kahden välille. Ei mainontaa, ei kolmansia osapuolia, ei algoritmia, joka päättää mitä näet. Lapsen tiedot ovat yksityisiä — niin kuin pitääkin.",
+    "description": "Mitä Linassa tapahtuu, jää teidän kahden välille. Lapsen tiedot ovat yksityisiä — eikä kukaan ulkopuolinen pääse käsiksi siihen, mitä jaatte.",
     "point1": {
       "title": "Ei mainontaa",
       "description": "Kokemustasi ei koskaan muokkaa mainokset tai kaupalliset intressit."
@@ -133,7 +133,7 @@
   },
   "cta": {
     "title": "Turvallinen yhteys kahden vanhemman välillä.",
-    "description": "Lina pitää käytännön tiedot järjestyksessä ja näkyvissä molemmille vanhemmille. Lataa ja aloita muutamassa minuutissa."
+    "description": "Lina kokoaa kaiken lapsesi tarvitseman yhteen paikkaan — näkyviin ja ajan tasalle. Lataa ja aloita muutamassa minuutissa."
   },
   "footer": {
     "terms": "Käyttöehdot",
@@ -153,7 +153,7 @@
     "pageTitle": "Hinta — Lina",
     "label": "Hinta",
     "title": "Yksi tilaus. Molemmat vanhemmat.",
-    "description": "Lina+ antaa molemmille vanhemmille täyden pääsyn yhdellä tilauksella. Aloita ilmaisella kokeilujaksolla — ei maksua ennen kuin päätät.",
+    "description": "Lina+ avaa kaikki ominaisuudet yhdellä tilauksella — joka kattaa molemmat kodit. Aloita ilmaisella kokeilujaksolla.",
     "free": {
       "name": "Ilmainen",
       "price": "0 kr",
@@ -181,8 +181,8 @@
     },
     "whyLabel": "Miksi maksullinen",
     "whyTitle": "Tilaus pitää Linan riippumattomana",
-    "whyText1": "Linassa ei ole mainoksia eikä se jaa tietoja kolmansille osapuolille. Tilaus tekee tämän mahdolliseksi — se rahoittaa kehityksen, ylläpidon ja tuen vaarantamatta yksityisyyttäsi.",
-    "whyText2": "Molemmat vanhemmat saavat täyden pääsyn yhdellä tilauksella. Tilaava vanhempi kattaa molemmat — joten toisen ei tarvitse koskaan maksaa.",
+    "whyText1": "Linaa rahoittaa tilaus — ei mainonta tai tietojen jakaminen. Se tekee mahdolliseksi pitää sovelluksen riippumattomana ja keskittyneenä siihen, mikä on tärkeää.",
+    "whyText2": "Tilaava vanhempi antaa automaattisesti toiselle täyden pääsyn. Ei erillistä maksua, ei ylimääräistä tiliä.",
     "p1": {
       "title": "Yksi tilaus, kaksi vanhempaa",
       "description": "Molemmat vanhemmat saavat täyden pääsyn. Ei lisäkustannuksia toiselle."
@@ -231,24 +231,28 @@
     "statsSwitches": "Vaihtoja yhteensä",
     "days": "päivää",
     "of": "/",
-    "subhead": "Suunnittele ja visualisoi, miten aika jaetaan kotien välillä.",
-    "intro": "Käytä tätä työkalua suunnitellaksesi, miten aika jaetaan kahden kodin välillä. Klikkaa päiviä määrittääksesi ne, ja näe jakauman päivittyvän automaattisesti. Voit myös viedä suunnitelman PDF-tiedostona.",
+    "subhead": "Katso miten aika jakautuu kotien välillä — viikko viikolta.",
+    "intro": "Klikkaa päiviä määrittääksesi ne vanhemmalle. Jakauma päivittyy automaattisesti, ja voit viedä suunnitelman PDF-tiedostona.",
     "howTitle": "Näin käytät työkalua",
     "step1": "Syötä molempien vanhempien nimet",
     "step2": "Klikkaa päivää vaihtaaksesi vanhemman A, vanhemman B tai ei kenenkään välillä",
-    "step3": "Katso jakautuminen kalenterin alla olevasta yhteenvedosta"
+    "step3": "Katso jakautuminen kalenterin alla olevasta yhteenvedosta",
+    "weeksUnit": "viikkoa",
+    "totalDaysPlanned": "Suunnitellut päivät yhteensä",
+    "unassignedDays": "Määrittämättömät päivät",
+    "exportDesc": "Tulosta tai tallenna aikataulu PDF-tiedostona."
   },
   "familievern": {
     "hero": {
       "label": "Ammattilaisille",
-      "title": "Työkalu, jonka voit suositella huolenpidon jakavalle vanhemmille",
+      "title": "Työkalu, jonka voit suositella huolenpidon jakaville vanhemmille",
       "description": "Lina auttaa vanhempia pitämään arjen käytännön yksityiskohdat koottuna ja saatavilla kahden kodin välillä. Tämä sivu on suunnattu ammattilaisille.",
       "cta": "Ota yhteyttä"
     },
     "about": {
       "label": "Sovelluksesta",
       "title": "Yksi yhteinen paikka lapselle – kotien välillä",
-      "description": "Monilta huolenpidon jakavalta vanhemmalta puuttuu yhteinen rakenne arjen yhteistyölle. Tieto hajaantuu tekstiviesteihin, sähköposteihin ja suullisiin sopimuksiin, ja yksi vanhemmista päätyy koordinoimaan kaiken. Lina kokoaa käytännön asiat – lääketieteelliset tiedot, yhteystiedot, varustelistat, kuvat ja viestit – yhteen jaettuun paikkaan, joka on molempien vanhempien saatavilla."
+      "description": "Monilta huolenpidon jakavalta vanhemmalta puuttuu yhteinen rakenne arjen yhteistyölle. Tieto hajaantuu tekstiviesteihin, sähköposteihin ja suullisiin sopimuksiin, ja yksi vanhemmista päätyy koordinoimaan kaiken. Lina kokoaa käytännön asiat — lääketieteelliset tiedot, yhteystiedot, varustelistat, kuvat ja viestit — yhteen jaettuun paikkaan, joka on saatavilla molemmissa kodeissa."
     },
     "when": {
       "label": "Milloin Lina sopii",
@@ -269,7 +273,7 @@
     "privacy": {
       "label": "Tietosuoja",
       "title": "Turvallinen ja yksityinen luonnostaan",
-      "description": "Lina on rakennettu tietosuoja perustana. Ei mainontaa, ei tietojen jakamista eikä algoritmia, joka vaikuttaa siihen, mitä käyttäjät näkevät. Ammattilaisena voit suositella sovellusta luottavaisin mielin, että vanhempien tiedot käsitellään vastuullisesti.",
+      "description": "Lina on rakennettu tietosuoja perustana. Vanhempien tietoja käsitellään vastuullisesti, ja sovellus on vapaa kaupallisista intresseistä. Ammattilaisena voit suositella sitä luottavaisin mielin.",
       "point1": { "title": "Ei mainontaa", "description": "Mitkään mainokset tai kaupalliset intressit eivät vaikuta käyttäjäkokemukseen." },
       "point2": { "title": "Ei tietojen jakamista", "description": "Vanhempien tietoja ei myydä eikä jaeta kolmansille osapuolille." },
       "point3": { "title": "Turvallinen infrastruktuuri", "description": "Tiedot suojataan turvallisella tallennuksella, pääsynhallinnalla ja allekirjoitetuilla linkeillä." }
@@ -282,7 +286,7 @@
       "album": { "title": "Jaettu albumi", "description": "Molemmat vanhemmat voivat jakaa kuvia arjesta. Lapsi on näkyvissä molemmissa kodeissa." },
       "info": { "title": "Lapsen tiedot", "description": "Lääketieteelliset tiedot, allergiat ja tärkeät yksityiskohdat syötetään kerran ja ovat molempien saatavilla – riippumatta siitä, kummassa kodissa lapsi on." },
       "equipment": { "title": "Varustelistat", "description": "Selkeä yleiskuva siitä, mitä lapsi tarvitsee kummassakin kodissa, vähentää selvitysten ja väärinkäsitysten määrää käytännön yksityiskohdissa." },
-      "schedule": { "title": "Hoitoaikataulu", "description": "Molemmat vanhemmat näkevät hoitoajan jakautumisen samassa näkymässä. Vähemmän keskusteluja siitä, kummalla vanhemmalla lapsi oli ja milloin." },
+      "schedule": { "title": "Hoitoaikataulu", "description": "Hoitoajan jakautuminen näkyy yhdessä yhteisessä näkymässä. Vähemmän keskusteluja siitä, kummalla vanhemmalla lapsi oli ja milloin." },
       "agreement": { "title": "Huoltosopimus", "description": "Huoltosopimuksen tietosivu antaa vanhemmille yleiskuvan siitä, mitä sopimuksen tulisi sisältää, esimerkin ja linkkejä virallisiin resursseihin. Hyvä lähtökohta ennen sovittelua tai sen jälkeen.", "link": "Näytä tietosivu" }
     },
     "screenshots": {
@@ -295,7 +299,7 @@
     "csPromo": {
       "label": "Työkalut",
       "title": "Hoitoaikataulu, jota vanhemmat voivat käyttää yhdessä",
-      "description": "Linassa on interaktiivinen hoitoaikataulu, jonka avulla molemmat vanhemmat näkevät, miten aika jakautuu viikko viikolta. Työkalu näyttää päiväjaon, viikonloppumallit ja vaihtojen määrän — ja sitä voidaan käyttää lähtökohtana keskusteluissa hoitojärjestelyistä.",
+      "description": "Linassa on interaktiivinen hoitoaikataulu, joka näyttää, miten aika jakautuu viikko viikolta. Työkalua voivat käyttää vanhemmat itsenäisesti, tai se voi toimia lähtökohtana keskusteluissa hoitojärjestelyistä.",
       "cta": "Avaa hoitoaikataulu"
     },
     "contact": {
@@ -319,11 +323,11 @@
     "pageDesc": "Lue mitä hyvän huoltosopimuksen tulisi kattaa. Katso esimerkki, saa vinkkejä prosessiin ja löydä linkkejä virallisiin resursseihin.",
     "label": "Huoltajuussopimus",
     "heroTitle": "Mitä huoltajuussopimuksen tulisi sisältää?",
-    "heroDesc": "Huoltajuussopimus auttaa vanhempia luomaan ennakoitavuutta lapselle, kun hoito jaetaan kahden kodin välillä. Täältä löydät yleiskatsauksen siitä, mitä sopimuksen tulisi kattaa, vinkkejä prosessiin sekä linkkejä virallisiin resursseihin.",
+    "heroDesc": "Huoltajuussopimus auttaa vanhempia luomaan ennakoitavuutta lapselle, kun hoito jaetaan kahden kodin välillä. Täältä löydät yleiskatsauksen siitä, mitä sopimuksen tulisi kattaa, esimerkin sekä linkkejä virallisiin resursseihin.",
     "heroCta": "Tee sopimus",
     "aboutLabel": "Perusta",
     "aboutTitle": "Sopimus, joka kasvaa lapsen mukana",
-    "aboutDesc": "Huoltajuussopimus on vapaaehtoinen, kirjallinen sopimus vanhempien välillä siitä, miten lapsen hoito järjestetään kahden kodin välillä. Se ei ole oikeudellisesti sitova samalla tavalla kuin tuomioistuimen päätös, mutta antaa molemmille vanhemmille ja lapselle yhteisen kehyksen. Hyvä sopimus perustuu lapsen tarpeisiin — ja sitä tulee päivittää tarpeiden muuttuessa.",
+    "aboutDesc": "Huoltajuussopimus on vapaaehtoinen, kirjallinen sopimus vanhempien välillä siitä, miten lapsen hoito järjestetään kahden kodin välillä. Se ei ole oikeudellisesti sitova samalla tavalla kuin tuomioistuimen päätös, mutta antaa perheelle yhteisen kehyksen. Hyvä sopimus lähtee lapsen arjesta — ja sitä tulee muokata lapsen kasvaessa.",
     "point1Title": "Ei oikeudellisesti sitova kuten tuomio",
     "point1Desc": "Sopimus on yksityinen ja perustuu vanhempien yhteiseen sopimukseen. Jos ette pääse sopimukseen, lastenvalvoja voi auttaa sovittelussa.",
     "point2Title": "Lapsen etu keskiössä",
@@ -337,7 +341,7 @@
     "coverTitle": "Asiat, jotka hyvän huoltajuussopimuksen tulisi kattaa",
     "coverIntro": "Kaikki kohdat eivät ole oleellisia kaikille. Ota mukaan se, mikä sopii teidän tilanteeseenne.",
     "cover1Title": "Tapaamisjärjestely",
-    "cover1Desc": "Miten viikot jaetaan? Vakiintunut kaava — esimerkiksi joka toinen viikko tai 3-4-4-3 — antaa lapselle ennakoitavuuden.",
+    "cover1Desc": "Miten viikot jaetaan? Vakiintunut kaava — esimerkiksi joka toinen viikko tai 3-4-4-3 — antaa lapselle selkeän rytmin.",
     "cover2Title": "Asuinpaikka",
     "cover2Desc": "Onko lapsella vakituinen asuinpaikka toisen vanhemman luona vai vuoroasuminen? Asuinpaikka vaikuttaa oikeuksiin ja velvollisuuksiin.",
     "cover3Title": "Haku ja palautus",
@@ -380,7 +384,7 @@
     "tmplEasterAlt": "Vanhempi A saa parilliset vuodet, vanhempi B parittomat vuodet.",
     "tmplEasterDeadline": "Jako vahvistetaan kirjallisesti viimeistään 1. helmikuuta.",
     "tmplSummerLabel": "Kesäloma:",
-    "tmplSummerDesc": "Kumpikin vanhempi voi viettää enintään kolme peräkkäistä lomavuotta Emman kanssa. Se, kumpi valitsee ensin, vuorottelee vuosittain.",
+    "tmplSummerDesc": "Kumpikin vanhempi voi viettää enintään kolme peräkkäistä lomaviikkoa Emman kanssa. Se, kumpi valitsee ensin, vuorottelee vuosittain.",
     "tmplSummerAlt": "Vanhempi A valitsee ensin parittomina vuosina, vanhempi B parillisina vuosina.",
     "tmplSummerDeadline": "Jako vahvistetaan kirjallisesti viimeistään 1. huhtikuuta.",
     "tmplNationalLabel": "Itsenäisyyspäivä",
@@ -447,7 +451,7 @@
     "heroDesc": "Täältä löydät vastaukset yleisimpiin kysymyksiin Linasta, hoitoaikataulusta ja huoltosopimuksesta.",
     "cat1Title": "Tietoa Linasta",
     "cat1q1": "Mikä on Lina?",
-    "cat1a1": "Lina on sovellus vanhemmille, jotka jakavat lapsen huollon. Se kokoaa käytännön yksityiskohdat — lapsen tiedot, viestit, kuvat, yhteystiedot ja välinelistat — yhteen jaettuun paikkaan, joka on saatavilla molemmissa kodeissa.",
+    "cat1a1": "Lina kokoaa yhteishuoltajuuden käytännön asiat yhteen sovellukseen — viestit, lapsen tiedot, kuvat, yhteystiedot, varustelistat ja hoitoaikataulu — saatavilla molemmissa kodeissa.",
     "cat1q2": "Kenelle Lina on tarkoitettu?",
     "cat1a2": "Lina on tehty vanhemmille, jotka jakavat lapsen huollon kahden kodin välillä. Sovellus sopii parhaiten silloin, kun perusyhteistyö toimii, mutta halutaan parempaa rakennetta ja ennakoitavuutta arkeen.",
     "cat1q3": "Onko Lina ilmainen?",
@@ -458,7 +462,7 @@
     "cat1a5": "Jaettujen ominaisuuksien, kuten viestien, kuvien ja lapsen tietojen käyttäminen edellyttää, että molemmilla vanhemmilla on tili. Hoitoaikataulua voi käyttää yksi vanhempi yksinään.",
     "cat2Title": "Hoitoaikataulu",
     "cat2q1": "Mikä on hoitoaikataulu Linassa?",
-    "cat2a1": "Hoitoaikataulu on ilmainen, selainpohjainen työkalu, jossa vanhemmat voivat suunnitella ja visualisoida, miten aika jakaantuu kotien välillä viikosta viikkoon. Näet päiväjakauman, viikonloppukuviot ja vaihtofrekvenssin yhdessä selkeässä näkymässä.",
+    "cat2a1": "Hoitoaikataulu on ilmainen työkalu, jota voit käyttää suoraan selaimessa. Klikkaa päiviä jakaaksesi ne vanhempien kesken ja näe yhteenvedon päivittyvän heti. Suunnitelma voidaan viedä PDF-tiedostona.",
     "cat2q2": "Tarvitsenko tilin hoitoaikataulun käyttämiseen?",
     "cat2a2": "Ei, hoitoaikataulua voi käyttää ilman tiliä suoraan selaimessa. Sovellus tarvitaan vain jaettujen ominaisuuksien, kuten viestien ja lapsen tietojen käyttämiseen.",
     "cat2q3": "Voinko viedä hoitoaikataulun?",
@@ -499,12 +503,12 @@
   "about": {
     "pageTitle": "Tietoa Linasta — Lina",
     "heading": "Tietoa Linasta",
-    "lead": "Lina on sovellus vanhemmille, jotka jakavat lapsen hoidon kahden kodin välillä. Yksi rauhallinen paikka, jossa molemmilla vanhemmilla on sama tieto.",
+    "lead": "Lina on sovellus vanhemmille, jotka jakavat lapsen hoidon kahden kodin välillä. Sama kokonaiskuva, sama tieto — riippumatta siitä, kumman luona lapsi on.",
     "whyTitle": "Miksi Lina on olemassa",
     "whyText1": "Lina luotiin, koska rauhallista ja keskittynyttä yhteishuoltajuussovellusta ei ollut olemassa. Useimmat työkalut oli rakennettu ristiriitojen tai oikeusprosessien ympärille. Halusimme jotain muuta — hiljaisen, jäsennellyn tilan arjen koordinointiin kahden vanhemman välillä.",
     "whyText2": "Tavoitteena on vähentää jaetusta hoidosta aiheutuvaa henkistä kuormitusta. Kun molemmilla vanhemmilla on pääsy samoihin aikatauluihin, listoihin ja päivityksiin, kenenkään ei tarvitse kantaa kaikkea yksin.",
     "focusTitle": "Mihin Lina keskittyy",
-    "focusText1": "Lina on rakennettu jäsennellyn viestinnän ja käytännön työkalujen ympärille. Keskusteluketjut pitävät viestit järjestyksessä. Jaetut listat, yhteystiedot ja lapsen tiedot ovat aina molempien vanhempien saatavilla. Kaikki yhdessä paikassa.",
+    "focusText1": "Lina on rakennettu jäsennellyn viestinnän ja käytännön työkalujen ympärille. Keskusteluketjut pitävät viestit järjestyksessä. Jaetut listat, yhteystiedot ja lapsen tiedot ovat aina saatavilla — näkyvissä molemmissa kodeissa.",
     "focusText2": "Algoritmeja, mainoksia tai sosiaalisia ominaisuuksia ei ole. Lina on suunniteltu käytettäväksi tarvittaessa ja pysymään poissa tieltä muulloin.",
     "origin": "Suunniteltu ja rakennettu Norjassa."
   },
@@ -523,19 +527,19 @@
       "label": "Varustelistat",
       "title": "Sadetakki, joka on aina väärässä kodissa",
       "situation": "Lapsi saapuu kouluun ilman sadetakkia, koska kukaan ei tiennyt, kummassa kodissa se oli. Pienet asiat kuten tämä luovat turhaa kitkaa.",
-      "resolution": "Linalla: Jaetut varustelistat näyttävät, mitä on missäkin kodissa. Molemmat vanhemmat voivat tarkistaa ja päivittää listaa, jotta takki seuraa lasta."
+      "resolution": "Linalla: Jaetut varustelistat näyttävät, mitä on missäkin kodissa. Lista pysyy ajan tasalla, joten takki seuraa lasta."
     },
     "s3": {
       "label": "Keskusteluketjut",
       "title": "Koulutapahtuma, joka hautautui viesteihin",
       "situation": "Koulu lähettää tietoa vanhempainillasta. Toinen vanhempi välittää sen viestillä, mutta yksityiskohdat katoavat käytännön viestien sekaan hakuajoista ja päivällisistä.",
-      "resolution": "Linalla: Oma keskusteluketju koululle pitää kaiken yhdessä paikassa. Molemmat vanhemmat löytävät tarvitsemansa selaamatta asiattomia viestejä."
+      "resolution": "Linalla: Oma keskusteluketju koululle pitää kaiken koossa. Yksityiskohdat löytyvät helposti ilman asiattomien viestien selaamista."
     },
     "s4": {
       "label": "Jaettu albumi",
       "title": "Ensimmäinen pyöräretki, josta meinasit jäädä paitsi",
       "situation": "Lapsi oppii ajamaan pyörällä toisessa kodissa. Toinen vanhempi kuulee siitä vasta päiviä myöhemmin eikä näe hetkeä koskaan.",
-      "resolution": "Linalla: Kuvat menevät jaettuun albumiin. Molemmat vanhemmat voivat nähdä suuret ja pienet hetket riippumatta siitä, kummassa kodissa lapsi on."
+      "resolution": "Linalla: Kuvat menevät jaettuun albumiin. Hetket jakautuvat automaattisesti — riippumatta siitä, kummassa kodissa lapsi on."
     },
     "s5": {
       "label": "Hoitoaikataulu",
@@ -549,7 +553,7 @@
       "situation": "Lapsella on hammassärkyä toisessa kodissa. Vanhemman pitää soittaa hammaslääkärille, mutta numero on tallennettuna toisen vanhemman puhelimeen.",
       "resolution": "Linalla: Jaetut yhteystiedot tarkoittavat, että molemmilla vanhemmilla on hammaslääkärin, lääkärin ja koulun numerot aina saatavilla."
     },
-    "closing": "Nämä eivät ole dramaattisia ongelmia. Ne ovat hiljaisia, arkisia hetkiä, joissa yksi yhteinen paikka säästää aikaa, vähentää stressiä ja pitää fokuksen lapsessa."
+    "closing": "Nämä eivät ole dramaattisia ongelmia. Ne ovat hiljaisia, arkisia hetkiä, joissa yhteinen kokonaiskuva säästää aikaa, vähentää stressiä ja pitää fokuksen lapsessa."
   },
   "termsSummary": {
     "heading": "Yhteenveto käyttöehdoista",
@@ -606,11 +610,11 @@
     },
     "s2": {
       "title": "Sadetakki, joka on aina väärässä kodissa",
-      "description": "Jaetut varustelistat näyttävät, mitä kummassakin kodissa on. Molemmat vanhemmat tarkistavat ja päivittävät, joten takki seuraa lasta."
+      "description": "Jaetut varustelistat näyttävät, mitä kummassakin kodissa on. Päivitykset näkyvät heti, joten takki seuraa lasta."
     },
     "s3": {
       "title": "Ensimmäinen pyöräretki, josta miltei jäit paitsi",
-      "description": "Kuvat menevät jaettuun albumiin. Molemmat vanhemmat näkevät suuret ja pienet hetket riippumatta siitä, missä kodissa lapsi on."
+      "description": "Kuvat menevät jaettuun albumiin. Suuret ja pienet hetket jakautuvat automaattisesti — riippumatta siitä, missä kodissa lapsi on."
     },
     "cta": "Lue lisää tarinoita"
   }

@@ -11,7 +11,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "En gemensam översikt - över hem",
+    "title": "En gemensam översikt — i båda hemmen",
     "description": "Du ska inte alltid vara den som minns allt. Lina håller de praktiska detaljerna — medicinsk info, utrustning, kontakter, scheman — uppdaterade och tillgängliga för båda hemmen.",
     "cta": "Ladda ner på App Store",
     "ctaPlay": "Hämta på Google Play",
@@ -38,7 +38,7 @@
     },
     "step2": {
       "title": "Lägg till det som är viktigt",
-      "description": "Medicinsk information, allergier, kontakter, utrustningslistor — lägg in det en gång, och det är tillgängligt för båda föräldrarna."
+      "description": "Medicinsk information, allergier, kontakter, utrustningslistor — lägg in det en gång, och det är tillgängligt i båda hemmen."
     },
     "step3": {
       "title": "Ingen behöver fråga två gånger",
@@ -83,7 +83,7 @@
     "title": "Verktyg byggda för delad omsorg",
     "contacts": {
       "title": "Delade kontakter",
-      "description": "Barnläkare, lärare, fritids — håll viktiga kontakter tillgängliga för båda föräldrarna, alltid uppdaterade."
+      "description": "Barnläkare, lärare, fritids — viktiga kontakter samlade på ett ställe, alltid uppdaterade."
     },
     "equipment": {
       "title": "Utrustningslistor",
@@ -91,7 +91,7 @@
     },
     "childinfo": {
       "title": "Barnuppgifter",
-      "description": "Födelsedatum, allergier, mediciner, skostorlek — allt båda föräldrarna bör känna till, samlat på ett ställe och alltid tillgängligt."
+      "description": "Födelsedatum, allergier, mediciner, skostorlek — allt som behövs i båda hemmen, samlat på ett ställe."
     },
     "schedule": {
       "title": "Omsorgsschema",
@@ -116,7 +116,7 @@
   "privacy": {
     "label": "Integritet",
     "title": "Privat från grunden",
-    "description": "Det som händer i Lina stannar mellan er två. Ingen reklam, inga tredjeparter, ingen algoritm som bestämmer vad du ser. Barnets information är privat — så som det ska vara.",
+    "description": "Det som händer i Lina stannar mellan er två. Barnets information är privat — och ingen utomstående har insyn i det ni delar.",
     "point1": {
       "title": "Ingen reklam",
       "description": "Din upplevelse formas aldrig av annonser eller kommersiella intressen."
@@ -133,7 +133,7 @@
   },
   "cta": {
     "title": "En säker linje mellan två föräldrar.",
-    "description": "Lina håller de praktiska detaljerna organiserade och synliga för båda föräldrarna. Ladda ner och kom igång på minuter."
+    "description": "Lina samlar allt barnet behöver — synligt och uppdaterat, oavsett hem. Ladda ner och kom igång på minuter."
   },
   "footer": {
     "terms": "Användarvillkor",
@@ -153,7 +153,7 @@
     "pageTitle": "Pris — Lina",
     "label": "Pris",
     "title": "Ett abonnemang. Båda föräldrarna.",
-    "description": "Lina+ ger båda föräldrarna full tillgång med ett abonnemang. Börja med en gratis provperiod — ingen betalning förrän du bestämmer dig.",
+    "description": "Lina+ ger full tillgång till alla funktioner med ett abonnemang — som täcker båda hemmen. Börja med en gratis provperiod.",
     "free": {
       "name": "Gratis",
       "price": "0 kr",
@@ -181,8 +181,8 @@
     },
     "whyLabel": "Varför betalt",
     "whyTitle": "Abonnemanget håller Lina oberoende",
-    "whyText1": "Lina har ingen reklam och delar inte data med tredje part. Abonnemanget är det som gör det möjligt — det finansierar utveckling, drift och support utan att kompromissa med din integritet.",
-    "whyText2": "Båda föräldrarna får full tillgång med ett abonnemang. Föräldern som prenumererar täcker båda — så den andra behöver aldrig betala.",
+    "whyText1": "Lina finansieras av abonnemanget — inte av reklam eller datadelning. Det är det som gör det möjligt att hålla appen oberoende och fokuserad på det som spelar roll.",
+    "whyText2": "Föräldern som prenumererar ger automatiskt den andra full tillgång. Ingen separat betalning, inget extra konto.",
     "p1": {
       "title": "Ett abonnemang, två föräldrar",
       "description": "Båda föräldrarna får full tillgång. Ingen extra kostnad för den andra."
@@ -231,12 +231,16 @@
     "statsSwitches": "Totalt antal byten",
     "days": "dagar",
     "of": "av",
-    "subhead": "Planera och visualisera hur tiden delas mellan hemmen.",
-    "intro": "Använd det här verktyget för att planera hur tiden delas mellan två hem. Klicka på dagarna för att tilldela dem, och se fördelningen uppdateras automatiskt. Du kan också exportera planen som PDF.",
+    "subhead": "Se hur tiden fördelas mellan hemmen — vecka för vecka.",
+    "intro": "Klicka på dagarna för att tilldela dem till en förälder. Fördelningen uppdateras automatiskt, och du kan exportera planen som PDF.",
     "howTitle": "Så här använder du verktyget",
     "step1": "Skriv in namn på båda föräldrarna",
     "step2": "Klicka på en dag för att växla mellan förälder A, förälder B, eller ingen",
-    "step3": "Se fördelningen i sammanfattningen under kalendern"
+    "step3": "Se fördelningen i sammanfattningen under kalendern",
+    "weeksUnit": "veckor",
+    "totalDaysPlanned": "Planerade dagar totalt",
+    "unassignedDays": "Ej tilldelade dagar",
+    "exportDesc": "Skriv ut eller spara schemat som PDF."
   },
   "familievern": {
     "hero": {
@@ -248,7 +252,7 @@
     "about": {
       "label": "Om appen",
       "title": "En gemensam plats för barnet – över hem",
-      "description": "Många föräldrar som delar omsorg saknar en gemensam struktur för vardagssamarbetet. Information sprids över SMS, e-post och muntliga överenskommelser, och en förälder hamnar med att koordinera allt. Lina samlar det praktiska – medicinsk information, kontakter, utrustningslistor, foton och meddelanden – på ett delat ställe som båda föräldrarna har tillgång till."
+      "description": "Många föräldrar som delar omsorg saknar en gemensam struktur för vardagssamarbetet. Information sprids över SMS, e-post och muntliga överenskommelser, och en förälder hamnar med att koordinera allt. Lina samlar det praktiska — medicinsk information, kontakter, utrustningslistor, foton och meddelanden — på ett delat ställe som är tillgängligt i båda hemmen."
     },
     "when": {
       "label": "När passar Lina",
@@ -269,7 +273,7 @@
     "privacy": {
       "label": "Integritet",
       "title": "Säker och privat av naturen",
-      "description": "Lina är byggt med integritet som grund. Ingen reklam, ingen datadelning och ingen algoritm som påverkar vad användarna ser. Som yrkesperson kan du rekommendera appen med förtroende för att föräldrarnas information hanteras ansvarsfullt.",
+      "description": "Lina är byggt med integritet som grund. Föräldrarnas data hanteras ansvarsfullt, och appen är fri från kommersiella intressen. Som yrkesperson kan du rekommendera den med förtroende.",
       "point1": { "title": "Ingen reklam", "description": "Inga annonser eller kommersiella intressen påverkar användarupplevelsen." },
       "point2": { "title": "Ingen datadelning", "description": "Föräldrarnas data säljs inte och delas inte med tredje part." },
       "point3": { "title": "Säker infrastruktur", "description": "Information skyddas genom säker lagring, åtkomstkontroll och signerade länkar." }
@@ -282,7 +286,7 @@
       "album": { "title": "Delat album", "description": "Båda föräldrarna kan dela foton från vardagen. Barnet syns i båda hemmen." },
       "info": { "title": "Barninfo", "description": "Medicinsk information, allergier och viktiga detaljer registreras en gång och är tillgängliga för båda – oavsett vilket hem barnet befinner sig i." },
       "equipment": { "title": "Utrustningslistor", "description": "En tydlig översikt över vad barnet behöver i varje hem minskar antalet frågor och missförstånd kring praktiska detaljer." },
-      "schedule": { "title": "Omsorgsschema", "description": "Båda föräldrarna ser omsorgsfördelningen i samma vy. Färre diskussioner om vem som hade barnet och när." },
+      "schedule": { "title": "Omsorgsschema", "description": "Omsorgsfördelningen visas i en gemensam vy. Färre diskussioner om vem som hade barnet och när." },
       "agreement": { "title": "Samarbetsavtal", "description": "Informationssidan om samarbetsavtal ger föräldrar en översikt över vad avtalet bör innehålla, med exempel och länkar till officiella resurser. En bra utgångspunkt före eller efter medling.", "link": "Visa informationssidan" }
     },
     "screenshots": {
@@ -295,7 +299,7 @@
     "csPromo": {
       "label": "Verktyg",
       "title": "Ett vårdschema föräldrarna kan använda tillsammans",
-      "description": "Lina har ett interaktivt vårdschema som låter båda föräldrarna se hur tiden fördelas vecka för vecka. Verktyget visar dagsfördelning, helgmönster och antal byten — och kan användas som utgångspunkt i samtal om vårdnad.",
+      "description": "Lina har ett interaktivt omsorgsschema som visar hur tiden fördelas vecka för vecka. Verktyget kan användas av föräldrar på egen hand, eller som utgångspunkt i samtal om umgängesarrangemang.",
       "cta": "Öppna vårdschemat"
     },
     "contact": {
@@ -319,11 +323,11 @@
     "pageDesc": "Läs om vad ett bra samarbetsavtal bör täcka. Se exempel, få tips och hitta länkar till officiella resurser.",
     "label": "Samarbetsavtal",
     "heroTitle": "Vad bör ett samarbetsavtal innehålla?",
-    "heroDesc": "Ett samarbetsavtal hjälper föräldrar att skapa förutsägbarhet för barnet när omsorgen delas mellan två hem. Här hittar du en översikt över vad avtalet bör täcka, tips för processen och länkar till officiella resurser.",
+    "heroDesc": "Ett samarbetsavtal hjälper föräldrar att skapa förutsägbarhet för barnet när omsorgen delas mellan två hem. Här hittar du en översikt över vad avtalet bör täcka, ett exempel och länkar till officiella resurser.",
     "heroCta": "Skapa avtal",
     "aboutLabel": "Grunden",
     "aboutTitle": "Ett avtal som växer med barnet",
-    "aboutDesc": "Ett samarbetsavtal är en frivillig, skriftlig överenskommelse mellan föräldrar om hur omsorgen om barnet organiseras mellan två hem. Det är inte juridiskt bindande på samma sätt som ett domstolsbeslut, men ger båda föräldrarna och barnet en gemensam ram att förhålla sig till. Ett bra avtal utgår från barnets behov — och bör uppdateras allteftersom dessa förändras.",
+    "aboutDesc": "Ett samarbetsavtal är en frivillig, skriftlig överenskommelse mellan föräldrar om hur omsorgen om barnet organiseras mellan två hem. Det är inte juridiskt bindande på samma sätt som ett domstolsbeslut, men ger familjen en gemensam ram att förhålla sig till. Ett bra avtal utgår från barnets vardag — och bör justeras allteftersom barnet växer.",
     "point1Title": "Inte juridiskt bindande som en dom",
     "point1Desc": "Avtalet är privat och baserat på ömsesidig överenskommelse mellan föräldrarna. Om ni inte kan komma överens kan familjerätten i kommunen hjälpa till med medling.",
     "point2Title": "Barnets bästa i centrum",
@@ -337,7 +341,7 @@
     "coverTitle": "Punkter ett bra samarbetsavtal bör täcka",
     "coverIntro": "Alla punkter är inte relevanta för alla. Ta med det som passar er situation.",
     "cover1Title": "Umgängesmönster",
-    "cover1Desc": "Hur fördelas veckorna? Ett fast mönster — till exempel varannan vecka eller 3-4-4-3 — ger barnet förutsägbarhet.",
+    "cover1Desc": "Hur fördelas veckorna? Ett fast mönster — till exempel varannan vecka eller 3-4-4-3 — ger barnet en tydlig rytm.",
     "cover2Title": "Boende",
     "cover2Desc": "Har barnet stadigvarande boende hos en förälder, eller växelvist boende? Boendet påverkar rättigheter och skyldigheter.",
     "cover3Title": "Hämtning och lämning",
@@ -447,7 +451,7 @@
     "heroDesc": "Här hittar du svar på de vanligaste frågorna om Lina, omsorgsschemat och samarbetsavtalet.",
     "cat1Title": "Om Lina",
     "cat1q1": "Vad är Lina?",
-    "cat1a1": "Lina är en app för föräldrar som delar omsorg. Den samlar praktiska detaljer — barnets information, meddelanden, bilder, kontakter och utrustningslistor — på ett gemensamt ställe tillgängligt för båda hemmen.",
+    "cat1a1": "Lina samlar det praktiska kring delad omsorg i en app — meddelanden, barnuppgifter, bilder, kontakter, utrustningslistor och omsorgsschema — tillgängligt i båda hemmen.",
     "cat1q2": "Vem är Lina till för?",
     "cat1a2": "Lina är gjord för föräldrar som delar omsorg om ett barn mellan två hem. Appen passar bäst när det grundläggande samarbetet fungerar, men man vill ha bättre struktur och förutsägbarhet i vardagen.",
     "cat1q3": "Är Lina gratis?",
@@ -458,7 +462,7 @@
     "cat1a5": "För att använda delade funktioner som meddelanden, bilder och barnets information behöver båda föräldrarna ett konto. Omsorgsschemat kan användas av en förälder ensam.",
     "cat2Title": "Omsorgsschema",
     "cat2q1": "Vad är omsorgsschemat i Lina?",
-    "cat2a1": "Omsorgsschemat är ett gratis, webbläsarbaserat verktyg där föräldrar kan planera och visualisera hur tid fördelas mellan hemmen vecka för vecka. Du ser dagfördelning, helgmönster och bytefrekvens i en tydlig översikt.",
+    "cat2a1": "Omsorgsschemat är ett gratis verktyg du kan använda direkt i webbläsaren. Klicka på dagar för att fördela dem mellan föräldrarna och se sammanfattningen uppdateras direkt. Schemat kan exporteras som PDF.",
     "cat2q2": "Behöver jag ett konto för att använda omsorgsschemat?",
     "cat2a2": "Nej, omsorgsschemat kan användas utan konto direkt i webbläsaren. Du behöver bara ladda ned appen för att använda delade funktioner som meddelanden och barnets information.",
     "cat2q3": "Kan jag exportera omsorgsschemat?",
@@ -499,12 +503,12 @@
   "about": {
     "pageTitle": "Om Lina — Lina",
     "heading": "Om Lina",
-    "lead": "Lina är en app för föräldrar som delar omsorgen om ett barn mellan två hem. En lugn plats där båda föräldrarna har samma information.",
+    "lead": "Lina är en app för föräldrar som delar omsorgen om ett barn mellan två hem. Samma översikt, samma information — oavsett vem barnet är hos.",
     "whyTitle": "Därför finns Lina",
-    "whyText1": "Lina skapades för att det inte fanns någon app för delad omsorg som kändes lugn och fokuserad. De flesta verktygen var byggda kring konflikter eller juridiska processer. Vi ville ha något annat — ett stilla, strukturerat utrymme för vardaglig samordning mellan två föräldrar.",
+    "whyText1": "Lina skapades för att det inte fanns någon app för delad omsorg som kändes lugn och fokuserad. De flesta verktygen var byggda kring konflikter eller juridiska processer. Vi ville ha något annat — ett lugnt, strukturerat utrymme för vardaglig samordning mellan två föräldrar.",
     "whyText2": "Målet är att minska den mentala belastningen som följer med delad omsorg. När båda föräldrarna har tillgång till samma scheman, listor och uppdateringar behöver ingen bära allt ensam.",
     "focusTitle": "Vad Lina fokuserar på",
-    "focusText1": "Lina är byggt kring strukturerad kommunikation och praktiska verktyg. Trådar håller samtalen organiserade. Delade listor, kontakter och information om barnet är alltid tillgängliga för båda föräldrarna. Allt samlat på ett ställe.",
+    "focusText1": "Lina är byggt kring strukturerad kommunikation och praktiska verktyg. Trådar håller samtalen organiserade. Delade listor, kontakter och information om barnet är alltid tillgängliga — synliga i båda hemmen.",
     "focusText2": "Det finns inga algoritmer, inga annonser och inga sociala funktioner. Lina är gjort för att användas vid behov och hålla sig i bakgrunden annars.",
     "origin": "Designad och byggd i Norge."
   },
@@ -523,19 +527,19 @@
       "label": "Utrustningslistor",
       "title": "Regnjackan som alltid är i fel hus",
       "situation": "Ett barn kommer till skolan utan regnkläder för att ingen var säker på vilket hem som hade dem. Små saker som detta skapar onödig friktion.",
-      "resolution": "Med Lina: Delade utrustningslistor visar vad som finns i varje hem. Båda föräldrarna kan kontrollera och uppdatera listan, så jackan följer barnet."
+      "resolution": "Med Lina: Delade utrustningslistor visar vad som finns i varje hem. Listan hålls uppdaterad, så jackan följer barnet."
     },
     "s3": {
       "label": "Trådar",
       "title": "Skolevenemanget som försvann i en meddelandetråd",
       "situation": "Skolan skickar information om ett föräldramöte. En förälder vidarebefordrar det via sms, men detaljerna försvinner bland praktiska meddelanden om hämtning och middag.",
-      "resolution": "Med Lina: En dedikerad tråd för skolan håller allt på ett ställe. Båda föräldrarna hittar det de behöver utan att scrolla genom orelaterade meddelanden."
+      "resolution": "Med Lina: En dedikerad tråd för skolan håller allt samlat. Detaljerna är lätta att hitta utan att scrolla genom orelaterade meddelanden."
     },
     "s4": {
       "label": "Delat album",
       "title": "Den första cykelturen du nästan missade",
       "situation": "Ett barn lär sig cykla hemma hos en förälder. Den andra föräldern hör om det först flera dagar senare och ser aldrig ögonblicket.",
-      "resolution": "Med Lina: Foton hamnar i det delade albumet. Båda föräldrarna kan se de stora och små ögonblicken, oavsett vilket hem barnet är i."
+      "resolution": "Med Lina: Foton hamnar i det delade albumet. Stunderna delas automatiskt — oavsett vilket hem barnet är i."
     },
     "s5": {
       "label": "Omsorgsschema",
@@ -549,7 +553,7 @@
       "situation": "Ett barn har tandvärk hemma hos en förälder. Föräldern behöver ringa tandläkaren men har inte numret — det var sparat i den andra förälderns telefon.",
       "resolution": "Med Lina: Delade kontakter innebär att båda föräldrarna har tandläkare, läkare och skolnummer tillgängliga hela tiden."
     },
-    "closing": "Det här är inte dramatiska problem. Det är de stilla, vardagliga ögonblicken där en gemensam plats sparar tid, minskar stress och håller fokus på barnet."
+    "closing": "Det här är inte dramatiska problem. Det är de stilla, vardagliga ögonblicken där en gemensam översikt sparar tid, minskar stress och håller fokus på barnet."
   },
   "termsSummary": {
     "heading": "Sammanfattning av villkoren",
@@ -606,11 +610,11 @@
     },
     "s2": {
       "title": "Regnjackan som alltid är i fel hus",
-      "description": "Delade utrustningslistor visar vad som finns i varje hem. Båda föräldrarna kan kontrollera och uppdatera, så jackan följer barnet."
+      "description": "Delade utrustningslistor visar vad som finns i varje hem. Uppdateringar syns direkt, så jackan följer barnet."
     },
     "s3": {
       "title": "Den första cykelturen du nästan missade",
-      "description": "Bilderna läggs i det delade albumet. Båda föräldrarna ser de stora och små stunderna, oavsett vilket hem barnet är i."
+      "description": "Bilderna läggs i det delade albumet. De stora och små stunderna delas automatiskt — oavsett vilket hem barnet är i."
     },
     "cta": "Läs fler berättelser"
   }
