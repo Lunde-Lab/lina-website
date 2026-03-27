@@ -291,7 +291,7 @@
       "album": { "title": "Delt album", "description": "Begge foreldre kan dele bilder fra hverdagen. Barnet er synlig i begge hjem." },
       "info": { "title": "Barneinformasjon", "description": "Medisinsk informasjon, allergier og viktige detaljer legges inn én gang og er tilgjengelig for begge — uavhengig av hvem barnet er hos." },
       "equipment": { "title": "Utstyrslister", "description": "Oversikt over hva barnet trenger i hvert hjem reduserer antall avklaringer og misforståelser rundt praktiske detaljer." },
-      "schedule": { "title": "Omsorgsplan", "description": "Omsorgsfordelingen vises i én felles visning. Færre diskusjoner om hvem som hadde barnet når." },
+      "schedule": { "title": "Samværsplan", "description": "Samværsfordelingen vises i én felles visning. Færre diskusjoner om hvem som hadde barnet når." },
       "agreement": { "title": "Samværsavtale", "description": "Informasjonssiden om samværsavtaler gir foreldre en oversikt over hva avtalen bør inneholde, med eksempel og lenker til offisielle ressurser. Et godt utgangspunkt før eller etter mekling.", "link": "Vis informasjonssiden" }
     },
     "screenshots": {
@@ -299,7 +299,7 @@
       "label2": "Samtaledetalj",
       "label3": "Barneinformasjon",
       "label4": "Delt album",
-      "label5": "Omsorgsplan"
+      "label5": "Samværsplan"
     },
     "csPromo": {
       "label": "Verktøy",
