@@ -503,12 +503,12 @@
   "about": {
     "pageTitle": "Tietoa Linasta — Lina",
     "heading": "Tietoa Linasta",
-    "lead": "Lina on sovellus vanhemmille, jotka jakavat lapsen hoidon kahden kodin välillä. Yksi rauhallinen paikka, jossa molemmilla vanhemmilla on sama tieto.",
+    "lead": "Lina on sovellus vanhemmille, jotka jakavat lapsen hoidon kahden kodin välillä. Sama kokonaiskuva, sama tieto — riippumatta siitä, kumman luona lapsi on.",
     "whyTitle": "Miksi Lina on olemassa",
     "whyText1": "Lina luotiin, koska rauhallista ja keskittynyttä yhteishuoltajuussovellusta ei ollut olemassa. Useimmat työkalut oli rakennettu ristiriitojen tai oikeusprosessien ympärille. Halusimme jotain muuta — hiljaisen, jäsennellyn tilan arjen koordinointiin kahden vanhemman välillä.",
     "whyText2": "Tavoitteena on vähentää jaetusta hoidosta aiheutuvaa henkistä kuormitusta. Kun molemmilla vanhemmilla on pääsy samoihin aikatauluihin, listoihin ja päivityksiin, kenenkään ei tarvitse kantaa kaikkea yksin.",
     "focusTitle": "Mihin Lina keskittyy",
-    "focusText1": "Lina on rakennettu jäsennellyn viestinnän ja käytännön työkalujen ympärille. Keskusteluketjut pitävät viestit järjestyksessä. Jaetut listat, yhteystiedot ja lapsen tiedot ovat aina molempien vanhempien saatavilla. Kaikki yhdessä paikassa.",
+    "focusText1": "Lina on rakennettu jäsennellyn viestinnän ja käytännön työkalujen ympärille. Keskusteluketjut pitävät viestit järjestyksessä. Jaetut listat, yhteystiedot ja lapsen tiedot ovat aina saatavilla — näkyvissä molemmissa kodeissa.",
     "focusText2": "Algoritmeja, mainoksia tai sosiaalisia ominaisuuksia ei ole. Lina on suunniteltu käytettäväksi tarvittaessa ja pysymään poissa tieltä muulloin.",
     "origin": "Suunniteltu ja rakennettu Norjassa."
   },
