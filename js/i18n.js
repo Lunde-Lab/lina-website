@@ -1,5 +1,5 @@
 const SUPPORTED_LANGS = ['en', 'no', 'sv', 'da', 'fi'];
-const DEFAULT_LANG = 'en';
+const DEFAULT_LANG = 'no';
 const cache = {};
 
 function get(obj, path) {
@@ -22,17 +22,41 @@ function apply(t) {
     const val = get(t, el.dataset.i18nAria);
     if (val != null) el.setAttribute('aria-label', val);
   });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const val = get(t, el.dataset.i18nPlaceholder);
+    if (val != null) el.setAttribute('placeholder', val);
+  });
   // Support per-page title key via <html data-i18n-title="cs.pageTitle">
   const titleKey = document.documentElement.dataset.i18nTitle || 'page.title';
   const title = get(t, titleKey);
   if (title) document.title = title;
+
+  // Update meta description
+  const descKey = document.documentElement.dataset.i18nDesc || 'page.description';
+  const desc = get(t, descKey);
+  if (desc) {
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', desc);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', desc);
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twDesc) twDesc.setAttribute('content', desc);
+  }
+
+  // Update og:title and twitter:title from document.title
+  if (title) {
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', title);
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twTitle) twTitle.setAttribute('content', title);
+  }
 }
 
 async function setLang(lang) {
   if (!SUPPORTED_LANGS.includes(lang)) lang = DEFAULT_LANG;
   const t = await load(lang);
   apply(t);
-  document.documentElement.lang = lang;
+  document.documentElement.lang = lang === 'no' ? 'nb' : lang;
   localStorage.setItem('lina-lang', lang);
   document.dispatchEvent(new CustomEvent('lina:langchange', { detail: { lang, t } }));
 }

@@ -1,6 +1,7 @@
 {
   "page": {
-    "title": "Lina — Delt omsorg, forenklet"
+    "title": "Lina — Delt omsorg, forenklet",
+    "description": "Lina hjelper foreldre som deler omsorg å koordinere hverdagen på tvers av to hjem — samværsplan, meldinger, barneinformasjon og delt album i én app."
   },
   "nav": {
     "appstore": "App Store",
@@ -151,6 +152,7 @@
   },
   "pricing": {
     "pageTitle": "Pris — Lina",
+    "pageDesc": "Lina har en gratis plan og Lina+ til 79 kr/mnd. Ett abonnement dekker begge foreldre. Ingen reklame, ingen datadeling.",
     "label": "Pris",
     "title": "Ett abonnement. Begge foreldre.",
     "description": "Lina+ gir full tilgang til alle funksjoner med ett abonnement — som dekker begge hjem. Start med en gratis prøveperiode.",
@@ -198,6 +200,7 @@
   },
   "contact": {
     "pageTitle": "Kontakt — Lina",
+    "pageDesc": "Har du spørsmål om Lina? Ta kontakt med oss — vi svarer så snart vi kan.",
     "heading": "Kontakt",
     "intro": "Har du spørsmål om Lina eller trenger hjelp med kontoen din? Vi er her for å hjelpe — send oss en melding, så svarer vi så snart vi kan.",
     "namePlaceholder": "Navn",
@@ -209,6 +212,7 @@
   },
   "cs": {
     "pageTitle": "Samværsplan — Lina",
+    "pageDesc": "Planlegg og visualiser barnets samværsplan mellom to hjem. Gratis verktøy med dagfordeling, helgeoversikt og PDF-eksport.",
     "heading": "Samværsplan",
     "labelParentA": "Navn på forelder A",
     "labelParentB": "Navn på forelder B",
@@ -243,6 +247,7 @@
     "exportDesc": "Skriv ut eller lagre planen som PDF."
   },
   "familievern": {
+    "pageDesc": "Lina hjelper foreldre med delt omsorg å koordinere hverdagen. Informasjon om appen for fagpersoner ved familievernkontor og rådgivningstjenester.",
     "hero": {
       "label": "For fagpersoner",
       "title": "Et verktøy du kan anbefale til foreldre som deler omsorg",
@@ -502,6 +507,7 @@
   },
   "about": {
     "pageTitle": "Om Lina — Lina",
+    "pageDesc": "Lina ble laget for foreldre som deler omsorg og ønsker et rolig, strukturert verktøy for hverdagskoordinering. Designet og utviklet i Norge.",
     "heading": "Om Lina",
     "lead": "Lina er en app for foreldre som deler omsorgen for et barn mellom to hjem. Samme oversikt, samme informasjon — uansett hvem barnet er hos.",
     "whyTitle": "Derfor finnes Lina",
@@ -514,6 +520,7 @@
   },
   "stories": {
     "pageTitle": "Slik bruker foreldre Lina",
+    "pageDesc": "Små, hverdagslige situasjoner der Lina gjør forskjellen. Se hvordan foreldre bruker appen til å dele informasjon, bilder og utstyrslister på tvers av hjem.",
     "label": "Hverdagsscenarioer",
     "title": "Slik bruker foreldre Lina",
     "description": "Små, hverdagslige øyeblikk der det å ha ett felles sted utgjør forskjellen. Dette er situasjonene Lina er laget for.",

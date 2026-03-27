@@ -1,6 +1,7 @@
 {
   "page": {
-    "title": "Lina — Yhteishuoltajuus, yksinkertaistettuna"
+    "title": "Lina — Yhteishuoltajuus, yksinkertaistettuna",
+    "description": "Lina auttaa yhteishuoltajia koordinoimaan arkea kahden kodin välillä — hoitoaikataulu, viestit, lapsen tiedot ja jaettu albumi yhdessä sovelluksessa."
   },
   "nav": {
     "appstore": "App Store",
@@ -151,6 +152,7 @@
   },
   "pricing": {
     "pageTitle": "Hinta — Lina",
+    "pageDesc": "Linalla on ilmainen versio ja Lina+ hintaan 79 kr/kk. Yksi tilaus kattaa molemmat vanhemmat. Ei mainoksia, ei tietojen jakamista.",
     "label": "Hinta",
     "title": "Yksi tilaus. Molemmat vanhemmat.",
     "description": "Lina+ avaa kaikki ominaisuudet yhdellä tilauksella — joka kattaa molemmat kodit. Aloita ilmaisella kokeilujaksolla.",
@@ -198,6 +200,7 @@
   },
   "contact": {
     "pageTitle": "Ota yhteyttä — Lina",
+    "pageDesc": "Onko sinulla kysyttävää Linasta? Ota yhteyttä — vastaamme mahdollisimman pian.",
     "heading": "Ota yhteyttä",
     "intro": "Onko sinulla kysyttävää Linasta tai tarvitsetko apua tilisi kanssa? Olemme täällä auttamassa — lähetä meille viesti, niin vastaamme mahdollisimman pian.",
     "namePlaceholder": "Nimi",
@@ -209,6 +212,7 @@
   },
   "cs": {
     "pageTitle": "Hoitoaikataulu — Lina",
+    "pageDesc": "Suunnittele ja visualisoi lapsen hoitoaikataulu kahden kodin välillä. Ilmainen työkalu päiväjaolla, viikonloppukatsauksella ja PDF-viennillä.",
     "heading": "Hoitoaikataulu",
     "labelParentA": "Vanhempi A:n nimi",
     "labelParentB": "Vanhempi B:n nimi",
@@ -243,6 +247,7 @@
     "exportDesc": "Tulosta tai tallenna aikataulu PDF-tiedostona."
   },
   "familievern": {
+    "pageDesc": "Lina auttaa yhteishuoltajia koordinoimaan arkea. Tietoa sovelluksesta lastenvalvojille ja perheneuvonnan ammattilaisille.",
     "hero": {
       "label": "Ammattilaisille",
       "title": "Työkalu, jonka voit suositella huolenpidon jakaville vanhemmille",
@@ -502,6 +507,7 @@
   },
   "about": {
     "pageTitle": "Tietoa Linasta — Lina",
+    "pageDesc": "Lina luotiin yhteishuoltajille, jotka haluavat rauhallisen, jäsennellyn työkalun arjen koordinointiin. Suunniteltu ja rakennettu Norjassa.",
     "heading": "Tietoa Linasta",
     "lead": "Lina on sovellus vanhemmille, jotka jakavat lapsen hoidon kahden kodin välillä. Sama kokonaiskuva, sama tieto — riippumatta siitä, kumman luona lapsi on.",
     "whyTitle": "Miksi Lina on olemassa",
@@ -514,6 +520,7 @@
   },
   "stories": {
     "pageTitle": "Näin vanhemmat käyttävät Linaa",
+    "pageDesc": "Pieniä, arkisia tilanteita, joissa Lina tekee eron. Katso miten vanhemmat käyttävät sovellusta tietojen, kuvien ja varustelistojen jakamiseen kotien välillä.",
     "label": "Arjen tilanteita",
     "title": "Näin vanhemmat käyttävät Linaa",
     "description": "Pieniä, arkisia hetkiä, joissa yksi yhteinen paikka tekee eron. Näitä tilanteita varten Lina on tehty.",
