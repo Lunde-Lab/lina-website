@@ -395,6 +395,13 @@
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
     }
 
+    @media (min-width: 1100px) {
+      .feature-block-visual .phone-frame {
+        width: 210px;
+        height: 448px;
+      }
+    }
+
     .feature-block-visual .phone-frame img {
       width: 100%;
       height: 100%;
@@ -674,13 +681,38 @@
 
     .cs-promo-visual { flex-shrink: 0; }
 
+    .cs-promo-img {
+      width: 500px;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    }
+
+    .ca-promo-img {
+      width: 320px;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    }
+
+    @media (min-width: 1200px) {
+      .cs-promo-img {
+        width: 600px;
+      }
+      .ca-promo-img {
+        width: 400px;
+      }
+    }
+
     @media (max-width: 800px) {
       .cs-promo-inner {
         flex-direction: column;
         gap: 40px;
       }
-      .cs-promo-visual img {
-        width: 375px !important;
+      .cs-promo-img,
+      .ca-promo-img {
+        max-width: 375px;
+        width: 100%;
       }
     }
 
@@ -1440,7 +1472,7 @@
         </div>
 
         <div class="cs-promo-visual reveal reveal-delay-1" aria-hidden="true">
-          <img src="assets/images/CareSchedule.png" alt="Care Schedule" style="width: 500px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);" />
+          <img src="assets/images/CareSchedule.png" alt="Care Schedule" class="cs-promo-img" />
         </div>
 
       </div>
@@ -1461,7 +1493,7 @@
           </a>
         </div>
         <div class="cs-promo-visual reveal reveal-delay-1" aria-hidden="true">
-          <img src="assets/images/CareAgreement.png" alt="Samværsavtale eksempel" style="width: 320px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);" />
+          <img src="assets/images/CareAgreement.png" alt="Samværsavtale eksempel" class="ca-promo-img" />
         </div>
       </div>
     </div>
