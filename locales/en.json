@@ -137,7 +137,7 @@
     "pageTitle": "Pricing — Lina",
     "label": "Pricing",
     "title": "One subscription. Both parents.",
-    "description": "Lina+ gives both parents full access with a single subscription. Start with a free trial — no payment required until you decide.",
+    "description": "Lina+ unlocks all features with a single subscription — covering both homes. Start with a free trial.",
     "free": {
       "name": "Free",
       "price": "0 kr",
@@ -165,8 +165,8 @@
     },
     "whyLabel": "Why paid",
     "whyTitle": "The subscription keeps Lina independent",
-    "whyText1": "Lina has no advertising and does not share data with third parties. The subscription is what makes that possible — it funds development, hosting, and support without compromising your privacy.",
-    "whyText2": "Both parents get full access with one subscription. The parent who subscribes covers both — so the other parent never has to pay.",
+    "whyText1": "Lina is funded by the subscription — not by advertising or data sharing. That is what makes it possible to keep the app independent and focused on what matters.",
+    "whyText2": "The subscribing parent automatically gives the other full access. No separate payment, no extra account.",
     "p1": {
       "title": "One subscription, two parents",
       "description": "Both parents get full access. No extra cost for the other parent."

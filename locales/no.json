@@ -153,7 +153,7 @@
     "pageTitle": "Pris — Lina",
     "label": "Pris",
     "title": "Ett abonnement. Begge foreldre.",
-    "description": "Lina+ gir begge foreldre full tilgang med ett abonnement. Start med en gratis prøveperiode — ingen betaling før du bestemmer deg.",
+    "description": "Lina+ gir full tilgang til alle funksjoner med ett abonnement — som dekker begge hjem. Start med en gratis prøveperiode.",
     "free": {
       "name": "Gratis",
       "price": "0 kr",
@@ -181,8 +181,8 @@
     },
     "whyLabel": "Hvorfor betalt",
     "whyTitle": "Abonnementet holder Lina uavhengig",
-    "whyText1": "Lina har ingen reklame og deler ikke data med tredjeparter. Abonnementet er det som gjør dette mulig — det finansierer utvikling, drift og support uten å gå på bekostning av personvernet ditt.",
-    "whyText2": "Begge foreldre får full tilgang med ett abonnement. Forelderen som abonnerer dekker begge — slik at den andre aldri trenger å betale.",
+    "whyText1": "Lina finansieres av abonnementet — ikke av reklame eller datadeling. Det er det som gjør det mulig å holde appen uavhengig og fokusert på det som betyr noe.",
+    "whyText2": "Forelderen som abonnerer gir automatisk den andre full tilgang. Ingen separat betaling, ingen ekstra konto.",
     "p1": {
       "title": "Ett abonnement, to foreldre",
       "description": "Begge foreldre får full tilgang. Ingen ekstra kostnad for den andre."

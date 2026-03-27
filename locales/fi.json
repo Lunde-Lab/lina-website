@@ -153,7 +153,7 @@
     "pageTitle": "Hinta — Lina",
     "label": "Hinta",
     "title": "Yksi tilaus. Molemmat vanhemmat.",
-    "description": "Lina+ antaa molemmille vanhemmille täyden pääsyn yhdellä tilauksella. Aloita ilmaisella kokeilujaksolla — ei maksua ennen kuin päätät.",
+    "description": "Lina+ avaa kaikki ominaisuudet yhdellä tilauksella — joka kattaa molemmat kodit. Aloita ilmaisella kokeilujaksolla.",
     "free": {
       "name": "Ilmainen",
       "price": "0 kr",
@@ -181,8 +181,8 @@
     },
     "whyLabel": "Miksi maksullinen",
     "whyTitle": "Tilaus pitää Linan riippumattomana",
-    "whyText1": "Linassa ei ole mainoksia eikä se jaa tietoja kolmansille osapuolille. Tilaus tekee tämän mahdolliseksi — se rahoittaa kehityksen, ylläpidon ja tuen vaarantamatta yksityisyyttäsi.",
-    "whyText2": "Molemmat vanhemmat saavat täyden pääsyn yhdellä tilauksella. Tilaava vanhempi kattaa molemmat — joten toisen ei tarvitse koskaan maksaa.",
+    "whyText1": "Linaa rahoittaa tilaus — ei mainonta tai tietojen jakaminen. Se tekee mahdolliseksi pitää sovelluksen riippumattomana ja keskittyneenä siihen, mikä on tärkeää.",
+    "whyText2": "Tilaava vanhempi antaa automaattisesti toiselle täyden pääsyn. Ei erillistä maksua, ei ylimääräistä tiliä.",
     "p1": {
       "title": "Yksi tilaus, kaksi vanhempaa",
       "description": "Molemmat vanhemmat saavat täyden pääsyn. Ei lisäkustannuksia toiselle."
