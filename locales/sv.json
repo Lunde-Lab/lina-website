@@ -19,10 +19,10 @@
     "ctaPlayAria": "Hämta på Google Play"
   },
   "csSection": {
-    "label": "Vårdschema",
+    "label": "Omsorgsschema",
     "title": "Planera vårdtiden tillsammans",
-    "description": "Linas interaktiva vårdschema låter båda föräldrarna planera och visualisera hur tid fördelas mellan hemmen vecka för vecka. Se dagfördelning, helgmönster och överlämningsfrekvens — allt i en tydlig vy.",
-    "cta": "Öppna vårdschema"
+    "description": "Linas interaktiva omsorgsschema låter båda föräldrarna planera och visualisera hur tid fördelas mellan hemmen vecka för vecka. Se dagfördelning, helgmönster och överlämningsfrekvens — allt i en tydlig vy.",
+    "cta": "Öppna omsorgsschema"
   },
   "caSection": {
     "label": "Samarbetsavtal",
@@ -163,7 +163,7 @@
       "f1": "Upp till 2 trådar",
       "f2": "Upp till 100 bilder i delat album",
       "f3": "Meddelanden",
-      "f4": "Barninformation och kontakter",
+      "f4": "Barnuppgifter och kontakter",
       "f5": "Utrustningslistor",
       "f6": "Omsorgsschema"
     },
@@ -211,9 +211,9 @@
     "successDescription": "Vi återkommer så snart vi kan."
   },
   "cs": {
-    "pageTitle": "Vårdschema — Lina",
+    "pageTitle": "Omsorgsschema — Lina",
     "pageDesc": "Planera och visualisera barnets omsorgsschema mellan två hem. Gratis verktyg med dagfördelning, helgöversikt och PDF-export.",
-    "heading": "Vårdschema",
+    "heading": "Omsorgsschema",
     "labelParentA": "Namn förälder A",
     "labelParentB": "Namn förälder B",
     "labelStartDate": "Startdatum",
@@ -289,7 +289,7 @@
       "threads": { "title": "Trådar", "description": "Föräldrar kommunicerar om ett ämne i taget – logistik, skola eller hälsa – utan att viktig information går förlorad i en lång meddelandetråd." },
       "messages": { "title": "Meddelanden", "description": "Meddelanden kan inte redigeras eller raderas. Det ger en förutsägbar kommunikationskanal och en tydlig historik över vad som har överenskommits." },
       "album": { "title": "Delat album", "description": "Båda föräldrarna kan dela foton från vardagen. Barnet syns i båda hemmen." },
-      "info": { "title": "Barninfo", "description": "Medicinsk information, allergier och viktiga detaljer registreras en gång och är tillgängliga för båda – oavsett vilket hem barnet befinner sig i." },
+      "info": { "title": "Barnuppgifter", "description": "Medicinsk information, allergier och viktiga detaljer registreras en gång och är tillgängliga för båda – oavsett vilket hem barnet befinner sig i." },
       "equipment": { "title": "Utrustningslistor", "description": "En tydlig översikt över vad barnet behöver i varje hem minskar antalet frågor och missförstånd kring praktiska detaljer." },
       "schedule": { "title": "Omsorgsschema", "description": "Omsorgsfördelningen visas i en gemensam vy. Färre diskussioner om vem som hade barnet och när." },
       "agreement": { "title": "Samarbetsavtal", "description": "Informationssidan om samarbetsavtal ger föräldrar en översikt över vad avtalet bör innehålla, med exempel och länkar till officiella resurser. En bra utgångspunkt före eller efter medling.", "link": "Visa informationssidan" }
@@ -297,15 +297,15 @@
     "screenshots": {
       "label1": "Trådar",
       "label2": "Tråddetalj",
-      "label3": "Barninfo",
+      "label3": "Barnuppgifter",
       "label4": "Delat album",
       "label5": "Omsorgsschema"
     },
     "csPromo": {
       "label": "Verktyg",
-      "title": "Ett vårdschema föräldrarna kan använda tillsammans",
+      "title": "Ett omsorgsschema föräldrarna kan använda tillsammans",
       "description": "Lina har ett interaktivt omsorgsschema som visar hur tiden fördelas vecka för vecka. Verktyget kan användas av föräldrar på egen hand, eller som utgångspunkt i samtal om umgängesarrangemang.",
-      "cta": "Öppna vårdschemat"
+      "cta": "Öppna omsorgsschemat"
     },
     "contact": {
       "label": "Kontakt",
@@ -443,10 +443,10 @@
     "promoTitle": "Efter avtalet — vardagen",
     "promoDesc": "När samarbetsavtalet är på plats börjar vardagen. Lina hjälper föräldrar med resten: meddelanden, barnuppgifter, foton och utrustningslistor — allt samlat på ett gemensamt ställe för båda hem.",
     "promoCta": "Ladda ner Lina",
-    "csPromoLabel": "Vårdschema",
-    "csPromoTitle": "Planera vårdtiden vecka för vecka",
-    "csPromoDesc": "När avtalet är klart hjälper Linas interaktiva vårdschema er att planera och visualisera vardagen. Se dagfördelning, helgmönster och överlämningsfrekvens — allt i en tydlig vy.",
-    "csPromoCta": "Prova vårdschemat"
+    "csPromoLabel": "Omsorgsschema",
+    "csPromoTitle": "Planera omsorgstiden vecka för vecka",
+    "csPromoDesc": "När avtalet är klart hjälper Linas interaktiva omsorgsschema er att planera och visualisera vardagen. Se dagfördelning, helgmönster och överlämningsfrekvens — allt i en tydlig vy.",
+    "csPromoCta": "Prova omsorgsschemat"
   },
   "faq": {
     "pageTitle": "Vanliga frågor — Lina",
