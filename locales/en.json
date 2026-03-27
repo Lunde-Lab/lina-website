@@ -1,6 +1,7 @@
 {
   "page": {
-    "title": "Lina — Co-parenting, simplified"
+    "title": "Lina — Co-parenting, simplified",
+    "description": "Lina helps co-parents coordinate everyday life across two homes — care schedule, messages, child information, and shared album in one app."
   },
   "nav": {
     "appstore": "App Store",
@@ -135,6 +136,7 @@
   },
   "pricing": {
     "pageTitle": "Pricing — Lina",
+    "pageDesc": "Lina has a free plan and Lina+ at 79 kr/month. One subscription covers both parents. No ads, no data sharing.",
     "label": "Pricing",
     "title": "One subscription. Both parents.",
     "description": "Lina+ unlocks all features with a single subscription — covering both homes. Start with a free trial.",
@@ -182,6 +184,7 @@
   },
   "contact": {
     "pageTitle": "Contact — Lina",
+    "pageDesc": "Have a question about Lina? Get in touch — we'll get back to you as soon as we can.",
     "heading": "Contact",
     "intro": "Have a question about Lina or need help with your account? We're here to help — send us a message and we'll get back to you as soon as we can.",
     "namePlaceholder": "Name",
@@ -193,6 +196,7 @@
   },
   "cs": {
     "pageTitle": "Care Schedule — Lina",
+    "pageDesc": "Plan and visualize your child's care schedule between two homes. Free tool with day splits, weekend overview, and PDF export.",
     "heading": "Care Schedule",
     "labelParentA": "Parent A name",
     "labelParentB": "Parent B name",
@@ -227,6 +231,7 @@
     "exportDesc": "Print or save the schedule as a PDF."
   },
   "familievern": {
+    "pageDesc": "Lina helps co-parents coordinate everyday life across two homes. Information about the app for family counselors and professionals.",
     "hero": {
       "label": "For professionals",
       "title": "A tool you can recommend to parents who share care",
@@ -486,6 +491,7 @@
   },
   "about": {
     "pageTitle": "About — Lina",
+    "pageDesc": "Lina was built for co-parents who want a calm, structured tool for everyday coordination. Designed and built in Norway.",
     "heading": "About Lina",
     "lead": "Lina is a co-parenting app for parents who share care of a child across two homes. The same overview, the same information — regardless of which home the child is in.",
     "whyTitle": "Why Lina exists",
@@ -498,6 +504,7 @@
   },
   "stories": {
     "pageTitle": "How parents use Lina",
+    "pageDesc": "Small, everyday situations where Lina makes the difference. See how parents use the app to share information, photos, and equipment lists across homes.",
     "label": "Everyday scenarios",
     "title": "How parents use Lina",
     "description": "Small, everyday moments where having one shared place makes the difference. These are the situations Lina is built for.",
