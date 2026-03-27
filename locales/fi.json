@@ -245,14 +245,14 @@
   "familievern": {
     "hero": {
       "label": "Ammattilaisille",
-      "title": "Työkalu, jonka voit suositella huolenpidon jakavalle vanhemmille",
+      "title": "Työkalu, jonka voit suositella huolenpidon jakaville vanhemmille",
       "description": "Lina auttaa vanhempia pitämään arjen käytännön yksityiskohdat koottuna ja saatavilla kahden kodin välillä. Tämä sivu on suunnattu ammattilaisille.",
       "cta": "Ota yhteyttä"
     },
     "about": {
       "label": "Sovelluksesta",
       "title": "Yksi yhteinen paikka lapselle – kotien välillä",
-      "description": "Monilta huolenpidon jakavalta vanhemmalta puuttuu yhteinen rakenne arjen yhteistyölle. Tieto hajaantuu tekstiviesteihin, sähköposteihin ja suullisiin sopimuksiin, ja yksi vanhemmista päätyy koordinoimaan kaiken. Lina kokoaa käytännön asiat – lääketieteelliset tiedot, yhteystiedot, varustelistat, kuvat ja viestit – yhteen jaettuun paikkaan, joka on molempien vanhempien saatavilla."
+      "description": "Monilta huolenpidon jakavalta vanhemmalta puuttuu yhteinen rakenne arjen yhteistyölle. Tieto hajaantuu tekstiviesteihin, sähköposteihin ja suullisiin sopimuksiin, ja yksi vanhemmista päätyy koordinoimaan kaiken. Lina kokoaa käytännön asiat — lääketieteelliset tiedot, yhteystiedot, varustelistat, kuvat ja viestit — yhteen jaettuun paikkaan, joka on saatavilla molemmissa kodeissa."
     },
     "when": {
       "label": "Milloin Lina sopii",
@@ -273,7 +273,7 @@
     "privacy": {
       "label": "Tietosuoja",
       "title": "Turvallinen ja yksityinen luonnostaan",
-      "description": "Lina on rakennettu tietosuoja perustana. Ei mainontaa, ei tietojen jakamista eikä algoritmia, joka vaikuttaa siihen, mitä käyttäjät näkevät. Ammattilaisena voit suositella sovellusta luottavaisin mielin, että vanhempien tiedot käsitellään vastuullisesti.",
+      "description": "Lina on rakennettu tietosuoja perustana. Vanhempien tietoja käsitellään vastuullisesti, ja sovellus on vapaa kaupallisista intresseistä. Ammattilaisena voit suositella sitä luottavaisin mielin.",
       "point1": { "title": "Ei mainontaa", "description": "Mitkään mainokset tai kaupalliset intressit eivät vaikuta käyttäjäkokemukseen." },
       "point2": { "title": "Ei tietojen jakamista", "description": "Vanhempien tietoja ei myydä eikä jaeta kolmansille osapuolille." },
       "point3": { "title": "Turvallinen infrastruktuuri", "description": "Tiedot suojataan turvallisella tallennuksella, pääsynhallinnalla ja allekirjoitetuilla linkeillä." }
@@ -286,7 +286,7 @@
       "album": { "title": "Jaettu albumi", "description": "Molemmat vanhemmat voivat jakaa kuvia arjesta. Lapsi on näkyvissä molemmissa kodeissa." },
       "info": { "title": "Lapsen tiedot", "description": "Lääketieteelliset tiedot, allergiat ja tärkeät yksityiskohdat syötetään kerran ja ovat molempien saatavilla – riippumatta siitä, kummassa kodissa lapsi on." },
       "equipment": { "title": "Varustelistat", "description": "Selkeä yleiskuva siitä, mitä lapsi tarvitsee kummassakin kodissa, vähentää selvitysten ja väärinkäsitysten määrää käytännön yksityiskohdissa." },
-      "schedule": { "title": "Hoitoaikataulu", "description": "Molemmat vanhemmat näkevät hoitoajan jakautumisen samassa näkymässä. Vähemmän keskusteluja siitä, kummalla vanhemmalla lapsi oli ja milloin." },
+      "schedule": { "title": "Hoitoaikataulu", "description": "Hoitoajan jakautuminen näkyy yhdessä yhteisessä näkymässä. Vähemmän keskusteluja siitä, kummalla vanhemmalla lapsi oli ja milloin." },
       "agreement": { "title": "Huoltosopimus", "description": "Huoltosopimuksen tietosivu antaa vanhemmille yleiskuvan siitä, mitä sopimuksen tulisi sisältää, esimerkin ja linkkejä virallisiin resursseihin. Hyvä lähtökohta ennen sovittelua tai sen jälkeen.", "link": "Näytä tietosivu" }
     },
     "screenshots": {
@@ -299,7 +299,7 @@
     "csPromo": {
       "label": "Työkalut",
       "title": "Hoitoaikataulu, jota vanhemmat voivat käyttää yhdessä",
-      "description": "Linassa on interaktiivinen hoitoaikataulu, jonka avulla molemmat vanhemmat näkevät, miten aika jakautuu viikko viikolta. Työkalu näyttää päiväjaon, viikonloppumallit ja vaihtojen määrän — ja sitä voidaan käyttää lähtökohtana keskusteluissa hoitojärjestelyistä.",
+      "description": "Linassa on interaktiivinen hoitoaikataulu, joka näyttää, miten aika jakautuu viikko viikolta. Työkalua voivat käyttää vanhemmat itsenäisesti, tai se voi toimia lähtökohtana keskusteluissa hoitojärjestelyistä.",
       "cta": "Avaa hoitoaikataulu"
     },
     "contact": {

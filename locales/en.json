@@ -236,7 +236,7 @@
     "about": {
       "label": "About the app",
       "title": "One shared place for the child — across homes",
-      "description": "Many parents who share care lack a common structure for everyday cooperation. Information is scattered across texts, emails, and verbal agreements, and one parent ends up coordinating everything. Lina brings the practical details — medical information, contacts, equipment lists, photos, and messages — into one shared space that both parents can access."
+      "description": "Many parents who share care lack a common structure for everyday cooperation. Information is scattered across texts, emails, and verbal agreements, and one parent ends up coordinating everything. Lina brings the practical details — medical information, contacts, equipment lists, photos, and messages — into one shared space accessible in both homes."
     },
     "when": {
       "label": "When Lina is a good fit",
@@ -257,7 +257,7 @@
     "privacy": {
       "label": "Privacy",
       "title": "Secure and private by design",
-      "description": "Lina is built with privacy as its foundation. No advertising, no data sharing, and no algorithm influencing what users see. As a professional, you can recommend the app with confidence that parents' information is handled responsibly.",
+      "description": "Lina is built with privacy as its foundation. Parents' data is handled responsibly, and the app is free from commercial interests. As a professional, you can recommend it with confidence.",
       "point1": { "title": "No advertising", "description": "No ads or commercial interests affect the user experience." },
       "point2": { "title": "No data sharing", "description": "Parents' data is not sold or shared with third parties." },
       "point3": { "title": "Secure infrastructure", "description": "Information is protected through secure storage, access control, and signed links." }
@@ -270,7 +270,7 @@
       "album": { "title": "Shared album", "description": "Both parents can share photos from everyday life. The child is visible in both homes." },
       "info": { "title": "Child information", "description": "Medical information, allergies, and important details are entered once and available to both parents — regardless of which home the child is in." },
       "equipment": { "title": "Equipment lists", "description": "A clear overview of what the child needs in each home reduces the number of clarifications and misunderstandings around practical details." },
-      "schedule": { "title": "Care schedule", "description": "Both parents see the care arrangement in the same view. Fewer discussions about who had the child and when." },
+      "schedule": { "title": "Care schedule", "description": "The care arrangement is shown in one shared view. Fewer discussions about who had the child and when." },
       "agreement": { "title": "Care Agreement", "description": "The care agreement page gives parents an overview of what the agreement should include, with an example and links to official resources. A good starting point before or after mediation.", "link": "View the information page" }
     },
     "screenshots": {
@@ -283,7 +283,7 @@
     "csPromo": {
       "label": "Tools",
       "title": "A care schedule parents can use together",
-      "description": "Lina includes an interactive care schedule that lets both parents see how time is shared week by week. The tool shows day splits, weekend patterns, and handover frequency — and can be used as a starting point in conversations about care arrangements.",
+      "description": "Lina includes an interactive care schedule that shows how time is divided week by week. The tool can be used by parents on their own, or as a starting point in conversations about care arrangements.",
       "cta": "Open care schedule"
     },
     "contact": {
