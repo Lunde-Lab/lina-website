@@ -231,12 +231,16 @@
     "statsSwitches": "Antall bytter",
     "days": "dager",
     "of": "av",
-    "subhead": "Planlegg og visualiser hvordan tiden deles mellom hjemmene.",
-    "intro": "Bruk dette verktøyet til å planlegge hvordan tiden deles mellom to hjem. Klikk på dagene for å tildele dem, og se fordelingen oppdatere seg automatisk. Du kan også eksportere planen som PDF.",
+    "subhead": "Se hvordan tiden fordeles mellom hjemmene — uke for uke.",
+    "intro": "Klikk på dagene for å tildele dem til en forelder. Fordelingen oppdateres automatisk, og du kan eksportere planen som PDF.",
     "howTitle": "Slik bruker du verktøyet",
     "step1": "Skriv inn navn på begge foreldre",
     "step2": "Klikk på en dag for å veksle mellom forelder A, forelder B, eller ingen",
-    "step3": "Se fordelingen i oppsummeringen under kalenderen"
+    "step3": "Se fordelingen i oppsummeringen under kalenderen",
+    "weeksUnit": "uker",
+    "totalDaysPlanned": "Planlagte dager totalt",
+    "unassignedDays": "Ikke tildelte dager",
+    "exportDesc": "Skriv ut eller lagre planen som PDF."
   },
   "familievern": {
     "hero": {

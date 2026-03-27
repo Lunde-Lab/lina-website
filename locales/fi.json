@@ -231,12 +231,16 @@
     "statsSwitches": "Vaihtoja yhteensä",
     "days": "päivää",
     "of": "/",
-    "subhead": "Suunnittele ja visualisoi, miten aika jaetaan kotien välillä.",
-    "intro": "Käytä tätä työkalua suunnitellaksesi, miten aika jaetaan kahden kodin välillä. Klikkaa päiviä määrittääksesi ne, ja näe jakauman päivittyvän automaattisesti. Voit myös viedä suunnitelman PDF-tiedostona.",
+    "subhead": "Katso miten aika jakautuu kotien välillä — viikko viikolta.",
+    "intro": "Klikkaa päiviä määrittääksesi ne vanhemmalle. Jakauma päivittyy automaattisesti, ja voit viedä suunnitelman PDF-tiedostona.",
     "howTitle": "Näin käytät työkalua",
     "step1": "Syötä molempien vanhempien nimet",
     "step2": "Klikkaa päivää vaihtaaksesi vanhemman A, vanhemman B tai ei kenenkään välillä",
-    "step3": "Katso jakautuminen kalenterin alla olevasta yhteenvedosta"
+    "step3": "Katso jakautuminen kalenterin alla olevasta yhteenvedosta",
+    "weeksUnit": "viikkoa",
+    "totalDaysPlanned": "Suunnitellut päivät yhteensä",
+    "unassignedDays": "Määrittämättömät päivät",
+    "exportDesc": "Tulosta tai tallenna aikataulu PDF-tiedostona."
   },
   "familievern": {
     "hero": {

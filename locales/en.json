@@ -215,12 +215,16 @@
     "statsSwitches": "Total switches",
     "days": "days",
     "of": "of",
-    "subhead": "Plan and visualize how time is shared between homes.",
-    "intro": "Use this tool to plan how time is shared between two homes. Click on the days to assign them, and see the split update automatically. You can also export the plan as a PDF.",
+    "subhead": "See how time is divided between homes — week by week.",
+    "intro": "Click on the days to assign them to a parent. The split updates automatically, and you can export the plan as a PDF.",
     "howTitle": "How to use",
     "step1": "Enter both parents' names",
     "step2": "Click a day to toggle between parent A, parent B, or unassigned",
-    "step3": "See the split in the summary below the calendar"
+    "step3": "See the split in the summary below the calendar",
+    "weeksUnit": "weeks",
+    "totalDaysPlanned": "Total days planned",
+    "unassignedDays": "Unassigned days",
+    "exportDesc": "Print or save the schedule as a PDF."
   },
   "familievern": {
     "hero": {
