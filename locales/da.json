@@ -527,19 +527,19 @@
       "label": "Udstyrslister",
       "title": "Regnjakken der altid er i det forkerte hus",
       "situation": "Et barn møder op i skolen uden regntøj, fordi ingen var sikre på, hvilket hjem der havde det. Små ting som dette skaber unødvendig friktion.",
-      "resolution": "Med Lina: Delte udstyrslister viser, hvad der er i hvert hjem. Begge forældre kan tjekke og opdatere listen, så jakken følger barnet."
+      "resolution": "Med Lina: Delte udstyrslister viser, hvad der er i hvert hjem. Listen holdes opdateret, så jakken følger barnet."
     },
     "s3": {
       "label": "Tråde",
       "title": "Skolearrangementet der forsvandt i en beskedtråd",
       "situation": "Skolen sender information om et forældremøde. Én forælder videresender det som besked, men detaljerne forsvinder mellem praktiske beskeder om afhentning og aftensmad.",
-      "resolution": "Med Lina: En dedikeret tråd til skole holder alt ét sted. Begge forældre finder det, de har brug for, uden at scrolle gennem urelaterede beskeder."
+      "resolution": "Med Lina: En dedikeret tråd til skole holder alt samlet. Detaljerne er nemme at finde uden at scrolle gennem urelaterede beskeder."
     },
     "s4": {
       "label": "Delt album",
       "title": "Den første cykeltur du næsten gik glip af",
       "situation": "Et barn lærer at cykle hjemme hos den ene forælder. Den anden forælder hører først om det flere dage senere og ser aldrig øjeblikket.",
-      "resolution": "Med Lina: Billeder lægges i det delte album. Begge forældre kan se de store og små øjeblikke, uanset hvilket hjem barnet er i."
+      "resolution": "Med Lina: Billeder lægges i det delte album. Øjeblikkene deles automatisk — uanset hvilket hjem barnet er i."
     },
     "s5": {
       "label": "Samværsplan",
@@ -553,7 +553,7 @@
       "situation": "Et barn har tandpine hjemme hos den ene forælder. Forælderen skal ringe tandlægen, men har ikke nummeret — det var gemt i den anden forælders telefon.",
       "resolution": "Med Lina: Delte kontakter betyder, at begge forældre har tandlæge-, læge- og skolenumre tilgængelige hele tiden."
     },
-    "closing": "Det er ikke dramatiske problemer. Det er de stille, hverdagslige øjeblikke, hvor ét fælles sted sparer tid, reducerer stress og holder fokus på barnet."
+    "closing": "Det er ikke dramatiske problemer. Det er de stille, hverdagslige øjeblikke, hvor et fælles overblik sparer tid, reducerer stress og holder fokus på barnet."
   },
   "termsSummary": {
     "heading": "Resumé af vilkårene",

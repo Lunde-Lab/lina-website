@@ -527,19 +527,19 @@
       "label": "Varustelistat",
       "title": "Sadetakki, joka on aina väärässä kodissa",
       "situation": "Lapsi saapuu kouluun ilman sadetakkia, koska kukaan ei tiennyt, kummassa kodissa se oli. Pienet asiat kuten tämä luovat turhaa kitkaa.",
-      "resolution": "Linalla: Jaetut varustelistat näyttävät, mitä on missäkin kodissa. Molemmat vanhemmat voivat tarkistaa ja päivittää listaa, jotta takki seuraa lasta."
+      "resolution": "Linalla: Jaetut varustelistat näyttävät, mitä on missäkin kodissa. Lista pysyy ajan tasalla, joten takki seuraa lasta."
     },
     "s3": {
       "label": "Keskusteluketjut",
       "title": "Koulutapahtuma, joka hautautui viesteihin",
       "situation": "Koulu lähettää tietoa vanhempainillasta. Toinen vanhempi välittää sen viestillä, mutta yksityiskohdat katoavat käytännön viestien sekaan hakuajoista ja päivällisistä.",
-      "resolution": "Linalla: Oma keskusteluketju koululle pitää kaiken yhdessä paikassa. Molemmat vanhemmat löytävät tarvitsemansa selaamatta asiattomia viestejä."
+      "resolution": "Linalla: Oma keskusteluketju koululle pitää kaiken koossa. Yksityiskohdat löytyvät helposti ilman asiattomien viestien selaamista."
     },
     "s4": {
       "label": "Jaettu albumi",
       "title": "Ensimmäinen pyöräretki, josta meinasit jäädä paitsi",
       "situation": "Lapsi oppii ajamaan pyörällä toisessa kodissa. Toinen vanhempi kuulee siitä vasta päiviä myöhemmin eikä näe hetkeä koskaan.",
-      "resolution": "Linalla: Kuvat menevät jaettuun albumiin. Molemmat vanhemmat voivat nähdä suuret ja pienet hetket riippumatta siitä, kummassa kodissa lapsi on."
+      "resolution": "Linalla: Kuvat menevät jaettuun albumiin. Hetket jakautuvat automaattisesti — riippumatta siitä, kummassa kodissa lapsi on."
     },
     "s5": {
       "label": "Hoitoaikataulu",
@@ -553,7 +553,7 @@
       "situation": "Lapsella on hammassärkyä toisessa kodissa. Vanhemman pitää soittaa hammaslääkärille, mutta numero on tallennettuna toisen vanhemman puhelimeen.",
       "resolution": "Linalla: Jaetut yhteystiedot tarkoittavat, että molemmilla vanhemmilla on hammaslääkärin, lääkärin ja koulun numerot aina saatavilla."
     },
-    "closing": "Nämä eivät ole dramaattisia ongelmia. Ne ovat hiljaisia, arkisia hetkiä, joissa yksi yhteinen paikka säästää aikaa, vähentää stressiä ja pitää fokuksen lapsessa."
+    "closing": "Nämä eivät ole dramaattisia ongelmia. Ne ovat hiljaisia, arkisia hetkiä, joissa yhteinen kokonaiskuva säästää aikaa, vähentää stressiä ja pitää fokuksen lapsessa."
   },
   "termsSummary": {
     "heading": "Yhteenveto käyttöehdoista",

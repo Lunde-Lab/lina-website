@@ -511,19 +511,19 @@
       "label": "Equipment lists",
       "title": "The rain jacket that is always at the wrong house",
       "situation": "A child arrives at school without rain gear because no one was sure which home had it. Small things like this create unnecessary friction.",
-      "resolution": "With Lina: Shared equipment lists show what is at each home. Both parents can check and update the list, so the jacket follows the child."
+      "resolution": "With Lina: Shared equipment lists show what is at each home. The list stays up to date, so the jacket follows the child."
     },
     "s3": {
       "label": "Threads",
       "title": "The school event buried in a text chain",
       "situation": "School sends information about a parents' meeting. One parent forwards it by text, but the details get lost between practical messages about pickup and dinner.",
-      "resolution": "With Lina: A dedicated thread for school keeps everything in one place. Both parents find what they need without scrolling through unrelated messages."
+      "resolution": "With Lina: A dedicated thread for school keeps everything together. Details are easy to find without scrolling through unrelated messages."
     },
     "s4": {
       "label": "Shared album",
       "title": "The first bicycle ride you almost missed",
       "situation": "A child learns to ride a bicycle at one home. The other parent only hears about it days later and never sees the moment.",
-      "resolution": "With Lina: Photos go into the shared album. Both parents can see the big and small moments, regardless of which home the child is in."
+      "resolution": "With Lina: Photos go into the shared album. Moments are shared automatically — regardless of which home the child is in."
     },
     "s5": {
       "label": "Care schedule",
@@ -537,7 +537,7 @@
       "situation": "A child has a toothache at one home. The parent needs to call the dentist but does not have the number — it was saved in the other parent's phone.",
       "resolution": "With Lina: Shared contacts mean both parents have the dentist, doctor, and school numbers available at all times."
     },
-    "closing": "These are not dramatic problems. They are the quiet, everyday moments where having one shared place saves time, reduces stress, and keeps the focus on the child."
+    "closing": "These are not dramatic problems. They are the quiet, everyday moments where a shared overview saves time, reduces stress, and keeps the focus on the child."
   },
   "termsSummary": {
     "heading": "Terms summary",

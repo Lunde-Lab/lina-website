@@ -527,19 +527,19 @@
       "label": "Utrustningslistor",
       "title": "Regnjackan som alltid är i fel hus",
       "situation": "Ett barn kommer till skolan utan regnkläder för att ingen var säker på vilket hem som hade dem. Små saker som detta skapar onödig friktion.",
-      "resolution": "Med Lina: Delade utrustningslistor visar vad som finns i varje hem. Båda föräldrarna kan kontrollera och uppdatera listan, så jackan följer barnet."
+      "resolution": "Med Lina: Delade utrustningslistor visar vad som finns i varje hem. Listan hålls uppdaterad, så jackan följer barnet."
     },
     "s3": {
       "label": "Trådar",
       "title": "Skolevenemanget som försvann i en meddelandetråd",
       "situation": "Skolan skickar information om ett föräldramöte. En förälder vidarebefordrar det via sms, men detaljerna försvinner bland praktiska meddelanden om hämtning och middag.",
-      "resolution": "Med Lina: En dedikerad tråd för skolan håller allt på ett ställe. Båda föräldrarna hittar det de behöver utan att scrolla genom orelaterade meddelanden."
+      "resolution": "Med Lina: En dedikerad tråd för skolan håller allt samlat. Detaljerna är lätta att hitta utan att scrolla genom orelaterade meddelanden."
     },
     "s4": {
       "label": "Delat album",
       "title": "Den första cykelturen du nästan missade",
       "situation": "Ett barn lär sig cykla hemma hos en förälder. Den andra föräldern hör om det först flera dagar senare och ser aldrig ögonblicket.",
-      "resolution": "Med Lina: Foton hamnar i det delade albumet. Båda föräldrarna kan se de stora och små ögonblicken, oavsett vilket hem barnet är i."
+      "resolution": "Med Lina: Foton hamnar i det delade albumet. Stunderna delas automatiskt — oavsett vilket hem barnet är i."
     },
     "s5": {
       "label": "Omsorgsschema",
@@ -553,7 +553,7 @@
       "situation": "Ett barn har tandvärk hemma hos en förälder. Föräldern behöver ringa tandläkaren men har inte numret — det var sparat i den andra förälderns telefon.",
       "resolution": "Med Lina: Delade kontakter innebär att båda föräldrarna har tandläkare, läkare och skolnummer tillgängliga hela tiden."
     },
-    "closing": "Det här är inte dramatiska problem. Det är de stilla, vardagliga ögonblicken där en gemensam plats sparar tid, minskar stress och håller fokus på barnet."
+    "closing": "Det här är inte dramatiska problem. Det är de stilla, vardagliga ögonblicken där en gemensam översikt sparar tid, minskar stress och håller fokus på barnet."
   },
   "termsSummary": {
     "heading": "Sammanfattning av villkoren",
