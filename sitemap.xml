@@ -1,63 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://getlina.app/</loc>
-    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/"/>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://getlina.app/pricing/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://getlina.app/care-schedule/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/care-schedule/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/care-schedule/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/care-schedule/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/care-schedule/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/care-schedule/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/care-schedule/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://getlina.app/care-agreement/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/care-agreement/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/care-agreement/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/care-agreement/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/care-agreement/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/care-agreement/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/care-agreement/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/professionals.html</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/professionals.html"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/professionals.html"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/professionals.html"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/professionals.html"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/professionals.html"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/professionals.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/about/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/about/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/about/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/about/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/about/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/about/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/about/"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getlina.app/faq/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/faq/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/faq/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/faq/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/faq/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/faq/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/faq/"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getlina.app/professionals.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getlina.app/about/</loc>
+    <loc>https://getlina.app/pricing/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/pricing/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/pricing/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/pricing/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/pricing/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/pricing/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/pricing/"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getlina.app/stories/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/stories/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/stories/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/stories/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/stories/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/stories/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/stories/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://getlina.app/contact.html</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/contact.html"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/contact.html"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/contact.html"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/contact.html"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/contact.html"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/contact.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://getlina.app/account-deletion.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://getlina.app/privacy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://getlina.app/terms/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
 </urlset>

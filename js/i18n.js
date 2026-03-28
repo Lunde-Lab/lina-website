@@ -13,6 +13,25 @@ async function load(lang) {
   return cache[lang];
 }
 
+/**
+ * Detect language from URL path.
+ * /en/..., /sv/..., /da/..., /fi/... → that language code.
+ * Anything else (no prefix) → 'no'.
+ */
+function detectLang() {
+  const first = window.location.pathname.split('/').filter(Boolean)[0];
+  const urlLangs = ['en', 'sv', 'da', 'fi'];
+  return urlLangs.includes(first) ? first : 'no';
+}
+
+/**
+ * Apply locale to dynamic/interactive elements.
+ * Static page content (headings, paragraphs, nav links) is already
+ * pre-rendered by build-i18n.js, so this only has meaningful work to
+ * do for elements created by JavaScript at runtime (e.g. care-schedule
+ * labels, dynamic form placeholders).
+ * Title and meta tags are NOT updated here — they are pre-rendered.
+ */
 function apply(t) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const val = get(t, el.dataset.i18n);
@@ -26,30 +45,6 @@ function apply(t) {
     const val = get(t, el.dataset.i18nPlaceholder);
     if (val != null) el.setAttribute('placeholder', val);
   });
-  // Support per-page title key via <html data-i18n-title="cs.pageTitle">
-  const titleKey = document.documentElement.dataset.i18nTitle || 'page.title';
-  const title = get(t, titleKey);
-  if (title) document.title = title;
-
-  // Update meta description
-  const descKey = document.documentElement.dataset.i18nDesc || 'page.description';
-  const desc = get(t, descKey);
-  if (desc) {
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', desc);
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) ogDesc.setAttribute('content', desc);
-    const twDesc = document.querySelector('meta[name="twitter:description"]');
-    if (twDesc) twDesc.setAttribute('content', desc);
-  }
-
-  // Update og:title and twitter:title from document.title
-  if (title) {
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.setAttribute('content', title);
-    const twTitle = document.querySelector('meta[name="twitter:title"]');
-    if (twTitle) twTitle.setAttribute('content', title);
-  }
 }
 
 async function setLang(lang) {
@@ -64,11 +59,5 @@ async function setLang(lang) {
 window.linaSetLang = setLang;
 
 document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('lina-lang');
-  const rawBrowser = navigator.language.split('-')[0];
-  const browser = rawBrowser === 'nb' || rawBrowser === 'nn' ? 'no' : rawBrowser;
-  const initial = SUPPORTED_LANGS.includes(saved) ? saved
-    : SUPPORTED_LANGS.includes(browser) ? browser
-    : DEFAULT_LANG;
-  setLang(initial);
+  setLang(detectLang());
 });
