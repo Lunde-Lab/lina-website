@@ -70,6 +70,18 @@ const SOURCE_FILES = [
     priority: '0.6',
     hasDropdown: true,
   },
+  {
+    src: 'blog/utstyr-to-hjem/index.html',
+    urlPath: '/blog/utstyr-to-hjem/',
+    langUrls: {
+      en: '/blog/what-kids-need/',
+      sv: '/blog/vad-barnet-behover/',
+      da: '/blog/hvad-barnet-har-brug-for/',
+      fi: '/blog/mita-lapsi-tarvitsee/',
+    },
+    priority: '0.6',
+    hasDropdown: true,
+  },
 ];
 
 // Exact internal hrefs that should receive a /LANG/ prefix in generated files.
@@ -88,6 +100,8 @@ const INTERNAL_HREFS = [
   '/faq/',
   '/blog/',
   '/blog',
+  '/blog/utstyr-to-hjem/',
+  '/blog/utstyr-to-hjem',
   '/blog/byttedag/',
   '/blog/byttedag',
   '/blog/samvaersordninger/',

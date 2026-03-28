@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="da" data-i18n-title="blog3.pageTitle" data-i18n-desc="blog3.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/da/blog/hvad-barnet-har-brug-for/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/utstyr-to-hjem/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/utstyr-to-hjem/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/what-kids-need/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/vad-barnet-behover/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/hvad-barnet-har-brug-for/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/mita-lapsi-tarvitsee/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Hvad barnet har brug for i hvert hjem — Lina</title>
+  <meta name="description" content="En praktisk tjekliste for forældre med delt omsorg — hvad der bør være i begge hjem, hvad der bør følge med barnet, og hvordan man holder styr på det." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://getlina.app/da/blog/hvad-barnet-har-brug-for/" />
+  <meta property="og:title" content="Hvad barnet har brug for i hvert hjem — Lina" />
+  <meta property="og:description" content="En praktisk tjekliste for forældre med delt omsorg — hvad der bør være i begge hjem, hvad der bør følge med barnet, og hvordan man holder styr på det." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hvad barnet har brug for i hvert hjem — Lina" />
+  <meta name="twitter:description" content="En praktisk tjekliste for forældre med delt omsorg — hvad der bør være i begge hjem, hvad der bør følge med barnet, og hvordan man holder styr på det." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .btn-appstore { display: inline-flex; align-items: center; gap: 10px; background: #1a1e23; color: #fff; border-radius: 10px; padding: 11px 18px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; line-height: 1; text-decoration: none; transition: background 0.15s; }
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/da/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/da/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+        <a href="/da/care-agreement/" data-i18n="footer.careAgreement">Samværsaftale</a>
+        <a href="/da/pricing/" data-i18n="footer.pricing">Pris</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">DA</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/blog/utstyr-to-hjem/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/en/blog/what-kids-need/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/sv/blog/vad-barnet-behover/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option active" href="/da/blog/hvad-barnet-har-brug-for/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/mita-lapsi-tarvitsee/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog3.label">Udstyr</span>
+
+      <h1 data-i18n="blog3.title">Hvad barnet har brug for i hvert hjem</h1>
+
+      <p class="article-lead" data-i18n="blog3.intro">Når et barn har to hjem, dukker det samme spørgsmål op igen og igen: er tandbørsten her eller der? Hvor er regntøjet? Har vi nok bleer? Et gennemtænkt overblik over hvad der bør være hvor sparer tid, reducerer frustrationen og giver barnet en mere tryg hverdag.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog3.s1title">Grundudstyr i begge hjem</h2>
+        <p data-i18n="blog3.s1p1">Nogle ting bør være til stede i begge hjem, så barnet slipper for at tænke på at pakke det helt grundlæggende. Tanken er, at barnet kan ankomme til hvert hjem og have det, det har brug for — uden en stor taske.</p>
+        <p data-i18n="blog3.s1p2">Typisk grundudstyr: tandbørste og tandpasta, hårbørste, eget sengetøj, håndklæder, et par indesko, nok tøj til perioden (inklusiv undertøj og strømper) og eventuelt oplader til telefon eller tablet.</p>
+        <p data-i18n="blog3.s1p3">For mindre børn: bleer, sut, drikkedunk, favoritbog eller krammedyr (hvis barnet har flere) og børnesikring hvor det er nødvendigt.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog3.s2title">Ting der bør følge med barnet</h2>
+        <p data-i18n="blog3.s2p1">Alt der kun findes i ét eksemplar — og som barnet har brug for dagligt — bør følge med ved hvert bytte. Det gælder typisk skoletaske, madpakkeudstyr, specifikt tøj til aktiviteter og medicinsk udstyr.</p>
+        <p data-i18n="blog3.s2p2">Medicin og allergiudstyr er særligt vigtigt. Begge forældre bør vide hvilken medicin barnet tager, dosering og hvor udstyret er. Ideelt bør det være i begge hjem — men hvis ikke, skal det altid følge med barnet.</p>
+        <p data-i18n="blog3.s2p3">Favoritkrammedyret eller nussekluden er let at glemme — men kan gøre en stor forskel for barnets tryghed, især ved sengetid i det andet hjem.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog3.s3title">Sæsonbestemt udstyr</h2>
+        <p data-i18n="blog3.s3p1">Behovene ændrer sig med årstiderne. Flyverdragt, vanter og hue om vinteren. Badetøj og solcreme om sommeren. Regntøj og gummistøvler forår og efterår.</p>
+        <p data-i18n="blog3.s3p2">Ikke alt behøver at være i dobbelt — men det hjælper at gennemgå hvad der er brug for i hvert hjem ved sæsonskiftet. En hurtig gennemgang i september og marts kan spare mange morgener med den forkerte vinterjakke.</p>
+        <p data-i18n="blog3.s3p3">Skriv ned hvad der er i hvert hjem, og opdater listen når ting flyttes eller udskiftes.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog3.s4title">Alderstilpassede lister</h2>
+        <p data-i18n="blog3.s4p1">Behovene ændrer sig i takt med at barnet vokser. Et lille barn har brug for bleer og sut. Et skolebarn har brug for rygsæk, gymnastiktøj og måske et instrument. En teenager har brug for oplader, nøgler og penge til bus.</p>
+        <p data-i18n="blog3.s4p2">Lad barnet deltage i processen, når det er gammelt nok. Børn fra syv-otte år kan sagtens have deres egen lille tjekliste, som de bruger inden hvert bytte.</p>
+        <p data-i18n="blog3.s4p3">Teenagere bør i høj grad klare dette selv, men det hjælper stadig at forældrene har et fælles overblik — især for medicinsk udstyr, dokumenter og ting der er dyre at erstatte.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog3.s5title">Undgå at barnet bliver budbringer</h2>
+        <p data-i18n="blog3.s5p1">Et almindeligt mønster er, at barnet bliver den der husker og transporterer information mellem hjemmene. 'Sig til far at…' eller 'husk at tage med…' lægger ansvar på barnet, som egentlig hører til forældrene.</p>
+        <p data-i18n="blog3.s5p2">En fælles udstyrsliste, som begge forældre kan se og opdatere, fjerner dette ansvar fra barnet. Forældrene tjekker listen — barnet slipper for at huske alt.</p>
+        <p data-i18n="blog3.s5p3">Det samme gælder for beskeder. Praktisk information bør gå direkte mellem forældrene, ikke via barnet.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog3.s6title">Sådan holder du styr på det</h2>
+        <p data-i18n="blog3.s6p1">Nøglen er at have ét fælles sted, hvor begge forældre kan se hvad der er i hvert hjem. Uanset om det er en app, et regneark eller en simpel liste på køleskabet — det vigtigste er at begge har adgang.</p>
+        <p data-i18n="blog3.s6p2">Opdater listen regelmæssigt. Tøj der er blevet for lille, ødelagt udstyr og sæsonændringer bør fanges op, før de bliver et problem en travl morgen.</p>
+        <p data-i18n="blog3.s6p3">Betragt listen som et praktisk værktøj — ikke som kontrol. Målet er at barnet har det, det har brug for, uanset hvilket hjem det er i.</p>
+      </div>
+
+      <div class="article-cta">
+        <h2 data-i18n="blog3.ctaTitle">Fælles udstyrslister for begge hjem</h2>
+        <p data-i18n="blog3.ctaDesc">Linas fælles udstyrslister lader begge forældre se hvad der er i hvert hjem — og opdatere i realtid. Så udstyret følger barnet.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Hent på App Store" data-i18n-aria="nav.appstoreAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Hent på App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Hent på Google Play" data-i18n-aria="hero.ctaPlayAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Hent på Google Play</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/da/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+          <a href="/da/care-agreement/" data-i18n="footer.careAgreement">Samværsaftale</a>
+          <a href="/da/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/da/professionals.html" data-i18n="footer.familievern">Fagfolk</a>
+          <a href="/da/stories/" data-i18n="footer.stories">Hverdagsscenarier</a>
+          <a href="/da/pricing/" data-i18n="footer.pricing">Pris</a>
+          <a href="/da/about/" data-i18n="footer.about">Om Lina</a>
+          <a href="/da/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/da/terms/" data-i18n="footer.terms">Vilkår for brug</a>
+          <a href="/da/privacy/" data-i18n="footer.privacy">Privatlivspolitik</a>
+          <a href="/da/contact.html" data-i18n="footer.contact">Kontakt</a>
+          <a href="/da/account-deletion.html" data-i18n="footer.accountDeletion">Sletning af konto</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+  </script>
+
+</body>
+</html>

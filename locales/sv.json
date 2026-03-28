@@ -706,7 +706,10 @@
     "a1desc": "En översikt av de vanligaste modellerna — varannan vecka, 3-4-4-3, 2-2-5-5 och andra. Vad passar för olika åldersgrupper?",
     "a2label": "Överlämning",
     "a2title": "Överlämningsdag — så gör du bytet enklare",
-    "a2desc": "Praktiska tips för smidigare överlämningar mellan hemmen."
+    "a2desc": "Praktiska tips för smidigare överlämningar mellan hemmen.",
+    "a3label": "Utrustning",
+    "a3title": "Vad barnet behöver i varje hem",
+    "a3desc": "En praktisk checklista — vad som bör finnas i båda hemmen och vad som bör följa med barnet."
   },
   "blog2": {
     "pageTitle": "Överlämningsdag — så gör du bytet enklare | Lina",
@@ -740,6 +743,40 @@
     "s6p3": "En gemensam översikt över utrustning, medicinsk info och kontakter minskar antalet frågor vid varje byte — och låter barnet slippa vara budbärare mellan hemmen.",
     "ctaTitle": "Håll koll mellan hemmen",
     "ctaDesc": "Lina samlar utrustningslistor, barnuppgifter och kontakter på ett gemensamt ställe — så att båda föräldrarna har det de behöver vid varje byte.",
+    "ctaCta": "Ladda ner Lina"
+  },
+  "blog3": {
+    "pageTitle": "Vad barnet behöver i varje hem — Lina",
+    "pageDesc": "En praktisk checklista för föräldrar med delad omsorg — vad som bör finnas i båda hemmen, vad som bör följa med barnet och hur man håller koll.",
+    "label": "Utrustning",
+    "title": "Vad barnet behöver i varje hem",
+    "intro": "När ett barn har två hem dyker samma fråga upp om och om igen: är tandborsten här eller där? Var är regnkläderna? Har vi tillräckligt med blöjor? En genomtänkt översikt över vad som bör finnas var sparar tid, minskar frustrationen och ger barnet en tryggare vardag.",
+    "s1title": "Grundutrustning i båda hemmen",
+    "s1p1": "Vissa saker bör finnas i båda hemmen så att barnet slipper tänka på att packa det mest grundläggande. Tanken är att barnet ska kunna komma till varje hem och ha det som behövs — utan en stor väska.",
+    "s1p2": "Typisk grundutrustning: tandborste och tandkräm, hårborste, eget sänglinne, handdukar, ett par inneskor, tillräckligt med kläder för perioden (inklusive underkläder och strumpor) och eventuellt laddare till telefon eller surfplatta.",
+    "s1p3": "För yngre barn: blöjor, napp, dricksflaska, favoritbok eller gosedjur (om barnet har flera) och barnsäkring där det behövs.",
+    "s2title": "Saker som bör följa med barnet",
+    "s2p1": "Allt som bara finns i ett exemplar — och som barnet behöver dagligen — bör följa med vid varje byte. Det gäller vanligtvis skolväska, matlåda, specifika kläder för aktiviteter och medicinsk utrustning.",
+    "s2p2": "Mediciner och allergiutrustning är särskilt viktiga. Båda föräldrarna bör veta vilka mediciner barnet använder, dosering och var utrustningen finns. Helst bör det finnas i båda hemmen — men om inte, måste det alltid följa med barnet.",
+    "s2p3": "Favoritgosedjuret eller snuttefilten är lätt att glömma — men kan göra stor skillnad för barnets trygghet, särskilt vid insomning i det andra hemmet.",
+    "s3title": "Säsongsanpassad utrustning",
+    "s3p1": "Behoven förändras med årstiderna. Overall, vantar och mössa på vintern. Badkläder och solskydd på sommaren. Regnkläder och gummistövlar på våren och hösten.",
+    "s3p2": "Allt behöver inte dubbleras — men det hjälper att gå igenom vad som behövs i varje hem vid säsongsbytet. En snabb genomgång i september och mars kan spara många morgnar utan rätt vinterjacka.",
+    "s3p3": "Skriv ner vad som finns i varje hem och uppdatera listan när saker flyttas eller ersätts.",
+    "s4title": "Åldersanpassade listor",
+    "s4p1": "Behoven förändras när barnet växer. Ett litet barn behöver blöjor och napp. Ett skolbarn behöver ryggsäck, gympakläder och kanske ett instrument. En tonåring behöver laddare, nycklar och bussbiljett.",
+    "s4p2": "Låt barnet delta i processen när det är gammalt nog. Barn från sju-åtta år kan gärna ha en egen liten checklista att använda innan varje byte.",
+    "s4p3": "Tonåringar bör i stor utsträckning hantera detta själva, men det hjälper ändå att föräldrarna har en gemensam översikt — särskilt för medicinsk utrustning, dokument och saker som är dyra att ersätta.",
+    "s5title": "Undvik att barnet blir budbärare",
+    "s5p1": "Ett vanligt mönster är att barnet blir den som minns och transporterar information mellan hemmen. 'Säg till pappa att…' eller 'kom ihåg att ta med…' lägger ansvar på barnet som egentligen tillhör föräldrarna.",
+    "s5p2": "En gemensam utrustningslista som båda föräldrarna kan se och uppdatera tar bort detta ansvar från barnet. Föräldrarna kollar listan — barnet slipper komma ihåg allt.",
+    "s5p3": "Samma sak gäller för beskeder. Praktisk information bör gå direkt mellan föräldrarna, inte via barnet.",
+    "s6title": "Hur man håller koll",
+    "s6p1": "Nyckeln är att ha ett gemensamt ställe där båda föräldrarna kan se vad som finns i varje hem. Oavsett om det är en app, ett kalkylblad eller en enkel lista på kylskåpet — det viktigaste är att båda har tillgång.",
+    "s6p2": "Uppdatera listan regelbundet. Kläder som blivit för små, trasig utrustning och säsongsändringar bör fångas upp innan de blir ett problem en stressig morgon.",
+    "s6p3": "Behandla listan som ett praktiskt verktyg — inte som kontroll. Målet är att barnet har det som behövs, oavsett vilket hem det är i.",
+    "ctaTitle": "Gemensamma utrustningslistor för båda hemmen",
+    "ctaDesc": "Linas gemensamma utrustningslistor låter båda föräldrarna se vad som finns i varje hem — och uppdatera i realtid. Så att utrustningen följer barnet.",
     "ctaCta": "Ladda ner Lina"
   }
 }

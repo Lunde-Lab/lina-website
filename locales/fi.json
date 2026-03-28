@@ -706,7 +706,10 @@
     "a1desc": "Yleiskatsaus yleisimpiin malleihin — vuoroviikoin, 3-4-4-3, 2-2-5-5 ja muut. Mikä sopii eri ikäryhmille?",
     "a2label": "Vaihto",
     "a2title": "Vaihtopäivä — näin teet siirtymisestä helpompaa",
-    "a2desc": "Käytännön vinkkejä sujuvampiin vaihtotilanteisiin kotien välillä."
+    "a2desc": "Käytännön vinkkejä sujuvampiin vaihtotilanteisiin kotien välillä.",
+    "a3label": "Varusteet",
+    "a3title": "Mitä lapsi tarvitsee kummassakin kodissa",
+    "a3desc": "Käytännön tarkistuslista — mitä kummassakin kodissa pitäisi olla ja minkä pitäisi kulkea lapsen mukana."
   },
   "blog2": {
     "pageTitle": "Vaihtopäivä — näin teet siirtymisestä helpompaa | Lina",
@@ -740,6 +743,40 @@
     "s6p3": "Yhteinen näkymä varusteisiin, terveystietoihin ja yhteystietoihin vähentää kysymysten määrää jokaisessa vaihdossa — ja vapauttaa lapsen toimimasta viestinviejänä kotien välillä.",
     "ctaTitle": "Pidä asiat järjestyksessä kotien välillä",
     "ctaDesc": "Lina kokoaa varustelistat, lapsen tiedot ja yhteystiedot yhteen paikkaan — jotta molemmilla vanhemmilla on tarvittavat tiedot jokaisessa vaihdossa.",
+    "ctaCta": "Lataa Lina"
+  },
+  "blog3": {
+    "pageTitle": "Mitä lapsi tarvitsee kummassakin kodissa — Lina",
+    "pageDesc": "Käytännön tarkistuslista yhteishuoltajavanhemmille — mitä kummassakin kodissa pitäisi olla, minkä pitäisi kulkea lapsen mukana ja miten pitää kirjaa.",
+    "label": "Varusteet",
+    "title": "Mitä lapsi tarvitsee kummassakin kodissa",
+    "intro": "Kun lapsella on kaksi kotia, sama kysymys toistuu yhä uudelleen: onko hammasharja täällä vai tuolla? Missä ovat sadetakki? Onko meillä tarpeeksi vaippoja? Hyvin mietitty yleiskatsaus siitä, mitä kuuluu minne, säästää aikaa, vähentää turhautumista ja tekee lapsen arjesta turvallisempaa.",
+    "s1title": "Perusvarusteet molemmissa kodeissa",
+    "s1p1": "Joidenkin tavaroiden tulisi löytyä molemmista kodeista, jotta lapsen ei tarvitse miettiä perustavaroiden pakkaamista. Ajatuksena on, että lapsi voi saapua kumpaankin kotiin ja hänellä on tarvitsemansa — ilman suurta laukkua.",
+    "s1p2": "Tyypillisiä perusvarusteita: hammasharja ja hammastahna, hiusharja, omat lakanat, pyyhkeet, sisäkengät, riittävästi vaatteita jaksoa varten (mukaan lukien alusvaatteet ja sukat) sekä tarvittaessa puhelimen tai tabletin laturi.",
+    "s1p3": "Pienemmille lapsille: vaipat, tutti, juomapullo, lempikirja tai pehmolelu (jos lapsella on useita) ja lapsilukot tarvittaessa.",
+    "s2title": "Tavarat jotka kulkevat lapsen mukana",
+    "s2p1": "Kaiken, mitä on vain yksi kappale — ja mitä lapsi tarvitsee päivittäin — tulisi kulkea mukana jokaisessa vaihdossa. Tähän kuuluvat tyypillisesti koululaukku, eväsrasiat, tiettyjen harrastusten vaatteet ja lääkintävälineet.",
+    "s2p2": "Lääkkeet ja allergiavarusteet ovat erityisen tärkeitä. Molempien vanhempien tulisi tietää, mitä lääkkeitä lapsi käyttää, annostus ja missä välineet ovat. Ihanteellisesti niitä olisi molemmissa kodeissa — mutta jos ei, niiden on aina kuljettava lapsen mukana.",
+    "s2p3": "Lempiuinelu tai uniriepu on helppo unohtaa — mutta voi tehdä suuren eron lapsen turvallisuudentunteeseen, erityisesti nukkumaanmenoaikaan toisessa kodissa.",
+    "s3title": "Kausivarusteet",
+    "s3p1": "Tarpeet muuttuvat vuodenaikojen mukaan. Toppahaalari, lapaset ja pipo talvella. Uimapuku ja aurinkovoide kesällä. Sadetakki ja kumisaappaat keväällä ja syksyllä.",
+    "s3p2": "Kaikkea ei tarvitse hankkia kahteen kertaan — mutta on hyödyllistä käydä läpi, mitä kummassakin kodissa tarvitaan kauden vaihtuessa. Nopea tarkistus syys- ja maaliskuussa voi säästää monta aamua ilman oikeaa talvitakkia.",
+    "s3p3": "Kirjoita ylös mitä kummassakin kodissa on ja päivitä listaa kun tavaroita siirretään tai vaihdetaan.",
+    "s4title": "Ikäryhmittäiset listat",
+    "s4p1": "Tarpeet muuttuvat lapsen kasvaessa. Pieni lapsi tarvitsee vaippoja ja tutin. Koululainen tarvitsee repun, jumppavaatteet ja ehkä soittimen. Teini tarvitsee laturin, avaimet ja bussirahaa.",
+    "s4p2": "Anna lapsen osallistua prosessiin kun hän on tarpeeksi vanha. Noin 7–8-vuotiaat lapset voivat hyvin pitää omaa pientä tarkistuslistaa, jota he käyttävät ennen jokaista vaihtoa.",
+    "s4p3": "Teini-ikäisten tulisi pääosin hoitaa tämä itse, mutta vanhempien yhteinen yleiskatsaus on silti hyödyllinen — erityisesti lääkintävälineiden, asiakirjojen ja kalliiden tavaroiden osalta.",
+    "s5title": "Vältä lapsen käyttämistä viestinviejänä",
+    "s5p1": "Yleinen kaava on, että lapsesta tulee se, joka muistaa ja kuljettaa tietoa kotien välillä. 'Sano isälle että…' tai 'muista ottaa mukaan…' asettaa lapselle vastuun, joka oikeastaan kuuluu vanhemmille.",
+    "s5p2": "Yhteinen varustlista, jota molemmat vanhemmat voivat katsoa ja päivittää, poistaa tämän vastuun lapselta. Vanhemmat tarkistavat listan — lapsen ei tarvitse muistaa kaikkea.",
+    "s5p3": "Sama pätee viesteihin. Käytännön tiedon tulisi kulkea suoraan vanhempien välillä, ei lapsen kautta.",
+    "s6title": "Miten pitää kirjaa",
+    "s6p1": "Avain on yksi yhteinen paikka, jossa molemmat vanhemmat näkevät mitä kummassakin kodissa on. Olipa se sovellus, laskentataulukko tai yksinkertainen lista jääkaapin ovessa — tärkeintä on, että molemmilla on pääsy.",
+    "s6p2": "Päivitä listaa säännöllisesti. Liian pienet vaatteet, rikkoutunut varusteet ja kausimuutokset tulisi huomata ennen kuin niistä tulee ongelma kiireisena aamuna.",
+    "s6p3": "Suhtaudu listaan käytännön työkaluna — ei kontrollina. Tavoitteena on, että lapsella on tarvitsemansa riippumatta siitä, kummassa kodissa hän on.",
+    "ctaTitle": "Yhteiset varustelistat molemmille kodeille",
+    "ctaDesc": "Linan yhteiset varustelistat antavat molempien vanhempien nähdä, mitä kummassakin kodissa on — ja päivittää reaaliajassa. Jotta varusteet seuraavat lasta.",
     "ctaCta": "Lataa Lina"
   }
 }

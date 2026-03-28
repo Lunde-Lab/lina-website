@@ -706,7 +706,10 @@
     "a1desc": "En oversigt over de mest almindelige modeller — hver anden uge, 3-4-4-3, 2-2-5-5 og andre. Hvad passer til forskellige aldersgrupper?",
     "a2label": "Overlevering",
     "a2title": "Byttedagen — sådan gør du overleveringen nemmere",
-    "a2desc": "Konkrete tips til at gøre overleveringen tryggere og mere forudsigelig for barnet."
+    "a2desc": "Konkrete tips til at gøre overleveringen tryggere og mere forudsigelig for barnet.",
+    "a3label": "Udstyr",
+    "a3title": "Hvad barnet har brug for i hvert hjem",
+    "a3desc": "En praktisk tjekliste — hvad der bør være i begge hjem, og hvad der bør følge med barnet."
   },
   "blog2": {
     "pageTitle": "Byttedagen — sådan gør du overleveringen nemmere | Lina",
@@ -740,6 +743,40 @@
     "s6p3": "En fælles oversigt over udstyr, medicinsk info og kontakter reducerer antallet af spørgsmål ved hvert bytte — og lader barnet slippe for at være budbringer mellem hjemmene.",
     "ctaTitle": "Hold overblikket mellem hjemmene",
     "ctaDesc": "Lina samler udstyrslister, børneinformation og kontakter ét fælles sted — så begge forældre har det, de har brug for, ved hvert bytte.",
+    "ctaCta": "Download Lina"
+  },
+  "blog3": {
+    "pageTitle": "Hvad barnet har brug for i hvert hjem — Lina",
+    "pageDesc": "En praktisk tjekliste for forældre med delt omsorg — hvad der bør være i begge hjem, hvad der bør følge med barnet, og hvordan man holder styr på det.",
+    "label": "Udstyr",
+    "title": "Hvad barnet har brug for i hvert hjem",
+    "intro": "Når et barn har to hjem, dukker det samme spørgsmål op igen og igen: er tandbørsten her eller der? Hvor er regntøjet? Har vi nok bleer? Et gennemtænkt overblik over hvad der bør være hvor sparer tid, reducerer frustrationen og giver barnet en mere tryg hverdag.",
+    "s1title": "Grundudstyr i begge hjem",
+    "s1p1": "Nogle ting bør være til stede i begge hjem, så barnet slipper for at tænke på at pakke det helt grundlæggende. Tanken er, at barnet kan ankomme til hvert hjem og have det, det har brug for — uden en stor taske.",
+    "s1p2": "Typisk grundudstyr: tandbørste og tandpasta, hårbørste, eget sengetøj, håndklæder, et par indesko, nok tøj til perioden (inklusiv undertøj og strømper) og eventuelt oplader til telefon eller tablet.",
+    "s1p3": "For mindre børn: bleer, sut, drikkedunk, favoritbog eller krammedyr (hvis barnet har flere) og børnesikring hvor det er nødvendigt.",
+    "s2title": "Ting der bør følge med barnet",
+    "s2p1": "Alt der kun findes i ét eksemplar — og som barnet har brug for dagligt — bør følge med ved hvert bytte. Det gælder typisk skoletaske, madpakkeudstyr, specifikt tøj til aktiviteter og medicinsk udstyr.",
+    "s2p2": "Medicin og allergiudstyr er særligt vigtigt. Begge forældre bør vide hvilken medicin barnet tager, dosering og hvor udstyret er. Ideelt bør det være i begge hjem — men hvis ikke, skal det altid følge med barnet.",
+    "s2p3": "Favoritkrammedyret eller nussekluden er let at glemme — men kan gøre en stor forskel for barnets tryghed, især ved sengetid i det andet hjem.",
+    "s3title": "Sæsonbestemt udstyr",
+    "s3p1": "Behovene ændrer sig med årstiderne. Flyverdragt, vanter og hue om vinteren. Badetøj og solcreme om sommeren. Regntøj og gummistøvler forår og efterår.",
+    "s3p2": "Ikke alt behøver at være i dobbelt — men det hjælper at gennemgå hvad der er brug for i hvert hjem ved sæsonskiftet. En hurtig gennemgang i september og marts kan spare mange morgener med den forkerte vinterjakke.",
+    "s3p3": "Skriv ned hvad der er i hvert hjem, og opdater listen når ting flyttes eller udskiftes.",
+    "s4title": "Alderstilpassede lister",
+    "s4p1": "Behovene ændrer sig i takt med at barnet vokser. Et lille barn har brug for bleer og sut. Et skolebarn har brug for rygsæk, gymnastiktøj og måske et instrument. En teenager har brug for oplader, nøgler og penge til bus.",
+    "s4p2": "Lad barnet deltage i processen, når det er gammelt nok. Børn fra syv-otte år kan sagtens have deres egen lille tjekliste, som de bruger inden hvert bytte.",
+    "s4p3": "Teenagere bør i høj grad klare dette selv, men det hjælper stadig at forældrene har et fælles overblik — især for medicinsk udstyr, dokumenter og ting der er dyre at erstatte.",
+    "s5title": "Undgå at barnet bliver budbringer",
+    "s5p1": "Et almindeligt mønster er, at barnet bliver den der husker og transporterer information mellem hjemmene. 'Sig til far at…' eller 'husk at tage med…' lægger ansvar på barnet, som egentlig hører til forældrene.",
+    "s5p2": "En fælles udstyrsliste, som begge forældre kan se og opdatere, fjerner dette ansvar fra barnet. Forældrene tjekker listen — barnet slipper for at huske alt.",
+    "s5p3": "Det samme gælder for beskeder. Praktisk information bør gå direkte mellem forældrene, ikke via barnet.",
+    "s6title": "Sådan holder du styr på det",
+    "s6p1": "Nøglen er at have ét fælles sted, hvor begge forældre kan se hvad der er i hvert hjem. Uanset om det er en app, et regneark eller en simpel liste på køleskabet — det vigtigste er at begge har adgang.",
+    "s6p2": "Opdater listen regelmæssigt. Tøj der er blevet for lille, ødelagt udstyr og sæsonændringer bør fanges op, før de bliver et problem en travl morgen.",
+    "s6p3": "Betragt listen som et praktisk værktøj — ikke som kontrol. Målet er at barnet har det, det har brug for, uanset hvilket hjem det er i.",
+    "ctaTitle": "Fælles udstyrslister for begge hjem",
+    "ctaDesc": "Linas fælles udstyrslister lader begge forældre se hvad der er i hvert hjem — og opdatere i realtid. Så udstyret følger barnet.",
     "ctaCta": "Download Lina"
   }
 }
