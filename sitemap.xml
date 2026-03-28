@@ -199,4 +199,59 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://getlina.app/blog/byttedag/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/handover-day/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/overlamningsdag/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/byttedag-tips/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/en/blog/handover-day/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/handover-day/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/overlamningsdag/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/byttedag-tips/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/sv/blog/overlamningsdag/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/handover-day/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/overlamningsdag/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/byttedag-tips/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/da/blog/byttedag-tips/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/handover-day/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/overlamningsdag/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/byttedag-tips/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/fi/blog/vaihtopaiva/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/handover-day/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/overlamningsdag/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/byttedag-tips/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

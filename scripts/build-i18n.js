@@ -58,6 +58,18 @@ const SOURCE_FILES = [
     priority: '0.6',
     hasDropdown: true,
   },
+  {
+    src: 'blog/byttedag/index.html',
+    urlPath: '/blog/byttedag/',
+    langUrls: {
+      en: '/blog/handover-day/',
+      sv: '/blog/overlamningsdag/',
+      da: '/blog/byttedag-tips/',
+      fi: '/blog/vaihtopaiva/',
+    },
+    priority: '0.6',
+    hasDropdown: true,
+  },
 ];
 
 // Exact internal hrefs that should receive a /LANG/ prefix in generated files.
@@ -76,6 +88,8 @@ const INTERNAL_HREFS = [
   '/faq/',
   '/blog/',
   '/blog',
+  '/blog/byttedag/',
+  '/blog/byttedag',
   '/blog/samvaersordninger/',
   '/blog/samvaersordninger',
   '/care-schedule',
