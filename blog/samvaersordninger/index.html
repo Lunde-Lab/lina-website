@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="nb" data-i18n-title="blog1.pageTitle" data-i18n-desc="blog1.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/blog/samvaersordninger/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/samvaersordninger/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/samvaersordninger/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/samvaersordninger/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/samvaersordninger/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/samvaersordninger/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/samvaersordninger/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Samværsordninger forklart — Lina</title>
+  <meta name="description" content="Oversikt over de vanligste samværsordningene for barn med to hjem — annenhver uke, 3-4-4-3, 2-2-5-5 og andre modeller. Hva passer for ulike aldersgrupper?" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://getlina.app/blog/samvaersordninger/" />
+  <meta property="og:title" content="Samværsordninger forklart — Lina" />
+  <meta property="og:description" content="Oversikt over de vanligste samværsordningene for barn med to hjem — annenhver uke, 3-4-4-3, 2-2-5-5 og andre modeller. Hva passer for ulike aldersgrupper?" />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Samværsordninger forklart — Lina" />
+  <meta name="twitter:description" content="Oversikt over de vanligste samværsordningene for barn med to hjem — annenhver uke, 3-4-4-3, 2-2-5-5 og andre modeller. Hva passer for ulike aldersgrupper?" />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 12px 24px;
+      border-radius: 8px;
+      transition: background 0.15s;
+    }
+
+    .btn-primary:hover { background: var(--primary-dark); }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+        <a href="/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
+        <a href="/pricing/" data-i18n="footer.pricing">Pricing</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">NO</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option active" href="/blog/samvaersordninger/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/en/blog/samvaersordninger/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/sv/blog/samvaersordninger/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/blog/samvaersordninger/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/samvaersordninger/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog1.label">Delt omsorg</span>
+
+      <h1 data-i18n="blog1.title">Samværsordninger forklart</h1>
+
+      <p class="article-lead" data-i18n="blog1.intro">Når foreldre deler omsorgen for et barn, er samværsordningen det første som må på plass. Hvordan fordeles tiden mellom hjemmene? Hvilket mønster gir mest forutsigbarhet for barnet? Her er en oversikt over de vanligste modellene — hva de innebærer, og hva som kan passe i ulike situasjoner.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s1title">Annenhver uke (7-7)</h2>
+        <p data-i18n="blog1.s1p1">Barnet bor én uke hos hver forelder, med bytte på en fast dag — vanligvis mandag eller fredag. Dette er den mest utbredte ordningen ved delt fast bosted i Norge.</p>
+        <p data-i18n="blog1.s1p2">Fordelen er enkel struktur og forutsigbarhet. Barnet vet alltid hvilket hjem det skal til. Ulempen er at en uke kan oppleves som lang tid borte fra den ene forelderen, spesielt for mindre barn.</p>
+        <p data-i18n="blog1.s1p3">Passer best for: Skolebarn som tåler lengre perioder borte fra ett hjem. Krever at begge hjem ligger rimelig nær skole og fritidsaktiviteter.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s2title">3-4-4-3-ordningen</h2>
+        <p data-i18n="blog1.s2p1">Barnet er 3 dager hos en forelder, 4 hos den andre, deretter 4 og 3 i neste uke. Mønsteret gjentar seg over to uker og gir en jevn 50/50-fordeling.</p>
+        <p data-i18n="blog1.s2p2">Denne ordningen gir hyppigere kontakt med begge foreldre enn annenhver uke. Barnet er aldri borte fra én forelder mer enn 4 dager i strekk. Til gjengjeld er det flere overleveringer — som kan være krevende hvis samarbeidet er vanskelig.</p>
+        <p data-i18n="blog1.s2p3">Passer best for: Barn i barneskolealder som har behov for hyppig kontakt med begge foreldre. Forutsetter at foreldrene bor i nærheten av hverandre.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s3title">2-2-5-5-ordningen</h2>
+        <p data-i18n="blog1.s3p1">Barnet er hos forelder A mandag og tirsdag, hos forelder B onsdag og torsdag, og annenhver helg (fredag til søndag) hos hver forelder. Resultatet er 50/50 fordeling over to uker.</p>
+        <p data-i18n="blog1.s3p2">Fordelen er at barnet har faste dager hos hver forelder i ukedagene, noe som gir en forutsigbar ukerytme. Ulempen er at helgetilhørigheten varierer, og at det er mange bytter per uke.</p>
+        <p data-i18n="blog1.s3p3">Passer best for: Mindre barn som trenger hyppig kontakt med begge foreldre, men som også har behov for faste ukedagsrutiner.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s4title">Annenhver helg pluss en ukedag</h2>
+        <p data-i18n="blog1.s4p1">Barnet bor fast hos én forelder og er hos den andre annenhver helg (vanligvis fredag til søndag) og én fast ukedag. Fordelingen blir typisk 70/30 eller 60/40.</p>
+        <p data-i18n="blog1.s4p2">Denne ordningen passer når barnet har fast bosted hos én forelder — for eksempel fordi den andre bor langt unna, eller fordi barnets hverdag er tett knyttet til ett nabolag eller én skole.</p>
+        <p data-i18n="blog1.s4p3">Passer best for: Situasjoner der lik fordeling ikke er praktisk gjennomførbart. Kan fungere godt for barn i alle aldre, så lenge samværsforelderen har meningsfull kontakt gjennom uken.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s5title">Hva passer for ulike aldersgrupper</h2>
+        <p data-i18n="blog1.s5p1">Barnets alder er en viktig faktor når dere velger ordning. Små barn (0–3 år) har ofte behov for kortere perioder og hyppigere bytter — det kan bety at en 2-2-5-5 eller tilpasset ordning fungerer bedre enn annenhver uke.</p>
+        <p data-i18n="blog1.s5p2">Barn i barnehagealder (3–6 år) kan vanligvis håndtere 3–4 dager borte fra én forelder. Fra skolealder (6+) fungerer annenhver uke godt for mange familier, fordi barnet har mer selvstendighet og tåler lengre fravær.</p>
+        <p data-i18n="blog1.s5p3">Tenåringer (12+) bør få si sin mening om ordningen. Mange ungdommer foretrekker lengre perioder i hvert hjem fremfor hyppige bytter, fordi det gir mer stabilitet i det sosiale livet.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s6title">Når bør ordningen evalueres</h2>
+        <p data-i18n="blog1.s6p1">En samværsordning er ikke hugget i stein. Barnets behov endrer seg med alderen, og en ordning som fungerte godt for en fireåring, passer ikke nødvendigvis for en tiåring.</p>
+        <p data-i18n="blog1.s6p2">Det kan være lurt å evaluere ordningen minst én gang i året — eller når det skjer større endringer i familiens situasjon, som skolebytte, flytting, eller nye søsken.</p>
+        <p data-i18n="blog1.s6p3">Det viktigste er at barnet opplever forutsigbarhet, at begge foreldre er tilgjengelige, og at praktiske detaljer følger barnet mellom hjemmene.</p>
+      </div>
+
+      <div class="article-cta">
+        <h2 data-i18n="blog1.ctaTitle">Visualiser samværsfordelingen</h2>
+        <p data-i18n="blog1.ctaDesc">Linas samværsplan lar deg klikke inn dagene og se hvordan tiden fordeles uke for uke — med oppsummering av dagfordeling, helgemønstre og antall bytter.</p>
+        <a href="/care-schedule/" class="btn-primary" data-i18n="blog1.ctaCta">Åpne samværsplanen</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+          <a href="/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
+          <a href="/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/professionals.html" data-i18n="footer.familievern">Professionals</a>
+          <a href="/stories/" data-i18n="footer.stories">Stories</a>
+          <a href="/pricing/" data-i18n="footer.pricing">Pricing</a>
+          <a href="/about/" data-i18n="footer.about">About</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/terms/" data-i18n="footer.terms">Terms of Service</a>
+          <a href="/privacy/" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/account-deletion.html" data-i18n="footer.accountDeletion">Account deletion</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+  </script>
+
+</body>
+</html>
