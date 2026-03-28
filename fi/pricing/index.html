@@ -806,12 +806,12 @@
   <script src="/js/i18n.js"></script>
   <script>
   (function () {
-    const switcher = document.getElementById('lang-switcher');
-    const btn = document.getElementById('lang-btn');
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
     if (!switcher || !btn) return;
     btn.addEventListener('click', function(e) {
       e.preventDefault();
-      const open = switcher.classList.toggle('open');
+      var open = switcher.classList.toggle('open');
       btn.setAttribute('aria-expanded', open);
     });
     document.addEventListener('click', function(e) {

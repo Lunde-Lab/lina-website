@@ -799,14 +799,14 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
             </button>
             <div class="phone-frame" id="carousel-frame">
-              <div class="carousel-slide active"><picture><source srcset="assets/images/ThreadsScreen.webp" type="image/webp" /><img src="/assets/images/ThreadsScreen.png" alt="Threads" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/ThreadDetailScreen.webp" type="image/webp" /><img src="/assets/images/ThreadDetailScreen.png" alt="Thread detail" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/AlbumScreen.webp" type="image/webp" /><img src="/assets/images/AlbumScreen.png" alt="Shared album" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/ToolScreen.webp" type="image/webp" /><img src="/assets/images/ToolScreen.png" alt="Tools" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/EquipmentList.webp" type="image/webp" /><img src="/assets/images/EquipmentList.png" alt="Equipment list" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/ContactList.webp" type="image/webp" /><img src="/assets/images/ContactList.png" alt="Contacts" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/ChildList.webp" type="image/webp" /><img src="/assets/images/ChildList.png" alt="Child info" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/CareScheduleApp.webp" type="image/webp" /><img src="/assets/images/CareScheduleApp.png" alt="Care schedule" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide active"><picture><source srcset="/assets/images/ThreadsScreen.webp" type="image/webp" /><img src="/assets/images/ThreadsScreen.png" alt="Threads" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/ThreadDetailScreen.webp" type="image/webp" /><img src="/assets/images/ThreadDetailScreen.png" alt="Thread detail" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/AlbumScreen.webp" type="image/webp" /><img src="/assets/images/AlbumScreen.png" alt="Shared album" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/ToolScreen.webp" type="image/webp" /><img src="/assets/images/ToolScreen.png" alt="Tools" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/EquipmentList.webp" type="image/webp" /><img src="/assets/images/EquipmentList.png" alt="Equipment list" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/ContactList.webp" type="image/webp" /><img src="/assets/images/ContactList.png" alt="Contacts" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/ChildList.webp" type="image/webp" /><img src="/assets/images/ChildList.png" alt="Child info" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/CareScheduleApp.webp" type="image/webp" /><img src="/assets/images/CareScheduleApp.png" alt="Care schedule" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
             </div>
             <button class="carousel-arrow" id="carousel-next" aria-label="Next screenshot">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
@@ -1075,14 +1075,78 @@
     </div>
   </footer>
 
-    <script>
+  <script>
   (function () {
-    const switcher = document.getElementById('lang-switcher');
-    const btn = document.getElementById('lang-btn');
+    const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+    const dotsEl = document.getElementById('carousel-dots');
+    const frame  = document.getElementById('carousel-frame');
+    let current = 0;
+
+    // Build dots
+    slides.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+      btn.setAttribute('aria-label', 'Slide ' + (i + 1));
+      btn.addEventListener('click', () => goTo(i));
+      dotsEl.appendChild(btn);
+    });
+
+    function goTo(n) {
+      slides[current].classList.remove('active');
+      dotsEl.children[current].classList.remove('active');
+      dotsEl.children[current].setAttribute('aria-selected', 'false');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dotsEl.children[current].classList.add('active');
+      dotsEl.children[current].setAttribute('aria-selected', 'true');
+    }
+
+    // Arrow buttons
+    document.getElementById('carousel-prev').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('carousel-next').addEventListener('click', () => goTo(current + 1));
+
+    // Touch / swipe
+    let tx = 0;
+    frame.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+    frame.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - tx;
+      if (Math.abs(dx) > 40) goTo(dx < 0 ? current + 1 : current - 1);
+    }, { passive: true });
+  }());
+  </script>
+  <script src="/js/i18n.js"></script>
+  <script>
+  document.getElementById('fv-contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    try {
+      const res = await fetch('https://formspree.io/f/mjganzgd', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        document.getElementById('fv-success').style.display = 'block';
+      } else {
+        window.location.href = 'mailto:support@getlina.app';
+      }
+    } catch(err) {
+      window.location.href = 'mailto:support@getlina.app';
+    }
+  });
+  </script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
     if (!switcher || !btn) return;
     btn.addEventListener('click', function(e) {
       e.preventDefault();
-      const open = switcher.classList.toggle('open');
+      var open = switcher.classList.toggle('open');
       btn.setAttribute('aria-expanded', open);
     });
     document.addEventListener('click', function(e) {

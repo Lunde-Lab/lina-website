@@ -1,6 +1,18 @@
 #!/usr/bin/env node
 'use strict';
 
+/**
+ * build-i18n.js
+ *
+ * 1. Updates all Norwegian source HTML files (hreflang, absolute asset paths,
+ *    logo link, lang-dropdown → <a> links, minimal lang-switcher script).
+ * 2. Generates pre-rendered copies for en / sv / da / fi.
+ * 3. Writes sitemap.xml with full hreflang support.
+ *
+ * Safety: section-tag counts are verified before every write.
+ * Aborts the affected file (not the whole build) on mismatch.
+ */
+
 const fs   = require('fs');
 const path = require('path');
 
@@ -9,28 +21,28 @@ const path = require('path');
 const ROOT     = path.resolve(__dirname, '..');
 const BASE_URL = 'https://getlina.app';
 const LANGS    = ['en', 'sv', 'da', 'fi'];
+const ALL_LANGS = ['no', ...LANGS];
 
-const LANG_CODE  = { no: 'nb', en: 'en', sv: 'sv', da: 'da', fi: 'fi' };
-const LANG_LABEL = { no: 'NO', en: 'EN', sv: 'SV', da: 'DA', fi: 'FI' };
-const LANG_FLAG  = { no: '🇳🇴', en: '🇬🇧', sv: '🇸🇪', da: '🇩🇰', fi: '🇫🇮' };
-const LANG_NAME  = { no: 'Norsk', en: 'English', sv: 'Svenska', da: 'Dansk', fi: 'Suomi' };
+const LANG_HTMLCODE = { no: 'nb', en: 'en', sv: 'sv', da: 'da', fi: 'fi' };
+const LANG_LABEL    = { no: 'NO', en: 'EN', sv: 'SV', da: 'DA', fi: 'FI' };
+const LANG_FLAG     = { no: '🇳🇴', en: '🇬🇧', sv: '🇸🇪', da: '🇩🇰', fi: '🇫🇮' };
+const LANG_NAME     = { no: 'Norsk', en: 'English', sv: 'Svenska', da: 'Dansk', fi: 'Suomi' };
 
-// Source files with their canonical URL paths and sitemap priorities
 const SOURCE_FILES = [
-  { src: 'index.html',                urlPath: '/',                   priority: '1.0' },
-  { src: 'care-schedule/index.html',  urlPath: '/care-schedule/',     priority: '0.8' },
-  { src: 'care-agreement/index.html', urlPath: '/care-agreement/',    priority: '0.8' },
-  { src: 'professionals.html',        urlPath: '/professionals.html', priority: '0.8' },
-  { src: 'about/index.html',          urlPath: '/about/',             priority: '0.7' },
-  { src: 'faq/index.html',            urlPath: '/faq/',               priority: '0.7' },
-  { src: 'pricing/index.html',        urlPath: '/pricing/',           priority: '0.7' },
-  { src: 'stories/index.html',        urlPath: '/stories/',           priority: '0.6' },
-  { src: 'contact.html',              urlPath: '/contact.html',       priority: '0.5' },
+  { src: 'index.html',                urlPath: '/',                   priority: '1.0', hasDropdown: true  },
+  { src: 'care-schedule/index.html',  urlPath: '/care-schedule/',     priority: '0.8', hasDropdown: true  },
+  { src: 'care-agreement/index.html', urlPath: '/care-agreement/',    priority: '0.7', hasDropdown: true  },
+  { src: 'about/index.html',          urlPath: '/about/',             priority: '0.7', hasDropdown: true  },
+  { src: 'faq/index.html',            urlPath: '/faq/',               priority: '0.7', hasDropdown: true  },
+  { src: 'pricing/index.html',        urlPath: '/pricing/',           priority: '0.8', hasDropdown: true  },
+  { src: 'stories/index.html',        urlPath: '/stories/',           priority: '0.6', hasDropdown: true  },
+  { src: 'professionals.html',        urlPath: '/professionals.html', priority: '0.7', hasDropdown: true  },
+  { src: 'contact.html',              urlPath: '/contact.html',       priority: '0.5', hasDropdown: false },
 ];
 
-// Internal page paths that should receive a language prefix
-const INTERNAL_PATHS = [
-  // Order matters: longer/more-specific first to avoid partial matches
+// Exact internal hrefs that should receive a /LANG/ prefix in generated files.
+// Order: longer/specific paths before shorter ones to avoid partial overlaps.
+const INTERNAL_HREFS = [
   '/care-schedule/',
   '/care-agreement/',
   '/professionals.html',
@@ -39,18 +51,34 @@ const INTERNAL_PATHS = [
   '/stories/',
   '/about/',
   '/faq/',
-  // Paths without trailing slash (some CTAs use these)
   '/care-schedule',
   '/care-agreement',
   '/pricing',
   '/stories',
   '/about',
   '/faq',
-  // Root last (exact match only)
-  '/',
 ];
 
-// ─── Utilities ────────────────────────────────────────────────────────────────
+// The new minimal lang-switcher IIFE (replaces old one with linaSetLang).
+// Deliberately uses `var` to avoid any let/const edge cases in older browsers.
+const NEW_LANG_IIFE = `(function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }())`;
+
+// ─── Utility helpers ─────────────────────────────────────────────────────────
 
 function get(obj, keyPath) {
   return keyPath.split('.').reduce((o, k) => (o != null ? o[k] : undefined), obj);
@@ -60,74 +88,84 @@ function mkdirp(dir) {
   fs.mkdirSync(dir, { recursive: true });
 }
 
-function langUrl(lang, urlPath) {
-  return urlPath === '/' ? `/${lang}/` : `/${lang}${urlPath}`;
+/** URL for a given language + page path */
+function pageUrl(lang, urlPath) {
+  const prefix = lang === 'no' ? '' : `/${lang}`;
+  return `${BASE_URL}${prefix}${urlPath}`;
 }
 
-function fullUrl(lang, urlPath) {
-  return `${BASE_URL}${langUrl(lang, urlPath)}`;
+/** URL path string (no BASE_URL) for a language */
+function langPath(lang, urlPath) {
+  return lang === 'no' ? urlPath : `/${lang}${urlPath}`;
 }
+
+/** Count occurrences of a plain string */
+function countStr(html, needle) {
+  let n = 0, pos = 0;
+  while ((pos = html.indexOf(needle, pos)) !== -1) { n++; pos += needle.length; }
+  return n;
+}
+
+// ─── JSON-LD protection ───────────────────────────────────────────────────────
 
 /**
- * Split HTML into segments, protecting JSON-LD script blocks from modification.
- * Returns an array of { text, jsonLd } objects.
+ * Split HTML into segments.  JSON-LD <script> blocks are returned as-is;
+ * all other segments are passed through fn() for transformation.
  */
-function splitJsonLd(html) {
+function processNonJsonLd(html, fn) {
   const parts = [];
   let last = 0;
+  // Non-greedy match of entire <script type="application/ld+json">…</script>
   const re = /<script[^>]+type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi;
   let m;
   while ((m = re.exec(html)) !== null) {
-    if (m.index > last) parts.push({ text: html.slice(last, m.index), jsonLd: false });
-    parts.push({ text: m[0], jsonLd: true });
+    if (m.index > last) parts.push(fn(html.slice(last, m.index)));
+    parts.push(m[0]);          // keep JSON-LD block verbatim
     last = m.index + m[0].length;
   }
-  if (last < html.length) parts.push({ text: html.slice(last), jsonLd: false });
-  return parts;
+  if (last < html.length) parts.push(fn(html.slice(last)));
+  return parts.join('');
 }
 
-function processNonJsonLd(html, fn) {
-  return splitJsonLd(html).map(p => p.jsonLd ? p.text : fn(p.text)).join('');
-}
+// ─── Individual transforms ────────────────────────────────────────────────────
 
-// ─── Transformations ─────────────────────────────────────────────────────────
-
-/** Replace data-i18n text content, data-i18n-aria, data-i18n-placeholder */
+/**
+ * Apply locale translations:
+ *   data-i18n          → replace text content between > and next <
+ *   data-i18n-aria     → update aria-label
+ *   data-i18n-placeholder → update placeholder
+ */
 function applyTranslations(html, locale) {
-  // data-i18n: replace text content between opening tag and first child/closing tag
-  // Matches: opening tag (with data-i18n) → captures key → text until next tag
+  // data-i18n text content  — [^<]* stops at the first child tag (safe)
   html = html.replace(
     /(<[^>]*\sdata-i18n="([^"]+)"[^>]*>)([^<]*)/g,
-    (match, openTag, key, _text) => {
+    (m, openTag, key, _old) => {
       const val = get(locale, key);
-      return val != null ? openTag + val : match;
+      return val != null ? openTag + val : m;
     }
   );
 
-  // data-i18n-aria: update aria-label on the same tag
-  // The tag is always on one line in practice, so match until >
+  // data-i18n-aria — update aria-label on the same tag line
   html = html.replace(
     /(<[^\n>]*\sdata-i18n-aria="([^"]+)"[^\n>]*)/g,
-    (match, before, key) => {
+    (m, _before, key) => {
       const val = get(locale, key);
-      if (val == null) return match;
-      if (/\saria-label="[^"]*"/.test(match)) {
-        return match.replace(/\saria-label="[^"]*"/, ` aria-label="${val}"`);
-      }
-      return match + ` aria-label="${val}"`;
+      if (val == null) return m;
+      return /\saria-label="[^"]*"/.test(m)
+        ? m.replace(/\saria-label="[^"]*"/, ` aria-label="${val}"`)
+        : m + ` aria-label="${val}"`;
     }
   );
 
-  // data-i18n-placeholder: update placeholder attribute
+  // data-i18n-placeholder
   html = html.replace(
     /(<[^\n>]*\sdata-i18n-placeholder="([^"]+)"[^\n>]*)/g,
-    (match, before, key) => {
+    (m, _before, key) => {
       const val = get(locale, key);
-      if (val == null) return match;
-      if (/\splaceholder="[^"]*"/.test(match)) {
-        return match.replace(/\splaceholder="[^"]*"/, ` placeholder="${val}"`);
-      }
-      return match + ` placeholder="${val}"`;
+      if (val == null) return m;
+      return /\splaceholder="[^"]*"/.test(m)
+        ? m.replace(/\splaceholder="[^"]*"/, ` placeholder="${val}"`)
+        : m + ` placeholder="${val}"`;
     }
   );
 
@@ -136,65 +174,65 @@ function applyTranslations(html, locale) {
 
 /** Set <html lang="xx"> */
 function setHtmlLang(html, lang) {
-  return html.replace(/(<html[^>]*)\slang="[^"]*"/, `$1 lang="${LANG_CODE[lang]}"`);
+  return html.replace(
+    /(<html[^>]*)\slang="[^"]*"/,
+    `$1 lang="${LANG_HTMLCODE[lang]}"`
+  );
 }
 
-/** Read data-i18n-title and data-i18n-desc from <html> tag */
+/** Read data-i18n-title / data-i18n-desc keys from the <html> tag */
 function getPageKeys(html) {
-  const titleKey = (html.match(/data-i18n-title="([^"]+)"/) || [])[1] || 'page.title';
-  const descKey  = (html.match(/data-i18n-desc="([^"]+)"/)  || [])[1] || 'page.description';
-  return { titleKey, descKey };
+  return {
+    titleKey: (html.match(/data-i18n-title="([^"]+)"/) || [])[1] || 'page.title',
+    descKey:  (html.match(/data-i18n-desc="([^"]+)"/)  || [])[1] || 'page.description',
+  };
 }
 
-/** Update <title>, og:title, twitter:title */
+/** Update <title> and all social-meta title tags */
 function setTitle(html, locale, titleKey) {
   const val = get(locale, titleKey);
   if (!val) return html;
   html = html.replace(/<title>[^<]*<\/title>/, `<title>${val}</title>`);
-  html = html.replace(/(property="og:title"\s+content=")[^"]*(")/,    `$1${val}$2`);
-  html = html.replace(/(content=")[^"]*("\s+property="og:title")/,    `$1${val}$2`);
-  html = html.replace(/(name="twitter:title"\s+content=")[^"]*(")/,   `$1${val}$2`);
-  html = html.replace(/(content=")[^"]*("\s+name="twitter:title")/,   `$1${val}$2`);
+  html = html.replace(/(property="og:title"\s+content=")[^"]*(")/,  `$1${val}$2`);
+  html = html.replace(/(content=")[^"]*("\s+property="og:title")/,  `$1${val}$2`);
+  html = html.replace(/(name="twitter:title"\s+content=")[^"]*(")/,  `$1${val}$2`);
+  html = html.replace(/(content=")[^"]*("\s+name="twitter:title")/, `$1${val}$2`);
   return html;
 }
 
-/** Update meta description, og:description, twitter:description */
+/** Update meta description and all social-meta description tags */
 function setDescription(html, locale, descKey) {
   const val = get(locale, descKey);
   if (!val) return html;
-  html = html.replace(/(name="description"\s+content=")[^"]*(")/,         `$1${val}$2`);
-  html = html.replace(/(content=")[^"]*("\s+name="description")/,         `$1${val}$2`);
-  html = html.replace(/(property="og:description"\s+content=")[^"]*(")/,  `$1${val}$2`);
-  html = html.replace(/(content=")[^"]*("\s+property="og:description")/, `$1${val}$2`);
-  html = html.replace(/(name="twitter:description"\s+content=")[^"]*(")/,`$1${val}$2`);
+  html = html.replace(/(name="description"\s+content=")[^"]*(")/,          `$1${val}$2`);
+  html = html.replace(/(content=")[^"]*("\s+name="description")/,          `$1${val}$2`);
+  html = html.replace(/(property="og:description"\s+content=")[^"]*(")/,   `$1${val}$2`);
+  html = html.replace(/(content=")[^"]*("\s+property="og:description")/,   `$1${val}$2`);
+  html = html.replace(/(name="twitter:description"\s+content=")[^"]*(")/,  `$1${val}$2`);
   html = html.replace(/(content=")[^"]*("\s+name="twitter:description")/, `$1${val}$2`);
   return html;
 }
 
-/** Build the hreflang block for a given page */
-function buildHreflangBlock(urlPath) {
-  const noUrl = `${BASE_URL}${urlPath}`;
-  const lines = [
-    `  <link rel="alternate" hreflang="x-default" href="${noUrl}" />`,
-    `  <link rel="alternate" hreflang="nb"        href="${noUrl}" />`,
-    ...LANGS.map(l => `  <link rel="alternate" hreflang="${l}"        href="${fullUrl(l, urlPath)}" />`),
-  ];
-  return lines.join('\n');
-}
-
-/** Replace all hreflang links + canonical + og:url for a generated language file */
+/** Remove all existing canonical + alternate links, insert correct block */
 function setCanonicalAndHreflang(html, lang, urlPath) {
-  const canon = fullUrl(lang, urlPath);
+  const canon = pageUrl(lang, urlPath);
+  const noUrl  = pageUrl('no', urlPath);
 
-  // Remove duplicate canonicals first, then replace the remaining one
-  // Strip ALL existing canonical links
+  // Wipe existing (handles duplicates automatically)
   html = html.replace(/<link rel="canonical"[^>]*\/>\s*/g, '');
-  // Strip ALL existing hreflang links
   html = html.replace(/<link rel="alternate"[^>]*\/>\s*/g, '');
 
-  // Insert canonical + hreflang right after <meta charset>
-  const newHead = `  <link rel="canonical" href="${canon}" />\n${buildHreflangBlock(urlPath)}\n`;
-  html = html.replace(/(<meta charset[^>]*\/>)/, `$1\n${newHead}`);
+  const hreflang = LANGS.map(l =>
+    `  <link rel="alternate" hreflang="${l}"        href="${pageUrl(l, urlPath)}" />`
+  ).join('\n');
+
+  const block =
+    `  <link rel="canonical" href="${canon}" />\n` +
+    `  <link rel="alternate" hreflang="x-default" href="${noUrl}" />\n` +
+    `  <link rel="alternate" hreflang="nb"        href="${noUrl}" />\n` +
+    hreflang + '\n';
+
+  html = html.replace(/(<meta charset[^>]*\/>)/, `$1\n${block}`);
 
   // og:url
   html = html.replace(/(property="og:url"\s+content=")[^"]*(")/,  `$1${canon}$2`);
@@ -203,152 +241,215 @@ function setCanonicalAndHreflang(html, lang, urlPath) {
   return html;
 }
 
-/** Update hreflang links in Norwegian source files */
-function updateNoHreflang(html, urlPath) {
-  const noUrl = `${BASE_URL}${urlPath}`;
-
-  // Remove ALL existing canonical and hreflang
-  html = html.replace(/<link rel="canonical"[^>]*\/>\s*/g, '');
-  html = html.replace(/<link rel="alternate"[^>]*\/>\s*/g, '');
-
-  const newHead = `  <link rel="canonical" href="${noUrl}" />\n${buildHreflangBlock(urlPath)}\n`;
-  html = html.replace(/(<meta charset[^>]*\/>)/, `$1\n${newHead}`);
-
-  // og:url
-  html = html.replace(/(property="og:url"\s+content=")[^"]*(")/,  `$1${noUrl}$2`);
-  html = html.replace(/(content=")[^"]*("\s+property="og:url")/, `$1${noUrl}$2`);
-
-  return html;
-}
-
-/** Convert relative asset paths to absolute */
+/**
+ * Convert relative asset / css / js / favicon / srcset paths to absolute.
+ * Handles 0–3 levels of ../ prefix.
+ * Skips JSON-LD blocks via processNonJsonLd.
+ */
 function fixAssetPaths(html) {
+  // In a JS string '\\.' == backslash+dot; as a RegExp pattern that matches literal '.'
+  // '(?:(?:\\.\\./){0,3})' → regex (?:(?:\.\./){0,3}) → matches 0-3 x '../'
+  const dd = '(?:(?:\\.\\./){0,3})';
+
   return processNonJsonLd(html, text => {
-    // Handle ../ and ../../ prefixes (up to 3 levels)
-    const dotdot = '(?:(?:\\.\\./){1,3})?';
-    text = text.replace(new RegExp(`((?:src|href)=")${dotdot}(assets/)`, 'g'),   '$1/$2');
-    text = text.replace(new RegExp(`((?:src|href)=")${dotdot}(css/)`, 'g'),      '$1/$2');
-    text = text.replace(new RegExp(`((?:src|href)=")${dotdot}(js/)`, 'g'),       '$1/$2');
-    text = text.replace(new RegExp(`((?:src|href)=")${dotdot}(locales/)`, 'g'),  '$1/$2');
-    // favicon.ico (with optional ../ prefix)
-    text = text.replace(new RegExp(`((?:src|href)=")${dotdot}(favicon\\.ico")`, 'g'), '$1/$2');
+    // src / href attributes
+    text = text.replace(new RegExp(`((?:src|href)=")${dd}(assets/)`,  'g'), '$1/$2');
+    text = text.replace(new RegExp(`((?:src|href)=")${dd}(css/)`,     'g'), '$1/$2');
+    text = text.replace(new RegExp(`((?:src|href)=")${dd}(js/)`,      'g'), '$1/$2');
+    text = text.replace(new RegExp(`((?:src|href)=")${dd}(locales/)`, 'g'), '$1/$2');
+    text = text.replace(new RegExp(`((?:src|href)=")${dd}(favicon\\.ico")`, 'g'), '$1/$2');
+    // srcset attribute  ← critical for <picture><source srcset="...">
+    text = text.replace(new RegExp(`(srcset=")${dd}(assets/)`, 'g'), '$1/$2');
     return text;
   });
 }
 
-/** Add language prefix to internal page links */
+/**
+ * Fix the logo <a href="…"> to point at the correct root for the target lang.
+ * Matches any href value on the <a> tag that wraps a Logomark image.
+ */
+function fixLogoLink(html, lang) {
+  const target = lang === 'no' ? '/' : `/${lang}/`;
+  // Replace href value on the <a> tag immediately wrapping a Logomark img
+  return html.replace(
+    /(<a\s[^>]*href=")[^"]*("[^>]*>\s*<img[^>]*Logomark[^>]*>)/g,
+    `$1${target}$2`
+  );
+}
+
+/**
+ * Add /LANG/ prefix to known internal page hrefs.
+ * Only called for generated (non-Norwegian) files.
+ * Skips JSON-LD, external URLs, and asset paths.
+ */
 function fixInternalLinks(html, lang) {
   return processNonJsonLd(html, text => {
-    // Handle href="index.html" (logo link on root page)
+    // Relative logo-style link
     text = text.replace(/href="index\.html"/g, `href="/${lang}/"`);
-
-    // Handle each known internal path
-    for (const p of INTERNAL_PATHS) {
-      // Exact match: href="/path" - must not already have a lang prefix
-      const escaped = p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      // Match href="PATH" where PATH is not already prefixed by a lang code
-      // Use word boundary approach: match href="<path>" exactly
-      const re = new RegExp(`href="${escaped}"`, 'g');
-      if (p === '/') {
-        // Root: only match href="/" exactly (not href="/something/")
-        text = text.replace(/href="\/"/g, `href="/${lang}/"`);
-      } else {
-        text = text.replace(re, `href="/${lang}${p}"`);
-      }
+    // Exact root href
+    text = text.replace(/href="\/"/g, `href="/${lang}/"`);
+    // Known page paths
+    for (const p of INTERNAL_HREFS) {
+      const esc = p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      text = text.replace(new RegExp(`href="${esc}"`, 'g'), `href="/${lang}${p}"`);
     }
-
     return text;
   });
 }
 
-/** Generate the lang dropdown HTML for a pre-rendered page */
+/** Generate the lang-dropdown <div> with <a> links */
 function buildLangDropdown(currentLang, urlPath) {
-  const allLangs = ['no', ...LANGS];
-  const options = allLangs.map(l => {
-    const href = l === 'no' ? `${BASE_URL}${urlPath}` : fullUrl(l, urlPath);
-    // Use just the path portion for the href attribute
-    const hrefPath = l === 'no' ? urlPath : langUrl(l, urlPath);
+  const items = ALL_LANGS.map(l => {
+    const href   = langPath(l, urlPath);
     const active = l === currentLang ? ' active' : '';
-    return `            <a class="lang-option${active}" href="${hrefPath}" role="menuitem"><span class="lang-flag">${LANG_FLAG[l]}</span> ${LANG_NAME[l]}</a>`;
+    return `            <a class="lang-option${active}" href="${href}" role="menuitem">` +
+           `<span class="lang-flag">${LANG_FLAG[l]}</span> ${LANG_NAME[l]}</a>`;
   });
-  return `<div class="lang-dropdown" role="menu">\n${options.join('\n')}\n          </div>`;
+  return (
+    `<div class="lang-dropdown" role="menu">\n` +
+    items.join('\n') + '\n' +
+    `          </div>`
+  );
 }
 
-/** Update the language switcher: replace buttons with links, set current label */
-function updateLangSwitcher(html, lang, urlPath) {
-  // Update the current language label
-  html = html.replace(
-    /<span id="lang-current">[^<]*<\/span>/,
-    `<span id="lang-current">${LANG_LABEL[lang]}</span>`
-  );
-
-  // Replace the lang-dropdown div content
+/** Replace button-based lang-dropdown with link-based one, update #lang-current */
+function fixLangSwitcher(html, lang, urlPath) {
+  // Replace the dropdown div (non-greedy [\s\S]*? stops at first </div>)
   html = html.replace(
     /<div class="lang-dropdown" role="menu">[\s\S]*?<\/div>/,
     buildLangDropdown(lang, urlPath)
   );
-
+  // Update the displayed language label
+  html = html.replace(
+    /<span id="lang-current">[^<]*<\/span>/,
+    `<span id="lang-current">${LANG_LABEL[lang]}</span>`
+  );
   return html;
 }
 
-/** Full transform pipeline for a generated language file */
-function transformForLang(html, lang, locale, urlPath) {
-  const { titleKey, descKey } = getPageKeys(html);
+/**
+ * Replace the old lang-switcher IIFE with the new minimal version.
+ *
+ * Strategy: iterate over each <script>...</script> block, find the one
+ * containing getElementById('lang-btn') or getElementById('lang-switcher'),
+ * and replace only the IIFE within that block. This prevents the IIFE regex
+ * from accidentally crossing <script> block boundaries.
+ *
+ * If no matching block is found (e.g. contact.html), returns html unchanged.
+ */
+function fixLangScript(html) {
+  const scriptBlockRe = /(<script[^>]*>)([\s\S]*?)(<\/script>)/g;
+  const langIdRe = /getElementById\(['"](lang-btn|lang-switcher)['"]\)/;
+  const iifeRe = /\(function\s*\(\s*\)\s*\{[\s\S]*?(?:\}\s*\(\s*\)\s*\)|\}\s*\)\s*\(\s*\))\s*;/;
+  let replaced = false;
+  return html.replace(scriptBlockRe, (fullMatch, open, body, close) => {
+    if (replaced || !langIdRe.test(body)) return fullMatch;
+    const newBody = body.replace(iifeRe, NEW_LANG_IIFE + ';');
+    if (newBody === body) return fullMatch;
+    replaced = true;
+    return open + newBody + close;
+  });
+}
 
+// ─── Safety gate ─────────────────────────────────────────────────────────────
+
+/**
+ * Returns true if the output HTML passes all structural checks.
+ * On failure, logs a descriptive error and returns false.
+ */
+function safetyCheck(srcHtml, outHtml, label) {
+  const check = (needle, name) => {
+    const a = countStr(srcHtml, needle);
+    const b = countStr(outHtml, needle);
+    if (a !== b) {
+      console.error(`  ✖ SAFETY [${label}]: "${name}" count changed ${a} → ${b}`);
+      return false;
+    }
+    return true;
+  };
+
+  if (!check('<section',  '<section'))  return false;
+  if (!check('</section>', '</section>')) return false;
+
+  const ratio = outHtml.length / srcHtml.length;
+  if (ratio < 0.80 || ratio > 1.25) {
+    console.error(
+      `  ✖ SAFETY [${label}]: file size ratio ${(ratio * 100).toFixed(1)}% ` +
+      `(expected 80–125%)`
+    );
+    return false;
+  }
+
+  return true;
+}
+
+// ─── Per-file pipelines ───────────────────────────────────────────────────────
+
+/** Transform source HTML into a Norwegian version (minimal updates only) */
+function buildNorwegian(srcHtml, urlPath, hasDropdown) {
+  let html = srcHtml;
+  html = setCanonicalAndHreflang(html, 'no', urlPath);
+  html = fixAssetPaths(html);
+  html = fixLogoLink(html, 'no');
+  if (hasDropdown) html = fixLangSwitcher(html, 'no', urlPath);
+  html = fixLangScript(html);
+  return html;
+}
+
+/** Transform Norwegian HTML into a fully translated version for `lang` */
+function buildForLang(noHtml, lang, locale, urlPath, hasDropdown) {
+  const { titleKey, descKey } = getPageKeys(noHtml);
+  let html = noHtml;
   html = applyTranslations(html, locale);
   html = setHtmlLang(html, lang);
   html = setTitle(html, locale, titleKey);
   html = setDescription(html, locale, descKey);
   html = setCanonicalAndHreflang(html, lang, urlPath);
-  html = fixAssetPaths(html);
+  // Asset paths are already absolute after the Norwegian pass
   html = fixInternalLinks(html, lang);
-  html = updateLangSwitcher(html, lang, urlPath);
-
+  html = fixLogoLink(html, lang);
+  if (hasDropdown) html = fixLangSwitcher(html, lang, urlPath);
+  html = fixLangScript(html);
   return html;
-}
-
-// ─── Output path calculation ──────────────────────────────────────────────────
-
-/**
- * Given a source file path and a target language, return the output file path
- * relative to ROOT (e.g. "en/care-schedule/index.html")
- */
-function outPath(src, lang) {
-  // src is like "care-schedule/index.html" or "professionals.html"
-  return path.join(lang, src);
 }
 
 // ─── Sitemap ─────────────────────────────────────────────────────────────────
 
 function buildSitemap() {
-  const urls = SOURCE_FILES.map(({ urlPath, priority }) => {
-    const noUrl  = `${BASE_URL}${urlPath}`;
-    const hreflangLinks = [
+  const urlEntries = SOURCE_FILES.map(({ urlPath, priority }) => {
+    const noUrl = pageUrl('no', urlPath);
+
+    const links = [
       `      <xhtml:link rel="alternate" hreflang="x-default" href="${noUrl}"/>`,
       `      <xhtml:link rel="alternate" hreflang="nb"        href="${noUrl}"/>`,
-      ...LANGS.map(l => `      <xhtml:link rel="alternate" hreflang="${l}"        href="${fullUrl(l, urlPath)}"/>`),
+      ...LANGS.map(l =>
+        `      <xhtml:link rel="alternate" hreflang="${l}"        href="${pageUrl(l, urlPath)}"/>`
+      ),
     ].join('\n');
 
-    return `  <url>
-    <loc>${noUrl}</loc>
-${hreflangLinks}
-    <changefreq>monthly</changefreq>
-    <priority>${priority}</priority>
-  </url>`;
+    return (
+      `  <url>\n` +
+      `    <loc>${noUrl}</loc>\n` +
+      links + '\n' +
+      `    <changefreq>monthly</changefreq>\n` +
+      `    <priority>${priority}</priority>\n` +
+      `  </url>`
+    );
   });
 
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${urls.join('\n')}
-</urlset>
-`;
+  return (
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n` +
+    `        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n` +
+    urlEntries.join('\n') + '\n' +
+    `</urlset>\n`
+  );
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 function main() {
-  // Load locale files
+  // Load all target-language locales
   const locales = {};
   for (const lang of LANGS) {
     const p = path.join(ROOT, 'locales', `${lang}.json`);
@@ -356,37 +457,58 @@ function main() {
     console.log(`Loaded locale: ${lang}`);
   }
 
-  // Process each source file
-  for (const file of SOURCE_FILES) {
-    const srcPath = path.join(ROOT, file.src);
+  let errors = 0;
+
+  for (const { src, urlPath, hasDropdown } of SOURCE_FILES) {
+    const srcPath = path.join(ROOT, src);
     if (!fs.existsSync(srcPath)) {
-      console.warn(`  SKIP (not found): ${file.src}`);
+      console.warn(`SKIP (not found): ${src}`);
       continue;
     }
-    const sourceHtml = fs.readFileSync(srcPath, 'utf8');
 
-    // 1. Update hreflang tags in the Norwegian source file
-    const updatedNo = updateNoHreflang(sourceHtml, file.urlPath);
-    fs.writeFileSync(srcPath, updatedNo, 'utf8');
-    console.log(`Updated hreflang: ${file.src}`);
+    const originalHtml = fs.readFileSync(srcPath, 'utf8');
+    const origSections = countStr(originalHtml, '<section');
 
-    // 2. Generate one file per language
+    // ── Step 1: build updated Norwegian source ─────────────────────────────
+    const noHtml = buildNorwegian(originalHtml, urlPath, hasDropdown);
+
+    if (!safetyCheck(originalHtml, noHtml, `${src} [no]`)) {
+      console.error(`  ABORT: skipping write of ${src}`);
+      errors++;
+      continue;
+    }
+
+    fs.writeFileSync(srcPath, noHtml, 'utf8');
+    console.log(`Updated (no): ${src}  [${origSections} sections ✓]`);
+
+    // ── Step 2: generate language versions ────────────────────────────────
     for (const lang of LANGS) {
-      const generated = transformForLang(updatedNo, lang, locales[lang], file.urlPath);
+      const outHtml = buildForLang(noHtml, lang, locales[lang], urlPath, hasDropdown);
 
-      const outFile = path.join(ROOT, outPath(file.src, lang));
+      if (!safetyCheck(originalHtml, outHtml, `${src} [${lang}]`)) {
+        console.error(`  ABORT: skipping ${lang}/${src}`);
+        errors++;
+        continue;
+      }
+
+      const outFile = path.join(ROOT, lang, src);
       mkdirp(path.dirname(outFile));
-      fs.writeFileSync(outFile, generated, 'utf8');
-      console.log(`  → ${outPath(file.src, lang)}`);
+      fs.writeFileSync(outFile, outHtml, 'utf8');
+      console.log(`  → ${lang}/${src}`);
     }
   }
 
-  // Generate sitemap.xml
+  // ── Sitemap ───────────────────────────────────────────────────────────────
   const sitemapPath = path.join(ROOT, 'sitemap.xml');
   fs.writeFileSync(sitemapPath, buildSitemap(), 'utf8');
   console.log('Generated: sitemap.xml');
 
-  console.log('\nDone.');
+  if (errors > 0) {
+    console.error(`\n⚠  Build finished with ${errors} error(s). Review output above.`);
+    process.exitCode = 1;
+  } else {
+    console.log('\nDone ✓');
+  }
 }
 
 main();

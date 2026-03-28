@@ -1118,14 +1118,14 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
             </button>
             <div class="phone-frame" id="carousel-frame">
-              <div class="carousel-slide active"><picture><source srcset="assets/images/ThreadsScreen.webp" type="image/webp" /><img src="/assets/images/ThreadsScreen.png" alt="Threads" draggable="false" width="232" height="504" fetchpriority="high" loading="eager" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/ThreadDetailScreen.webp" type="image/webp" /><img src="/assets/images/ThreadDetailScreen.png" alt="Thread detail" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/AlbumScreen.webp" type="image/webp" /><img src="/assets/images/AlbumScreen.png" alt="Shared album" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/ToolScreen.webp" type="image/webp" /><img src="/assets/images/ToolScreen.png" alt="Tools" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/EquipmentList.webp" type="image/webp" /><img src="/assets/images/EquipmentList.png" alt="Equipment list" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/ContactList.webp" type="image/webp" /><img src="/assets/images/ContactList.png" alt="Contacts" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/ChildList.webp" type="image/webp" /><img src="/assets/images/ChildList.png" alt="Child info" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="assets/images/CareScheduleApp.webp" type="image/webp" /><img src="/assets/images/CareScheduleApp.png" alt="Care schedule" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide active"><picture><source srcset="/assets/images/ThreadsScreen.webp" type="image/webp" /><img src="/assets/images/ThreadsScreen.png" alt="Threads" draggable="false" width="232" height="504" fetchpriority="high" loading="eager" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/ThreadDetailScreen.webp" type="image/webp" /><img src="/assets/images/ThreadDetailScreen.png" alt="Thread detail" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/AlbumScreen.webp" type="image/webp" /><img src="/assets/images/AlbumScreen.png" alt="Shared album" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/ToolScreen.webp" type="image/webp" /><img src="/assets/images/ToolScreen.png" alt="Tools" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/EquipmentList.webp" type="image/webp" /><img src="/assets/images/EquipmentList.png" alt="Equipment list" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/ContactList.webp" type="image/webp" /><img src="/assets/images/ContactList.png" alt="Contacts" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/ChildList.webp" type="image/webp" /><img src="/assets/images/ChildList.png" alt="Child info" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/CareScheduleApp.webp" type="image/webp" /><img src="/assets/images/CareScheduleApp.png" alt="Care schedule" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
             </div>
             <button class="carousel-arrow" id="carousel-next" aria-label="Next screenshot">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
@@ -1138,14 +1138,438 @@
     </div>
   </section>
 
-    <script>
+  <script>
   (function () {
-    const switcher = document.getElementById('lang-switcher');
-    const btn = document.getElementById('lang-btn');
+    const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+    const dotsEl = document.getElementById('carousel-dots');
+    const frame  = document.getElementById('carousel-frame');
+    let current = 0;
+
+    // Build dots
+    slides.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+      btn.setAttribute('aria-label', 'Slide ' + (i + 1));
+      btn.addEventListener('click', () => goTo(i));
+      dotsEl.appendChild(btn);
+    });
+
+    function goTo(n) {
+      slides[current].classList.remove('active');
+      dotsEl.children[current].classList.remove('active');
+      dotsEl.children[current].setAttribute('aria-selected', 'false');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dotsEl.children[current].classList.add('active');
+      dotsEl.children[current].setAttribute('aria-selected', 'true');
+    }
+
+    // Arrow buttons
+    document.getElementById('carousel-prev').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('carousel-next').addEventListener('click', () => goTo(current + 1));
+
+    // Touch / swipe
+    let tx = 0;
+    frame.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+    frame.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - tx;
+      if (Math.abs(dx) > 40) goTo(dx < 0 ? current + 1 : current - 1);
+    }, { passive: true });
+  }());
+  </script>
+
+  <!-- How it works -->
+  <section id="how-it-works">
+    <div class="container">
+      <p class="section-label" data-i18n="how.label">Så här fungerar det</p>
+      <h2 data-i18n="how.title">Ställ in det en gång. Resten delas automatiskt.</h2>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-number">1</div>
+          <h3 data-i18n="how.step1.title">Skapa ett gemensamt utrymme</h3>
+          <p data-i18n="how.step1.description">En förälder skapar ett utrymme för barnet. Den andra får en inbjudan att gå med. Ingen komplicerad installation krävs.</p>
+        </div>
+        <div class="step reveal reveal-delay-1">
+          <div class="step-number">2</div>
+          <h3 data-i18n="how.step2.title">Lägg till det som är viktigt</h3>
+          <p data-i18n="how.step2.description">Medicinsk information, allergier, kontakter, utrustningslistor — lägg in det en gång, och det är tillgängligt i båda hemmen.</p>
+        </div>
+        <div class="step reveal reveal-delay-2">
+          <div class="step-number">3</div>
+          <h3 data-i18n="how.step3.title">Ingen behöver fråga två gånger</h3>
+          <p data-i18n="how.step3.description">Uppdateringar är synliga för båda föräldrarna i realtid. Inte mer att upprepa sig, eller undra om det andra hemmet har det senaste.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+  <section id="features" class="accent-left">
+    <div class="container">
+      <p class="section-label" data-i18n="features.label">Funktioner</p>
+      <h2 data-i18n="features.title">Alla detaljer, delade med det andra hemmet</h2>
+      <div class="feature-block reveal">
+        <div class="feature-block-text">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <h3 data-i18n="features.threads.title">Trådar</h3>
+          <p data-i18n="features.threads.description">Separata konversationer för varje ämne — logistik, skola, hälsa. Inget försvinner i en lång chatt.</p>
+        </div>
+        <div class="feature-block-visual">
+          <div class="phone-frame">
+            <img src="/assets/images/ThreadsScreen.png" alt="Threads screenshot" draggable="false" />
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-block reverse reveal">
+        <div class="feature-block-text">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2 22l5-1.338A9.954 9.954 0 0 0 12 22z"/>
+            </svg>
+          </div>
+          <h3 data-i18n="features.messages.title">Meddelanden</h3>
+          <p data-i18n="features.messages.description">Meddelanden kan inte redigeras eller raderas. Sök i konversationer, markera det viktiga, och ha alltid en tydlig bild av vad som har avtalats.</p>
+        </div>
+        <div class="feature-block-visual">
+          <div class="phone-frame">
+            <img src="/assets/images/ThreadDetailScreen.png" alt="Messages screenshot" draggable="false" />
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-block reveal">
+        <div class="feature-block-text">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <h3 data-i18n="features.album.title">Delat album</h3>
+          <p data-i18n="features.album.description">Ett privat album där båda föräldrarna kan dela bilder. De ögonblick som händer i ett hem är synliga i båda.</p>
+        </div>
+        <div class="feature-block-visual">
+          <div class="phone-frame">
+            <img src="/assets/images/AlbumScreen.png" alt="Shared album screenshot" draggable="false" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More tools -->
+  <section id="more-tools">
+    <div class="container">
+      <p class="section-label" data-i18n="tools.label">Mer i Lina</p>
+      <h2 data-i18n="tools.title">Verktyg byggda för delad omsorg</h2>
+      <div class="tools-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+              <circle cx="12" cy="8" r="2"/>
+              <path d="M15 13a3 3 0 1 0-6 0"/>
+            </svg>
+          </div>
+          <h3 data-i18n="tools.contacts.title">Delade kontakter</h3>
+          <p data-i18n="tools.contacts.description">Barnläkare, lärare, fritids — viktiga kontakter samlade på ett ställe, alltid uppdaterade.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m3 17 2 2 4-4"/>
+              <path d="m3 7 2 2 4-4"/>
+              <path d="M13 6h8"/>
+              <path d="M13 12h8"/>
+              <path d="M13 18h8"/>
+            </svg>
+          </div>
+          <h3 data-i18n="tools.equipment.title">Utrustningslistor</h3>
+          <p data-i18n="tools.equipment.description">Gummistövlar, gympapåse, allergiläkemedel — delade listor gör det enklare att hålla koll på vad som behöver följa barnet mellan hemmen.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 12h.01"/>
+              <path d="M15 12h.01"/>
+              <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/>
+              <path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/>
+            </svg>
+          </div>
+          <h3 data-i18n="tools.childinfo.title">Barnuppgifter</h3>
+          <p data-i18n="tools.childinfo.description">Födelsedatum, allergier, mediciner, skostorlek — allt som behövs i båda hemmen, samlat på ett ställe.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+              <line x1="16" x2="16" y1="2" y2="6"/>
+              <line x1="8" x2="8" y1="2" y2="6"/>
+              <line x1="3" x2="21" y1="10" y2="10"/>
+              <path d="M8 14h.01"/>
+              <path d="M12 14h.01"/>
+              <path d="M16 14h.01"/>
+              <path d="M8 18h.01"/>
+              <path d="M12 18h.01"/>
+              <path d="M16 18h.01"/>
+            </svg>
+          </div>
+          <h3 data-i18n="tools.schedule.title">Omsorgsschema</h3>
+          <p data-i18n="tools.schedule.description">Skapa en visuell översikt över hur tid fördelas mellan hemmen. Se hela schemat i ett ögonkast, vecka för vecka.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-4">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="21" x2="14" y1="4" y2="4"/>
+              <line x1="10" x2="3" y1="4" y2="4"/>
+              <line x1="21" x2="12" y1="12" y2="12"/>
+              <line x1="8" x2="3" y1="12" y2="12"/>
+              <line x1="21" x2="16" y1="20" y2="20"/>
+              <line x1="12" x2="3" y1="20" y2="20"/>
+              <line x1="14" x2="14" y1="2" y2="6"/>
+              <line x1="8" x2="8" y1="10" y2="14"/>
+              <line x1="16" x2="16" y1="18" y2="22"/>
+            </svg>
+          </div>
+          <h3 data-i18n="tools.control.title">Byggt för svåra dagar också</h3>
+          <p data-i18n="tools.control.description">Exportera alla meddelanden för dokumentation. Sudda ut foton för att minska den känslomässiga belastningen. Spara de bilder du vill behålla. Kontrollera vad du ser och när.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section id="privacy" class="accent-right">
+    <div class="container">
+      <p class="section-label" data-i18n="privacy.label">Integritet</p>
+      <div class="privacy-inner">
+
+        <div class="privacy-text reveal">
+          <h2 data-i18n="privacy.title">Privat från grunden</h2>
+          <p class="privacy-lead" data-i18n="privacy.description">Det som händer i Lina stannar mellan er två. Barnets information är privat — och ingen utomstående har insyn i det ni delar.</p>
+        </div>
+
+        <div class="privacy-points reveal reveal-delay-1">
+          <div class="privacy-point">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="privacy-point-text">
+              <h3 data-i18n="privacy.point1.title">Ingen reklam</h3>
+              <p data-i18n="privacy.point1.description">Din upplevelse formas aldrig av annonser eller kommersiella intressen.</p>
+            </div>
+          </div>
+          <div class="privacy-point">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <div class="privacy-point-text">
+              <h3 data-i18n="privacy.point2.title">Ingen datadelning</h3>
+              <p data-i18n="privacy.point2.description">Dina data är dina. De delas aldrig med tredje part.</p>
+            </div>
+          </div>
+          <div class="privacy-point">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+              </svg>
+            </div>
+            <div class="privacy-point-text">
+              <h3 data-i18n="privacy.point3.title">Ingen algoritm</h3>
+              <p data-i18n="privacy.point3.description">Du bestämmer vad du ser — inte en algoritm som optimerar för engagemang.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="privacy-tagline" data-i18n="privacy.tagline">Strukturerad för samarbete. Privat som standard.</p>
+    </div>
+  </section>
+
+  <!-- Stories teaser -->
+  <section id="stories-teaser" class="accent-right reveal">
+    <div class="container">
+      <p class="section-label" data-i18n="storiesTeaser.label">Vardagsögonblick</p>
+      <h2 data-i18n="storiesTeaser.title">Byggd för stunderna som betyder något</h2>
+      <div class="stories-grid">
+
+        <div class="story-teaser-card reveal">
+          <div class="scenario-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+            </svg>
+          </div>
+          <h3 data-i18n="storiesTeaser.s1.title">Allergin som det andra hemmet inte kände till</h3>
+          <p data-i18n="storiesTeaser.s1.description">En förälder uppdaterar barnets hälsoinformation. Den andra ser det direkt — inget extra meddelande behövs.</p>
+        </div>
+
+        <div class="story-teaser-card reveal reveal-delay-1">
+          <div class="scenario-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+              <rect x="9" y="3" width="6" height="4" rx="1"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3 data-i18n="storiesTeaser.s2.title">Regnjackan som alltid är i fel hus</h3>
+          <p data-i18n="storiesTeaser.s2.description">Delade utrustningslistor visar vad som finns i varje hem. Uppdateringar syns direkt, så jackan följer barnet.</p>
+        </div>
+
+        <div class="story-teaser-card reveal reveal-delay-2">
+          <div class="scenario-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="9" cy="9" r="2"/>
+              <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+            </svg>
+          </div>
+          <h3 data-i18n="storiesTeaser.s3.title">Den första cykelturen du nästan missade</h3>
+          <p data-i18n="storiesTeaser.s3.description">Bilderna läggs i det delade albumet. De stora och små stunderna delas automatiskt — oavsett vilket hem barnet är i.</p>
+        </div>
+
+      </div>
+      <div class="stories-footer">
+        <a href="/sv/stories/">
+          <span data-i18n="storiesTeaser.cta">Läs fler berättelser</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Care Schedule Promo -->
+  <section id="cs-promo" class="accent-left">
+    <div class="container">
+      <div class="cs-promo-inner">
+
+        <div class="cs-promo-text reveal">
+          <p class="section-label" data-i18n="csSection.label">Omsorgsschema</p>
+          <h2 data-i18n="csSection.title">Planera vårdtiden tillsammans</h2>
+          <p data-i18n="csSection.description">Linas interaktiva omsorgsschema låter båda föräldrarna planera och visualisera hur tid fördelas mellan hemmen vecka för vecka. Se dagfördelning, helgmönster och överlämningsfrekvens — allt i en tydlig vy.</p>
+          <a href="/sv/care-schedule" class="btn-primary">
+            <span data-i18n="csSection.cta">Öppna omsorgsschema</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="cs-promo-visual reveal reveal-delay-1" aria-hidden="true">
+          <img src="/assets/images/CareSchedule.png" alt="Care Schedule" class="cs-promo-img" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Care Agreement Promo -->
+  <section id="ca-promo">
+    <div class="container">
+      <div class="cs-promo-inner">
+        <div class="cs-promo-text reveal">
+          <p class="section-label" data-i18n="caSection.label">Samarbetsavtal</p>
+          <h2 data-i18n="caSection.title">Vad bör avtalet innehålla?</h2>
+          <p data-i18n="caSection.description">Ett bra samarbetsavtal ger förutsägbarhet för barnet och båda föräldrarna. Läs om vad avtalet bör täcka, se ett exempel och hitta länkar till officiella resurser.</p>
+          <a href="/sv/care-agreement/" class="btn-primary">
+            <span data-i18n="caSection.cta">Läs mer</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="cs-promo-visual reveal reveal-delay-1" aria-hidden="true">
+          <img src="/assets/images/CareAgreement.png" alt="Samværsavtale eksempel" class="ca-promo-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2 data-i18n="cta.title">En säker linje mellan två föräldrar.</h2>
+        <p data-i18n="cta.description">Lina samlar allt barnet behöver — synligt och uppdaterat, oavsett hem. Ladda ner och kom igång på minuter.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Ladda ner på App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Hämta på Google Play</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/sv/care-schedule/" data-i18n="footer.careSchedule">Omsorgsschema</a>
+          <a href="/sv/care-agreement/" data-i18n="footer.careAgreement">Samarbetsavtal</a>
+          <a href="/sv/faq/" data-i18n="footer.faq">Vanliga frågor</a>
+          <a href="/sv/professionals.html" data-i18n="footer.familievern">Yrkespersoner</a>
+          <a href="/sv/stories/" data-i18n="footer.stories">Vardagsscenarier</a>
+          <a href="/sv/pricing/" data-i18n="footer.pricing">Pris</a>
+          <a href="/sv/about/" data-i18n="footer.about">Om Lina</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/terms/" data-i18n="footer.terms">Användarvillkor</a>
+          <a href="/privacy/" data-i18n="footer.privacy">Integritetspolicy</a>
+          <a href="/sv/contact.html" data-i18n="footer.contact">Kontakt</a>
+          <a href="/account-deletion.html" data-i18n="footer.accountDeletion">Radering av konto</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alla rättigheter förbehållna.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+    <div class="sticky-cta-inner">
+      <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        <span data-i18n="hero.cta">Ladda ner på App Store</span>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+        </svg>
+        <span data-i18n="hero.ctaPlay">Hämta på Google Play</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
     if (!switcher || !btn) return;
     btn.addEventListener('click', function(e) {
       e.preventDefault();
-      const open = switcher.classList.toggle('open');
+      var open = switcher.classList.toggle('open');
       btn.setAttribute('aria-expanded', open);
     });
     document.addEventListener('click', function(e) {
