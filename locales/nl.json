@@ -108,7 +108,7 @@
     },
     "point2": {
       "title": "Geen gegevensdeling",
-      "description": "Uw gegevens zijn van u. Ze worden nooit gedeeld met derden."
+      "description": "Uw gegevens blijven van u. Ze worden nooit gedeeld met derden."
     },
     "point3": {
       "title": "Geen algoritme",
@@ -520,9 +520,9 @@
     },
     "s2": {
       "label": "Paklijsten",
-      "title": "Het regenjas dat altijd in het verkeerde huishouden is",
+      "title": "De regenjas dat altijd in het verkeerde huishouden is",
       "situation": "Een kind komt zonder regenkleding op school aan omdat niemand zeker wist in welk huishouden het was. Kleine dingen als deze zorgen voor onnodige wrijving.",
-      "resolution": "Met Lina: Gedeelde paklijsten laten zien wat in elk huishouden is. De lijst blijft actueel, zodat het jack het kind volgt."
+      "resolution": "Met Lina: Gedeelde paklijsten laten zien wat in elk huishouden is. De lijst blijft actueel, zodat de jas het kind volgt."
     },
     "s3": {
       "label": "Onderwerpen",
@@ -558,8 +558,8 @@
       "description": "Eén ouder werkt de medische informatie van het kind bij. De andere ziet het direct — geen apart bericht nodig."
     },
     "s2": {
-      "title": "Het regenjas dat altijd in het verkeerde huishouden is",
-      "description": "Gedeelde paklijsten laten zien wat in elk huishouden is. Updates zijn direct zichtbaar, zodat het jack het kind volgt."
+      "title": "De regenjas dat altijd in het verkeerde huishouden is",
+      "description": "Gedeelde paklijsten laten zien wat in elk huishouden is. Updates zijn direct zichtbaar, zodat de jas het kind volgt."
     },
     "s3": {
       "title": "De eerste fietsrit die u bijna had gemist",
