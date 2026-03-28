@@ -153,7 +153,7 @@
   },
   "pricing": {
     "pageTitle": "Pris — Lina",
-    "pageDesc": "Lina har en gratisplan och Lina+ för 79 kr/mån. Ett abonnemang täcker båda föräldrarna. Ingen reklam, ingen datadelning.",
+    "pageDesc": "Lina har en gratisplan och Lina+ för 89 kr/mån. Ett abonnemang täcker båda föräldrarna. Ingen reklam, ingen datadelning.",
     "label": "Pris",
     "title": "Ett abonnemang. Båda föräldrarna.",
     "description": "Lina+ ger full tillgång till alla funktioner med ett abonnemang — som täcker båda hemmen. Börja med en gratis provperiod.",
@@ -171,7 +171,7 @@
     "plus": {
       "badge": "Rekommenderat",
       "name": "Lina+",
-      "price": "79 kr",
+      "price": "89 kr",
       "priceUnit": "/mån",
       "period": "2 veckor gratis provperiod",
       "both": "Ett abonnemang för båda föräldrarna",
@@ -632,7 +632,7 @@
     },
     "indexFaq": [
       { "q": "Vad är Lina?", "a": "Lina är en app för delad omsorg som hjälper föräldrar som delar omsorg om ett barn mellan två hem. Den samlar meddelanden, scheman, medicinsk information, kontakter, utrustningslistor och foton på ett gemensamt, privat ställe." },
-      { "q": "Är Lina gratis?", "a": "Lina har en gratisversion som inkluderar upp till 2 trådar, 100 foton, meddelanden, barninfo, kontakter, utrustningslistor och ett omsorgsschema. Lina+ kostar 79 kr/mån och ger obegränsade trådar, större album, sökfunktion, export och viktiga meddelanden. En prenumeration täcker båda föräldrarna." },
+      { "q": "Är Lina gratis?", "a": "Lina har en gratisversion som inkluderar upp till 2 trådar, 100 foton, meddelanden, barninfo, kontakter, utrustningslistor och ett omsorgsschema. Lina+ kostar 89 kr/mån och ger obegränsade trådar, större album, sökfunktion, export och viktiga meddelanden. En prenumeration täcker båda föräldrarna." },
       { "q": "Behöver båda föräldrarna betala?", "a": "Nej. En Lina+-prenumeration täcker båda föräldrarna. Den förälder som prenumererar ger båda full tillgång — den andre föräldern behöver aldrig betala." },
       { "q": "Är Lina privat och säkert?", "a": "Ja. Lina har ingen reklam, ingen datadelning med tredje part och ingen algoritm som styr vad du ser. Din information stannar mellan de två föräldrarna." },
       { "q": "Kan meddelanden redigeras eller tas bort?", "a": "Nej. Meddelanden i Lina kan varken redigeras eller tas bort efter att de skickats. Det skapar ett tydligt och förutsägbart register över vad som kommunicerats och avtalats." }
@@ -655,11 +655,16 @@
       { "q": "Var kan jag upprätta ett samarbetsavtal i Sverige?", "a": "I Sverige kan du vända dig till familjerätten i din kommun för kostnadsfri rådgivning och hjälp med att upprätta ett avtal om vårdnad, boende och umgänge." }
     ],
     "pricingFaq": [
-      { "q": "Vad kostar Lina?", "a": "Lina har en gratisversion med grundläggande funktioner. Lina+ kostar 79 kr per månad med 2 veckors gratis provperiod." },
+      { "q": "Vad kostar Lina?", "a": "Lina har en gratisversion med grundläggande funktioner. Lina+ kostar 89 kr per månad med 2 veckors gratis provperiod." },
       { "q": "Behöver den andra föräldern också betala?", "a": "Nej. En Lina+-prenumeration täcker båda föräldrarna." },
       { "q": "Kan jag avsluta när som helst?", "a": "Ja. Ingen bindningstid. Avsluta när som helst via App Store eller Google Play." },
       { "q": "Vad ingår i gratisversionen?", "a": "Upp till 2 trådar, 100 foton, meddelanden, barninfo, kontakter, utrustningslistor och omsorgsschema." }
-    ]
+    ],
+    "article1": { "headline": "Umgängesscheman förklarade", "description": "En översikt över de vanligaste umgängesscheman för barn med två hem — växelvis boende, 3-4-4-3, 2-2-5-5 och andra modeller. Vad passar för olika åldersgrupper?" },
+    "article2": { "headline": "Överlämningsdag — så gör du bytet enklare", "description": "Praktiska tips för smidigare överlämningar mellan hemmen — fasta rutiner, neutrala platser och vad som bör följa med barnet." },
+    "article3": { "headline": "Vad barnet behöver i varje hem", "description": "En praktisk checklista för föräldrar med delad omsorg — vad som bör finnas i båda hemmen, vad som bör följa med barnet och hur man håller koll." },
+    "article4": { "headline": "Växelvis boende vs. fast boende — vad är skillnaden?", "description": "Skillnaden mellan växelvis boende och fast boende hos en förälder — vad det innebär i praktiken för vardagen, beslutsrätt och barnets rättigheter." },
+    "article5": { "headline": "Kommunikation mellan föräldrar med delad omsorg", "description": "Hur du håller kommunikationen saklig och strukturerad när ni delar omsorgen om ett barn — praktiska tips om trådar, skriftlighet och tydliga gränser." }
   },
   "blog1": {
     "pageTitle": "Umgängesscheman förklarade — Lina",

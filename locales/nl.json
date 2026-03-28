@@ -137,13 +137,13 @@
   },
   "pricing": {
     "pageTitle": "Prijzen — Lina",
-    "pageDesc": "Lina heeft een gratis abonnement en Lina+ voor 79 kr/maand. Eén abonnement voor beide ouders. Geen reclame, geen gegevensdeling.",
+    "pageDesc": "Lina heeft een gratis abonnement en Lina+ voor € 7,99/maand. Eén abonnement voor beide ouders. Geen reclame, geen gegevensdeling.",
     "label": "Prijzen",
     "title": "Eén abonnement. Beide ouders.",
     "description": "Lina+ ontgrendelt alle functies met één abonnement — voor beide huishoudens. Begin met een gratis proefperiode.",
     "free": {
       "name": "Gratis",
-      "price": "0 kr",
+      "price": "€ 0",
       "period": "Altijd gratis",
       "f1": "Tot 2 onderwerpen",
       "f2": "Tot 100 foto's in gedeeld album",
@@ -155,7 +155,7 @@
     "plus": {
       "badge": "Aanbevolen",
       "name": "Lina+",
-      "price": "79 kr",
+      "price": "€ 7,99",
       "priceUnit": "/mnd",
       "period": "2 weken gratis proberen",
       "both": "Eén abonnement voor beide ouders",
@@ -619,7 +619,7 @@
     },
     "indexFaq": [
       { "q": "Wat is Lina?", "a": "Lina is een co-ouderschapsapp die ouders helpt de zorg over twee huishoudens te coördineren. Het brengt berichten, schema's, medische informatie, contacten, paklijsten en foto's samen op één gedeelde, privéplek." },
-      { "q": "Is Lina gratis?", "a": "Lina heeft een gratis abonnement met tot 2 onderwerpen, 100 foto's, berichten, kindinformatie, contacten, paklijsten en een zorgschema. Lina+ kost 79 kr/maand en ontgrendelt onbeperkte onderwerpen, een groter album, zoeken in onderwerpen, onderwerpen exporteren en belangrijke berichten. Eén abonnement voor beide ouders." },
+      { "q": "Is Lina gratis?", "a": "Lina heeft een gratis abonnement met tot 2 onderwerpen, 100 foto's, berichten, kindinformatie, contacten, paklijsten en een zorgschema. Lina+ kost € 7,99/maand en ontgrendelt onbeperkte onderwerpen, een groter album, zoeken in onderwerpen, onderwerpen exporteren en belangrijke berichten. Eén abonnement voor beide ouders." },
       { "q": "Moeten beide ouders betalen?", "a": "Nee. Eén Lina+-abonnement geldt voor beide ouders. De abonnerende ouder geeft beide ouders volledige toegang — de andere ouder hoeft nooit te betalen." },
       { "q": "Is Lina privé en veilig?", "a": "Ja. Lina heeft geen reclame, geen gegevensdeling met derden en geen algoritme dat bepaalt wat u ziet. Uw informatie blijft tussen de twee ouders." },
       { "q": "Kunnen berichten worden bewerkt of verwijderd?", "a": "Nee. Berichten in Lina kunnen na verzending niet worden bewerkt of verwijderd. Dit zorgt voor een duidelijk, betrouwbaar overzicht van wat er is gecommuniceerd en afgesproken." }
@@ -642,11 +642,16 @@
       { "q": "Waar kan ik een ouderschapsplan opstellen?", "a": "In Nederland is een ouderschapsplan verplicht bij scheiding. Een familiemediator of het Juridisch Loket kan hierbij helpen. In veel andere landen kunnen officiële gezinsdiensten of bemiddelingscentra helpen." }
     ],
     "pricingFaq": [
-      { "q": "Hoeveel kost Lina?", "a": "Lina heeft een gratis abonnement met basisfuncties. Lina+ kost 79 kr per maand met een proefperiode van 2 weken." },
+      { "q": "Hoeveel kost Lina?", "a": "Lina heeft een gratis abonnement met basisfuncties. Lina+ kost € 7,99 per maand met een proefperiode van 2 weken." },
       { "q": "Moet de andere ouder ook betalen?", "a": "Nee. Eén Lina+-abonnement geldt voor beide ouders." },
       { "q": "Kan ik op elk moment opzeggen?", "a": "Ja. Geen verplichting. Op elk moment opzeggen via de App Store of Google Play." },
       { "q": "Wat is inbegrepen in het gratis abonnement?", "a": "Tot 2 onderwerpen, 100 foto's, berichten, kindinformatie, contacten, paklijsten en een zorgschema." }
-    ]
+    ],
+    "article1": { "headline": "Omgangsregelingen uitgelegd", "description": "Een overzicht van de meest gebruikelijke zorgverdeling voor kinderen met twee huishoudens — week-op-week-af, 3-4-4-3, 2-2-5-5 en andere regelingen. Wat werkt voor verschillende leeftijdsgroepen?" },
+    "article2": { "headline": "Wisseldag — hoe maakt u overgangen soepeler", "description": "Praktische tips voor soepelere wisselmomenten — vaste routines, neutrale locaties en wat met het kind mee moet gaan." },
+    "article3": { "headline": "Wat uw kind in elk huishouden nodig heeft", "description": "Een praktische checklist voor co-ouders — wat moet er in beide huishoudens zijn, wat gaat met het kind mee, en hoe houdt u dat bij?" },
+    "article4": { "headline": "Co-ouderschap vs. hoofdverblijf — wat is het verschil?", "description": "Het verschil tussen co-ouderschap en hoofdverblijf bij één ouder — wat het betekent in de praktijk voor het dagelijks leven, besluitvorming en de rechten van het kind." },
+    "article5": { "headline": "Communicatie tussen co-ouders", "description": "Hoe u de communicatie zakelijk en gestructureerd houdt bij het delen van de zorg voor een kind — praktische tips over onderwerpen, schriftelijke afspraken en duidelijke grenzen." }
   },
   "blogIndex": {
     "pageTitle": "Blog — Lina",

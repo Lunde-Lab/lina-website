@@ -659,7 +659,12 @@
       { "q": "Må den andre forelderen også betale?", "a": "Nei. Ett Lina+-abonnement dekker begge foreldre." },
       { "q": "Kan jeg avslutte når som helst?", "a": "Ja. Ingen bindingstid. Avslutt når som helst via App Store eller Google Play." },
       { "q": "Hva er inkludert i gratisversjonen?", "a": "Opptil 2 tråder, 100 bilder, meldinger, barneinformasjon, kontakter, utstyrslister og samværsplan." }
-    ]
+    ],
+    "article1": { "headline": "Samværsordninger forklart", "description": "En oversikt over de vanligste samværsordningene for barn med to hjem." },
+    "article2": { "headline": "Byttedag — slik gjør du overgangene enklere", "description": "Praktiske tips for smidigere byttedager mellom hjemmene." },
+    "article3": { "headline": "Hva barnet trenger i hvert hjem", "description": "En praktisk sjekkliste — hva som bør finnes i begge hjem, og hva som bør følge barnet." },
+    "article4": { "headline": "Delt bosted vs. fast bosted — hva er forskjellen?", "description": "Hva det betyr i praksis for hverdagen, beslutningstaking og barnets rettigheter." },
+    "article5": { "headline": "Kommunikasjon mellom foreldre med delt omsorg", "description": "Hvorfor struktur hjelper, og hvordan holde tonen saklig når det handler om barnet." }
   },
   "blog1": {
     "pageTitle": "Samværsordninger forklart — Lina",

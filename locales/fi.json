@@ -153,13 +153,13 @@
   },
   "pricing": {
     "pageTitle": "Hinta — Lina",
-    "pageDesc": "Linalla on ilmainen versio ja Lina+ hintaan 79 kr/kk. Yksi tilaus kattaa molemmat vanhemmat. Ei mainoksia, ei tietojen jakamista.",
+    "pageDesc": "Linalla on ilmainen versio ja Lina+ hintaan 7,99 €/kk. Yksi tilaus kattaa molemmat vanhemmat. Ei mainoksia, ei tietojen jakamista.",
     "label": "Hinta",
     "title": "Yksi tilaus. Molemmat vanhemmat.",
     "description": "Lina+ avaa kaikki ominaisuudet yhdellä tilauksella — joka kattaa molemmat kodit. Aloita ilmaisella kokeilujaksolla.",
     "free": {
       "name": "Ilmainen",
-      "price": "0 kr",
+      "price": "0 €",
       "period": "Aina ilmainen",
       "f1": "Enintään 2 keskusteluketjua",
       "f2": "Enintään 100 kuvaa jaetussa albumissa",
@@ -171,7 +171,7 @@
     "plus": {
       "badge": "Suositeltu",
       "name": "Lina+",
-      "price": "79 kr",
+      "price": "7,99 €",
       "priceUnit": "/kk",
       "period": "2 viikon ilmainen kokeilujakso",
       "both": "Yksi tilaus molemmille vanhemmille",
@@ -632,7 +632,7 @@
     },
     "indexFaq": [
       { "q": "Mikä on Lina?", "a": "Lina on vuoroasumisperheille suunnattu sovellus, joka auttaa vanhempia koordinoimaan lapsen arkea kahden kodin välillä. Se kokoaa viestit, kalenterit, terveydelliset tiedot, yhteystiedot, tavaroihin liittyvät listat ja valokuvat yhteen jaettuun, yksityiseen paikkaan." },
-      { "q": "Onko Lina ilmainen?", "a": "Linalla on ilmainen versio, joka sisältää enintään 2 ketjua, 100 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenterin. Lina+ maksaa 79 kr/kk ja avaa rajattomat ketjut, suuremman albumin, ketjuhaun, ketjuviennin ja tärkeät viestit. Yksi tilaus kattaa molemmat vanhemmat." },
+      { "q": "Onko Lina ilmainen?", "a": "Linalla on ilmainen versio, joka sisältää enintään 2 ketjua, 100 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenterin. Lina+ maksaa 7,99 €/kk ja avaa rajattomat ketjut, suuremman albumin, ketjuhaun, ketjuviennin ja tärkeät viestit. Yksi tilaus kattaa molemmat vanhemmat." },
       { "q": "Pitääkö molempien vanhempien maksaa?", "a": "Ei. Yksi Lina+-tilaus kattaa molemmat vanhemmat. Tilaava vanhempi antaa molemmille täyden käyttöoikeuden — toisen vanhemman ei tarvitse koskaan maksaa." },
       { "q": "Onko Lina yksityinen ja turvallinen?", "a": "Kyllä. Linassa ei ole mainoksia, tietojen jakamista kolmansille osapuolille eikä algoritmia, joka päättää mitä näet. Tietosi pysyvät vain kahden vanhemman välillä." },
       { "q": "Voiko viestejä muokata tai poistaa?", "a": "Ei. Lina-viestejä ei voi muokata eikä poistaa lähettämisen jälkeen. Tämä luo selkeän ja ennakoitavan kirjanpidon siitä, mitä on viestitty ja sovittu." }
@@ -655,11 +655,16 @@
       { "q": "Mistä voin tehdä huoltosopimuksen Suomessa?", "a": "Suomessa lastenvalvoja voi vahvistaa vanhempien välisen sopimuksen lapsen huollosta, asumisesta ja tapaamisoikeudesta. Palvelu on ilmainen ja lisätietoja löytyy osoitteesta suomi.fi." }
     ],
     "pricingFaq": [
-      { "q": "Paljonko Lina maksaa?", "a": "Linalla on ilmainen versio perustoiminnoilla. Lina+ maksaa 79 kr kuukaudessa 2 viikon ilmaisella kokeilujaksolla." },
+      { "q": "Paljonko Lina maksaa?", "a": "Linalla on ilmainen versio perustoiminnoilla. Lina+ maksaa 7,99 € kuukaudessa 2 viikon ilmaisella kokeilujaksolla." },
       { "q": "Pitääkö toisen vanhemman myös maksaa?", "a": "Ei. Yksi Lina+-tilaus kattaa molemmat vanhemmat." },
       { "q": "Voinko peruuttaa milloin tahansa?", "a": "Kyllä. Ei sitomisaikaa. Peruuta milloin tahansa App Storen tai Google Playn kautta." },
       { "q": "Mitä ilmainen versio sisältää?", "a": "Enintään 2 ketjua, 100 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenteri." }
-    ]
+    ],
+    "article1": { "headline": "Asumisjärjestelyt selitettynä", "description": "Yleiskatsaus yleisimpiin asumisjärjestelyihin lapsille, joilla on kaksi kotia — vuoroviikot, 3-4-4-3, 2-2-5-5 ja muut mallit. Mikä sopii eri ikäryhmille?" },
+    "article2": { "headline": "Vaihtopäivä — näin teet siirtymisestä helpompaa", "description": "Käytännön vinkkejä sujuvampiin vaihtotilanteisiin kotien välillä — vakiintuneet rutiinit, neutraalit paikat ja mitä lapsen mukana tulisi kulkea." },
+    "article3": { "headline": "Mitä lapsi tarvitsee kummassakin kodissa", "description": "Käytännön tarkistuslista yhteishuoltajavanhemmille — mitä kummassakin kodissa pitäisi olla, minkä pitäisi kulkea lapsen mukana ja miten pitää kirjaa." },
+    "article4": { "headline": "Vuoroasuminen vs. lähivanhemmuus — mikä on ero?", "description": "Vuoroasumisen ja yhden kodin asumisen ero — mitä se tarkoittaa käytännössä arjessa, päätöksenteossa ja lapsen oikeuksissa." },
+    "article5": { "headline": "Viestintä yhteishuoltajavanhempien välillä", "description": "Miten pidät viestinnän asiallisena ja jäsenneltynä, kun jaatte lapsen huoltajuuden — käytännön vinkkejä keskusteluketjuihin, kirjallisiin sopimuksiin ja selkeisiin rajoihin." }
   },
   "blog1": {
     "pageTitle": "Asumisjärjestelyt selitettynä — Lina",

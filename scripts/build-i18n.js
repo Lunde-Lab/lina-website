@@ -47,10 +47,10 @@ const SOURCE_FILES = [
   { src: 'account-deletion.html',     urlPath: '/account-deletion.html', priority: '0.3' },
   { src: 'blog/index.html',           urlPath: '/blog/',                 priority: '0.5', hasDropdown: true },
   {
-    src: 'blog/samvaersordninger/index.html',
-    urlPath: '/blog/samvaersordninger/',
+    src: 'blog/custody-schedules/index.html',
+    urlPath: '/blog/custody-schedules/',
     langUrls: {
-      en: '/blog/custody-schedules/',
+      no: '/blog/samvaersordninger/',
       sv: '/blog/umgangesschema/',
       da: '/blog/samvaersordning/',
       fi: '/blog/vuoroasuminen/',
@@ -62,10 +62,10 @@ const SOURCE_FILES = [
     hasDropdown: true,
   },
   {
-    src: 'blog/byttedag/index.html',
-    urlPath: '/blog/byttedag/',
+    src: 'blog/handover-day/index.html',
+    urlPath: '/blog/handover-day/',
     langUrls: {
-      en: '/blog/handover-day/',
+      no: '/blog/byttedag/',
       sv: '/blog/overlamningsdag/',
       da: '/blog/byttedag-tips/',
       fi: '/blog/vaihtopaiva/',
@@ -77,10 +77,10 @@ const SOURCE_FILES = [
     hasDropdown: true,
   },
   {
-    src: 'blog/utstyr-to-hjem/index.html',
-    urlPath: '/blog/utstyr-to-hjem/',
+    src: 'blog/what-kids-need/index.html',
+    urlPath: '/blog/what-kids-need/',
     langUrls: {
-      en: '/blog/what-kids-need/',
+      no: '/blog/utstyr-to-hjem/',
       sv: '/blog/vad-barnet-behover/',
       da: '/blog/hvad-barnet-har-brug-for/',
       fi: '/blog/mita-lapsi-tarvitsee/',
@@ -92,10 +92,10 @@ const SOURCE_FILES = [
     hasDropdown: true,
   },
   {
-    src: 'blog/delt-bosted/index.html',
-    urlPath: '/blog/delt-bosted/',
+    src: 'blog/shared-vs-primary-residence/index.html',
+    urlPath: '/blog/shared-vs-primary-residence/',
     langUrls: {
-      en: '/blog/shared-vs-primary-residence/',
+      no: '/blog/delt-bosted/',
       sv: '/blog/vaxelvis-vs-fast-boende/',
       da: '/blog/delt-vs-fast-bopael/',
       fi: '/blog/vuoroasuminen-vs-lahivanhemmuus/',
@@ -107,10 +107,10 @@ const SOURCE_FILES = [
     hasDropdown: true,
   },
   {
-    src: 'blog/kommunikasjon/index.html',
-    urlPath: '/blog/kommunikasjon/',
+    src: 'blog/co-parent-communication/index.html',
+    urlPath: '/blog/co-parent-communication/',
     langUrls: {
-      en: '/blog/co-parent-communication/',
+      no: '/blog/kommunikasjon/',
       sv: '/blog/kommunikation-delad-omsorg/',
       da: '/blog/kommunikation-delt-omsorg/',
       fi: '/blog/yhteishuoltajuus-viestinta/',
@@ -258,13 +258,22 @@ const FAQ_MAP = {
   'pricing/index.html':        'pricingFaq',
 };
 
+const ARTICLE_MAP = {
+  'blog/custody-schedules/index.html':          'article1',
+  'blog/handover-day/index.html':               'article2',
+  'blog/what-kids-need/index.html':             'article3',
+  'blog/shared-vs-primary-residence/index.html': 'article4',
+  'blog/co-parent-communication/index.html':    'article5',
+};
+
 /**
  * Replace JSON-LD block content with localized values from locale.jsonLd.
  * - MobileApplication: replace description
  * - Organization: leave unchanged (language-independent)
  * - FAQPage: replace mainEntity with localized Q&A from the matching array
+ * - Article: replace headline, description, and mainEntityOfPage @id
  */
-function localizeJsonLd(html, locale, srcFile) {
+function localizeJsonLd(html, locale, srcFile, lang, file) {
   if (!locale.jsonLd) return html;
   const re = /(<script[^>]+type=["']application\/ld\+json["'][^>]*>)([\s\S]*?)(<\/script>)/gi;
   return html.replace(re, (fullMatch, open, jsonStr, close) => {
@@ -285,6 +294,30 @@ function localizeJsonLd(html, locale, srcFile) {
         name: q,
         acceptedAnswer: { '@type': 'Answer', text: a },
       }));
+      return open + '\n' + JSON.stringify(data, null, 2) + '\n' + close;
+    }
+    if (type === 'Article') {
+      const articleKey  = ARTICLE_MAP[srcFile];
+      const articleData = articleKey && locale.jsonLd[articleKey];
+      if (!articleData) return fullMatch;
+      if (articleData.headline)    data.headline    = articleData.headline;
+      if (articleData.description) data.description = articleData.description;
+      if (lang && file && data.mainEntityOfPage) {
+        const localizedPath = langUrl(lang, file.urlPath, file);
+        data.mainEntityOfPage['@id'] = BASE_URL + localizedPath;
+      }
+      return open + '\n' + JSON.stringify(data, null, 2) + '\n' + close;
+    }
+    if (type === 'BreadcrumbList') {
+      const articleKey = ARTICLE_MAP[srcFile];
+      if (!articleKey || !lang) return fullMatch;
+      const items = data.itemListElement;
+      if (!Array.isArray(items) || items.length < 3) return fullMatch;
+      if (locale.nav_home) items[0].name = locale.nav_home;
+      items[0].item = fullUrl(lang, '/', null);
+      items[1].item = fullUrl(lang, '/blog/', null);
+      const articleData = locale.jsonLd[articleKey];
+      if (articleData && articleData.headline) items[2].name = articleData.headline;
       return open + '\n' + JSON.stringify(data, null, 2) + '\n' + close;
     }
     return fullMatch;
@@ -591,7 +624,7 @@ function fixBlogLinksForRoot(html) {
 /** Transform source HTML into the English root version (minimal updates only) */
 function buildRoot(srcHtml, urlPath, hasDropdown, locale, srcFile, file) {
   let html = srcHtml;
-  html = localizeJsonLd(html, locale, srcFile);
+  html = localizeJsonLd(html, locale, srcFile, 'en', file);
   html = setCanonicalAndHreflang(html, 'en', urlPath, file);
   html = fixAssetPaths(html);
   html = fixBlogLinksForRoot(html);
@@ -606,7 +639,7 @@ function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile, file)
   const { titleKey, descKey } = getPageKeys(noHtml);
   let html = noHtml;
   html = applyTranslations(html, locale);
-  html = localizeJsonLd(html, locale, srcFile);
+  html = localizeJsonLd(html, locale, srcFile, lang, file);
   html = setHtmlLang(html, lang);
   html = setTitle(html, locale, titleKey);
   html = setDescription(html, locale, descKey);

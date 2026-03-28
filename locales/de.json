@@ -137,13 +137,13 @@
   },
   "pricing": {
     "pageTitle": "Preise — Lina",
-    "pageDesc": "Lina hat einen kostenlosen Plan und Lina+ für 79 kr/Monat. Ein Abonnement gilt für beide Elternteile. Keine Werbung, keine Datenweitergabe.",
+    "pageDesc": "Lina hat einen kostenlosen Plan und Lina+ für 7,99 €/Monat. Ein Abonnement gilt für beide Elternteile. Keine Werbung, keine Datenweitergabe.",
     "label": "Preise",
     "title": "Ein Abonnement. Beide Elternteile.",
     "description": "Lina+ schaltet alle Funktionen mit einem einzigen Abonnement frei — für beide Haushalte. Beginnen Sie mit einer kostenlosen Testphase.",
     "free": {
       "name": "Kostenlos",
-      "price": "0 kr",
+      "price": "0 €",
       "period": "Immer kostenlos",
       "f1": "Bis zu 2 Themenbereiche",
       "f2": "Bis zu 100 Fotos im gemeinsamen Album",
@@ -155,7 +155,7 @@
     "plus": {
       "badge": "Empfohlen",
       "name": "Lina+",
-      "price": "79 kr",
+      "price": "7,99 €",
       "priceUnit": "/Monat",
       "period": "2 Wochen kostenlos testen",
       "both": "Ein Abonnement für beide Elternteile",
@@ -619,7 +619,7 @@
     },
     "indexFaq": [
       { "q": "Was ist Lina?", "a": "Lina ist eine Co-Parenting-App, die Eltern hilft, die Betreuung über zwei Haushalte zu koordinieren. Sie bringt Nachrichten, Pläne, medizinische Informationen, Kontakte, Ausstattungslisten und Fotos an einem gemeinsamen, privaten Ort zusammen." },
-      { "q": "Ist Lina kostenlos?", "a": "Lina hat einen kostenlosen Plan mit bis zu 2 Themenbereichen, 100 Fotos, Nachrichten, Kinderinformationen, Kontakten, Ausstattungslisten und einem Betreuungsplan. Lina+ kostet 79 kr/Monat und schaltet unbegrenzte Themenbereiche, ein größeres Album, Themenbereichssuche, Themenbereichsexport und wichtige Nachrichten frei. Ein Abonnement gilt für beide Elternteile." },
+      { "q": "Ist Lina kostenlos?", "a": "Lina hat einen kostenlosen Plan mit bis zu 2 Themenbereichen, 100 Fotos, Nachrichten, Kinderinformationen, Kontakten, Ausstattungslisten und einem Betreuungsplan. Lina+ kostet 7,99 €/Monat und schaltet unbegrenzte Themenbereiche, ein größeres Album, Themenbereichssuche, Themenbereichsexport und wichtige Nachrichten frei. Ein Abonnement gilt für beide Elternteile." },
       { "q": "Müssen beide Elternteile zahlen?", "a": "Nein. Ein Lina+-Abonnement gilt für beide Elternteile. Das Elternteil, das abonniert, gibt beiden vollen Zugang — das andere Elternteil muss nie zahlen." },
       { "q": "Ist Lina privat und sicher?", "a": "Ja. Lina hat keine Werbung, keine Datenweitergabe an Dritte und keinen Algorithmus, der entscheidet, was Sie sehen. Ihre Informationen bleiben zwischen den beiden Elternteilen." },
       { "q": "Können Nachrichten bearbeitet oder gelöscht werden?", "a": "Nein. Nachrichten in Lina können nach dem Senden nicht bearbeitet oder gelöscht werden. Das schafft eine klare, verlässliche Aufzeichnung dessen, was kommuniziert und vereinbart wurde." }
@@ -642,11 +642,16 @@
       { "q": "Wo kann ich eine Betreuungsvereinbarung erstellen?", "a": "In Deutschland bietet das Jugendamt Beratung und Unterstützung an. In vielen Ländern können staatliche Familiendienste oder Beratungsstellen helfen, eine Betreuungsvereinbarung zu erstellen." }
     ],
     "pricingFaq": [
-      { "q": "Was kostet Lina?", "a": "Lina hat einen kostenlosen Plan mit grundlegenden Funktionen. Lina+ kostet 79 kr pro Monat mit zwei Wochen kostenlosem Test." },
+      { "q": "Was kostet Lina?", "a": "Lina hat einen kostenlosen Plan mit grundlegenden Funktionen. Lina+ kostet 7,99 € pro Monat mit zwei Wochen kostenlosem Test." },
       { "q": "Muss das andere Elternteil auch zahlen?", "a": "Nein. Ein Lina+-Abonnement gilt für beide Elternteile." },
       { "q": "Kann ich jederzeit kündigen?", "a": "Ja. Keine Mindestlaufzeit. Jederzeit über den App Store oder Google Play kündigen." },
       { "q": "Was ist im kostenlosen Plan enthalten?", "a": "Bis zu 2 Themenbereiche, 100 Fotos, Nachrichten, Kinderinformationen, Kontakte, Ausstattungslisten und ein Betreuungsplan." }
-    ]
+    ],
+    "article1": { "headline": "Umgangsregelungen im Überblick", "description": "Die häufigsten Betreuungsmodelle für Kinder mit zwei Haushalten — wöchentlicher Wechsel, 3-4-4-3, 2-2-5-5 und andere Modelle. Was funktioniert für welche Altersgruppe?" },
+    "article2": { "headline": "Übergabetag — wie Übergaben leichter werden", "description": "Praktische Tipps für reibungslosere Übergaben zwischen den Haushalten — feste Routinen, neutrale Orte und was das Kind mitnehmen sollte." },
+    "article3": { "headline": "Was Ihr Kind in jedem Haushalt braucht", "description": "Eine praktische Checkliste für Co-Eltern — was in beiden Haushalten vorhanden sein sollte, was das Kind mitnehmen sollte und wie man den Überblick behält." },
+    "article4": { "headline": "Wechselmodell vs. Residenzmodell — was ist der Unterschied?", "description": "Der Unterschied zwischen Wechselmodell und Residenzmodell — was es im Alltag, bei Entscheidungen und für die Rechte des Kindes bedeutet." },
+    "article5": { "headline": "Kommunikation zwischen Co-Eltern", "description": "Wie man die Kommunikation sachlich und strukturiert gestaltet, wenn man die Betreuung eines Kindes teilt — praktische Tipps zu Themenbereichen, schriftlichen Vereinbarungen und klaren Grenzen." }
   },
   "blogIndex": {
     "pageTitle": "Blog — Lina",

@@ -137,13 +137,13 @@
   },
   "pricing": {
     "pageTitle": "Pricing — Lina",
-    "pageDesc": "Lina has a free plan and Lina+ at 79 kr/month. One subscription covers both parents. No ads, no data sharing.",
+    "pageDesc": "Lina has a free plan and Lina+ at €7.99/month. One subscription covers both parents. No ads, no data sharing.",
     "label": "Pricing",
     "title": "One subscription. Both parents.",
     "description": "Lina+ unlocks all features with a single subscription — covering both homes. Start with a free trial.",
     "free": {
       "name": "Free",
-      "price": "0 kr",
+      "price": "€0",
       "period": "Always free",
       "f1": "Up to 2 threads",
       "f2": "Up to 100 photos in shared album",
@@ -155,7 +155,7 @@
     "plus": {
       "badge": "Recommended",
       "name": "Lina+",
-      "price": "79 kr",
+      "price": "€7.99",
       "priceUnit": "/mo",
       "period": "2 weeks free trial",
       "both": "One subscription for both parents",
@@ -616,7 +616,7 @@
     },
     "indexFaq": [
       { "q": "What is Lina?", "a": "Lina is a co-parenting app that helps parents who share care across two homes. It brings together messages, schedules, medical information, contacts, equipment lists, and photos in one shared, private space." },
-      { "q": "Is Lina free?", "a": "Lina has a free plan that includes up to 2 threads, 100 photos, messages, child information, contacts, equipment lists, and a care schedule. Lina+ costs 79 kr/month and unlocks unlimited threads, a larger album, thread search, thread export, and important messages. One subscription covers both parents." },
+      { "q": "Is Lina free?", "a": "Lina has a free plan that includes up to 2 threads, 100 photos, messages, child information, contacts, equipment lists, and a care schedule. Lina+ costs €7.99/month and unlocks unlimited threads, a larger album, thread search, thread export, and important messages. One subscription covers both parents." },
       { "q": "Do both parents need to pay?", "a": "No. One Lina+ subscription covers both parents. The parent who subscribes gives both parents full access — the other parent never needs to pay." },
       { "q": "Is Lina private and secure?", "a": "Yes. Lina has no advertising, no data sharing with third parties, and no algorithm deciding what you see. Your information stays between the two parents." },
       { "q": "Can messages be edited or deleted?", "a": "No. Messages in Lina cannot be edited or deleted after sending. This creates a clear, predictable record of what has been communicated and agreed." }
@@ -639,7 +639,7 @@
       { "q": "Where can I create a care agreement?", "a": "In many countries, government family services or mediation centres can help you create a care agreement. Check your local family law authority for digital or in-person options." }
     ],
     "pricingFaq": [
-      { "q": "How much does Lina cost?", "a": "Lina has a free plan with basic features. Lina+ costs 79 kr per month with a 2-week free trial." },
+      { "q": "How much does Lina cost?", "a": "Lina has a free plan with basic features. Lina+ costs €7.99 per month with a 2-week free trial." },
       { "q": "Does the other parent also need to pay?", "a": "No. One Lina+ subscription covers both parents." },
       { "q": "Can I cancel anytime?", "a": "Yes. No commitment period. Cancel anytime through the App Store or Google Play." },
       { "q": "What is included in the free plan?", "a": "Up to 2 threads, 100 photos, messages, child information, contacts, equipment lists, and a care schedule." }

@@ -153,7 +153,7 @@
   },
   "pricing": {
     "pageTitle": "Pris — Lina",
-    "pageDesc": "Lina har en gratis plan og Lina+ til 79 kr/md. Ét abonnement dækker begge forældre. Ingen reklame, ingen datadeling.",
+    "pageDesc": "Lina har en gratis plan og Lina+ til 59 kr/md. Ét abonnement dækker begge forældre. Ingen reklame, ingen datadeling.",
     "label": "Pris",
     "title": "Ét abonnement. Begge forældre.",
     "description": "Lina+ giver fuld adgang til alle funktioner med ét abonnement — som dækker begge hjem. Start med en gratis prøveperiode.",
@@ -171,7 +171,7 @@
     "plus": {
       "badge": "Anbefalet",
       "name": "Lina+",
-      "price": "79 kr",
+      "price": "59 kr",
       "priceUnit": "/md",
       "period": "2 ugers gratis prøveperiode",
       "both": "Ét abonnement for begge forældre",
@@ -632,7 +632,7 @@
     },
     "indexFaq": [
       { "q": "Hvad er Lina?", "a": "Lina er en app til delt omsorg, der hjælper forældre, som deler omsorg for et barn mellem to hjem. Den samler beskeder, planer, medicinsk information, kontakter, udstyrlister og fotos ét fælles, privat sted." },
-      { "q": "Er Lina gratis?", "a": "Lina har en gratis plan, der inkluderer op til 2 tråde, 100 fotos, beskeder, barneinformation, kontakter, udstyrlister og en samværsplan. Lina+ koster 79 kr/md. og giver ubegrænsede tråde, større album, søgning, eksport og vigtige beskeder. Ét abonnement dækker begge forældre." },
+      { "q": "Er Lina gratis?", "a": "Lina har en gratis plan, der inkluderer op til 2 tråde, 100 fotos, beskeder, barneinformation, kontakter, udstyrlister og en samværsplan. Lina+ koster 59 kr/md. og giver ubegrænsede tråde, større album, søgning, eksport og vigtige beskeder. Ét abonnement dækker begge forældre." },
       { "q": "Skal begge forældre betale?", "a": "Nej. Ét Lina+-abonnement dækker begge forældre. Den forælder, der abonnerer, giver begge fuld adgang — den anden forælder behøver aldrig betale." },
       { "q": "Er Lina privat og sikkert?", "a": "Ja. Lina har ingen reklame, ingen datadeling med tredjeparter og ingen algoritme, der bestemmer, hvad du ser. Dine oplysninger forbliver mellem de to forældre." },
       { "q": "Kan beskeder redigeres eller slettes?", "a": "Nej. Beskeder i Lina kan hverken redigeres eller slettes efter afsendelse. Det giver et klart og forudsigeligt overblik over, hvad der er kommunikeret og aftalt." }
@@ -655,11 +655,16 @@
       { "q": "Hvor laver man en samværsaftale i Danmark?", "a": "I Danmark kan du få hjælp hos Familieretshuset, som tilbyder gratis rådgivning og mægling til forældre, der skal aftale samvær og forældremyndighed." }
     ],
     "pricingFaq": [
-      { "q": "Hvad koster Lina?", "a": "Lina har en gratis plan med grundlæggende funktioner. Lina+ koster 79 kr om måneden med 2 ugers gratis prøveperiode." },
+      { "q": "Hvad koster Lina?", "a": "Lina har en gratis plan med grundlæggende funktioner. Lina+ koster 59 kr om måneden med 2 ugers gratis prøveperiode." },
       { "q": "Skal den anden forælder også betale?", "a": "Nej. Ét Lina+-abonnement dækker begge forældre." },
       { "q": "Kan jeg opsige til enhver tid?", "a": "Ja. Ingen bindingsperiode. Opsig til enhver tid via App Store eller Google Play." },
       { "q": "Hvad er inkluderet i gratisplanen?", "a": "Op til 2 tråde, 100 fotos, beskeder, barneinformation, kontakter, udstyrlister og samværsplan." }
-    ]
+    ],
+    "article1": { "headline": "Samværsordninger forklaret", "description": "En oversigt over de mest almindelige samværsordninger for børn med to hjem — skiftende uger, 3-4-4-3, 2-2-5-5 og andre modeller. Hvad passer til forskellige aldersgrupper?" },
+    "article2": { "headline": "Byttedagen — sådan gør du overleveringen nemmere", "description": "Konkrete tips til at gøre overleveringen tryggere og mere forudsigelig for barnet — faste rutiner, neutrale steder og hvad der bør følge med." },
+    "article3": { "headline": "Hvad barnet har brug for i hvert hjem", "description": "En praktisk tjekliste for forældre med delt omsorg — hvad der bør være i begge hjem, hvad der bør følge med barnet, og hvordan man holder styr på det." },
+    "article4": { "headline": "Delt bopæl vs. fast bopæl — hvad er forskellen?", "description": "Forskellen mellem delt bopæl og fast bopæl hos én forælder — hvad det betyder i praksis for hverdagen, beslutningskompetence og barnets rettigheder." },
+    "article5": { "headline": "Kommunikation mellem forældre med delt omsorg", "description": "Hvordan du holder kommunikationen saglig og struktureret, når I deler omsorgen for et barn — praktiske tips om tråde, skriftlighed og tydelige grænser." }
   },
   "blog1": {
     "pageTitle": "Samværsordninger forklaret — Lina",

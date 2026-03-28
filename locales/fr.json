@@ -137,13 +137,13 @@
   },
   "pricing": {
     "pageTitle": "Tarifs — Lina",
-    "pageDesc": "Lina propose un plan gratuit et Lina+ à 79 kr/mois. Un abonnement couvre les deux parents. Pas de publicité, pas de partage de données.",
+    "pageDesc": "Lina propose un plan gratuit et Lina+ à 7,99 €/mois. Un abonnement couvre les deux parents. Pas de publicité, pas de partage de données.",
     "label": "Tarifs",
     "title": "Un abonnement. Les deux parents.",
     "description": "Lina+ débloque toutes les fonctionnalités avec un seul abonnement — couvrant les deux foyers. Commencez avec un essai gratuit.",
     "free": {
       "name": "Gratuit",
-      "price": "0 kr",
+      "price": "0 €",
       "period": "Toujours gratuit",
       "f1": "Jusqu'à 2 sujets",
       "f2": "Jusqu'à 100 photos dans l'album partagé",
@@ -155,7 +155,7 @@
     "plus": {
       "badge": "Recommandé",
       "name": "Lina+",
-      "price": "79 kr",
+      "price": "7,99 €",
       "priceUnit": "/mois",
       "period": "2 semaines d'essai gratuit",
       "both": "Un abonnement pour les deux parents",
@@ -619,7 +619,7 @@
     },
     "indexFaq": [
       { "q": "Qu'est-ce que Lina ?", "a": "Lina est une application de coparentalité qui aide les parents qui partagent la garde entre deux foyers. Elle rassemble messages, plannings, informations médicales, contacts, listes d'équipement et photos dans un espace partagé et privé." },
-      { "q": "Lina est-il gratuit ?", "a": "Lina propose un plan gratuit qui inclut jusqu'à 2 sujets, 100 photos, messages, informations sur l'enfant, contacts, listes d'équipement et planning de garde. Lina+ coûte 79 kr/mois et débloque des sujets illimités, un album plus grand, la recherche dans les sujets, l'exportation des sujets et les messages importants. Un abonnement couvre les deux parents." },
+      { "q": "Lina est-il gratuit ?", "a": "Lina propose un plan gratuit qui inclut jusqu'à 2 sujets, 100 photos, messages, informations sur l'enfant, contacts, listes d'équipement et planning de garde. Lina+ coûte 7,99 €/mois et débloque des sujets illimités, un album plus grand, la recherche dans les sujets, l'exportation des sujets et les messages importants. Un abonnement couvre les deux parents." },
       { "q": "Les deux parents doivent-ils payer ?", "a": "Non. Un abonnement Lina+ couvre les deux parents. Le parent qui s'abonne donne aux deux parents un accès complet — l'autre parent n'a jamais besoin de payer." },
       { "q": "Lina est-il privé et sécurisé ?", "a": "Oui. Lina n'a pas de publicité, pas de partage de données avec des tiers et pas d'algorithme décidant ce que vous voyez. Vos informations restent entre les deux parents." },
       { "q": "Les messages peuvent-ils être modifiés ou supprimés ?", "a": "Non. Les messages dans Lina ne peuvent pas être modifiés ou supprimés après envoi. Cela crée un historique clair et prévisible de ce qui a été communiqué et convenu." }
@@ -642,11 +642,16 @@
       { "q": "Où puis-je établir une convention parentale ?", "a": "En France, vous pouvez contacter un médiateur familial ou consulter service-public.fr pour les démarches disponibles. La convention peut ensuite être homologuée par le juge aux affaires familiales. Dans d'autres pays, des services officiels similaires existent." }
     ],
     "pricingFaq": [
-      { "q": "Combien coûte Lina ?", "a": "Lina propose un plan gratuit avec les fonctionnalités de base. Lina+ coûte 79 kr par mois avec 2 semaines d'essai gratuit." },
+      { "q": "Combien coûte Lina ?", "a": "Lina propose un plan gratuit avec les fonctionnalités de base. Lina+ coûte 7,99 € par mois avec 2 semaines d'essai gratuit." },
       { "q": "L'autre parent doit-il aussi payer ?", "a": "Non. Un abonnement Lina+ couvre les deux parents." },
       { "q": "Puis-je annuler à tout moment ?", "a": "Oui. Sans engagement. Annulez à tout moment via l'App Store ou Google Play." },
       { "q": "Qu'est-ce qui est inclus dans le plan gratuit ?", "a": "Jusqu'à 2 sujets, 100 photos, messages, informations sur l'enfant, contacts, listes d'équipement et planning de garde." }
-    ]
+    ],
+    "article1": { "headline": "Les différents modes de garde expliqués", "description": "Un aperçu des modes de garde les plus courants pour les enfants avec deux foyers — semaine/semaine, 3-4-4-3, 2-2-5-5 et autres modèles. Ce qui fonctionne pour différentes tranches d'âge." },
+    "article2": { "headline": "Le jour de transition — comment faciliter les passages entre foyers", "description": "Conseils pratiques pour des transitions plus fluides entre les foyers — routines fixes, lieux neutres et ce qui doit suivre l'enfant." },
+    "article3": { "headline": "Ce dont votre enfant a besoin dans chaque foyer", "description": "Une liste de contrôle pratique pour les coparents — ce qui doit être dans les deux foyers, ce qui doit suivre l'enfant, et comment garder la trace." },
+    "article4": { "headline": "Résidence alternée vs. résidence principale — quelle différence ?", "description": "La différence entre résidence alternée et résidence principale chez un parent — ce que cela signifie en pratique pour le quotidien, les prises de décision et les droits de l'enfant." },
+    "article5": { "headline": "La communication entre coparents", "description": "Comment maintenir une communication factuelle et structurée lors du partage de la garde d'un enfant — conseils pratiques sur les sujets, les accords écrits et les limites claires." }
   },
   "blog1": {
     "pageTitle": "Les différents modes de garde expliqués — Lina",
