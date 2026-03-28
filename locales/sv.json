@@ -709,7 +709,10 @@
     "a2desc": "Praktiska tips för smidigare överlämningar mellan hemmen.",
     "a3label": "Utrustning",
     "a3title": "Vad barnet behöver i varje hem",
-    "a3desc": "En praktisk checklista — vad som bör finnas i båda hemmen och vad som bör följa med barnet."
+    "a3desc": "En praktisk checklista — vad som bör finnas i båda hemmen och vad som bör följa med barnet.",
+    "a4label": "Boende",
+    "a4title": "Växelvis boende vs. fast boende — vad är skillnaden?",
+    "a4desc": "Vad det innebär i praktiken för vardagen, beslutsrätt och barnets rättigheter."
   },
   "blog2": {
     "pageTitle": "Överlämningsdag — så gör du bytet enklare | Lina",
@@ -777,6 +780,40 @@
     "s6p3": "Behandla listan som ett praktiskt verktyg — inte som kontroll. Målet är att barnet har det som behövs, oavsett vilket hem det är i.",
     "ctaTitle": "Gemensamma utrustningslistor för båda hemmen",
     "ctaDesc": "Linas gemensamma utrustningslistor låter båda föräldrarna se vad som finns i varje hem — och uppdatera i realtid. Så att utrustningen följer barnet.",
+    "ctaCta": "Ladda ner Lina"
+  },
+  "blog4": {
+    "pageTitle": "Växelvis boende vs. fast boende — vad är skillnaden? | Lina",
+    "pageDesc": "Skillnaden mellan växelvis boende och fast boende hos en förälder — vad det innebär i praktiken för vardagen, beslutsrätt och barnets rättigheter.",
+    "label": "Boende",
+    "title": "Växelvis boende vs. fast boende — vad är skillnaden?",
+    "intro": "När föräldrar separerar är en av de första frågorna var barnet ska bo. Svaret handlar inte bara om antalet nätter — det påverkar vem som bestämmer vad, var barnet är folkbokfört och hur vardagen organiseras. Här är en översikt av vad växelvis boende och fast boende faktiskt innebär.",
+    "s1title": "Vad är växelvis boende?",
+    "s1p1": "Växelvis boende innebär att barnet bor lika mycket hos båda föräldrarna. Båda har lika stor bestämmanderätt i frågor som rör barnets dagliga liv — som fritidsaktiviteter, läkarbesök och vardagsrutiner.",
+    "s1p2": "I praktiken innebär det vanligtvis en ungefärlig 50/50-fördelning av tid, till exempel varannan vecka eller ett 3-4-4-3-schema. Barnet har två hem, inte ett hem och en besöksadress.",
+    "s1p3": "Växelvis boende förutsätter att föräldrarna samarbetar tillräckligt väl för att fatta löpande beslut tillsammans. Det kräver också att hemmen ligger tillräckligt nära för att barnet ska kunna upprätthålla skola, vänner och aktiviteter från båda platserna.",
+    "s2title": "Vad är fast boende hos en förälder?",
+    "s2p1": "Fast boende hos en förälder innebär att barnet har ett huvudsakligt hem. Boendeföräldern har bestämmanderätt i dagliga frågor och barnet är folkbokfört där.",
+    "s2p2": "Den andra föräldern — umgängesföräldern — har umgänge enligt avtal, till exempel varannan helg och en vardag. Umgängesföräldern delar fortfarande vårdnaden, men dagliga beslut fattas av boendeföräldern.",
+    "s2p3": "Denna lösning används ofta när föräldrarna bor långt ifrån varandra, när barnet behöver en stabil bas eller när samarbetet mellan föräldrarna är ansträngt.",
+    "s3title": "Juridiska skillnader",
+    "s3p1": "Vid växelvis boende har båda föräldrarna lika stor bestämmanderätt i dagliga frågor. Ingen förälder kan flytta med barnet utan den andres samtycke.",
+    "s3p2": "Vid fast boende kan boendeföräldern fatta dagliga beslut ensam. Boendeföräldern kan i princip flytta inrikes med barnet, men måste meddela den andra föräldern.",
+    "s3p3": "Gemensam vårdnad behålls oavsett boendelösning — om inte domstol beslutar annat. Vårdnad handlar om stora beslut som pass, medicinsk behandling och religion.",
+    "s4title": "Vad det innebär i praktiken",
+    "s4p1": "Vid växelvis boende delar föräldrarna på det dagliga: kläder, utrustning, läxor, läkarbesök. Båda hemmen måste vara fullt utrustade och båda föräldrarna måste vara tillgängliga i vardagen.",
+    "s4p2": "Vid fast boende är vardagen mer förutsägbar för barnet — ett grannskap, en uppsättning rutiner, en skolväg. Men det kräver extra insats för att se till att umgängesföräldern är delaktig i barnets liv.",
+    "s4p3": "Ingen av lösningarna är objektivt bättre än den andra. Vad som fungerar beror på barnets ålder, föräldrarnas situation, avståndet mellan hemmen och kvaliteten på samarbetet.",
+    "s5title": "Vad forskningen säger",
+    "s5p1": "Forskning från Skandinavien visar att barn med växelvis boende generellt rapporterar lika bra eller bättre mående jämfört med barn som bor huvudsakligen hos en förälder — förutsatt att konfliktnivån mellan föräldrarna är låg.",
+    "s5p2": "För barn i högkonfliktsituationer är bilden mer komplex. Täta byten mellan två hem kan öka stressen om föräldrarna inte kan skydda barnet från konflikten.",
+    "s5p3": "Oavsett lösning är det kvaliteten på föräldrasamarbetet — inte antalet nätter — som har störst betydelse för barnets mående.",
+    "s6title": "Officiella resurser",
+    "s6p1": "Valet av boende bör göras med barnets bästa i centrum. Om ni inte kan enas kan familjerätten i kommunen erbjuda samarbetssamtal.",
+    "s6p2": "I Sverige erbjuder MFoF information om vårdnad, boende och umgänge. I Norge är det familievernkontoret, i Danmark Familieretshuset och i Finland lastenvalvoja i kommunen.",
+    "s6p3": "Denna artikel ger allmän information och ersätter inte juridisk rådgivning. Vid tveksamheter, kontakta en fackperson.",
+    "ctaTitle": "Koordinera vardagen — oavsett lösning",
+    "ctaDesc": "Oavsett om barnet har växelvis boende eller fast boende hos en förälder — Lina hjälper båda föräldrarna att hålla koll på det praktiska.",
     "ctaCta": "Ladda ner Lina"
   }
 }

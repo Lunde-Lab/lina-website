@@ -309,4 +309,59 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://getlina.app/blog/delt-bosted/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/shared-vs-primary-residence/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/vaxelvis-vs-fast-boende/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/delt-vs-fast-bopael/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/en/blog/shared-vs-primary-residence/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/shared-vs-primary-residence/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/vaxelvis-vs-fast-boende/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/delt-vs-fast-bopael/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/sv/blog/vaxelvis-vs-fast-boende/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/shared-vs-primary-residence/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/vaxelvis-vs-fast-boende/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/delt-vs-fast-bopael/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/da/blog/delt-vs-fast-bopael/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/shared-vs-primary-residence/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/vaxelvis-vs-fast-boende/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/delt-vs-fast-bopael/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/shared-vs-primary-residence/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/vaxelvis-vs-fast-boende/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/delt-vs-fast-bopael/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

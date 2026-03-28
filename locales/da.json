@@ -709,7 +709,10 @@
     "a2desc": "Konkrete tips til at gøre overleveringen tryggere og mere forudsigelig for barnet.",
     "a3label": "Udstyr",
     "a3title": "Hvad barnet har brug for i hvert hjem",
-    "a3desc": "En praktisk tjekliste — hvad der bør være i begge hjem, og hvad der bør følge med barnet."
+    "a3desc": "En praktisk tjekliste — hvad der bør være i begge hjem, og hvad der bør følge med barnet.",
+    "a4label": "Bopæl",
+    "a4title": "Delt bopæl vs. fast bopæl — hvad er forskellen?",
+    "a4desc": "Hvad det betyder i praksis for hverdagen, beslutningskompetence og barnets rettigheder."
   },
   "blog2": {
     "pageTitle": "Byttedagen — sådan gør du overleveringen nemmere | Lina",
@@ -777,6 +780,40 @@
     "s6p3": "Betragt listen som et praktisk værktøj — ikke som kontrol. Målet er at barnet har det, det har brug for, uanset hvilket hjem det er i.",
     "ctaTitle": "Fælles udstyrslister for begge hjem",
     "ctaDesc": "Linas fælles udstyrslister lader begge forældre se hvad der er i hvert hjem — og opdatere i realtid. Så udstyret følger barnet.",
+    "ctaCta": "Download Lina"
+  },
+  "blog4": {
+    "pageTitle": "Delt bopæl vs. fast bopæl — hvad er forskellen? | Lina",
+    "pageDesc": "Forskellen mellem delt bopæl og fast bopæl hos én forælder — hvad det betyder i praksis for hverdagen, beslutningskompetence og barnets rettigheder.",
+    "label": "Bopæl",
+    "title": "Delt bopæl vs. fast bopæl — hvad er forskellen?",
+    "intro": "Når forældre går fra hinanden, er et af de første spørgsmål, hvor barnet skal bo. Svaret handler ikke kun om antallet af overnatninger — det påvirker hvem der bestemmer hvad, hvor barnet er tilmeldt folkeregistret, og hvordan hverdagen organiseres. Her er en oversigt over hvad delt bopæl og fast bopæl faktisk betyder.",
+    "s1title": "Hvad er delt bopæl?",
+    "s1p1": "Delt bopæl betyder, at barnet bor lige meget hos begge forældre. Begge har lige stor beslutningskompetence i spørgsmål om barnets daglige liv — som fritidsaktiviteter, lægeaftaler og hverdagsrutiner.",
+    "s1p2": "I praksis betyder det normalt en tilnærmelsesvis 50/50-fordeling af tid, for eksempel hver anden uge eller en 3-4-4-3-ordning. Barnet har to hjem, ikke ét hjem og et besøgssted.",
+    "s1p3": "Delt bopæl forudsætter, at forældrene samarbejder godt nok til at træffe løbende beslutninger sammen. Det kræver også, at hjemmene ligger tæt nok på hinanden til, at barnet kan opretholde skole, venner og aktiviteter fra begge steder.",
+    "s2title": "Hvad er fast bopæl hos én forælder?",
+    "s2p1": "Fast bopæl hos én forælder betyder, at barnet har ét primært hjem. Bopælsforælderen har beslutningskompetence i daglige spørgsmål, og barnet er tilmeldt folkeregistret der.",
+    "s2p2": "Den anden forælder — samværsforælderen — har samvær efter aftale, for eksempel hver anden weekend og en hverdag. Samværsforælderen deler stadig forældremyndigheden, men daglige beslutninger træffes af bopælsforælderen.",
+    "s2p3": "Denne ordning bruges ofte, når forældrene bor langt fra hinanden, når barnet har brug for én stabil base, eller når samarbejdet mellem forældrene er vanskeligt.",
+    "s3title": "Juridiske forskelle",
+    "s3p1": "Ved delt bopæl har begge forældre lige stor beslutningskompetence i daglige spørgsmål. Ingen af forældrene kan flytte med barnet uden den andens samtykke.",
+    "s3p2": "Ved fast bopæl kan bopælsforælderen træffe daglige beslutninger alene. Bopælsforælderen kan i udgangspunktet flytte indenlands med barnet, men skal varsle den anden forælder.",
+    "s3p3": "Fælles forældremyndighed bevares uafhængigt af bopælsordning — medmindre retten bestemmer andet. Forældremyndighed handler om store beslutninger som pas, medicinsk behandling og religion.",
+    "s4title": "Hvad det betyder i praksis",
+    "s4p1": "Ved delt bopæl deler forældrene det daglige: tøj, udstyr, lektier, lægeaftaler. Begge hjem skal være fuldt udstyrede, og begge forældre skal være tilgængelige i hverdagen.",
+    "s4p2": "Ved fast bopæl er hverdagen mere forudsigelig for barnet — ét kvarter, ét sæt rutiner, én skolevej. Men det kræver ekstra indsats for at sikre, at samværsforælderen er involveret i barnets liv.",
+    "s4p3": "Ingen af ordningerne er objektivt bedre end den anden. Hvad der fungerer afhænger af barnets alder, forældrenes situation, afstanden mellem hjemmene og kvaliteten af samarbejdet.",
+    "s5title": "Hvad forskningen siger",
+    "s5p1": "Forskning fra Skandinavien viser, at børn med delt bopæl generelt rapporterer lige god eller bedre trivsel sammenlignet med børn, der bor fast hos én forælder — forudsat at konfliktniveauet mellem forældrene er lavt.",
+    "s5p2": "For børn i højkonfliktsituationer er billedet mere sammensat. Hyppige skift mellem to hjem kan forstærke stresset, hvis forældrene ikke formår at skærme barnet fra konflikten.",
+    "s5p3": "Uanset ordning er det kvaliteten af forældresamarbejdet — ikke antallet af overnatninger — der har størst betydning for barnets trivsel.",
+    "s6title": "Officielle ressourcer",
+    "s6p1": "Valg af bopæl bør ske med barnets bedste i centrum. Hvis I ikke kan blive enige, kan Familieretshuset tilbyde rådgivning.",
+    "s6p2": "I Danmark tilbyder Familieretshuset vejledning om samvær og bopæl. I Norge er det familievernkontoret, i Sverige familjerätten og i Finland lastenvalvoja i kommunen.",
+    "s6p3": "Denne artikel giver generel information og erstatter ikke juridisk rådgivning. Ved tvivl, kontakt en fagperson.",
+    "ctaTitle": "Koordiner hverdagen — uanset ordning",
+    "ctaDesc": "Uanset om barnet har delt bopæl eller fast bopæl hos én forælder — Lina hjælper begge forældre med at holde styr på det praktiske.",
     "ctaCta": "Download Lina"
   }
 }

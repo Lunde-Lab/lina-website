@@ -82,6 +82,18 @@ const SOURCE_FILES = [
     priority: '0.6',
     hasDropdown: true,
   },
+  {
+    src: 'blog/delt-bosted/index.html',
+    urlPath: '/blog/delt-bosted/',
+    langUrls: {
+      en: '/blog/shared-vs-primary-residence/',
+      sv: '/blog/vaxelvis-vs-fast-boende/',
+      da: '/blog/delt-vs-fast-bopael/',
+      fi: '/blog/vuoroasuminen-vs-lahivanhemmuus/',
+    },
+    priority: '0.6',
+    hasDropdown: true,
+  },
 ];
 
 // Exact internal hrefs that should receive a /LANG/ prefix in generated files.
@@ -100,6 +112,8 @@ const INTERNAL_HREFS = [
   '/faq/',
   '/blog/',
   '/blog',
+  '/blog/delt-bosted/',
+  '/blog/delt-bosted',
   '/blog/utstyr-to-hjem/',
   '/blog/utstyr-to-hjem',
   '/blog/byttedag/',
