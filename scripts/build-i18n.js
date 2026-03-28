@@ -135,6 +135,49 @@ function processNonJsonLd(html, fn) {
   return parts.join('');
 }
 
+// ─── JSON-LD localization ─────────────────────────────────────────────────────
+
+const FAQ_MAP = {
+  'index.html':                'indexFaq',
+  'faq/index.html':            'faqFaq',
+  'care-schedule/index.html':  'csFaq',
+  'care-agreement/index.html': 'caFaq',
+  'pricing/index.html':        'pricingFaq',
+};
+
+/**
+ * Replace JSON-LD block content with localized values from locale.jsonLd.
+ * - MobileApplication: replace description
+ * - Organization: leave unchanged (language-independent)
+ * - FAQPage: replace mainEntity with localized Q&A from the matching array
+ */
+function localizeJsonLd(html, locale, srcFile) {
+  if (!locale.jsonLd) return html;
+  const re = /(<script[^>]+type=["']application\/ld\+json["'][^>]*>)([\s\S]*?)(<\/script>)/gi;
+  return html.replace(re, (fullMatch, open, jsonStr, close) => {
+    let data;
+    try { data = JSON.parse(jsonStr); } catch (e) { return fullMatch; }
+    const type = data['@type'];
+    if (type === 'MobileApplication' && locale.jsonLd.app) {
+      data.description = locale.jsonLd.app.description;
+      return open + '\n' + JSON.stringify(data, null, 2) + '\n' + close;
+    }
+    if (type === 'Organization') return fullMatch;
+    if (type === 'FAQPage') {
+      const faqKey = FAQ_MAP[srcFile];
+      const items  = faqKey && locale.jsonLd[faqKey];
+      if (!items) return fullMatch;
+      data.mainEntity = items.map(({ q, a }) => ({
+        '@type': 'Question',
+        name: q,
+        acceptedAnswer: { '@type': 'Answer', text: a },
+      }));
+      return open + '\n' + JSON.stringify(data, null, 2) + '\n' + close;
+    }
+    return fullMatch;
+  });
+}
+
 // ─── Individual transforms ────────────────────────────────────────────────────
 
 /**
@@ -394,8 +437,9 @@ function safetyCheck(srcHtml, outHtml, label) {
 // ─── Per-file pipelines ───────────────────────────────────────────────────────
 
 /** Transform source HTML into a Norwegian version (minimal updates only) */
-function buildNorwegian(srcHtml, urlPath, hasDropdown) {
+function buildNorwegian(srcHtml, urlPath, hasDropdown, locale, srcFile) {
   let html = srcHtml;
+  html = localizeJsonLd(html, locale, srcFile);
   html = setCanonicalAndHreflang(html, 'no', urlPath);
   html = fixAssetPaths(html);
   html = fixLogoLink(html, 'no');
@@ -405,10 +449,11 @@ function buildNorwegian(srcHtml, urlPath, hasDropdown) {
 }
 
 /** Transform Norwegian HTML into a fully translated version for `lang` */
-function buildForLang(noHtml, lang, locale, urlPath, hasDropdown) {
+function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile) {
   const { titleKey, descKey } = getPageKeys(noHtml);
   let html = noHtml;
   html = applyTranslations(html, locale);
+  html = localizeJsonLd(html, locale, srcFile);
   html = setHtmlLang(html, lang);
   html = setTitle(html, locale, titleKey);
   html = setDescription(html, locale, descKey);
@@ -457,7 +502,9 @@ function buildSitemap() {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 function main() {
-  // Load all target-language locales
+  // Load all locales (including Norwegian for JSON-LD localization)
+  const noLocale = JSON.parse(fs.readFileSync(path.join(ROOT, 'locales', 'no.json'), 'utf8'));
+  console.log('Loaded locale: no');
   const locales = {};
   for (const lang of LANGS) {
     const p = path.join(ROOT, 'locales', `${lang}.json`);
@@ -478,7 +525,7 @@ function main() {
     const origSections = countStr(originalHtml, '<section');
 
     // ── Step 1: build updated Norwegian source ─────────────────────────────
-    const noHtml = buildNorwegian(originalHtml, urlPath, hasDropdown);
+    const noHtml = buildNorwegian(originalHtml, urlPath, hasDropdown, noLocale, src);
 
     if (!safetyCheck(originalHtml, noHtml, `${src} [no]`)) {
       console.error(`  ABORT: skipping write of ${src}`);
@@ -491,7 +538,7 @@ function main() {
 
     // ── Step 2: generate language versions ────────────────────────────────
     for (const lang of LANGS) {
-      const outHtml = buildForLang(noHtml, lang, locales[lang], urlPath, hasDropdown);
+      const outHtml = buildForLang(noHtml, lang, locales[lang], urlPath, hasDropdown, src);
 
       if (!safetyCheck(originalHtml, outHtml, `${src} [${lang}]`)) {
         console.error(`  ABORT: skipping ${lang}/${src}`);

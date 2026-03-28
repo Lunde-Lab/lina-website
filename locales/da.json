@@ -624,5 +624,40 @@
       "description": "Billederne lægges i det delte album. De store og små øjeblikke deles automatisk — uanset hvilket hjem barnet er i."
     },
     "cta": "Læs flere historier"
+  },
+  "jsonLd": {
+    "app": {
+      "description": "Lina hjælper forældre med delt omsorg med at koordinere hverdagen på tværs af to hjem — fælles plan, beskeder og lister ét roligt, privat sted."
+    },
+    "indexFaq": [
+      { "q": "Hvad er Lina?", "a": "Lina er en app til delt omsorg, der hjælper forældre, som deler omsorg for et barn mellem to hjem. Den samler beskeder, planer, medicinsk information, kontakter, udstyrlister og fotos ét fælles, privat sted." },
+      { "q": "Er Lina gratis?", "a": "Lina har en gratis plan, der inkluderer op til 2 tråde, 100 fotos, beskeder, barneinformation, kontakter, udstyrlister og en samværsplan. Lina+ koster 79 kr/md. og giver ubegrænsede tråde, større album, søgning, eksport og vigtige beskeder. Ét abonnement dækker begge forældre." },
+      { "q": "Skal begge forældre betale?", "a": "Nej. Ét Lina+-abonnement dækker begge forældre. Den forælder, der abonnerer, giver begge fuld adgang — den anden forælder behøver aldrig betale." },
+      { "q": "Er Lina privat og sikkert?", "a": "Ja. Lina har ingen reklame, ingen datadeling med tredjeparter og ingen algoritme, der bestemmer, hvad du ser. Dine oplysninger forbliver mellem de to forældre." },
+      { "q": "Kan beskeder redigeres eller slettes?", "a": "Nej. Beskeder i Lina kan hverken redigeres eller slettes efter afsendelse. Det giver et klart og forudsigeligt overblik over, hvad der er kommunikeret og aftalt." }
+    ],
+    "faqFaq": [
+      { "q": "Hvad er Lina?", "a": "Lina er en app til forældre med delt omsorg. Den samler praktiske oplysninger — barneinformation, beskeder, fotos, kontakter og udstyrlister — ét fælles sted tilgængeligt fra begge hjem." },
+      { "q": "Er Lina gratis?", "a": "Ja, Lina er gratis at downloade og bruge. Der kræves ingen betaling for at oprette en konto eller invitere den anden forælder." },
+      { "q": "Kan jeg eksportere samværsplanen?", "a": "Ja, du kan eksportere samværsplanen som PDF direkte fra værktøjet." },
+      { "q": "Hvem kan se barnets oplysninger?", "a": "Kun de to forældre, der er tilknyttet barnet i Lina, har adgang til barnets oplysninger." },
+      { "q": "Kan beskeder slettes eller redigeres?", "a": "Nej, beskeder i Lina kan hverken redigeres eller slettes efter afsendelse, hvilket skaber et klart og pålideligt overblik." }
+    ],
+    "csFaq": [
+      { "q": "Hvad er en samværsplan?", "a": "En samværsplan er et visuelt overblik over, hvordan et barns tid fordeles mellem to hjem, uge for uge." },
+      { "q": "Har jeg brug for en konto?", "a": "Nej, samværsplansværktøjet kan bruges direkte i browseren uden en konto." },
+      { "q": "Kan jeg eksportere planen?", "a": "Ja, du kan eksportere samværsplanen som PDF." }
+    ],
+    "caFaq": [
+      { "q": "Hvad bør en samværsaftale indeholde?", "a": "En god samværsaftale bør dække samværsmønster, bopæl, afhentning og aflevering, ferie- og helligdagsfordeling, omkostningsfordeling, kommunikation, rejser og rutiner for ændringer." },
+      { "q": "Er en samværsaftale juridisk bindende?", "a": "En privat samværsaftale er baseret på gensidig enighed mellem forældrene. Den er ikke juridisk bindende som en retsafgørelse, men giver struktur og forudsigelighed." },
+      { "q": "Hvor laver man en samværsaftale i Danmark?", "a": "I Danmark kan du få hjælp hos Familieretshuset, som tilbyder gratis rådgivning og mægling til forældre, der skal aftale samvær og forældremyndighed." }
+    ],
+    "pricingFaq": [
+      { "q": "Hvad koster Lina?", "a": "Lina har en gratis plan med grundlæggende funktioner. Lina+ koster 79 kr om måneden med 2 ugers gratis prøveperiode." },
+      { "q": "Skal den anden forælder også betale?", "a": "Nej. Ét Lina+-abonnement dækker begge forældre." },
+      { "q": "Kan jeg opsige til enhver tid?", "a": "Ja. Ingen bindingsperiode. Opsig til enhver tid via App Store eller Google Play." },
+      { "q": "Hvad er inkluderet i gratisplanen?", "a": "Op til 2 tråde, 100 fotos, beskeder, barneinformation, kontakter, udstyrlister og samværsplan." }
+    ]
   }
 }

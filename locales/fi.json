@@ -624,5 +624,40 @@
       "description": "Kuvat menevät jaettuun albumiin. Suuret ja pienet hetket jakautuvat automaattisesti — riippumatta siitä, missä kodissa lapsi on."
     },
     "cta": "Lue lisää tarinoita"
+  },
+  "jsonLd": {
+    "app": {
+      "description": "Lina auttaa vuoroasumisperheitä koordinoimaan arkea kahden kodin välillä — jaettu kalenteri, viestit ja listat yhdessä rauhallisessa, yksityisessä paikassa."
+    },
+    "indexFaq": [
+      { "q": "Mikä on Lina?", "a": "Lina on vuoroasumisperheille suunnattu sovellus, joka auttaa vanhempia koordinoimaan lapsen arkea kahden kodin välillä. Se kokoaa viestit, kalenterit, terveydelliset tiedot, yhteystiedot, tavaroihin liittyvät listat ja valokuvat yhteen jaettuun, yksityiseen paikkaan." },
+      { "q": "Onko Lina ilmainen?", "a": "Linalla on ilmainen versio, joka sisältää enintään 2 ketjua, 100 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenterin. Lina+ maksaa 79 kr/kk ja avaa rajattomat ketjut, suuremman albumin, ketjuhaun, ketjuviennin ja tärkeät viestit. Yksi tilaus kattaa molemmat vanhemmat." },
+      { "q": "Pitääkö molempien vanhempien maksaa?", "a": "Ei. Yksi Lina+-tilaus kattaa molemmat vanhemmat. Tilaava vanhempi antaa molemmille täyden käyttöoikeuden — toisen vanhemman ei tarvitse koskaan maksaa." },
+      { "q": "Onko Lina yksityinen ja turvallinen?", "a": "Kyllä. Linassa ei ole mainoksia, tietojen jakamista kolmansille osapuolille eikä algoritmia, joka päättää mitä näet. Tietosi pysyvät vain kahden vanhemman välillä." },
+      { "q": "Voiko viestejä muokata tai poistaa?", "a": "Ei. Lina-viestejä ei voi muokata eikä poistaa lähettämisen jälkeen. Tämä luo selkeän ja ennakoitavan kirjanpidon siitä, mitä on viestitty ja sovittu." }
+    ],
+    "faqFaq": [
+      { "q": "Mikä on Lina?", "a": "Lina on sovellus vuoroasumisperheille. Se kokoaa käytännön tiedot — lapsen tiedot, viestit, valokuvat, yhteystiedot ja tavaroihin liittyvät listat — yhteen jaettuun paikkaan, joka on käytettävissä molemmista kodeista." },
+      { "q": "Onko Lina ilmainen?", "a": "Kyllä, Lina on ilmainen ladata ja käyttää. Tilin luominen tai toisen vanhemman kutsuminen ei vaadi maksua." },
+      { "q": "Voinko viedä kalenterin?", "a": "Kyllä, voit viedä kalenterin PDF-muodossa suoraan työkalusta." },
+      { "q": "Kuka voi nähdä lapsen tiedot?", "a": "Vain ne kaksi vanhempaa, jotka on yhdistetty lapseen Linassa, voivat käyttää lapsen tietoja." },
+      { "q": "Voiko viestejä poistaa tai muokata?", "a": "Ei, Lina-viestejä ei voi muokata eikä poistaa lähettämisen jälkeen, mikä luo selkeän ja luotettavan historiikin." }
+    ],
+    "csFaq": [
+      { "q": "Mikä on vuoroasumiskalenteri?", "a": "Vuoroasumiskalenteri on visuaalinen yleiskatsaus siitä, miten lapsen aika jaetaan kahden kodin välillä viikko viikolta." },
+      { "q": "Tarvitsenko tilin?", "a": "Ei, kalenterityökalua voi käyttää suoraan selaimessa ilman tiliä." },
+      { "q": "Voinko viedä kalenterin?", "a": "Kyllä, voit viedä kalenterin PDF-muodossa." }
+    ],
+    "caFaq": [
+      { "q": "Mitä huoltosopimuksen tulisi sisältää?", "a": "Hyvän huoltosopimuksen tulisi kattaa hoitomalli, asuinpaikka, nouto ja palautus, loma-aikojen jako, kustannusten jako, viestintä, matkat ja rutiinit muutoksia varten." },
+      { "q": "Onko huoltosopimus laillisesti sitova?", "a": "Yksityinen huoltosopimus perustuu vanhempien keskinäiseen sopimukseen. Se ei ole oikeudellisesti sitova kuten tuomioistuimen päätös, mutta se antaa rakennetta ja ennakoitavuutta." },
+      { "q": "Mistä voin tehdä huoltosopimuksen Suomessa?", "a": "Suomessa lastenvalvoja voi vahvistaa vanhempien välisen sopimuksen lapsen huollosta, asumisesta ja tapaamisoikeudesta. Palvelu on ilmainen ja lisätietoja löytyy osoitteesta suomi.fi." }
+    ],
+    "pricingFaq": [
+      { "q": "Paljonko Lina maksaa?", "a": "Linalla on ilmainen versio perustoiminnoilla. Lina+ maksaa 79 kr kuukaudessa 2 viikon ilmaisella kokeilujaksolla." },
+      { "q": "Pitääkö toisen vanhemman myös maksaa?", "a": "Ei. Yksi Lina+-tilaus kattaa molemmat vanhemmat." },
+      { "q": "Voinko peruuttaa milloin tahansa?", "a": "Kyllä. Ei sitomisaikaa. Peruuta milloin tahansa App Storen tai Google Playn kautta." },
+      { "q": "Mitä ilmainen versio sisältää?", "a": "Enintään 2 ketjua, 100 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenteri." }
+    ]
   }
 }

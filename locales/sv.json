@@ -624,5 +624,40 @@
       "description": "Bilderna läggs i det delade albumet. De stora och små stunderna delas automatiskt — oavsett vilket hem barnet är i."
     },
     "cta": "Läs fler berättelser"
+  },
+  "jsonLd": {
+    "app": {
+      "description": "Lina hjälper föräldrar med delad omsorg att koordinera vardagen mellan två hem — gemensamt schema, meddelanden och listor på ett lugnt, privat ställe."
+    },
+    "indexFaq": [
+      { "q": "Vad är Lina?", "a": "Lina är en app för delad omsorg som hjälper föräldrar som delar omsorg om ett barn mellan två hem. Den samlar meddelanden, scheman, medicinsk information, kontakter, utrustningslistor och foton på ett gemensamt, privat ställe." },
+      { "q": "Är Lina gratis?", "a": "Lina har en gratisversion som inkluderar upp till 2 trådar, 100 foton, meddelanden, barninfo, kontakter, utrustningslistor och ett omsorgsschema. Lina+ kostar 79 kr/mån och ger obegränsade trådar, större album, sökfunktion, export och viktiga meddelanden. En prenumeration täcker båda föräldrarna." },
+      { "q": "Behöver båda föräldrarna betala?", "a": "Nej. En Lina+-prenumeration täcker båda föräldrarna. Den förälder som prenumererar ger båda full tillgång — den andre föräldern behöver aldrig betala." },
+      { "q": "Är Lina privat och säkert?", "a": "Ja. Lina har ingen reklam, ingen datadelning med tredje part och ingen algoritm som styr vad du ser. Din information stannar mellan de två föräldrarna." },
+      { "q": "Kan meddelanden redigeras eller tas bort?", "a": "Nej. Meddelanden i Lina kan varken redigeras eller tas bort efter att de skickats. Det skapar ett tydligt och förutsägbart register över vad som kommunicerats och avtalats." }
+    ],
+    "faqFaq": [
+      { "q": "Vad är Lina?", "a": "Lina är en app för föräldrar med delad omsorg. Den samlar praktisk information — barnuppgifter, meddelanden, foton, kontakter och utrustningslistor — på ett gemensamt ställe tillgängligt från båda hem." },
+      { "q": "Är Lina gratis?", "a": "Ja, Lina är gratis att ladda ner och använda. Ingen betalning krävs för att skapa ett konto eller bjuda in den andre föräldern." },
+      { "q": "Kan jag exportera omsorgsschemat?", "a": "Ja, du kan exportera omsorgsschemat som PDF direkt från verktyget." },
+      { "q": "Vem kan se barnets information?", "a": "Endast de två föräldrar som är kopplade till barnet i Lina har tillgång till barnets information." },
+      { "q": "Kan meddelanden tas bort eller redigeras?", "a": "Nej, meddelanden i Lina kan varken redigeras eller tas bort efter att de skickats, vilket skapar ett tydligt och pålitligt register." }
+    ],
+    "csFaq": [
+      { "q": "Vad är ett omsorgsschema?", "a": "Ett omsorgsschema är en visuell översikt över hur ett barns tid fördelas mellan två hem, vecka för vecka." },
+      { "q": "Behöver jag ett konto?", "a": "Nej, schemaverktyget kan användas direkt i webbläsaren utan konto." },
+      { "q": "Kan jag exportera schemat?", "a": "Ja, du kan exportera omsorgsschemat som PDF." }
+    ],
+    "caFaq": [
+      { "q": "Vad bör ett samarbetsavtal innehålla?", "a": "Ett bra samarbetsavtal bör täcka omsorgsmönster, boende, hämtning och lämning, semesterfördelning, kostnadsdelning, kommunikation, resor och rutiner för förändringar." },
+      { "q": "Är ett samarbetsavtal juridiskt bindande?", "a": "Ett privat samarbetsavtal bygger på ömsesidig överenskommelse mellan föräldrarna. Det är inte juridiskt bindande som ett domstolsbeslut, men ger struktur och förutsägbarhet." },
+      { "q": "Var kan jag upprätta ett samarbetsavtal i Sverige?", "a": "I Sverige kan du vända dig till familjerätten i din kommun för kostnadsfri rådgivning och hjälp med att upprätta ett avtal om vårdnad, boende och umgänge." }
+    ],
+    "pricingFaq": [
+      { "q": "Vad kostar Lina?", "a": "Lina har en gratisversion med grundläggande funktioner. Lina+ kostar 79 kr per månad med 2 veckors gratis provperiod." },
+      { "q": "Behöver den andra föräldern också betala?", "a": "Nej. En Lina+-prenumeration täcker båda föräldrarna." },
+      { "q": "Kan jag avsluta när som helst?", "a": "Ja. Ingen bindningstid. Avsluta när som helst via App Store eller Google Play." },
+      { "q": "Vad ingår i gratisversionen?", "a": "Upp till 2 trådar, 100 foton, meddelanden, barninfo, kontakter, utrustningslistor och omsorgsschema." }
+    ]
   }
 }
