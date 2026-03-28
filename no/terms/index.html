@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/no/terms/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/terms/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/terms/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/no/terms/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/terms/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/terms/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/terms/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/terms/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/terms/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/terms/" />
+
+  <meta name="description" content="Lina hjelper foreldre som deler omsorg å koordinere hverdagen på tvers av to hjem — samværsplan, meldinger, barneinformasjon og delt album i én app." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getlina.app/no/terms/" />
+  <meta property="og:title" content="Lina — Delt omsorg, forenklet" />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Lina — Delt omsorg, forenklet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+
+    /* ── Terms content ── */
+    .terms-main { padding: 56px 24px 96px; }
+
+    .terms-container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .terms-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .last-updated {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+    }
+
+    .terms-intro {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+
+    .terms-divider { display: none; }
+
+    .terms-section { margin-bottom: 36px; }
+
+    .terms-section h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+
+    .terms-section h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    .terms-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .terms-section p:last-child { margin-bottom: 0; }
+
+    .terms-section ul {
+      margin: 8px 0 12px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .terms-section ul li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* Summary box */
+    .terms-summary {
+      margin-top: 48px;
+      padding: 28px 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .terms-summary h2 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .terms-summary p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 10px;
+    }
+
+    .terms-summary p:last-child { margin-bottom: 0; }
+
+    .summary-disclaimer {
+      font-size: 13px;
+      font-style: italic;
+      color: var(--text-secondary);
+      opacity: 0.8;
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/no/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/no/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+        <a href="/no/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
+        <a href="/no/pricing/" data-i18n="footer.pricing">Pris</a>
+      </nav>
+    </div>
+  </nav>
+
+  <main class="terms-main">
+    <div class="terms-container">
+
+      <h1>Terms of Service – Lina</h1>
+      <p class="last-updated">Last updated: 05. February 2026</p>
+
+      <p class="terms-intro">Lina is a digital service designed to support cooperation between parents who share responsibility for a child.</p>
+      <p class="terms-intro">These Terms of Service ("Terms") govern your use of Lina, including paid features.</p>
+      <p class="terms-intro">By creating an account or subscribing to Lina, you agree to these Terms.</p>
+
+      <hr class="terms-divider" />
+
+      <div class="terms-section">
+        <h2>1. What Lina Is</h2>
+        <p>Lina provides one shared, private space for two parents.</p>
+        <p>The service is designed to:</p>
+        <ul>
+          <li>support calm and structured communication</li>
+          <li>store and display child-related information</li>
+          <li>share photos, lists, and practical tools</li>
+          <li>create predictability across homes</li>
+        </ul>
+        <p>Lina is not a social network, public platform, or general-purpose messaging service.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>2. Who May Use Lina</h2>
+        <p>You may use Lina if:</p>
+        <ul>
+          <li>you are a parent or legal guardian</li>
+          <li>you share or have shared responsibility for a child</li>
+          <li>you are at least 18 years old</li>
+          <li>you use the service in accordance with these Terms</li>
+        </ul>
+        <p>Each Lina space is pair-based, intended for two parents connected around a child.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>3. Accounts and Access</h2>
+        <p>You are responsible for:</p>
+        <ul>
+          <li>providing accurate information</li>
+          <li>keeping your login credentials secure</li>
+          <li>all activity that occurs under your account</li>
+        </ul>
+        <p>You may not:</p>
+        <ul>
+          <li>share your account with others</li>
+          <li>grant access to third parties</li>
+          <li>use Lina on behalf of someone else without authority</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h2>4. Acceptable Use</h2>
+        <p>Lina is intended solely for cooperation related to a child.</p>
+        <p>You agree to:</p>
+        <ul>
+          <li>use the service respectfully and lawfully</li>
+          <li>communicate in a factual and appropriate manner</li>
+          <li>use features only for their intended purpose</li>
+        </ul>
+        <p>You may not:</p>
+        <ul>
+          <li>harass, threaten, or pressure another user</li>
+          <li>upload unlawful, harmful, or abusive content</li>
+          <li>use Lina for commercial or promotional purposes</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h2>5. User Content</h2>
+        <p>You retain ownership of all content you provide in Lina, including:</p>
+        <ul>
+          <li>messages</li>
+          <li>images</li>
+          <li>lists and records</li>
+          <li>child-related information</li>
+        </ul>
+        <p>Lina:</p>
+        <ul>
+          <li>does not claim ownership of user content</li>
+          <li>processes content only to deliver the service</li>
+          <li>does not sell or publicly share content</li>
+        </ul>
+        <p>As long as two parents are connected in Lina, both have access to shared content.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>6. Paid Service and Subscription</h2>
+
+        <h3>6.1 Subscription Model</h3>
+        <p>Lina is offered as a paid subscription service.</p>
+        <p>Available plans, pricing, and billing frequency are shown before purchase and may vary by platform or region.</p>
+
+        <h3>6.2 Payment Handling</h3>
+        <p>Payments are processed by the platform through which you subscribed, such as:</p>
+        <ul>
+          <li>Apple App Store</li>
+          <li>Google Play Store</li>
+        </ul>
+        <p>Lina does not process or store payment card details. Billing, renewals, and receipts are managed by the platform provider in accordance with their terms.</p>
+
+        <h3>6.3 Automatic Renewal</h3>
+        <p>Subscriptions renew automatically unless cancelled before the end of the current billing period.</p>
+        <p>You can manage or cancel your subscription through your platform account settings.</p>
+
+        <h3>6.4 Cancellation</h3>
+        <p>You may cancel your subscription at any time.</p>
+        <p>After cancellation:</p>
+        <ul>
+          <li>access continues until the end of the paid period</li>
+          <li>no further charges are made</li>
+        </ul>
+        <p>Deletion of the app does not cancel a subscription.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>7. Right of Withdrawal (EU Consumers)</h2>
+        <p>If you are a consumer in the European Union, you normally have a 14-day right of withdrawal.</p>
+        <p>However, by subscribing to Lina and gaining immediate access to the service, you:</p>
+        <ul>
+          <li>expressly request immediate delivery of the digital service</li>
+          <li>acknowledge that you thereby waive your right of withdrawal once delivery has begun</li>
+        </ul>
+        <p>This applies in accordance with Directive 2011/83/EU, Article 16(m).</p>
+        <p>This does not affect your statutory rights in the event of defective or non-conforming digital content.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>8. Personal Data and Privacy</h2>
+        <p>Lina processes personal data in accordance with the EU General Data Protection Regulation (GDPR).</p>
+        <p>Details about:</p>
+        <ul>
+          <li>what data we process</li>
+          <li>why and how it is processed</li>
+          <li>how long it is stored</li>
+          <li>your rights</li>
+        </ul>
+        <p>are described in our <a href="/no/privacy" style="color: var(--primary); text-decoration: underline; text-underline-offset: 3px;">Privacy Policy</a>, which forms an integral part of these Terms.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>9. Service Availability</h2>
+        <p>We aim to provide stable and reliable access to Lina.</p>
+        <p>Temporary interruptions may occur due to:</p>
+        <ul>
+          <li>maintenance</li>
+          <li>updates</li>
+          <li>technical issues</li>
+        </ul>
+        <p>Continuous availability is not guaranteed.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>10. Changes to the Service</h2>
+        <p>We may modify Lina to:</p>
+        <ul>
+          <li>improve functionality</li>
+          <li>enhance security</li>
+          <li>comply with legal or technical requirements</li>
+        </ul>
+        <p>Material changes will be communicated in advance where reasonably possible.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>11. Account Termination</h2>
+        <p>You may stop using Lina and request deletion of your account at any time.</p>
+        <p>We may suspend or terminate access if:</p>
+        <ul>
+          <li>these Terms are violated</li>
+          <li>the service is misused</li>
+          <li>required by law or authority</li>
+        </ul>
+        <p>When an account is terminated or deleted:</p>
+        <ul>
+          <li>personal account information, such as login credentials and profile data, is removed</li>
+          <li>access to Lina is permanently disabled</li>
+        </ul>
+        <p>Content that is shared with another parent (such as messages, photos, and lists) is not automatically deleted, as it may be jointly used or required for the other parent's continued use of the service.</p>
+        <p>Certain data may be retained for a limited period where required by law or for security purposes, after which it is deleted or anonymised.</p>
+        <p>All data handling upon termination is performed in accordance with GDPR and the Privacy Policy.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>12. Limitation of Liability</h2>
+        <p>Lina is a cooperation tool.</p>
+        <p>We:</p>
+        <ul>
+          <li>provide structure and shared access</li>
+          <li>do not verify user-provided content</li>
+          <li>do not mediate disputes between parents</li>
+          <li>do not monitor or review content for accuracy or completeness</li>
+        </ul>
+        <p>Lina does not replace legal, medical, or professional advice.</p>
+        <p>To the extent permitted by law, Lina is not liable for indirect or consequential losses.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>13. Changes to These Terms</h2>
+        <p>We may update these Terms when necessary.</p>
+        <p>The current version will always be available within the service.</p>
+        <p>Continued use of Lina after changes means the updated Terms apply.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>14. Contact</h2>
+        <p>For questions about these Terms, subscriptions, or the service, contact us through the Lina app or via the listed contact details.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>15. Governing Law</h2>
+        <p>These Terms are governed by the laws of the country in which Lina is established, without prejudice to mandatory consumer protection laws in the EU.</p>
+      </div>
+
+      <div class="terms-summary">
+        <h2 data-i18n="termsSummary.heading">Sammendrag av vilkårene</h2>
+        <p class="summary-disclaimer" data-i18n="termsSummary.disclaimer">Dette sammendraget er kun veiledende. Ved motstrid gjelder den engelske versjonen av vilkårene ovenfor.<em>This summary is provided for convenience only. In the event of any inconsistency, the English version of the Terms of Service above shall prevail.</em></p>
+        <p data-i18n="termsSummary.p1">Lina er et privat samarbeidsverktøy for to foreldre som deler omsorgen for et barn.</p>
+        <p data-i18n="termsSummary.p2">Du må være minst 18 år og forelder eller verge for å bruke tjenesten. Hvert Lina-rom er beregnet for to tilknyttede foreldre.</p>
+        <p data-i18n="termsSummary.p3">Du beholder eierskapet til alt innhold du deler i Lina. Lina behandler innhold kun for å levere tjenesten, og selger eller deler det ikke offentlig.</p>
+        <p data-i18n="termsSummary.p4">Lina tilbys som et betalt abonnement. Abonnementer fornyes automatisk med mindre de kanselleres via plattformens kontoinnstillinger.</p>
+        <p data-i18n="termsSummary.p5">Lina er et støtteverktøy og gir ikke juridisk, medisinsk eller profesjonell rådgivning, og megler ikke tvister mellom foreldre.</p>
+        <p data-i18n="termsSummary.p6">Delt innhold kan forbli tilgjengelig for den andre forelderen etter sletting av konto.</p>
+        <p data-i18n="termsSummary.p7">For fullstendige detaljer, se vilkårene for bruk.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/no/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+          <a href="/no/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
+          <a href="/no/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/no/professionals.html" data-i18n="footer.familievern">Fagfolk</a>
+          <a href="/no/stories/" data-i18n="footer.stories">Hverdagsscenarioer</a>
+          <a href="/no/pricing/" data-i18n="footer.pricing">Pris</a>
+          <a href="/no/about/" data-i18n="footer.about">Om Lina</a>
+          <a href="/no/blog/" data-i18n="footer.blog">Blogg</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/no/terms/" data-i18n="footer.terms">Vilkår for bruk</a>
+          <a href="/no/privacy/" data-i18n="footer.privacy">Personvernregler</a>
+          <a href="/no/contact.html" data-i18n="footer.contact">Kontakt</a>
+          <a href="/no/account-deletion.html" data-i18n="footer.accountDeletion">Sletting av konto</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+</body>
+</html>

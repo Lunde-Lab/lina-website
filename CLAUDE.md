@@ -39,8 +39,8 @@ Lina is a co-parenting app. This repo is its marketing website — a static site
 | `email-changed.html` | Email change confirmation page |
 | `docs/branding/` | Branding guidelines (brand-voice, taglines, branding) |
 | `docs/colors/` | Color system guidelines (color-system, color-usage) |
-| `scripts/build-i18n.js` | Generates pre-rendered HTML for en, sv, da, fi, de, nl, fr |
-| `en/`, `sv/`, `da/`, `fi/`, `de/`, `nl/`, `fr/` | Generated language directories (do not edit directly) |
+| `scripts/build-i18n.js` | Generates pre-rendered HTML for no, sv, da, fi, de, nl, fr |
+| `no/`, `sv/`, `da/`, `fi/`, `de/`, `nl/`, `fr/` | Generated language directories (do not edit directly) |
 
 ## Styling rule
 
@@ -57,11 +57,11 @@ Always follow the branding guidelines defined in the project docs:
 
 ## i18n
 
-- Pre-rendered HTML per language: Norwegian on root (`/`), others under `/en/`, `/sv/`, `/da/`, `/fi/`, `/de/`, `/nl/`, `/fr/`
+- Pre-rendered HTML per language: English on root (`/`), Norwegian under `/no/`, others under `/sv/`, `/da/`, `/fi/`, `/de/`, `/nl/`, `/fr/`
 - Build script: `node scripts/build-i18n.js` — generates pre-rendered HTML files from source + locale JSON
 - **Must re-run after any change to source HTML files or locale JSON files**
-- Source files are the Norwegian HTML files (index.html, care-schedule/index.html, etc.)
-- Generated files under en/, sv/, da/, fi/, de/, nl/, fr/ should never be edited directly
+- Source files are the English HTML files (index.html, care-schedule/index.html, etc.) — their content mirrors en.json
+- Generated files under no/, sv/, da/, fi/, de/, nl/, fr/ should never be edited directly
 - Client-side i18n (js/i18n.js) retained only for interactive elements (care-schedule tool)
 - Language detected from URL path, not navigator.language
 - Supported languages: Norwegian (no), English (en), Swedish (sv), Danish (da), Finnish (fi), German (de), Dutch (nl), French (fr)

@@ -1,9 +1,9 @@
 // Cloudflare Worker: Accept-Language redirect for getlina.app
 // Redirects new visitors to their preferred language version.
-// Norwegian stays on root — only en, sv, da, fi get redirected.
+// English stays on root — no, sv, da, fi, de, nl, fr get redirected.
 
-const SUPPORTED = ['en', 'sv', 'da', 'fi', 'de', 'nl', 'fr'];
-const LANG_PREFIXES = ['/en/', '/sv/', '/da/', '/fi/', '/de/', '/nl/', '/fr/'];
+const SUPPORTED = ['no', 'sv', 'da', 'fi', 'de', 'nl', 'fr'];
+const LANG_PREFIXES = ['/no/', '/sv/', '/da/', '/fi/', '/de/', '/nl/', '/fr/'];
 const COOKIE_NAME = 'lina-lang-set';
 
 // Bot detection: don't redirect crawlers
@@ -22,7 +22,7 @@ async function handleRequest(request) {
     return fetch(request);
   }
 
-  // 2. Bot/crawler → pass through (let them see Norwegian root)
+  // 2. Bot/crawler → pass through (let them see English root)
   const ua = request.headers.get('User-Agent') || '';
   if (BOT_PATTERNS.test(ua)) {
     return fetch(request);
@@ -40,10 +40,14 @@ async function handleRequest(request) {
 
   let targetLang = null;
   for (const { lang } of preferred) {
-    // Normalize: nb, nn → no (Norwegian stays on root)
     const base = lang.split('-')[0].toLowerCase();
+    if (base === 'en') {
+      break; // English preference → stay on root
+    }
+    // Normalize: nb, nn → no (redirect to /no/)
     if (base === 'nb' || base === 'nn' || base === 'no') {
-      break; // Norwegian preference → stay on root
+      targetLang = 'no';
+      break;
     }
     if (SUPPORTED.includes(base)) {
       targetLang = base;

@@ -4,9 +4,9 @@
 /**
  * build-i18n.js
  *
- * 1. Updates all Norwegian source HTML files (hreflang, absolute asset paths,
+ * 1. Updates all English source HTML files (hreflang, absolute asset paths,
  *    logo link, lang-dropdown → <a> links, minimal lang-switcher script).
- * 2. Generates pre-rendered copies for en / sv / da / fi.
+ * 2. Generates pre-rendered copies for no / sv / da / fi / de / nl / fr.
  * 3. Writes sitemap.xml with full hreflang support.
  *
  * Safety: section-tag counts are verified before every write.
@@ -24,13 +24,13 @@ const path = require('path');
 
 const ROOT     = path.resolve(__dirname, '..');
 const BASE_URL = 'https://getlina.app';
-const LANGS    = ['en', 'sv', 'da', 'fi', 'de', 'nl', 'fr'];
-const ALL_LANGS = ['no', ...LANGS];
+const LANGS    = ['no', 'sv', 'da', 'fi', 'de', 'nl', 'fr'];
+const ALL_LANGS = ['en', ...LANGS];
 
-const LANG_HTMLCODE = { no: 'nb', en: 'en', sv: 'sv', da: 'da', fi: 'fi', de: 'de', nl: 'nl', fr: 'fr' };
-const LANG_LABEL    = { no: 'NO', en: 'EN', sv: 'SV', da: 'DA', fi: 'FI', de: 'DE', nl: 'NL', fr: 'FR' };
-const LANG_FLAG     = { no: '🇳🇴', en: '🇬🇧', sv: '🇸🇪', da: '🇩🇰', fi: '🇫🇮', de: '🇩🇪', nl: '🇳🇱', fr: '🇫🇷' };
-const LANG_NAME     = { no: 'Norsk', en: 'English', sv: 'Svenska', da: 'Dansk', fi: 'Suomi', de: 'Deutsch', nl: 'Nederlands', fr: 'Français' };
+const LANG_HTMLCODE = { en: 'en', no: 'nb', sv: 'sv', da: 'da', fi: 'fi', de: 'de', nl: 'nl', fr: 'fr' };
+const LANG_LABEL    = { en: 'EN', no: 'NO', sv: 'SV', da: 'DA', fi: 'FI', de: 'DE', nl: 'NL', fr: 'FR' };
+const LANG_FLAG     = { en: '🇬🇧', no: '🇳🇴', sv: '🇸🇪', da: '🇩🇰', fi: '🇫🇮', de: '🇩🇪', nl: '🇳🇱', fr: '🇫🇷' };
+const LANG_NAME     = { en: 'English', no: 'Norsk', sv: 'Svenska', da: 'Dansk', fi: 'Suomi', de: 'Deutsch', nl: 'Nederlands', fr: 'Français' };
 
 const SOURCE_FILES = [
   { src: 'index.html',                urlPath: '/',                   priority: '1.0', hasDropdown: true  },
@@ -139,16 +139,16 @@ const INTERNAL_HREFS = [
   '/faq/',
   '/blog/',
   '/blog',
-  '/blog/kommunikasjon/',
-  '/blog/kommunikasjon',
-  '/blog/delt-bosted/',
-  '/blog/delt-bosted',
-  '/blog/utstyr-to-hjem/',
-  '/blog/utstyr-to-hjem',
-  '/blog/byttedag/',
-  '/blog/byttedag',
-  '/blog/samvaersordninger/',
-  '/blog/samvaersordninger',
+  '/blog/co-parent-communication/',
+  '/blog/co-parent-communication',
+  '/blog/shared-vs-primary-residence/',
+  '/blog/shared-vs-primary-residence',
+  '/blog/what-kids-need/',
+  '/blog/what-kids-need',
+  '/blog/handover-day/',
+  '/blog/handover-day',
+  '/blog/custody-schedules/',
+  '/blog/custody-schedules',
   '/care-schedule',
   '/care-agreement',
   '/privacy',
@@ -190,16 +190,19 @@ function mkdirp(dir) {
 
 /** URL for a given language + page path (no langUrls awareness — base helper) */
 function pageUrl(lang, urlPath) {
-  const prefix = lang === 'no' ? '' : `/${lang}`;
+  const prefix = lang === 'en' ? '' : `/${lang}`;
   return `${BASE_URL}${prefix}${urlPath}`;
 }
 
 /** URL path string (no BASE_URL) for a language, respecting langUrls */
 function langUrl(lang, urlPath, file) {
-  if (lang !== 'no' && file && file.langUrls && file.langUrls[lang]) {
+  if (lang === 'en') {
+    return (file && file.langUrls && file.langUrls.en) ? file.langUrls.en : urlPath;
+  }
+  if (file && file.langUrls && file.langUrls[lang]) {
     return `/${lang}${file.langUrls[lang]}`;
   }
-  return lang === 'no' ? urlPath : `/${lang}${urlPath}`;
+  return `/${lang}${urlPath}`;
 }
 
 /** Full URL (with BASE_URL) for a language, respecting langUrls */
@@ -377,20 +380,21 @@ function setDescription(html, locale, descKey) {
 /** Remove all existing canonical + alternate links, insert correct block */
 function setCanonicalAndHreflang(html, lang, urlPath, file) {
   const canon  = fullUrl(lang, urlPath, file);
-  const noUrl  = fullUrl('no', urlPath, file);
+  const enUrl  = fullUrl('en', urlPath, file);
 
   // Wipe existing (handles duplicates automatically)
   html = html.replace(/<link rel="canonical"[^>]*\/>\s*/g, '');
   html = html.replace(/<link rel="alternate"[^>]*\/>\s*/g, '');
 
-  const hreflang = LANGS.map(l =>
-    `  <link rel="alternate" hreflang="${l}"        href="${fullUrl(l, urlPath, file)}" />`
-  ).join('\n');
+  const hreflang = LANGS.map(l => {
+    const hreflangCode = l === 'no' ? 'nb' : l;
+    return `  <link rel="alternate" hreflang="${hreflangCode}"        href="${fullUrl(l, urlPath, file)}" />`;
+  }).join('\n');
 
   const block =
     `  <link rel="canonical" href="${canon}" />\n` +
-    `  <link rel="alternate" hreflang="x-default" href="${noUrl}" />\n` +
-    `  <link rel="alternate" hreflang="nb"        href="${noUrl}" />\n` +
+    `  <link rel="alternate" hreflang="x-default" href="${enUrl}" />\n` +
+    `  <link rel="alternate" hreflang="en"        href="${enUrl}" />\n` +
     hreflang + '\n';
 
   html = html.replace(/(<meta charset[^>]*\/>)/, `$1\n${block}`);
@@ -430,7 +434,7 @@ function fixAssetPaths(html) {
  * Matches any href value on the <a> tag that wraps a Logomark image.
  */
 function fixLogoLink(html, lang) {
-  const target = lang === 'no' ? '/' : `/${lang}/`;
+  const target = lang === 'en' ? '/' : `/${lang}/`;
   // Replace href value on the <a> tag immediately wrapping a Logomark img
   return html.replace(
     /(<a\s[^>]*href=")[^"]*("[^>]*>\s*<img[^>]*Logomark[^>]*>)/g,
@@ -459,18 +463,21 @@ function fixInternalLinks(html, lang) {
 }
 
 /**
- * Replace Norwegian blog slugs with language-specific equivalents.
+ * Replace English blog slugs with language-specific equivalents.
  * Called after fixInternalLinks, which has already prefixed them with /{lang}.
- * Example (EN): href="/en/blog/samvaersordninger/" → href="/en/blog/custody-schedules/"
- * Only called for generated (non-Norwegian) files when the file has langUrls.
+ * Example (SV): href="/sv/blog/custody-schedules/" → href="/sv/blog/umgangesschema/"
+ * Example (NO): href="/no/blog/custody-schedules/" → href="/no/blog/samvaersordninger/"
+ * Called for all generated (non-English root) files when the file has langUrls.
  */
 function fixBlogLinks(html, lang) {
   return processNonJsonLd(html, text => {
     for (const file of SOURCE_FILES) {
-      if (!file.langUrls || !file.langUrls[lang]) continue;
-      const prefixedNo   = `/${lang}${file.urlPath}`;
-      const prefixedLang = `/${lang}${file.langUrls[lang]}`;
-      const esc = prefixedNo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      if (!file.langUrls || !file.langUrls.en) continue;
+      const targetSlug   = file.langUrls[lang] || file.urlPath;
+      const prefixedEn   = `/${lang}${file.langUrls.en}`;
+      const prefixedLang = `/${lang}${targetSlug}`;
+      if (prefixedEn === prefixedLang) continue;
+      const esc = prefixedEn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       text = text.replace(new RegExp(`href="${esc}"`, 'g'), `href="${prefixedLang}"`);
     }
     return text;
@@ -565,19 +572,36 @@ function safetyCheck(srcHtml, outHtml, label) {
 
 // ─── Per-file pipelines ───────────────────────────────────────────────────────
 
-/** Transform source HTML into a Norwegian version (minimal updates only) */
-function buildNorwegian(srcHtml, urlPath, hasDropdown, locale, srcFile, file) {
+/**
+ * Replace Norwegian blog slugs with English equivalents in root (English) files.
+ * Source files store Norwegian slugs as build-time identifiers; the English root
+ * output needs the canonical English slug hrefs instead.
+ */
+function fixBlogLinksForRoot(html) {
+  return processNonJsonLd(html, text => {
+    for (const file of SOURCE_FILES) {
+      if (!file.langUrls || !file.langUrls.en) continue;
+      const esc = file.urlPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      text = text.replace(new RegExp(`href="${esc}"`, 'g'), `href="${file.langUrls.en}"`);
+    }
+    return text;
+  });
+}
+
+/** Transform source HTML into the English root version (minimal updates only) */
+function buildRoot(srcHtml, urlPath, hasDropdown, locale, srcFile, file) {
   let html = srcHtml;
   html = localizeJsonLd(html, locale, srcFile);
-  html = setCanonicalAndHreflang(html, 'no', urlPath, file);
+  html = setCanonicalAndHreflang(html, 'en', urlPath, file);
   html = fixAssetPaths(html);
-  html = fixLogoLink(html, 'no');
-  if (hasDropdown) html = fixLangSwitcher(html, 'no', urlPath, file);
+  html = fixBlogLinksForRoot(html);
+  html = fixLogoLink(html, 'en');
+  if (hasDropdown) html = fixLangSwitcher(html, 'en', urlPath, file);
   html = fixLangScript(html);
   return html;
 }
 
-/** Transform Norwegian HTML into a fully translated version for `lang` */
+/** Transform English source HTML into a fully translated version for `lang` */
 function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile, file) {
   const { titleKey, descKey } = getPageKeys(noHtml);
   let html = noHtml;
@@ -587,7 +611,7 @@ function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile, file)
   html = setTitle(html, locale, titleKey);
   html = setDescription(html, locale, descKey);
   html = setCanonicalAndHreflang(html, lang, urlPath, file);
-  // Asset paths are already absolute after the Norwegian pass
+  // Asset paths are already absolute after the English root pass
   html = fixInternalLinks(html, lang);
   html = fixBlogLinks(html, lang);
   html = fixLogoLink(html, lang);
@@ -601,25 +625,27 @@ function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile, file)
 function buildSitemap() {
   const urlEntries = [];
 
-  for (const { urlPath, priority, langUrls } of SOURCE_FILES) {
-    const noUrl = pageUrl('no', urlPath);
+  for (const file of SOURCE_FILES) {
+    const { urlPath, priority } = file;
+    const enUrl = fullUrl('en', urlPath, file);
 
-    if (langUrls) {
+    if (file.langUrls) {
       // Blog-style pages: each language has a different slug, so each gets
       // its own <url> entry. All entries share the same full hreflang set.
       const makeLinks = () => [
-        `      <xhtml:link rel="alternate" hreflang="x-default" href="${noUrl}"/>`,
-        `      <xhtml:link rel="alternate" hreflang="nb"        href="${noUrl}"/>`,
+        `      <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl}"/>`,
+        `      <xhtml:link rel="alternate" hreflang="en"        href="${enUrl}"/>`,
         ...LANGS.map(l => {
-          const lUrl = `${BASE_URL}/${l}${langUrls[l]}`;
-          return `      <xhtml:link rel="alternate" hreflang="${l}"        href="${lUrl}"/>`;
+          const hreflangCode = l === 'no' ? 'nb' : l;
+          const lUrl = fullUrl(l, urlPath, file);
+          return `      <xhtml:link rel="alternate" hreflang="${hreflangCode}"        href="${lUrl}"/>`;
         }),
       ].join('\n');
 
-      // Norwegian entry
+      // English root entry
       urlEntries.push(
         `  <url>\n` +
-        `    <loc>${noUrl}</loc>\n` +
+        `    <loc>${enUrl}</loc>\n` +
         makeLinks() + '\n' +
         `    <changefreq>monthly</changefreq>\n` +
         `    <priority>${priority}</priority>\n` +
@@ -628,7 +654,7 @@ function buildSitemap() {
 
       // Per-language entries
       for (const lang of LANGS) {
-        const lUrl = `${BASE_URL}/${lang}${langUrls[lang]}`;
+        const lUrl = fullUrl(lang, urlPath, file);
         urlEntries.push(
           `  <url>\n` +
           `    <loc>${lUrl}</loc>\n` +
@@ -641,16 +667,17 @@ function buildSitemap() {
     } else {
       // Standard pages: one entry with all alternates
       const links = [
-        `      <xhtml:link rel="alternate" hreflang="x-default" href="${noUrl}"/>`,
-        `      <xhtml:link rel="alternate" hreflang="nb"        href="${noUrl}"/>`,
-        ...LANGS.map(l =>
-          `      <xhtml:link rel="alternate" hreflang="${l}"        href="${pageUrl(l, urlPath)}"/>`
-        ),
+        `      <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl}"/>`,
+        `      <xhtml:link rel="alternate" hreflang="en"        href="${enUrl}"/>`,
+        ...LANGS.map(l => {
+          const hreflangCode = l === 'no' ? 'nb' : l;
+          return `      <xhtml:link rel="alternate" hreflang="${hreflangCode}"        href="${pageUrl(l, urlPath)}"/>`;
+        }),
       ].join('\n');
 
       urlEntries.push(
         `  <url>\n` +
-        `    <loc>${noUrl}</loc>\n` +
+        `    <loc>${enUrl}</loc>\n` +
         links + '\n' +
         `    <changefreq>monthly</changefreq>\n` +
         `    <priority>${priority}</priority>\n` +
@@ -671,9 +698,9 @@ function buildSitemap() {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 function main() {
-  // Load all locales (including Norwegian for JSON-LD localization)
-  const noLocale = JSON.parse(fs.readFileSync(path.join(ROOT, 'locales', 'no.json'), 'utf8'));
-  console.log('Loaded locale: no');
+  // Load English locale for root build; load all other locales for language versions
+  const enLocale = JSON.parse(fs.readFileSync(path.join(ROOT, 'locales', 'en.json'), 'utf8'));
+  console.log('Loaded locale: en');
   const locales = {};
   for (const lang of LANGS) {
     const p = path.join(ROOT, 'locales', `${lang}.json`);
@@ -694,21 +721,31 @@ function main() {
     const originalHtml = fs.readFileSync(srcPath, 'utf8');
     const origSections = countStr(originalHtml, '<section');
 
-    // ── Step 1: build updated Norwegian source ─────────────────────────────
-    const noHtml = buildNorwegian(originalHtml, urlPath, hasDropdown, noLocale, src, file);
+    // ── Step 1: build English root version ────────────────────────────────
+    const enHtml = buildRoot(originalHtml, urlPath, hasDropdown, enLocale, src, file);
 
-    if (!safetyCheck(originalHtml, noHtml, `${src} [no]`)) {
+    if (!safetyCheck(originalHtml, enHtml, `${src} [en]`)) {
       console.error(`  ABORT: skipping write of ${src}`);
       errors++;
       continue;
     }
 
-    fs.writeFileSync(srcPath, noHtml, 'utf8');
-    console.log(`Updated (no): ${src}  [${origSections} sections ✓]`);
+    fs.writeFileSync(srcPath, enHtml, 'utf8');
+    console.log(`Updated (en): ${src}  [${origSections} sections ✓]`);
+
+    // For blog articles with a dedicated English slug, also write to that path
+    if (file.langUrls && file.langUrls.en) {
+      const enSlug    = file.langUrls.en.replace(/^\//, '');
+      const enRelPath = enSlug.endsWith('/') ? enSlug + 'index.html' : enSlug;
+      const enOutFile = path.join(ROOT, enRelPath);
+      mkdirp(path.dirname(enOutFile));
+      fs.writeFileSync(enOutFile, enHtml, 'utf8');
+      console.log(`  → ${enRelPath} (en root)`);
+    }
 
     // ── Step 2: generate language versions ────────────────────────────────
     for (const lang of LANGS) {
-      const outHtml = buildForLang(noHtml, lang, locales[lang], urlPath, hasDropdown, src, file);
+      const outHtml = buildForLang(enHtml, lang, locales[lang], urlPath, hasDropdown, src, file);
 
       if (!safetyCheck(originalHtml, outHtml, `${src} [${lang}]`)) {
         console.error(`  ABORT: skipping ${lang}/${src}`);

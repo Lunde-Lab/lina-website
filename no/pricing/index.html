@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="nb" data-i18n-title="pricing.pageTitle" data-i18n-desc="pricing.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/no/pricing/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/pricing/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/pricing/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/no/pricing/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/pricing/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/pricing/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/pricing/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/pricing/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/pricing/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/pricing/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Pris — Lina</title>
+  <meta name="description" content="Lina har en gratis plan og Lina+ til 79 kr/mnd. Ett abonnement dekker begge foreldre. Ingen reklame, ingen datadeling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getlina.app/no/pricing/" />
+  <meta property="og:title" content="Pris — Lina" />
+  <meta property="og:description" content="Lina har en gratis plan og Lina+ til 79 kr/mnd. Ett abonnement dekker begge foreldre. Ingen reklame, ingen datadeling." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pris — Lina" />
+  <meta name="twitter:description" content="Lina har en gratis plan og Lina+ til 79 kr/mnd. Ett abonnement dekker begge foreldre. Ingen reklame, ingen datadeling." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+
+    .lang-btn {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 5px 9px;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .lang-btn:hover { border-color: var(--text-secondary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+
+    .lang-dropdown {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 4px;
+      min-width: 130px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      display: none;
+      z-index: 200;
+    }
+
+    .lang-switcher.open .lang-dropdown { display: block; }
+
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      padding: 7px 10px;
+      background: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.1s;
+    }
+
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { font-weight: 600; color: var(--primary); }
+
+    /* ── App Store Button ── */
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--text);
+      color: #fff;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.15s;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    /* ── Hero CTAs ── */
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* ── Section label ── */
+    .section-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    /* ── Pricing Hero ── */
+    .pricing-hero {
+      padding: 80px 24px 64px;
+      text-align: center;
+    }
+
+    .pricing-hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .pricing-hero p {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 540px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    /* ── Pricing Cards ── */
+    .pricing-cards {
+      padding: 0 24px 80px;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .pricing-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+    }
+
+    .pricing-card.featured {
+      border: 2px solid var(--primary);
+    }
+
+    .pricing-badge {
+      display: inline-block;
+      background: #EAF4F3;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .pricing-card h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .pricing-price {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.1;
+    }
+
+    .pricing-price-unit {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--text-secondary);
+    }
+
+    .pricing-period {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-top: 6px;
+    }
+
+    .pricing-both {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    .pricing-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 24px 0;
+    }
+
+    .pricing-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .pricing-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .pricing-features li svg {
+      flex-shrink: 0;
+      color: var(--primary);
+      margin-top: 1px;
+    }
+
+    .pricing-includes-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-secondary);
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+
+    .pricing-cta {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .pricing-cta .btn-appstore {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 10px;
+      padding: 13px 22px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .pricing-cta .btn-appstore:hover {
+      background: var(--primary-dark);
+    }
+
+    /* ── Why Paid ── */
+    #why-paid {
+      background: #fff;
+      padding: 72px 24px;
+    }
+
+    .why-paid-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    #why-paid h2 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 20px;
+      line-height: 1.25;
+    }
+
+    #why-paid p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 14px;
+    }
+
+    .why-points {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 4px;
+    }
+
+    .why-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .why-point-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: #EAF4F3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--primary);
+    }
+
+    .why-point-text h3 {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 4px;
+    }
+
+    .why-point-text p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    /* ── CTA ── */
+    #cta {
+      background: var(--primary);
+      padding: 72px 24px;
+    }
+
+    .cta-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+
+    #cta h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    #cta p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover { color: var(--text); }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 599px) {
+      .pricing-hero { padding: 48px 16px 40px; }
+      .pricing-hero h1 { font-size: 28px; }
+      .pricing-cards { padding: 0 16px 56px; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .pricing-card { padding: 24px; }
+      #why-paid { padding: 48px 16px; }
+      #why-paid h2 { font-size: 22px; }
+      .why-paid-inner { grid-template-columns: 1fr; gap: 40px; }
+      #cta { padding: 48px 16px; }
+      .hero-ctas { flex-direction: column; align-items: stretch; }
+      .btn-appstore { width: 100%; justify-content: center; }
+      footer { padding: 32px 16px; }
+      .footer-nav-row { gap: 16px; }
+      .footer-nav-row a { font-size: 12px; }
+      .nav-links { display: none; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hva koster Lina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lina har en gratisversjon med grunnleggende funksjoner. Lina+ koster 79 kr per måned med 2 ukers gratis prøveperiode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Må den andre forelderen også betale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nei. Ett Lina+-abonnement dekker begge foreldre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan jeg avslutte når som helst?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Ingen bindingstid. Avslutt når som helst via App Store eller Google Play."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hva er inkludert i gratisversjonen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Opptil 2 tråder, 100 bilder, meldinger, barneinformasjon, kontakter, utstyrslister og samværsplan."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/no/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/no/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+        <a href="/no/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
+        <a href="/no/pricing/" aria-current="page" data-i18n="footer.pricing">Pris</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">NO</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/pricing/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option active" href="/no/pricing/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/sv/pricing/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/pricing/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/pricing/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/pricing/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/pricing/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option" href="/fr/pricing/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="pricing-hero">
+    <p class="section-label" data-i18n="pricing.label">Pris</p>
+    <h1 data-i18n="pricing.title">Ett abonnement. Begge foreldre.</h1>
+    <p data-i18n="pricing.description">Lina+ gir full tilgang til alle funksjoner med ett abonnement — som dekker begge hjem. Start med en gratis prøveperiode.</p>
+  </div>
+
+  <!-- Pricing Cards -->
+  <div class="pricing-cards">
+    <div class="pricing-grid">
+
+      <!-- Free -->
+      <div class="pricing-card">
+        <h3 data-i18n="pricing.free.name">Gratis</h3>
+        <p class="pricing-price" data-i18n="pricing.free.price">0 kr</p>
+        <p class="pricing-period" data-i18n="pricing.free.period">Alltid gratis</p>
+        <hr class="pricing-divider" />
+        <ul class="pricing-features">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f1">Opptil 2 tråder</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f2">Opptil 100 bilder i delt album</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f3">Meldinger</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f4">Barneinformasjon og kontakter</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f5">Utstyrslister</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f6">Samværsplan</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Lina+ -->
+      <div class="pricing-card featured">
+        <span class="pricing-badge" data-i18n="pricing.plus.badge">Anbefalt</span>
+        <h3 data-i18n="pricing.plus.name">Lina+</h3>
+        <p class="pricing-price">
+          <span data-i18n="pricing.plus.price">79 kr</span><span class="pricing-price-unit" data-i18n="pricing.plus.priceUnit">/mnd</span>
+        </p>
+        <p class="pricing-period" data-i18n="pricing.plus.period">2 uker gratis prøveperiode</p>
+        <p class="pricing-both" data-i18n="pricing.plus.both">Ett abonnement for begge foreldre</p>
+        <hr class="pricing-divider" />
+        <ul class="pricing-features">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f1">Opptil 2 tråder</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f2">Opptil 100 bilder i delt album</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f3">Meldinger</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f4">Barneinformasjon og kontakter</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f5">Utstyrslister</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.free.f6">Samværsplan</span>
+          </li>
+        </ul>
+        <p class="pricing-includes-label" data-i18n="pricing.plus.includes">Alt i gratis, pluss:</p>
+        <ul class="pricing-features">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.plus.f1">Ubegrenset tråder</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.plus.f2">Større album</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.plus.f3">Søk i tråder</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.plus.f4">Eksporter tråder</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="pricing.plus.f5">Viktige meldinger</span>
+          </li>
+        </ul>
+        <div class="pricing-cta">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Last ned på App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Last ned på Google Play</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Why Paid -->
+  <section id="why-paid">
+    <div class="why-paid-inner">
+      <div>
+        <p class="section-label" data-i18n="pricing.whyLabel">Hvorfor betalt</p>
+        <h2 data-i18n="pricing.whyTitle">Abonnementet holder Lina uavhengig</h2>
+        <p data-i18n="pricing.whyText1">Lina finansieres av abonnementet — ikke av reklame eller datadeling. Det er det som gjør det mulig å holde appen uavhengig og fokusert på det som betyr noe.</p>
+        <p data-i18n="pricing.whyText2">Forelderen som abonnerer gir automatisk den andre full tilgang. Ingen separat betaling, ingen ekstra konto.</p>
+      </div>
+      <div class="why-points">
+        <div class="why-point">
+          <div class="why-point-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="why-point-text">
+            <h3 data-i18n="pricing.p1.title">Ett abonnement, to foreldre</h3>
+            <p data-i18n="pricing.p1.description">Begge foreldre får full tilgang. Ingen ekstra kostnad for den andre.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="why-point-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="why-point-text">
+            <h3 data-i18n="pricing.p2.title">Ingen reklame, ingen datadeling</h3>
+            <p data-i18n="pricing.p2.description">Abonnementet finansierer appen. Dine data selges aldri.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="why-point-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+              <line x1="10" y1="14" x2="14" y2="18"/>
+              <line x1="14" y1="14" x2="10" y2="18"/>
+            </svg>
+          </div>
+          <div class="why-point-text">
+            <h3 data-i18n="pricing.p3.title">Ingen bindingstid</h3>
+            <p data-i18n="pricing.p3.description">Avslutt når som helst i App Store eller Google Play.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-inner">
+      <h2 data-i18n="cta.title">En trygg linje mellom to foreldre.</h2>
+      <p data-i18n="cta.description">Lina samler alt barnet trenger — synlig og oppdatert på tvers av hjem. Last ned og kom i gang på minutter.</p>
+      <div class="hero-ctas">
+        <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          <span data-i18n="hero.cta">Last ned på App Store</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+          </svg>
+          <span data-i18n="hero.ctaPlay">Last ned på Google Play</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/no/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+          <a href="/no/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
+          <a href="/no/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/no/professionals.html" data-i18n="footer.familievern">Fagfolk</a>
+          <a href="/no/stories/" data-i18n="footer.stories">Hverdagsscenarioer</a>
+          <a href="/no/pricing/" data-i18n="footer.pricing">Pris</a>
+          <a href="/no/about/" data-i18n="footer.about">Om Lina</a>
+          <a href="/no/blog/" data-i18n="footer.blog">Blogg</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/no/terms/" data-i18n="footer.terms">Vilkår for bruk</a>
+          <a href="/no/privacy/" data-i18n="footer.privacy">Personvernregler</a>
+          <a href="/no/contact.html" data-i18n="footer.contact">Kontakt</a>
+          <a href="/no/account-deletion.html" data-i18n="footer.accountDeletion">Sletting av konto</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+  </script>
+
+</body>
+</html>

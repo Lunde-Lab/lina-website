@@ -1,10 +1,10 @@
 const SUPPORTED_LANGS = ['en', 'no', 'sv', 'da', 'fi', 'de', 'nl', 'fr'];
-const DEFAULT_LANG = 'no';
+const DEFAULT_LANG = 'en';
 const cache = {};
 
 function detectLang() {
   var seg = window.location.pathname.split('/')[1];
-  if (SUPPORTED_LANGS.includes(seg) && seg !== 'no') return seg;
+  if (SUPPORTED_LANGS.includes(seg) && seg !== 'en') return seg;
   return DEFAULT_LANG;
 }
 

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="nb" data-i18n-title="stories.pageTitle" data-i18n-desc="stories.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/no/stories/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/stories/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/stories/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/no/stories/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/stories/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/stories/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/stories/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/stories/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/stories/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/stories/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Slik bruker foreldre Lina</title>
+  <meta name="description" content="Små, hverdagslige situasjoner der Lina gjør forskjellen. Se hvordan foreldre bruker appen til å dele informasjon, bilder og utstyrslister på tvers av hjem." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getlina.app/no/stories/" />
+  <meta property="og:title" content="Slik bruker foreldre Lina" />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta property="og:description" content="Små, hverdagslige situasjoner der Lina gjør forskjellen. Se hvordan foreldre bruker appen til å dele informasjon, bilder og utstyrslister på tvers av hjem." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Slik bruker foreldre Lina" />
+  <meta name="twitter:description" content="Små, hverdagslige situasjoner der Lina gjør forskjellen. Se hvordan foreldre bruker appen til å dele informasjon, bilder og utstyrslister på tvers av hjem." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* ── App Store Button ── */
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--text);
+      color: #fff;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .btn-appstore:hover { background: #2c333b; }
+
+    .btn-appstore svg { flex-shrink: 0; }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .lang-btn:hover {
+      border-color: var(--primary);
+      color: var(--text);
+    }
+
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+
+    .lang-switcher.open .lang-dropdown { display: block; }
+
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+
+    .lang-option:hover { background: var(--bg); }
+
+    .lang-option.active {
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Section shared ── */
+    section { padding: 64px 24px; }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    /* ── Stories header ── */
+    .stories-header {
+      padding: 56px 24px 0;
+      text-align: left;
+    }
+
+    .stories-header .container {
+      max-width: 1080px;
+    }
+
+    .stories-header h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    .stories-header .intro {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 580px;
+      line-height: 1.7;
+    }
+
+    /* ── Scenarios ── */
+    #scenarios {
+      padding: 48px 24px 64px;
+    }
+
+    .scenarios-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 720px) {
+      .scenarios-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ── Scenario card ── */
+    .scenario-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .scenario-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #EAF4F3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .scenario-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+
+    .scenario-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+      color: var(--text);
+    }
+
+    .scenario-situation {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .scenario-resolution {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    .scenario-resolution strong {
+      color: var(--primary);
+    }
+
+    /* ── Stories closing ── */
+    .stories-closing {
+      padding: 0 24px 72px;
+      text-align: center;
+    }
+
+    .stories-closing .container {
+      max-width: 640px;
+    }
+
+    .stories-closing p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    /* ── CTA ── */
+    #cta {
+      background: var(--primary);
+    }
+
+    .cta-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+
+    #cta h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    #cta p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 8px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover { color: var(--text); }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 599px) {
+      .stories-header { padding: 40px 16px 0; }
+      .stories-header h1 { font-size: 24px; }
+      #scenarios { padding: 40px 16px 56px; }
+      .scenario-card { padding: 24px; }
+      .stories-closing { padding: 0 16px 56px; }
+      #cta { padding: 48px 16px; }
+      .hero-ctas { flex-direction: column; align-items: stretch; }
+      .btn-appstore { width: 100%; justify-content: center; }
+      footer { padding: 32px 16px; }
+
+      .footer-nav-row { gap: 16px; }
+      .footer-nav-row a { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/no/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/no/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+        <a href="/no/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
+        <a href="/no/pricing/" data-i18n="footer.pricing">Pris</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">NO</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/stories/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option active" href="/no/stories/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/sv/stories/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/stories/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/stories/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/stories/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/stories/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option" href="/fr/stories/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="stories-header">
+    <div class="container">
+      <p class="section-label" data-i18n="stories.label">Hverdagsscenarioer</p>
+      <h1 data-i18n="stories.title">Slik bruker foreldre Lina</h1>
+      <p class="intro" data-i18n="stories.description">Små, hverdagslige øyeblikk der det å ha ett felles sted utgjør forskjellen. Dette er situasjonene Lina er laget for.</p>
+    </div>
+  </header>
+
+  <!-- Scenarios -->
+  <section id="scenarios">
+    <div class="container">
+      <div class="scenarios-grid">
+
+        <!-- S1: Child information -->
+        <div class="scenario-card">
+          <div class="scenario-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+            </svg>
+          </div>
+          <p class="scenario-label" data-i18n="stories.s1.label">Barneinformasjon</p>
+          <h3 data-i18n="stories.s1.title">Allergien det andre hjemmet ikke visste om</h3>
+          <p class="scenario-situation" data-i18n="stories.s1.situation">Et barn får påvist en ny matallergi hos legen. Informasjonen må nå det andre hjemmet før neste overlevering.</p>
+          <p class="scenario-resolution"><strong data-i18n="stories.s1.resolution">Med Lina: Forelderen oppdaterer barnets medisinske informasjon én gang. Den andre forelderen ser det med en gang — ingen egen melding eller samtale nødvendig.</strong></p>
+        </div>
+
+        <!-- S2: Equipment lists -->
+        <div class="scenario-card">
+          <div class="scenario-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+              <rect x="9" y="3" width="6" height="4" rx="1"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <p class="scenario-label" data-i18n="stories.s2.label">Utstyrslister</p>
+          <h3 data-i18n="stories.s2.title">Regnjakken som alltid er i feil hus</h3>
+          <p class="scenario-situation" data-i18n="stories.s2.situation">Et barn kommer på skolen uten regntøy fordi ingen var sikre på hvilket hjem som hadde det. Små ting som dette skaper unødvendig friksjon.</p>
+          <p class="scenario-resolution"><strong data-i18n="stories.s2.resolution">Med Lina: Delte utstyrslister viser hva som er i hvert hjem. Listen oppdateres løpende, slik at jakken følger barnet.</strong></p>
+        </div>
+
+        <!-- S3: Threads -->
+        <div class="scenario-card">
+          <div class="scenario-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <p class="scenario-label" data-i18n="stories.s3.label">Tråder</p>
+          <h3 data-i18n="stories.s3.title">Skolearrangementet som forsvant i en meldingstråd</h3>
+          <p class="scenario-situation" data-i18n="stories.s3.situation">Skolen sender informasjon om et foreldremøte. Én forelder videresender det på melding, men detaljene forsvinner mellom praktiske beskjeder om henting og middag.</p>
+          <p class="scenario-resolution"><strong data-i18n="stories.s3.resolution">Med Lina: En egen tråd for skole holder alt samlet. Detaljene er lette å finne igjen uten å bla gjennom urelaterte meldinger.</strong></p>
+        </div>
+
+        <!-- S4: Shared album -->
+        <div class="scenario-card">
+          <div class="scenario-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="9" cy="9" r="2"/>
+              <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+            </svg>
+          </div>
+          <p class="scenario-label" data-i18n="stories.s4.label">Delt album</p>
+          <h3 data-i18n="stories.s4.title">Den første sykkelturen du nesten gikk glipp av</h3>
+          <p class="scenario-situation" data-i18n="stories.s4.situation">Et barn lærer å sykle hos den ene forelderen. Den andre forelderen hører om det først flere dager senere og ser aldri øyeblikket.</p>
+          <p class="scenario-resolution"><strong data-i18n="stories.s4.resolution">Med Lina: Bilder legges i det delte albumet. Øyeblikkene deles automatisk — uansett hvilket hjem barnet er i.</strong></p>
+        </div>
+
+        <!-- S5: Care schedule -->
+        <div class="scenario-card">
+          <div class="scenario-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <p class="scenario-label" data-i18n="stories.s5.label">Samværsplan</p>
+          <h3 data-i18n="stories.s5.title">Overleveringsforvirringen i ferieuken</h3>
+          <p class="scenario-situation" data-i18n="stories.s5.situation">Ferieuker endrer den vanlige planen. Begge foreldre husker en ulik versjon, og barnet havner i midten.</p>
+          <p class="scenario-resolution"><strong data-i18n="stories.s5.resolution">Med Lina: Samværsplanen viser begge foreldre den samme oversikten. Endringer er synlige med en gang, slik at det bare finnes én versjon.</strong></p>
+        </div>
+
+        <!-- S6: Contacts -->
+        <div class="scenario-card">
+          <div class="scenario-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.64 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.83a16 16 0 0 0 6.26 6.26l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.05z"/>
+            </svg>
+          </div>
+          <p class="scenario-label" data-i18n="stories.s6.label">Kontakter</p>
+          <h3 data-i18n="stories.s6.title">Tannlegenummeret ingen fant</h3>
+          <p class="scenario-situation" data-i18n="stories.s6.situation">Et barn har tannverk hos den ene forelderen. Forelderen må ringe tannlegen, men har ikke nummeret — det var lagret i den andre forelderens telefon.</p>
+          <p class="scenario-resolution"><strong data-i18n="stories.s6.resolution">Med Lina: Delte kontakter betyr at begge foreldre har tannlege-, lege- og skolenumre tilgjengelig til enhver tid.</strong></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing -->
+  <div class="stories-closing">
+    <div class="container">
+      <p data-i18n="stories.closing">Dette er ikke dramatiske problemer. Det er de stille, hverdagslige øyeblikkene der en felles oversikt sparer tid, reduserer stress og holder fokus på barnet.</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-inner">
+        <h2 data-i18n="cta.title">En trygg linje mellom to foreldre.</h2>
+        <p data-i18n="cta.description">Lina samler alt barnet trenger — synlig og oppdatert på tvers av hjem. Last ned og kom i gang på minutter.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Last ned på App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Last ned på Google Play</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/no/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+          <a href="/no/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
+          <a href="/no/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/no/professionals.html" data-i18n="footer.familievern">Fagfolk</a>
+          <a href="/no/stories/" data-i18n="footer.stories">Hverdagsscenarioer</a>
+          <a href="/no/pricing/" data-i18n="footer.pricing">Pris</a>
+          <a href="/no/about/" data-i18n="footer.about">Om Lina</a>
+          <a href="/no/blog/" data-i18n="footer.blog">Blogg</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/no/terms/" data-i18n="footer.terms">Vilkår for bruk</a>
+          <a href="/no/privacy/" data-i18n="footer.privacy">Personvernregler</a>
+          <a href="/no/contact.html" data-i18n="footer.contact">Kontakt</a>
+          <a href="/no/account-deletion.html" data-i18n="footer.accountDeletion">Sletting av konto</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+  </script>
+
+</body>
+</html>
