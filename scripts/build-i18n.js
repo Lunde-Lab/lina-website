@@ -38,6 +38,9 @@ const SOURCE_FILES = [
   { src: 'stories/index.html',        urlPath: '/stories/',           priority: '0.6', hasDropdown: true  },
   { src: 'professionals.html',        urlPath: '/professionals.html', priority: '0.7', hasDropdown: true  },
   { src: 'contact.html',              urlPath: '/contact.html',       priority: '0.5', hasDropdown: false },
+  { src: 'terms/index.html',          urlPath: '/terms/',              priority: '0.3' },
+  { src: 'privacy/index.html',        urlPath: '/privacy/',            priority: '0.3' },
+  { src: 'account-deletion.html',     urlPath: '/account-deletion.html', priority: '0.3' },
 ];
 
 // Exact internal hrefs that should receive a /LANG/ prefix in generated files.
@@ -45,15 +48,20 @@ const SOURCE_FILES = [
 const INTERNAL_HREFS = [
   '/care-schedule/',
   '/care-agreement/',
+  '/account-deletion.html',
   '/professionals.html',
   '/contact.html',
+  '/privacy/',
   '/pricing/',
   '/stories/',
+  '/terms/',
   '/about/',
   '/faq/',
   '/care-schedule',
   '/care-agreement',
+  '/privacy',
   '/pricing',
+  '/terms',
   '/stories',
   '/about',
   '/faq',
