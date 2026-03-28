@@ -11,6 +11,10 @@
  *
  * Safety: section-tag counts are verified before every write.
  * Aborts the affected file (not the whole build) on mismatch.
+ *
+ * langUrls support: SOURCE_FILES entries may include a `langUrls` map of
+ * { lang: '/slug/' } to override the default /{lang}{urlPath} pattern.
+ * Used for blog articles with per-language URL slugs.
  */
 
 const fs   = require('fs');
@@ -41,6 +45,18 @@ const SOURCE_FILES = [
   { src: 'terms/index.html',          urlPath: '/terms/',              priority: '0.3' },
   { src: 'privacy/index.html',        urlPath: '/privacy/',            priority: '0.3' },
   { src: 'account-deletion.html',     urlPath: '/account-deletion.html', priority: '0.3' },
+  {
+    src: 'blog/samvaersordninger/index.html',
+    urlPath: '/blog/samvaersordninger/',
+    langUrls: {
+      en: '/blog/custody-schedules/',
+      sv: '/blog/umgangesschema/',
+      da: '/blog/samvaersordning/',
+      fi: '/blog/vuoroasuminen/',
+    },
+    priority: '0.6',
+    hasDropdown: true,
+  },
 ];
 
 // Exact internal hrefs that should receive a /LANG/ prefix in generated files.
@@ -57,6 +73,8 @@ const INTERNAL_HREFS = [
   '/terms/',
   '/about/',
   '/faq/',
+  '/blog/samvaersordninger/',
+  '/blog/samvaersordninger',
   '/care-schedule',
   '/care-agreement',
   '/privacy',
@@ -96,15 +114,33 @@ function mkdirp(dir) {
   fs.mkdirSync(dir, { recursive: true });
 }
 
-/** URL for a given language + page path */
+/** URL for a given language + page path (no langUrls awareness — base helper) */
 function pageUrl(lang, urlPath) {
   const prefix = lang === 'no' ? '' : `/${lang}`;
   return `${BASE_URL}${prefix}${urlPath}`;
 }
 
-/** URL path string (no BASE_URL) for a language */
-function langPath(lang, urlPath) {
+/** URL path string (no BASE_URL) for a language, respecting langUrls */
+function langUrl(lang, urlPath, file) {
+  if (lang !== 'no' && file && file.langUrls && file.langUrls[lang]) {
+    return `/${lang}${file.langUrls[lang]}`;
+  }
   return lang === 'no' ? urlPath : `/${lang}${urlPath}`;
+}
+
+/** Full URL (with BASE_URL) for a language, respecting langUrls */
+function fullUrl(lang, urlPath, file) {
+  return `${BASE_URL}${langUrl(lang, urlPath, file)}`;
+}
+
+/** Output file path for a generated language version, respecting langUrls */
+function outPath(src, lang, file) {
+  if (file && file.langUrls && file.langUrls[lang]) {
+    const slug    = file.langUrls[lang].replace(/^\//, '');
+    const relPath = slug.endsWith('/') ? slug + 'index.html' : slug;
+    return path.join(ROOT, lang, relPath);
+  }
+  return path.join(ROOT, lang, src);
 }
 
 /** Count occurrences of a plain string */
@@ -265,16 +301,16 @@ function setDescription(html, locale, descKey) {
 }
 
 /** Remove all existing canonical + alternate links, insert correct block */
-function setCanonicalAndHreflang(html, lang, urlPath) {
-  const canon = pageUrl(lang, urlPath);
-  const noUrl  = pageUrl('no', urlPath);
+function setCanonicalAndHreflang(html, lang, urlPath, file) {
+  const canon  = fullUrl(lang, urlPath, file);
+  const noUrl  = fullUrl('no', urlPath, file);
 
   // Wipe existing (handles duplicates automatically)
   html = html.replace(/<link rel="canonical"[^>]*\/>\s*/g, '');
   html = html.replace(/<link rel="alternate"[^>]*\/>\s*/g, '');
 
   const hreflang = LANGS.map(l =>
-    `  <link rel="alternate" hreflang="${l}"        href="${pageUrl(l, urlPath)}" />`
+    `  <link rel="alternate" hreflang="${l}"        href="${fullUrl(l, urlPath, file)}" />`
   ).join('\n');
 
   const block =
@@ -348,10 +384,29 @@ function fixInternalLinks(html, lang) {
   });
 }
 
+/**
+ * Replace Norwegian blog slugs with language-specific equivalents.
+ * Called after fixInternalLinks, which has already prefixed them with /{lang}.
+ * Example (EN): href="/en/blog/samvaersordninger/" → href="/en/blog/custody-schedules/"
+ * Only called for generated (non-Norwegian) files when the file has langUrls.
+ */
+function fixBlogLinks(html, lang) {
+  return processNonJsonLd(html, text => {
+    for (const file of SOURCE_FILES) {
+      if (!file.langUrls || !file.langUrls[lang]) continue;
+      const prefixedNo   = `/${lang}${file.urlPath}`;
+      const prefixedLang = `/${lang}${file.langUrls[lang]}`;
+      const esc = prefixedNo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      text = text.replace(new RegExp(`href="${esc}"`, 'g'), `href="${prefixedLang}"`);
+    }
+    return text;
+  });
+}
+
 /** Generate the lang-dropdown <div> with <a> links */
-function buildLangDropdown(currentLang, urlPath) {
+function buildLangDropdown(currentLang, urlPath, file) {
   const items = ALL_LANGS.map(l => {
-    const href   = langPath(l, urlPath);
+    const href   = langUrl(l, urlPath, file);
     const active = l === currentLang ? ' active' : '';
     return `            <a class="lang-option${active}" href="${href}" role="menuitem">` +
            `<span class="lang-flag">${LANG_FLAG[l]}</span> ${LANG_NAME[l]}</a>`;
@@ -364,11 +419,11 @@ function buildLangDropdown(currentLang, urlPath) {
 }
 
 /** Replace button-based lang-dropdown with link-based one, update #lang-current */
-function fixLangSwitcher(html, lang, urlPath) {
+function fixLangSwitcher(html, lang, urlPath, file) {
   // Replace the dropdown div (non-greedy [\s\S]*? stops at first </div>)
   html = html.replace(
     /<div class="lang-dropdown" role="menu">[\s\S]*?<\/div>/,
-    buildLangDropdown(lang, urlPath)
+    buildLangDropdown(lang, urlPath, file)
   );
   // Update the displayed language label
   html = html.replace(
@@ -437,19 +492,19 @@ function safetyCheck(srcHtml, outHtml, label) {
 // ─── Per-file pipelines ───────────────────────────────────────────────────────
 
 /** Transform source HTML into a Norwegian version (minimal updates only) */
-function buildNorwegian(srcHtml, urlPath, hasDropdown, locale, srcFile) {
+function buildNorwegian(srcHtml, urlPath, hasDropdown, locale, srcFile, file) {
   let html = srcHtml;
   html = localizeJsonLd(html, locale, srcFile);
-  html = setCanonicalAndHreflang(html, 'no', urlPath);
+  html = setCanonicalAndHreflang(html, 'no', urlPath, file);
   html = fixAssetPaths(html);
   html = fixLogoLink(html, 'no');
-  if (hasDropdown) html = fixLangSwitcher(html, 'no', urlPath);
+  if (hasDropdown) html = fixLangSwitcher(html, 'no', urlPath, file);
   html = fixLangScript(html);
   return html;
 }
 
 /** Transform Norwegian HTML into a fully translated version for `lang` */
-function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile) {
+function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile, file) {
   const { titleKey, descKey } = getPageKeys(noHtml);
   let html = noHtml;
   html = applyTranslations(html, locale);
@@ -457,11 +512,12 @@ function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile) {
   html = setHtmlLang(html, lang);
   html = setTitle(html, locale, titleKey);
   html = setDescription(html, locale, descKey);
-  html = setCanonicalAndHreflang(html, lang, urlPath);
+  html = setCanonicalAndHreflang(html, lang, urlPath, file);
   // Asset paths are already absolute after the Norwegian pass
   html = fixInternalLinks(html, lang);
+  if (file && file.langUrls) html = fixBlogLinks(html, lang);
   html = fixLogoLink(html, lang);
-  if (hasDropdown) html = fixLangSwitcher(html, lang, urlPath);
+  if (hasDropdown) html = fixLangSwitcher(html, lang, urlPath, file);
   html = fixLangScript(html);
   return html;
 }
@@ -469,26 +525,65 @@ function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile) {
 // ─── Sitemap ─────────────────────────────────────────────────────────────────
 
 function buildSitemap() {
-  const urlEntries = SOURCE_FILES.map(({ urlPath, priority }) => {
+  const urlEntries = [];
+
+  for (const { urlPath, priority, langUrls } of SOURCE_FILES) {
     const noUrl = pageUrl('no', urlPath);
 
-    const links = [
-      `      <xhtml:link rel="alternate" hreflang="x-default" href="${noUrl}"/>`,
-      `      <xhtml:link rel="alternate" hreflang="nb"        href="${noUrl}"/>`,
-      ...LANGS.map(l =>
-        `      <xhtml:link rel="alternate" hreflang="${l}"        href="${pageUrl(l, urlPath)}"/>`
-      ),
-    ].join('\n');
+    if (langUrls) {
+      // Blog-style pages: each language has a different slug, so each gets
+      // its own <url> entry. All entries share the same full hreflang set.
+      const makeLinks = () => [
+        `      <xhtml:link rel="alternate" hreflang="x-default" href="${noUrl}"/>`,
+        `      <xhtml:link rel="alternate" hreflang="nb"        href="${noUrl}"/>`,
+        ...LANGS.map(l => {
+          const lUrl = `${BASE_URL}/${l}${langUrls[l]}`;
+          return `      <xhtml:link rel="alternate" hreflang="${l}"        href="${lUrl}"/>`;
+        }),
+      ].join('\n');
 
-    return (
-      `  <url>\n` +
-      `    <loc>${noUrl}</loc>\n` +
-      links + '\n' +
-      `    <changefreq>monthly</changefreq>\n` +
-      `    <priority>${priority}</priority>\n` +
-      `  </url>`
-    );
-  });
+      // Norwegian entry
+      urlEntries.push(
+        `  <url>\n` +
+        `    <loc>${noUrl}</loc>\n` +
+        makeLinks() + '\n' +
+        `    <changefreq>monthly</changefreq>\n` +
+        `    <priority>${priority}</priority>\n` +
+        `  </url>`
+      );
+
+      // Per-language entries
+      for (const lang of LANGS) {
+        const lUrl = `${BASE_URL}/${lang}${langUrls[lang]}`;
+        urlEntries.push(
+          `  <url>\n` +
+          `    <loc>${lUrl}</loc>\n` +
+          makeLinks() + '\n' +
+          `    <changefreq>monthly</changefreq>\n` +
+          `    <priority>${priority}</priority>\n` +
+          `  </url>`
+        );
+      }
+    } else {
+      // Standard pages: one entry with all alternates
+      const links = [
+        `      <xhtml:link rel="alternate" hreflang="x-default" href="${noUrl}"/>`,
+        `      <xhtml:link rel="alternate" hreflang="nb"        href="${noUrl}"/>`,
+        ...LANGS.map(l =>
+          `      <xhtml:link rel="alternate" hreflang="${l}"        href="${pageUrl(l, urlPath)}"/>`
+        ),
+      ].join('\n');
+
+      urlEntries.push(
+        `  <url>\n` +
+        `    <loc>${noUrl}</loc>\n` +
+        links + '\n' +
+        `    <changefreq>monthly</changefreq>\n` +
+        `    <priority>${priority}</priority>\n` +
+        `  </url>`
+      );
+    }
+  }
 
   return (
     `<?xml version="1.0" encoding="UTF-8"?>\n` +
@@ -514,7 +609,8 @@ function main() {
 
   let errors = 0;
 
-  for (const { src, urlPath, hasDropdown } of SOURCE_FILES) {
+  for (const file of SOURCE_FILES) {
+    const { src, urlPath, hasDropdown } = file;
     const srcPath = path.join(ROOT, src);
     if (!fs.existsSync(srcPath)) {
       console.warn(`SKIP (not found): ${src}`);
@@ -525,7 +621,7 @@ function main() {
     const origSections = countStr(originalHtml, '<section');
 
     // ── Step 1: build updated Norwegian source ─────────────────────────────
-    const noHtml = buildNorwegian(originalHtml, urlPath, hasDropdown, noLocale, src);
+    const noHtml = buildNorwegian(originalHtml, urlPath, hasDropdown, noLocale, src, file);
 
     if (!safetyCheck(originalHtml, noHtml, `${src} [no]`)) {
       console.error(`  ABORT: skipping write of ${src}`);
@@ -538,7 +634,7 @@ function main() {
 
     // ── Step 2: generate language versions ────────────────────────────────
     for (const lang of LANGS) {
-      const outHtml = buildForLang(noHtml, lang, locales[lang], urlPath, hasDropdown, src);
+      const outHtml = buildForLang(noHtml, lang, locales[lang], urlPath, hasDropdown, src, file);
 
       if (!safetyCheck(originalHtml, outHtml, `${src} [${lang}]`)) {
         console.error(`  ABORT: skipping ${lang}/${src}`);
@@ -546,10 +642,10 @@ function main() {
         continue;
       }
 
-      const outFile = path.join(ROOT, lang, src);
+      const outFile = outPath(src, lang, file);
       mkdirp(path.dirname(outFile));
       fs.writeFileSync(outFile, outHtml, 'utf8');
-      console.log(`  → ${lang}/${src}`);
+      console.log(`  → ${outFile.replace(ROOT + path.sep, '')}`);
     }
   }
 
