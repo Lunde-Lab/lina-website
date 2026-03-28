@@ -694,5 +694,15 @@
     "ctaTitle": "Visualisera umgängesfördelningen",
     "ctaDesc": "Linas omsorgsschema låter dig klicka i dagarna och se hur tiden fördelas vecka för vecka — med en sammanfattning av dagfördelning, helgmönster och antal byten.",
     "ctaCta": "Öppna omsorgsschemat"
+  },
+  "blogIndex": {
+    "pageTitle": "Blogg — Lina",
+    "pageDesc": "Praktisk information om umgängesscheman, avtal och vardagskoordinering för föräldrar som delar omsorg mellan två hem.",
+    "label": "Delat föräldraskap",
+    "title": "Guider för föräldrar med delad omsorg",
+    "description": "Praktisk information om umgängesscheman, avtal och vardagskoordinering mellan två hem.",
+    "a1label": "Umgängesschema",
+    "a1title": "Umgängesscheman förklarade",
+    "a1desc": "En översikt av de vanligaste modellerna — varannan vecka, 3-4-4-3, 2-2-5-5 och andra. Vad passar för olika åldersgrupper?"
   }
 }

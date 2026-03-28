@@ -678,5 +678,15 @@
     "ctaTitle": "Visualise the care split",
     "ctaDesc": "Lina's care schedule lets you click in the days and see how time is divided week by week — with a summary of the day split, weekend patterns, and number of transitions.",
     "ctaCta": "Open the care schedule"
+  },
+  "blogIndex": {
+    "pageTitle": "Blog — Lina",
+    "pageDesc": "Practical information about care arrangements, agreements, and everyday coordination for co-parents sharing care across two homes.",
+    "label": "Co-parenting",
+    "title": "Guides for co-parents",
+    "description": "Practical information about care arrangements, agreements, and everyday coordination across two homes.",
+    "a1label": "Care arrangement",
+    "a1title": "Care arrangements explained",
+    "a1desc": "An overview of the most common models — alternating weeks, 3-4-4-3, 2-2-5-5, and others. What works for different age groups?"
   }
 }

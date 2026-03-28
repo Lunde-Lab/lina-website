@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="fi" data-i18n-title="about.pageTitle" data-i18n-desc="about.pageDesc">
+<html lang="nb" data-i18n-title="blogIndex.pageTitle" data-i18n-desc="blogIndex.pageDesc">
 <head>
   <meta charset="UTF-8" />
-  <link rel="canonical" href="https://getlina.app/fi/about/" />
-  <link rel="alternate" hreflang="x-default" href="https://getlina.app/about/" />
-  <link rel="alternate" hreflang="nb"        href="https://getlina.app/about/" />
-  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/about/" />
-  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/about/" />
-  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/about/" />
-  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/about/" />
+  <link rel="canonical" href="https://getlina.app/blog/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
-  <title>Tietoa Linasta — Lina</title>
-  <meta name="description" content="Lina luotiin yhteishuoltajille, jotka haluavat rauhallisen, jäsennellyn työkalun arjen koordinointiin. Suunniteltu ja rakennettu Norjassa." />
+  <title>Blogg — Lina</title>
+  <meta name="description" content="Praktisk informasjon om samværsordninger, avtaler og hverdagskoordinering for foreldre som deler omsorg mellom to hjem." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://getlina.app/fi/about/" />
-  <meta property="og:title" content="Tietoa Linasta — Lina" />
-  <meta property="og:description" content="Lina luotiin yhteishuoltajille, jotka haluavat rauhallisen, jäsennellyn työkalun arjen koordinointiin. Suunniteltu ja rakennettu Norjassa." />
+  <meta property="og:url" content="https://getlina.app/blog/" />
+  <meta property="og:title" content="Blogg — Lina" />
+  <meta property="og:description" content="Praktisk informasjon om samværsordninger, avtaler og hverdagskoordinering for foreldre som deler omsorg mellom to hjem." />
   <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Tietoa Linasta — Lina" />
-  <meta name="twitter:description" content="Lina luotiin yhteishuoltajille, jotka haluavat rauhallisen, jäsennellyn työkalun arjen koordinointiin. Suunniteltu ja rakennettu Norjassa." />
+  <meta name="twitter:title" content="Blogg — Lina" />
+  <meta name="twitter:description" content="Praktisk informasjon om samværsordninger, avtaler og hverdagskoordinering for foreldre som deler omsorg mellom to hjem." />
   <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -171,82 +171,89 @@
     }
 
     @media (max-width: 599px) {
-      footer {
-        padding: 32px 16px;
-      }
-
-      .footer-nav-row {
-        gap: 16px;
-      }
-
-      .footer-nav-row a {
-        font-size: 12px;
-      }
+      footer { padding: 32px 16px; }
+      .footer-nav-row { gap: 16px; }
+      .footer-nav-row a { font-size: 12px; }
     }
 
-    /* ── About content ── */
-    .about-main { padding: 56px 24px 96px; }
+    /* ── Blog index content ── */
+    .blog-main { padding: 56px 24px 96px; }
 
-    .about-container {
-      max-width: 640px;
-      margin: 0 auto;
+    .blog-container { max-width: 720px; margin: 0 auto; }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
     }
 
-    .about-container h1 {
+    .blog-container h1 {
       font-size: 28px;
       font-weight: 600;
       letter-spacing: -0.02em;
       color: var(--text);
-      margin-bottom: 24px;
+      margin-bottom: 12px;
+      line-height: 1.25;
     }
 
-    .about-lead {
-      font-size: 17px;
+    .blog-description {
+      font-size: 16px;
       color: var(--text-secondary);
-      line-height: 1.75;
+      line-height: 1.65;
+      max-width: 560px;
       margin-bottom: 40px;
     }
 
-    .about-section {
-      margin-bottom: 36px;
-    }
-
-    .about-section h2 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      letter-spacing: -0.01em;
-      margin-bottom: 12px;
-    }
-
-    .about-section p {
-      font-size: 15px;
-      color: var(--text-secondary);
-      line-height: 1.75;
-      margin-bottom: 12px;
-    }
-
-    .about-section p:last-child { margin-bottom: 0; }
-
-    .about-origin {
+    .blog-list {
       display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 15px;
-      color: var(--text-secondary);
-      margin-top: 48px;
-      padding-top: 32px;
-      border-top: 1px solid var(--border);
+      flex-direction: column;
+      gap: 16px;
     }
 
-    .about-origin .flag {
-      font-size: 20px;
-      line-height: 1;
+    .blog-card {
+      display: block;
+      text-decoration: none;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      transition: border-color 0.15s;
+    }
+
+    .blog-card:hover { border-color: var(--primary); }
+
+    .blog-card-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .blog-card h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+
+    .blog-card-desc {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
     }
 
     @media (max-width: 599px) {
-      .about-main { padding: 40px 16px 64px; }
-      .about-container h1 { font-size: 24px; }
+      .blog-main { padding: 40px 16px 64px; }
+      .blog-container h1 { font-size: 24px; }
+      .blog-card { padding: 24px; }
     }
   </style>
 </head>
@@ -255,11 +262,11 @@
   <!-- Nav -->
   <nav>
     <div class="nav-inner">
-      <a href="/fi/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <a href="/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
       <nav class="nav-links">
-        <a href="/fi/care-schedule/" data-i18n="footer.careSchedule">Hoitoaikataulu</a>
-        <a href="/fi/care-agreement/" data-i18n="footer.careAgreement">Huoltosopimus</a>
-        <a href="/fi/pricing/" data-i18n="footer.pricing">Hinta</a>
+        <a href="/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+        <a href="/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
+        <a href="/pricing/" data-i18n="footer.pricing">Pricing</a>
       </nav>
       <div class="nav-right">
         <div class="lang-switcher" id="lang-switcher">
@@ -268,45 +275,36 @@
               <circle cx="12" cy="12" r="10"/>
               <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
             </svg>
-            <span id="lang-current">FI</span>
+            <span id="lang-current">NO</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M6 9l6 6 6-6"/>
             </svg>
           </button>
           <div class="lang-dropdown" role="menu">
-            <a class="lang-option" href="/about/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
-            <a class="lang-option" href="/en/about/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
-            <a class="lang-option" href="/sv/about/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
-            <a class="lang-option" href="/da/about/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
-            <a class="lang-option active" href="/fi/about/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option active" href="/blog/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/en/blog/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/sv/blog/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/blog/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
 
-  <main class="about-main">
-    <div class="about-container">
+  <main class="blog-main">
+    <div class="blog-container">
 
-      <h1 data-i18n="about.heading">Tietoa Linasta</h1>
+      <p class="section-label" data-i18n="blogIndex.label">Delt omsorg</p>
+      <h1 data-i18n="blogIndex.title">Veiledninger for foreldre med delt omsorg</h1>
+      <p class="blog-description" data-i18n="blogIndex.description">Praktisk informasjon om samværsordninger, avtaler og hverdagskoordinering mellom to hjem.</p>
 
-      <p class="about-lead" data-i18n="about.lead">Lina on sovellus vanhemmille, jotka jakavat lapsen hoidon kahden kodin välillä. Sama kokonaiskuva, sama tieto — riippumatta siitä, kumman luona lapsi on.</p>
-
-      <div class="about-section">
-        <h2 data-i18n="about.whyTitle">Miksi Lina on olemassa</h2>
-        <p data-i18n="about.whyText1">Lina luotiin, koska rauhallista ja keskittynyttä yhteishuoltajuussovellusta ei ollut olemassa. Useimmat työkalut oli rakennettu ristiriitojen tai oikeusprosessien ympärille. Halusimme jotain muuta — hiljaisen, jäsennellyn tilan arjen koordinointiin kahden vanhemman välillä.</p>
-        <p data-i18n="about.whyText2">Tavoitteena on vähentää jaetusta hoidosta aiheutuvaa henkistä kuormitusta. Kun molemmilla vanhemmilla on pääsy samoihin aikatauluihin, listoihin ja päivityksiin, kenenkään ei tarvitse kantaa kaikkea yksin.</p>
-      </div>
-
-      <div class="about-section">
-        <h2 data-i18n="about.focusTitle">Mihin Lina keskittyy</h2>
-        <p data-i18n="about.focusText1">Lina on rakennettu jäsennellyn viestinnän ja käytännön työkalujen ympärille. Keskusteluketjut pitävät viestit järjestyksessä. Jaetut listat, yhteystiedot ja lapsen tiedot ovat aina saatavilla — näkyvissä molemmissa kodeissa.</p>
-        <p data-i18n="about.focusText2">Algoritmeja, mainoksia tai sosiaalisia ominaisuuksia ei ole. Lina on suunniteltu käytettäväksi tarvittaessa ja pysymään poissa tieltä muulloin.</p>
-      </div>
-
-      <div class="about-origin">
-        <span class="flag" aria-hidden="true">🇳🇴</span>
-        <span data-i18n="about.origin">Suunniteltu ja rakennettu Norjassa.</span>
+      <div class="blog-list">
+        <a class="blog-card" href="/blog/samvaersordninger/">
+          <p class="blog-card-label" data-i18n="blogIndex.a1label">Samværsordning</p>
+          <h2 data-i18n="blogIndex.a1title">Samværsordninger forklart</h2>
+          <p class="blog-card-desc" data-i18n="blogIndex.a1desc">Oversikt over de vanligste modellene — annenhver uke, 3-4-4-3, 2-2-5-5 og andre. Hva passer for ulike aldersgrupper?</p>
+        </a>
       </div>
 
     </div>
@@ -318,23 +316,23 @@
       <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
       <nav class="footer-nav" aria-label="Footer navigation">
         <div class="footer-nav-row">
-          <a href="/fi/care-schedule/" data-i18n="footer.careSchedule">Hoitoaikataulu</a>
-          <a href="/fi/care-agreement/" data-i18n="footer.careAgreement">Huoltosopimus</a>
-          <a href="/fi/faq/" data-i18n="footer.faq">Usein kysytyt kysymykset</a>
-          <a href="/fi/professionals.html" data-i18n="footer.familievern">Ammattilaiset</a>
-          <a href="/fi/stories/" data-i18n="footer.stories">Tarinoita</a>
-          <a href="/fi/pricing/" data-i18n="footer.pricing">Hinta</a>
-          <a href="/fi/about/" aria-current="page" data-i18n="footer.about">Tietoa</a>
-          <a href="/fi/blog/" data-i18n="footer.blog">Blogi</a>
+          <a href="/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+          <a href="/care-agreement/" data-i18n="footer.careAgreement">Samværsavtale</a>
+          <a href="/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/professionals.html" data-i18n="footer.familievern">Fagfolk</a>
+          <a href="/stories/" data-i18n="footer.stories">Stories</a>
+          <a href="/pricing/" data-i18n="footer.pricing">Pricing</a>
+          <a href="/about/" data-i18n="footer.about">Om Lina</a>
+          <a href="/blog/" aria-current="page" data-i18n="footer.blog">Blogg</a>
         </div>
         <div class="footer-nav-row">
-          <a href="/fi/terms/" data-i18n="footer.terms">Käyttöehdot</a>
-          <a href="/fi/privacy/" data-i18n="footer.privacy">Tietosuojakäytäntö</a>
-          <a href="/fi/contact.html" data-i18n="footer.contact">Ota yhteyttä</a>
-          <a href="/fi/account-deletion.html" data-i18n="footer.accountDeletion">Tilin poistaminen</a>
+          <a href="/terms/" data-i18n="footer.terms">Vilkår for bruk</a>
+          <a href="/privacy/" data-i18n="footer.privacy">Personvernregler</a>
+          <a href="/contact.html" data-i18n="footer.contact">Kontakt</a>
+          <a href="/account-deletion.html" data-i18n="footer.accountDeletion">Sletting av konto</a>
         </div>
       </nav>
-      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Kaikki oikeudet pidätetään.</p>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
     </div>
   </footer>
 

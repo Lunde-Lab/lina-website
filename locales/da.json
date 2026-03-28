@@ -694,5 +694,15 @@
     "ctaTitle": "Visualiser samværsfordelingen",
     "ctaDesc": "Linas samværsplan lader dig klikke dagene ind og se, hvordan tiden fordeles uge for uge — med en oversigt over dagfordeling, weekendmønstre og antal skift.",
     "ctaCta": "Åbn samværsplanen"
+  },
+  "blogIndex": {
+    "pageTitle": "Blog — Lina",
+    "pageDesc": "Praktisk information om samværsordninger, aftaler og hverdagskoordinering for forældre, der deler omsorg mellem to hjem.",
+    "label": "Delt forældreskab",
+    "title": "Guides til forældre med delt omsorg",
+    "description": "Praktisk information om samværsordninger, aftaler og hverdagskoordinering mellem to hjem.",
+    "a1label": "Samværsordning",
+    "a1title": "Samværsordninger forklaret",
+    "a1desc": "En oversigt over de mest almindelige modeller — hver anden uge, 3-4-4-3, 2-2-5-5 og andre. Hvad passer til forskellige aldersgrupper?"
   }
 }

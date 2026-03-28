@@ -45,6 +45,7 @@ const SOURCE_FILES = [
   { src: 'terms/index.html',          urlPath: '/terms/',              priority: '0.3' },
   { src: 'privacy/index.html',        urlPath: '/privacy/',            priority: '0.3' },
   { src: 'account-deletion.html',     urlPath: '/account-deletion.html', priority: '0.3' },
+  { src: 'blog/index.html',           urlPath: '/blog/',                 priority: '0.5', hasDropdown: true },
   {
     src: 'blog/samvaersordninger/index.html',
     urlPath: '/blog/samvaersordninger/',
@@ -73,6 +74,8 @@ const INTERNAL_HREFS = [
   '/terms/',
   '/about/',
   '/faq/',
+  '/blog/',
+  '/blog',
   '/blog/samvaersordninger/',
   '/blog/samvaersordninger',
   '/care-schedule',
