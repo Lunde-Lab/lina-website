@@ -712,7 +712,10 @@
     "a3desc": "En praktisk sjekkliste — hva som bør finnes i begge hjem, og hva som bør følge barnet.",
     "a4label": "Bosted",
     "a4title": "Delt bosted vs. fast bosted — hva er forskjellen?",
-    "a4desc": "Hva det betyr i praksis for hverdagen, beslutningsmyndighet og barnets rettigheter."
+    "a4desc": "Hva det betyr i praksis for hverdagen, beslutningsmyndighet og barnets rettigheter.",
+    "a5label": "Kommunikasjon",
+    "a5title": "Kommunikasjon mellom foreldre med delt omsorg",
+    "a5desc": "Hvorfor struktur hjelper, og hvordan holde tonen saklig når det gjelder barnet."
   },
   "blog2": {
     "pageTitle": "Byttedag — slik gjør du overleveringen enklere | Lina",
@@ -814,6 +817,40 @@
     "s6p3": "Denne artikkelen gir generell informasjon og erstatter ikke juridisk rådgivning. Ved tvil, kontakt en fagperson.",
     "ctaTitle": "Koordiner hverdagen — uansett ordning",
     "ctaDesc": "Uansett om barnet har delt bosted eller fast bosted hos én forelder — Lina hjelper begge foreldre å holde oversikten over det praktiske.",
+    "ctaCta": "Last ned Lina"
+  },
+  "blog5": {
+    "pageTitle": "Kommunikasjon mellom foreldre med delt omsorg — Lina",
+    "pageDesc": "Hvordan holde kommunikasjonen saklig og strukturert når dere deler omsorgen for et barn — praktiske tips for tråder, skriftlighet og tydelige grenser.",
+    "label": "Kommunikasjon",
+    "title": "Kommunikasjon mellom foreldre med delt omsorg",
+    "intro": "For de fleste foreldre med delt omsorg er kommunikasjon det vanskeligste. Ikke de store avgjørelsene — men de daglige meldingene. Hvem henter? Hva skjedde hos legen? Trengs det nytt regntøy? Når kommunikasjonen fungerer, fungerer hverdagen. Når den ikke gjør det, merker barnet det først.",
+    "s1title": "Hold det saklig",
+    "s1p1": "Meldinger mellom foreldre bør handle om barnet, ikke om forholdet mellom foreldrene. Det er lettere sagt enn gjort — spesielt i tiden rett etter et brudd.",
+    "s1p2": "En enkel regel: skriv meldingen som om en nøytral tredjeperson leser den. Ville du vært komfortabel med at en rådgiver eller mekler så det du skriver? Hvis ja, send den. Hvis nei, omformuler.",
+    "s1p3": "Det betyr ikke at alt må være klinisk. Vennlig og saklig er mulig samtidig. Et «takk for at du ordnet det» koster lite og bygger samarbeid over tid.",
+    "s2title": "Skriftlig er tryggere enn muntlig",
+    "s2p1": "Muntlige avtaler er vanskelige å huske nøyaktig. Etter noen uker husker foreldrene forskjellige versjoner av det som ble sagt — og barnet havner i midten.",
+    "s2p2": "Skriftlig kommunikasjon gir begge foreldre en referanse å gå tilbake til. Det reduserer misforståelser og gjør det enklere å følge opp avtaler.",
+    "s2p3": "Det trenger ikke å være formelt. En kort melding med det viktigste — tid, sted, hva som trengs — er nok. Poenget er at det er dokumentert.",
+    "s3title": "Struktur slår kaos",
+    "s3p1": "Én lang meldingstråd der skoleinfo, legeavtaler, ferieplanlegging og hverdagslogistikk blandes sammen, er en oppskrift på at ting forsvinner.",
+    "s3p2": "Separate tråder for ulike temaer — skole, helse, logistikk — gjør det enklere å finne igjen det du leter etter. Du slipper å bla gjennom tjue meldinger om middag for å finne legeavtalen.",
+    "s3p3": "Det gir også mer kontroll. Du kan håndtere helse-tråden på kvelden og logistikk-tråden om morgenen — uten at alt hoper seg opp i én kaotisk strøm.",
+    "s4title": "Svar innen rimelig tid",
+    "s4p1": "Å ikke svare er også kommunikasjon. Hvis en forelder sender en melding om henting og ikke får svar, skaper det usikkerhet — for forelderen og for barnet.",
+    "s4p2": "Avtal en rimelig responstid for praktiske meldinger. Ikke samme minutt, men innen noen timer for ting som haster, og innen et døgn for det som kan vente.",
+    "s4p3": "Hvis du ikke har et svar ennå, si det: «Jeg sjekker og kommer tilbake til deg i kveld.» Det fjerner usikkerheten uten å kreve en umiddelbar avgjørelse.",
+    "s5title": "Når kommunikasjonen bryter sammen",
+    "s5p1": "Noen ganger stopper kommunikasjonen opp. Den ene forelderen slutter å svare, tonen eskalerer, eller alt blir en kamp. Det er vanlig — og det finnes hjelp.",
+    "s5p2": "Familievernkontoret tilbyr mekling og samtalehjelp for foreldre som sliter med samarbeidet. I noen tilfeller kan en nøytral tredjepart hjelpe med å gjenopprette en fungerende kommunikasjonskanal.",
+    "s5p3": "Hvis direkte kommunikasjon er for vanskelig, kan et strukturert verktøy med skriftlig kommunikasjon og permanent meldingshistorikk hjelpe. Meldinger som ikke kan redigeres eller slettes gir begge foreldre trygghet for at det som er avtalt, faktisk er dokumentert.",
+    "s6title": "Barnet skal ikke være budbringer",
+    "s6p1": "Et av de vanligste feilgrepene er å bruke barnet som kommunikasjonskanal. «Si til mamma at...» eller «spør pappa om...» setter barnet i en umulig posisjon.",
+    "s6p2": "Barnet skal slippe å formidle beskjeder, forhandle avtaler, eller rapportere tilbake fra det andre hjemmet. All praktisk kommunikasjon bør gå direkte mellom foreldrene.",
+    "s6p3": "Hvis barnet forteller noe fra det andre hjemmet, lytt — men unngå å stille utforskende spørsmål. Barnet trenger å føle at det kan snakke fritt uten å bli en informasjonskilde.",
+    "ctaTitle": "Strukturert kommunikasjon mellom to hjem",
+    "ctaDesc": "Lina holder samtalene organisert i separate tråder. Meldinger kan ikke redigeres eller slettes — slik at begge foreldre har en tydelig historikk over hva som er avtalt.",
     "ctaCta": "Last ned Lina"
   }
 }

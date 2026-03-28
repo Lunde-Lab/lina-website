@@ -696,7 +696,10 @@
     "a3desc": "A practical checklist — what should be in both homes, and what should follow the child.",
     "a4label": "Residence",
     "a4title": "Shared residence vs. primary residence — what is the difference?",
-    "a4desc": "What it means in practice for everyday life, decision-making, and the child's rights."
+    "a4desc": "What it means in practice for everyday life, decision-making, and the child's rights.",
+    "a5label": "Communication",
+    "a5title": "Communication between co-parents",
+    "a5desc": "Why structure helps, and how to keep the tone factual when it concerns the child."
   },
   "blog2": {
     "pageTitle": "Handover day — how to make transitions easier | Lina",
@@ -798,6 +801,40 @@
     "s6p3": "This article provides general information and does not replace legal advice. If in doubt, contact a professional.",
     "ctaTitle": "Coordinate everyday life — regardless of arrangement",
     "ctaDesc": "Whether the child has shared residence or lives primarily with one parent — Lina helps both parents keep track of the practical details.",
+    "ctaCta": "Download Lina"
+  },
+  "blog5": {
+    "pageTitle": "Communication between co-parents — Lina",
+    "pageDesc": "How to keep communication factual and structured when sharing care of a child — practical tips on threads, written agreements, and clear boundaries.",
+    "label": "Communication",
+    "title": "Communication between co-parents",
+    "intro": "For most co-parents, communication is the hardest part. Not the big decisions — but the daily messages. Who is picking up? What happened at the doctor? Does the child need new rain gear? When communication works, everyday life works. When it does not, the child notices first.",
+    "s1title": "Keep it factual",
+    "s1p1": "Messages between parents should be about the child, not about the relationship between the parents. This is easier said than done — especially in the time right after a separation.",
+    "s1p2": "A simple rule: write the message as if a neutral third party were reading it. Would you be comfortable with a counsellor or mediator seeing what you wrote? If yes, send it. If not, rephrase.",
+    "s1p3": "This does not mean everything has to be clinical. Friendly and factual can coexist. A simple 'thanks for sorting that out' costs nothing and builds cooperation over time.",
+    "s2title": "Written is safer than spoken",
+    "s2p1": "Verbal agreements are hard to remember precisely. After a few weeks, the parents remember different versions of what was said — and the child ends up in the middle.",
+    "s2p2": "Written communication gives both parents a reference to go back to. It reduces misunderstandings and makes it easier to follow up on agreements.",
+    "s2p3": "It does not need to be formal. A short message with the essentials — time, place, what is needed — is enough. The point is that it is documented.",
+    "s3title": "Structure beats chaos",
+    "s3p1": "One long message thread where school information, medical appointments, holiday planning, and everyday logistics are mixed together is a recipe for things getting lost.",
+    "s3p2": "Separate threads for different topics — school, health, logistics — make it easier to find what you are looking for. You do not have to scroll through twenty messages about dinner to find the doctor's appointment.",
+    "s3p3": "It also gives more control. You can deal with the health thread in the evening and the logistics thread in the morning — without everything piling up in one chaotic stream.",
+    "s4title": "Respond within a reasonable time",
+    "s4p1": "Not responding is also communication. If a parent sends a message about pickup and gets no reply, it creates uncertainty — for the parent and for the child.",
+    "s4p2": "Agree on a reasonable response time for practical messages. Not the same minute, but within a few hours for urgent things, and within a day for what can wait.",
+    "s4p3": "If you do not have an answer yet, say so: 'I will check and get back to you tonight.' That removes the uncertainty without requiring an immediate decision.",
+    "s5title": "When communication breaks down",
+    "s5p1": "Sometimes communication stops working. One parent stops responding, the tone escalates, or everything becomes a battle. This is common — and help is available.",
+    "s5p2": "Family counselling services offer mediation and guided conversations for parents struggling with cooperation. In some cases, a neutral third party can help restore a functioning communication channel.",
+    "s5p3": "If direct communication is too difficult, a structured tool with written messaging and a permanent message history can help. Messages that cannot be edited or deleted give both parents confidence that what was agreed is actually documented.",
+    "s6title": "The child should not be the messenger",
+    "s6p1": "One of the most common mistakes is using the child as a communication channel. 'Tell mum that…' or 'ask dad about…' puts the child in an impossible position.",
+    "s6p2": "The child should not have to relay messages, negotiate agreements, or report back from the other home. All practical communication should go directly between the parents.",
+    "s6p3": "If the child shares something from the other home, listen — but avoid asking probing questions. The child needs to feel they can speak freely without becoming an information source.",
+    "ctaTitle": "Structured communication between two homes",
+    "ctaDesc": "Lina keeps conversations organised in separate threads. Messages cannot be edited or deleted — so both parents have a clear record of what was agreed.",
     "ctaCta": "Download Lina"
   }
 }

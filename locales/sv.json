@@ -712,7 +712,10 @@
     "a3desc": "En praktisk checklista — vad som bör finnas i båda hemmen och vad som bör följa med barnet.",
     "a4label": "Boende",
     "a4title": "Växelvis boende vs. fast boende — vad är skillnaden?",
-    "a4desc": "Vad det innebär i praktiken för vardagen, beslutsrätt och barnets rättigheter."
+    "a4desc": "Vad det innebär i praktiken för vardagen, beslutsrätt och barnets rättigheter.",
+    "a5label": "Kommunikation",
+    "a5title": "Kommunikation mellan föräldrar med delad omsorg",
+    "a5desc": "Varför struktur hjälper och hur du håller tonen saklig när det gäller barnet."
   },
   "blog2": {
     "pageTitle": "Överlämningsdag — så gör du bytet enklare | Lina",
@@ -814,6 +817,40 @@
     "s6p3": "Denna artikel ger allmän information och ersätter inte juridisk rådgivning. Vid tveksamheter, kontakta en fackperson.",
     "ctaTitle": "Koordinera vardagen — oavsett lösning",
     "ctaDesc": "Oavsett om barnet har växelvis boende eller fast boende hos en förälder — Lina hjälper båda föräldrarna att hålla koll på det praktiska.",
+    "ctaCta": "Ladda ner Lina"
+  },
+  "blog5": {
+    "pageTitle": "Kommunikation mellan föräldrar med delad omsorg — Lina",
+    "pageDesc": "Hur du håller kommunikationen saklig och strukturerad när ni delar omsorgen om ett barn — praktiska tips om trådar, skriftlighet och tydliga gränser.",
+    "label": "Kommunikation",
+    "title": "Kommunikation mellan föräldrar med delad omsorg",
+    "intro": "För de flesta föräldrar med delad omsorg är kommunikation det svåraste. Inte de stora besluten — utan de dagliga meddelandena. Vem hämtar? Vad hände hos läkaren? Behövs det nya regnkläder? När kommunikationen fungerar fungerar vardagen. När den inte gör det märker barnet det först.",
+    "s1title": "Håll det sakligt",
+    "s1p1": "Meddelanden mellan föräldrar bör handla om barnet, inte om relationen mellan föräldrarna. Det är lättare sagt än gjort — särskilt den första tiden efter en separation.",
+    "s1p2": "En enkel regel: skriv meddelandet som om en neutral tredje person läste det. Skulle du vara bekväm med att en rådgivare eller medlare såg det du skriver? Om ja, skicka det. Om nej, omformulera.",
+    "s1p3": "Det betyder inte att allt måste vara kliniskt. Vänligt och sakligt kan samexistera. Ett enkelt 'tack för att du ordnade det' kostar lite och bygger samarbete över tid.",
+    "s2title": "Skriftligt är tryggare än muntligt",
+    "s2p1": "Muntliga överenskommelser är svåra att minnas exakt. Efter några veckor minns föräldrarna olika versioner av det som sades — och barnet hamnar i mitten.",
+    "s2p2": "Skriftlig kommunikation ger båda föräldrarna en referens att gå tillbaka till. Det minskar missförstånd och gör det enklare att följa upp avtal.",
+    "s2p3": "Det behöver inte vara formellt. Ett kort meddelande med det viktigaste — tid, plats, vad som behövs — räcker. Poängen är att det är dokumenterat.",
+    "s3title": "Struktur slår kaos",
+    "s3p1": "En lång meddelandetråd där skolinfo, läkarbesök, semesterplanering och vardagslogistik blandas ihop är ett recept för att saker försvinner.",
+    "s3p2": "Separata trådar för olika ämnen — skola, hälsa, logistik — gör det enklare att hitta det du letar efter. Du slipper scrolla genom tjugo meddelanden om middag för att hitta läkartiden.",
+    "s3p3": "Det ger också mer kontroll. Du kan hantera hälsotråden på kvällen och logistiktråden på morgonen — utan att allt hopar sig i en kaotisk ström.",
+    "s4title": "Svara inom rimlig tid",
+    "s4p1": "Att inte svara är också kommunikation. Om en förälder skickar ett meddelande om hämtning och inte får svar skapar det osäkerhet — för föräldern och för barnet.",
+    "s4p2": "Kom överens om en rimlig svarstid för praktiska meddelanden. Inte samma minut, men inom några timmar för brådskande saker och inom ett dygn för det som kan vänta.",
+    "s4p3": "Om du inte har ett svar ännu, säg det: 'Jag kollar och återkommer ikväll.' Det tar bort osäkerheten utan att kräva ett omedelbart beslut.",
+    "s5title": "När kommunikationen bryter samman",
+    "s5p1": "Ibland slutar kommunikationen att fungera. En förälder slutar svara, tonen eskalerar eller allt blir en kamp. Det är vanligt — och det finns hjälp.",
+    "s5p2": "Familjerätten erbjuder samarbetssamtal för föräldrar som har svårt att samarbeta. I vissa fall kan en neutral tredje part hjälpa till att återupprätta en fungerande kommunikationskanal.",
+    "s5p3": "Om direkt kommunikation är för svårt kan ett strukturerat verktyg med skriftliga meddelanden och permanent meddelandehistorik hjälpa. Meddelanden som inte kan redigeras eller raderas ger båda föräldrarna trygghet att det som avtalats faktiskt är dokumenterat.",
+    "s6title": "Barnet ska inte vara budbärare",
+    "s6p1": "Ett av de vanligaste misstagen är att använda barnet som kommunikationskanal. 'Säg till mamma att…' eller 'fråga pappa om…' sätter barnet i en omöjlig position.",
+    "s6p2": "Barnet ska slippa förmedla beskeder, förhandla avtal eller rapportera tillbaka från det andra hemmet. All praktisk kommunikation bör gå direkt mellan föräldrarna.",
+    "s6p3": "Om barnet berättar något från det andra hemmet, lyssna — men undvik att ställa utforskande frågor. Barnet behöver känna att det kan prata fritt utan att bli en informationskälla.",
+    "ctaTitle": "Strukturerad kommunikation mellan två hem",
+    "ctaDesc": "Lina håller samtalen organiserade i separata trådar. Meddelanden kan inte redigeras eller raderas — så båda föräldrarna har en tydlig historik över vad som avtalats.",
     "ctaCta": "Ladda ner Lina"
   }
 }

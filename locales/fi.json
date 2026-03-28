@@ -712,7 +712,10 @@
     "a3desc": "Käytännön tarkistuslista — mitä kummassakin kodissa pitäisi olla ja minkä pitäisi kulkea lapsen mukana.",
     "a4label": "Asuminen",
     "a4title": "Vuoroasuminen vs. lähivanhemmuus — mikä on ero?",
-    "a4desc": "Mitä se tarkoittaa käytännössä arjessa, päätöksenteossa ja lapsen oikeuksissa."
+    "a4desc": "Mitä se tarkoittaa käytännössä arjessa, päätöksenteossa ja lapsen oikeuksissa.",
+    "a5label": "Viestintä",
+    "a5title": "Viestintä yhteishuoltajavanhempien välillä",
+    "a5desc": "Miksi rakenne auttaa ja miten pidät sävyn asiallisena kun kyse on lapsesta."
   },
   "blog2": {
     "pageTitle": "Vaihtopäivä — näin teet siirtymisestä helpompaa | Lina",
@@ -814,6 +817,40 @@
     "s6p3": "Tämä artikkeli tarjoaa yleistä tietoa eikä korvaa oikeudellista neuvontaa. Epäselvissä tilanteissa ota yhteyttä ammattilaiseen.",
     "ctaTitle": "Koordinoi arkea — järjestelystä riippumatta",
     "ctaDesc": "Olipa lapsella vuoroasuminen tai asuminen yhden vanhemman luona — Lina auttaa molempia vanhempia pitämään käytännön asiat järjestyksessä.",
+    "ctaCta": "Lataa Lina"
+  },
+  "blog5": {
+    "pageTitle": "Viestintä yhteishuoltajavanhempien välillä — Lina",
+    "pageDesc": "Miten pidät viestinnän asiallisena ja jäsenneltynä, kun jaatte lapsen huoltajuuden — käytännön vinkkejä keskusteluketjuihin, kirjallisiin sopimuksiin ja selkeisiin rajoihin.",
+    "label": "Viestintä",
+    "title": "Viestintä yhteishuoltajavanhempien välillä",
+    "intro": "Useimmille yhteishuoltajavanhemmille viestintä on vaikein osa. Ei suuret päätökset — vaan päivittäiset viestit. Kuka hakee? Mitä lääkärissä tapahtui? Tarvitseeko lapsi uuden sadetakin? Kun viestintä toimii, arki toimii. Kun se ei toimi, lapsi huomaa sen ensimmäisenä.",
+    "s1title": "Pidä se asiallisena",
+    "s1p1": "Vanhempien välisten viestien tulisi koskea lasta, ei vanhempien välistä suhdetta. Tämä on helpommin sanottu kuin tehty — erityisesti heti eron jälkeisinä aikoina.",
+    "s1p2": "Yksinkertainen sääntö: kirjoita viesti kuin neutraali ulkopuolinen lukisi sen. Olisitko tyytyväinen, jos neuvoja tai sovittelija näkisi kirjoittamasi? Jos kyllä, lähetä se. Jos ei, muotoile uudelleen.",
+    "s1p3": "Tämä ei tarkoita, että kaiken pitää olla kliinistä. Ystävällinen ja asiallinen voivat olla olemassa yhtä aikaa. Yksinkertainen 'kiitos kun hoidit sen' ei maksa mitään ja rakentaa yhteistyötä ajan myötä.",
+    "s2title": "Kirjallinen on turvallisempaa kuin suullinen",
+    "s2p1": "Suullisia sopimuksia on vaikea muistaa tarkasti. Muutaman viikon jälkeen vanhemmat muistavat eri versioita siitä, mitä sovittiin — ja lapsi jää väliin.",
+    "s2p2": "Kirjallinen viestintä antaa molemmille vanhemmille viitteen, johon palata. Se vähentää väärinkäsityksiä ja helpottaa sopimusten seuraamista.",
+    "s2p3": "Sen ei tarvitse olla muodollista. Lyhyt viesti olennaisimmasta — aika, paikka, mitä tarvitaan — riittää. Pointti on, että se on dokumentoitu.",
+    "s3title": "Rakenne voittaa kaaoksen",
+    "s3p1": "Yksi pitkä viestiketju, jossa kouluasiat, lääkärikäynnit, lomasuunnittelu ja arkilogistiikka sekoittuvat, on resepti siihen, että asiat katoavat.",
+    "s3p2": "Erilliset keskusteluketjut eri aiheille — koulu, terveys, logistiikka — tekevät etsimäsi löytämisestä helpompaa. Sinun ei tarvitse selata kahdenkymmenen päivällisviestin läpi löytääksesi lääkäriajan.",
+    "s3p3": "Se antaa myös enemmän hallintaa. Voit käsitellä terveysketjun illalla ja logistiikkaketjun aamulla — ilman, että kaikki kasaantuu yhdeksi kaoottiseksi virraksi.",
+    "s4title": "Vastaa kohtuullisessa ajassa",
+    "s4p1": "Vastaamatta jättäminen on myös viestintää. Jos vanhempi lähettää viestin noudosta eikä saa vastausta, se luo epävarmuutta — vanhemmalle ja lapselle.",
+    "s4p2": "Sopikaa kohtuullinen vastausaika käytännön viesteille. Ei samana minuuttina, mutta muutaman tunnin sisällä kiireellisille asioille ja vuorokauden sisällä sille, mikä voi odottaa.",
+    "s4p3": "Jos sinulla ei vielä ole vastausta, sano se: 'Tarkistan ja palaan asiaan illalla.' Se poistaa epävarmuuden vaatimatta välitöntä päätöstä.",
+    "s5title": "Kun viestintä katkeaa",
+    "s5p1": "Joskus viestintä lakkaa toimimasta. Toinen vanhempi lopettaa vastaamisen, sävy kiristyy tai kaikesta tulee taistelua. Tämä on tavallista — ja apua on saatavilla.",
+    "s5p2": "Perheneuvola tarjoaa sovittelua ja ohjattuja keskusteluja vanhemmille, joilla on vaikeuksia yhteistyössä. Joissakin tapauksissa neutraali kolmas osapuoli voi auttaa palauttamaan toimivan viestintäkanavan.",
+    "s5p3": "Jos suora viestintä on liian vaikeaa, jäsennelty työkalu kirjallisine viesteineen ja pysyvine viestihistorioineen voi auttaa. Viestit, joita ei voi muokata tai poistaa, antavat molemmille vanhemmille varmuuden siitä, että sovittu on todella dokumentoitu.",
+    "s6title": "Lapsi ei saa olla viestinviejä",
+    "s6p1": "Yksi yleisimmistä virheistä on käyttää lasta viestintäkanavana. 'Sano äidille että…' tai 'kysy isältä…' asettaa lapsen mahdottomaan asemaan.",
+    "s6p2": "Lapsen ei pitäisi joutua välittämään viestejä, neuvottelemaan sopimuksista tai raportoimaan toisesta kodista. Kaiken käytännön viestinnän tulisi kulkea suoraan vanhempien välillä.",
+    "s6p3": "Jos lapsi kertoo jotain toisesta kodista, kuuntele — mutta vältä tutkivia kysymyksiä. Lapsen on saatava tuntea, että hän voi puhua vapaasti ilman, että hänestä tulee tietolähde.",
+    "ctaTitle": "Jäsenneltyä viestintää kahden kodin välillä",
+    "ctaDesc": "Lina pitää keskustelut järjestettyinä erillisissä ketjuissa. Viestejä ei voi muokata tai poistaa — joten molemmilla vanhemmilla on selkeä historia siitä, mitä on sovittu.",
     "ctaCta": "Lataa Lina"
   }
 }

@@ -94,6 +94,18 @@ const SOURCE_FILES = [
     priority: '0.6',
     hasDropdown: true,
   },
+  {
+    src: 'blog/kommunikasjon/index.html',
+    urlPath: '/blog/kommunikasjon/',
+    langUrls: {
+      en: '/blog/co-parent-communication/',
+      sv: '/blog/kommunikation-delad-omsorg/',
+      da: '/blog/kommunikation-delt-omsorg/',
+      fi: '/blog/yhteishuoltajuus-viestinta/',
+    },
+    priority: '0.6',
+    hasDropdown: true,
+  },
 ];
 
 // Exact internal hrefs that should receive a /LANG/ prefix in generated files.
@@ -112,6 +124,8 @@ const INTERNAL_HREFS = [
   '/faq/',
   '/blog/',
   '/blog',
+  '/blog/kommunikasjon/',
+  '/blog/kommunikasjon',
   '/blog/delt-bosted/',
   '/blog/delt-bosted',
   '/blog/utstyr-to-hjem/',

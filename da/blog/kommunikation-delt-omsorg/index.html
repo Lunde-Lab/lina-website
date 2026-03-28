@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="da" data-i18n-title="blog5.pageTitle" data-i18n-desc="blog5.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/da/blog/kommunikation-delt-omsorg/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/kommunikasjon/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/kommunikasjon/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/co-parent-communication/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/kommunikation-delad-omsorg/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/kommunikation-delt-omsorg/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/yhteishuoltajuus-viestinta/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Kommunikation mellem forældre med delt omsorg — Lina</title>
+  <meta name="description" content="Hvordan du holder kommunikationen saglig og struktureret, når I deler omsorgen for et barn — praktiske tips om tråde, skriftlighed og tydelige grænser." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://getlina.app/da/blog/kommunikation-delt-omsorg/" />
+  <meta property="og:title" content="Kommunikation mellem forældre med delt omsorg — Lina" />
+  <meta property="og:description" content="Hvordan du holder kommunikationen saglig og struktureret, når I deler omsorgen for et barn — praktiske tips om tråde, skriftlighed og tydelige grænser." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kommunikation mellem forældre med delt omsorg — Lina" />
+  <meta name="twitter:description" content="Hvordan du holder kommunikationen saglig og struktureret, når I deler omsorgen for et barn — praktiske tips om tråde, skriftlighed og tydelige grænser." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--text);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: opacity 0.15s;
+    }
+
+    .btn-appstore:hover { opacity: 0.85; }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/da/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/da/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+        <a href="/da/care-agreement/" data-i18n="footer.careAgreement">Samværsaftale</a>
+        <a href="/da/pricing/" data-i18n="footer.pricing">Pris</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">DA</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/blog/kommunikasjon/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/en/blog/co-parent-communication/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/sv/blog/kommunikation-delad-omsorg/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option active" href="/da/blog/kommunikation-delt-omsorg/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/yhteishuoltajuus-viestinta/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog5.label">Kommunikation</span>
+
+      <h1 data-i18n="blog5.title">Kommunikation mellem forældre med delt omsorg</h1>
+
+      <p class="article-lead" data-i18n="blog5.intro">For de fleste forældre med delt omsorg er kommunikation det sværeste. Ikke de store beslutninger — men de daglige beskeder. Hvem henter? Hvad skete hos lægen? Skal der nyt regntøj til? Når kommunikationen fungerer, fungerer hverdagen. Når den ikke gør, mærker barnet det først.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s1title">Hold det sagligt</h2>
+        <p data-i18n="blog5.s1p1">Beskeder mellem forældre bør handle om barnet, ikke om forholdet mellem forældrene. Det er nemmere sagt end gjort — særligt i tiden lige efter et brud.</p>
+        <p data-i18n="blog5.s1p2">En simpel regel: skriv beskeden som om en neutral tredjeperson læser den. Ville du være tryg ved at en rådgiver eller mægler så det du skriver? Hvis ja, send den. Hvis nej, omformuler.</p>
+        <p data-i18n="blog5.s1p3">Det betyder ikke at alt skal være klinisk. Venligt og sagligt kan sagtens gå hånd i hånd. Et simpelt 'tak fordi du ordnede det' koster lidt og bygger samarbejde over tid.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s2title">Skriftligt er tryggere end mundtligt</h2>
+        <p data-i18n="blog5.s2p1">Mundtlige aftaler er svære at huske præcist. Efter et par uger husker forældrene forskellige versioner af det der blev sagt — og barnet ender i midten.</p>
+        <p data-i18n="blog5.s2p2">Skriftlig kommunikation giver begge forældre en reference at gå tilbage til. Det reducerer misforståelser og gør det lettere at følge op på aftaler.</p>
+        <p data-i18n="blog5.s2p3">Det behøver ikke at være formelt. En kort besked med det vigtigste — tid, sted, hvad der er brug for — er nok. Pointen er at det er dokumenteret.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s3title">Struktur slår kaos</h2>
+        <p data-i18n="blog5.s3p1">Én lang beskedtråd hvor skoleinfo, lægeaftaler, ferieplanlægning og hverdagslogistik blandes sammen er en opskrift på at ting forsvinder.</p>
+        <p data-i18n="blog5.s3p2">Separate tråde for forskellige emner — skole, sundhed, logistik — gør det lettere at finde det du leder efter. Du slipper for at scrolle gennem tyve beskeder om aftensmad for at finde lægeaftalen.</p>
+        <p data-i18n="blog5.s3p3">Det giver også mere kontrol. Du kan håndtere sundhedstråden om aftenen og logistiktråden om morgenen — uden at alt hober sig op i én kaotisk strøm.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s4title">Svar inden for rimelig tid</h2>
+        <p data-i18n="blog5.s4p1">Ikke at svare er også kommunikation. Hvis en forælder sender en besked om afhentning og ikke får svar, skaber det usikkerhed — for forælderen og for barnet.</p>
+        <p data-i18n="blog5.s4p2">Aftal en rimelig svartid for praktiske beskeder. Ikke samme minut, men inden for et par timer for hastende ting og inden for et døgn for det der kan vente.</p>
+        <p data-i18n="blog5.s4p3">Hvis du ikke har et svar endnu, sig det: 'Jeg tjekker og vender tilbage i aften.' Det fjerner usikkerheden uden at kræve en øjeblikkelig beslutning.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s5title">Når kommunikationen bryder sammen</h2>
+        <p data-i18n="blog5.s5p1">Nogle gange holder kommunikationen op med at fungere. Den ene forælder holder op med at svare, tonen eskalerer, eller alt bliver en kamp. Det er almindeligt — og der findes hjælp.</p>
+        <p data-i18n="blog5.s5p2">Familieretshuset tilbyder rådgivning og mægling for forældre der har svært ved samarbejdet. I nogle tilfælde kan en neutral tredjepart hjælpe med at genoprette en fungerende kommunikationskanal.</p>
+        <p data-i18n="blog5.s5p3">Hvis direkte kommunikation er for svært, kan et struktureret værktøj med skriftlige beskeder og permanent beskedhistorik hjælpe. Beskeder der ikke kan redigeres eller slettes giver begge forældre tryghed for at det der er aftalt faktisk er dokumenteret.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s6title">Barnet skal ikke være budbringer</h2>
+        <p data-i18n="blog5.s6p1">En af de mest almindelige fejl er at bruge barnet som kommunikationskanal. 'Sig til mor at…' eller 'spørg far om…' sætter barnet i en umulig position.</p>
+        <p data-i18n="blog5.s6p2">Barnet skal slippe for at formidle beskeder, forhandle aftaler eller rapportere tilbage fra det andet hjem. Al praktisk kommunikation bør gå direkte mellem forældrene.</p>
+        <p data-i18n="blog5.s6p3">Hvis barnet fortæller noget fra det andet hjem, lyt — men undgå at stille udforskende spørgsmål. Barnet har brug for at føle at det kan tale frit uden at blive en informationskilde.</p>
+      </div>
+
+      <div class="article-cta">
+        <h2 data-i18n="blog5.ctaTitle">Struktureret kommunikation mellem to hjem</h2>
+        <p data-i18n="blog5.ctaDesc">Lina holder samtalerne organiseret i separate tråde. Beskeder kan ikke redigeres eller slettes — så begge forældre har en tydelig historik over hvad der er aftalt.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Hent på App Store" data-i18n-aria="nav.appstoreAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Hent på App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Hent på Google Play" data-i18n-aria="hero.ctaPlayAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Hent på Google Play</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/da/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+          <a href="/da/care-agreement/" data-i18n="footer.careAgreement">Samværsaftale</a>
+          <a href="/da/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/da/professionals.html" data-i18n="footer.familievern">Fagfolk</a>
+          <a href="/da/stories/" data-i18n="footer.stories">Hverdagsscenarier</a>
+          <a href="/da/pricing/" data-i18n="footer.pricing">Pris</a>
+          <a href="/da/about/" data-i18n="footer.about">Om Lina</a>
+          <a href="/da/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/da/terms/" data-i18n="footer.terms">Vilkår for brug</a>
+          <a href="/da/privacy/" data-i18n="footer.privacy">Privatlivspolitik</a>
+          <a href="/da/contact.html" data-i18n="footer.contact">Kontakt</a>
+          <a href="/da/account-deletion.html" data-i18n="footer.accountDeletion">Sletning af konto</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+  </script>
+
+</body>
+</html>
