@@ -24,13 +24,13 @@ const path = require('path');
 
 const ROOT     = path.resolve(__dirname, '..');
 const BASE_URL = 'https://getlina.app';
-const LANGS    = ['en', 'sv', 'da', 'fi', 'de'];
+const LANGS    = ['en', 'sv', 'da', 'fi', 'de', 'nl'];
 const ALL_LANGS = ['no', ...LANGS];
 
-const LANG_HTMLCODE = { no: 'nb', en: 'en', sv: 'sv', da: 'da', fi: 'fi', de: 'de' };
-const LANG_LABEL    = { no: 'NO', en: 'EN', sv: 'SV', da: 'DA', fi: 'FI', de: 'DE' };
-const LANG_FLAG     = { no: '🇳🇴', en: '🇬🇧', sv: '🇸🇪', da: '🇩🇰', fi: '🇫🇮', de: '🇩🇪' };
-const LANG_NAME     = { no: 'Norsk', en: 'English', sv: 'Svenska', da: 'Dansk', fi: 'Suomi', de: 'Deutsch' };
+const LANG_HTMLCODE = { no: 'nb', en: 'en', sv: 'sv', da: 'da', fi: 'fi', de: 'de', nl: 'nl' };
+const LANG_LABEL    = { no: 'NO', en: 'EN', sv: 'SV', da: 'DA', fi: 'FI', de: 'DE', nl: 'NL' };
+const LANG_FLAG     = { no: '🇳🇴', en: '🇬🇧', sv: '🇸🇪', da: '🇩🇰', fi: '🇫🇮', de: '🇩🇪', nl: '🇳🇱' };
+const LANG_NAME     = { no: 'Norsk', en: 'English', sv: 'Svenska', da: 'Dansk', fi: 'Suomi', de: 'Deutsch', nl: 'Nederlands' };
 
 const SOURCE_FILES = [
   { src: 'index.html',                urlPath: '/',                   priority: '1.0', hasDropdown: true  },
@@ -55,6 +55,7 @@ const SOURCE_FILES = [
       da: '/blog/samvaersordning/',
       fi: '/blog/vuoroasuminen/',
       de: '/blog/umgangsregelung/',
+      nl: '/blog/omgangsregeling/',
     },
     priority: '0.6',
     hasDropdown: true,
@@ -68,6 +69,7 @@ const SOURCE_FILES = [
       da: '/blog/byttedag-tips/',
       fi: '/blog/vaihtopaiva/',
       de: '/blog/uebergabetag/',
+      nl: '/blog/wisselmoment/',
     },
     priority: '0.6',
     hasDropdown: true,
@@ -81,6 +83,7 @@ const SOURCE_FILES = [
       da: '/blog/hvad-barnet-har-brug-for/',
       fi: '/blog/mita-lapsi-tarvitsee/',
       de: '/blog/was-kinder-brauchen/',
+      nl: '/blog/wat-kinderen-nodig-hebben/',
     },
     priority: '0.6',
     hasDropdown: true,
@@ -94,6 +97,7 @@ const SOURCE_FILES = [
       da: '/blog/delt-vs-fast-bopael/',
       fi: '/blog/vuoroasuminen-vs-lahivanhemmuus/',
       de: '/blog/wechselmodell-vs-residenzmodell/',
+      nl: '/blog/co-ouderschap-vs-hoofdverblijf/',
     },
     priority: '0.6',
     hasDropdown: true,
@@ -107,6 +111,7 @@ const SOURCE_FILES = [
       da: '/blog/kommunikation-delt-omsorg/',
       fi: '/blog/yhteishuoltajuus-viestinta/',
       de: '/blog/kommunikation-getrennte-eltern/',
+      nl: '/blog/communicatie-co-ouders/',
     },
     priority: '0.6',
     hasDropdown: true,

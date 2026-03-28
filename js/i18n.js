@@ -1,4 +1,4 @@
-const SUPPORTED_LANGS = ['en', 'no', 'sv', 'da', 'fi', 'de'];
+const SUPPORTED_LANGS = ['en', 'no', 'sv', 'da', 'fi', 'de', 'nl'];
 const DEFAULT_LANG = 'no';
 const cache = {};
 

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="nl" data-i18n-title="faq.pageTitle" data-i18n-desc="faq.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/nl/faq/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/faq/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/faq/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/faq/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/faq/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/faq/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/faq/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/faq/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/faq/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Veelgestelde vragen — Lina</title>
+  <meta name="description" content="Antwoorden op veelgestelde vragen over Lina — de co-ouderschapsapp. Vind antwoorden over privacy, account, zorgschema en ouderschapsplan." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getlina.app/nl/faq/" />
+  <meta property="og:title" content="Veelgestelde vragen — Lina" />
+  <meta property="og:description" content="Antwoorden op veelgestelde vragen over Lina — de co-ouderschapsapp. Vind antwoorden over privacy, account, zorgschema en ouderschapsplan." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Veelgestelde vragen — Lina" />
+  <meta name="twitter:description" content="Antwoorden op veelgestelde vragen over Lina — de co-ouderschapsapp. Vind antwoorden over privacy, account, zorgschema en ouderschapsplan." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is Lina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lina is een co-ouderschapsapp die praktische details — kindinformatie, berichten, foto's, contacten en paklijsten — samenbrengt op één gedeelde plek die toegankelijk is vanuit beide huishoudens."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Lina gratis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, Lina kan gratis worden gedownload en gebruikt. Er is geen betaling vereist om een account aan te maken of de andere ouder uit te nodigen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik het zorgschema exporteren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, u kunt het zorgschema direct vanuit de tool exporteren als PDF."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie kan de informatie van het kind zien?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alleen de twee ouders die in Lina zijn verbonden met het kind, hebben toegang tot de informatie van het kind."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen berichten worden verwijderd of bewerkt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, berichten in Lina kunnen na verzending niet worden bewerkt of verwijderd, wat voor een duidelijk en betrouwbaar overzicht zorgt."
+      }
+    }
+  ]
+}
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Sections ── */
+    section { padding: 64px 24px; }
+    .container { max-width: 1080px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    /* ── Hero ── */
+    #hero {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding-top: 72px;
+      padding-bottom: 72px;
+    }
+    #hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    #hero p {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 560px;
+      line-height: 1.65;
+    }
+
+    /* ── FAQ ── */
+    #faq { background: var(--bg); }
+
+    .faq-content {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .faq-section {
+      margin-bottom: 48px;
+    }
+    .faq-section:last-child { margin-bottom: 0; }
+
+    .faq-section-title {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: border-color 0.15s;
+    }
+    .faq-item.open { border-color: var(--primary); }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      text-align: left;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .faq-chevron {
+      flex-shrink: 0;
+      transition: transform 0.2s;
+      color: var(--text-secondary);
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    .faq-answer {
+      padding: 0 20px 18px;
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+    .faq-answer p + p { margin-top: 10px; }
+    .faq-answer a { color: var(--primary); }
+    .faq-answer a:hover { text-decoration: underline; }
+
+    /* ── CTA ── */
+    #cta { background: var(--primary); }
+    .cta-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+    #cta h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    #cta p { font-size: 16px; color: rgba(255,255,255,0.75); margin-bottom: 8px; }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--text);
+      color: #fff;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/nl/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/nl/care-schedule/" data-i18n="footer.careSchedule">Zorgschema</a>
+        <a href="/nl/care-agreement/" data-i18n="footer.careAgreement">Ouderschapsplan</a>
+        <a href="/nl/pricing/" data-i18n="footer.pricing">Prijzen</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">NL</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/faq/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/en/faq/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/sv/faq/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/faq/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/faq/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/faq/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option active" href="/nl/faq/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <p class="section-label" data-i18n="faq.heroLabel">FAQ</p>
+      <h1 data-i18n="faq.heroTitle">Veelgestelde vragen</h1>
+      <p data-i18n="faq.heroDesc">Vind antwoorden op de meest gestelde vragen over Lina, het zorgschema en het ouderschapsplan.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="faq-content">
+
+        <!-- Category 1: Om Lina -->
+        <div class="faq-section">
+          <h2 class="faq-section-title" data-i18n="faq.cat1Title">Over Lina</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat1q1">Wat is Lina?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat1a1">Lina brengt de praktische kant van co-ouderschap samen in één app — berichten, kindinformatie, foto's, contacten, paklijsten en een zorgschema — toegankelijk voor beide huishoudens.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat1q2">Voor wie is Lina bedoeld?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat1a2">Lina is gemaakt voor ouders die de zorg voor een kind delen over twee huishoudens. De app werkt het beste wanneer de basisrelatie voor co-ouderschap functioneel is, maar meer structuur en voorspelbaarheid nodig is.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat1q3">Is Lina gratis?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat1a3">Ja, Lina kan gratis worden gedownload en gebruikt. Er is geen betaling vereist om een account aan te maken of de andere ouder uit te nodigen.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat1q4">Welke apparaten ondersteunt Lina?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat1a4">Lina is beschikbaar als app voor iPhone en Android. Het zorgschema op getlina.app kan in een browser worden gebruikt zonder de app te downloaden.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat1q5">Moeten beide ouders de app gebruiken?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat1a5">Om gedeelde functies zoals berichten, foto's en kindinformatie te gebruiken, hebben beide ouders een account nodig. Het zorgschema kan door één ouder alleen worden gebruikt.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category 2: Samværsplan -->
+        <div class="faq-section">
+          <h2 class="faq-section-title" data-i18n="faq.cat2Title">Zorgschema</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat2q1">Wat is het zorgschema in Lina?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat2a1">Het zorgschema is een gratis tool die u direct in uw browser kunt gebruiken. Klik op dagen om ze aan een ouder toe te wijzen en zie de samenvatting direct bijwerken. Het schema kan worden geëxporteerd als PDF.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat2q2">Heb ik een account nodig om het zorgschema te gebruiken?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat2a2">Nee, het zorgschema kan zonder account direct in een browser worden gebruikt. U hoeft de app alleen te downloaden om gedeelde functies zoals berichten en kindinformatie te gebruiken.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat2q3">Kan ik het zorgschema exporteren?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat2a3">Ja, u kunt het zorgschema direct vanuit de tool exporteren als PDF. De PDF bevat een visueel overzicht van de verdeling en kan worden gebruikt als bijlage bij een ouderschapsplan.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat2q4">Kan ik vakanties en speciale periodes plannen in het zorgschema?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat2a4">Ja, het zorgschema ondersteunt flexibele week-voor-weekplanning, waardoor het eenvoudig is vakanties en speciale periodes toe te voegen.</p>
+                <p><a href="/nl/care-schedule/" data-i18n="faq.cat2a4link">Probeer het zorgschema hier</a></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category 3: Personvern -->
+        <div class="faq-section">
+          <h2 class="faq-section-title" data-i18n="faq.cat3Title">Privacy</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat3q1">Wie kan de informatie van het kind zien?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat3a1">Alleen de twee ouders die in Lina zijn verbonden met het kind, hebben toegang tot de informatie van het kind. Geen andere gebruikers of Lina zelf heeft toegang tot wat u deelt.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat3q2">Deelt Lina gegevens met derden?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat3a2">Nee. Lina verkoopt of deelt geen gebruikersgegevens met derden. Er is geen reclame in de app.</p>
+                <p><a href="/nl/privacy/" data-i18n="faq.cat3a2link">Lees het privacybeleid</a></p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat3q3">Kunnen berichten worden verwijderd of bewerkt?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat3a3">Nee, berichten in Lina kunnen na verzending niet worden bewerkt of verwijderd. Dit zorgt voor een duidelijk en betrouwbaar overzicht van wat er tussen ouders is afgesproken.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat3q4">Van wie zijn mijn gegevens?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat3a4">U bent eigenaar van uw eigen gegevens. Lina verwerkt gegevens alleen om de dienst te leveren, en nooit voor commerciële doeleinden.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat3q5">Wat gebeurt er met mijn gegevens als ik mijn account verwijder?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat3a5">Wanneer het account wordt verwijderd, worden alle persoonlijke informatie die aan u is gekoppeld, verwijderd. Berichten, foto's en lijsten die zijn gedeeld met de andere ouder blijven voor hen beschikbaar.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category 4: Konto -->
+        <div class="faq-section">
+          <h2 class="faq-section-title" data-i18n="faq.cat4Title">Account</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat4q1">Hoe maak ik een account aan?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat4a1">Download Lina uit de App Store of Google Play en volg de in-app handleiding om een account aan te maken. U heeft alleen uw e-mailadres nodig om in te loggen — er wordt geen wachtwoord opgeslagen.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat4q2">Kan ik meerdere kinderen in de app hebben?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat4a2">Ja, u kunt meerdere kinderen toevoegen aan Lina. Elk kind heeft zijn eigen gedeelde ruimte met bijbehorende informatie, berichten en foto's.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat4q3">Hoe nodig ik de andere ouder uit?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat4a3">U deelt de uitnodigingscode via de app.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category 5: Samværsavtale -->
+        <div class="faq-section">
+          <h2 class="faq-section-title" data-i18n="faq.cat5Title">Ouderschapsplan</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat5q1">Wat moet een ouderschapsplan bevatten?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat5a1">Een goed ouderschapsplan moet de zorgregeling, de verblijfplaats, ophalen en brengen, verdeling van vakanties en feestdagen, kostenverdeling, communicatie tussen ouders, reizen met het kind en routines voor wijzigingen en herziening van het plan bevatten.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat5q2">Is een ouderschapsplan juridisch bindend?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat5a2">Een privé-ouderschapsplan is gebaseerd op wederzijdse overeenstemming tussen de ouders. Het is niet juridisch bindend op dezelfde manier als een rechterlijke beslissing, maar biedt structuur en voorspelbaarheid voor beide partijen en het kind.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat5q3">Is er een gratis tool voor het opstellen van een ouderschapsplan?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat5a3">In Nederland is een ouderschapsplan verplicht bij scheiding wanneer er minderjarige kinderen zijn. Een familiemediator of het Juridisch Loket kan hierbij helpen. In Noorwegen biedt Bufdir een gratis digitaal ouderschapsplantool. Vergelijkbare officiële tools zijn beschikbaar in Zweden, Denemarken en Finland.</p>
+                <p><a href="/nl/care-agreement/" data-i18n="faq.cat5a3link">Meer informatie over ouderschapsplannen</a></p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat5q4">Helpt Lina bij ouderschapsplannen?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat5a4">Lina biedt een informatiepagina over wat een ouderschapsplan moet bevatten, met een voorbeeld en links naar officiële bronnen in Noorwegen, Zweden, Denemarken, Finland en Nederland.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-inner">
+        <h2 data-i18n="cta.title">Één veilig kanaal tussen twee ouders.</h2>
+        <p data-i18n="cta.description">Lina brengt alles wat uw kind nodig heeft samen in één gedeelde, georganiseerde ruimte. Download de app en begin binnen enkele minuten.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Download in de App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Verkrijgbaar bij Google Play</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/nl/care-schedule/" data-i18n="footer.careSchedule">Zorgschema</a>
+          <a href="/nl/care-agreement/" data-i18n="footer.careAgreement">Ouderschapsplan</a>
+          <a href="/nl/faq/" aria-current="page" data-i18n="footer.faq">FAQ</a>
+          <a href="/nl/professionals.html" data-i18n="footer.familievern">Professionals</a>
+          <a href="/nl/stories/" data-i18n="footer.stories">Verhalen</a>
+          <a href="/nl/pricing/" data-i18n="footer.pricing">Prijzen</a>
+          <a href="/nl/about/" data-i18n="footer.about">Over ons</a>
+          <a href="/nl/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/nl/terms/" data-i18n="footer.terms">Gebruiksvoorwaarden</a>
+          <a href="/nl/privacy/" data-i18n="footer.privacy">Privacybeleid</a>
+          <a href="/nl/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/nl/account-deletion.html" data-i18n="footer.accountDeletion">Account verwijderen</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+
+  // Accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const list = btn.closest('.faq-list');
+      const isOpen = item.classList.contains('open');
+
+      list.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        i.querySelector('.faq-answer').hidden = true;
+      });
+
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        item.querySelector('.faq-answer').hidden = false;
+      }
+    });
+  });
+  </script>
+
+</body>
+</html>

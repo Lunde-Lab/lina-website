@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="nl" data-i18n-title="accountDeletion.pageTitle">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/nl/account-deletion.html" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/account-deletion.html" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/account-deletion.html" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/account-deletion.html" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/account-deletion.html" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/account-deletion.html" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/account-deletion.html" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/account-deletion.html" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/account-deletion.html" />
+
+  <meta name="description" content="Lina helpt co-ouders de dagelijkse gang van zaken over twee huishoudens te coördineren — zorgschema, berichten, kindinformatie en gedeeld album in één app." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getlina.app/nl/account-deletion.html" />
+  <meta property="og:title" content="Account verwijderen — Lina" />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Account verwijderen — Lina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+
+    /* ── Page content ── */
+    .deletion-main { padding: 56px 24px 96px; }
+
+    .deletion-container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .deletion-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 40px;
+    }
+
+    .deletion-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0;
+    }
+
+    .deletion-section { margin-bottom: 36px; }
+
+    .deletion-section h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .deletion-section h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    .deletion-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .deletion-section p:last-child { margin-bottom: 0; }
+
+    .deletion-section ul {
+      margin: 8px 0 12px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .deletion-section ul li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .deletion-section ol {
+      margin: 8px 0 12px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .deletion-section ol li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .link-primary {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/nl/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/nl/care-schedule/" data-i18n="footer.careSchedule">Zorgschema</a>
+        <a href="/nl/care-agreement/" data-i18n="footer.careAgreement">Ouderschapsplan</a>
+        <a href="/nl/pricing/" data-i18n="footer.pricing">Prijzen</a>
+      </nav>
+    </div>
+  </nav>
+
+  <main class="deletion-main">
+    <div class="deletion-container">
+
+      <h1 data-i18n="accountDeletion.heading">Account verwijderen</h1>
+
+      <div class="deletion-section">
+        <h2 data-i18n="accountDeletion.howTo.title">Hoe u uw account verwijdert</h2>
+        <p data-i18n="accountDeletion.howTo.intro">Gebruikers kunnen verwijdering van hun Lina-account op een van de volgende manieren aanvragen.</p>
+
+        <h3 data-i18n="accountDeletion.howTo.inApp">In de app</h3>
+        <ol>
+          <li data-i18n="accountDeletion.howTo.step1">Open Lina</li>
+          <li data-i18n="accountDeletion.howTo.step2">Ga naar Instellingen</li>
+          <li data-i18n="accountDeletion.howTo.step3">Selecteer 'Account verwijderen'</li>
+          <li data-i18n="accountDeletion.howTo.step4">Bevestig het verzoek</li>
+        </ol>
+
+        <h3 data-i18n="accountDeletion.howTo.byEmail">Via e-mail</h3>
+        <p>
+          <span data-i18n="accountDeletion.howTo.emailBefore">Als u geen toegang heeft tot de app, neem dan contact met ons op via:</span>
+          <a href="mailto:support@getlina.app" class="link-primary">support@getlina.app</a>
+          <span data-i18n="accountDeletion.howTo.emailAfter"> — vermeld het e-mailadres dat is gekoppeld aan uw Lina-account.</span>
+        </p>
+      </div>
+
+      <hr class="deletion-divider" />
+
+      <div class="deletion-section">
+        <h2 data-i18n="accountDeletion.whatHappens.title">Wat er gebeurt wanneer u uw account verwijdert</h2>
+        <p data-i18n="accountDeletion.whatHappens.intro">Wanneer uw account wordt verwijderd:</p>
+        <ul>
+          <li data-i18n="accountDeletion.whatHappens.item1">Uw persoonlijke accountinformatie (zoals e-mailadres en profielgegevens) wordt verwijderd</li>
+          <li data-i18n="accountDeletion.whatHappens.item2">Uw toegang tot Lina wordt permanent uitgeschakeld</li>
+        </ul>
+        <p data-i18n="accountDeletion.whatHappens.sharedContent">Gedeelde inhoud (zoals berichten, foto's en lijsten) wordt niet automatisch verwijderd, omdat deze kan worden gedeeld met een andere ouder. Deze gegevens blijven beschikbaar voor de andere verbonden ouder.</p>
+        <p data-i18n="accountDeletion.whatHappens.retention">Sommige informatie kan tijdelijk worden bewaard indien wettelijk vereist of voor beveiligingsdoeleinden, waarna deze wordt verwijderd of geanonimiseerd.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/nl/care-schedule/" data-i18n="footer.careSchedule">Zorgschema</a>
+          <a href="/nl/care-agreement/" data-i18n="footer.careAgreement">Ouderschapsplan</a>
+          <a href="/nl/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/nl/professionals.html" data-i18n="footer.familievern">Professionals</a>
+          <a href="/nl/stories/" data-i18n="footer.stories">Verhalen</a>
+          <a href="/nl/pricing/" data-i18n="footer.pricing">Prijzen</a>
+          <a href="/nl/about/" data-i18n="footer.about">Over ons</a>
+          <a href="/nl/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/nl/terms/" data-i18n="footer.terms">Gebruiksvoorwaarden</a>
+          <a href="/nl/privacy/" data-i18n="footer.privacy">Privacybeleid</a>
+          <a href="/nl/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/nl/account-deletion.html" data-i18n="footer.accountDeletion">Account verwijderen</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+</body>
+</html>

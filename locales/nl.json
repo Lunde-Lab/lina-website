@@ -1,0 +1,651 @@
+{
+  "page": {
+    "title": "Lina — co-ouderschap, vereenvoudigd",
+    "description": "Lina helpt co-ouders de dagelijkse gang van zaken over twee huishoudens te coördineren — zorgschema, berichten, kindinformatie en gedeeld album in één app."
+  },
+  "nav": {
+    "appstore": "App Store",
+    "appstoreAria": "Download in de App Store",
+    "langLabel": "Taal",
+    "careSchedule": "Zorgschema",
+    "careAgreement": "Ouderschapsplan",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Één gedeelde plek voor uw kind — in beide huishoudens",
+    "description": "U hoeft niet altijd degene te zijn die alles onthoudt. Lina houdt de praktische details — medische informatie, spullen, contacten, schema's — actueel en toegankelijk in beide huishoudens.",
+    "cta": "Download in de App Store",
+    "ctaPlay": "Verkrijgbaar bij Google Play",
+    "ctaPlayAria": "Verkrijgbaar bij Google Play"
+  },
+  "csSection": {
+    "label": "Zorgschema",
+    "title": "Plan uw zorgschema samen",
+    "description": "Het interactieve zorgschema van Lina stelt beide ouders in staat te plannen en te visualiseren hoe de tijd over de weken wordt verdeeld. Zie dagverdelingen, weekendpatronen en de frequentie van wisselmomenten — in één duidelijk overzicht.",
+    "cta": "Open zorgschema"
+  },
+  "caSection": {
+    "label": "Ouderschapsplan",
+    "title": "Wat moet het plan bevatten?",
+    "description": "Een goed ouderschapsplan biedt duidelijkheid voor het kind en beide ouders. Lees wat het plan moet omvatten, bekijk een voorbeeld en vind links naar officiële bronnen.",
+    "cta": "Meer lezen"
+  },
+  "how": {
+    "label": "Hoe het werkt",
+    "title": "Eenmalig instellen. De rest wordt automatisch gedeeld.",
+    "step1": {
+      "title": "Een gedeelde ruimte aanmaken",
+      "description": "Eén ouder maakt een ruimte aan voor het kind. De andere ouder ontvangt een uitnodiging om deel te nemen. Geen ingewikkelde installatie vereist."
+    },
+    "step2": {
+      "title": "Voeg toe wat belangrijk is",
+      "description": "Medische informatie, allergieën, contacten, paklijsten — eenmalig toevoegen, en het is beschikbaar in beide huishoudens."
+    },
+    "step3": {
+      "title": "Niemand hoeft twee keer te vragen",
+      "description": "Updates zijn in real time zichtbaar voor beide ouders. Niet meer herhalen, niet meer raden of het andere huishouden de laatste informatie heeft."
+    }
+  },
+  "features": {
+    "label": "Functies",
+    "title": "Alle details, gedeeld met het andere huishouden",
+    "threads": {
+      "title": "Onderwerpen",
+      "description": "Aparte gesprekken voor elk onderwerp — logistiek, school, gezondheid. Niets raakt verloren in één lange chat."
+    },
+    "messages": {
+      "title": "Berichten",
+      "description": "Berichten kunnen niet worden bewerkt of verwijderd. Zoek in gesprekken, markeer wat belangrijk is en heb altijd een duidelijk overzicht van wat er is afgesproken."
+    },
+    "album": {
+      "title": "Gedeeld album",
+      "description": "Een privéalbum waar beide ouders foto's kunnen delen. De momenten die in het ene huishouden plaatsvinden, zijn in beide zichtbaar."
+    },
+    "more": "Ook inbegrepen: contacten, paklijsten, kindinformatie en zorgschema — zodat beide ouders hebben wat ze nodig hebben, waar het kind ook is."
+  },
+  "tools": {
+    "label": "Meer in Lina",
+    "title": "Tools voor gedeelde zorg",
+    "contacts": {
+      "title": "Gedeelde contacten",
+      "description": "Kinderarts, leerkracht, naschoolse opvang — belangrijke contacten op één plek, altijd actueel."
+    },
+    "equipment": {
+      "title": "Paklijsten",
+      "description": "Regenlaarsjes, sporttas, allergiemedicatie — gedeelde lijsten maken het makkelijker bij te houden wat het kind mee moet nemen tussen de huishoudens."
+    },
+    "childinfo": {
+      "title": "Kindinformatie",
+      "description": "Geboortedatum, allergieën, medicatie, schoenmaat — alle details die ertoe doen, verzameld op één plek en altijd toegankelijk."
+    },
+    "schedule": {
+      "title": "Zorgschema",
+      "description": "Maak een visueel overzicht van hoe de tijd tussen de huishoudens wordt verdeeld. Zie het volledige schema in één oogopslag, week voor week."
+    },
+    "control": {
+      "title": "Ook voor moeilijke dagen",
+      "description": "Exporteer alle berichten voor documentatie. Foto's vervagen om de emotionele belasting te verminderen. Bewaar de afbeeldingen die u wilt bewaren. Bepaal zelf wat u ziet en wanneer."
+    }
+  },
+  "problem": {
+    "label": "Waarom Lina",
+    "title": "Als de zorg over twee huishoudens verdeeld is, raken details verloren",
+    "description": "Als plannen, berichten en foto's in verschillende apps leven, vallen belangrijke zaken tussen de wal en het schip. Lina brengt alles in één gedeelde structuur — rustig, duidelijk en voorspelbaar."
+  },
+  "forWhom": {
+    "forTitle": "Voor wie Lina bedoeld is",
+    "forDescription": "Ouders die de zorg over twee huishoudens delen en minder wrijving willen in de dagelijkse samenwerking. Voor wie structuur stelt boven ruis en duidelijkheid boven constant berichtenverkeer.",
+    "notTitle": "Wat Lina niet is",
+    "notDescription": "Geen sociaal netwerk, geen algemene familiechat en niet gebouwd voor eindeloze gesprekken. Lina is een gericht hulpmiddel dat specifiek is ontworpen voor de samenwerking rondom uw kind."
+  },
+  "privacy": {
+    "label": "Privacy",
+    "title": "Privacy als uitgangspunt",
+    "description": "Wat er in Lina gebeurt, blijft tussen u beiden. De informatie over uw kind is privé — en niemand buiten u heeft toegang tot wat u deelt.",
+    "point1": {
+      "title": "Geen reclame",
+      "description": "Uw ervaring wordt nooit beïnvloed door advertenties of commerciële belangen."
+    },
+    "point2": {
+      "title": "Geen gegevensdeling",
+      "description": "Uw gegevens zijn van u. Ze worden nooit gedeeld met derden."
+    },
+    "point3": {
+      "title": "Geen algoritme",
+      "description": "U bepaalt wat u ziet — niet een algoritme dat is gericht op betrokkenheid."
+    },
+    "tagline": "Gestructureerd voor samenwerking. Privé van meet af aan."
+  },
+  "cta": {
+    "title": "Één veilig kanaal tussen twee ouders.",
+    "description": "Lina brengt alles wat uw kind nodig heeft samen in één gedeelde, georganiseerde ruimte. Download de app en begin binnen enkele minuten."
+  },
+  "footer": {
+    "terms": "Gebruiksvoorwaarden",
+    "privacy": "Privacybeleid",
+    "contact": "Contact",
+    "familievern": "Professionals",
+    "careSchedule": "Zorgschema",
+    "careAgreement": "Ouderschapsplan",
+    "faq": "FAQ",
+    "copy": "© 2026 Lina. Alle rechten voorbehouden.",
+    "accountDeletion": "Account verwijderen",
+    "stories": "Verhalen",
+    "pricing": "Prijzen",
+    "about": "Over ons",
+    "blog": "Blog"
+  },
+  "pricing": {
+    "pageTitle": "Prijzen — Lina",
+    "pageDesc": "Lina heeft een gratis abonnement en Lina+ voor 79 kr/maand. Eén abonnement voor beide ouders. Geen reclame, geen gegevensdeling.",
+    "label": "Prijzen",
+    "title": "Eén abonnement. Beide ouders.",
+    "description": "Lina+ ontgrendelt alle functies met één abonnement — voor beide huishoudens. Begin met een gratis proefperiode.",
+    "free": {
+      "name": "Gratis",
+      "price": "0 kr",
+      "period": "Altijd gratis",
+      "f1": "Tot 2 onderwerpen",
+      "f2": "Tot 100 foto's in gedeeld album",
+      "f3": "Berichten",
+      "f4": "Kindinformatie en contacten",
+      "f5": "Paklijsten",
+      "f6": "Zorgschema"
+    },
+    "plus": {
+      "badge": "Aanbevolen",
+      "name": "Lina+",
+      "price": "79 kr",
+      "priceUnit": "/mnd",
+      "period": "2 weken gratis proberen",
+      "both": "Eén abonnement voor beide ouders",
+      "includes": "Alles in Gratis, plus:",
+      "f1": "Onbeperkte onderwerpen",
+      "f2": "Groter album",
+      "f3": "Zoeken in onderwerpen",
+      "f4": "Onderwerpen exporteren",
+      "f5": "Belangrijke berichten"
+    },
+    "whyLabel": "Waarom betaald",
+    "whyTitle": "Het abonnement houdt Lina onafhankelijk",
+    "whyText1": "Lina wordt gefinancierd door het abonnement — niet door reclame of gegevensdeling. Dat is wat het mogelijk maakt de app onafhankelijk en gericht op wat belangrijk is te houden.",
+    "whyText2": "De abonnerende ouder geeft de andere automatisch volledige toegang. Geen aparte betaling, geen extra account.",
+    "p1": {
+      "title": "Eén abonnement, twee ouders",
+      "description": "Beide ouders krijgen volledige toegang. Geen extra kosten voor de andere ouder."
+    },
+    "p2": {
+      "title": "Geen reclame, geen gegevensdeling",
+      "description": "Het abonnement financiert de app. Uw gegevens worden nooit verkocht."
+    },
+    "p3": {
+      "title": "Geen verplichting",
+      "description": "Opzeggen wanneer u wilt via de App Store of Google Play."
+    }
+  },
+  "contact": {
+    "pageTitle": "Contact — Lina",
+    "pageDesc": "Heeft u een vraag over Lina? Neem contact op — we reageren zo snel mogelijk.",
+    "heading": "Contact",
+    "intro": "Heeft u een vraag over Lina of heeft u hulp nodig bij uw account? We helpen u graag — stuur ons een bericht en we reageren zo snel mogelijk.",
+    "namePlaceholder": "Naam",
+    "emailPlaceholder": "E-mailadres",
+    "messagePlaceholder": "Uw bericht",
+    "submit": "Bericht verzenden",
+    "successTitle": "Bedankt voor uw bericht",
+    "successDescription": "We reageren zo snel mogelijk."
+  },
+  "cs": {
+    "pageTitle": "Zorgschema — Lina",
+    "pageDesc": "Plan en visualiseer het zorgschema van uw kind tussen twee huishoudens. Gratis tool met dagverdeling, weekendoverzicht en PDF-export.",
+    "heading": "Zorgschema",
+    "labelParentA": "Naam ouder A",
+    "labelParentB": "Naam ouder B",
+    "labelStartDate": "Startdatum",
+    "startDateHint": "Moet een maandag zijn",
+    "labelWeeks": "Aantal weken",
+    "addWeek": "Week toevoegen",
+    "removeWeek": "Week verwijderen",
+    "toggleDates": "Datums",
+    "reset": "Opnieuw instellen",
+    "exportPdf": "Exporteren als PDF",
+    "week": "Week",
+    "unassigned": "Niet toegewezen",
+    "mon": "Ma", "tue": "Di", "wed": "Wo", "thu": "Do",
+    "fri": "Vr", "sat": "Za", "sun": "Zo",
+    "statsTitle": "Samenvatting",
+    "statsDaySplit": "Dagverdeling",
+    "statsWeekendSplit": "Weekendverdeling (Vr–Zo)",
+    "statsFullWeekends": "Volledige weekenden",
+    "statsSwitches": "Totaal wisselmomenten",
+    "days": "dagen",
+    "of": "van",
+    "subhead": "Zie hoe de tijd wordt verdeeld tussen de huishoudens — week voor week.",
+    "intro": "Klik op de dagen om ze aan een ouder toe te wijzen. De verdeling wordt automatisch bijgewerkt en u kunt het schema exporteren als PDF.",
+    "howTitle": "Hoe te gebruiken",
+    "step1": "Voer de namen van beide ouders in",
+    "step2": "Klik op een dag om te schakelen tussen ouder A, ouder B of niet toegewezen",
+    "step3": "Bekijk de verdeling in de samenvatting onder de kalender",
+    "weeksUnit": "weken",
+    "totalDaysPlanned": "Totaal geplande dagen",
+    "unassignedDays": "Niet toegewezen dagen",
+    "exportDesc": "Druk het schema af of sla het op als PDF."
+  },
+  "nav_home": "Startpagina",
+  "nav_care_schedule": "Zorgschema",
+  "nav_download": "Downloaden",
+  "familievern": {
+    "pageDesc": "Lina helpt co-ouders de dagelijkse gang van zaken over twee huishoudens te coördineren. Informatie over de app voor mediators en andere professionals.",
+    "hero": {
+      "label": "Voor professionals",
+      "title": "Een tool die u kunt aanbevelen aan ouders die de zorg delen",
+      "description": "Lina helpt ouders de praktische details van het dagelijkse co-ouderschap georganiseerd en toegankelijk te houden in beide huishoudens. Deze pagina is bedoeld voor professionals.",
+      "cta": "Neem contact op"
+    },
+    "about": {
+      "label": "Over de app",
+      "title": "Één gedeelde plek voor het kind — in beide huishoudens",
+      "description": "Veel ouders die de zorg delen, missen een gemeenschappelijke structuur voor de dagelijkse samenwerking. Informatie is verspreid over berichten, e-mails en mondelinge afspraken, en één ouder eindigt met alles coördineren. Lina brengt de praktische details — medische informatie, contacten, paklijsten, foto's en berichten — samen op één gedeelde plek die in beide huishoudens toegankelijk is."
+    },
+    "when": {
+      "label": "Wanneer Lina geschikt is",
+      "fits": {
+        "title": "Lina werkt goed wanneer ouders",
+        "item1": "een in principe werkbare co-ouderschapsrelatie hebben maar moeite hebben met de praktische coördinatie",
+        "item2": "meer structuur en voorspelbaarheid in hun dagelijkse routines willen",
+        "item3": "een gedeeld communicatiekanaal nodig hebben dat de samenwerking gefocust houdt",
+        "item4": "willen zorgen dat belangrijke informatie over het kind in beide huishoudens beschikbaar is"
+      },
+      "notFits": {
+        "title": "Lina is niet geschikt wanneer",
+        "item1": "er een hoog conflictniveau is waarvoor juridische of therapeutische interventie nodig is",
+        "item2": "één ouder niet bereid is digitaal samen te werken",
+        "item3": "de situatie maatregelen vereist die verder gaan dan praktische coördinatie"
+      }
+    },
+    "privacy": {
+      "label": "Privacy",
+      "title": "Veilig en privé van meet af aan",
+      "description": "Lina is gebouwd met privacy als basis. De gegevens van ouders worden verantwoord verwerkt en de app is vrij van commerciële belangen. Als professional kunt u de app met vertrouwen aanbevelen.",
+      "point1": { "title": "Geen reclame", "description": "Geen advertenties of commerciële belangen beïnvloeden de gebruikerservaring." },
+      "point2": { "title": "Geen gegevensdeling", "description": "De gegevens van ouders worden niet verkocht of gedeeld met derden." },
+      "point3": { "title": "Veilige infrastructuur", "description": "Informatie is beschermd door veilige opslag, toegangscontrole en ondertekende links." }
+    },
+    "features": {
+      "label": "Hoe het in de praktijk werkt",
+      "title": "Structuur die wrijving in het dagelijks leven vermindert",
+      "threads": { "title": "Onderwerpen", "description": "Ouders communiceren over één onderwerp tegelijk — logistiek, school of gezondheid — zonder dat belangrijke informatie verloren raakt in een lange berichtenstroom." },
+      "messages": { "title": "Berichten", "description": "Berichten kunnen niet worden bewerkt of verwijderd. Dit creëert een voorspelbaar communicatiekanaal en een duidelijk overzicht van wat er is afgesproken." },
+      "album": { "title": "Gedeeld album", "description": "Beide ouders kunnen foto's uit het dagelijks leven delen. Het kind is zichtbaar in beide huishoudens." },
+      "info": { "title": "Kindinformatie", "description": "Medische informatie, allergieën en belangrijke details worden eenmalig ingevoerd en zijn beschikbaar voor beide ouders — ongeacht in welk huishouden het kind zich bevindt." },
+      "equipment": { "title": "Paklijsten", "description": "Een duidelijk overzicht van wat het kind in elk huishouden nodig heeft, vermindert het aantal vragen en misverstanden rond praktische details." },
+      "schedule": { "title": "Zorgschema", "description": "De zorgregeling wordt weergegeven in één gedeeld overzicht. Minder discussies over wie het kind had en wanneer." },
+      "agreement": { "title": "Ouderschapsplan", "description": "De ouderschapsplanpagina geeft ouders een overzicht van wat het plan moet bevatten, met een voorbeeld en links naar officiële bronnen. Een goed startpunt voor of na mediation.", "link": "Bekijk de informatiepagina" }
+    },
+    "screenshots": {
+      "label1": "Onderwerpen",
+      "label2": "Onderwerp detail",
+      "label3": "Kindinformatie",
+      "label4": "Gedeeld album",
+      "label5": "Zorgschema"
+    },
+    "csPromo": {
+      "label": "Tools",
+      "title": "Een zorgschema dat ouders samen kunnen gebruiken",
+      "description": "Lina bevat een interactief zorgschema dat laat zien hoe de tijd week voor week wordt verdeeld. De tool kan door ouders zelf worden gebruikt of als uitgangspunt bij gesprekken over zorgregelingen.",
+      "cta": "Open zorgschema"
+    },
+    "contact": {
+      "label": "Contact",
+      "title": "Neem contact op",
+      "description": "Heeft u vragen over Lina, of wilt u bespreken of de app geschikt is voor de gezinnen waarmee u werkt? We helpen u graag.",
+      "namePlaceholder": "Naam",
+      "emailPlaceholder": "E-mailadres",
+      "officePlaceholder": "Organisatie / werkplek (optioneel)",
+      "messagePlaceholder": "Uw bericht",
+      "submit": "Bericht verzenden",
+      "successTitle": "Bedankt voor uw bericht",
+      "successDescription": "We reageren zo snel mogelijk."
+    }
+  },
+  "ca": {
+    "pageTitle": "Ouderschapsplan — wat moet het bevatten? | Lina",
+    "pageDesc": "Lees wat een goed ouderschapsplan moet omvatten. Bekijk een voorbeeld, krijg tips voor het proces en vind links naar officiële bronnen.",
+    "label": "Ouderschapsplan",
+    "heroTitle": "Wat moet een ouderschapsplan bevatten?",
+    "heroDesc": "Een ouderschapsplan helpt ouders duidelijkheid te creëren voor het kind wanneer de zorg over twee huishoudens wordt verdeeld. Hier vindt u een overzicht van wat het plan moet bevatten, een voorbeeld en links naar officiële bronnen.",
+    "heroCta": "Maak een plan",
+    "aboutLabel": "De basis",
+    "aboutTitle": "Een plan dat meegroeit met het kind",
+    "aboutDesc": "Een ouderschapsplan is een schriftelijke afspraak tussen ouders over hoe de zorg voor het kind over twee huishoudens is georganiseerd. In Nederland is een ouderschapsplan verplicht bij echtscheiding wanneer er minderjarige kinderen zijn. Een goed plan weerspiegelt het dagelijks leven van het kind — en moet worden aangepast naarmate het kind opgroeit.",
+    "point1Title": "Wettelijk verplicht bij scheiding in Nederland",
+    "point1Desc": "In Nederland is een ouderschapsplan verplicht als er minderjarige kinderen zijn. Als u er niet uitkomt, kan een familiemediator helpen.",
+    "point2Title": "Het belang van het kind centraal",
+    "point2Desc": "Het plan moet gebaseerd zijn op de behoeften van het kind, niet die van de ouders. Kinderen die oud genoeg zijn, moeten worden gehoord en de gelegenheid krijgen hun mening te uiten.",
+    "point3Title": "Schriftelijk is veiliger",
+    "point3Desc": "Een mondelinge afspraak is moeilijk na te komen en gemakkelijk verkeerd te begrijpen. Een schriftelijk plan biedt duidelijkheid voor beide ouders en kan als referentie dienen bij meningsverschillen.",
+    "point4Title": "Kan in de loop van de tijd worden herzien",
+    "point4Desc": "De behoeften van een kind veranderen met de leeftijd. Een goed ouderschapsplan wordt regelmatig beoordeeld en aangepast — idealiter eens per jaar of wanneer de omstandigheden ingrijpend veranderen.",
+    "infoNote": "Deze pagina biedt algemene informatie en vervangt geen juridisch advies. Als u er niet uitkomt, raden wij u aan contact op te nemen met een familiemediator of het Juridisch Loket.",
+    "coverLabel": "Inhoud",
+    "coverTitle": "Punten die een goed ouderschapsplan moet bevatten",
+    "coverIntro": "Niet alle punten zijn voor iedereen relevant. Neem op wat bij uw situatie past.",
+    "cover1Title": "Zorgregeling",
+    "cover1Desc": "Hoe worden de weken verdeeld? Een consistent patroon — bijvoorbeeld om de week of een 3-4-4-3-regeling — geeft het kind een duidelijk ritme.",
+    "cover2Title": "Hoofdverblijf",
+    "cover2Desc": "Heeft het kind een hoofdverblijf bij één ouder, of is er sprake van gedeeld verblijf? De verblijfplaats beïnvloedt rechten en verantwoordelijkheden.",
+    "cover3Title": "Wisselmomenten",
+    "cover3Desc": "Maak afspraken over tijdstip en locatie van de wisselmomenten. Duidelijke afspraken verminderen misverstanden en geven het kind een rustige overgang.",
+    "cover4Title": "Vakanties en bijzondere gelegenheden",
+    "cover4Desc": "De verdeling van Kerst, Pasen, zomervakantie, de verjaardag van het kind en andere vrije dagen moet expliciet worden vastgelegd.",
+    "cover5Title": "Kosten",
+    "cover5Desc": "Hoe worden uitgaven voor activiteiten, kleding, spullen en andere behoeften verdeeld. Duidelijke afspraken voorkomen conflicten.",
+    "cover6Title": "Communicatie",
+    "cover6Desc": "Hoe communiceren ouders dagelijks over het kind? Maak afspraken over het kanaal, de responstijd en wat belangrijk is om te melden.",
+    "cover7Title": "Reizen",
+    "cover7Desc": "Afspraken voor buitenlandse reizen: opzegtermijn, toestemming en waar paspoorten en andere belangrijke documenten worden bewaard.",
+    "cover8Title": "Wijzigingen",
+    "cover8Desc": "Hoe worden wijzigingen in het plan afgehandeld? Maak afspraken over een regelmatige beoordelingsfrequentie — idealiter eens per jaar.",
+    "exampleLabel": "Voorbeeld",
+    "exampleTitle": "Hoe een ouderschapsplan eruit kan zien",
+    "exampleIntro": "Hieronder ziet u een voorbeeld van hoe een ingevuld ouderschapsplan eruit kan zien. Gebruik dit als inspiratie bij het opstellen van uw eigen plan.",
+    "tmplTitle": "Ouderschapsplan",
+    "tmplMeta": "Jan de Vries en Maria de Vries · Opgesteld op 15 maart 2026",
+    "tmplParentsLabel": "Ouders",
+    "tmplParentA": "Ouder A: Jan de Vries",
+    "tmplParentB": "Ouder B: Maria de Vries",
+    "tmplChildrenLabel": "Kinderen",
+    "tmplChild": "Emma de Vries, geboren op 3 maart 2021",
+    "tmplResidenceLabel": "Verblijfplaats",
+    "tmplResidence": "Gedeeld verblijf. Beide ouders hebben gelijk beslissingsrecht in het dagelijks leven.",
+    "tmplScheduleLabel": "Zorgregeling",
+    "tmplSchedule": "Om de week wisselen, van maandagochtend tot de volgende maandagochtend. De regeling gaat in op 1 september 2026.",
+    "tmplHandoverLabel": "Wisselmomenten",
+    "tmplHandover": "Wisselmomenten verlopen via de kinderopvang of school. De ouder die de week begint, brengt Emma 's ochtends en neemt vanaf dat moment de ouderlijke verantwoordelijkheid over. Op dagen dat de opvang/school gesloten is, vindt het wisselmoment plaats om 16:00 uur bij de ouder van wie de week is geëindigd.",
+    "tmplHolidaysLabel": "Vakanties en bijzondere gelegenheden",
+    "tmplXmasLabel": "Kerstvakantie:",
+    "tmplXmasDesc": "De kerstvakantie wordt verdeeld in twee perioden: periode 1 (23–27 december) en periode 2 (28 december – 1 januari). Ouders wisselen elk jaar van periode.",
+    "tmplXmasA": "Ouder A heeft periode 1 in even jaren en periode 2 in oneven jaren.",
+    "tmplXmasB": "Ouder B heeft periode 1 in oneven jaren en periode 2 in even jaren.",
+    "tmplXmasHandover": "Het wisselmoment tussen de perioden vindt plaats om 12:00 uur 's middags.",
+    "tmplXmasDeadline": "De verdeling wordt schriftelijk bevestigd voor 1 november.",
+    "tmplEasterLabel": "Paasvakantie:",
+    "tmplEasterDesc": "De paasvakantie loopt van de woensdag voor Goede Vrijdag tot en met Tweede Paasdag. Ouders wisselen elk jaar.",
+    "tmplEasterAlt": "Ouder A heeft even jaren, ouder B heeft oneven jaren.",
+    "tmplEasterDeadline": "De verdeling wordt schriftelijk bevestigd voor 1 februari.",
+    "tmplSummerLabel": "Zomervakantie:",
+    "tmplSummerDesc": "Elke ouder kan tot drie aaneengesloten vakantieweken met Emma doorbrengen. Wie als eerste kiest, wisselt elk jaar.",
+    "tmplSummerAlt": "Ouder A kiest als eerste in oneven jaren, ouder B in even jaren.",
+    "tmplSummerDeadline": "De verdeling wordt schriftelijk bevestigd voor 1 april.",
+    "tmplNationalLabel": "Nationale feestdagen",
+    "tmplNationalDesc": "Wordt doorgebracht bij elke ouder in afwisselende jaren.",
+    "tmplNationalAlt": "Ouder A heeft oneven jaren, ouder B heeft even jaren.",
+    "tmplAutumnLabel": "Herfstvakantie en andere schoolvakanties:",
+    "tmplAutumnDesc": "Volgt de reguliere zorgregeling.",
+    "tmplOtherHolLabel": "Overige feestdagen:",
+    "tmplOtherHolDesc": "Voor feestdagen die niet specifiek zijn geregeld, geldt de reguliere regeling. Als zo'n dag op een wisselmoment valt, verschuift het wisselmoment naar 12:00 uur 's middags, tenzij schriftelijk anders overeengekomen.",
+    "tmplBirthdayLabel": "Verjaardag",
+    "tmplBirthdayDesc": "Emma's verjaardag wordt in afwisselende jaren gevierd bij elke ouder. De ontvangende ouder is verantwoordelijk voor de organisatie en de kosten. Naaste familie van beide kanten mag worden uitgenodigd.",
+    "tmplBirthdayAlt": "Ouder A organiseert in even jaren, ouder B in oneven jaren.",
+    "tmplContactLabel": "Contact met de andere ouder",
+    "tmplContactDesc": "Terwijl Emma bij één ouder is, kan ze 1–2 keer per week telefonisch of via video contact hebben met de andere ouder. Het tijdstip wordt aangepast aan Emma's routines en stemming. Gesprekken worden kort en rustig gehouden.",
+    "tmplSwapLabel": "Wijzigingen in het schema",
+    "tmplSwapDesc": "Wijzigingen kunnen worden doorgevoerd wanneer beide ouders het eens zijn en het praktisch haalbaar is. Voorspelbaarheid heeft prioriteit — frequente wisselingen worden vermeden. Bij onenigheid geldt de reguliere regeling.",
+    "tmplCommLabel": "Communicatie",
+    "tmplComm": "Ouders communiceren schriftelijk over praktische zaken met betrekking tot Emma. De toon moet zakelijk en respectvol zijn. Geen van beide ouders mag in het bijzijn van Emma negatief spreken over de andere ouder.",
+    "tmplTravelLabel": "Reizen",
+    "tmplTravel": "Buitenlandse reizen met Emma moeten minimaal vier weken van tevoren schriftelijk worden gemeld. Paspoorten worden bewaard bij de ouder op wiens adres Emma is ingeschreven.",
+    "tmplAddressLabel": "Ingeschreven adres",
+    "tmplAddressDesc": "Emma staat ingeschreven op het adres van ouder A. Het wijzigen van het ingeschreven adres vereist schriftelijke toestemming van beide ouders. Bij onenigheid verbinden beide partijen zich tot mediation voordat er wijzigingen worden aangebracht. De schoolkeuze wordt uiterlijk één jaar voor de schoolstart besproken.",
+    "tmplHealthLabel": "Gezondheid en opvolging",
+    "tmplHealthDesc": "Beide ouders moeten worden geïnformeerd over afspraken en onderzoeken met betrekking tot Emma's gezondheid, ontwikkeling en opvolging bij de huisarts, het consultatiebureau of de kinderopvang/school. Beide hebben het recht om bij consultaties en vergaderingen aanwezig te zijn.",
+    "tmplFamilyLabel": "Familie en relaties",
+    "tmplFamilyDesc": "Emma moet de kans krijgen hechte relaties op te bouwen met de families en naaste kring van beide ouders. Beide ouders moeten dit actief faciliteren.",
+    "tmplFinanceLabel": "Financiën",
+    "tmplFinanceDesc": "Lopende uitgaven voor Emma worden gedekt vanuit een gezamenlijke rekening waaraan beide ouders een overeengekomen maandelijks bedrag bijdragen. Kinderbijslag wordt overgemaakt naar dezelfde rekening. Grotere of onverwachte uitgaven worden vooraf besproken. Beide ouders hebben volledige toegang tot de rekening.",
+    "tmplChangesLabel": "Wijzigingen en herziening",
+    "tmplChangesDesc": "Dit plan vervangt alle eerdere mondelinge en schriftelijke afspraken tussen de ouders. Wijzigingen zijn alleen geldig wanneer ze schriftelijk zijn vastgelegd en door beide partijen zijn ondertekend. Het plan wordt minimaal elke zes maanden beoordeeld om te zorgen dat het blijft aansluiten op de behoeften van Emma.",
+    "tmplSigDate": "Datum en plaats",
+    "tmplSigA": "Jan de Vries — handtekening",
+    "tmplSigB": "Maria de Vries — handtekening",
+    "tmplDisclaimer": "Dit is een voorbeeld. Pas de inhoud aan aan uw eigen situatie.",
+    "resourcesLabel": "Bronnen",
+    "resourcesTitle": "Maak uw plan met officiële hulpmiddelen",
+    "resourcesIntro": "Verschillende landen bieden gratis tools en begeleiding voor ouders die een ouderschapsplan opstellen. We raden u aan de officiële bronnen in uw land te gebruiken.",
+    "res1Country": "Noorwegen",
+    "res1Desc": "Het ouderschapsplantool van Bufdir is een gratis digitale dienst waarbij ouders het plan stap voor stap invullen en ondertekenen met BankID.",
+    "res1Link": "Naar Bufdir",
+    "res2Country": "Zweden",
+    "res2Desc": "In Zweden kunnen ouders hulp krijgen van het gemeentelijk familierechtkantoor bij het opstellen van een overeenkomst over gezag, verblijfplaats en contact. De overeenkomst wordt goedgekeurd door de sociale commissie.",
+    "res2Link": "Meer informatie bij MFoF",
+    "res3Country": "Denemarken",
+    "res3Desc": "Familieretshuset biedt een formulier voor een ouderschapsplan dat ouders zelf kunnen invullen. Het plan is bindend zodra beide hebben ondertekend.",
+    "res3Link": "Naar Familieretshuset",
+    "res4Country": "Finland",
+    "res4Desc": "In Finland worden overeenkomsten over gezag en zorg opgesteld met de gemeentelijke kinderbeschermingsambtenaar (lastenvalvoja). De overeenkomst wordt bevestigd en wordt juridisch bindend.",
+    "res4Link": "Meer informatie (suomi.fi)",
+    "res5Country": "Nederland",
+    "res5Desc": "In Nederland is een ouderschapsplan verplicht bij scheiding wanneer er minderjarige kinderen zijn. Het plan wordt opgesteld door de ouders, eventueel met hulp van een mediator.",
+    "res5Link": "Meer informatie (rijksoverheid.nl)",
+    "promoLabel": "De Lina-app",
+    "promoTitle": "Na het plan — het dagelijks leven",
+    "promoDesc": "Zodra het ouderschapsplan er is, begint het dagelijks leven. Lina helpt ouders met de rest: berichten, kindinformatie, foto's en paklijsten — allemaal op één gedeelde plek in twee huishoudens.",
+    "promoCta": "Download Lina",
+    "csPromoLabel": "Zorgschema",
+    "csPromoTitle": "Plan het schema week voor week",
+    "csPromoDesc": "Zodra het plan er is, helpt het interactieve zorgschema van Lina u te plannen en te visualiseren hoe het dagelijks leven eruitziet. Zie dagverdelingen, weekendpatronen en de frequentie van wisselmomenten — in één duidelijk overzicht.",
+    "csPromoCta": "Probeer het zorgschema"
+  },
+  "faq": {
+    "pageTitle": "Veelgestelde vragen — Lina",
+    "pageDesc": "Antwoorden op veelgestelde vragen over Lina — de co-ouderschapsapp. Vind antwoorden over privacy, account, zorgschema en ouderschapsplan.",
+    "heroLabel": "FAQ",
+    "heroTitle": "Veelgestelde vragen",
+    "heroDesc": "Vind antwoorden op de meest gestelde vragen over Lina, het zorgschema en het ouderschapsplan.",
+    "cat1Title": "Over Lina",
+    "cat1q1": "Wat is Lina?",
+    "cat1a1": "Lina brengt de praktische kant van co-ouderschap samen in één app — berichten, kindinformatie, foto's, contacten, paklijsten en een zorgschema — toegankelijk voor beide huishoudens.",
+    "cat1q2": "Voor wie is Lina bedoeld?",
+    "cat1a2": "Lina is gemaakt voor ouders die de zorg voor een kind delen over twee huishoudens. De app werkt het beste wanneer de basisrelatie voor co-ouderschap functioneel is, maar meer structuur en voorspelbaarheid nodig is.",
+    "cat1q3": "Is Lina gratis?",
+    "cat1a3": "Ja, Lina kan gratis worden gedownload en gebruikt. Er is geen betaling vereist om een account aan te maken of de andere ouder uit te nodigen.",
+    "cat1q4": "Welke apparaten ondersteunt Lina?",
+    "cat1a4": "Lina is beschikbaar als app voor iPhone en Android. Het zorgschema op getlina.app kan in een browser worden gebruikt zonder de app te downloaden.",
+    "cat1q5": "Moeten beide ouders de app gebruiken?",
+    "cat1a5": "Om gedeelde functies zoals berichten, foto's en kindinformatie te gebruiken, hebben beide ouders een account nodig. Het zorgschema kan door één ouder alleen worden gebruikt.",
+    "cat2Title": "Zorgschema",
+    "cat2q1": "Wat is het zorgschema in Lina?",
+    "cat2a1": "Het zorgschema is een gratis tool die u direct in uw browser kunt gebruiken. Klik op dagen om ze aan een ouder toe te wijzen en zie de samenvatting direct bijwerken. Het schema kan worden geëxporteerd als PDF.",
+    "cat2q2": "Heb ik een account nodig om het zorgschema te gebruiken?",
+    "cat2a2": "Nee, het zorgschema kan zonder account direct in een browser worden gebruikt. U hoeft de app alleen te downloaden om gedeelde functies zoals berichten en kindinformatie te gebruiken.",
+    "cat2q3": "Kan ik het zorgschema exporteren?",
+    "cat2a3": "Ja, u kunt het zorgschema direct vanuit de tool exporteren als PDF. De PDF bevat een visueel overzicht van de verdeling en kan worden gebruikt als bijlage bij een ouderschapsplan.",
+    "cat2q4": "Kan ik vakanties en speciale periodes plannen in het zorgschema?",
+    "cat2a4": "Ja, het zorgschema ondersteunt flexibele week-voor-weekplanning, waardoor het eenvoudig is vakanties en speciale periodes toe te voegen.",
+    "cat2a4link": "Probeer het zorgschema hier",
+    "cat3Title": "Privacy",
+    "cat3q1": "Wie kan de informatie van het kind zien?",
+    "cat3a1": "Alleen de twee ouders die in Lina zijn verbonden met het kind, hebben toegang tot de informatie van het kind. Geen andere gebruikers of Lina zelf heeft toegang tot wat u deelt.",
+    "cat3q2": "Deelt Lina gegevens met derden?",
+    "cat3a2": "Nee. Lina verkoopt of deelt geen gebruikersgegevens met derden. Er is geen reclame in de app.",
+    "cat3a2link": "Lees het privacybeleid",
+    "cat3q3": "Kunnen berichten worden verwijderd of bewerkt?",
+    "cat3a3": "Nee, berichten in Lina kunnen na verzending niet worden bewerkt of verwijderd. Dit zorgt voor een duidelijk en betrouwbaar overzicht van wat er tussen ouders is afgesproken.",
+    "cat3q4": "Van wie zijn mijn gegevens?",
+    "cat3a4": "U bent eigenaar van uw eigen gegevens. Lina verwerkt gegevens alleen om de dienst te leveren, en nooit voor commerciële doeleinden.",
+    "cat3q5": "Wat gebeurt er met mijn gegevens als ik mijn account verwijder?",
+    "cat3a5": "Wanneer het account wordt verwijderd, worden alle persoonlijke informatie die aan u is gekoppeld, verwijderd. Berichten, foto's en lijsten die zijn gedeeld met de andere ouder blijven voor hen beschikbaar.",
+    "cat4Title": "Account",
+    "cat4q1": "Hoe maak ik een account aan?",
+    "cat4a1": "Download Lina uit de App Store of Google Play en volg de in-app handleiding om een account aan te maken. U heeft alleen uw e-mailadres nodig om in te loggen — er wordt geen wachtwoord opgeslagen.",
+    "cat4q2": "Kan ik meerdere kinderen in de app hebben?",
+    "cat4a2": "Ja, u kunt meerdere kinderen toevoegen aan Lina. Elk kind heeft zijn eigen gedeelde ruimte met bijbehorende informatie, berichten en foto's.",
+    "cat4q3": "Hoe nodig ik de andere ouder uit?",
+    "cat4a3": "U deelt de uitnodigingscode via de app.",
+    "cat5Title": "Ouderschapsplan",
+    "cat5q1": "Wat moet een ouderschapsplan bevatten?",
+    "cat5a1": "Een goed ouderschapsplan moet de zorgregeling, de verblijfplaats, ophalen en brengen, verdeling van vakanties en feestdagen, kostenverdeling, communicatie tussen ouders, reizen met het kind en routines voor wijzigingen en herziening van het plan bevatten.",
+    "cat5q2": "Is een ouderschapsplan juridisch bindend?",
+    "cat5a2": "Een privé-ouderschapsplan is gebaseerd op wederzijdse overeenstemming tussen de ouders. Het is niet juridisch bindend op dezelfde manier als een rechterlijke beslissing, maar biedt structuur en voorspelbaarheid voor beide partijen en het kind.",
+    "cat5q3": "Is er een gratis tool voor het opstellen van een ouderschapsplan?",
+    "cat5a3": "In Nederland is een ouderschapsplan verplicht bij scheiding wanneer er minderjarige kinderen zijn. Een familiemediator of het Juridisch Loket kan hierbij helpen. In Noorwegen biedt Bufdir een gratis digitaal ouderschapsplantool. Vergelijkbare officiële tools zijn beschikbaar in Zweden, Denemarken en Finland.",
+    "cat5a3link": "Meer informatie over ouderschapsplannen",
+    "cat5q4": "Helpt Lina bij ouderschapsplannen?",
+    "cat5a4": "Lina biedt een informatiepagina over wat een ouderschapsplan moet bevatten, met een voorbeeld en links naar officiële bronnen in Noorwegen, Zweden, Denemarken, Finland en Nederland."
+  },
+  "about": {
+    "pageTitle": "Over ons — Lina",
+    "pageDesc": "Lina is gebouwd voor co-ouders die een rustige, gestructureerde tool willen voor de dagelijkse coördinatie. Ontworpen en gebouwd in Noorwegen.",
+    "heading": "Over Lina",
+    "lead": "Lina is een co-ouderschapsapp voor ouders die de zorg voor een kind delen over twee huishoudens. Hetzelfde overzicht, dezelfde informatie — ongeacht in welk huishouden het kind zich bevindt.",
+    "whyTitle": "Waarom Lina bestaat",
+    "whyText1": "Lina is ontstaan omdat er geen co-ouderschapsapp bestond die rustig en gefocust aanvoelde. De meeste tools waren gebouwd rond conflict of juridische processen. We wilden iets anders — een rustige, gestructureerde ruimte voor de dagelijkse coördinatie tussen twee ouders.",
+    "whyText2": "Het doel is de mentale belasting te verminderen die gepaard gaat met gedeelde zorg. Wanneer beide ouders toegang hebben tot dezelfde schema's, lijsten en updates, hoeft niemand alles alleen te dragen.",
+    "focusTitle": "Waar Lina zich op richt",
+    "focusText1": "Lina is gebouwd rond gestructureerde communicatie en praktische tools. Onderwerpen houden gesprekken georganiseerd. Gedeelde lijsten, contacten en informatie over het kind zijn altijd beschikbaar — zichtbaar in beide huishoudens.",
+    "focusText2": "Er zijn geen algoritmen, geen reclame en geen sociale functies. Lina is ontworpen om gebruikt te worden wanneer het nodig is en uit de weg te blijven wanneer dat niet het geval is.",
+    "origin": "Ontworpen en gebouwd in Noorwegen."
+  },
+  "stories": {
+    "pageTitle": "Hoe ouders Lina gebruiken",
+    "pageDesc": "Kleine, alledaagse situaties waarin Lina het verschil maakt. Zie hoe ouders de app gebruiken om informatie, foto's en paklijsten te delen tussen de huishoudens.",
+    "label": "Alledaagse situaties",
+    "title": "Hoe ouders Lina gebruiken",
+    "description": "Kleine, alledaagse momenten waarbij één gedeelde plek het verschil maakt. Dit zijn de situaties waarvoor Lina is gebouwd.",
+    "s1": {
+      "label": "Kindinformatie",
+      "title": "De allergie die het andere huishouden niet kende",
+      "situation": "Een kind krijgt bij de dokter de diagnose van een nieuwe voedselallergie. De informatie moet het andere huishouden bereiken voor het volgende wisselmoment.",
+      "resolution": "Met Lina: De ouder werkt eenmalig de medische informatie van het kind bij. De andere ouder ziet het direct — geen apart bericht of telefoontje nodig."
+    },
+    "s2": {
+      "label": "Paklijsten",
+      "title": "Het regenjas dat altijd in het verkeerde huishouden is",
+      "situation": "Een kind komt zonder regenkleding op school aan omdat niemand zeker wist in welk huishouden het was. Kleine dingen als deze zorgen voor onnodige wrijving.",
+      "resolution": "Met Lina: Gedeelde paklijsten laten zien wat in elk huishouden is. De lijst blijft actueel, zodat het jack het kind volgt."
+    },
+    "s3": {
+      "label": "Onderwerpen",
+      "title": "Het schoolevenement dat verloren ging in een berichtenstroom",
+      "situation": "School stuurt informatie over een ouderavond. Eén ouder stuurt het door via een bericht, maar de details raken verloren tussen praktische berichten over ophalen en avondeten.",
+      "resolution": "Met Lina: Een speciaal onderwerp voor school houdt alles bij elkaar. Details zijn gemakkelijk te vinden zonder door niet-gerelateerde berichten te scrollen."
+    },
+    "s4": {
+      "label": "Gedeeld album",
+      "title": "De eerste fietsrit die u bijna had gemist",
+      "situation": "Een kind leert fietsen in het ene huishouden. De andere ouder hoort er pas dagen later van en ziet het moment nooit.",
+      "resolution": "Met Lina: Foto's gaan naar het gedeelde album. Momenten worden automatisch gedeeld — ongeacht in welk huishouden het kind zich bevindt."
+    },
+    "s5": {
+      "label": "Zorgschema",
+      "title": "De verwarring over het wisselmoment in een vakantieweek",
+      "situation": "Vakantieweken veranderen het reguliere schema. Beide ouders herinneren zich een andere versie van het plan en het kind belandt in het midden.",
+      "resolution": "Met Lina: Het zorgschema laat beide ouders hetzelfde overzicht zien. Wijzigingen zijn direct zichtbaar, zodat er maar één versie van de waarheid is."
+    },
+    "s6": {
+      "label": "Contacten",
+      "title": "Het tandartsnummer dat niemand kon vinden",
+      "situation": "Een kind heeft kiespijn in het ene huishouden. De ouder moet de tandarts bellen maar heeft het nummer niet — het was opgeslagen in de telefoon van de andere ouder.",
+      "resolution": "Met Lina: Gedeelde contacten betekenen dat beide ouders de nummers van tandarts, huisarts en school altijd beschikbaar hebben."
+    },
+    "closing": "Dit zijn geen dramatische problemen. Het zijn de stille, alledaagse momenten waarbij een gedeeld overzicht tijd bespaart, stress vermindert en de focus op het kind houdt."
+  },
+  "storiesTeaser": {
+    "label": "Alledaagse momenten",
+    "title": "Gebouwd voor de momenten die ertoe doen",
+    "s1": {
+      "title": "De allergie die het andere huishouden niet kende",
+      "description": "Eén ouder werkt de medische informatie van het kind bij. De andere ziet het direct — geen apart bericht nodig."
+    },
+    "s2": {
+      "title": "Het regenjas dat altijd in het verkeerde huishouden is",
+      "description": "Gedeelde paklijsten laten zien wat in elk huishouden is. Updates zijn direct zichtbaar, zodat het jack het kind volgt."
+    },
+    "s3": {
+      "title": "De eerste fietsrit die u bijna had gemist",
+      "description": "Foto's gaan naar het gedeelde album. De grote en kleine momenten worden automatisch gedeeld — ongeacht in welk huishouden het kind zich bevindt."
+    },
+    "cta": "Meer verhalen lezen"
+  },
+  "termsSummary": {
+    "heading": "Samenvatting gebruiksvoorwaarden",
+    "disclaimer": "Deze samenvatting is uitsluitend ter informatie. In geval van discrepanties is de Engelstalige versie van de bovenstaande Gebruiksvoorwaarden van toepassing.",
+    "p1": "Lina is een privé-samenwerkingstool voor twee ouders die de verantwoordelijkheid voor een kind delen.",
+    "p2": "U moet minimaal 18 jaar oud zijn en een ouder of wettelijke voogd zijn om de dienst te gebruiken. Elke Lina-ruimte is bedoeld voor twee verbonden ouders.",
+    "p3": "U behoudt het eigendom van alle inhoud die u deelt in Lina. Lina verwerkt inhoud alleen om de dienst te leveren en verkoopt of deelt deze niet publiekelijk.",
+    "p4": "Lina wordt aangeboden als een betaald abonnement. Abonnementen worden automatisch verlengd, tenzij opgezegd via uw platformaccountinstellingen.",
+    "p5": "Lina is een ondersteunende tool en biedt geen juridisch, medisch of professioneel advies, en bemiddelt ook niet bij geschillen tussen ouders.",
+    "p6": "Gedeelde inhoud kan na het verwijderen van het account beschikbaar blijven voor de andere ouder.",
+    "p7": "Voor volledige details, zie de Gebruiksvoorwaarden."
+  },
+  "privacySummary": {
+    "heading": "Samenvatting privacybeleid",
+    "disclaimer": "Deze samenvatting is uitsluitend ter informatie. In geval van discrepanties is de Engelstalige versie van het bovenstaande Privacybeleid van toepassing.",
+    "p1": "Lina is gebouwd met privacy als kernprincipe.",
+    "p2": "We verwerken alleen persoonsgegevens die noodzakelijk zijn om de dienst te leveren en de samenwerking tussen ouders te ondersteunen. We gebruiken geen reclame, tracking of marketingcookies.",
+    "p3": "Alleen strikt noodzakelijke lokale opslag wordt gebruikt om essentiële instellingen te onthouden, zoals voorkeuren voor het zorgschema. De website maakt gebruik van Cloudflare Web Analytics voor anonieme paginabezoekstatistieken — geen cookies, geen persoonsgegevens, geen cross-site tracking.",
+    "p4": "Wanneer een account wordt verwijderd, worden persoonlijke accountgegevens verwijderd. Gedeelde inhoud kan beschikbaar blijven voor de andere ouder, omdat deze gezamenlijk kan worden gebruikt binnen de dienst.",
+    "p5": "Alle kind-gerelateerde gegevens worden verstrekt en beheerd door ouders of wettelijke voogden.",
+    "p6": "Er worden geen persoonsgegevens verkocht of gedeeld voor commerciële doeleinden.",
+    "p7": "Voor volledige details, raadpleeg dit Privacybeleid."
+  },
+  "accountDeletion": {
+    "pageTitle": "Account verwijderen — Lina",
+    "heading": "Account verwijderen",
+    "howTo": {
+      "title": "Hoe u uw account verwijdert",
+      "intro": "Gebruikers kunnen verwijdering van hun Lina-account op een van de volgende manieren aanvragen.",
+      "inApp": "In de app",
+      "step1": "Open Lina",
+      "step2": "Ga naar Instellingen",
+      "step3": "Selecteer 'Account verwijderen'",
+      "step4": "Bevestig het verzoek",
+      "byEmail": "Via e-mail",
+      "emailBefore": "Als u geen toegang heeft tot de app, neem dan contact met ons op via:",
+      "emailAfter": " — vermeld het e-mailadres dat is gekoppeld aan uw Lina-account."
+    },
+    "whatHappens": {
+      "title": "Wat er gebeurt wanneer u uw account verwijdert",
+      "intro": "Wanneer uw account wordt verwijderd:",
+      "item1": "Uw persoonlijke accountinformatie (zoals e-mailadres en profielgegevens) wordt verwijderd",
+      "item2": "Uw toegang tot Lina wordt permanent uitgeschakeld",
+      "sharedContent": "Gedeelde inhoud (zoals berichten, foto's en lijsten) wordt niet automatisch verwijderd, omdat deze kan worden gedeeld met een andere ouder. Deze gegevens blijven beschikbaar voor de andere verbonden ouder.",
+      "retention": "Sommige informatie kan tijdelijk worden bewaard indien wettelijk vereist of voor beveiligingsdoeleinden, waarna deze wordt verwijderd of geanonimiseerd."
+    }
+  },
+  "jsonLd": {
+    "app": {
+      "description": "Lina helpt co-ouders de zorg over twee huishoudens te coördineren — gedeelde schema's, berichten en lijsten op één rustige, privéplek."
+    },
+    "indexFaq": [
+      { "q": "Wat is Lina?", "a": "Lina is een co-ouderschapsapp die ouders helpt de zorg over twee huishoudens te coördineren. Het brengt berichten, schema's, medische informatie, contacten, paklijsten en foto's samen op één gedeelde, privéplek." },
+      { "q": "Is Lina gratis?", "a": "Lina heeft een gratis abonnement met tot 2 onderwerpen, 100 foto's, berichten, kindinformatie, contacten, paklijsten en een zorgschema. Lina+ kost 79 kr/maand en ontgrendelt onbeperkte onderwerpen, een groter album, zoeken in onderwerpen, onderwerpen exporteren en belangrijke berichten. Eén abonnement voor beide ouders." },
+      { "q": "Moeten beide ouders betalen?", "a": "Nee. Eén Lina+-abonnement geldt voor beide ouders. De abonnerende ouder geeft beide ouders volledige toegang — de andere ouder hoeft nooit te betalen." },
+      { "q": "Is Lina privé en veilig?", "a": "Ja. Lina heeft geen reclame, geen gegevensdeling met derden en geen algoritme dat bepaalt wat u ziet. Uw informatie blijft tussen de twee ouders." },
+      { "q": "Kunnen berichten worden bewerkt of verwijderd?", "a": "Nee. Berichten in Lina kunnen na verzending niet worden bewerkt of verwijderd. Dit zorgt voor een duidelijk, betrouwbaar overzicht van wat er is gecommuniceerd en afgesproken." }
+    ],
+    "faqFaq": [
+      { "q": "Wat is Lina?", "a": "Lina is een co-ouderschapsapp die praktische details — kindinformatie, berichten, foto's, contacten en paklijsten — samenbrengt op één gedeelde plek die toegankelijk is vanuit beide huishoudens." },
+      { "q": "Is Lina gratis?", "a": "Ja, Lina kan gratis worden gedownload en gebruikt. Er is geen betaling vereist om een account aan te maken of de andere ouder uit te nodigen." },
+      { "q": "Kan ik het zorgschema exporteren?", "a": "Ja, u kunt het zorgschema direct vanuit de tool exporteren als PDF." },
+      { "q": "Wie kan de informatie van het kind zien?", "a": "Alleen de twee ouders die in Lina zijn verbonden met het kind, hebben toegang tot de informatie van het kind." },
+      { "q": "Kunnen berichten worden verwijderd of bewerkt?", "a": "Nee, berichten in Lina kunnen na verzending niet worden bewerkt of verwijderd, wat voor een duidelijk en betrouwbaar overzicht zorgt." }
+    ],
+    "csFaq": [
+      { "q": "Wat is een zorgschema?", "a": "Een zorgschema is een visueel overzicht van hoe de tijd van een kind week voor week wordt verdeeld tussen twee huishoudens." },
+      { "q": "Heb ik een account nodig?", "a": "Nee, de zorgschematool kan direct in de browser worden gebruikt zonder account." },
+      { "q": "Kan ik het schema exporteren?", "a": "Ja, u kunt het zorgschema exporteren als PDF." }
+    ],
+    "caFaq": [
+      { "q": "Wat moet een ouderschapsplan bevatten?", "a": "Een goed ouderschapsplan moet de zorgregeling, verblijfplaats, ophalen en brengen, vakantieverdeling, kostenverdeling, communicatie, reizen en routines voor wijzigingen bevatten." },
+      { "q": "Is een ouderschapsplan juridisch bindend?", "a": "In Nederland is een ouderschapsplan verplicht bij scheiding wanneer er minderjarige kinderen zijn. Een privé-ouderschapsplan biedt structuur en voorspelbaarheid voor beide partijen en het kind." },
+      { "q": "Waar kan ik een ouderschapsplan opstellen?", "a": "In Nederland is een ouderschapsplan verplicht bij scheiding. Een familiemediator of het Juridisch Loket kan hierbij helpen. In veel andere landen kunnen officiële gezinsdiensten of bemiddelingscentra helpen." }
+    ],
+    "pricingFaq": [
+      { "q": "Hoeveel kost Lina?", "a": "Lina heeft een gratis abonnement met basisfuncties. Lina+ kost 79 kr per maand met een proefperiode van 2 weken." },
+      { "q": "Moet de andere ouder ook betalen?", "a": "Nee. Eén Lina+-abonnement geldt voor beide ouders." },
+      { "q": "Kan ik op elk moment opzeggen?", "a": "Ja. Geen verplichting. Op elk moment opzeggen via de App Store of Google Play." },
+      { "q": "Wat is inbegrepen in het gratis abonnement?", "a": "Tot 2 onderwerpen, 100 foto's, berichten, kindinformatie, contacten, paklijsten en een zorgschema." }
+    ]
+  }
+}

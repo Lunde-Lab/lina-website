@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="nl" data-i18n-title="cs.pageTitle" data-i18n-desc="cs.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/nl/care-schedule/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/care-schedule/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/care-schedule/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/care-schedule/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/care-schedule/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/care-schedule/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/care-schedule/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/care-schedule/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/care-schedule/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Zorgschema — Lina</title>
+  <meta name="description" content="Plan en visualiseer het zorgschema van uw kind tussen twee huishoudens. Gratis tool met dagverdeling, weekendoverzicht en PDF-export." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getlina.app/nl/care-schedule/" />
+  <meta property="og:title" content="Zorgschema — Lina" />
+  <meta property="og:description" content="Plan en visualiseer het zorgschema van uw kind tussen twee huishoudens. Gratis tool met dagverdeling, weekendoverzicht en PDF-export." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zorgschema — Lina" />
+  <meta name="twitter:description" content="Plan en visualiseer het zorgschema van uw kind tussen twee huishoudens. Gratis tool met dagverdeling, weekendoverzicht en PDF-export." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0B6057;
+      --amber: #E0A040;
+      --amber-dark: #c8902e;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --text-muted: #A1A7AF;
+      --border: #DEDFE2;
+      --border-subtle: #E8E8EA;
+      --surface-card: #FFFFFF;
+      --surface-subtle: #F3F3F1;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    /* ── Main ── */
+    main { padding: 48px 24px 80px; }
+    .container { max-width: 1080px; margin: 0 auto; }
+
+    .page-header { margin-bottom: 32px; }
+    .page-header h1 {
+      font-size: clamp(24px, 4vw, 36px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .page-header p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-top: 6px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(26,30,35,0.06);
+    }
+
+    /* ── Top controls ── */
+    .controls-bar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .inputs-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .input-field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .input-field label {
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text-secondary);
+    }
+    .input-field input {
+      height: 34px;
+      padding: 0 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text);
+      background: var(--surface-card);
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      width: 148px;
+    }
+    .input-field input:focus {
+      border-color: #B4DAD6;
+      box-shadow: 0 0 0 3px #E9F5F3;
+    }
+
+    .btn-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    /* Stepper */
+    .stepper {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--surface-card);
+    }
+    .stepper-btn {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      width: 36px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text);
+      transition: background 0.13s;
+      line-height: 1;
+    }
+    .stepper-btn:hover { background: var(--surface-subtle); }
+    .stepper-btn:active { background: var(--border); }
+    .stepper-label {
+      height: 34px;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      border-left: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      background: var(--surface-subtle);
+      white-space: nowrap;
+      min-width: 80px;
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      height: 34px;
+      padding: 0 14px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.13s, border-color 0.13s;
+      border: 1px solid var(--border);
+      background: var(--surface-subtle);
+      color: var(--text);
+      white-space: nowrap;
+    }
+    .btn:hover { background: var(--border-subtle); }
+    .btn-danger { color: #C1443A; }
+    .btn-danger:hover { background: #F5D6D3; border-color: #e8c0c0; }
+    .btn-primary {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+    .btn-primary:hover { background: #2c333b; }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .legend-swatch {
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+    .legend-swatch-a { background: var(--primary); }
+    .legend-swatch-b { background: var(--amber); }
+
+    .btn-active {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+    .btn-active:hover { background: #2c333b; }
+
+    /* ── Grid ── */
+    .grid-scroll {
+      overflow-x: auto;
+      border-radius: 8px;
+      width: 100%;
+    }
+    #schedule-grid {
+      width: fit-content;
+    }
+    .grid-scroll::-webkit-scrollbar { height: 8px; }
+    .grid-scroll::-webkit-scrollbar-track { background: transparent; }
+    .grid-scroll::-webkit-scrollbar-thumb {
+      background: rgba(80,86,94,0.2);
+      border-radius: 999px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+
+    .schedule-table {
+      border-collapse: separate;
+      border-spacing: 4px;
+      width: max-content;
+    }
+
+    /* Week header row */
+    .th-week {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-align: center;
+      padding: 2px 6px 6px;
+      letter-spacing: 0.04em;
+    }
+    /* Day header row */
+    .th-day {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-align: center;
+      padding: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      min-width: 34px;
+    }
+    .th-day.weekend { color: var(--text-secondary); }
+    .th-date {
+      font-size: 9px;
+      font-weight: 400;
+      color: var(--text-muted);
+      text-transform: none;
+      letter-spacing: 0;
+      margin-top: 2px;
+    }
+
+    /* Week separator in data row */
+    .td-week-sep { padding-left: 6px; }
+
+    /* Cell */
+    .cell-wrap {
+      padding: 2px;
+    }
+    .cell-wrap.weekend { background: rgba(243,243,241,0.5); border-radius: 4px; }
+
+    .cell {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.12s, border-color 0.12s, box-shadow 0.12s;
+      user-select: none;
+    }
+    .cell:hover { background: var(--surface-subtle); border-color: #C8CBCF; }
+    .cell:active { transform: scale(0.96); }
+    .cell:focus-visible {
+      outline: none;
+      border-color: #B4DAD6;
+      box-shadow: 0 0 0 3px #E9F5F3;
+    }
+
+    .cell.on-a {
+      background: rgba(13, 107, 100, 0.15);
+      border-color: rgba(13, 107, 100, 0.45);
+      box-shadow: inset 0 0 0 1px rgba(13, 107, 100, 0.2);
+    }
+    .cell.on-a:hover { background: rgba(13, 107, 100, 0.22); }
+
+    .cell.on-b {
+      background: rgba(224, 160, 64, 0.15);
+      border-color: rgba(224, 160, 64, 0.45);
+      box-shadow: inset 0 0 0 1px rgba(224, 160, 64, 0.2);
+    }
+    .cell.on-b:hover { background: rgba(224, 160, 64, 0.22); }
+
+    /* Divider between week groups in table body */
+    .td-sep { padding-left: 8px; }
+    .row-divider { height: 8px; }
+
+    /* ── Stats ── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .stat-card {
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .stat-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .stat-row:last-child { margin-bottom: 0; }
+    .stat-row.muted { color: var(--text-secondary); }
+    .stat-val { font-weight: 500; }
+    .stat-bar-wrap {
+      height: 3px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+      margin: 4px 0 8px;
+    }
+    .stat-bar-fill {
+      height: 100%;
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+    .stat-bar-a { background: var(--primary); }
+    .stat-bar-b { background: var(--amber); }
+    .stat-big {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .stat-sub { font-size: 13px; color: var(--text-secondary); }
+    .stat-divider {
+      border: none;
+      border-top: 1px solid var(--border-subtle);
+      margin: 12px 0;
+    }
+
+    /* ── Export card ── */
+    .export-card {
+      margin-top: 12px;
+    }
+    .export-card .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .export-info h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .export-info p {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .stats-grid { grid-template-columns: 1fr; }
+      .controls-bar { flex-direction: column; }
+      .input-field input { width: 100%; }
+      .export-card .card { flex-direction: column; align-items: flex-start; }
+      .how-to-use-steps { flex-direction: column; gap: 8px; }
+    }
+
+    @media (max-width: 640px) {
+      #schedule-grid { width: 100%; }
+      .schedule-table { width: 100%; border-spacing: 3px; }
+      .th-day { min-width: unset; width: calc(100% / 7); }
+      .cell { width: 100%; height: auto; aspect-ratio: 1; border-radius: 6px; }
+    }
+
+    /* ── CTA section ── */
+    #cta { background: var(--primary); padding: 64px 24px; }
+    .cta-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+    #cta h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    #cta p { font-size: 16px; color: rgba(255,255,255,0.75); margin-bottom: 8px; }
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--text);
+      color: #fff;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    @media print { nav, footer, .btn-row, .export-card, #cta { display: none !important; } }
+
+    /* ── Language switcher ── */
+    .lang-switcher {
+      position: relative;
+    }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover {
+      border-color: var(--primary);
+      color: var(--text);
+    }
+    .lang-btn svg {
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .lang-switcher.open .lang-btn svg {
+      transform: rotate(180deg);
+    }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown {
+      display: block;
+    }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover {
+      background: var(--bg);
+    }
+    .lang-option.active {
+      color: var(--primary);
+      font-weight: 500;
+    }
+    .lang-flag {
+      font-size: 16px;
+      line-height: 1;
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is een zorgschema?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een zorgschema is een visueel overzicht van hoe de tijd van een kind week voor week wordt verdeeld tussen twee huishoudens."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heb ik een account nodig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, de zorgschematool kan direct in de browser worden gebruikt zonder account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik het schema exporteren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, u kunt het zorgschema exporteren als PDF."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/nl/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/nl/care-schedule/" data-i18n="footer.careSchedule">Zorgschema</a>
+        <a href="/nl/care-agreement/" data-i18n="footer.careAgreement">Ouderschapsplan</a>
+        <a href="/nl/pricing/" data-i18n="footer.pricing">Prijzen</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">NL</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/care-schedule/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/en/care-schedule/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/sv/care-schedule/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/care-schedule/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/care-schedule/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/care-schedule/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option active" href="/nl/care-schedule/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <h1 data-i18n="cs.heading">Zorgschema</h1>
+        <p id="page-subhead" data-i18n="cs.subhead">Zie hoe de tijd wordt verdeeld tussen de huishoudens — week voor week.</p>
+        <p data-i18n="cs.intro" style="font-size: 15px; color: var(--text-secondary); margin-top: 6px; max-width: 620px; line-height: 1.65;">Klik op de dagen om ze aan een ouder toe te wijzen. De verdeling wordt automatisch bijgewerkt en u kunt het schema exporteren als PDF.</p>
+      </div>
+
+
+      <div class="card" style="margin-bottom: 12px;">
+
+        <!-- Controls -->
+        <div class="controls-bar">
+          <div class="inputs-group">
+            <div class="input-field">
+              <label for="input-a" data-i18n="cs.labelParentA">Naam ouder A</label>
+              <input id="input-a" type="text" autocomplete="off" spellcheck="false" placeholder="Parent A" />
+            </div>
+            <div class="input-field">
+              <label for="input-b" data-i18n="cs.labelParentB">Naam ouder B</label>
+              <input id="input-b" type="text" autocomplete="off" spellcheck="false" placeholder="Parent B" />
+            </div>
+            <div class="input-field" id="date-field" style="display:none;">
+              <label for="input-start-date" data-i18n="cs.labelStartDate">Startdatum</label>
+              <input id="input-start-date" type="date" />
+            </div>
+          </div>
+          <div class="btn-row">
+            <button class="btn" id="btn-toggle-dates" data-i18n="cs.toggleDates">Datums</button>
+            <div class="stepper">
+              <button class="stepper-btn" id="btn-minus" aria-label="Remove week">−</button>
+              <div class="stepper-label" id="stepper-label">2 weeks</div>
+              <button class="stepper-btn" id="btn-plus" aria-label="Add week">+</button>
+            </div>
+            <button class="btn btn-danger" id="btn-reset" data-i18n="cs.reset">Opnieuw instellen</button>
+          </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+          <div class="legend-item">
+            <span class="legend-swatch legend-swatch-a"></span>
+            <span id="legend-a">Parent A</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-swatch legend-swatch-b"></span>
+            <span id="legend-b">Parent B</span>
+          </div>
+        </div>
+
+        <!-- Schedule grid -->
+        <div class="grid-scroll" id="grid-scroll">
+          <div id="schedule-grid"></div>
+        </div>
+
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-grid" id="stats-grid"></div>
+
+      <!-- Export -->
+      <div class="export-card">
+        <div class="card">
+          <div class="export-info">
+            <h3 data-i18n="cs.exportPdf">Exporteren als PDF</h3>
+            <p data-i18n="cs.exportDesc">Druk het schema af of sla het op als PDF.</p>
+          </div>
+          <button class="btn btn-primary" id="btn-export" data-i18n="cs.exportPdf">Exporteren als PDF</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-inner">
+      <h2 data-i18n="cta.title">Één veilig kanaal tussen twee ouders.</h2>
+      <p data-i18n="cta.description">Lina brengt alles wat uw kind nodig heeft samen in één gedeelde, georganiseerde ruimte. Download de app en begin binnen enkele minuten.</p>
+      <div class="hero-ctas">
+        <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          <span data-i18n="hero.cta">Download in de App Store</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+          </svg>
+          <span data-i18n="hero.ctaPlay">Verkrijgbaar bij Google Play</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/nl/care-schedule/" data-i18n="footer.careSchedule">Zorgschema</a>
+          <a href="/nl/care-agreement/" data-i18n="footer.careAgreement">Ouderschapsplan</a>
+          <a href="/nl/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/nl/professionals.html" data-i18n="footer.familievern">Professionals</a>
+          <a href="/nl/stories/" data-i18n="footer.stories">Verhalen</a>
+          <a href="/nl/pricing/" data-i18n="footer.pricing">Prijzen</a>
+          <a href="/nl/about/" data-i18n="footer.about">Over ons</a>
+          <a href="/nl/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/nl/terms/" data-i18n="footer.terms">Gebruiksvoorwaarden</a>
+          <a href="/nl/privacy/" data-i18n="footer.privacy">Privacybeleid</a>
+          <a href="/nl/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/nl/account-deletion.html" data-i18n="footer.accountDeletion">Account verwijderen</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    'use strict';
+
+    const STORAGE_KEY = 'lina-care-schedule-v2';
+    const DAYS = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+    const DAYS_I18N = ['cs.mon','cs.tue','cs.wed','cs.thu','cs.fri','cs.sat','cs.sun'];
+    const MAX_WEEKS = 12;
+    const MIN_WEEKS = 2;
+    const WEEKS_PER_ROW_DESKTOP = 2;
+    function getWeeksPerRow() { return window.innerWidth <= 640 ? 1 : WEEKS_PER_ROW_DESKTOP; }
+
+    let T = null;
+    let state = defaultState();
+
+    function defaultState() {
+      return {
+        nameA: '',
+        nameB: '',
+        weeks: 2,
+        useDates: false,
+        startDate: '',
+        // assignment[i] = 'A' | 'B' | null per day
+        assignment: Array(14).fill(null)
+      };
+    }
+
+    // ── Persistence ──────────────────────────────────────────────────────────
+    function save() {
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(_) {}
+    }
+
+    function load() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+        const p = JSON.parse(raw);
+        state.nameA = p.nameA || '';
+        state.nameB = p.nameB || '';
+        state.weeks = Math.max(MIN_WEEKS, Math.min(MAX_WEEKS, p.weeks | 0)) || MIN_WEEKS;
+        state.useDates = !!p.useDates;
+        state.startDate = p.startDate || '';
+        const len = state.weeks * 7;
+        if (Array.isArray(p.assignment)) {
+          const a = p.assignment.slice(0, len);
+          while (a.length < len) a.push(null);
+          state.assignment = a;
+        }
+      } catch(_) {}
+    }
+
+    // ── Stats ────────────────────────────────────────────────────────────────
+    function calcStats() {
+      const { assignment, weeks } = state;
+      let aTotal = 0, bTotal = 0, aWknd = 0, bWknd = 0;
+      let fullWkA = 0, fullWkB = 0, switches = 0;
+
+      for (let i = 0; i < assignment.length; i++) {
+        const v = assignment[i];
+        const dow = i % 7;
+        if (v === 'A') { aTotal++; if (dow >= 4) aWknd++; }
+        if (v === 'B') { bTotal++; if (dow >= 4) bWknd++; }
+      }
+
+      for (let w = 0; w < weeks; w++) {
+        const base = w * 7;
+        const fri = assignment[base + 4];
+        const sat = assignment[base + 5];
+        const sun = assignment[base + 6];
+        if (fri === 'A' && sat === 'A' && sun === 'A') fullWkA++;
+        if (fri === 'B' && sat === 'B' && sun === 'B') fullWkB++;
+      }
+
+      let last = null;
+      for (let i = 0; i < assignment.length; i++) {
+        const v = assignment[i];
+        if (v && last && v !== last) switches++;
+        if (v) last = v;
+      }
+
+      const totalDays = weeks * 7;
+      const totalWknd = weeks * 3;
+      return { aTotal, bTotal, aWknd, bWknd, fullWkA, fullWkB, switches, totalDays, totalWknd };
+    }
+
+    // ── Label helpers ────────────────────────────────────────────────────────
+    function nameA() { return state.nameA.trim() || 'Parent A'; }
+    function nameB() { return state.nameB.trim() || 'Parent B'; }
+    function dayLabel(i) { return (T && T.cs) ? (T.cs[['mon','tue','wed','thu','fri','sat','sun'][i]] || DAYS[i]) : DAYS[i]; }
+    function weeksLabel(n) { return (T && T.cs) ? n + ' ' + (T.cs.weeksUnit || 'weeks') : n + ' weeks'; }
+
+    // ── Date helpers ─────────────────────────────────────────────────────────
+    function snapToMonday(dateStr) {
+      const d = new Date(dateStr + 'T00:00:00');
+      const dow = d.getDay(); // 0=Sun
+      const diff = dow === 0 ? -6 : 1 - dow;
+      d.setDate(d.getDate() + diff);
+      return d.toISOString().slice(0, 10);
+    }
+    function dateForIdx(globalDayIdx) {
+      if (!state.useDates || !state.startDate) return null;
+      const d = new Date(state.startDate + 'T00:00:00');
+      d.setDate(d.getDate() + globalDayIdx);
+      return d;
+    }
+    function formatDateShort(d) {
+      const dd = String(d.getDate()).padStart(2, '0');
+      const mm = String(d.getMonth() + 1).padStart(2, '0');
+      return `${dd}.${mm}`;
+    }
+
+    // ── Render grid ──────────────────────────────────────────────────────────
+    function renderGrid() {
+      const container = document.getElementById('schedule-grid');
+      if (!container) return;
+
+      const wpr = getWeeksPerRow();
+      const rowCount = Math.ceil(state.weeks / wpr);
+      let html = '';
+
+      for (let row = 0; row < rowCount; row++) {
+        const startWeek = row * wpr;
+        const weeksInRow = Math.min(wpr, state.weeks - startWeek);
+        const daysInRow = weeksInRow * 7;
+        const baseDayIdx = startWeek * 7;
+
+        if (row > 0) {
+          html += `<div style="height:10px;margin:10px 0 0;border-top:1px solid var(--border-subtle);"></div>`;
+        }
+
+        html += `<table class="schedule-table" role="grid">`;
+
+        // Row 1: week headers
+        html += `<thead><tr>`;
+        for (let w = 0; w < weeksInRow; w++) {
+          const wn = startWeek + w + 1;
+          html += `<th colspan="7" class="th-week">${(T && T.cs && T.cs.week) || 'Week'} ${wn}</th>`;
+          if (w < weeksInRow - 1) html += `<th style="width:14px;"></th>`;
+        }
+        html += `</tr>`;
+
+        // Row 2: day headers
+        html += `<tr>`;
+        for (let w = 0; w < weeksInRow; w++) {
+          for (let d = 0; d < 7; d++) {
+            const isWe = d >= 5;
+            const dateD = dateForIdx(baseDayIdx + w * 7 + d);
+            const dateSub = dateD ? `<div class="th-date">${formatDateShort(dateD)}</div>` : '';
+            html += `<th class="th-day${isWe ? ' weekend' : ''}">${dayLabel(d)}${dateSub}</th>`;
+          }
+          if (w < weeksInRow - 1) html += `<th style="width:14px;"></th>`;
+        }
+        html += `</tr></thead><tbody>`;
+
+        // Data rows: one per parent
+        for (const [ri, who] of [['A'], ['B']].entries()) {
+          const parent = who[0];
+          const isA = parent === 'A';
+          const lbl = isA ? nameA() : nameB();
+
+          html += `<tr>`;
+
+          for (let w = 0; w < weeksInRow; w++) {
+            for (let d = 0; d < 7; d++) {
+              const globalIdx = baseDayIdx + w * 7 + d;
+              const val = state.assignment[globalIdx];
+              const isOn = val === parent;
+              const isWe = d >= 5;
+              const onClass = isOn ? (isA ? 'on-a' : 'on-b') : '';
+              html += `<td>`;
+              html += `<div class="cell ${onClass}" data-idx="${globalIdx}" data-who="${parent}" tabindex="0" role="button" aria-label="${esc(lbl)} day ${globalIdx + 1}" aria-pressed="${isOn}"></div>`;
+              html += `</td>`;
+            }
+            if (w < weeksInRow - 1) html += `<td style="width:14px;"></td>`;
+          }
+          html += `</tr>`;
+
+          // Small gap row between A and B
+          if (isA) html += `<tr><td style="height:4px;"></td></tr>`;
+        }
+
+        html += `</tbody></table>`;
+      }
+
+      container.innerHTML = html;
+
+      // Attach events via delegation
+      container.querySelectorAll('.cell').forEach(cell => {
+        cell.addEventListener('click', onCellClick);
+        cell.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            onCellClick.call(cell, e);
+          }
+        });
+      });
+    }
+
+    function onCellClick() {
+      const idx = parseInt(this.dataset.idx, 10);
+      const who = this.dataset.who;
+      const cur = state.assignment[idx];
+      state.assignment[idx] = (cur === who) ? null : who;
+      save();
+      renderGrid();
+      renderStats();
+    }
+
+    function esc(s) {
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    // ── Render stats ─────────────────────────────────────────────────────────
+    function renderStats() {
+      const sg = document.getElementById('stats-grid');
+      if (!sg) return;
+      const s = calcStats();
+      const pct = (n, tot) => tot > 0 ? Math.round(n / tot * 100) : 0;
+      const la = esc(nameA());
+      const lb = esc(nameB());
+
+      const aPct = pct(s.aTotal, s.totalDays);
+      const bPct = pct(s.bTotal, s.totalDays);
+      const aWPct = pct(s.aWknd, s.totalWknd);
+      const bWPct = pct(s.bWknd, s.totalWknd);
+
+      const daysTxt = (T && T.cs && T.cs.days) || 'days';
+      const ofTxt = (T && T.cs && T.cs.of) || 'of';
+      const splitTitle = (T && T.cs && T.cs.statsDaySplit) || 'Day split';
+      const wkndTitle = (T && T.cs && T.cs.statsWeekendSplit) || 'Weekend split (Fri–Sun)';
+      const fullWkTitle = (T && T.cs && T.cs.statsFullWeekends) || 'Full weekends';
+      const switchTitle = (T && T.cs && T.cs.statsSwitches) || 'Total switches';
+
+      sg.innerHTML = `
+        <div class="stat-card">
+          <div class="stat-title">${esc(splitTitle)}</div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--primary);display:inline-block;flex-shrink:0;"></span>${la}</span>
+            <span class="stat-val">${s.aTotal} ${daysTxt} · ${aPct}%</span>
+          </div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-a" style="width:${aPct}%"></div></div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--amber);display:inline-block;flex-shrink:0;"></span>${lb}</span>
+            <span class="stat-val">${s.bTotal} ${daysTxt} · ${bPct}%</span>
+          </div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-b" style="width:${bPct}%"></div></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-title">${esc(wkndTitle)}</div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--primary);display:inline-block;flex-shrink:0;"></span>${la}</span>
+            <span class="stat-val">${s.aWknd} ${daysTxt} · ${aWPct}%</span>
+          </div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-a" style="width:${aWPct}%"></div></div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--amber);display:inline-block;flex-shrink:0;"></span>${lb}</span>
+            <span class="stat-val">${s.bWknd} ${daysTxt} · ${bWPct}%</span>
+          </div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill stat-bar-b" style="width:${bWPct}%"></div></div>
+          <hr class="stat-divider" />
+          <div class="stat-title" style="margin-bottom:8px;">${esc(fullWkTitle)}</div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--primary);display:inline-block;flex-shrink:0;"></span>${la}</span>
+            <span class="stat-val">${s.fullWkA} ${ofTxt} ${state.weeks}</span>
+          </div>
+          <div class="stat-row">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--amber);display:inline-block;flex-shrink:0;"></span>${lb}</span>
+            <span class="stat-val">${s.fullWkB} ${ofTxt} ${state.weeks}</span>
+          </div>
+        </div>
+
+        <div class="stat-card" style="grid-column: 1 / -1; display:flex; align-items:center; gap:24px; flex-wrap:wrap;">
+          <div>
+            <div class="stat-big">${s.switches}</div>
+            <div class="stat-sub">${esc(switchTitle)}</div>
+          </div>
+          <div style="height:40px;width:1px;background:var(--border-subtle);"></div>
+          <div>
+            <div class="stat-big">${state.weeks * 7}</div>
+            <div class="stat-sub">${esc((T && T.cs && T.cs.totalDaysPlanned) || 'Total days planned')}</div>
+          </div>
+          <div style="height:40px;width:1px;background:var(--border-subtle);"></div>
+          <div>
+            <div class="stat-big">${s.totalDays - s.aTotal - s.bTotal}</div>
+            <div class="stat-sub">${esc((T && T.cs && T.cs.unassignedDays) || 'Unassigned days')}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    // ── Controls ─────────────────────────────────────────────────────────────
+    function updateLegend() {
+      const a = document.getElementById('legend-a');
+      const b = document.getElementById('legend-b');
+      if (a) a.textContent = nameA();
+      if (b) b.textContent = nameB();
+    }
+
+    function updateStepperLabel() {
+      const el = document.getElementById('stepper-label');
+      if (el) el.textContent = weeksLabel(state.weeks);
+    }
+
+    function setWeeks(n) {
+      n = Math.max(MIN_WEEKS, Math.min(MAX_WEEKS, n));
+      if (n === state.weeks) return;
+      if (n > state.weeks) {
+        const extra = (n - state.weeks) * 7;
+        state.assignment = [...state.assignment, ...Array(extra).fill(null)];
+      } else {
+        state.assignment = state.assignment.slice(0, n * 7);
+      }
+      state.weeks = n;
+      save();
+      updateStepperLabel();
+      renderGrid();
+      renderStats();
+    }
+
+    // ── PDF export ────────────────────────────────────────────────────────────
+    function exportPDF() {
+      const la = nameA(), lb = nameB();
+      const s = calcStats();
+      const pct = (n,tot) => tot > 0 ? Math.round(n/tot*100)+'%' : '0%';
+      const rowCount = Math.ceil(state.weeks / WEEKS_PER_ROW_DESKTOP);
+
+      let tablesHtml = '';
+      for (let row = 0; row < rowCount; row++) {
+        const startWeek = row * WEEKS_PER_ROW_DESKTOP;
+        const weeksInRow = Math.min(WEEKS_PER_ROW_DESKTOP, state.weeks - startWeek);
+        const baseDayIdx = startWeek * 7;
+
+        const showLabel = row % 2 === 0;
+        const labelSpacer = `<th style="width:80px;"></th>`;
+
+        const weekHeaders = Array.from({length: weeksInRow}).map((_,w) =>
+          `<th colspan="7" style="font-size:10px;font-weight:600;color:#50565E;text-align:center;padding:4px 0;">Week ${startWeek+w+1}</th>`
+        ).join('');
+
+        const dayHeaders = Array.from({length: weeksInRow * 7}).map((_,i) => {
+          const dateD = state.useDates && state.startDate ? (() => {
+            const d = new Date(state.startDate + 'T00:00:00');
+            d.setDate(d.getDate() + baseDayIdx + i);
+            return d;
+          })() : null;
+          const dateSub = dateD ? (() => { const dd = String(dateD.getDate()).padStart(2,'0'); const mm = String(dateD.getMonth()+1).padStart(2,'0'); return `<div style="font-size:8px;font-weight:400;color:#A1A7AF;margin-top:1px;">${dd}.${mm}</div>`; })() : '';
+          return `<th style="font-size:9px;font-weight:600;color:#A1A7AF;text-align:center;padding:0 0 4px;min-width:20px;">${DAYS[i%7]}${dateSub}</th>`;
+        }).join('');
+
+        const makeRow = (parent, label, color) => {
+          const cells = Array.from({length: weeksInRow * 7}).map((_,i) => {
+            const gi = baseDayIdx + i;
+            const on = state.assignment[gi] === parent;
+            const bg = on ? (parent === 'A' ? '#D4EAE8' : '#FAE8C8') : '#F3F3F1';
+            const border = on ? (parent === 'A' ? '#7BB8B3' : '#D4A055') : '#DEDFE2';
+            return `<td style="width:28px;height:28px;border-radius:6px;border:1px solid ${border};background:${bg};"></td>`;
+          }).join('');
+          const labelTd = showLabel
+            ? `<td style="font-size:11px;font-weight:600;color:#1A1E23;white-space:nowrap;padding-right:10px;border-left:3px solid ${color};padding-left:6px;vertical-align:middle;">${esc(label)}</td>`
+            : `<td></td>`;
+          return `<tr>${labelTd}${cells}</tr>`;
+        };
+
+        tablesHtml += `<table style="border-collapse:separate;border-spacing:4px;margin-bottom:12px;">
+          <thead>
+            <tr>${labelSpacer}${weekHeaders}</tr>
+            <tr>${labelSpacer}${dayHeaders}</tr>
+          </thead>
+          <tbody>
+            ${makeRow('A', la, '#0D6B64')}
+            <tr><td style="height:4px;"></td></tr>
+            ${makeRow('B', lb, '#E0A040')}
+          </tbody>
+        </table>`;
+      }
+
+      const daysTxt = 'days';
+      const linaLogoSvg = `<div style="text-align:center;margin-bottom:12px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 189.82" height="28" style="display:inline-block;"><path fill="#0D6B64" d="M90.12,142.08V45.36c0-.11,0-.22,0-.32s0-.22,0-.33V41.87H90A45,45,0,0,0,45.11,0,45.08,45.08,0,0,0,0,45v71.17l0,0v71H45.08a45,45,0,0,0,45-45"/><path fill="#0D6B64" d="M174,110.28a45,45,0,0,0-76.89,31.79A51.88,51.88,0,0,1,71,187.17h71.18A45.06,45.06,0,0,0,174,110.28"/><polygon fill="#0D6B64" points="223.55 187.42 223.55 9.32 265.87 9.32 265.87 152.52 341.29 152.52 341.29 187.42 223.55 187.42"/><path fill="#0D6B64" d="M382.64,40.52a22,22,0,0,1-15.53-5.86,18.75,18.75,0,0,1-6.34-14.34,18.88,18.88,0,0,1,6.34-14.46,23.36,23.36,0,0,1,30.95,0,18.88,18.88,0,0,1,6.34,14.46,18.75,18.75,0,0,1-6.34,14.34,21.86,21.86,0,0,1-15.42,5.86M361.85,55.46h41.6v132h-41.6Z"/><path fill="#0D6B64" d="M471.58,112.84v74.58H430v-132h39.57l.6,33.71H467.4Q472.53,73,483.12,63.29t28.38-9.74q14,0,24.21,6.15a41.41,41.41,0,0,1,15.84,17.45q5.61,11.31,5.61,26.48v83.79H515.57V111.76q0-11.24-5.68-17.51T494.05,88a23.15,23.15,0,0,0-11.77,2.93,19.93,19.93,0,0,0-7.89,8.43,29.36,29.36,0,0,0-2.81,13.51"/><path fill="#0D6B64" d="M621.35,189.82a55.86,55.86,0,0,1-22.71-4.37,34.74,34.74,0,0,1-15.54-13q-5.62-8.59-5.62-21.75,0-11,3.89-18.53A32.87,32.87,0,0,1,592.12,120,52.74,52.74,0,0,1,608,112.72a101.47,101.47,0,0,1,19.13-3.35q11.34-1,18.28-2.09t10-3.35a7.13,7.13,0,0,0,3.1-6.16v-.59a13.21,13.21,0,0,0-2.15-7.59,13.43,13.43,0,0,0-6.15-4.84,25.24,25.24,0,0,0-9.75-1.68,27.36,27.36,0,0,0-10.1,1.73,18.81,18.81,0,0,0-7.17,4.85,15.93,15.93,0,0,0-3.76,7.29l-37.89-3.82a44.32,44.32,0,0,1,9.86-20.87q7.58-8.9,20.14-13.8t29.64-4.9a89.12,89.12,0,0,1,23.43,2.93,58.17,58.17,0,0,1,18.7,8.6A38.6,38.6,0,0,1,700,98v89.4H660.55V168.9h-.95a38.42,38.42,0,0,1-9,11.47,36.91,36.91,0,0,1-12.73,7,52.63,52.63,0,0,1-16.49,2.4M634,162.32a28,28,0,0,0,12.61-2.81,22.41,22.41,0,0,0,9-7.77,20.1,20.1,0,0,0,3.29-11.41V127.78a19.83,19.83,0,0,1-4.3,1.73q-2.64.78-5.74,1.5t-6.39,1.25l-6.4,1a35.51,35.51,0,0,0-10.28,2.86,16.74,16.74,0,0,0-6.57,5.15,12.36,12.36,0,0,0-2.27,7.52,12.18,12.18,0,0,0,2.21,7.36,13.56,13.56,0,0,0,6,4.6,23.5,23.5,0,0,0,8.85,1.55"/></svg></div>`;
+      const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"/>
+        <title>Care Schedule</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+        <style>
+          body{font-family:'Inter',system-ui,-apple-system,sans-serif;margin:32px;color:#1A1E23;font-size:13px;background:#F8F8F6;}
+          h1{font-size:18px;font-weight:600;margin:0 0 4px;letter-spacing:-0.01em;}
+          .meta{font-size:12px;color:#50565E;margin-bottom:20px;}
+          .stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:20px;}
+          .stat-card{border:1px solid #DEDFE2;border-radius:8px;padding:10px 14px;}
+          .st{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:#50565E;margin-bottom:6px;}
+          .sr{display:flex;justify-content:space-between;font-size:11px;margin-bottom:2px;}
+          .pdf-footer{margin-top:32px;padding-top:16px;border-top:1px solid #DEDFE2;}
+          * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+          @media print{@page{margin:12mm;}}
+        </style>
+      </head><body>
+        ${linaLogoSvg}
+        <h1>Care Schedule</h1>
+        <p class="meta">${esc(la)} &amp; ${esc(lb)} · ${state.weeks} weeks · ${state.weeks * 7} days</p>
+        <div class="stats">
+          <div class="stat-card">
+            <div class="st">Day split</div>
+            <div class="sr"><span>${esc(la)}</span><span>${s.aTotal} ${daysTxt} · ${pct(s.aTotal,s.totalDays)}</span></div>
+            <div class="sr"><span>${esc(lb)}</span><span>${s.bTotal} ${daysTxt} · ${pct(s.bTotal,s.totalDays)}</span></div>
+          </div>
+          <div class="stat-card">
+            <div class="st">Weekend split (Fri–Sun)</div>
+            <div class="sr"><span>${esc(la)}</span><span>${s.aWknd} ${daysTxt} · ${pct(s.aWknd,s.totalWknd)}</span></div>
+            <div class="sr"><span>${esc(lb)}</span><span>${s.bWknd} ${daysTxt} · ${pct(s.bWknd,s.totalWknd)}</span></div>
+          </div>
+          <div class="stat-card">
+            <div class="st">Overview</div>
+            <div class="sr"><span>Switches</span><span>${s.switches}</span></div>
+            <div class="sr"><span>Full weekends ${esc(la)}</span><span>${s.fullWkA}</span></div>
+            <div class="sr"><span>Full weekends ${esc(lb)}</span><span>${s.fullWkB}</span></div>
+          </div>
+        </div>
+        ${tablesHtml}
+        <div class="pdf-footer" style="text-align:center;">
+          <p style="margin:0 0 4px;font-size:12px;color:#50565E;">One shared place for your child — across homes</p>
+          <p style="margin:0;font-size:12px;font-weight:600;color:#0D6B64;">Download Lina on <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" style="color:#0D6B64;">the App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" style="color:#0D6B64;">Google Play</a> · <span style="font-weight:400;color:#A1A7AF;">getlina.app</span></p>
+        </div>
+      </body></html>`;
+
+      const win = window.open('', '_blank');
+      if (!win) { alert('Please allow popups to export.'); return; }
+      win.document.write(html);
+      win.document.close();
+      setTimeout(() => win.print(), 300);
+    }
+
+    // ── Boot ─────────────────────────────────────────────────────────────────
+    load();
+
+    // Bind name inputs
+    const inputA = document.getElementById('input-a');
+    const inputB = document.getElementById('input-b');
+    inputA.value = state.nameA;
+    inputB.value = state.nameB;
+
+    inputA.addEventListener('input', () => {
+      state.nameA = inputA.value;
+      save();
+      updateLegend();
+      renderGrid();
+      renderStats();
+    });
+    inputB.addEventListener('input', () => {
+      state.nameB = inputB.value;
+      save();
+      updateLegend();
+      renderGrid();
+      renderStats();
+    });
+
+    // Bind date toggle
+    const btnToggleDates = document.getElementById('btn-toggle-dates');
+    const dateField = document.getElementById('date-field');
+    const inputStartDate = document.getElementById('input-start-date');
+
+    function applyDateToggleUI() {
+      if (state.useDates) {
+        btnToggleDates.classList.add('btn-active');
+        dateField.style.display = '';
+      } else {
+        btnToggleDates.classList.remove('btn-active');
+        dateField.style.display = 'none';
+      }
+    }
+
+    inputStartDate.value = state.startDate;
+    applyDateToggleUI();
+
+    btnToggleDates.addEventListener('click', () => {
+      state.useDates = !state.useDates;
+      if (state.useDates && !state.startDate) {
+        const today = new Date().toISOString().slice(0, 10);
+        state.startDate = snapToMonday(today);
+        inputStartDate.value = state.startDate;
+      }
+      save();
+      applyDateToggleUI();
+      renderGrid();
+    });
+
+    inputStartDate.addEventListener('change', () => {
+      if (inputStartDate.value) {
+        state.startDate = snapToMonday(inputStartDate.value);
+        inputStartDate.value = state.startDate;
+      } else {
+        state.startDate = '';
+      }
+      save();
+      renderGrid();
+    });
+
+    document.getElementById('btn-minus').addEventListener('click', () => setWeeks(state.weeks - 1));
+    document.getElementById('btn-plus').addEventListener('click', () => setWeeks(state.weeks + 1));
+    document.getElementById('btn-reset').addEventListener('click', () => {
+      state.assignment = Array(state.weeks * 7).fill(null);
+      save();
+      renderGrid();
+      renderStats();
+    });
+    document.getElementById('btn-export').addEventListener('click', exportPDF);
+
+    updateStepperLabel();
+    updateLegend();
+    renderGrid();
+    renderStats();
+
+    document.addEventListener('lina:langchange', e => {
+      T = e.detail.t;
+      updateStepperLabel();
+      if (T && T.cs && T.cs.toggleDates) btnToggleDates.textContent = T.cs.toggleDates;
+      renderGrid();
+      renderStats();
+    });
+
+    let _resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(_resizeTimer);
+      _resizeTimer = setTimeout(renderGrid, 120);
+    });
+
+  }());
+  </script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+  </script>
+
+</body>
+</html>
