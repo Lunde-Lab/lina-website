@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr" data-i18n-title="contact.pageTitle" data-i18n-desc="contact.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/fr/contact.html" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/contact.html" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/contact.html" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/contact.html" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/contact.html" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/contact.html" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/contact.html" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/contact.html" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/contact.html" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/contact.html" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Contact — Lina</title>
+  <meta name="description" content="Une question sur Lina ? Contactez-nous — nous vous répondrons dès que possible." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getlina.app/fr/contact.html" />
+  <meta property="og:title" content="Contact — Lina" />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta property="og:description" content="Une question sur Lina ? Contactez-nous — nous vous répondrons dès que possible." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Contact — Lina" />
+  <meta name="twitter:description" content="Une question sur Lina ? Contactez-nous — nous vous répondrons dès que possible." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+
+    /* ── Contact content ── */
+    .contact-main { padding: 56px 24px 96px; }
+
+    .contact-container {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+      align-items: center;
+    }
+
+    .contact-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .contact-intro {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+      max-width: 520px;
+    }
+
+    .fv-form {
+      max-width: 560px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+    }
+
+    .fv-form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      width: 100%;
+    }
+
+    @media (max-width: 540px) {
+      .fv-form-row { grid-template-columns: 1fr; }
+    }
+
+    .fv-form input,
+    .fv-form textarea {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      color: var(--text);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      width: 100%;
+      outline: none;
+      transition: border-color 0.15s;
+      resize: vertical;
+    }
+
+    .fv-form input::placeholder,
+    .fv-form textarea::placeholder { color: var(--text-secondary); opacity: 0.7; }
+
+    .fv-form input:focus,
+    .fv-form textarea:focus { border-color: var(--primary); }
+
+    .fv-form textarea { min-height: 140px; }
+
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 22px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+      align-self: center;
+    }
+
+    .btn-submit:hover { background: var(--primary-dark); }
+    .btn-submit svg { flex-shrink: 0; }
+
+    .fv-contact-alt {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-top: 8px;
+    }
+    .fv-contact-alt a { color: var(--primary); text-decoration: none; }
+    .fv-contact-alt a:hover { text-decoration: underline; }
+
+    #fv-success {
+      display: none;
+      max-width: 560px;
+    }
+
+    #fv-success h3 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    #fv-success p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/fr/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+        <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+        <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+      </nav>
+    </div>
+  </nav>
+
+  <main class="contact-main">
+    <div class="contact-container">
+
+      <h1 data-i18n="contact.heading">Contact</h1>
+      <p class="contact-intro" data-i18n="contact.intro">Vous avez une question sur Lina ou besoin d'aide avec votre compte ? Nous sommes là pour vous aider — envoyez-nous un message et nous vous répondrons dès que possible.</p>
+
+      <form class="fv-form" id="contact-form" novalidate>
+        <div class="fv-form-row">
+          <input type="text" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Nom" required />
+          <input type="email" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Adresse e-mail" required />
+        </div>
+        <textarea name="message" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Votre message" required></textarea>
+        <button type="submit" class="btn-submit">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+          <span data-i18n="contact.submit">Envoyer le message</span>
+        </button>
+      </form>
+
+      <p class="fv-contact-alt">Eller send e-post direkte til <a href="mailto:support@getlina.app">support@getlina.app</a></p>
+
+      <div id="fv-success">
+        <h3 data-i18n="contact.successTitle">Merci pour votre message</h3>
+        <p data-i18n="contact.successDescription">Nous vous répondrons dès que possible.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+          <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+          <a href="/fr/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/fr/professionals.html" data-i18n="footer.familievern">Professionnels</a>
+          <a href="/fr/stories/" data-i18n="footer.stories">Témoignages</a>
+          <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+          <a href="/fr/about/" data-i18n="footer.about">À propos</a>
+          <a href="/fr/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/fr/terms/" data-i18n="footer.terms">Conditions d'utilisation</a>
+          <a href="/fr/privacy/" data-i18n="footer.privacy">Politique de confidentialité</a>
+          <a href="/fr/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/fr/account-deletion.html" data-i18n="footer.accountDeletion">Suppression du compte</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    try {
+      const res = await fetch('https://formspree.io/f/mnjoqwwv', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        document.querySelector('.fv-contact-alt').style.display = 'none';
+        document.getElementById('fv-success').style.display = 'block';
+      } else {
+        window.location.href = 'mailto:support@getlina.app';
+      }
+    } catch(err) {
+      window.location.href = 'mailto:support@getlina.app';
+    }
+  });
+  </script>
+</body>
+</html>

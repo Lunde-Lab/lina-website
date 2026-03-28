@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr" data-i18n-title="blog1.pageTitle" data-i18n-desc="blog1.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/fr/blog/modes-de-garde/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/samvaersordninger/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/samvaersordninger/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/custody-schedules/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/umgangesschema/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/samvaersordning/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/umgangsregelung/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/omgangsregeling/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/modes-de-garde/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Les différents modes de garde expliqués — Lina</title>
+  <meta name="description" content="Un aperçu des modes de garde les plus courants pour les enfants avec deux foyers — semaine/semaine, 3-4-4-3, 2-2-5-5 et autres modèles. Ce qui fonctionne pour différentes tranches d'âge." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://getlina.app/fr/blog/modes-de-garde/" />
+  <meta property="og:title" content="Les différents modes de garde expliqués — Lina" />
+  <meta property="og:description" content="Un aperçu des modes de garde les plus courants pour les enfants avec deux foyers — semaine/semaine, 3-4-4-3, 2-2-5-5 et autres modèles. Ce qui fonctionne pour différentes tranches d'âge." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Les différents modes de garde expliqués — Lina" />
+  <meta name="twitter:description" content="Un aperçu des modes de garde les plus courants pour les enfants avec deux foyers — semaine/semaine, 3-4-4-3, 2-2-5-5 et autres modèles. Ce qui fonctionne pour différentes tranches d'âge." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 12px 24px;
+      border-radius: 8px;
+      transition: background 0.15s;
+    }
+
+    .btn-primary:hover { background: var(--primary-dark); }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/fr/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+        <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+        <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">FR</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/blog/samvaersordninger/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/en/blog/custody-schedules/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/sv/blog/umgangesschema/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/blog/samvaersordning/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/vuoroasuminen/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/blog/umgangsregelung/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/blog/omgangsregeling/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option active" href="/fr/blog/modes-de-garde/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog1.label">Garde partagée</span>
+
+      <h1 data-i18n="blog1.title">Les différents modes de garde expliqués</h1>
+
+      <p class="article-lead" data-i18n="blog1.intro">Lorsque les parents partagent la garde d'un enfant, le mode de garde est la première chose à établir. Comment le temps est-il réparti entre les foyers ? Quel schéma donne aux enfants le plus de prévisibilité ? Voici un aperçu des modèles les plus courants — ce qu'ils impliquent et ce qui peut convenir à différentes situations.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s1title">Semaine/semaine (7-7)</h2>
+        <p data-i18n="blog1.s1p1">L'enfant vit une semaine chez chaque parent, en alternant à un jour fixe — généralement le lundi ou le vendredi. C'est l'arrangement le plus utilisé lorsque les parents partagent la garde à égalité.</p>
+        <p data-i18n="blog1.s1p2">L'avantage est une structure simple et prévisible. L'enfant sait toujours vers quel foyer il se dirige. L'inconvénient est qu'une semaine complète peut sembler long loin d'un parent, surtout pour les jeunes enfants.</p>
+        <p data-i18n="blog1.s1p3">Fonctionne mieux pour : les enfants en âge scolaire qui peuvent gérer de plus longues périodes loin d'un foyer. Nécessite que les deux foyers soient raisonnablement proches de l'école et des activités.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s2title">L'arrangement 3-4-4-3</h2>
+        <p data-i18n="blog1.s2p1">L'enfant est chez un parent pendant 3 jours, chez l'autre pendant 4, puis 4 et 3 la semaine suivante. Le schéma se répète sur deux semaines et donne une répartition égale 50/50.</p>
+        <p data-i18n="blog1.s2p2">Cet arrangement offre un contact plus fréquent avec les deux parents que la semaine/semaine. L'enfant n'est jamais loin de l'un ou l'autre parent pendant plus de 4 jours consécutifs. La contrepartie est plus de transitions — ce qui peut être exigeant si la coopération est difficile.</p>
+        <p data-i18n="blog1.s2p3">Fonctionne mieux pour : les enfants d'âge primaire qui ont besoin d'un contact fréquent avec les deux parents. Nécessite que les deux parents vivent proches l'un de l'autre.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s3title">L'arrangement 2-2-5-5</h2>
+        <p data-i18n="blog1.s3p1">L'enfant est chez le parent A le lundi et le mardi, chez le parent B le mercredi et le jeudi, et alterne les weekends (du vendredi au dimanche) avec chaque parent. Le résultat est une répartition 50/50 sur deux semaines.</p>
+        <p data-i18n="blog1.s3p2">L'avantage est que l'enfant a des jours fixes avec chaque parent en semaine, donnant un rythme hebdomadaire prévisible. L'inconvénient est que la résidence du weekend alterne, et il y a de nombreuses transitions par semaine.</p>
+        <p data-i18n="blog1.s3p3">Fonctionne mieux pour : les jeunes enfants qui ont besoin d'un contact fréquent avec les deux parents mais qui bénéficient également de routines fixes en semaine.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s4title">Un weekend sur deux plus un jour de semaine</h2>
+        <p data-i18n="blog1.s4p1">L'enfant vit principalement chez un parent et reste chez l'autre un weekend sur deux (généralement du vendredi au dimanche) et un jour de semaine fixe. La répartition est généralement 70/30 ou 60/40.</p>
+        <p data-i18n="blog1.s4p2">Cet arrangement convient aux situations où l'enfant a un foyer principal — par exemple parce que l'autre parent vit loin, ou parce que le quotidien de l'enfant est étroitement lié à un quartier ou une école.</p>
+        <p data-i18n="blog1.s4p3">Fonctionne mieux pour : les situations où un partage égal n'est pas pratiquement réalisable. Peut bien fonctionner pour les enfants de tous âges, tant que le parent non résident a un contact significatif en semaine.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s5title">Ce qui fonctionne pour différentes tranches d'âge</h2>
+        <p data-i18n="blog1.s5p1">L'âge de l'enfant est un facteur important dans le choix d'un arrangement. Les jeunes enfants (0–3 ans) ont souvent besoin de périodes plus courtes et de transitions plus fréquentes — ce qui peut signifier qu'un 2-2-5-5 ou un arrangement adapté fonctionne mieux que la semaine/semaine.</p>
+        <p data-i18n="blog1.s5p2">Les enfants d'âge préscolaire (3–6 ans) peuvent généralement gérer 3 à 4 jours loin d'un parent. À partir de l'âge scolaire (6 ans et plus), la semaine/semaine fonctionne bien pour de nombreuses familles, car les enfants ont plus d'indépendance et peuvent gérer des absences plus longues.</p>
+        <p data-i18n="blog1.s5p3">Les adolescents (12 ans et plus) devraient avoir leur mot à dire dans l'arrangement. De nombreux jeunes préfèrent de plus longues périodes dans chaque foyer plutôt que des transitions fréquentes, car cela leur donne plus de stabilité dans leur vie sociale.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog1.s6title">Quand réviser l'arrangement</h2>
+        <p data-i18n="blog1.s6p1">Un arrangement de garde n'est pas gravé dans le marbre. Les besoins d'un enfant évoluent avec l'âge, et un arrangement qui fonctionnait bien à quatre ans peut ne pas convenir à un enfant de dix ans.</p>
+        <p data-i18n="blog1.s6p2">Il est utile de revoir l'arrangement au moins une fois par an — ou lorsque des changements significatifs surviennent dans la situation de la famille, comme une nouvelle école, un déménagement ou un nouveau frère ou sœur.</p>
+        <p data-i18n="blog1.s6p3">L'essentiel est que l'enfant vive de la prévisibilité, que les deux parents soient disponibles et que les détails pratiques suivent l'enfant entre les foyers.</p>
+      </div>
+
+      <div class="article-cta">
+        <h2 data-i18n="blog1.ctaTitle">Visualisez la répartition de garde</h2>
+        <p data-i18n="blog1.ctaDesc">Le planning de garde de Lina vous permet de cliquer sur les jours et de voir comment le temps est divisé semaine par semaine — avec un résumé de la répartition des jours, des weekends et du nombre de transitions.</p>
+        <a href="/fr/care-schedule/" class="btn-primary" data-i18n="blog1.ctaCta">Ouvrir le planning de garde</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+          <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+          <a href="/fr/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/fr/professionals.html" data-i18n="footer.familievern">Professionnels</a>
+          <a href="/fr/stories/" data-i18n="footer.stories">Témoignages</a>
+          <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+          <a href="/fr/about/" data-i18n="footer.about">À propos</a>
+          <a href="/fr/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/fr/terms/" data-i18n="footer.terms">Conditions d'utilisation</a>
+          <a href="/fr/privacy/" data-i18n="footer.privacy">Politique de confidentialité</a>
+          <a href="/fr/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/fr/account-deletion.html" data-i18n="footer.accountDeletion">Suppression du compte</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+  </script>
+
+</body>
+</html>

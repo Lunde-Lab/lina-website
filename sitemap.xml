@@ -11,6 +11,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -24,6 +25,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/care-schedule/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/care-schedule/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/care-schedule/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/care-schedule/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -37,6 +39,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/care-agreement/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/care-agreement/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/care-agreement/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/care-agreement/"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -50,6 +53,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/about/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/about/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/about/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/about/"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -63,6 +67,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/faq/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/faq/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/faq/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/faq/"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -76,6 +81,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/pricing/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/pricing/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/pricing/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/pricing/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -89,6 +95,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/stories/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/stories/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/stories/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/stories/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -102,6 +109,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/professionals.html"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/professionals.html"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/professionals.html"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/professionals.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -115,6 +123,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/contact.html"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/contact.html"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/contact.html"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/contact.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -128,6 +137,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/terms/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/terms/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/terms/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/terms/"/>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -141,6 +151,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/privacy/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/privacy/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/privacy/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/privacy/"/>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -154,6 +165,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/account-deletion.html"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/account-deletion.html"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/account-deletion.html"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/account-deletion.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -167,6 +179,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -180,6 +193,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/umgangsregelung/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/omgangsregeling/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/modes-de-garde/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -193,6 +207,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/umgangsregelung/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/omgangsregeling/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/modes-de-garde/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -206,6 +221,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/umgangsregelung/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/omgangsregeling/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/modes-de-garde/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -219,6 +235,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/umgangsregelung/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/omgangsregeling/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/modes-de-garde/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -232,6 +249,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/umgangsregelung/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/omgangsregeling/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/modes-de-garde/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -245,6 +263,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/umgangsregelung/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/omgangsregeling/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/modes-de-garde/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -258,6 +277,21 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/umgangsregelung/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/omgangsregeling/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/modes-de-garde/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/fr/blog/modes-de-garde/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/samvaersordninger/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/samvaersordninger/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/custody-schedules/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/umgangesschema/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/samvaersordning/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/umgangsregelung/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/omgangsregeling/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/modes-de-garde/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -271,6 +305,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/uebergabetag/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wisseldag/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/jour-de-transition/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -284,6 +319,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/uebergabetag/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wisseldag/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/jour-de-transition/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -297,6 +333,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/uebergabetag/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wisseldag/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/jour-de-transition/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -310,6 +347,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/uebergabetag/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wisseldag/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/jour-de-transition/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -323,6 +361,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/uebergabetag/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wisseldag/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/jour-de-transition/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -336,6 +375,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/uebergabetag/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wisseldag/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/jour-de-transition/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -349,6 +389,21 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/uebergabetag/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wisseldag/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/jour-de-transition/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/fr/blog/jour-de-transition/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/byttedag/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/handover-day/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/overlamningsdag/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/byttedag-tips/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/uebergabetag/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wisseldag/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/jour-de-transition/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -362,6 +417,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/mita-lapsi-tarvitsee/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/was-kinder-brauchen/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wat-kinderen-nodig-hebben/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/ce-dont-lenfant-a-besoin/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -375,6 +431,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/mita-lapsi-tarvitsee/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/was-kinder-brauchen/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wat-kinderen-nodig-hebben/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/ce-dont-lenfant-a-besoin/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -388,6 +445,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/mita-lapsi-tarvitsee/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/was-kinder-brauchen/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wat-kinderen-nodig-hebben/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/ce-dont-lenfant-a-besoin/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -401,6 +459,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/mita-lapsi-tarvitsee/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/was-kinder-brauchen/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wat-kinderen-nodig-hebben/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/ce-dont-lenfant-a-besoin/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -414,6 +473,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/mita-lapsi-tarvitsee/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/was-kinder-brauchen/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wat-kinderen-nodig-hebben/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/ce-dont-lenfant-a-besoin/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -427,6 +487,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/mita-lapsi-tarvitsee/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/was-kinder-brauchen/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wat-kinderen-nodig-hebben/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/ce-dont-lenfant-a-besoin/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -440,6 +501,21 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/mita-lapsi-tarvitsee/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/was-kinder-brauchen/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wat-kinderen-nodig-hebben/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/ce-dont-lenfant-a-besoin/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/fr/blog/ce-dont-lenfant-a-besoin/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/utstyr-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/utstyr-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/what-kids-need/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/vad-barnet-behover/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/hvad-barnet-har-brug-for/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/mita-lapsi-tarvitsee/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/was-kinder-brauchen/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wat-kinderen-nodig-hebben/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/ce-dont-lenfant-a-besoin/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -453,6 +529,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/wechselmodell-vs-residenzmodell/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/co-ouderschap-vs-hoofdverblijf/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/residence-alternee-vs-principale/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -466,6 +543,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/wechselmodell-vs-residenzmodell/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/co-ouderschap-vs-hoofdverblijf/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/residence-alternee-vs-principale/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -479,6 +557,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/wechselmodell-vs-residenzmodell/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/co-ouderschap-vs-hoofdverblijf/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/residence-alternee-vs-principale/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -492,6 +571,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/wechselmodell-vs-residenzmodell/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/co-ouderschap-vs-hoofdverblijf/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/residence-alternee-vs-principale/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -505,6 +585,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/wechselmodell-vs-residenzmodell/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/co-ouderschap-vs-hoofdverblijf/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/residence-alternee-vs-principale/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -518,6 +599,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/wechselmodell-vs-residenzmodell/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/co-ouderschap-vs-hoofdverblijf/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/residence-alternee-vs-principale/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -531,6 +613,21 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/wechselmodell-vs-residenzmodell/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/co-ouderschap-vs-hoofdverblijf/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/residence-alternee-vs-principale/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/fr/blog/residence-alternee-vs-principale/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/delt-bosted/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/shared-vs-primary-residence/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/vaxelvis-vs-fast-boende/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/delt-vs-fast-bopael/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/wechselmodell-vs-residenzmodell/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/co-ouderschap-vs-hoofdverblijf/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/residence-alternee-vs-principale/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -544,6 +641,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/yhteishuoltajuus-viestinta/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/kommunikation-getrennte-eltern/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/communicatie-gescheiden-ouders/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/communication-entre-coparents/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -557,6 +655,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/yhteishuoltajuus-viestinta/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/kommunikation-getrennte-eltern/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/communicatie-gescheiden-ouders/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/communication-entre-coparents/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -570,6 +669,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/yhteishuoltajuus-viestinta/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/kommunikation-getrennte-eltern/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/communicatie-gescheiden-ouders/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/communication-entre-coparents/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -583,6 +683,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/yhteishuoltajuus-viestinta/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/kommunikation-getrennte-eltern/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/communicatie-gescheiden-ouders/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/communication-entre-coparents/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -596,6 +697,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/yhteishuoltajuus-viestinta/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/kommunikation-getrennte-eltern/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/communicatie-gescheiden-ouders/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/communication-entre-coparents/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -609,6 +711,7 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/yhteishuoltajuus-viestinta/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/kommunikation-getrennte-eltern/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/communicatie-gescheiden-ouders/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/communication-entre-coparents/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -622,6 +725,21 @@
       <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/yhteishuoltajuus-viestinta/"/>
       <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/kommunikation-getrennte-eltern/"/>
       <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/communicatie-gescheiden-ouders/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/communication-entre-coparents/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/fr/blog/communication-entre-coparents/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/kommunikasjon/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/kommunikasjon/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/co-parent-communication/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/kommunikation-delad-omsorg/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/kommunikation-delt-omsorg/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/yhteishuoltajuus-viestinta/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/kommunikation-getrennte-eltern/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/communicatie-gescheiden-ouders/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/communication-entre-coparents/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

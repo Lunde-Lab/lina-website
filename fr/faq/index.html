@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="fr" data-i18n-title="faq.pageTitle" data-i18n-desc="faq.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/fr/faq/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/faq/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/faq/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/faq/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/faq/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/faq/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/faq/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/faq/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/faq/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/faq/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Foire aux questions — Lina</title>
+  <meta name="description" content="Réponses aux questions courantes sur Lina — l'application de coparentalité. Trouvez des réponses sur la confidentialité, le compte, le planning de garde et la convention parentale." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getlina.app/fr/faq/" />
+  <meta property="og:title" content="Foire aux questions — Lina" />
+  <meta property="og:description" content="Réponses aux questions courantes sur Lina — l'application de coparentalité. Trouvez des réponses sur la confidentialité, le compte, le planning de garde et la convention parentale." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Foire aux questions — Lina" />
+  <meta name="twitter:description" content="Réponses aux questions courantes sur Lina — l'application de coparentalité. Trouvez des réponses sur la confidentialité, le compte, le planning de garde et la convention parentale." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce que Lina ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lina est une application de coparentalité qui rassemble les détails pratiques — informations sur l'enfant, messages, photos, contacts et listes d'équipement — dans un endroit partagé accessible depuis les deux foyers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Lina est-il gratuit ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, Lina est gratuit à télécharger et à utiliser. Aucun paiement n'est requis pour créer un compte ou inviter l'autre parent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je exporter le planning de garde ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, vous pouvez exporter le planning de garde en PDF directement depuis l'outil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qui peut voir les informations de l'enfant ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seuls les deux parents liés à l'enfant dans Lina ont accès aux informations de l'enfant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Les messages peuvent-ils être supprimés ou modifiés ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non, les messages dans Lina ne peuvent pas être modifiés ou supprimés après envoi, créant un historique clair et fiable."
+      }
+    }
+  ]
+}
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Sections ── */
+    section { padding: 64px 24px; }
+    .container { max-width: 1080px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    /* ── Hero ── */
+    #hero {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding-top: 72px;
+      padding-bottom: 72px;
+    }
+    #hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    #hero p {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 560px;
+      line-height: 1.65;
+    }
+
+    /* ── FAQ ── */
+    #faq { background: var(--bg); }
+
+    .faq-content {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .faq-section {
+      margin-bottom: 48px;
+    }
+    .faq-section:last-child { margin-bottom: 0; }
+
+    .faq-section-title {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: border-color 0.15s;
+    }
+    .faq-item.open { border-color: var(--primary); }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      text-align: left;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .faq-chevron {
+      flex-shrink: 0;
+      transition: transform 0.2s;
+      color: var(--text-secondary);
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    .faq-answer {
+      padding: 0 20px 18px;
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+    .faq-answer p + p { margin-top: 10px; }
+    .faq-answer a { color: var(--primary); }
+    .faq-answer a:hover { text-decoration: underline; }
+
+    /* ── CTA ── */
+    #cta { background: var(--primary); }
+    .cta-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+    #cta h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    #cta p { font-size: 16px; color: rgba(255,255,255,0.75); margin-bottom: 8px; }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--text);
+      color: #fff;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/fr/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+        <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+        <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">FR</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/faq/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/en/faq/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/sv/faq/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/faq/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/faq/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/faq/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/faq/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option active" href="/fr/faq/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <p class="section-label" data-i18n="faq.heroLabel">FAQ</p>
+      <h1 data-i18n="faq.heroTitle">Questions fréquemment posées</h1>
+      <p data-i18n="faq.heroDesc">Trouvez des réponses aux questions les plus courantes sur Lina, le planning de garde et la convention parentale.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="faq-content">
+
+        <!-- Category 1: Om Lina -->
+        <div class="faq-section">
+          <h2 class="faq-section-title" data-i18n="faq.cat1Title">À propos de Lina</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat1q1">Qu'est-ce que Lina ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat1a1">Lina rassemble le côté pratique de la coparentalité dans une seule application — messages, informations sur l'enfant, photos, contacts, listes d'équipement et planning de garde — accessible dans les deux foyers.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat1q2">À qui s'adresse Lina ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat1a2">Lina est conçu pour les parents qui partagent la garde d'un enfant entre deux foyers. L'application fonctionne mieux lorsque la relation de coparentalité de base est fonctionnelle, mais que plus de structure et de prévisibilité sont nécessaires.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat1q3">Lina est-il gratuit ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat1a3">Oui, Lina est gratuit à télécharger et à utiliser. Aucun paiement n'est requis pour créer un compte ou inviter l'autre parent.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat1q4">Quels appareils Lina prend-il en charge ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat1a4">Lina est disponible en tant qu'application pour iPhone et Android. Le planning de garde sur getlina.app peut être utilisé dans un navigateur sans télécharger l'application.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat1q5">Les deux parents doivent-ils utiliser l'application ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat1a5">Pour utiliser les fonctionnalités partagées comme les messages, les photos et les informations sur l'enfant, les deux parents ont besoin d'un compte. Le planning de garde peut être utilisé par un seul parent.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category 2: Samværsplan -->
+        <div class="faq-section">
+          <h2 class="faq-section-title" data-i18n="faq.cat2Title">Planning de garde</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat2q1">Qu'est-ce que le planning de garde dans Lina ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat2a1">Le planning de garde est un outil gratuit que vous pouvez utiliser directement dans votre navigateur. Cliquez sur les jours pour les attribuer à chaque parent et regardez le résumé se mettre à jour instantanément. Le plan peut être exporté en PDF.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat2q2">Ai-je besoin d'un compte pour utiliser le planning de garde ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat2a2">Non, le planning de garde peut être utilisé sans compte directement dans un navigateur. Vous n'avez besoin de télécharger l'application que pour utiliser les fonctionnalités partagées comme les messages et les informations sur l'enfant.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat2q3">Puis-je exporter le planning de garde ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat2a3">Oui, vous pouvez exporter le planning de garde en PDF directement depuis l'outil. Le PDF inclut un aperçu visuel de la répartition et peut être utilisé comme pièce jointe à une convention parentale.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat2q4">Puis-je planifier les vacances et les périodes spéciales dans le planning de garde ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat2a4">Oui, le planning de garde prend en charge une planification flexible semaine par semaine, ce qui facilite l'ajout de semaines de vacances et de périodes spéciales.</p>
+                <p><a href="/fr/care-schedule/" data-i18n="faq.cat2a4link">Essayez le planning de garde ici</a></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category 3: Personvern -->
+        <div class="faq-section">
+          <h2 class="faq-section-title" data-i18n="faq.cat3Title">Confidentialité</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat3q1">Qui peut voir les informations de l'enfant ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat3a1">Seuls les deux parents connectés à l'enfant dans Lina ont accès aux informations de l'enfant. Aucun autre utilisateur ni Lina lui-même n'a accès au contenu que vous partagez.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat3q2">Lina partage-t-il des données avec des tiers ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat3a2">Non. Lina ne vend pas et ne partage pas les données des utilisateurs avec des tiers. Il n'y a pas de publicité dans l'application.</p>
+                <p><a href="/fr/privacy/" data-i18n="faq.cat3a2link">Lire la politique de confidentialité</a></p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat3q3">Les messages peuvent-ils être supprimés ou modifiés ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat3a3">Non, les messages dans Lina ne peuvent pas être modifiés ou supprimés après leur envoi. Cela fournit un historique clair et fiable de ce qui a été convenu entre les parents.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat3q4">À qui appartiennent mes données ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat3a4">Vous êtes propriétaire de vos données. Lina traite les données uniquement pour fournir le service, et jamais à des fins commerciales.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat3q5">Que se passe-t-il avec mes données si je supprime mon compte ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat3a5">Lorsque le compte est supprimé, toutes les informations personnelles qui vous sont associées sont supprimées. Les messages, photos et listes partagés avec l'autre parent restent disponibles pour lui.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category 4: Konto -->
+        <div class="faq-section">
+          <h2 class="faq-section-title" data-i18n="faq.cat4Title">Compte</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat4q1">Comment créer un compte ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat4a1">Téléchargez Lina depuis l'App Store ou Google Play, et suivez le guide intégré à l'application pour créer un compte. Vous n'avez besoin que de votre adresse e-mail pour vous connecter — aucun mot de passe n'est stocké.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat4q2">Puis-je avoir plusieurs enfants dans l'application ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat4a2">Oui, vous pouvez ajouter plusieurs enfants dans Lina. Chaque enfant a son propre espace partagé avec des informations, des messages et des photos associés.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat4q3">Comment inviter l'autre parent ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat4a3">Vous partagez le code d'invitation via l'application.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category 5: Samværsavtale -->
+        <div class="faq-section">
+          <h2 class="faq-section-title" data-i18n="faq.cat5Title">Convention parentale</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat5q1">Que doit inclure une convention parentale ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat5a1">Une bonne convention parentale doit couvrir le calendrier de garde, le lieu de résidence, les transitions, les arrangements pour les vacances et les jours fériés, le partage des frais, la communication entre parents, les voyages avec l'enfant et les routines de modification et de révision de la convention.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat5q2">Une convention parentale est-elle juridiquement contraignante ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat5a2">Une convention parentale privée est basée sur un accord mutuel entre les parents. Elle n'est pas juridiquement contraignante de la même façon qu'une décision de justice, mais apporte de la structure et de la prévisibilité aux deux parties et à l'enfant.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat5q3">Existe-t-il un outil gratuit pour établir une convention parentale ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat5a3">En France, la convention parentale peut être homologuée par le juge aux affaires familiales (JAF), ce qui lui confère une valeur juridique. La médiation familiale est encouragée pour aider les parents à trouver un accord. Des outils officiels existent également en Norvège, Suède, Danemark et Finlande.</p>
+                <p><a href="/fr/care-agreement/" data-i18n="faq.cat5a3link">En savoir plus sur les conventions parentales</a></p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.cat5q4">Lina aide-t-il pour les conventions parentales ?</span>
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p data-i18n="faq.cat5a4">Lina propose une page d'informations sur ce qu'une convention parentale doit inclure, avec un exemple et des liens vers des ressources officielles en Norvège, Suède, Danemark, Finlande et France.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-inner">
+        <h2 data-i18n="cta.title">Un lien sécurisé entre deux parents.</h2>
+        <p data-i18n="cta.description">Lina rassemble tout ce dont votre enfant a besoin dans un espace partagé et organisé. Téléchargez et commencez en quelques minutes.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Télécharger sur l'App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Disponible sur Google Play</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+          <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+          <a href="/fr/faq/" aria-current="page" data-i18n="footer.faq">FAQ</a>
+          <a href="/fr/professionals.html" data-i18n="footer.familievern">Professionnels</a>
+          <a href="/fr/stories/" data-i18n="footer.stories">Témoignages</a>
+          <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+          <a href="/fr/about/" data-i18n="footer.about">À propos</a>
+          <a href="/fr/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/fr/terms/" data-i18n="footer.terms">Conditions d'utilisation</a>
+          <a href="/fr/privacy/" data-i18n="footer.privacy">Politique de confidentialité</a>
+          <a href="/fr/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/fr/account-deletion.html" data-i18n="footer.accountDeletion">Suppression du compte</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+
+  // Accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const list = btn.closest('.faq-list');
+      const isOpen = item.classList.contains('open');
+
+      list.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        i.querySelector('.faq-answer').hidden = true;
+      });
+
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        item.querySelector('.faq-answer').hidden = false;
+      }
+    });
+  });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr" data-i18n-title="blog4.pageTitle" data-i18n-desc="blog4.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/fr/blog/residence-alternee-vs-principale/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/delt-bosted/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/delt-bosted/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/shared-vs-primary-residence/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/vaxelvis-vs-fast-boende/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/delt-vs-fast-bopael/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vuoroasuminen-vs-lahivanhemmuus/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/wechselmodell-vs-residenzmodell/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/co-ouderschap-vs-hoofdverblijf/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/residence-alternee-vs-principale/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Résidence alternée vs. résidence principale — quelle différence ? | Lina</title>
+  <meta name="description" content="La différence entre résidence alternée et résidence principale chez un parent — ce que cela signifie en pratique pour le quotidien, les prises de décision et les droits de l'enfant." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://getlina.app/fr/blog/residence-alternee-vs-principale/" />
+  <meta property="og:title" content="Résidence alternée vs. résidence principale — quelle différence ? | Lina" />
+  <meta property="og:description" content="La différence entre résidence alternée et résidence principale chez un parent — ce que cela signifie en pratique pour le quotidien, les prises de décision et les droits de l'enfant." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Résidence alternée vs. résidence principale — quelle différence ? | Lina" />
+  <meta name="twitter:description" content="La différence entre résidence alternée et résidence principale chez un parent — ce que cela signifie en pratique pour le quotidien, les prises de décision et les droits de l'enfant." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .btn-appstore { display: inline-flex; align-items: center; gap: 10px; background: #1a1e23; color: #fff; border-radius: 10px; padding: 11px 18px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; line-height: 1; text-decoration: none; transition: background 0.15s; }
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/fr/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+        <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+        <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">FR</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/blog/delt-bosted/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/en/blog/shared-vs-primary-residence/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/sv/blog/vaxelvis-vs-fast-boende/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/blog/delt-vs-fast-bopael/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/vuoroasuminen-vs-lahivanhemmuus/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/blog/wechselmodell-vs-residenzmodell/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/blog/co-ouderschap-vs-hoofdverblijf/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option active" href="/fr/blog/residence-alternee-vs-principale/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog4.label">Résidence</span>
+
+      <h1 data-i18n="blog4.title">Résidence alternée vs. résidence principale — quelle différence ?</h1>
+
+      <p class="article-lead" data-i18n="blog4.intro">Quand les parents se séparent, l'une des premières questions est celle du lieu de vie de l'enfant. La réponse ne se limite pas au nombre de nuits — elle affecte qui décide quoi, où l'enfant est domicilié et comment le quotidien est organisé. Voici un aperçu de ce que signifient réellement la résidence alternée et la résidence principale.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog4.s1title">Qu'est-ce que la résidence alternée ?</h2>
+        <p data-i18n="blog4.s1p1">La résidence alternée signifie que l'enfant vit de façon égale chez les deux parents. Les deux ont une autorité égale de décision sur les questions affectant le quotidien de l'enfant — telles que les activités, les rendez-vous médicaux et les routines.</p>
+        <p data-i18n="blog4.s1p2">En pratique, cela signifie généralement une répartition d'environ 50/50 du temps, par exemple des semaines alternées ou un schéma 3-4-4-3. L'enfant a deux foyers, pas un foyer et une adresse de visite.</p>
+        <p data-i18n="blog4.s1p3">La résidence alternée nécessite que les parents coopèrent suffisamment bien pour prendre des décisions ensemble de façon continue. Elle nécessite également que les foyers soient suffisamment proches pour que l'enfant puisse maintenir ses activités scolaires, ses amis et ses loisirs depuis les deux endroits. En France, la résidence alternée est reconnue par la loi et peut être organisée par accord mutuel entre les parents ou fixée par le juge aux affaires familiales (JAF). Une convention parentale établie à l'amiable peut être homologuée par le JAF pour lui conférer une valeur juridique.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog4.s2title">Qu'est-ce que la résidence principale ?</h2>
+        <p data-i18n="blog4.s2p1">La résidence principale signifie que l'enfant a un foyer principal. Le parent résidentiel a l'autorité de décision sur les questions quotidiennes et l'enfant est domicilié à cette adresse.</p>
+        <p data-i18n="blog4.s2p2">L'autre parent — le parent non résidentiel — a un droit de visite selon un accord, par exemple un weekend sur deux et un jour de semaine. Ce parent partage toujours l'autorité parentale, mais les décisions quotidiennes sont prises par le parent résidentiel.</p>
+        <p data-i18n="blog4.s2p3">Cet arrangement est souvent utilisé lorsque les parents vivent loin l'un de l'autre, lorsque l'enfant a besoin d'une base stable, ou lorsque la coopération entre les parents est difficile.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog4.s3title">Différences juridiques</h2>
+        <p data-i18n="blog4.s3p1">Avec la résidence alternée, les deux parents ont une autorité égale de décision sur les questions quotidiennes. Aucun des deux parents ne peut déménager avec l'enfant sans le consentement de l'autre.</p>
+        <p data-i18n="blog4.s3p2">Avec la résidence principale, le parent résidentiel peut prendre des décisions quotidiennes seul. Le parent résidentiel peut en principe déménager sur le territoire national avec l'enfant, mais doit en informer l'autre parent.</p>
+        <p data-i18n="blog4.s3p3">L'autorité parentale conjointe est maintenue indépendamment de l'arrangement de résidence — sauf si un tribunal en décide autrement. Elle couvre les décisions majeures telles que les passeports, les traitements médicaux et la religion.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog4.s4title">Ce que cela signifie en pratique</h2>
+        <p data-i18n="blog4.s4p1">Avec la résidence alternée, les parents partagent les tâches quotidiennes : vêtements, équipement, devoirs, rendez-vous médicaux. Les deux foyers doivent être entièrement équipés, et les deux parents doivent être disponibles pour le quotidien.</p>
+        <p data-i18n="blog4.s4p2">Avec la résidence principale, le quotidien est plus prévisible pour l'enfant — un quartier, des routines, un trajet scolaire. Mais cela demande un effort supplémentaire pour s'assurer que le parent non résidentiel reste impliqué dans la vie de l'enfant.</p>
+        <p data-i18n="blog4.s4p3">Aucun des deux arrangements n'est objectivement meilleur que l'autre. Ce qui fonctionne dépend de l'âge de l'enfant, de la situation des parents, de la distance entre les foyers et de la qualité de la coopération.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog4.s5title">Ce que dit la recherche</h2>
+        <p data-i18n="blog4.s5p1">La recherche scandinave montre que les enfants en résidence alternée rapportent généralement un bien-être égal ou meilleur par rapport aux enfants vivant principalement chez un seul parent — à condition que le niveau de conflit entre les parents soit faible.</p>
+        <p data-i18n="blog4.s5p2">Pour les enfants dans des situations de conflit élevé, le tableau est plus complexe. Des transitions fréquentes entre deux foyers peuvent augmenter le stress si les parents ne sont pas en mesure de protéger l'enfant du conflit.</p>
+        <p data-i18n="blog4.s5p3">Quel que soit l'arrangement, c'est la qualité de la coopération parentale — pas le nombre de nuits — qui compte le plus pour le bien-être de l'enfant.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog4.s6title">Ressources officielles</h2>
+        <p data-i18n="blog4.s6p1">Le choix de la résidence doit être fait dans l'intérêt supérieur de l'enfant. Si vous ne pouvez pas vous mettre d'accord, un médiateur familial peut vous aider.</p>
+        <p data-i18n="blog4.s6p2">En France, le juge aux affaires familiales (JAF) est compétent pour les questions de résidence et de droit de visite. La médiation familiale peut également aider les parents à trouver un accord. Des informations détaillées sont disponibles sur service-public.fr. Des services équivalents existent dans les pays nordiques.</p>
+        <p data-i18n="blog4.s6p3">Cet article fournit des informations générales et ne remplace pas un conseil juridique. En cas de doute, contactez un professionnel.</p>
+      </div>
+
+      <div class="article-cta">
+        <h2 data-i18n="blog4.ctaTitle">Coordonnez le quotidien — quel que soit l'arrangement</h2>
+        <p data-i18n="blog4.ctaDesc">Que l'enfant soit en résidence alternée ou vive principalement chez un parent — Lina aide les deux parents à garder la trace des détails pratiques.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Télécharger sur l'App Store" data-i18n-aria="nav.appstoreAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Télécharger sur l'App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Disponible sur Google Play" data-i18n-aria="hero.ctaPlayAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Disponible sur Google Play</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+          <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+          <a href="/fr/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/fr/professionals.html" data-i18n="footer.familievern">Professionnels</a>
+          <a href="/fr/stories/" data-i18n="footer.stories">Témoignages</a>
+          <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+          <a href="/fr/about/" data-i18n="footer.about">À propos</a>
+          <a href="/fr/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/fr/terms/" data-i18n="footer.terms">Conditions d'utilisation</a>
+          <a href="/fr/privacy/" data-i18n="footer.privacy">Politique de confidentialité</a>
+          <a href="/fr/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/fr/account-deletion.html" data-i18n="footer.accountDeletion">Suppression du compte</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr" data-i18n-title="blog5.pageTitle" data-i18n-desc="blog5.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/fr/blog/communication-entre-coparents/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/kommunikasjon/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/kommunikasjon/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/co-parent-communication/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/kommunikation-delad-omsorg/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/kommunikation-delt-omsorg/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/yhteishuoltajuus-viestinta/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/kommunikation-getrennte-eltern/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/communicatie-gescheiden-ouders/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/communication-entre-coparents/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>La communication entre coparents — Lina</title>
+  <meta name="description" content="Comment maintenir une communication factuelle et structurée lors du partage de la garde d'un enfant — conseils pratiques sur les sujets, les accords écrits et les limites claires." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://getlina.app/fr/blog/communication-entre-coparents/" />
+  <meta property="og:title" content="La communication entre coparents — Lina" />
+  <meta property="og:description" content="Comment maintenir une communication factuelle et structurée lors du partage de la garde d'un enfant — conseils pratiques sur les sujets, les accords écrits et les limites claires." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="La communication entre coparents — Lina" />
+  <meta name="twitter:description" content="Comment maintenir une communication factuelle et structurée lors du partage de la garde d'un enfant — conseils pratiques sur les sujets, les accords écrits et les limites claires." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav-row {
+        gap: 16px;
+      }
+
+      .footer-nav-row a {
+        font-size: 12px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--text);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: opacity 0.15s;
+    }
+
+    .btn-appstore:hover { opacity: 0.85; }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/fr/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+        <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+        <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">FR</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/blog/kommunikasjon/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/en/blog/co-parent-communication/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/sv/blog/kommunikation-delad-omsorg/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/blog/kommunikation-delt-omsorg/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/yhteishuoltajuus-viestinta/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/blog/kommunikation-getrennte-eltern/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/blog/communicatie-gescheiden-ouders/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option active" href="/fr/blog/communication-entre-coparents/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog5.label">Communication</span>
+
+      <h1 data-i18n="blog5.title">La communication entre coparents</h1>
+
+      <p class="article-lead" data-i18n="blog5.intro">Pour la plupart des coparents, la communication est la partie la plus difficile. Pas les grandes décisions — mais les messages quotidiens. Qui vient le chercher ? Que s'est-il passé chez le médecin ? L'enfant a-t-il besoin de nouvelles bottes de pluie ? Quand la communication fonctionne, le quotidien fonctionne. Quand elle ne fonctionne pas, l'enfant le remarque en premier.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s1title">Restez factuel</h2>
+        <p data-i18n="blog5.s1p1">Les messages entre parents doivent concerner l'enfant, pas la relation entre les parents. C'est plus facile à dire qu'à faire — surtout dans les temps qui suivent immédiatement une séparation.</p>
+        <p data-i18n="blog5.s1p2">Une règle simple : rédigez le message comme si un tiers neutre le lisait. Seriez-vous à l'aise qu'un médiateur voie ce que vous avez écrit ? Si oui, envoyez-le. Sinon, reformulez.</p>
+        <p data-i18n="blog5.s1p3">Cela ne signifie pas que tout doit être clinique. Amical et factuel peuvent coexister. Un simple 'merci d'avoir géré ça' ne coûte rien et construit la coopération dans le temps.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s2title">L'écrit est plus sûr que l'oral</h2>
+        <p data-i18n="blog5.s2p1">Les accords verbaux sont difficiles à se rappeler précisément. Après quelques semaines, les parents se souviennent de différentes versions de ce qui a été dit — et l'enfant se retrouve au milieu.</p>
+        <p data-i18n="blog5.s2p2">La communication écrite donne aux deux parents une référence à laquelle revenir. Elle réduit les malentendus et facilite le suivi des accords.</p>
+        <p data-i18n="blog5.s2p3">Pas besoin d'être formel. Un court message avec l'essentiel — heure, lieu, ce qui est nécessaire — suffit. L'important est que ce soit documenté.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s3title">La structure l'emporte sur le chaos</h2>
+        <p data-i18n="blog5.s3p1">Un long fil de messages où les informations scolaires, les rendez-vous médicaux, la planification des vacances et la logistique quotidienne sont mélangés est une recette pour que les choses se perdent.</p>
+        <p data-i18n="blog5.s3p2">Des sujets séparés pour différents thèmes — école, santé, logistique — facilitent la recherche de ce que vous cherchez. Vous n'avez pas à faire défiler vingt messages sur le dîner pour trouver le rendez-vous chez le médecin.</p>
+        <p data-i18n="blog5.s3p3">Cela donne également plus de contrôle. Vous pouvez traiter le sujet santé le soir et le sujet logistique le matin — sans que tout s'accumule dans un flux chaotique.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s4title">Répondez dans un délai raisonnable</h2>
+        <p data-i18n="blog5.s4p1">Ne pas répondre est aussi une communication. Si un parent envoie un message sur la récupération et n'obtient pas de réponse, cela crée de l'incertitude — pour le parent et pour l'enfant.</p>
+        <p data-i18n="blog5.s4p2">Convenez d'un délai de réponse raisonnable pour les messages pratiques. Pas la même minute, mais dans les quelques heures pour les choses urgentes, et dans la journée pour ce qui peut attendre.</p>
+        <p data-i18n="blog5.s4p3">Si vous n'avez pas encore de réponse, dites-le : 'Je vérifierai et vous répondrai ce soir.' Cela élimine l'incertitude sans nécessiter de décision immédiate.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s5title">Quand la communication s'effondre</h2>
+        <p data-i18n="blog5.s5p1">Parfois la communication cesse de fonctionner. Un parent arrête de répondre, le ton s'emballe, ou tout devient un combat. C'est courant — et de l'aide est disponible.</p>
+        <p data-i18n="blog5.s5p2">Les services de médiation familiale proposent une médiation et des conversations guidées pour les parents qui ont du mal à coopérer. Dans certains cas, un tiers neutre peut aider à rétablir un canal de communication fonctionnel.</p>
+        <p data-i18n="blog5.s5p3">Si la communication directe est trop difficile, un outil structuré avec messagerie écrite et historique permanent des messages peut aider. Les messages qui ne peuvent pas être modifiés ou supprimés donnent aux deux parents la certitude que ce qui a été convenu est réellement documenté.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog5.s6title">L'enfant ne doit pas être le messager</h2>
+        <p data-i18n="blog5.s6p1">L'une des erreurs les plus courantes est d'utiliser l'enfant comme canal de communication. 'Dis à maman que...' ou 'demande à papa...' met l'enfant dans une position impossible.</p>
+        <p data-i18n="blog5.s6p2">L'enfant ne devrait pas avoir à relayer des messages, négocier des accords ou faire des rapports depuis l'autre foyer. Toute communication pratique doit se faire directement entre les parents.</p>
+        <p data-i18n="blog5.s6p3">Si l'enfant partage quelque chose de l'autre foyer, écoutez — mais évitez de poser des questions précises. L'enfant a besoin de sentir qu'il peut parler librement sans devenir une source d'informations.</p>
+      </div>
+
+      <div class="article-cta">
+        <h2 data-i18n="blog5.ctaTitle">Communication structurée entre deux foyers</h2>
+        <p data-i18n="blog5.ctaDesc">Lina garde les conversations organisées dans des sujets séparés. Les messages ne peuvent pas être modifiés ou supprimés — pour que les deux parents aient un historique clair de ce qui a été convenu.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Télécharger sur l'App Store" data-i18n-aria="nav.appstoreAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Télécharger sur l'App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Disponible sur Google Play" data-i18n-aria="hero.ctaPlayAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Disponible sur Google Play</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+          <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+          <a href="/fr/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/fr/professionals.html" data-i18n="footer.familievern">Professionnels</a>
+          <a href="/fr/stories/" data-i18n="footer.stories">Témoignages</a>
+          <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+          <a href="/fr/about/" data-i18n="footer.about">À propos</a>
+          <a href="/fr/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/fr/terms/" data-i18n="footer.terms">Conditions d'utilisation</a>
+          <a href="/fr/privacy/" data-i18n="footer.privacy">Politique de confidentialité</a>
+          <a href="/fr/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/fr/account-deletion.html" data-i18n="footer.accountDeletion">Suppression du compte</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+  </script>
+
+</body>
+</html>

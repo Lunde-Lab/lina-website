@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr" data-i18n-title="blog2.pageTitle" data-i18n-desc="blog2.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/fr/blog/jour-de-transition/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/byttedag/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/blog/byttedag/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/en/blog/handover-day/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/overlamningsdag/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/byttedag-tips/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/vaihtopaiva/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/uebergabetag/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/wisseldag/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/jour-de-transition/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Le jour de transition — comment faciliter les passages entre foyers | Lina</title>
+  <meta name="description" content="Conseils pratiques pour des transitions plus fluides entre les foyers — routines fixes, lieux neutres et ce qui doit suivre l'enfant." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://getlina.app/fr/blog/jour-de-transition/" />
+  <meta property="og:title" content="Le jour de transition — comment faciliter les passages entre foyers | Lina" />
+  <meta property="og:description" content="Conseils pratiques pour des transitions plus fluides entre les foyers — routines fixes, lieux neutres et ce qui doit suivre l'enfant." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Le jour de transition — comment faciliter les passages entre foyers | Lina" />
+  <meta name="twitter:description" content="Conseils pratiques pour des transitions plus fluides entre les foyers — routines fixes, lieux neutres et ce qui doit suivre l'enfant." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-nav-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav-row a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav-row a:hover { color: var(--text); }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer { padding: 32px 16px; }
+      .footer-nav-row { gap: 16px; }
+      .footer-nav-row a { font-size: 12px; }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #1a1e23;
+      color: #fff;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/fr/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <nav class="nav-links">
+        <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+        <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+        <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">FR</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/blog/byttedag/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/en/blog/handover-day/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/sv/blog/overlamningsdag/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/blog/byttedag-tips/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/vaihtopaiva/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/blog/uebergabetag/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/blog/wisseldag/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option active" href="/fr/blog/jour-de-transition/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog2.label">Transition</span>
+
+      <h1 data-i18n="blog2.title">Le jour de transition — comment faciliter les passages entre foyers</h1>
+
+      <p class="article-lead" data-i18n="blog2.intro">Pour de nombreux enfants, le jour de transition est la partie la plus difficile d'avoir deux foyers. Non pas parce que quelque chose va mal, mais parce que la transition demande un ajustement. Les routines, l'environnement et les règles changent — et l'enfant doit s'adapter à chaque fois. Voici des conseils pratiques pour rendre les transitions plus sûres et plus prévisibles.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog2.s1title">Heures et lieux fixes</h2>
+        <p data-i18n="blog2.s1p1">La prévisibilité est la chose la plus importante pour l'enfant. Lorsque la transition a lieu à la même heure et au même endroit à chaque fois, l'enfant n'a pas à se demander ce qui va se passer.</p>
+        <p data-i18n="blog2.s1p2">Les moments courants sont après la crèche ou l'école — la transition se fait naturellement, sans que l'enfant vive un passage de relais direct entre les parents.</p>
+        <p data-i18n="blog2.s1p3">Si une transition directe est nécessaire, convenez d'un lieu neutre et d'une heure fixe. Évitez de changer l'heure à la dernière minute — cela crée de l'incertitude.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog2.s2title">Gardez la transition courte et calme</h2>
+        <p data-i18n="blog2.s2p1">Les transitions longues donnent à l'enfant le temps de se sentir mal à l'aise. Un bref échange amical vaut mieux qu'un long avec une conversation prolongée entre parents.</p>
+        <p data-i18n="blog2.s2p2">Évitez de discuter de sujets pratiques ou sensibles lors de la transition. L'enfant perçoit les tensions entre les parents, même lorsque la conversation semble neutre.</p>
+        <p data-i18n="blog2.s2p3">Un simple 'passe un bon moment' et un sourire suffisent souvent. Laissez l'enfant s'installer dans le nouveau foyer sans porter la communication des parents.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog2.s3title">Ce que l'enfant doit savoir à l'avance</h2>
+        <p data-i18n="blog2.s3p1">Les enfants qui savent à quoi s'attendre gèrent mieux les transitions. Dites à l'enfant à l'avance quel est le plan : qui vient le chercher, quand cela se passe et ce qui vient ensuite.</p>
+        <p data-i18n="blog2.s3p2">Évitez de dire 'on verra' ou 'peut-être'. Les enfants ont besoin de réponses claires, même lorsqu'ils ne posent pas la question directement.</p>
+        <p data-i18n="blog2.s3p3">Pour les jeunes enfants, un calendrier visuel — avec des couleurs pour chaque foyer — peut les aider à comprendre le schéma et à se sentir maîtres de leur semaine.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog2.s4title">Ce qui doit suivre l'enfant</h2>
+        <p data-i18n="blog2.s4p1">L'une des sources de frustration les plus courantes est quelque chose qui manque dans le mauvais foyer. Cartable, équipement de pluie, jouet de confort, médicaments — tout ce dont l'enfant a besoin quotidiennement devrait l'accompagner à chaque transition.</p>
+        <p data-i18n="blog2.s4p2">Créez une liste de préparation partagée que les deux parents peuvent consulter. Vérifiez-la avant chaque transition et mettez-la à jour à mesure que les besoins changent.</p>
+        <p data-i18n="blog2.s4p3">Certaines familles résolvent le problème en doublant les essentiels — brosse à dents, chargeur, chaussures d'intérieur. D'autres préfèrent une liste qui suit l'enfant. Choisissez ce qui crée le moins de friction.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog2.s5title">Quand la transition ne se passe pas bien</h2>
+        <p data-i18n="blog2.s5p1">Parfois l'enfant pleure, refuse de partir ou est visiblement perturbé. Cela ne signifie pas nécessairement que quelque chose va mal dans l'arrangement — les transitions sont difficiles, et les enfants le montrent de différentes façons.</p>
+        <p data-i18n="blog2.s5p2">Si le schéma persiste, parlez à l'autre parent de ce qui peut être ajusté. Peut-être que le moment est mauvais, que l'enfant a besoin de plus de préparation, ou que l'arrangement doit être revu.</p>
+        <p data-i18n="blog2.s5p3">Si les difficultés persistent, un médiateur familial peut aider à trouver des solutions adaptées aux besoins de l'enfant.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog2.s6title">La coopération facilite les transitions</h2>
+        <p data-i18n="blog2.s6p1">L'enfant s'adapte mieux lorsque les deux parents sont alignés. Cela ne signifie pas être d'accord sur tout — mais que l'enfant perçoit les deux parents soutenant l'arrangement.</p>
+        <p data-i18n="blog2.s6p2">Partagez les informations pratiques à l'avance : ce que l'enfant a fait, quelque chose à savoir, si quelque chose manque dans le sac. Bref et factuel, sans chercher à contrôler.</p>
+        <p data-i18n="blog2.s6p3">Un aperçu partagé de l'équipement, des informations médicales et des contacts réduit le nombre de questions à chaque transition — et évite que l'enfant soit le messager entre les foyers.</p>
+      </div>
+
+      <div class="article-cta">
+        <h2 data-i18n="blog2.ctaTitle">Garder la trace entre les foyers</h2>
+        <p data-i18n="blog2.ctaDesc">Lina rassemble les listes d'équipement, les informations sur l'enfant et les contacts dans un endroit partagé — pour que les deux parents aient ce dont ils ont besoin à chaque transition.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Télécharger sur l'App Store" data-i18n-aria="nav.appstoreAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Télécharger sur l'App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Disponible sur Google Play" data-i18n-aria="hero.ctaPlayAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Disponible sur Google Play</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-row">
+          <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+          <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+          <a href="/fr/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/fr/professionals.html" data-i18n="footer.familievern">Professionnels</a>
+          <a href="/fr/stories/" data-i18n="footer.stories">Témoignages</a>
+          <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+          <a href="/fr/about/" data-i18n="footer.about">À propos</a>
+          <a href="/fr/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-nav-row">
+          <a href="/fr/terms/" data-i18n="footer.terms">Conditions d'utilisation</a>
+          <a href="/fr/privacy/" data-i18n="footer.privacy">Politique de confidentialité</a>
+          <a href="/fr/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/fr/account-deletion.html" data-i18n="footer.accountDeletion">Suppression du compte</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }());
+  </script>
+
+</body>
+</html>

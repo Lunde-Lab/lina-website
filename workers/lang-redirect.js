@@ -2,8 +2,8 @@
 // Redirects new visitors to their preferred language version.
 // Norwegian stays on root — only en, sv, da, fi get redirected.
 
-const SUPPORTED = ['en', 'sv', 'da', 'fi', 'de', 'nl'];
-const LANG_PREFIXES = ['/en/', '/sv/', '/da/', '/fi/', '/de/', '/nl/'];
+const SUPPORTED = ['en', 'sv', 'da', 'fi', 'de', 'nl', 'fr'];
+const LANG_PREFIXES = ['/en/', '/sv/', '/da/', '/fi/', '/de/', '/nl/', '/fr/'];
 const COOKIE_NAME = 'lina-lang-set';
 
 // Bot detection: don't redirect crawlers
