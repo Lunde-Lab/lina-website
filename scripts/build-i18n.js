@@ -515,7 +515,7 @@ function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile, file)
   html = setCanonicalAndHreflang(html, lang, urlPath, file);
   // Asset paths are already absolute after the Norwegian pass
   html = fixInternalLinks(html, lang);
-  if (file && file.langUrls) html = fixBlogLinks(html, lang);
+  html = fixBlogLinks(html, lang);
   html = fixLogoLink(html, lang);
   if (hasDropdown) html = fixLangSwitcher(html, lang, urlPath, file);
   html = fixLangScript(html);
