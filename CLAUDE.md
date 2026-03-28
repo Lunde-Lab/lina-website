@@ -18,7 +18,7 @@ Lina is a co-parenting app. This repo is its marketing website — a static site
 |---|---|
 | `index.html` | Main landing page |
 | `js/i18n.js` | Client-side translation logic |
-| `locales/` | JSON translation files (en, no, sv, da, fi) |
+| `locales/` | JSON translation files (en, no, sv, da, fi, de) |
 | `assets/logos/Logomark_1.svg` | Primary logomark |
 | `assets/logos/Logo_1.svg` | Full logo (wordmark + logomark) |
 | `assets/og-image.png` | Open Graph image for social sharing |
@@ -39,8 +39,8 @@ Lina is a co-parenting app. This repo is its marketing website — a static site
 | `email-changed.html` | Email change confirmation page |
 | `docs/branding/` | Branding guidelines (brand-voice, taglines, branding) |
 | `docs/colors/` | Color system guidelines (color-system, color-usage) |
-| `scripts/build-i18n.js` | Generates pre-rendered HTML for en, sv, da, fi |
-| `en/`, `sv/`, `da/`, `fi/` | Generated language directories (do not edit directly) |
+| `scripts/build-i18n.js` | Generates pre-rendered HTML for en, sv, da, fi, de |
+| `en/`, `sv/`, `da/`, `fi/`, `de/` | Generated language directories (do not edit directly) |
 
 ## Styling rule
 
@@ -57,15 +57,15 @@ Always follow the branding guidelines defined in the project docs:
 
 ## i18n
 
-- Pre-rendered HTML per language: Norwegian on root (`/`), others under `/en/`, `/sv/`, `/da/`, `/fi/`
-- Build script: `node scripts/build-i18n.js` — generates 48 HTML files from source + locale JSON
+- Pre-rendered HTML per language: Norwegian on root (`/`), others under `/en/`, `/sv/`, `/da/`, `/fi/`, `/de/`
+- Build script: `node scripts/build-i18n.js` — generates pre-rendered HTML files from source + locale JSON
 - **Must re-run after any change to source HTML files or locale JSON files**
 - Source files are the Norwegian HTML files (index.html, care-schedule/index.html, etc.)
-- Generated files under en/, sv/, da/, fi/ should never be edited directly
+- Generated files under en/, sv/, da/, fi/, de/ should never be edited directly
 - Client-side i18n (js/i18n.js) retained only for interactive elements (care-schedule tool)
 - Language detected from URL path, not navigator.language
-- Supported languages: Norwegian (no), English (en), Swedish (sv), Danish (da), Finnish (fi)
-- When adding user-facing text, add translations to all 5 locale files in locales/
+- Supported languages: Norwegian (no), English (en), Swedish (sv), Danish (da), Finnish (fi), German (de)
+- When adding user-facing text, add translations to all 6 locale files in locales/
 
 ## Hosting
 
