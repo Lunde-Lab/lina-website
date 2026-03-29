@@ -82,20 +82,6 @@
       letter-spacing: -0.02em;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 24px;
-    }
-
-    .nav-links a {
-      font-size: 14px;
-      color: var(--text-secondary);
-      text-decoration: none;
-      transition: color 0.15s;
-    }
-
-    .nav-links a:hover { color: var(--text); }
-
     .nav-right {
       display: flex;
       align-items: center;
@@ -502,7 +488,6 @@
       footer { padding: 32px 16px; }
       .footer-nav-row { gap: 16px; }
       .footer-nav-row a { font-size: 12px; }
-      .nav-links { display: none; }
     }
   </style>
   <script type="application/ld+json">
@@ -552,11 +537,6 @@
   <nav>
     <div class="nav-inner">
       <a href="/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
-      <nav class="nav-links">
-        <a href="/care-schedule/" data-i18n="footer.careSchedule">Care Schedule</a>
-        <a href="/care-agreement/" data-i18n="footer.careAgreement">Care Agreement</a>
-        <a href="/pricing/" aria-current="page" data-i18n="footer.pricing">Pricing</a>
-      </nav>
       <div class="nav-right">
         <div class="lang-switcher" id="lang-switcher">
           <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">

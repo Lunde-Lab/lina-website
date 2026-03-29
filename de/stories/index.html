@@ -75,21 +75,6 @@
       justify-content: space-between;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      align-items: center;
-    }
-
-    .nav-links a {
-      font-size: 14px;
-      color: var(--text-secondary);
-      text-decoration: none;
-      transition: color 0.15s;
-    }
-
-    .nav-links a:hover { color: var(--text); }
-
     .nav-right {
       display: flex;
       align-items: center;
@@ -414,11 +399,6 @@
   <nav>
     <div class="nav-inner">
       <a href="/de/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
-      <nav class="nav-links">
-        <a href="/de/care-schedule/" data-i18n="footer.careSchedule">Betreuungsplan</a>
-        <a href="/de/care-agreement/" data-i18n="footer.careAgreement">Betreuungsvereinbarung</a>
-        <a href="/de/pricing/" data-i18n="footer.pricing">Preise</a>
-      </nav>
       <div class="nav-right">
         <div class="lang-switcher" id="lang-switcher">
           <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">

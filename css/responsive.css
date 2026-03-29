@@ -7,54 +7,12 @@
    ================================================================ */
 
 
-/* ── Nav links ────────────────────────────────────────────────── */
+/* ── Nav ────────────────────────────────────────────────── */
 
 .nav-right {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-
-.nav-links {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  margin: 0 auto;
-  height: 100%;
-}
-
-.nav-links a {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-secondary);
-  text-decoration: none;
-  padding: 0 12px;
-  border: none;
-  border-bottom: none;
-  transition: color 0.15s, background 0.15s;
-  white-space: nowrap;
-}
-
-.nav-links a::after,
-.nav-links a::before {
-  display: none;
-  content: none;
-}
-
-.nav-links a:hover {
-  color: var(--text);
-  background: rgba(0, 0, 0, 0.04);
-  border-radius: 6px;
-}
-
-.nav-links a[aria-current="page"] {
-  color: var(--primary);
-  background: #EAF4F3;
-  border-radius: 6px;
 }
 
 
@@ -73,38 +31,11 @@
 }
 
 
-/* ── Mobile nav: two-row layout ─────────────────────────────── */
+/* ── Mobile nav ─────────────────────────────────────────── */
 
 @media (max-width: 700px) {
   nav .nav-inner {
-    height: auto;
-    flex-wrap: wrap;
-    padding: 10px 16px 8px;
-  }
-
-  nav .nav-inner > a:first-child {
-    flex: 0 0 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-links {
-    flex: 1;
-    margin: 0;
-    height: 36px;
-    gap: 4px;
-  }
-
-  .nav-links a {
-    font-size: 13px;
-    padding: 0 8px;
-    height: 36px;
-  }
-
-  .nav-right {
-    flex: 0 0 auto;
-    height: 36px;
+    padding: 0 16px;
   }
 }
 
