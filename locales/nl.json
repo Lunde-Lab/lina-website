@@ -276,6 +276,26 @@
       "schedule": { "title": "Zorgschema", "description": "De zorgregeling wordt weergegeven in één gedeeld overzicht. Minder discussies over wie het kind had en wanneer." },
       "agreement": { "title": "Ouderschapsplan", "description": "De ouderschapsplanpagina geeft ouders een overzicht van wat het plan moet bevatten, met een voorbeeld en links naar officiële bronnen. Een goed startpunt voor of na mediation.", "link": "Bekijk de informatiepagina" }
     },
+    "thoughtful": {
+      "label": "Doordachte details",
+      "title": "Ontworpen met zorg voor gevoelige situaties",
+      "blurPhotos": {
+        "title": "Foto's vervagen",
+        "description": "Ouders kunnen individuele foto's in het gedeelde album vervagen. Dit helpt bij het dempen van emotionele reacties en houdt de focus op de praktische samenwerking."
+      },
+      "blurMessages": {
+        "title": "Berichten vervagen",
+        "description": "Ouders kunnen de inhoud van een bericht vervagen. Het bericht blijft bewaard, maar kan worden onthuld wanneer de lezer er klaar voor is — dat vermindert de druk bij moeilijke gesprekken."
+      },
+      "markImportant": {
+        "title": "Markeer als belangrijk",
+        "description": "Belangrijke berichten kunnen worden gemarkeerd en blijven makkelijk te vinden. Afspraken, schema's en belangrijke beslissingen zijn altijd toegankelijk — niet begraven in een lang gesprek."
+      },
+      "export": {
+        "title": "Gesprekken exporteren",
+        "description": "Alle berichten kunnen als bestand worden geëxporteerd. Als een gesprek gedeeld moet worden met een mediator, advocaat of andere professional, hebben de ouders een duidelijk dossier."
+      }
+    },
     "screenshots": {
       "label1": "Onderwerpen",
       "label2": "Onderwerp detail",

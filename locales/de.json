@@ -276,6 +276,26 @@
       "schedule": { "title": "Betreuungsplan", "description": "Die Betreuungsregelung wird in einer gemeinsamen Ansicht angezeigt. Weniger Diskussionen darüber, bei wem das Kind wann war." },
       "agreement": { "title": "Betreuungsvereinbarung", "description": "Die Seite zur Betreuungsvereinbarung gibt Eltern einen Überblick darüber, was die Vereinbarung umfassen sollte, mit einem Beispiel und Links zu offiziellen Ressourcen. Ein guter Ausgangspunkt vor oder nach der Beratung.", "link": "Zur Informationsseite" }
     },
+    "thoughtful": {
+      "label": "Durchdachte Details",
+      "title": "Mit Sorgfalt für sensible Situationen gestaltet",
+      "blurPhotos": {
+        "title": "Fotos unscharf stellen",
+        "description": "Eltern können einzelne Fotos im geteilten Album unscharf stellen. Das hilft, emotionale Reaktionen abzumildern und den Fokus auf die praktische Zusammenarbeit zu richten."
+      },
+      "blurMessages": {
+        "title": "Nachrichten unscharf stellen",
+        "description": "Eltern können den Inhalt einer Nachricht unscharf stellen. Die Nachricht bleibt erhalten, kann aber eingeblendet werden, wenn der Leser bereit ist — das reduziert den Druck in schwierigen Gesprächen."
+      },
+      "markImportant": {
+        "title": "Als wichtig markieren",
+        "description": "Wichtige Nachrichten können markiert werden und bleiben leicht auffindbar. Vereinbarungen, Pläne und wichtige Entscheidungen sind immer zugänglich — nicht in einem langen Verlauf vergraben."
+      },
+      "export": {
+        "title": "Gespräche exportieren",
+        "description": "Alle Nachrichten können als Datei exportiert werden. Wenn ein Gespräch mit einem Mediator, Anwalt oder anderen Fachperson geteilt werden muss, haben die Eltern eine klare Dokumentation."
+      }
+    },
     "screenshots": {
       "label1": "Themenbereiche",
       "label2": "Themenbereich-Detail",

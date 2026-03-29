@@ -273,6 +273,26 @@
       "schedule": { "title": "Planning de garde", "description": "Le calendrier de garde est affiché dans une vue partagée. Moins de discussions sur qui avait l'enfant et quand." },
       "agreement": { "title": "Convention parentale", "description": "La page de convention parentale donne aux parents un aperçu de ce que la convention doit inclure, avec un exemple et des liens vers des ressources officielles — notamment la médiation familiale et le juge aux affaires familiales (JAF). Un bon point de départ avant ou après la médiation.", "link": "Voir la page d'informations" }
     },
+    "thoughtful": {
+      "label": "Détails attentionnés",
+      "title": "Conçu avec soin pour les situations sensibles",
+      "blurPhotos": {
+        "title": "Flouter les photos",
+        "description": "Les parents peuvent flouter des photos individuelles dans l'album partagé. Cela aide à atténuer les réactions émotionnelles et garde l'attention sur la coopération pratique."
+      },
+      "blurMessages": {
+        "title": "Flouter les messages",
+        "description": "Les parents peuvent flouter le contenu d'un message dans un fil. Le message reste présent, mais peut être révélé quand le lecteur est prêt — cela réduit la pression dans les conversations difficiles."
+      },
+      "markImportant": {
+        "title": "Marquer comme important",
+        "description": "Les messages importants peuvent être marqués et restent faciles à trouver. Les accords, les plannings et les décisions clés sont toujours accessibles — pas enfouis dans un long fil."
+      },
+      "export": {
+        "title": "Exporter les conversations",
+        "description": "Tous les messages peuvent être exportés sous forme de fichier. Si une conversation doit être partagée avec un médiateur, un avocat ou un autre professionnel, les parents disposent d'un dossier clair."
+      }
+    },
     "screenshots": {
       "label1": "Sujets",
       "label2": "Détail du sujet",

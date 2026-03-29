@@ -289,6 +289,26 @@
       "schedule": { "title": "Hoitoaikataulu", "description": "Hoitoajan jakautuminen näkyy yhdessä yhteisessä näkymässä. Vähemmän keskusteluja siitä, kummalla vanhemmalla lapsi oli ja milloin." },
       "agreement": { "title": "Huoltosopimus", "description": "Huoltosopimuksen tietosivu antaa vanhemmille yleiskuvan siitä, mitä sopimuksen tulisi sisältää, esimerkin ja linkkejä virallisiin resursseihin. Hyvä lähtökohta ennen sovittelua tai sen jälkeen.", "link": "Näytä tietosivu" }
     },
+    "thoughtful": {
+      "label": "Harkitut yksityiskohdat",
+      "title": "Suunniteltu herkät tilanteet huomioiden",
+      "blurPhotos": {
+        "title": "Sumenna kuvat",
+        "description": "Vanhemmat voivat sumentaa yksittäisiä kuvia jaetussa albumissa. Se auttaa hallitsemaan tunnereaktioita ja pitää keskittymisen käytännön yhteistyössä."
+      },
+      "blurMessages": {
+        "title": "Sumenna viestit",
+        "description": "Vanhemmat voivat sumentaa viestin sisällön keskustelussa. Viesti on edelleen tallessa, mutta sen voi paljastaa, kun lukija on valmis — se vähentää painetta vaikeissa keskusteluissa."
+      },
+      "markImportant": {
+        "title": "Merkitse tärkeäksi",
+        "description": "Tärkeät viestit voidaan merkitä ja ne pysyvät helposti löydettävinä. Sopimukset, aikataulut ja keskeiset päätökset ovat aina saatavilla — eivät hautaudu pitkään viestiketjuun."
+      },
+      "export": {
+        "title": "Vie keskustelut",
+        "description": "Kaikki viestit voidaan viedä tiedostona. Jos keskustelu on jaettava sovittelijan, lakimiehen tai muun ammattilaisen kanssa, vanhemmilla on selkeä asiakirja."
+      }
+    },
     "screenshots": {
       "label1": "Säikeet",
       "label2": "Säieen tiedot",

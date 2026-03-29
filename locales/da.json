@@ -289,6 +289,26 @@
       "schedule": { "title": "Samværsplan", "description": "Samværsfordelingen vises i én fælles visning. Færre diskussioner om, hvem der havde barnet hvornår." },
       "agreement": { "title": "Samværsaftale", "description": "Informationssiden om samværsaftaler giver forældre et overblik over, hvad aftalen bør indeholde, med eksempel og links til officielle ressourcer. Et godt udgangspunkt før eller efter mægling.", "link": "Vis informationssiden" }
     },
+    "thoughtful": {
+      "label": "Gennemtænkte detaljer",
+      "title": "Designet med omtanke for følsomme situationer",
+      "blurPhotos": {
+        "title": "Sløre billeder",
+        "description": "Forældre kan sløre enkeltstående billeder i det delte album. Det hjælper med at dæmpe følelsesmæssige reaktioner og holder fokus på det praktiske samarbejde."
+      },
+      "blurMessages": {
+        "title": "Sløre beskeder",
+        "description": "Forældre kan sløre beskedindhold i en tråd. Beskeden er stadig der, men kan afsløres, når læseren er klar — det mindsker presset i svære samtaler."
+      },
+      "markImportant": {
+        "title": "Markér som vigtig",
+        "description": "Vigtige beskeder kan markeres og holdes lette at finde. Aftaler, planer og vigtige beslutninger er altid tilgængelige — ikke begravet i en lang tråd."
+      },
+      "export": {
+        "title": "Eksportér samtaler",
+        "description": "Alle beskeder kan eksporteres som en fil. Hvis en samtale skal deles med en mægler, advokat eller anden fagperson, har forældrene et tydeligt grundlag."
+      }
+    },
     "screenshots": {
       "label1": "Tråde",
       "label2": "Tråddetalje",

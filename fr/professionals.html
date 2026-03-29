@@ -395,6 +395,26 @@
       line-height: 1.6;
     }
 
+    /* ── Thoughtful details ── */
+    #fv-thoughtful { background: #fff; }
+
+    #fv-thoughtful h2 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 56px;
+    }
+
+    .thoughtful-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 720px) {
+      .thoughtful-grid { grid-template-columns: 1fr; }
+    }
+
     /* ── Privacy ── */
     #fv-privacy { background: #fff; }
 
@@ -998,6 +1018,62 @@
           <h3 data-i18n="familievern.features.agreement.title">Convention parentale</h3>
           <p data-i18n="familievern.features.agreement.description">La page de convention parentale donne aux parents un aperçu de ce que la convention doit inclure, avec un exemple et des liens vers des ressources officielles — notamment la médiation familiale et le juge aux affaires familiales (JAF). Un bon point de départ avant ou après la médiation.</p>
           <a href="/fr/care-agreement/" data-i18n="familievern.features.agreement.link" style="display:inline-block;margin-top:12px;font-size:13px;font-weight:500;color:var(--primary);">Voir la page d'informations</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Thoughtful details -->
+  <section id="fv-thoughtful">
+    <div class="container">
+      <p class="section-label" data-i18n="familievern.thoughtful.label">Détails attentionnés</p>
+      <h2 data-i18n="familievern.thoughtful.title">Conçu avec soin pour les situations sensibles</h2>
+      <div class="thoughtful-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/>
+              <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/>
+              <path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/>
+              <line x1="2" x2="22" y1="2" y2="22"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.thoughtful.blurPhotos.title">Flouter les photos</h3>
+          <p data-i18n="familievern.thoughtful.blurPhotos.description">Les parents peuvent flouter des photos individuelles dans l'album partagé. Cela aide à atténuer les réactions émotionnelles et garde l'attention sur la coopération pratique.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.thoughtful.blurMessages.title">Flouter les messages</h3>
+          <p data-i18n="familievern.thoughtful.blurMessages.description">Les parents peuvent flouter le contenu d'un message dans un fil. Le message reste présent, mais peut être révélé quand le lecteur est prêt — cela réduit la pression dans les conversations difficiles.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.thoughtful.markImportant.title">Marquer comme important</h3>
+          <p data-i18n="familievern.thoughtful.markImportant.description">Les messages importants peuvent être marqués et restent faciles à trouver. Les accords, les plannings et les décisions clés sont toujours accessibles — pas enfouis dans un long fil.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" x2="12" y1="15" y2="3"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.thoughtful.export.title">Exporter les conversations</h3>
+          <p data-i18n="familievern.thoughtful.export.description">Tous les messages peuvent être exportés sous forme de fichier. Si une conversation doit être partagée avec un médiateur, un avocat ou un autre professionnel, les parents disposent d'un dossier clair.</p>
         </div>
 
       </div>

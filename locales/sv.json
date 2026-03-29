@@ -289,6 +289,26 @@
       "schedule": { "title": "Omsorgsschema", "description": "Omsorgsfördelningen visas i en gemensam vy. Färre diskussioner om vem som hade barnet och när." },
       "agreement": { "title": "Samarbetsavtal", "description": "Informationssidan om samarbetsavtal ger föräldrar en översikt över vad avtalet bör innehålla, med exempel och länkar till officiella resurser. En bra utgångspunkt före eller efter medling.", "link": "Visa informationssidan" }
     },
+    "thoughtful": {
+      "label": "Genomtänkta detaljer",
+      "title": "Utformad med omsorg för känsliga situationer",
+      "blurPhotos": {
+        "title": "Sudda bilder",
+        "description": "Föräldrar kan sudda enskilda bilder i det delade albumet. Det hjälper till att dämpa känslomässiga reaktioner och håller fokus på det praktiska samarbetet."
+      },
+      "blurMessages": {
+        "title": "Sudda meddelanden",
+        "description": "Föräldrar kan sudda meddelandeinnehåll i en tråd. Meddelandet finns kvar, men kan visas när läsaren är redo — det minskar pressen i svåra samtal."
+      },
+      "markImportant": {
+        "title": "Markera som viktig",
+        "description": "Viktiga meddelanden kan markeras och bli lätta att hitta. Överenskommelser, scheman och viktiga beslut är alltid tillgängliga — inte begravda i en lång tråd."
+      },
+      "export": {
+        "title": "Exportera konversationer",
+        "description": "Alla meddelanden kan exporteras som en fil. Om en konversation behöver delas med en medlare, jurist eller annan yrkesperson har föräldrarna ett tydligt underlag."
+      }
+    },
     "screenshots": {
       "label1": "Trådar",
       "label2": "Tråddetalj",

@@ -273,6 +273,26 @@
       "schedule": { "title": "Care schedule", "description": "The care arrangement is shown in one shared view. Fewer discussions about who had the child and when." },
       "agreement": { "title": "Care Agreement", "description": "The care agreement page gives parents an overview of what the agreement should include, with an example and links to official resources. A good starting point before or after mediation.", "link": "View the information page" }
     },
+    "thoughtful": {
+      "label": "Thoughtful details",
+      "title": "Designed with care for sensitive situations",
+      "blurPhotos": {
+        "title": "Blur photos",
+        "description": "Parents can blur individual photos in the shared album. This helps manage emotional reactions and keeps the focus on practical cooperation."
+      },
+      "blurMessages": {
+        "title": "Blur messages",
+        "description": "Parents can blur message content in a thread. The message is still there, but can be revealed when the reader is ready — reducing pressure in difficult conversations."
+      },
+      "markImportant": {
+        "title": "Mark important",
+        "description": "Important messages can be marked and stay easy to find. Agreements, schedules, and key decisions are always accessible — not buried in a long thread."
+      },
+      "export": {
+        "title": "Export conversations",
+        "description": "All messages can be exported as a file. If a conversation needs to be shared with a mediator, solicitor, or other professional, parents have a clear record."
+      }
+    },
     "screenshots": {
       "label1": "Threads",
       "label2": "Thread detail",

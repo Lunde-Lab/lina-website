@@ -395,6 +395,26 @@
       line-height: 1.6;
     }
 
+    /* ── Thoughtful details ── */
+    #fv-thoughtful { background: #fff; }
+
+    #fv-thoughtful h2 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 56px;
+    }
+
+    .thoughtful-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 720px) {
+      .thoughtful-grid { grid-template-columns: 1fr; }
+    }
+
     /* ── Privacy ── */
     #fv-privacy { background: #fff; }
 
@@ -998,6 +1018,62 @@
           <h3 data-i18n="familievern.features.agreement.title">Samværsaftale</h3>
           <p data-i18n="familievern.features.agreement.description">Informationssiden om samværsaftaler giver forældre et overblik over, hvad aftalen bør indeholde, med eksempel og links til officielle ressourcer. Et godt udgangspunkt før eller efter mægling.</p>
           <a href="/da/care-agreement/" data-i18n="familievern.features.agreement.link" style="display:inline-block;margin-top:12px;font-size:13px;font-weight:500;color:var(--primary);">Vis informationssiden</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Thoughtful details -->
+  <section id="fv-thoughtful">
+    <div class="container">
+      <p class="section-label" data-i18n="familievern.thoughtful.label">Gennemtænkte detaljer</p>
+      <h2 data-i18n="familievern.thoughtful.title">Designet med omtanke for følsomme situationer</h2>
+      <div class="thoughtful-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/>
+              <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/>
+              <path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/>
+              <line x1="2" x2="22" y1="2" y2="22"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.thoughtful.blurPhotos.title">Sløre billeder</h3>
+          <p data-i18n="familievern.thoughtful.blurPhotos.description">Forældre kan sløre enkeltstående billeder i det delte album. Det hjælper med at dæmpe følelsesmæssige reaktioner og holder fokus på det praktiske samarbejde.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.thoughtful.blurMessages.title">Sløre beskeder</h3>
+          <p data-i18n="familievern.thoughtful.blurMessages.description">Forældre kan sløre beskedindhold i en tråd. Beskeden er stadig der, men kan afsløres, når læseren er klar — det mindsker presset i svære samtaler.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.thoughtful.markImportant.title">Markér som vigtig</h3>
+          <p data-i18n="familievern.thoughtful.markImportant.description">Vigtige beskeder kan markeres og holdes lette at finde. Aftaler, planer og vigtige beslutninger er altid tilgængelige — ikke begravet i en lang tråd.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" x2="12" y1="15" y2="3"/>
+            </svg>
+          </div>
+          <h3 data-i18n="familievern.thoughtful.export.title">Eksportér samtaler</h3>
+          <p data-i18n="familievern.thoughtful.export.description">Alle beskeder kan eksporteres som en fil. Hvis en samtale skal deles med en mægler, advokat eller anden fagperson, har forældrene et tydeligt grundlag.</p>
         </div>
 
       </div>
