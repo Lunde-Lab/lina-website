@@ -263,7 +263,8 @@
       "description": "Lina is gebouwd met privacy als basis. De gegevens van ouders worden verantwoord verwerkt en de app is vrij van commerciële belangen. Als professional kunt u de app met vertrouwen aanbevelen.",
       "point1": { "title": "Geen reclame", "description": "Geen advertenties of commerciële belangen beïnvloeden de gebruikerservaring." },
       "point2": { "title": "Geen gegevensdeling", "description": "De gegevens van ouders worden niet verkocht of gedeeld met derden." },
-      "point3": { "title": "Veilige infrastructuur", "description": "Informatie is beschermd door veilige opslag, toegangscontrole en ondertekende links." }
+      "point3": { "title": "Veilige infrastructuur", "description": "Informatie is beschermd door veilige opslag, toegangscontrole en ondertekende links." },
+      "point4": { "title": "AVG-conform", "description": "Lina voldoet aan de Europese Algemene Verordening Gegevensbescherming (AVG). U kunt het volledige privacybeleid lezen op getlina.app/privacy." }
     },
     "features": {
       "label": "Hoe het in de praktijk werkt",

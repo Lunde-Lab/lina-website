@@ -263,7 +263,8 @@
       "description": "Lina ist mit Datenschutz als Grundlage entwickelt. Die Daten der Eltern werden verantwortungsvoll behandelt, und die App ist frei von kommerziellen Interessen. Als Fachkraft können Sie sie mit gutem Gewissen empfehlen.",
       "point1": { "title": "Keine Werbung", "description": "Keine Anzeigen oder kommerzielle Interessen beeinflussen die Nutzungserfahrung." },
       "point2": { "title": "Keine Datenweitergabe", "description": "Die Daten der Eltern werden nicht verkauft oder an Dritte weitergegeben." },
-      "point3": { "title": "Sichere Infrastruktur", "description": "Informationen werden durch sichere Speicherung, Zugriffskontrolle und signierte Links geschützt." }
+      "point3": { "title": "Sichere Infrastruktur", "description": "Informationen werden durch sichere Speicherung, Zugriffskontrolle und signierte Links geschützt." },
+      "point4": { "title": "DSGVO-konform", "description": "Lina erfüllt die EU-Datenschutz-Grundverordnung (DSGVO). Die vollständige Datenschutzerklärung finden Sie unter getlina.app/privacy." }
     },
     "features": {
       "label": "So funktioniert es in der Praxis",

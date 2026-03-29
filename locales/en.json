@@ -260,7 +260,8 @@
       "description": "Lina is built with privacy as its foundation. Parents' data is handled responsibly, and the app is free from commercial interests. As a professional, you can recommend it with confidence.",
       "point1": { "title": "No advertising", "description": "No ads or commercial interests affect the user experience." },
       "point2": { "title": "No data sharing", "description": "Parents' data is not sold or shared with third parties." },
-      "point3": { "title": "Secure infrastructure", "description": "Information is protected through secure storage, access control, and signed links." }
+      "point3": { "title": "Secure infrastructure", "description": "Information is protected through secure storage, access control, and signed links." },
+      "point4": { "title": "GDPR-compliant", "description": "Lina is fully compliant with the EU General Data Protection Regulation (GDPR). You can read the full privacy policy at getlina.app/privacy." }
     },
     "features": {
       "label": "How it works in practice",

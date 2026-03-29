@@ -276,7 +276,8 @@
       "description": "Lina er bygget med privatliv som fundament. Forældrenes data behandles forsvarligt, og appen er fri for kommercielle interesser. Som fagperson kan du anbefale den med tillid.",
       "point1": { "title": "Ingen reklame", "description": "Ingen annoncer eller kommercielle interesser påvirker brugeroplevelsen." },
       "point2": { "title": "Ingen datadeling", "description": "Forældrenes data sælges ikke og deles ikke med tredjeparter." },
-      "point3": { "title": "Sikker infrastruktur", "description": "Information beskyttes gennem sikker lagring, adgangskontrol og signerede links." }
+      "point3": { "title": "Sikker infrastruktur", "description": "Information beskyttes gennem sikker lagring, adgangskontrol og signerede links." },
+      "point4": { "title": "GDPR-overholdelse", "description": "Lina overholder EU's databeskyttelsesforordning (GDPR). Du kan læse hele privatlivspolitikken på getlina.app/privacy." }
     },
     "features": {
       "label": "Sådan fungerer det i praksis",

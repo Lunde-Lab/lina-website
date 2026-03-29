@@ -260,7 +260,8 @@
       "description": "Lina est construit avec la confidentialité comme fondement. Les données des parents sont traitées de manière responsable, et l'application est exempte d'intérêts commerciaux. En tant que professionnel, vous pouvez le recommander en toute confiance.",
       "point1": { "title": "Pas de publicité", "description": "Pas de publicités ni d'intérêts commerciaux n'affectent l'expérience utilisateur." },
       "point2": { "title": "Pas de partage de données", "description": "Les données des parents ne sont pas vendues ni partagées avec des tiers." },
-      "point3": { "title": "Infrastructure sécurisée", "description": "Les informations sont protégées par un stockage sécurisé, un contrôle d'accès et des liens signés." }
+      "point3": { "title": "Infrastructure sécurisée", "description": "Les informations sont protégées par un stockage sécurisé, un contrôle d'accès et des liens signés." },
+      "point4": { "title": "Conforme au RGPD", "description": "Lina est conforme au Règlement Général sur la Protection des Données (RGPD) de l'UE. Vous pouvez consulter la politique de confidentialité complète sur getlina.app/privacy." }
     },
     "features": {
       "label": "Comment ça fonctionne en pratique",

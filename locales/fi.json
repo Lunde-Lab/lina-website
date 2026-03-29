@@ -276,7 +276,8 @@
       "description": "Lina on rakennettu tietosuoja perustana. Vanhempien tietoja käsitellään vastuullisesti, ja sovellus on vapaa kaupallisista intresseistä. Ammattilaisena voit suositella sitä luottavaisin mielin.",
       "point1": { "title": "Ei mainontaa", "description": "Mitkään mainokset tai kaupalliset intressit eivät vaikuta käyttäjäkokemukseen." },
       "point2": { "title": "Ei tietojen jakamista", "description": "Vanhempien tietoja ei myydä eikä jaeta kolmansille osapuolille." },
-      "point3": { "title": "Turvallinen infrastruktuuri", "description": "Tiedot suojataan turvallisella tallennuksella, pääsynhallinnalla ja allekirjoitetuilla linkeillä." }
+      "point3": { "title": "Turvallinen infrastruktuuri", "description": "Tiedot suojataan turvallisella tallennuksella, pääsynhallinnalla ja allekirjoitetuilla linkeillä." },
+      "point4": { "title": "GDPR-yhteensopiva", "description": "Lina noudattaa EU:n yleistä tietosuoja-asetusta (GDPR). Voit lukea koko tietosuojakäytännön osoitteessa getlina.app/privacy." }
     },
     "features": {
       "label": "Miten se toimii käytännössä",
