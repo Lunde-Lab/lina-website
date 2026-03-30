@@ -505,9 +505,9 @@ function fixInternalLinks(html, lang) {
 function fixBlogLinks(html, lang) {
   return processNonJsonLd(html, text => {
     for (const file of SOURCE_FILES) {
-      if (!file.langUrls || !file.langUrls.en) continue;
+      if (!file.langUrls) continue;
       const targetSlug   = file.langUrls[lang] || file.urlPath;
-      const prefixedEn   = `/${lang}${file.langUrls.en}`;
+      const prefixedEn   = `/${lang}${file.urlPath}`;
       const prefixedLang = `/${lang}${targetSlug}`;
       if (prefixedEn === prefixedLang) continue;
       const esc = prefixedEn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
