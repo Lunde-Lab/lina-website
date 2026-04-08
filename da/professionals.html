@@ -764,6 +764,23 @@
       }
     }
   </style>
+  <script id="lina-lang-redirect">(function () {
+  var K = 'lina_lang';
+  // Already on a non-English locale page — nothing to do
+  if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
+  var s; try { s = localStorage.getItem(K); } catch (e) {}
+  // User explicitly chose English — stay
+  if (s === 'en') return;
+  // User previously chose a non-English language — redirect to same path
+  if (s) { location.replace('/' + s + location.pathname); return; }
+  // First visit: auto-detect from browser language list
+  var M = {nb:'no',nn:'no',no:'no',sv:'sv',da:'da',fi:'fi',de:'de',nl:'nl',fr:'fr'};
+  var ls = navigator.languages ? [].slice.call(navigator.languages) : [navigator.language || ''];
+  for (var i = 0; i < ls.length; i++) {
+    var l = M[(ls[i] || '').toLowerCase().split('-')[0]];
+    if (l) { location.replace('/' + l + '/'); return; }
+  }
+}());</script>
 </head>
 <body>
 
@@ -820,14 +837,14 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
             </button>
             <div class="phone-frame" id="carousel-frame">
-              <div class="carousel-slide active"><picture><source srcset="/assets/images/locale%20screenshots/da/ThreadsScreenDA.png" type="image/png" /><img src="/assets/images/locale%20screenshots/da/ThreadsScreenDA.png" alt="Threads" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/da/ThreadDetailDA.png" type="image/png" /><img src="/assets/images/locale%20screenshots/da/ThreadDetailDA.png" alt="Thread detail" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/da/AlbumScreenDA.png" type="image/png" /><img src="/assets/images/locale%20screenshots/da/AlbumScreenDA.png" alt="Shared album" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/da/ToolsScreenDA.png" type="image/png" /><img src="/assets/images/locale%20screenshots/da/ToolsScreenDA.png" alt="Tools" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/da/EquipmentDA.png" type="image/png" /><img src="/assets/images/locale%20screenshots/da/EquipmentDA.png" alt="Equipment list" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/da/ContactDA.png" type="image/png" /><img src="/assets/images/locale%20screenshots/da/ContactDA.png" alt="Contacts" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/da/ChildDA.png" type="image/png" /><img src="/assets/images/locale%20screenshots/da/ChildDA.png" alt="Child info" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/da/CareScheduleDA.png" type="image/png" /><img src="/assets/images/locale%20screenshots/da/CareScheduleDA.png" alt="Care schedule" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide active"><picture><source srcset="/assets/images/locale%20screenshots/en/ThreadsScreenEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ThreadsScreenEN.png" alt="Threads" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ThreadDetailEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ThreadDetailEN.png" alt="Thread detail" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/AlbumScreenEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/AlbumScreenEN.png" alt="Shared album" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ToolScreenEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ToolScreenEN.png" alt="Tools" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/EquipmentEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/EquipmentEN.png" alt="Equipment list" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ContactEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ContactEN.png" alt="Contacts" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ChildEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ChildEN.png" alt="Child info" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/CareScheduleEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/CareScheduleEN.png" alt="Care schedule" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
             </div>
             <button class="carousel-arrow" id="carousel-next" aria-label="Next screenshot">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
@@ -1234,6 +1251,7 @@
   </script>
   <script>
   (function () {
+    var K = 'lina_lang';
     var switcher = document.getElementById('lang-switcher');
     var btn = document.getElementById('lang-btn');
     if (!switcher || !btn) return;
@@ -1248,6 +1266,14 @@
         btn.setAttribute('aria-expanded', 'false');
       }
     });
+    // Persist manual language selection so the redirect respects the user's choice
+    var opts = switcher.querySelectorAll('.lang-option');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].addEventListener('click', function () {
+        var m = (this.getAttribute('href') || '').match(/^/(no|sv|da|fi|de|nl|fr)//);
+        try { localStorage.setItem(K, m ? m[1] : 'en'); } catch (e) {}
+      });
+    }
   }());
   </script>
 

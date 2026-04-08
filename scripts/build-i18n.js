@@ -162,6 +162,7 @@ const INTERNAL_HREFS = [
 // The new minimal lang-switcher IIFE (replaces old one with linaSetLang).
 // Deliberately uses `var` to avoid any let/const edge cases in older browsers.
 const NEW_LANG_IIFE = `(function () {
+    var K = 'lina_lang';
     var switcher = document.getElementById('lang-switcher');
     var btn = document.getElementById('lang-btn');
     if (!switcher || !btn) return;
@@ -176,7 +177,36 @@ const NEW_LANG_IIFE = `(function () {
         btn.setAttribute('aria-expanded', 'false');
       }
     });
+    // Persist manual language selection so the redirect respects the user's choice
+    var opts = switcher.querySelectorAll('.lang-option');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].addEventListener('click', function () {
+        var m = (this.getAttribute('href') || '').match(/^\/(no|sv|da|fi|de|nl|fr)\//);
+        try { localStorage.setItem(K, m ? m[1] : 'en'); } catch (e) {}
+      });
+    }
   }())`;
+
+// Inline script injected into <head> of every page.
+// Redirects first-time visitors to their browser language, and remembers
+// manual language switches so users are never bounced against their will.
+const LANG_REDIRECT_SCRIPT = `(function () {
+  var K = 'lina_lang';
+  // Already on a non-English locale page — nothing to do
+  if (/^\\/(no|sv|da|fi|de|nl|fr)(\\\/|$)/.test(location.pathname)) return;
+  var s; try { s = localStorage.getItem(K); } catch (e) {}
+  // User explicitly chose English — stay
+  if (s === 'en') return;
+  // User previously chose a non-English language — redirect to same path
+  if (s) { location.replace('/' + s + location.pathname); return; }
+  // First visit: auto-detect from browser language list
+  var M = {nb:'no',nn:'no',no:'no',sv:'sv',da:'da',fi:'fi',de:'de',nl:'nl',fr:'fr'};
+  var ls = navigator.languages ? [].slice.call(navigator.languages) : [navigator.language || ''];
+  for (var i = 0; i < ls.length; i++) {
+    var l = M[(ls[i] || '').toLowerCase().split('-')[0]];
+    if (l) { location.replace('/' + l + '/'); return; }
+  }
+}());`;
 
 // ─── Utility helpers ─────────────────────────────────────────────────────────
 
@@ -570,6 +600,19 @@ function localizeScreenshots(html, lang) {
 }
 
 /**
+ * Inject the language-redirect script into <head> (idempotent).
+ * The script runs before page render and redirects first-time visitors
+ * to their browser language, while respecting manual language overrides.
+ */
+function injectLangRedirect(html) {
+  if (html.includes('lina-lang-redirect')) return html; // already injected
+  return html.replace(
+    '</head>',
+    `  <script id="lina-lang-redirect">${LANG_REDIRECT_SCRIPT}</script>\n</head>`
+  );
+}
+
+/**
  * Fix the logo <a href="…"> to point at the correct root for the target lang.
  * Matches any href value on the <a> tag that wraps a Logomark image.
  */
@@ -739,6 +782,7 @@ function buildRoot(srcHtml, urlPath, hasDropdown, locale, srcFile, file) {
   html = fixLogoLink(html, 'en');
   if (hasDropdown) html = fixLangSwitcher(html, 'en', urlPath, file);
   html = fixLangScript(html);
+  html = injectLangRedirect(html);
   return html;
 }
 
@@ -759,6 +803,7 @@ function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile, file)
   html = fixLogoLink(html, lang);
   if (hasDropdown) html = fixLangSwitcher(html, lang, urlPath, file);
   html = fixLangScript(html);
+  html = injectLangRedirect(html);
   return html;
 }
 
