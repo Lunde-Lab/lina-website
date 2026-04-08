@@ -472,7 +472,6 @@ const LOCALE_SCREENSHOT_MAP = {
     'AlbumScreen.png':         'AlbumScreenNO.png',
     'CareScheduleApp.webp':    'CareScheduleNO.png',
     'CareScheduleApp.png':     'CareScheduleNO.png',
-    'CareSchedule.png':        'CareScheduleNO.png',
     'ChildList.webp':          'ChildNO.png',
     'ChildList.png':           'ChildNO.png',
     'ContactList.webp':        'ContactNO.png',
