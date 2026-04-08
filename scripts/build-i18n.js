@@ -524,6 +524,25 @@ const LOCALE_SCREENSHOT_MAP = {
     'ToolScreen.png':          'ToolsScreenDA.png',
     'ToolsScreen.png':         'ToolsScreenDA.png',
   },
+  en: {
+    'AlbumScreen.webp':        'AlbumScreenEN.png',
+    'AlbumScreen.png':         'AlbumScreenEN.png',
+    'CareScheduleApp.webp':    'CareScheduleEN.png',
+    'CareScheduleApp.png':     'CareScheduleEN.png',
+    'ChildList.webp':          'ChildEN.png',
+    'ChildList.png':           'ChildEN.png',
+    'ContactList.webp':        'ContactEN.png',
+    'ContactList.png':         'ContactEN.png',
+    'EquipmentList.webp':      'EquipmentEN.png',
+    'EquipmentList.png':       'EquipmentEN.png',
+    'ThreadDetailScreen.webp': 'ThreadDetailEN.png',
+    'ThreadDetailScreen.png':  'ThreadDetailEN.png',
+    'ThreadsScreen.webp':      'ThreadsScreenEN.png',
+    'ThreadsScreen.png':       'ThreadsScreenEN.png',
+    'ToolScreen.webp':         'ToolScreenEN.png',
+    'ToolScreen.png':          'ToolScreenEN.png',
+    'ToolsScreen.png':         'ToolScreenEN.png',
+  },
 };
 
 /**
@@ -715,6 +734,7 @@ function buildRoot(srcHtml, urlPath, hasDropdown, locale, srcFile, file) {
   html = localizeJsonLd(html, locale, srcFile, 'en', file);
   html = setCanonicalAndHreflang(html, 'en', urlPath, file);
   html = fixAssetPaths(html);
+  html = localizeScreenshots(html, 'en');
   html = fixBlogLinksForRoot(html);
   html = fixLogoLink(html, 'en');
   if (hasDropdown) html = fixLangSwitcher(html, 'en', urlPath, file);
