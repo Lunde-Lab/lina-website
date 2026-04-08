@@ -463,6 +463,57 @@ function fixAssetPaths(html) {
 }
 
 /**
+ * Map of locale → { original filename → locale-specific filename }.
+ * Only PNG replacements; the locale screenshots folder has no webp variants.
+ */
+const LOCALE_SCREENSHOT_MAP = {
+  no: {
+    'AlbumScreen.webp':        'AlbumScreenNO.png',
+    'AlbumScreen.png':         'AlbumScreenNO.png',
+    'CareScheduleApp.webp':    'CareScheduleNO.png',
+    'CareScheduleApp.png':     'CareScheduleNO.png',
+    'CareSchedule.png':        'CareScheduleNO.png',
+    'ChildList.webp':          'ChildNO.png',
+    'ChildList.png':           'ChildNO.png',
+    'ContactList.webp':        'ContactNO.png',
+    'ContactList.png':         'ContactNO.png',
+    'EquipmentList.webp':      'EquipmentNO.png',
+    'EquipmentList.png':       'EquipmentNO.png',
+    'ThreadDetailScreen.webp': 'ThreadDetailNO.png',
+    'ThreadDetailScreen.png':  'ThreadDetailNO.png',
+    'ThreadsScreen.webp':      'ThreadsScreenNO.png',
+    'ThreadsScreen.png':       'ThreadsScreenNO.png',
+    'ToolScreen.webp':         'ToolsScreenNO.png',
+    'ToolScreen.png':          'ToolsScreenNO.png',
+    'ToolsScreen.png':         'ToolsScreenNO.png',
+  },
+};
+
+/**
+ * Replace app screenshot images with locale-specific versions when available.
+ * Locale screenshots live in /assets/images/locale%20screenshots/{lang}/.
+ * Also fixes type="image/webp" on <source> elements that now point to a PNG.
+ */
+function localizeScreenshots(html, lang) {
+  const map = LOCALE_SCREENSHOT_MAP[lang];
+  if (!map) return html;
+  const base = `/assets/images/locale%20screenshots/${lang}/`;
+  return processNonJsonLd(html, text => {
+    for (const [from, to] of Object.entries(map)) {
+      const fromPath = `/assets/images/${from}`;
+      const esc = fromPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      text = text.replace(new RegExp(`((?:src|srcset)=")${esc}(")`, 'g'), `$1${base}${to}$2`);
+    }
+    // Fix type attribute on <source> elements that now reference a PNG file
+    text = text.replace(
+      /(<source srcset="[^"]*locale%20screenshots[^"]*\.png"\s+)type="image\/webp"/g,
+      '$1type="image/png"'
+    );
+    return text;
+  });
+}
+
+/**
  * Fix the logo <a href="…"> to point at the correct root for the target lang.
  * Matches any href value on the <a> tag that wraps a Logomark image.
  */
@@ -647,6 +698,7 @@ function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile, file)
   // Asset paths are already absolute after the English root pass
   html = fixInternalLinks(html, lang);
   html = fixBlogLinks(html, lang);
+  html = localizeScreenshots(html, lang);
   html = fixLogoLink(html, lang);
   if (hasDropdown) html = fixLangSwitcher(html, lang, urlPath, file);
   html = fixLangScript(html);
