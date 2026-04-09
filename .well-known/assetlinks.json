@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.getlina.lina",
+      "sha256_cert_fingerprints": ["CD:80:DB:CF:FD:BE:07:D6:CB:CC:FC:5C:F4:FA:70:BD:56:69:D5:D2:37:D0:D2:2F:3D:6C:24:9C:6A:3B:49:20"]
+    }
+  }
+]
