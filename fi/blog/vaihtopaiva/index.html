@@ -510,7 +510,7 @@
     var opts = switcher.querySelectorAll('.lang-option');
     for (var i = 0; i < opts.length; i++) {
       opts[i].addEventListener('click', function () {
-        var m = (this.getAttribute('href') || '').match(/^/(no|sv|da|fi|de|nl|fr)//);
+        var m = (this.getAttribute('href') || '').match(/^\/(no|sv|da|fi|de|nl|fr)\//);
         try { localStorage.setItem(K, m ? m[1] : 'en'); } catch (e) {}
       });
     }
