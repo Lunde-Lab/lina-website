@@ -554,6 +554,44 @@ const LOCALE_SCREENSHOT_MAP = {
     'ToolScreen.png':          'ToolsScreenDA.png',
     'ToolsScreen.png':         'ToolsScreenDA.png',
   },
+  de: {
+    'AlbumScreen.webp':        'AlbumScreenDE.png',
+    'AlbumScreen.png':         'AlbumScreenDE.png',
+    'CareScheduleApp.webp':    'CareScheduleDE.png',
+    'CareScheduleApp.png':     'CareScheduleDE.png',
+    'ChildList.webp':          'ChildDE.png',
+    'ChildList.png':           'ChildDE.png',
+    'ContactList.webp':        'ContactDE.png',
+    'ContactList.png':         'ContactDE.png',
+    'EquipmentList.webp':      'EquipmentDE.png',
+    'EquipmentList.png':       'EquipmentDE.png',
+    'ThreadDetailScreen.webp': 'ThreadDetailDE.png',
+    'ThreadDetailScreen.png':  'ThreadDetailDE.png',
+    'ThreadsScreen.webp':      'ThreadsScreenDE.png',
+    'ThreadsScreen.png':       'ThreadsScreenDE.png',
+    'ToolScreen.webp':         'ToolsScreenDE.png',
+    'ToolScreen.png':          'ToolsScreenDE.png',
+    'ToolsScreen.png':         'ToolsScreenDE.png',
+  },
+  fi: {
+    'AlbumScreen.webp':        'AlbumScreenFI.png',
+    'AlbumScreen.png':         'AlbumScreenFI.png',
+    'CareScheduleApp.webp':    'CareScheduleFI.png',
+    'CareScheduleApp.png':     'CareScheduleFI.png',
+    'ChildList.webp':          'ChildFI.png',
+    'ChildList.png':           'ChildFI.png',
+    'ContactList.webp':        'ContactFI.png',
+    'ContactList.png':         'ContactFI.png',
+    'EquipmentList.webp':      'EquipmentFI.png',
+    'EquipmentList.png':       'EquipmentFI.png',
+    'ThreadDetailScreen.webp': 'Simulator Screenshot - iPhone 16e - 2026-04-03 at 20.10.49.png',
+    'ThreadDetailScreen.png':  'Simulator Screenshot - iPhone 16e - 2026-04-03 at 20.10.49.png',
+    'ThreadsScreen.webp':      'ThreadsScreenFI.png',
+    'ThreadsScreen.png':       'ThreadsScreenFI.png',
+    'ToolScreen.webp':         'ToolScreenFI.png',
+    'ToolScreen.png':          'ToolScreenFI.png',
+    'ToolsScreen.png':         'ToolScreenFI.png',
+  },
   en: {
     'AlbumScreen.webp':        'AlbumScreenEN.png',
     'AlbumScreen.png':         'AlbumScreenEN.png',
@@ -583,12 +621,22 @@ const LOCALE_SCREENSHOT_MAP = {
 function localizeScreenshots(html, lang) {
   const map = LOCALE_SCREENSHOT_MAP[lang];
   if (!map) return html;
-  const base = `/assets/images/locale%20screenshots/${lang}/`;
+  const base   = `/assets/images/locale%20screenshots/${lang}/`;
+  const enMap  = LOCALE_SCREENSHOT_MAP['en'] || {};
+  const enBase = `/assets/images/locale%20screenshots/en/`;
   return processNonJsonLd(html, text => {
     for (const [from, to] of Object.entries(map)) {
+      const toPath = base + to;
+      // Match original filename (first build pass, or EN locale not applied yet)
       const fromPath = `/assets/images/${from}`;
       const esc = fromPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      text = text.replace(new RegExp(`((?:src|srcset)=")${esc}(")`, 'g'), `$1${base}${to}$2`);
+      text = text.replace(new RegExp(`((?:src|srcset)=")${esc}(")`, 'g'), `$1${toPath}$2`);
+      // Also match EN locale path (when buildRoot has already baked in EN screenshots)
+      if (enMap[from]) {
+        const fromEn = enBase + enMap[from];
+        const escEn  = fromEn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        text = text.replace(new RegExp(`((?:src|srcset)=")${escEn}(")`, 'g'), `$1${toPath}$2`);
+      }
     }
     // Fix type attribute on <source> elements that now reference a PNG file
     text = text.replace(
