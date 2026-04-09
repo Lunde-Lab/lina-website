@@ -109,6 +109,14 @@
       line-height: 1.7;
     }
 
+    .invite-privacy {
+      margin-top: 14px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      opacity: 0.8;
+    }
+
     /* ── Code section ── */
     .code-section {
       margin-bottom: 32px;
@@ -275,6 +283,7 @@
       <div class="invite-header">
         <h1 id="invite-title"></h1>
         <p id="invite-desc"></p>
+        <p id="invite-privacy" class="invite-privacy"></p>
       </div>
 
       <div id="code-section" class="code-section hidden">
@@ -312,9 +321,11 @@
     const translations = {
       en: {
         title: "You've been invited to Lina",
+        title_with_name: "{{name}} has invited you to Lina",
         description: "Lina is an app for parents who share care. One calm, structured line between two homes. Everything about your child, kept together in one place.",
         no_code_title: "Lina — co-parenting, simplified",
         no_code_description: "Lina is an app for parents who share care. One calm, structured line between two homes. Practical information about your child, gathered in one place.",
+        privacy: "Only the two of you see what is shared in Lina. No family, no friends — and not us.",
         code_label: "Your invitation code",
         copy: "Copy",
         copied: "Copied",
@@ -330,9 +341,11 @@
       },
       nb: {
         title: "Du er invitert til Lina",
+        title_with_name: "{{name}} har invitert deg til Lina",
         description: "Lina er en app for foreldre som deler omsorg. Én rolig, strukturert linje mellom to hjem. Alt om barnet, samlet på ett sted.",
         no_code_title: "Lina — foreldresamarbeid, forenklet",
         no_code_description: "Lina er en app for foreldre som deler omsorg. Én rolig, strukturert linje mellom to hjem. Praktisk informasjon om barnet, samlet på ett sted.",
+        privacy: "Bare dere to ser det som deles i Lina. Ingen familie, ingen venner — og ikke oss.",
         code_label: "Din invitasjonskode",
         copy: "Kopier",
         copied: "Kopiert",
@@ -348,9 +361,11 @@
       },
       sv: {
         title: "Du är inbjuden till Lina",
+        title_with_name: "{{name}} har bjudit in dig till Lina",
         description: "Lina är en app för föräldrar som delar omsorg. En lugn, strukturerad linje mellan två hem. Allt om ditt barn, samlat på ett ställe.",
         no_code_title: "Lina — samföräldraskap, förenklat",
         no_code_description: "Lina är en app för föräldrar som delar omsorg. En lugn, strukturerad linje mellan två hem. Praktisk information om barnet, samlat på ett ställe.",
+        privacy: "Bara ni två ser det som delas i Lina. Ingen familj, inga vänner — och inte vi.",
         code_label: "Din inbjudningskod",
         copy: "Kopiera",
         copied: "Kopierat",
@@ -366,9 +381,11 @@
       },
       da: {
         title: "Du er inviteret til Lina",
+        title_with_name: "{{name}} har inviteret dig til Lina",
         description: "Lina er en app til forældre, der deler omsorg. Én rolig, struktureret linje mellem to hjem. Alt om dit barn, samlet ét sted.",
         no_code_title: "Lina — samforældreskab, forenklet",
         no_code_description: "Lina er en app til forældre, der deler omsorg. Én rolig, struktureret linje mellem to hjem. Praktisk information om barnet, samlet ét sted.",
+        privacy: "Kun I to ser det, der deles i Lina. Ingen familie, ingen venner — og ikke os.",
         code_label: "Din invitationskode",
         copy: "Kopiér",
         copied: "Kopieret",
@@ -384,9 +401,11 @@
       },
       fi: {
         title: "Sinut on kutsuttu Linaan",
+        title_with_name: "{{name}} on kutsunut sinut Linaan",
         description: "Lina on sovellus vanhemmille, jotka jakavat lapsen hoidon. Yksi rauhallinen, selkeä yhteys kahden kodin välillä. Kaikki lapsesta koottuna yhteen paikkaan.",
         no_code_title: "Lina — yhteishuoltajuus, yksinkertaistettuna",
         no_code_description: "Lina on sovellus vanhemmille, jotka jakavat lapsen hoidon. Yksi rauhallinen, selkeä yhteys kahden kodin välillä. Käytännöllistä tietoa lapsesta koottuna yhteen paikkaan.",
+        privacy: "Vain te kaksi näette, mitä Linassa jaetaan. Ei perhe, ei ystävät — eikä me.",
         code_label: "Kutsukoodisi",
         copy: "Kopioi",
         copied: "Kopioitu",
@@ -402,9 +421,11 @@
       },
       de: {
         title: "Du wurdest zu Lina eingeladen",
+        title_with_name: "{{name}} hat dich zu Lina eingeladen",
         description: "Lina ist eine App für Eltern, die sich die Betreuung teilen. Eine ruhige, strukturierte Verbindung zwischen zwei Haushalten. Alles über dein Kind, an einem Ort.",
         no_code_title: "Lina — Co-Elternschaft, vereinfacht",
         no_code_description: "Lina ist eine App für Eltern, die sich die Betreuung teilen. Eine ruhige, strukturierte Verbindung zwischen zwei Haushalten. Praktische Informationen über dein Kind, an einem Ort gesammelt.",
+        privacy: "Nur ihr zwei seht, was in Lina geteilt wird. Keine Familie, keine Freunde — und nicht wir.",
         code_label: "Dein Einladungscode",
         copy: "Kopieren",
         copied: "Kopiert",
@@ -432,14 +453,33 @@
       return new URLSearchParams(window.location.search).get('code') || '';
     }
 
+    function getFrom() {
+      const raw = new URLSearchParams(window.location.search).get('from') || '';
+      if (!raw) return '';
+      try {
+        const decoded = decodeURIComponent(raw);
+        return decoded.replace(/<[^>]*>/g, '').trim().slice(0, 50);
+      } catch (_) {
+        return '';
+      }
+    }
+
     const lang = detectLang();
     const t = translations[lang];
     const code = getCode();
+    const from = getFrom();
 
     document.documentElement.lang = lang;
 
-    document.getElementById('invite-title').textContent = code ? t.title : t.no_code_title;
+    let title;
+    if (code) {
+      title = from ? t.title_with_name.replace('{{name}}', from) : t.title;
+    } else {
+      title = t.no_code_title;
+    }
+    document.getElementById('invite-title').textContent = title;
     document.getElementById('invite-desc').textContent = code ? t.description : t.no_code_description;
+    document.getElementById('invite-privacy').textContent = t.privacy;
 
     if (code) {
       const codeSection = document.getElementById('code-section');
