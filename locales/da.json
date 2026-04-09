@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Én samlet oversigt på tværs af hjem",
-    "description": "Du skal ikke altid være den, der husker alt. Lina holder de praktiske detaljer — medicinsk info, udstyr, kontakter, planer — opdateret og tilgængeligt for begge hjem.",
+    "description": "Du skal ikke altid være den, der husker alt. Lina giver begge forældre det samme overblik — medicinsk info, kontakter, planer og udstyr — altid opdateret, i begge hjem.",
     "cta": "Hent på App Store",
     "ctaPlay": "Hent på Google Play",
     "ctaPlayAria": "Hent på Google Play"
@@ -128,7 +128,7 @@
   },
   "cta": {
     "title": "En sikker linje mellem to forældre.",
-    "description": "Lina samler alt barnet har brug for — synligt og opdateret på tværs af hjem. Download og kom i gang på minutter."
+    "description": "Alt begge forældre har brug for at vide — på ét sted. Download og kom i gang på minutter."
   },
   "footer": {
     "terms": "Vilkår for brug",
@@ -242,6 +242,7 @@
     "exportDesc": "Udskriv eller gem planen som PDF."
   },
   "familievern": {
+    "pageTitle": "Fagfolk — Lina",
     "pageDesc": "Lina hjælper forældre med delt omsorg med at koordinere hverdagen. Information om appen for fagpersoner ved familierådgivning.",
     "hero": {
       "label": "For fagpersoner",
@@ -252,7 +253,8 @@
     "about": {
       "label": "Om appen",
       "title": "Ét fælles sted for barnet – på tværs af hjem",
-      "description": "Mange forældre, der deler omsorg, mangler en fælles struktur for hverdagssamarbejdet. Information spredes over SMS, e-mail og mundtlige aftaler, og én forælder ender med at koordinere det hele. Lina samler det praktiske — medicinsk information, kontakter, udstyrslister, billeder og beskeder — på ét delt sted, tilgængeligt i begge hjem."
+      "description": "Mange forældre, der deler omsorg, mangler en fælles struktur for hverdagssamarbejdet. Information spredes over SMS, e-mail og mundtlige aftaler, og én forælder ender med at koordinere det hele. Lina samler det praktiske — medicinsk information, kontakter, udstyrslister, billeder og beskeder — på ét delt sted, tilgængeligt i begge hjem.",
+      "download": "Download:"
     },
     "when": {
       "label": "Hvornår passer Lina",
@@ -266,7 +268,7 @@
       "notFits": {
         "title": "Lina er ikke egnet, når",
         "item1": "der er høj konflikt, som kræver juridisk eller terapeutisk opfølgning",
-        "item2": "én forælder ikke ønsker digitalt samarbejde",
+        "item2": "én eller begge forældre ikke er klar til struktureret digital kommunikation",
         "item3": "situationen kræver tiltag ud over praktisk koordinering"
       }
     },
@@ -323,6 +325,12 @@
       "description": "Lina har en interaktiv samværsplan, der viser, hvordan tiden fordeles uge for uge. Værktøjet kan bruges af forældre på egen hånd, eller som udgangspunkt i samtaler om samværsordningen.",
       "cta": "Åbn samværsplanen"
     },
+    "recommend": {
+      "label": "Anbefal Lina",
+      "title": "Noget at give til forældre",
+      "description": "Hvis du gerne vil anbefale Lina til forældre, du arbejder med, kan du downloade en kort oversigt til at printe eller dele digitalt. Den forklarer, hvad Lina er, hvad den indeholder, og hvordan man kommer i gang — i et enkelt sprog.",
+      "cta": "Download one-pager (PDF)"
+    },
     "contact": {
       "label": "Kontakt",
       "title": "Tag kontakt",
@@ -333,7 +341,8 @@
       "messagePlaceholder": "Din besked",
       "submit": "Send besked",
       "successTitle": "Tak for din besked",
-      "successDescription": "Vi vender tilbage til dig hurtigst muligt."
+      "successDescription": "Vi vender tilbage til dig hurtigst muligt.",
+      "altText": "Eller send en e-mail direkte til"
     }
   },
   "nav_home": "Hjem",
@@ -495,6 +504,8 @@
     "cat4a2": "Ja, du kan tilføje flere børn i Lina. Hvert barn har sit eget delte rum med tilhørende information, beskeder og billeder.",
     "cat4q3": "Hvordan inviterer jeg den anden forælder?",
     "cat4a3": "Du deler invitationskoden via appen.",
+    "cat4q4": "Hvad hvis den anden forælder ikke vil bruge appen?",
+    "cat4a4": "Lina fungerer kun, når begge forældre er forbundet. Hvis den anden er i tvivl, kan det hjælpe at forklare, hvad Lina gør i praksis: et fælles sted til information om barnet — kontakter, helbredsoplysninger, ejendele og beskeder — så ingen behøver at holde styr på alt alene. Det er gratis at deltage, tager to minutter at sætte op og kræver ikke kreditkort. Du kan dele invitationslinket og lade dem se på det i deres eget tempo.",
     "cat5Title": "Samværsaftale",
     "cat5q1": "Hvad bør en samværsaftale indeholde?",
     "cat5a1": "En god samværsaftale bør dække samværsmønster, bopæl, afhentning og aflevering, ferie- og helligdagsfordeling, omkostningsfordeling, kommunikation mellem forældrene, rejser med barnet og rutiner for ændringer og evaluering af aftalen.",
@@ -512,7 +523,7 @@
     "heading": "Om Lina",
     "lead": "Lina er en app til forældre, der deler omsorgen for et barn mellem to hjem. Samme overblik, samme information — uanset hvem barnet er hos.",
     "whyTitle": "Derfor findes Lina",
-    "whyText1": "Lina blev skabt, fordi der ikke fandtes en app til delt omsorg, der føltes rolig og fokuseret. De fleste værktøjer var bygget op omkring konflikter eller juridiske processer. Vi ønskede noget andet — et stille, struktureret rum til daglig koordinering mellem to forældre.",
+    "whyText1": "Lina blev skabt, fordi der ikke fandtes en app til delt omsorg, der føltes rolig og fokuseret. De fleste værktøjer var bygget op omkring konflikter eller juridiske processer. Lina er noget andet — et stille, struktureret rum til daglig koordinering mellem to forældre.",
     "whyText2": "Målet er at reducere den mentale belastning, der følger med delt omsorg. Når begge forældre har adgang til de samme planer, lister og opdateringer, behøver ingen bære alting alene.",
     "focusTitle": "Hvad Lina fokuserer på",
     "focusText1": "Lina er bygget op omkring struktureret kommunikation og praktiske værktøjer. Tråde holder samtalerne organiseret. Delte lister, kontakter og oplysninger om barnet er altid tilgængelige — synlige på tværs af begge hjem.",

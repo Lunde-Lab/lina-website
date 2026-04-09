@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Ein gemeinsamer Ort für Ihr Kind — in beiden Haushalten",
-    "description": "Sie sollten nicht immer alles im Kopf behalten müssen. Lina hält die praktischen Details — Gesundheitsinformationen, Ausstattung, Kontakte, Pläne — aktuell und für beide Haushalte zugänglich.",
+    "description": "Sie sollten nicht immer alles im Kopf behalten müssen. Lina gibt beiden Elternteilen denselben Überblick — Gesundheitsinformationen, Kontakte, Pläne und Ausstattung — immer aktuell, in beiden Haushalten.",
     "cta": "Im App Store laden",
     "ctaPlay": "Bei Google Play laden",
     "ctaPlayAria": "Bei Google Play laden"
@@ -112,7 +112,7 @@
   },
   "cta": {
     "title": "Ein sicherer Kanal zwischen zwei Elternteilen.",
-    "description": "Lina bringt alles, was Ihr Kind braucht, in einen gemeinsamen, strukturierten Bereich. Laden Sie die App herunter und legen Sie in wenigen Minuten los."
+    "description": "Alles, was beide Elternteile wissen müssen — an einem Ort. Laden Sie die App herunter und legen Sie in wenigen Minuten los."
   },
   "footer": {
     "terms": "Nutzungsbedingungen",
@@ -229,6 +229,7 @@
   "nav_care_schedule": "Betreuungsplan",
   "nav_download": "Herunterladen",
   "familievern": {
+    "pageTitle": "Fachkräfte — Lina",
     "pageDesc": "Lina hilft Eltern mit geteilter Betreuung, den Alltag über zwei Haushalte hinweg zu koordinieren. Informationen über die App für Familienberater und Fachleute.",
     "hero": {
       "label": "Für Fachkräfte",
@@ -239,7 +240,8 @@
     "about": {
       "label": "Über die App",
       "title": "Ein gemeinsamer Ort für das Kind — in beiden Haushalten",
-      "description": "Vielen Eltern mit geteilter Betreuung fehlt eine gemeinsame Struktur für den Alltag. Informationen verteilen sich auf Nachrichten, E-Mails und mündliche Absprachen, und ein Elternteil übernimmt am Ende die gesamte Koordination. Lina bringt die praktischen Details — medizinische Informationen, Kontakte, Ausstattungslisten, Fotos und Nachrichten — an einen gemeinsamen Ort, der in beiden Haushalten zugänglich ist."
+      "description": "Vielen Eltern mit geteilter Betreuung fehlt eine gemeinsame Struktur für den Alltag. Informationen verteilen sich auf Nachrichten, E-Mails und mündliche Absprachen, und ein Elternteil übernimmt am Ende die gesamte Koordination. Lina bringt die praktischen Details — medizinische Informationen, Kontakte, Ausstattungslisten, Fotos und Nachrichten — an einen gemeinsamen Ort, der in beiden Haushalten zugänglich ist.",
+      "download": "Herunterladen:"
     },
     "when": {
       "label": "Wann Lina geeignet ist",
@@ -253,7 +255,7 @@
       "notFits": {
         "title": "Lina ist nicht geeignet, wenn",
         "item1": "ein hoher Konfliktgrad vorliegt, der rechtliche oder therapeutische Unterstützung erfordert",
-        "item2": "ein Elternteil nicht bereit ist, digital zu kooperieren",
+        "item2": "ein oder beide Elternteile nicht bereit sind für strukturierte digitale Kommunikation",
         "item3": "die Situation Maßnahmen erfordert, die über die praktische Koordination hinausgehen"
       }
     },
@@ -310,6 +312,12 @@
       "description": "Lina enthält einen interaktiven Betreuungsplan, der zeigt, wie Zeit Woche für Woche aufgeteilt wird. Das Werkzeug kann von Eltern allein genutzt werden oder als Ausgangspunkt für Gespräche über Betreuungsregelungen dienen.",
       "cta": "Betreuungsplan öffnen"
     },
+    "recommend": {
+      "label": "Lina empfehlen",
+      "title": "Etwas zum Weitergeben an Eltern",
+      "description": "Wenn Sie Lina an Eltern weiterempfehlen möchten, können Sie eine kurze Übersicht herunterladen — zum Ausdrucken oder digitalen Teilen. Sie erklärt, was Lina ist, was es beinhaltet und wie man loslegt — in einfacher Sprache.",
+      "cta": "One-Pager herunterladen (PDF)"
+    },
     "contact": {
       "label": "Kontakt",
       "title": "Kontakt aufnehmen",
@@ -320,7 +328,8 @@
       "messagePlaceholder": "Ihre Nachricht",
       "submit": "Nachricht senden",
       "successTitle": "Vielen Dank für Ihre Nachricht",
-      "successDescription": "Wir melden uns so bald wie möglich."
+      "successDescription": "Wir melden uns so bald wie möglich.",
+      "altText": "Oder senden Sie uns direkt eine E-Mail an"
     }
   },
   "ca": {
@@ -479,6 +488,8 @@
     "cat4a2": "Ja, Sie können mehrere Kinder zu Lina hinzufügen. Jedes Kind hat seinen eigenen gemeinsamen Bereich mit zugehörigen Informationen, Nachrichten und Fotos.",
     "cat4q3": "Wie lade ich das andere Elternteil ein?",
     "cat4a3": "Sie teilen den Einladungscode über die App.",
+    "cat4q4": "Was ist, wenn der andere Elternteil die App nicht nutzen möchte?",
+    "cat4a4": "Lina funktioniert nur, wenn beide Elternteile verbunden sind. Wenn der andere Elternteil zögert, kann es helfen zu erklären, was Lina praktisch tut: ein gemeinsamer Ort für Informationen über das Kind — Kontakte, Gesundheitsdaten, Sachen und Nachrichten — damit niemand alles allein im Kopf behalten muss. Die Teilnahme ist kostenlos, die Einrichtung dauert zwei Minuten und erfordert keine Kreditkarte. Du kannst den Einladungslink teilen und sie in ihrem eigenen Tempo schauen lassen.",
     "cat5Title": "Betreuungsvereinbarung",
     "cat5q1": "Was sollte eine Betreuungsvereinbarung umfassen?",
     "cat5a1": "Eine gute Betreuungsvereinbarung sollte das Betreuungsmodell, den Wohnort, Abholung und Bringung, Ferien- und Feiertagsregelungen, Kostenaufteilung, Kommunikation zwischen Eltern, Reisen mit dem Kind sowie Routinen für Änderungen und Überprüfung der Vereinbarung abdecken.",
@@ -496,7 +507,7 @@
     "heading": "Über Lina",
     "lead": "Lina ist eine Co-Parenting-App für Eltern, die die Betreuung eines Kindes auf zwei Haushalte teilen. Die gleiche Übersicht, die gleichen Informationen — unabhängig davon, in welchem Haushalt sich das Kind befindet.",
     "whyTitle": "Warum Lina entstanden ist",
-    "whyText1": "Lina wurde entwickelt, weil es keine Co-Parenting-App gab, die sich ruhig und fokussiert anfühlte. Die meisten Tools waren rund um Konflikt oder rechtliche Prozesse aufgebaut. Wir wollten etwas anderes — einen ruhigen, strukturierten Ort für die Alltagskoordination zwischen zwei Elternteilen.",
+    "whyText1": "Lina wurde entwickelt, weil es keine Co-Parenting-App gab, die sich ruhig und fokussiert anfühlte. Die meisten Tools waren rund um Konflikt oder rechtliche Prozesse aufgebaut. Lina ist etwas anderes — ein ruhiger, strukturierter Ort für die Alltagskoordination zwischen zwei Elternteilen.",
     "whyText2": "Das Ziel ist, die mentale Belastung zu reduzieren, die mit geteilter Betreuung einhergeht. Wenn beide Elternteile Zugang zu denselben Plänen, Listen und Aktualisierungen haben, muss niemand alles alleine tragen.",
     "focusTitle": "Worauf Lina sich konzentriert",
     "focusText1": "Lina ist um strukturierte Kommunikation und praktische Werkzeuge herum aufgebaut. Themenbereiche halten Konversationen organisiert. Gemeinsame Listen, Kontakte und Informationen über das Kind sind immer verfügbar — in beiden Haushalten einsehbar.",

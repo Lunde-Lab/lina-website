@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "One shared place for your child — across homes",
-    "description": "You should not have to be the one who always remembers. Lina keeps the practical details — medical info, equipment, contacts, schedules — shared and up to date across both homes.",
+    "description": "You should not have to be the one who always remembers. Lina gives both parents the same overview — medical info, contacts, schedules, and belongings — always up to date, in both homes.",
     "cta": "Download on the App Store",
     "ctaPlay": "Get on Google Play",
     "ctaPlayAria": "Get it on Google Play"
@@ -112,7 +112,7 @@
   },
   "cta": {
     "title": "One safe line between two parents.",
-    "description": "Lina brings everything your child needs into one shared, organized space. Download and get started in minutes."
+    "description": "Everything both parents need to know — in one place. Download and get started in minutes."
   },
   "footer": {
     "terms": "Terms of Service",
@@ -226,6 +226,7 @@
     "exportDesc": "Print or save the schedule as a PDF."
   },
   "familievern": {
+    "pageTitle": "Professionals — Lina",
     "pageDesc": "Lina helps co-parents coordinate everyday life across two homes. Information about the app for family counselors and professionals.",
     "hero": {
       "label": "For professionals",
@@ -236,7 +237,8 @@
     "about": {
       "label": "About the app",
       "title": "One shared place for the child — across homes",
-      "description": "Many parents who share care lack a common structure for everyday cooperation. Information is scattered across texts, emails, and verbal agreements, and one parent ends up coordinating everything. Lina brings the practical details — medical information, contacts, equipment lists, photos, and messages — into one shared space accessible in both homes."
+      "description": "Many parents who share care lack a common structure for everyday cooperation. Information is scattered across texts, emails, and verbal agreements, and one parent ends up coordinating everything. Lina brings the practical details — medical information, contacts, equipment lists, photos, and messages — into one shared space accessible in both homes.",
+      "download": "Download:"
     },
     "when": {
       "label": "When Lina is a good fit",
@@ -250,7 +252,7 @@
       "notFits": {
         "title": "Lina is not suitable when",
         "item1": "there is high conflict requiring legal or therapeutic intervention",
-        "item2": "one parent is unwilling to engage in digital cooperation",
+        "item2": "one or both parents are not ready for structured digital communication",
         "item3": "the situation requires measures beyond practical coordination"
       }
     },
@@ -307,6 +309,12 @@
       "description": "Lina includes an interactive care schedule that shows how time is divided week by week. The tool can be used by parents on their own, or as a starting point in conversations about care arrangements.",
       "cta": "Open care schedule"
     },
+    "recommend": {
+      "label": "Recommend Lina",
+      "title": "Something to hand to parents",
+      "description": "If you'd like to recommend Lina to parents you work with, you can download a one-page overview to print or share digitally. It explains what Lina is, what it includes, and how to get started — in plain language.",
+      "cta": "Download one-pager (PDF)"
+    },
     "contact": {
       "label": "Contact",
       "title": "Get in touch",
@@ -317,7 +325,8 @@
       "messagePlaceholder": "Your message",
       "submit": "Send message",
       "successTitle": "Thank you for your message",
-      "successDescription": "We will get back to you as soon as we can."
+      "successDescription": "We will get back to you as soon as we can.",
+      "altText": "Or email us directly at"
     }
   },
   "nav_home": "Home",
@@ -479,6 +488,8 @@
     "cat4a2": "Yes, you can add multiple children to Lina. Each child has their own shared space with associated information, messages, and photos.",
     "cat4q3": "How do I invite the other parent?",
     "cat4a3": "You share the invitation code via the app.",
+    "cat4q4": "What if the other parent doesn't want to use the app?",
+    "cat4a4": "Lina only works when both parents are connected. If the other parent is hesitant, it can help to explain what Lina does in practical terms: it's a shared place for information about the child — contacts, medical details, belongings, and messages — so that neither parent has to carry everything alone. It's free to join, takes two minutes to set up, and does not require a credit card. You can share the invite link and let them look at it in their own time.",
     "cat5Title": "Care Agreement",
     "cat5q1": "What should a care agreement include?",
     "cat5a1": "A good care agreement should cover the care pattern, place of residence, pick-up and drop-off, holiday and public holiday arrangements, cost sharing, communication between parents, travel with the child, and routines for changes and review of the agreement.",
@@ -496,7 +507,7 @@
     "heading": "About Lina",
     "lead": "Lina is a co-parenting app for parents who share care of a child across two homes. The same overview, the same information — regardless of which home the child is in.",
     "whyTitle": "Why Lina exists",
-    "whyText1": "Lina was created because there was no co-parenting app that felt calm and focused. Most tools were built around conflict or legal processes. We wanted something different — a quiet, structured space for everyday coordination between two parents.",
+    "whyText1": "Lina was created because there was no co-parenting app that felt calm and focused. Most tools were built around conflict or legal processes. Lina is something different — a quiet, structured space for everyday coordination between two parents.",
     "whyText2": "The goal is to reduce the mental load that comes with shared care. When both parents have access to the same schedules, lists, and updates, no one has to carry everything alone.",
     "focusTitle": "What Lina focuses on",
     "focusText1": "Lina is built around structured communication and practical tools. Threads keep conversations organized. Shared lists, contacts, and information about the child are always available — visible across both homes.",

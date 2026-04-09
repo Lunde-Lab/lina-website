@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Één gedeelde plek voor uw kind — in beide huishoudens",
-    "description": "U hoeft niet altijd degene te zijn die alles onthoudt. Lina houdt de praktische details — medische informatie, spullen, contacten, schema's — actueel en toegankelijk in beide huishoudens.",
+    "description": "U hoeft niet altijd degene te zijn die alles onthoudt. Lina geeft beide ouders hetzelfde overzicht — medische informatie, contacten, schema's en spullen — altijd actueel, in beide huishoudens.",
     "cta": "Download in de App Store",
     "ctaPlay": "Verkrijgbaar bij Google Play",
     "ctaPlayAria": "Verkrijgbaar bij Google Play"
@@ -112,7 +112,7 @@
   },
   "cta": {
     "title": "Één veilig kanaal tussen twee ouders.",
-    "description": "Lina brengt alles wat uw kind nodig heeft samen in één gedeelde, georganiseerde ruimte. Download de app en begin binnen enkele minuten."
+    "description": "Alles wat beide ouders moeten weten — op één plek. Download de app en begin binnen enkele minuten."
   },
   "footer": {
     "terms": "Gebruiksvoorwaarden",
@@ -229,6 +229,7 @@
   "nav_care_schedule": "Zorgschema",
   "nav_download": "Downloaden",
   "familievern": {
+    "pageTitle": "Professionals — Lina",
     "pageDesc": "Lina helpt co-ouders de dagelijkse gang van zaken over twee huishoudens te coördineren. Informatie over de app voor mediators en andere professionals.",
     "hero": {
       "label": "Voor professionals",
@@ -239,7 +240,8 @@
     "about": {
       "label": "Over de app",
       "title": "Één gedeelde plek voor het kind — in beide huishoudens",
-      "description": "Veel ouders die de zorg delen, missen een gemeenschappelijke structuur voor de dagelijkse samenwerking. Informatie is verspreid over berichten, e-mails en mondelinge afspraken, en één ouder eindigt met alles coördineren. Lina brengt de praktische details — medische informatie, contacten, paklijsten, foto's en berichten — samen op één gedeelde plek die in beide huishoudens toegankelijk is."
+      "description": "Veel ouders die de zorg delen, missen een gemeenschappelijke structuur voor de dagelijkse samenwerking. Informatie is verspreid over berichten, e-mails en mondelinge afspraken, en één ouder eindigt met alles coördineren. Lina brengt de praktische details — medische informatie, contacten, paklijsten, foto's en berichten — samen op één gedeelde plek die in beide huishoudens toegankelijk is.",
+      "download": "Downloaden:"
     },
     "when": {
       "label": "Wanneer Lina geschikt is",
@@ -253,7 +255,7 @@
       "notFits": {
         "title": "Lina is niet geschikt wanneer",
         "item1": "er een hoog conflictniveau is waarvoor juridische of therapeutische interventie nodig is",
-        "item2": "één ouder niet bereid is digitaal samen te werken",
+        "item2": "één of beide ouders niet klaar zijn voor gestructureerde digitale communicatie",
         "item3": "de situatie maatregelen vereist die verder gaan dan praktische coördinatie"
       }
     },
@@ -310,6 +312,12 @@
       "description": "Lina bevat een interactief zorgschema dat laat zien hoe de tijd week voor week wordt verdeeld. De tool kan door ouders zelf worden gebruikt of als uitgangspunt bij gesprekken over zorgregelingen.",
       "cta": "Open zorgschema"
     },
+    "recommend": {
+      "label": "Lina aanbevelen",
+      "title": "Iets om aan ouders te geven",
+      "description": "Als je Lina wilt aanbevelen aan ouders waarmee je werkt, kun je een beknopt overzicht downloaden om te printen of digitaal te delen. Het legt uit wat Lina is, wat het bevat en hoe je begint — in duidelijke taal.",
+      "cta": "Download one-pager (PDF)"
+    },
     "contact": {
       "label": "Contact",
       "title": "Neem contact op",
@@ -320,7 +328,8 @@
       "messagePlaceholder": "Uw bericht",
       "submit": "Bericht verzenden",
       "successTitle": "Bedankt voor uw bericht",
-      "successDescription": "We reageren zo snel mogelijk."
+      "successDescription": "We reageren zo snel mogelijk.",
+      "altText": "Of stuur ons direct een e-mail naar"
     }
   },
   "ca": {
@@ -479,6 +488,8 @@
     "cat4a2": "Ja, u kunt meerdere kinderen toevoegen aan Lina. Elk kind heeft zijn eigen gedeelde ruimte met bijbehorende informatie, berichten en foto's.",
     "cat4q3": "Hoe nodig ik de andere ouder uit?",
     "cat4a3": "U deelt de uitnodigingscode via de app.",
+    "cat4q4": "Wat als de andere ouder de app niet wil gebruiken?",
+    "cat4a4": "Lina werkt alleen als beide ouders verbonden zijn. Als de andere ouder twijfelt, kan het helpen om uit te leggen wat Lina in de praktijk doet: een gedeelde plek voor informatie over het kind — contacten, gezondheidsgegevens, spullen en berichten — zodat niemand alles alleen hoeft bij te houden. Meedoen is gratis, instellen kost twee minuten en vereist geen creditcard. Je kunt de uitnodigingslink delen en hen er in hun eigen tempo naar laten kijken.",
     "cat5Title": "Ouderschapsplan",
     "cat5q1": "Wat moet een ouderschapsplan bevatten?",
     "cat5a1": "Een goed ouderschapsplan moet de zorgregeling, de verblijfplaats, ophalen en brengen, verdeling van vakanties en feestdagen, kostenverdeling, communicatie tussen ouders, reizen met het kind en routines voor wijzigingen en herziening van het plan bevatten.",
@@ -496,7 +507,7 @@
     "heading": "Over Lina",
     "lead": "Lina is een co-ouderschapsapp voor ouders die de zorg voor een kind delen over twee huishoudens. Hetzelfde overzicht, dezelfde informatie — ongeacht in welk huishouden het kind zich bevindt.",
     "whyTitle": "Waarom Lina bestaat",
-    "whyText1": "Lina is ontstaan omdat er geen co-ouderschapsapp bestond die rustig en gefocust aanvoelde. De meeste tools waren gebouwd rond conflict of juridische processen. We wilden iets anders — een rustige, gestructureerde ruimte voor de dagelijkse coördinatie tussen twee ouders.",
+    "whyText1": "Lina is ontstaan omdat er geen co-ouderschapsapp bestond die rustig en gefocust aanvoelde. De meeste tools waren gebouwd rond conflict of juridische processen. Lina is iets anders — een rustige, gestructureerde ruimte voor de dagelijkse coördinatie tussen twee ouders.",
     "whyText2": "Het doel is de mentale belasting te verminderen die gepaard gaat met gedeelde zorg. Wanneer beide ouders toegang hebben tot dezelfde schema's, lijsten en updates, hoeft niemand alles alleen te dragen.",
     "focusTitle": "Waar Lina zich op richt",
     "focusText1": "Lina is gebouwd rond gestructureerde communicatie en praktische tools. Onderwerpen houden gesprekken georganiseerd. Gedeelde lijsten, contacten en informatie over het kind zijn altijd beschikbaar — zichtbaar in beide huishoudens.",

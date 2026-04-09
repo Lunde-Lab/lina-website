@@ -169,6 +169,21 @@
       line-height: 1.6;
     }
 
+    /* ── Low threshold ── */
+    .low-threshold {
+      background: #E9F5F3;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 32px;
+      font-size: 14px;
+      color: #085041;
+      line-height: 1.6;
+    }
+
+    .low-threshold.hidden {
+      display: none;
+    }
+
     /* ── Divider ── */
     .divider {
       height: 1px;
@@ -277,6 +292,8 @@
         <p id="instruction" class="instruction"></p>
       </div>
 
+      <div id="low-threshold" class="low-threshold hidden"></div>
+
       <div class="divider"></div>
 
       <ul id="features-list" class="features-list"></ul>
@@ -320,7 +337,8 @@
           "Track belongings so nothing gets lost between homes"
         ],
         app_store: "Download on the App Store",
-        play_store: "Get on Google Play"
+        play_store: "Get on Google Play",
+        lowThreshold: "Free to use. No credit card. Takes two minutes to set up."
       },
       nb: {
         title: "Du er invitert til Lina",
@@ -341,7 +359,8 @@
           "Hold styr på eiendeler så ingenting forsvinner mellom hjemmene"
         ],
         app_store: "Last ned på App Store",
-        play_store: "Hent på Google Play"
+        play_store: "Hent på Google Play",
+        lowThreshold: "Gratis å bruke. Ingen kredittkort. Tar to minutter å sette opp."
       },
       sv: {
         title: "Du är inbjuden till Lina",
@@ -362,7 +381,8 @@
           "Håll koll på tillhörigheter så inget försvinner mellan hemmen"
         ],
         app_store: "Ladda ned på App Store",
-        play_store: "Hämta på Google Play"
+        play_store: "Hämta på Google Play",
+        lowThreshold: "Gratis att använda. Inget kreditkort. Tar två minuter att komma igång."
       },
       da: {
         title: "Du er inviteret til Lina",
@@ -383,7 +403,8 @@
           "Hold styr på ejendele, så intet forsvinder mellem hjemmene"
         ],
         app_store: "Download på App Store",
-        play_store: "Hent på Google Play"
+        play_store: "Hent på Google Play",
+        lowThreshold: "Gratis at bruge. Intet kreditkort. Tager to minutter at sætte op."
       },
       fi: {
         title: "Sinut on kutsuttu Linaan",
@@ -404,7 +425,8 @@
           "Seuraa tavaroita, jotta mikään ei katoa kotien välillä"
         ],
         app_store: "Lataa App Storesta",
-        play_store: "Hanki Google Playsta"
+        play_store: "Hanki Google Playsta",
+        lowThreshold: "Ilmainen käyttää. Ei luottokorttia. Käyttöönotto vie kaksi minuuttia."
       },
       de: {
         title: "Du wurdest zu Lina eingeladen",
@@ -425,7 +447,8 @@
           "Sachen im Blick behalten, damit nichts zwischen den Haushalten verloren geht"
         ],
         app_store: "Im App Store laden",
-        play_store: "Bei Google Play holen"
+        play_store: "Bei Google Play holen",
+        lowThreshold: "Kostenlos nutzbar. Keine Kreditkarte nötig. In zwei Minuten eingerichtet."
       }
     };
 
@@ -475,6 +498,10 @@
       document.getElementById('code-label').textContent = t.code_label;
       document.getElementById('invite-code').textContent = code;
       document.getElementById('instruction').textContent = t.instruction;
+
+      const lowThreshold = document.getElementById('low-threshold');
+      lowThreshold.classList.remove('hidden');
+      lowThreshold.textContent = t.lowThreshold;
 
       const copyBtn = document.getElementById('copy-btn');
       copyBtn.textContent = t.copy;

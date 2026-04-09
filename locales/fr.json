@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Un espace partagé pour votre enfant — entre deux foyers",
-    "description": "Vous ne devriez pas avoir à tout retenir. Lina centralise les détails pratiques — informations médicales, équipement, contacts, plannings — partagés et à jour dans les deux foyers.",
+    "description": "Vous ne devriez pas avoir à tout retenir. Lina donne aux deux parents la même vue d'ensemble — informations médicales, contacts, plannings et affaires — toujours à jour, dans les deux foyers.",
     "cta": "Télécharger sur l'App Store",
     "ctaPlay": "Disponible sur Google Play",
     "ctaPlayAria": "Disponible sur Google Play"
@@ -112,7 +112,7 @@
   },
   "cta": {
     "title": "Un lien sécurisé entre deux parents.",
-    "description": "Lina rassemble tout ce dont votre enfant a besoin dans un espace partagé et organisé. Téléchargez et commencez en quelques minutes."
+    "description": "Tout ce que les deux parents ont besoin de savoir — en un seul endroit. Téléchargez et commencez en quelques minutes."
   },
   "footer": {
     "terms": "Conditions d'utilisation",
@@ -226,6 +226,7 @@
     "exportDesc": "Imprimez ou enregistrez le planning en PDF."
   },
   "familievern": {
+    "pageTitle": "Professionnels — Lina",
     "pageDesc": "Lina aide les coparents à coordonner le quotidien entre deux foyers. Informations sur l'application pour les médiateurs familiaux, conseillers conjugaux et autres professionnels de la famille.",
     "hero": {
       "label": "Pour les professionnels",
@@ -236,7 +237,8 @@
     "about": {
       "label": "À propos de l'application",
       "title": "Un espace partagé pour l'enfant — entre les foyers",
-      "description": "De nombreux parents qui partagent la garde n'ont pas de structure commune pour la coordination quotidienne. Les informations sont éparpillées entre textos, e-mails et accords verbaux, et un parent finit par tout coordonner. Lina rassemble les détails pratiques — informations médicales, contacts, listes d'équipement, photos et messages — dans un espace partagé accessible dans les deux foyers."
+      "description": "De nombreux parents qui partagent la garde n'ont pas de structure commune pour la coordination quotidienne. Les informations sont éparpillées entre textos, e-mails et accords verbaux, et un parent finit par tout coordonner. Lina rassemble les détails pratiques — informations médicales, contacts, listes d'équipement, photos et messages — dans un espace partagé accessible dans les deux foyers.",
+      "download": "Télécharger :"
     },
     "when": {
       "label": "Quand Lina convient",
@@ -250,7 +252,7 @@
       "notFits": {
         "title": "Lina n'est pas adapté quand",
         "item1": "il y a un conflit élevé nécessitant une intervention juridique ou thérapeutique",
-        "item2": "un parent est peu disposé à s'engager dans la coopération numérique",
+        "item2": "l'un des parents ou les deux ne sont pas prêts pour une communication numérique structurée",
         "item3": "la situation nécessite des mesures au-delà de la coordination pratique"
       }
     },
@@ -307,6 +309,12 @@
       "description": "Lina inclut un planning de garde interactif qui montre comment le temps est divisé semaine par semaine. L'outil peut être utilisé par les parents seuls, ou comme point de départ dans les discussions sur les arrangements de garde.",
       "cta": "Ouvrir le planning de garde"
     },
+    "recommend": {
+      "label": "Recommander Lina",
+      "title": "Quelque chose à remettre aux parents",
+      "description": "Si vous souhaitez recommander Lina aux parents avec lesquels vous travaillez, vous pouvez télécharger un résumé d'une page à imprimer ou à partager numériquement. Il explique ce qu'est Lina, ce qu'elle contient et comment démarrer — dans un langage simple.",
+      "cta": "Télécharger le résumé (PDF)"
+    },
     "contact": {
       "label": "Contact",
       "title": "Nous contacter",
@@ -317,7 +325,8 @@
       "messagePlaceholder": "Votre message",
       "submit": "Envoyer le message",
       "successTitle": "Merci pour votre message",
-      "successDescription": "Nous vous répondrons dès que possible."
+      "successDescription": "Nous vous répondrons dès que possible.",
+      "altText": "Ou envoyez-nous un e-mail directement à"
     }
   },
   "nav_home": "Accueil",
@@ -479,6 +488,8 @@
     "cat4a2": "Oui, vous pouvez ajouter plusieurs enfants dans Lina. Chaque enfant a son propre espace partagé avec des informations, des messages et des photos associés.",
     "cat4q3": "Comment inviter l'autre parent ?",
     "cat4a3": "Vous partagez le code d'invitation via l'application.",
+    "cat4q4": "Et si l'autre parent ne veut pas utiliser l'application ?",
+    "cat4a4": "Lina ne fonctionne que lorsque les deux parents sont connectés. Si l'autre parent hésite, il peut être utile d'expliquer ce que fait Lina concrètement : un espace partagé pour les informations sur l'enfant — contacts, données de santé, affaires et messages — pour que personne n'ait à tout gérer seul. L'inscription est gratuite, la mise en place prend deux minutes et ne nécessite pas de carte bancaire. Vous pouvez partager le lien d'invitation et les laisser regarder à leur rythme.",
     "cat5Title": "Convention parentale",
     "cat5q1": "Que doit inclure une convention parentale ?",
     "cat5a1": "Une bonne convention parentale doit couvrir le calendrier de garde, le lieu de résidence, les transitions, les arrangements pour les vacances et les jours fériés, le partage des frais, la communication entre parents, les voyages avec l'enfant et les routines de modification et de révision de la convention.",
@@ -496,7 +507,7 @@
     "heading": "À propos de Lina",
     "lead": "Lina est une application de coparentalité pour les parents qui partagent la garde d'un enfant entre deux foyers. Le même aperçu, les mêmes informations — quel que soit le foyer où se trouve l'enfant.",
     "whyTitle": "Pourquoi Lina existe",
-    "whyText1": "Lina a été créé parce qu'il n'existait pas d'application de coparentalité qui soit à la fois calme et ciblée. La plupart des outils étaient conçus autour des conflits ou des procédures juridiques. Nous voulions quelque chose de différent — un espace calme et structuré pour la coordination quotidienne entre deux parents.",
+    "whyText1": "Lina a été créé parce qu'il n'existait pas d'application de coparentalité qui soit à la fois calme et ciblée. La plupart des outils étaient conçus autour des conflits ou des procédures juridiques. Lina est quelque chose de différent — un espace calme et structuré pour la coordination quotidienne entre deux parents.",
     "whyText2": "L'objectif est de réduire la charge mentale qui accompagne la garde partagée. Lorsque les deux parents ont accès aux mêmes plannings, listes et mises à jour, personne n'a à tout porter seul.",
     "focusTitle": "Sur quoi Lina se concentre",
     "focusText1": "Lina est construit autour d'une communication structurée et d'outils pratiques. Les sujets gardent les conversations organisées. Les listes partagées, les contacts et les informations sur l'enfant sont toujours disponibles — visibles dans les deux foyers.",

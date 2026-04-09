@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "En gemensam översikt — i båda hemmen",
-    "description": "Du ska inte alltid vara den som minns allt. Lina håller de praktiska detaljerna — medicinsk info, utrustning, kontakter, scheman — uppdaterade och tillgängliga för båda hemmen.",
+    "description": "Du ska inte alltid vara den som minns allt. Lina ger båda föräldrarna samma översikt — medicinsk info, kontakter, scheman och utrustning — alltid uppdaterad, i båda hemmen.",
     "cta": "Ladda ner på App Store",
     "ctaPlay": "Hämta på Google Play",
     "ctaPlayAria": "Hämta på Google Play"
@@ -128,7 +128,7 @@
   },
   "cta": {
     "title": "En säker linje mellan två föräldrar.",
-    "description": "Lina samlar allt barnet behöver — synligt och uppdaterat, oavsett hem. Ladda ner och kom igång på minuter."
+    "description": "Allt båda föräldrar behöver veta — på ett ställe. Ladda ner och kom igång på minuter."
   },
   "footer": {
     "terms": "Användarvillkor",
@@ -242,6 +242,7 @@
     "exportDesc": "Skriv ut eller spara schemat som PDF."
   },
   "familievern": {
+    "pageTitle": "Yrkespersoner — Lina",
     "pageDesc": "Lina hjälper föräldrar med delad omsorg att koordinera vardagen. Information om appen för yrkespersoner inom familjerätt och rådgivning.",
     "hero": {
       "label": "För yrkespersoner",
@@ -252,7 +253,8 @@
     "about": {
       "label": "Om appen",
       "title": "En gemensam plats för barnet – över hem",
-      "description": "Många föräldrar som delar omsorg saknar en gemensam struktur för vardagssamarbetet. Information sprids över SMS, e-post och muntliga överenskommelser, och en förälder hamnar med att koordinera allt. Lina samlar det praktiska — medicinsk information, kontakter, utrustningslistor, foton och meddelanden — på ett delat ställe som är tillgängligt i båda hemmen."
+      "description": "Många föräldrar som delar omsorg saknar en gemensam struktur för vardagssamarbetet. Information sprids över SMS, e-post och muntliga överenskommelser, och en förälder hamnar med att koordinera allt. Lina samlar det praktiska — medicinsk information, kontakter, utrustningslistor, foton och meddelanden — på ett delat ställe som är tillgängligt i båda hemmen.",
+      "download": "Ladda ned:"
     },
     "when": {
       "label": "När passar Lina",
@@ -266,7 +268,7 @@
       "notFits": {
         "title": "Lina är inte lämplig när",
         "item1": "det finns hög konflikt som kräver juridisk eller terapeutisk uppföljning",
-        "item2": "en förälder inte vill delta i digitalt samarbete",
+        "item2": "en eller båda föräldrarna inte är redo för strukturerad digital kommunikation",
         "item3": "situationen kräver åtgärder utöver praktisk koordinering"
       }
     },
@@ -323,6 +325,12 @@
       "description": "Lina har ett interaktivt omsorgsschema som visar hur tiden fördelas vecka för vecka. Verktyget kan användas av föräldrar på egen hand, eller som utgångspunkt i samtal om umgängesarrangemang.",
       "cta": "Öppna omsorgsschemat"
     },
+    "recommend": {
+      "label": "Rekommendera Lina",
+      "title": "Något att ge till föräldrar",
+      "description": "Om du vill rekommendera Lina till föräldrar du arbetar med kan du ladda ned en kort översikt att skriva ut eller dela digitalt. Den förklarar vad Lina är, vad den innehåller och hur man kommer igång — på ett enkelt språk.",
+      "cta": "Ladda ned one-pager (PDF)"
+    },
     "contact": {
       "label": "Kontakt",
       "title": "Ta kontakt",
@@ -333,7 +341,8 @@
       "messagePlaceholder": "Ditt meddelande",
       "submit": "Skicka meddelande",
       "successTitle": "Tack för ditt meddelande",
-      "successDescription": "Vi återkommer till dig så snart vi kan."
+      "successDescription": "Vi återkommer till dig så snart vi kan.",
+      "altText": "Eller skicka e-post direkt till"
     }
   },
   "nav_home": "Hem",
@@ -495,6 +504,8 @@
     "cat4a2": "Ja, du kan lägga till flera barn i Lina. Varje barn har ett eget delat rum med tillhörande information, meddelanden och bilder.",
     "cat4q3": "Hur bjuder jag in den andra föräldern?",
     "cat4a3": "Du delar inbjudningskoden via appen.",
+    "cat4q4": "Vad händer om den andra föräldern inte vill använda appen?",
+    "cat4a4": "Lina fungerar bara när båda föräldrarna är anslutna. Om den andra föräldern är tveksam kan det hjälpa att förklara vad Lina gör rent praktiskt: ett gemensamt ställe för information om barnet — kontakter, hälsouppgifter, tillhörigheter och meddelanden — så att ingen behöver hålla reda på allt ensam. Det är gratis att gå med, tar två minuter att komma igång och kräver inget kreditkort. Du kan dela inbjudningslänken och låta dem titta på den i sin egen takt.",
     "cat5Title": "Samarbetsavtal",
     "cat5q1": "Vad bör ett samarbetsavtal innehålla?",
     "cat5a1": "Ett bra samarbetsavtal bör täcka umgängesmönster, boende, hämtning och lämning, semester- och helgdagsfördelning, kostnadsfördelning, kommunikation mellan föräldrarna, resor med barnet, och rutiner för ändringar och utvärdering av avtalet.",
@@ -512,7 +523,7 @@
     "heading": "Om Lina",
     "lead": "Lina är en app för föräldrar som delar omsorgen om ett barn mellan två hem. Samma översikt, samma information — oavsett vem barnet är hos.",
     "whyTitle": "Därför finns Lina",
-    "whyText1": "Lina skapades för att det inte fanns någon app för delad omsorg som kändes lugn och fokuserad. De flesta verktygen var byggda kring konflikter eller juridiska processer. Vi ville ha något annat — ett lugnt, strukturerat utrymme för vardaglig samordning mellan två föräldrar.",
+    "whyText1": "Lina skapades för att det inte fanns någon app för delad omsorg som kändes lugn och fokuserad. De flesta verktygen var byggda kring konflikter eller juridiska processer. Lina är något annat — ett lugnt, strukturerat utrymme för vardaglig samordning mellan två föräldrar.",
     "whyText2": "Målet är att minska den mentala belastningen som följer med delad omsorg. När båda föräldrarna har tillgång till samma scheman, listor och uppdateringar behöver ingen bära allt ensam.",
     "focusTitle": "Vad Lina fokuserar på",
     "focusText1": "Lina är byggt kring strukturerad kommunikation och praktiska verktyg. Trådar håller samtalen organiserade. Delade listor, kontakter och information om barnet är alltid tillgängliga — synliga i båda hemmen.",
