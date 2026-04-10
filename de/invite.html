@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://getlina.app/de/invite.html" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/invite.html" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/invite.html" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/invite.html" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/invite.html" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/invite.html" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/invite.html" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/invite.html" />
+  <link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/invite.html" />
+  <link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/invite.html" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/invite.html" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/invite.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Einladung zu Lina</title>
+  <meta name="description" content="Dein Co-Elternteil möchte Lina gemeinsam mit dir nutzen — eine private App für getrennte Eltern. Kostenlos, ohne Werbung, ohne Anmeldezwang." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:url" content="https://getlina.app/de/invite.html" />
+  <meta property="og:title" content="Einladung zu Lina" />
+  <meta property="og:description" content="Dein Co-Elternteil möchte Lina gemeinsam mit dir nutzen — eine private App für getrennte Eltern. Kostenlos, ohne Werbung, ohne Anmeldezwang." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image-de.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Einladung zu Lina" />
+  <meta name="twitter:description" content="Dein Co-Elternteil möchte Lina gemeinsam mit dir nutzen — eine private App für getrennte Eltern. Kostenlos, ohne Werbung, ohne Anmeldezwang." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image-de.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ── Nav ── */
+    nav {
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .nav-inner {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
+
+
+    /* ── Main ── */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 52px 24px 80px;
+    }
+
+    .invite-card {
+      width: 100%;
+      max-width: 480px;
+    }
+
+    /* ── Header ── */
+    .invite-header {
+      margin-bottom: 32px;
+    }
+
+    .invite-header h1 {
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .invite-header p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .invite-privacy {
+      margin-top: 14px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      opacity: 0.8;
+    }
+
+    /* ── Code section ── */
+    .code-section {
+      margin-bottom: 32px;
+    }
+
+    .code-section.hidden {
+      display: none;
+    }
+
+    .code-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+
+    .code-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+
+    .code-value {
+      flex: 1;
+      min-width: 0;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      color: var(--text);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .copy-btn {
+      flex-shrink: 0;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 9px 18px;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .copy-btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .copy-btn.copied {
+      background: #3a8a6e;
+    }
+
+    .instruction {
+      margin-top: 14px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ── Low threshold ── */
+    .low-threshold {
+      background: #E9F5F3;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 32px;
+      font-size: 14px;
+      color: #085041;
+      line-height: 1.6;
+    }
+
+    .low-threshold.hidden {
+      display: none;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 32px 0;
+    }
+
+    /* ── Features ── */
+    .features-list {
+      list-style: none;
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .features-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    .features-list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--primary);
+      margin-top: 8px;
+    }
+
+    /* ── Store buttons ── */
+    .store-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn-store {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--text);
+      color: #fff;
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: background 0.15s;
+    }
+
+    .btn-store:hover {
+      background: #2c333b;
+    }
+
+    .btn-store svg {
+      flex-shrink: 0;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      main {
+        padding: 36px 20px 64px;
+      }
+
+      .invite-header h1 {
+        font-size: 23px;
+      }
+
+      .code-value {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/de/" class="logo-link">
+        <img src="/assets/logos/Logo_1.svg" alt="Lina" height="32" />
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="invite-card">
+
+      <div class="invite-header">
+        <h1 id="invite-title"></h1>
+        <p id="invite-desc"></p>
+        <p id="invite-privacy" class="invite-privacy"></p>
+      </div>
+
+      <div id="code-section" class="code-section hidden">
+        <p id="code-label" class="code-label"></p>
+        <div class="code-box">
+          <span id="invite-code" class="code-value"></span>
+          <button id="copy-btn" class="copy-btn" type="button"></button>
+        </div>
+        <p id="instruction" class="instruction"></p>
+      </div>
+
+      <div id="low-threshold" class="low-threshold hidden"></div>
+
+      <div class="divider"></div>
+
+      <ul id="features-list" class="features-list"></ul>
+
+      <div class="store-buttons">
+        <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-store">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          <span id="appstore-label"></span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-store">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+          </svg>
+          <span id="playstore-label"></span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    const t = {
+      title: "Du wurdest zu Lina eingeladen",
+      title_with_name: "{{name}} möchte Lina mit dir nutzen",
+      description: "Lina ist ein gemeinsamer Ort für Eltern, die getrennt leben — ein einfacher, privater Bereich für praktische Informationen über euer Kind. Nachrichten, Kontakte, Fotos und Sachen, organisiert zwischen zwei Haushalten.",
+      no_code_title: "Lina — Co-Elternschaft, vereinfacht",
+      no_code_description: "Lina hilft getrennten Eltern, den Alltag rund ums Kind zu koordinieren. Nachrichten, Kontakte, Fotos und Sachen — organisiert zwischen zwei Haushalten.",
+      privacy: "Nur ihr zwei seht, was in Lina ist. Kein anderer — nicht Familie, nicht Freunde. Keine Werbung.",
+      code_label: "Dein Einladungscode",
+      copy: "Kopieren",
+      copied: "Kopiert",
+      instruction: "Lade Lina herunter und gib den Code ein, um loszulegen.",
+      features: [
+        "Wichtige Informationen über euer Kind, an einem Ort",
+        "Nachrichten senden — ohne persönliche Chat-Apps",
+        "Fotos aus beiden Haushalten in einem privaten Album",
+        "Schule, Arzt und Notfallkontakte in einer gemeinsamen Liste",
+        "Sachen im Blick behalten, damit nichts zwischen den Haushalten verloren geht"
+      ],
+      app_store: "Im App Store laden",
+      play_store: "Bei Google Play holen",
+      lowThreshold: "Kostenlos nutzbar. Keine Kreditkarte. In zwei Minuten eingerichtet."
+    };
+
+    function getCode() {
+      return new URLSearchParams(window.location.search).get('code') || '';
+    }
+
+    function getFrom() {
+      const raw = new URLSearchParams(window.location.search).get('from') || '';
+      if (!raw) return '';
+      try {
+        const decoded = decodeURIComponent(raw);
+        return decoded.replace(/<[^>]*>/g, '').trim().slice(0, 50);
+      } catch (_) {
+        return '';
+      }
+    }
+
+    const code = getCode();
+    const from = getFrom();
+
+    let title;
+    if (code) {
+      title = from ? t.title_with_name.replace('{{name}}', from) : t.title;
+    } else {
+      title = t.no_code_title;
+    }
+    document.getElementById('invite-title').textContent = title;
+    document.getElementById('invite-desc').textContent = code ? t.description : t.no_code_description;
+    document.getElementById('invite-privacy').textContent = t.privacy;
+
+    if (code) {
+      const codeSection = document.getElementById('code-section');
+      codeSection.classList.remove('hidden');
+      document.getElementById('code-label').textContent = t.code_label;
+      document.getElementById('invite-code').textContent = code;
+      document.getElementById('instruction').textContent = t.instruction;
+
+      const lowThreshold = document.getElementById('low-threshold');
+      lowThreshold.classList.remove('hidden');
+      lowThreshold.textContent = t.lowThreshold;
+
+      const copyBtn = document.getElementById('copy-btn');
+      copyBtn.textContent = t.copy;
+      copyBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(code);
+        } catch (_) {
+          const el = document.getElementById('invite-code');
+          const range = document.createRange();
+          range.selectNode(el);
+          const sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(range);
+        }
+        copyBtn.textContent = t.copied;
+        copyBtn.classList.add('copied');
+        setTimeout(() => {
+          copyBtn.textContent = t.copy;
+          copyBtn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+
+    const featuresList = document.getElementById('features-list');
+    t.features.forEach(feature => {
+      const li = document.createElement('li');
+      li.textContent = feature;
+      featuresList.appendChild(li);
+    });
+
+    document.getElementById('appstore-label').textContent = t.app_store;
+    document.getElementById('playstore-label').textContent = t.play_store;
+  </script>
+
+</body>
+</html>
