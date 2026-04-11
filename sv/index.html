@@ -682,10 +682,16 @@
 
     .btn-primary svg { flex-shrink: 0; }
 
-    /* DO NOT CHANGE: cs-promo-visual must be flex:1 so the image fills the column naturally */
+    /*
+     * DO NOT CHANGE — cs-promo section image layout.
+     * This is the standalone CareSchedule.png landscape image in the "Plan your care schedule"
+     * promo section at the bottom of index.html. It is NOT a carousel slide, NOT a phone-frame
+     * screenshot, and NOT related to the feature-block images (Threads/Messages/Album).
+     * flex:1 on the visual column lets the image fill the right half of the section naturally.
+     */
     .cs-promo-visual { flex: 1; min-width: 0; }
 
-    /* DO NOT CHANGE: width:100% lets CareSchedule.png fill the visual column at its natural aspect ratio */
+    /* DO NOT CHANGE — width:100%/height:auto preserves CareSchedule.png's natural aspect ratio */
     .cs-promo-img {
       width: 100%;
       height: auto;
