@@ -594,8 +594,6 @@ const LOCALE_SCREENSHOT_MAP = {
   no: {
     'AlbumScreen.webp':        'AlbumScreenNO.png',
     'AlbumScreen.png':         'AlbumScreenNO.png',
-    'CareScheduleApp.webp':    'CareScheduleNO.png',
-    'CareScheduleApp.png':     'CareScheduleNO.png',
     'ChildList.webp':          'ChildNO.png',
     'ChildList.png':           'ChildNO.png',
     'ContactList.webp':        'ContactNO.png',
@@ -613,8 +611,6 @@ const LOCALE_SCREENSHOT_MAP = {
   sv: {
     'AlbumScreen.webp':        'AlbumScreenSV.png',
     'AlbumScreen.png':         'AlbumScreenSV.png',
-    'CareScheduleApp.webp':    'CareScheduleSV.png',
-    'CareScheduleApp.png':     'CareScheduleSV.png',
     'ChildList.webp':          'ChildSV.png',
     'ChildList.png':           'ChildSV.png',
     'ContactList.webp':        'ContactSV.png',
@@ -632,8 +628,6 @@ const LOCALE_SCREENSHOT_MAP = {
   da: {
     'AlbumScreen.webp':        'AlbumScreenDA.png',
     'AlbumScreen.png':         'AlbumScreenDA.png',
-    'CareScheduleApp.webp':    'CareScheduleDA.png',
-    'CareScheduleApp.png':     'CareScheduleDA.png',
     'ChildList.webp':          'ChildDA.png',
     'ChildList.png':           'ChildDA.png',
     'ContactList.webp':        'ContactDA.png',
@@ -651,8 +645,6 @@ const LOCALE_SCREENSHOT_MAP = {
   de: {
     'AlbumScreen.webp':        'AlbumScreenDE.png',
     'AlbumScreen.png':         'AlbumScreenDE.png',
-    'CareScheduleApp.webp':    'CareScheduleDE.png',
-    'CareScheduleApp.png':     'CareScheduleDE.png',
     'ChildList.webp':          'ChildDE.png',
     'ChildList.png':           'ChildDE.png',
     'ContactList.webp':        'ContactDE.png',
@@ -670,8 +662,6 @@ const LOCALE_SCREENSHOT_MAP = {
   fi: {
     'AlbumScreen.webp':        'AlbumScreenFI.png',
     'AlbumScreen.png':         'AlbumScreenFI.png',
-    'CareScheduleApp.webp':    'CareScheduleFI.png',
-    'CareScheduleApp.png':     'CareScheduleFI.png',
     'ChildList.webp':          'ChildFI.png',
     'ChildList.png':           'ChildFI.png',
     'ContactList.webp':        'ContactFI.png',
