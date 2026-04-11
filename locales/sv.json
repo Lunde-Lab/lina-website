@@ -221,8 +221,13 @@
     "exportPdf": "Exportera till PDF",
     "week": "Vecka",
     "unassigned": "Ej tilldelad",
-    "mon": "Mån", "tue": "Tis", "wed": "Ons", "thu": "Tor",
-    "fri": "Fre", "sat": "Lör", "sun": "Sön",
+    "mon": "Mån",
+    "tue": "Tis",
+    "wed": "Ons",
+    "thu": "Tor",
+    "fri": "Fre",
+    "sat": "Lör",
+    "sun": "Sön",
     "statsTitle": "Sammanfattning",
     "statsDaySplit": "Dagfördelning",
     "statsWeekendSplit": "Helgfördelning (fre–sön)",
@@ -276,21 +281,55 @@
       "label": "Integritet",
       "title": "Säker och privat av naturen",
       "description": "Lina är byggt med integritet som grund. Föräldrarnas data hanteras ansvarsfullt, och appen är fri från kommersiella intressen. Som yrkesperson kan du rekommendera den med förtroende.",
-      "point1": { "title": "Ingen reklam", "description": "Inga annonser eller kommersiella intressen påverkar användarupplevelsen." },
-      "point2": { "title": "Ingen datadelning", "description": "Föräldrarnas data säljs inte och delas inte med tredje part." },
-      "point3": { "title": "Säker infrastruktur", "description": "Information skyddas genom säker lagring, åtkomstkontroll och signerade länkar." },
-      "point4": { "title": "GDPR-efterlevnad", "description": "Lina följer EU:s dataskyddsförordning (GDPR). Du kan läsa hela integritetspolicyn på getlina.app/privacy." }
+      "point1": {
+        "title": "Ingen reklam",
+        "description": "Inga annonser eller kommersiella intressen påverkar användarupplevelsen."
+      },
+      "point2": {
+        "title": "Ingen datadelning",
+        "description": "Föräldrarnas data säljs inte och delas inte med tredje part."
+      },
+      "point3": {
+        "title": "Säker infrastruktur",
+        "description": "Information skyddas genom säker lagring, åtkomstkontroll och signerade länkar."
+      },
+      "point4": {
+        "title": "GDPR-efterlevnad",
+        "description": "Lina följer EU:s dataskyddsförordning (GDPR). Du kan läsa hela integritetspolicyn på getlina.app/privacy."
+      }
     },
     "features": {
       "label": "Hur det fungerar i praktiken",
       "title": "Struktur som minskar friktion i vardagen",
-      "threads": { "title": "Trådar", "description": "Föräldrar kommunicerar om ett ämne i taget – logistik, skola eller hälsa – utan att viktig information går förlorad i en lång meddelandetråd." },
-      "messages": { "title": "Meddelanden", "description": "Meddelanden kan inte redigeras eller raderas. Det ger en förutsägbar kommunikationskanal och en tydlig historik över vad som har överenskommits." },
-      "album": { "title": "Delat album", "description": "Båda föräldrarna kan dela foton från vardagen. Barnet syns i båda hemmen." },
-      "info": { "title": "Barnuppgifter", "description": "Medicinsk information, allergier och viktiga detaljer registreras en gång och är tillgängliga för båda – oavsett vilket hem barnet befinner sig i." },
-      "equipment": { "title": "Utrustningslistor", "description": "En tydlig översikt över vad barnet behöver i varje hem minskar antalet frågor och missförstånd kring praktiska detaljer." },
-      "schedule": { "title": "Omsorgsschema", "description": "Omsorgsfördelningen visas i en gemensam vy. Färre diskussioner om vem som hade barnet och när." },
-      "agreement": { "title": "Samarbetsavtal", "description": "Informationssidan om samarbetsavtal ger föräldrar en översikt över vad avtalet bör innehålla, med exempel och länkar till officiella resurser. En bra utgångspunkt före eller efter medling.", "link": "Visa informationssidan" }
+      "threads": {
+        "title": "Trådar",
+        "description": "Föräldrar kommunicerar om ett ämne i taget – logistik, skola eller hälsa – utan att viktig information går förlorad i en lång meddelandetråd."
+      },
+      "messages": {
+        "title": "Meddelanden",
+        "description": "Meddelanden kan inte redigeras eller raderas. Det ger en förutsägbar kommunikationskanal och en tydlig historik över vad som har överenskommits."
+      },
+      "album": {
+        "title": "Delat album",
+        "description": "Båda föräldrarna kan dela foton från vardagen. Barnet syns i båda hemmen."
+      },
+      "info": {
+        "title": "Barnuppgifter",
+        "description": "Medicinsk information, allergier och viktiga detaljer registreras en gång och är tillgängliga för båda – oavsett vilket hem barnet befinner sig i."
+      },
+      "equipment": {
+        "title": "Utrustningslistor",
+        "description": "En tydlig översikt över vad barnet behöver i varje hem minskar antalet frågor och missförstånd kring praktiska detaljer."
+      },
+      "schedule": {
+        "title": "Omsorgsschema",
+        "description": "Omsorgsfördelningen visas i en gemensam vy. Färre diskussioner om vem som hade barnet och när."
+      },
+      "agreement": {
+        "title": "Samarbetsavtal",
+        "description": "Informationssidan om samarbetsavtal ger föräldrar en översikt över vad avtalet bör innehålla, med exempel och länkar till officiella resurser. En bra utgångspunkt före eller efter medling.",
+        "link": "Visa informationssidan"
+      }
     },
     "thoughtful": {
       "label": "Genomtänkta detaljer",
@@ -642,40 +681,115 @@
       "description": "Lina hjälper föräldrar med delad omsorg att koordinera vardagen mellan två hem — gemensamt schema, meddelanden och listor på ett lugnt, privat ställe."
     },
     "indexFaq": [
-      { "q": "Vad är Lina?", "a": "Lina är en app för delad omsorg som hjälper föräldrar som delar omsorg om ett barn mellan två hem. Den samlar meddelanden, scheman, medicinsk information, kontakter, utrustningslistor och foton på ett gemensamt, privat ställe." },
-      { "q": "Är Lina gratis?", "a": "Lina har en gratisversion som inkluderar upp till 2 trådar, 100 foton, meddelanden, barninfo, kontakter, utrustningslistor och ett omsorgsschema. Lina+ kostar 89 kr/mån och ger obegränsade trådar, större album, sökfunktion, export och viktiga meddelanden. En prenumeration täcker båda föräldrarna." },
-      { "q": "Behöver båda föräldrarna betala?", "a": "Nej. En Lina+-prenumeration täcker båda föräldrarna. Den förälder som prenumererar ger båda full tillgång — den andre föräldern behöver aldrig betala." },
-      { "q": "Är Lina privat och säkert?", "a": "Ja. Lina har ingen reklam, ingen datadelning med tredje part och ingen algoritm som styr vad du ser. Din information stannar mellan de två föräldrarna." },
-      { "q": "Kan meddelanden redigeras eller tas bort?", "a": "Nej. Meddelanden i Lina kan varken redigeras eller tas bort efter att de skickats. Det skapar ett tydligt och förutsägbart register över vad som kommunicerats och avtalats." }
+      {
+        "q": "Vad är Lina?",
+        "a": "Lina är en app för delad omsorg som hjälper föräldrar som delar omsorg om ett barn mellan två hem. Den samlar meddelanden, scheman, medicinsk information, kontakter, utrustningslistor och foton på ett gemensamt, privat ställe."
+      },
+      {
+        "q": "Är Lina gratis?",
+        "a": "Lina har en gratisversion som inkluderar upp till 2 trådar, 100 foton, meddelanden, barninfo, kontakter, utrustningslistor och ett omsorgsschema. Lina+ kostar 89 kr/mån och ger obegränsade trådar, större album, sökfunktion, export och viktiga meddelanden. En prenumeration täcker båda föräldrarna."
+      },
+      {
+        "q": "Behöver båda föräldrarna betala?",
+        "a": "Nej. En Lina+-prenumeration täcker båda föräldrarna. Den förälder som prenumererar ger båda full tillgång — den andre föräldern behöver aldrig betala."
+      },
+      {
+        "q": "Är Lina privat och säkert?",
+        "a": "Ja. Lina har ingen reklam, ingen datadelning med tredje part och ingen algoritm som styr vad du ser. Din information stannar mellan de två föräldrarna."
+      },
+      {
+        "q": "Kan meddelanden redigeras eller tas bort?",
+        "a": "Nej. Meddelanden i Lina kan varken redigeras eller tas bort efter att de skickats. Det skapar ett tydligt och förutsägbart register över vad som kommunicerats och avtalats."
+      }
     ],
     "faqFaq": [
-      { "q": "Vad är Lina?", "a": "Lina är en app för föräldrar med delad omsorg. Den samlar praktisk information — barnuppgifter, meddelanden, foton, kontakter och utrustningslistor — på ett gemensamt ställe tillgängligt från båda hem." },
-      { "q": "Är Lina gratis?", "a": "Ja, Lina är gratis att ladda ner och använda. Ingen betalning krävs för att skapa ett konto eller bjuda in den andre föräldern." },
-      { "q": "Kan jag exportera omsorgsschemat?", "a": "Ja, du kan exportera omsorgsschemat som PDF direkt från verktyget." },
-      { "q": "Vem kan se barnets information?", "a": "Endast de två föräldrar som är kopplade till barnet i Lina har tillgång till barnets information." },
-      { "q": "Kan meddelanden tas bort eller redigeras?", "a": "Nej, meddelanden i Lina kan varken redigeras eller tas bort efter att de skickats, vilket skapar ett tydligt och pålitligt register." }
+      {
+        "q": "Vad är Lina?",
+        "a": "Lina är en app för föräldrar med delad omsorg. Den samlar praktisk information — barnuppgifter, meddelanden, foton, kontakter och utrustningslistor — på ett gemensamt ställe tillgängligt från båda hem."
+      },
+      {
+        "q": "Är Lina gratis?",
+        "a": "Ja, Lina är gratis att ladda ner och använda. Ingen betalning krävs för att skapa ett konto eller bjuda in den andre föräldern."
+      },
+      {
+        "q": "Kan jag exportera omsorgsschemat?",
+        "a": "Ja, du kan exportera omsorgsschemat som PDF direkt från verktyget."
+      },
+      {
+        "q": "Vem kan se barnets information?",
+        "a": "Endast de två föräldrar som är kopplade till barnet i Lina har tillgång till barnets information."
+      },
+      {
+        "q": "Kan meddelanden tas bort eller redigeras?",
+        "a": "Nej, meddelanden i Lina kan varken redigeras eller tas bort efter att de skickats, vilket skapar ett tydligt och pålitligt register."
+      }
     ],
     "csFaq": [
-      { "q": "Vad är ett omsorgsschema?", "a": "Ett omsorgsschema är en visuell översikt över hur ett barns tid fördelas mellan två hem, vecka för vecka." },
-      { "q": "Behöver jag ett konto?", "a": "Nej, schemaverktyget kan användas direkt i webbläsaren utan konto." },
-      { "q": "Kan jag exportera schemat?", "a": "Ja, du kan exportera omsorgsschemat som PDF." }
+      {
+        "q": "Vad är ett omsorgsschema?",
+        "a": "Ett omsorgsschema är en visuell översikt över hur ett barns tid fördelas mellan två hem, vecka för vecka."
+      },
+      {
+        "q": "Behöver jag ett konto?",
+        "a": "Nej, schemaverktyget kan användas direkt i webbläsaren utan konto."
+      },
+      {
+        "q": "Kan jag exportera schemat?",
+        "a": "Ja, du kan exportera omsorgsschemat som PDF."
+      }
     ],
     "caFaq": [
-      { "q": "Vad bör ett samarbetsavtal innehålla?", "a": "Ett bra samarbetsavtal bör täcka omsorgsmönster, boende, hämtning och lämning, semesterfördelning, kostnadsdelning, kommunikation, resor och rutiner för förändringar." },
-      { "q": "Är ett samarbetsavtal juridiskt bindande?", "a": "Ett privat samarbetsavtal bygger på ömsesidig överenskommelse mellan föräldrarna. Det är inte juridiskt bindande som ett domstolsbeslut, men ger struktur och förutsägbarhet." },
-      { "q": "Var kan jag upprätta ett samarbetsavtal i Sverige?", "a": "I Sverige kan du vända dig till familjerätten i din kommun för kostnadsfri rådgivning och hjälp med att upprätta ett avtal om vårdnad, boende och umgänge." }
+      {
+        "q": "Vad bör ett samarbetsavtal innehålla?",
+        "a": "Ett bra samarbetsavtal bör täcka omsorgsmönster, boende, hämtning och lämning, semesterfördelning, kostnadsdelning, kommunikation, resor och rutiner för förändringar."
+      },
+      {
+        "q": "Är ett samarbetsavtal juridiskt bindande?",
+        "a": "Ett privat samarbetsavtal bygger på ömsesidig överenskommelse mellan föräldrarna. Det är inte juridiskt bindande som ett domstolsbeslut, men ger struktur och förutsägbarhet."
+      },
+      {
+        "q": "Var kan jag upprätta ett samarbetsavtal i Sverige?",
+        "a": "I Sverige kan du vända dig till familjerätten i din kommun för kostnadsfri rådgivning och hjälp med att upprätta ett avtal om vårdnad, boende och umgänge."
+      }
     ],
     "pricingFaq": [
-      { "q": "Vad kostar Lina?", "a": "Lina har en gratisversion med grundläggande funktioner. Lina+ kostar 89 kr per månad med 2 veckors gratis provperiod." },
-      { "q": "Behöver den andra föräldern också betala?", "a": "Nej. En Lina+-prenumeration täcker båda föräldrarna." },
-      { "q": "Kan jag avsluta när som helst?", "a": "Ja. Ingen bindningstid. Avsluta när som helst via App Store eller Google Play." },
-      { "q": "Vad ingår i gratisversionen?", "a": "Upp till 2 trådar, 100 foton, meddelanden, barninfo, kontakter, utrustningslistor och omsorgsschema." }
+      {
+        "q": "Vad kostar Lina?",
+        "a": "Lina har en gratisversion med grundläggande funktioner. Lina+ kostar 89 kr per månad med 2 veckors gratis provperiod."
+      },
+      {
+        "q": "Behöver den andra föräldern också betala?",
+        "a": "Nej. En Lina+-prenumeration täcker båda föräldrarna."
+      },
+      {
+        "q": "Kan jag avsluta när som helst?",
+        "a": "Ja. Ingen bindningstid. Avsluta när som helst via App Store eller Google Play."
+      },
+      {
+        "q": "Vad ingår i gratisversionen?",
+        "a": "Upp till 2 trådar, 100 foton, meddelanden, barninfo, kontakter, utrustningslistor och omsorgsschema."
+      }
     ],
-    "article1": { "headline": "Umgängesscheman förklarade", "description": "En översikt över de vanligaste umgängesscheman för barn med två hem — växelvis boende, 3-4-4-3, 2-2-5-5 och andra modeller. Vad passar för olika åldersgrupper?" },
-    "article2": { "headline": "Överlämningsdag — så gör du bytet enklare", "description": "Praktiska tips för smidigare överlämningar mellan hemmen — fasta rutiner, neutrala platser och vad som bör följa med barnet." },
-    "article3": { "headline": "Vad barnet behöver i varje hem", "description": "En praktisk checklista för föräldrar med delad omsorg — vad som bör finnas i båda hemmen, vad som bör följa med barnet och hur man håller koll." },
-    "article4": { "headline": "Växelvis boende vs. fast boende — vad är skillnaden?", "description": "Skillnaden mellan växelvis boende och fast boende hos en förälder — vad det innebär i praktiken för vardagen, beslutsrätt och barnets rättigheter." },
-    "article5": { "headline": "Kommunikation mellan föräldrar med delad omsorg", "description": "Hur du håller kommunikationen saklig och strukturerad när ni delar omsorgen om ett barn — praktiska tips om trådar, skriftlighet och tydliga gränser." }
+    "article1": {
+      "headline": "Umgängesscheman förklarade",
+      "description": "En översikt över de vanligaste umgängesscheman för barn med två hem — växelvis boende, 3-4-4-3, 2-2-5-5 och andra modeller. Vad passar för olika åldersgrupper?"
+    },
+    "article2": {
+      "headline": "Överlämningsdag — så gör du bytet enklare",
+      "description": "Praktiska tips för smidigare överlämningar mellan hemmen — fasta rutiner, neutrala platser och vad som bör följa med barnet."
+    },
+    "article3": {
+      "headline": "Vad barnet behöver i varje hem",
+      "description": "En praktisk checklista för föräldrar med delad omsorg — vad som bör finnas i båda hemmen, vad som bör följa med barnet och hur man håller koll."
+    },
+    "article4": {
+      "headline": "Växelvis boende vs. fast boende — vad är skillnaden?",
+      "description": "Skillnaden mellan växelvis boende och fast boende hos en förälder — vad det innebär i praktiken för vardagen, beslutsrätt och barnets rättigheter."
+    },
+    "article5": {
+      "headline": "Kommunikation mellan föräldrar med delad omsorg",
+      "description": "Hur du håller kommunikationen saklig och strukturerad när ni delar omsorgen om ett barn — praktiska tips om trådar, skriftlighet och tydliga gränser."
+    }
   },
   "blog1": {
     "pageTitle": "Umgängesscheman förklarade — Lina",
@@ -868,5 +982,17 @@
     "ctaTitle": "Strukturerad kommunikation mellan två hem",
     "ctaDesc": "Lina håller samtalen organiserade i separata trådar. Meddelanden kan inte redigeras eller raderas — så båda föräldrarna har en tydlig historik över vad som avtalats.",
     "ctaCta": "Ladda ner Lina"
+  },
+  "carousel": {
+    "alt": {
+      "threads": "Trådvy",
+      "threadDetail": "Tråddetaljer",
+      "album": "Delat album",
+      "tools": "Verktyg",
+      "equipment": "Utrustningslista",
+      "contacts": "Kontakter",
+      "childInfo": "Barninformation",
+      "careSchedule": "Umgängesschema"
+    }
   }
 }

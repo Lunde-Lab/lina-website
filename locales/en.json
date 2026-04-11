@@ -205,8 +205,13 @@
     "exportPdf": "Export to PDF",
     "week": "Week",
     "unassigned": "Unassigned",
-    "mon": "Mon", "tue": "Tue", "wed": "Wed", "thu": "Thu",
-    "fri": "Fri", "sat": "Sat", "sun": "Sun",
+    "mon": "Mon",
+    "tue": "Tue",
+    "wed": "Wed",
+    "thu": "Thu",
+    "fri": "Fri",
+    "sat": "Sat",
+    "sun": "Sun",
     "statsTitle": "Summary",
     "statsDaySplit": "Day split",
     "statsWeekendSplit": "Weekend split (Fri–Sun)",
@@ -260,21 +265,55 @@
       "label": "Privacy",
       "title": "Secure and private by design",
       "description": "Lina is built with privacy as its foundation. Parents' data is handled responsibly, and the app is free from commercial interests. As a professional, you can recommend it with confidence.",
-      "point1": { "title": "No advertising", "description": "No ads or commercial interests affect the user experience." },
-      "point2": { "title": "No data sharing", "description": "Parents' data is not sold or shared with third parties." },
-      "point3": { "title": "Secure infrastructure", "description": "Information is protected through secure storage, access control, and signed links." },
-      "point4": { "title": "GDPR-compliant", "description": "Lina is fully compliant with the EU General Data Protection Regulation (GDPR). You can read the full privacy policy at getlina.app/privacy." }
+      "point1": {
+        "title": "No advertising",
+        "description": "No ads or commercial interests affect the user experience."
+      },
+      "point2": {
+        "title": "No data sharing",
+        "description": "Parents' data is not sold or shared with third parties."
+      },
+      "point3": {
+        "title": "Secure infrastructure",
+        "description": "Information is protected through secure storage, access control, and signed links."
+      },
+      "point4": {
+        "title": "GDPR-compliant",
+        "description": "Lina is fully compliant with the EU General Data Protection Regulation (GDPR). You can read the full privacy policy at getlina.app/privacy."
+      }
     },
     "features": {
       "label": "How it works in practice",
       "title": "Structure that reduces friction in everyday life",
-      "threads": { "title": "Threads", "description": "Parents communicate about one topic at a time — logistics, school, or health — without important information getting lost in a long message thread." },
-      "messages": { "title": "Messages", "description": "Messages cannot be edited or deleted. This creates a predictable communication channel and a clear record of what has been agreed." },
-      "album": { "title": "Shared album", "description": "Both parents can share photos from everyday life. The child is visible in both homes." },
-      "info": { "title": "Child information", "description": "Medical information, allergies, and important details are entered once and available to both parents — regardless of which home the child is in." },
-      "equipment": { "title": "Equipment lists", "description": "A clear overview of what the child needs in each home reduces the number of clarifications and misunderstandings around practical details." },
-      "schedule": { "title": "Care schedule", "description": "The care arrangement is shown in one shared view. Fewer discussions about who had the child and when." },
-      "agreement": { "title": "Care Agreement", "description": "The care agreement page gives parents an overview of what the agreement should include, with an example and links to official resources. A good starting point before or after mediation.", "link": "View the information page" }
+      "threads": {
+        "title": "Threads",
+        "description": "Parents communicate about one topic at a time — logistics, school, or health — without important information getting lost in a long message thread."
+      },
+      "messages": {
+        "title": "Messages",
+        "description": "Messages cannot be edited or deleted. This creates a predictable communication channel and a clear record of what has been agreed."
+      },
+      "album": {
+        "title": "Shared album",
+        "description": "Both parents can share photos from everyday life. The child is visible in both homes."
+      },
+      "info": {
+        "title": "Child information",
+        "description": "Medical information, allergies, and important details are entered once and available to both parents — regardless of which home the child is in."
+      },
+      "equipment": {
+        "title": "Equipment lists",
+        "description": "A clear overview of what the child needs in each home reduces the number of clarifications and misunderstandings around practical details."
+      },
+      "schedule": {
+        "title": "Care schedule",
+        "description": "The care arrangement is shown in one shared view. Fewer discussions about who had the child and when."
+      },
+      "agreement": {
+        "title": "Care Agreement",
+        "description": "The care agreement page gives parents an overview of what the agreement should include, with an example and links to official resources. A good starting point before or after mediation.",
+        "link": "View the information page"
+      }
     },
     "thoughtful": {
       "label": "Thoughtful details",
@@ -626,34 +665,94 @@
       "description": "Lina helps co-parents coordinate care across two homes — shared schedules, messages, and lists in one calm, private space."
     },
     "indexFaq": [
-      { "q": "What is Lina?", "a": "Lina is a co-parenting app that helps parents who share care across two homes. It brings together messages, schedules, medical information, contacts, equipment lists, and photos in one shared, private space." },
-      { "q": "Is Lina free?", "a": "Lina has a free plan that includes up to 2 threads, 100 photos, messages, child information, contacts, equipment lists, and a care schedule. Lina+ costs €7.99/month and unlocks unlimited threads, a larger album, thread search, thread export, and important messages. One subscription covers both parents." },
-      { "q": "Do both parents need to pay?", "a": "No. One Lina+ subscription covers both parents. The parent who subscribes gives both parents full access — the other parent never needs to pay." },
-      { "q": "Is Lina private and secure?", "a": "Yes. Lina has no advertising, no data sharing with third parties, and no algorithm deciding what you see. Your information stays between the two parents." },
-      { "q": "Can messages be edited or deleted?", "a": "No. Messages in Lina cannot be edited or deleted after sending. This creates a clear, predictable record of what has been communicated and agreed." }
+      {
+        "q": "What is Lina?",
+        "a": "Lina is a co-parenting app that helps parents who share care across two homes. It brings together messages, schedules, medical information, contacts, equipment lists, and photos in one shared, private space."
+      },
+      {
+        "q": "Is Lina free?",
+        "a": "Lina has a free plan that includes up to 2 threads, 100 photos, messages, child information, contacts, equipment lists, and a care schedule. Lina+ costs €7.99/month and unlocks unlimited threads, a larger album, thread search, thread export, and important messages. One subscription covers both parents."
+      },
+      {
+        "q": "Do both parents need to pay?",
+        "a": "No. One Lina+ subscription covers both parents. The parent who subscribes gives both parents full access — the other parent never needs to pay."
+      },
+      {
+        "q": "Is Lina private and secure?",
+        "a": "Yes. Lina has no advertising, no data sharing with third parties, and no algorithm deciding what you see. Your information stays between the two parents."
+      },
+      {
+        "q": "Can messages be edited or deleted?",
+        "a": "No. Messages in Lina cannot be edited or deleted after sending. This creates a clear, predictable record of what has been communicated and agreed."
+      }
     ],
     "faqFaq": [
-      { "q": "What is Lina?", "a": "Lina is a co-parenting app that brings together practical details — child information, messages, photos, contacts, and equipment lists — in one shared place accessible from both homes." },
-      { "q": "Is Lina free?", "a": "Yes, Lina is free to download and use. No payment is required to create an account or invite the other parent." },
-      { "q": "Can I export the care schedule?", "a": "Yes, you can export the care schedule as a PDF directly from the tool." },
-      { "q": "Who can see the child's information?", "a": "Only the two parents linked to the child in Lina have access to the child's information." },
-      { "q": "Can messages be deleted or edited?", "a": "No, messages in Lina cannot be edited or deleted after sending, creating a clear and reliable record." }
+      {
+        "q": "What is Lina?",
+        "a": "Lina is a co-parenting app that brings together practical details — child information, messages, photos, contacts, and equipment lists — in one shared place accessible from both homes."
+      },
+      {
+        "q": "Is Lina free?",
+        "a": "Yes, Lina is free to download and use. No payment is required to create an account or invite the other parent."
+      },
+      {
+        "q": "Can I export the care schedule?",
+        "a": "Yes, you can export the care schedule as a PDF directly from the tool."
+      },
+      {
+        "q": "Who can see the child's information?",
+        "a": "Only the two parents linked to the child in Lina have access to the child's information."
+      },
+      {
+        "q": "Can messages be deleted or edited?",
+        "a": "No, messages in Lina cannot be edited or deleted after sending, creating a clear and reliable record."
+      }
     ],
     "csFaq": [
-      { "q": "What is a care schedule?", "a": "A care schedule is a visual overview of how a child's time is divided between two homes, week by week." },
-      { "q": "Do I need an account?", "a": "No, the care schedule tool can be used directly in the browser without an account." },
-      { "q": "Can I export the schedule?", "a": "Yes, you can export the care schedule as a PDF." }
+      {
+        "q": "What is a care schedule?",
+        "a": "A care schedule is a visual overview of how a child's time is divided between two homes, week by week."
+      },
+      {
+        "q": "Do I need an account?",
+        "a": "No, the care schedule tool can be used directly in the browser without an account."
+      },
+      {
+        "q": "Can I export the schedule?",
+        "a": "Yes, you can export the care schedule as a PDF."
+      }
     ],
     "caFaq": [
-      { "q": "What should a care agreement include?", "a": "A good care agreement should cover care patterns, residence, pickup and delivery, holiday distribution, cost sharing, communication, travel, and routines for changes." },
-      { "q": "Is a care agreement legally binding?", "a": "A private care agreement is based on mutual consent between parents. It is not legally binding like a court order, but provides structure and predictability." },
-      { "q": "Where can I create a care agreement?", "a": "In many countries, government family services or mediation centres can help you create a care agreement. Check your local family law authority for digital or in-person options." }
+      {
+        "q": "What should a care agreement include?",
+        "a": "A good care agreement should cover care patterns, residence, pickup and delivery, holiday distribution, cost sharing, communication, travel, and routines for changes."
+      },
+      {
+        "q": "Is a care agreement legally binding?",
+        "a": "A private care agreement is based on mutual consent between parents. It is not legally binding like a court order, but provides structure and predictability."
+      },
+      {
+        "q": "Where can I create a care agreement?",
+        "a": "In many countries, government family services or mediation centres can help you create a care agreement. Check your local family law authority for digital or in-person options."
+      }
     ],
     "pricingFaq": [
-      { "q": "How much does Lina cost?", "a": "Lina has a free plan with basic features. Lina+ costs €7.99 per month with a 2-week free trial." },
-      { "q": "Does the other parent also need to pay?", "a": "No. One Lina+ subscription covers both parents." },
-      { "q": "Can I cancel anytime?", "a": "Yes. No commitment period. Cancel anytime through the App Store or Google Play." },
-      { "q": "What is included in the free plan?", "a": "Up to 2 threads, 100 photos, messages, child information, contacts, equipment lists, and a care schedule." }
+      {
+        "q": "How much does Lina cost?",
+        "a": "Lina has a free plan with basic features. Lina+ costs €7.99 per month with a 2-week free trial."
+      },
+      {
+        "q": "Does the other parent also need to pay?",
+        "a": "No. One Lina+ subscription covers both parents."
+      },
+      {
+        "q": "Can I cancel anytime?",
+        "a": "Yes. No commitment period. Cancel anytime through the App Store or Google Play."
+      },
+      {
+        "q": "What is included in the free plan?",
+        "a": "Up to 2 threads, 100 photos, messages, child information, contacts, equipment lists, and a care schedule."
+      }
     ]
   },
   "blog1": {
@@ -847,5 +946,17 @@
     "ctaTitle": "Structured communication between two homes",
     "ctaDesc": "Lina keeps conversations organised in separate threads. Messages cannot be edited or deleted — so both parents have a clear record of what was agreed.",
     "ctaCta": "Download Lina"
+  },
+  "carousel": {
+    "alt": {
+      "threads": "Threads screen",
+      "threadDetail": "Thread detail screen",
+      "album": "Shared album screen",
+      "tools": "Tools screen",
+      "equipment": "Equipment list screen",
+      "contacts": "Contacts screen",
+      "childInfo": "Child information screen",
+      "careSchedule": "Care schedule screen"
+    }
   }
 }

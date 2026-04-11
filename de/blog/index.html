@@ -21,7 +21,6 @@
   <title>Blog — Lina</title>
   <meta name="description" content="Praktische Informationen zu Betreuungsmodellen, Vereinbarungen und der Alltagskoordination für Eltern mit geteilter Betreuung über zwei Haushalte." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="de_DE" />
   <meta property="og:url" content="https://getlina.app/de/blog/" />
   <meta property="og:title" content="Blog — Lina" />
   <meta property="og:description" content="Praktische Informationen zu Betreuungsmodellen, Vereinbarungen und der Alltagskoordination für Eltern mit geteilter Betreuung über zwei Haushalte." />
@@ -262,7 +261,27 @@
       .blog-card { padding: 24px; }
     }
   </style>
-  <script id="lina-lang-redirect">(function () {
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Lina",
+      "item": "https://getlina.app/de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://getlina.app/de/blog/"
+    }
+  ]
+}
+</script>
+<script id="lina-lang-redirect">(function () {
   var K = 'lina_lang';
   // Already on a non-English locale page — nothing to do
   if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
@@ -279,16 +298,6 @@
     if (l) { location.replace('/' + l + '/'); return; }
   }
 }());</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://getlina.app/de/" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://getlina.app/de/blog/" }
-  ]
-}
-</script>
 </head>
 <body>
 
@@ -343,7 +352,7 @@
         </a>
         <a class="blog-card" href="/de/blog/was-kinder-brauchen/">
           <p class="blog-card-label" data-i18n="blogIndex.a3label">Ausstattung</p>
-          <h2 data-i18n="blogIndex.a3title">Was Ihr Kind in jedem Haushalt braucht</h2>
+          <h2 data-i18n="blogIndex.a3title">Was dein Kind in jedem Haushalt braucht</h2>
           <p class="blog-card-desc" data-i18n="blogIndex.a3desc">Eine praktische Checkliste — was in beiden Haushalten vorhanden sein sollte und was das Kind mitnehmen sollte.</p>
         </a>
         <a class="blog-card" href="/de/blog/wechselmodell-vs-residenzmodell/">
@@ -355,21 +364,6 @@
           <p class="blog-card-label" data-i18n="blogIndex.a5label">Kommunikation</p>
           <h2 data-i18n="blogIndex.a5title">Kommunikation zwischen Co-Eltern</h2>
           <p class="blog-card-desc" data-i18n="blogIndex.a5desc">Warum Struktur hilft und wie man den Ton sachlich hält, wenn es um das Kind geht.</p>
-        </a>
-        <a class="blog-card" href="/de/blog/sorgerecht-nach-trennung/">
-          <p class="blog-card-label" data-i18n="blogIndex.a6label">Sorgerecht</p>
-          <h2 data-i18n="blogIndex.a6title">Sorgerecht nach Trennung — was Eltern wissen sollten</h2>
-          <p class="blog-card-desc" data-i18n="blogIndex.a6desc">Gemeinsames oder alleiniges Sorgerecht, was sich durch die Trennung ändert und welche Rolle das Jugendamt spielt.</p>
-        </a>
-        <a class="blog-card" href="/de/blog/eltern-app-trennung/">
-          <p class="blog-card-label" data-i18n="blogIndex.a7label">Digitale Werkzeuge</p>
-          <h2 data-i18n="blogIndex.a7title">Welche App hilft getrennten Eltern im Alltag?</h2>
-          <p class="blog-card-desc" data-i18n="blogIndex.a7desc">Was eine Co-Parenting-App leisten sollte — und warum normale Messenger oft nicht ausreichen.</p>
-        </a>
-        <a class="blog-card" href="/de/blog/kindeswohl-getrennte-eltern/">
-          <p class="blog-card-label" data-i18n="blogIndex.a8label">Kindeswohl</p>
-          <h2 data-i18n="blogIndex.a8title">Kindeswohl bei getrennten Eltern — worauf es ankommt</h2>
-          <p class="blog-card-desc" data-i18n="blogIndex.a8desc">Was Kinder nach der Elterntrennung wirklich brauchen: Stabilität, Zugang zu beiden Elternteilen, Planungssicherheit.</p>
         </a>
       </div>
 

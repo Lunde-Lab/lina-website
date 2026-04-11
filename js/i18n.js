@@ -32,6 +32,10 @@ function apply(t) {
     const val = get(t, el.dataset.i18nPlaceholder);
     if (val != null) el.setAttribute('placeholder', val);
   });
+  document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+    const val = get(t, el.dataset.i18nAlt);
+    if (val != null) el.setAttribute('alt', val);
+  });
 }
 
 async function setLang(lang) {

@@ -19,16 +19,15 @@
   <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <title>Kontakt — Lina</title>
-  <meta name="description" content="Haben Sie eine Frage zu Lina? Nehmen Sie Kontakt auf — wir melden uns so bald wie möglich." />
+  <meta name="description" content="Hast du eine Frage zu Lina? Nimm Kontakt auf — wir melden uns so bald wie möglich." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="de_DE" />
   <meta property="og:url" content="https://getlina.app/de/contact.html" />
   <meta property="og:title" content="Kontakt — Lina" />
   <meta property="og:image" content="https://getlina.app/assets/og-image-de.png" />
-  <meta property="og:description" content="Haben Sie eine Frage zu Lina? Nehmen Sie Kontakt auf — wir melden uns so bald wie möglich." />
+  <meta property="og:description" content="Hast du eine Frage zu Lina? Nimm Kontakt auf — wir melden uns so bald wie möglich." />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Kontakt — Lina" />
-  <meta name="twitter:description" content="Haben Sie eine Frage zu Lina? Nehmen Sie Kontakt auf — wir melden uns so bald wie möglich." />
+  <meta name="twitter:description" content="Hast du eine Frage zu Lina? Nimm Kontakt auf — wir melden uns so bald wie möglich." />
   <meta name="twitter:image" content="https://getlina.app/assets/og-image-de.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -246,7 +245,27 @@
       line-height: 1.65;
     }
   </style>
-  <script id="lina-lang-redirect">(function () {
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Lina",
+      "item": "https://getlina.app/de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contact",
+      "item": "https://getlina.app/de/contact.html"
+    }
+  ]
+}
+</script>
+<script id="lina-lang-redirect">(function () {
   var K = 'lina_lang';
   // Already on a non-English locale page — nothing to do
   if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
@@ -263,16 +282,6 @@
     if (l) { location.replace('/' + l + '/'); return; }
   }
 }());</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://getlina.app/de/" },
-    { "@type": "ListItem", "position": 2, "name": "Kontakt", "item": "https://getlina.app/de/contact.html" }
-  ]
-}
-</script>
 </head>
 <body>
 
@@ -287,14 +296,14 @@
     <div class="contact-container">
 
       <h1 data-i18n="contact.heading">Kontakt</h1>
-      <p class="contact-intro" data-i18n="contact.intro">Haben Sie eine Frage zu Lina oder benötigen Sie Hilfe mit Ihrem Konto? Wir helfen gerne — schreiben Sie uns eine Nachricht und wir melden uns so bald wie möglich.</p>
+      <p class="contact-intro" data-i18n="contact.intro">Hast du eine Frage zu Lina oder benötigst du Hilfe mit deinem Konto? Wir helfen gerne — schreib uns eine Nachricht und wir melden uns so bald wie möglich.</p>
 
       <form class="fv-form" id="contact-form" novalidate>
         <div class="fv-form-row">
           <input type="text" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Name" required />
           <input type="email" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="E-Mail-Adresse" required />
         </div>
-        <textarea name="message" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Ihre Nachricht" required></textarea>
+        <textarea name="message" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Deine Nachricht" required></textarea>
         <button type="submit" class="btn-submit">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="22" y1="2" x2="11" y2="13"/>
@@ -305,7 +314,7 @@
       </form>
 
       <div id="fv-success">
-        <h3 data-i18n="contact.successTitle">Vielen Dank für Ihre Nachricht</h3>
+        <h3 data-i18n="contact.successTitle">Vielen Dank für deine Nachricht</h3>
         <p data-i18n="contact.successDescription">Wir melden uns so bald wie möglich.</p>
       </div>
 

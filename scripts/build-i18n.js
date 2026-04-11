@@ -123,6 +123,33 @@ const SOURCE_FILES = [
   },
 ];
 
+// ─── Extra German-only blog slugs ─────────────────────────────────────────────
+// These are ADDITIONAL pages targeting specific German search keywords.
+// Each is built from the de/ version of the base file, with a new canonical URL.
+// The hreflang blocks in these files point the de/de-AT/de-CH variants at the
+// extra slug, while all other languages keep their regular URLs.
+const DE_EXTRA_SLUGS = [
+  {
+    baseSrc: 'blog/shared-vs-primary-residence/index.html',
+    extraSlug: '/blog/sorgerecht-nach-trennung/',
+  },
+  {
+    baseSrc: 'blog/co-parent-communication/index.html',
+    extraSlug: '/blog/eltern-app-trennung/',
+  },
+  {
+    baseSrc: 'blog/what-kids-need/index.html',
+    extraSlug: '/blog/kindeswohl-getrennte-eltern/',
+  },
+];
+
+// Pages that are built and localised but must NOT appear in sitemap.xml
+// (transactional / deep-link pages with no SEO value)
+const SITEMAP_EXCLUDE = new Set([
+  '/account-deletion.html',
+  '/email-changed.html',
+]);
+
 // Exact internal hrefs that should receive a /LANG/ prefix in generated files.
 // Order: longer/specific paths before shorter ones to avoid partial overlaps.
 const INTERNAL_HREFS = [
@@ -339,15 +366,50 @@ function localizeJsonLd(html, locale, srcFile, lang, file) {
       return open + '\n' + JSON.stringify(data, null, 2) + '\n' + close;
     }
     if (type === 'BreadcrumbList') {
+      if (!lang) return fullMatch;
       const articleKey = ARTICLE_MAP[srcFile];
-      if (!articleKey || !lang) return fullMatch;
       const items = data.itemListElement;
-      if (!Array.isArray(items) || items.length < 3) return fullMatch;
-      if (locale.nav_home) items[0].name = locale.nav_home;
+      if (!Array.isArray(items) || items.length < 2) return fullMatch;
+      // Always localize the home URL
       items[0].item = fullUrl(lang, '/', null);
-      items[1].item = fullUrl(lang, '/blog/', null);
-      const articleData = locale.jsonLd[articleKey];
-      if (articleData && articleData.headline) items[2].name = articleData.headline;
+      if (articleKey && items.length >= 3) {
+        // Blog article: 3-item breadcrumb — localize blog URL + translate headline
+        items[1].item = fullUrl(lang, '/blog/', null);
+        const articleData = locale.jsonLd && locale.jsonLd[articleKey];
+        if (articleData && articleData.headline) items[2].name = articleData.headline;
+      } else if (file) {
+        // Non-article page: 2-item breadcrumb — localize page URL
+        items[1].item = fullUrl(lang, file.urlPath, file);
+      }
+      return open + '\n' + JSON.stringify(data, null, 2) + '\n' + close;
+    }
+    return fullMatch;
+  });
+}
+
+// ─── DE extra-slug JSON-LD updater ───────────────────────────────────────────
+
+/**
+ * For DE_EXTRA_SLUGS pages: update Article mainEntityOfPage @id and
+ * BreadcrumbList last-item URL to point at the extra canonical URL.
+ */
+function updateExtraSlugJsonLd(html, extraFullUrl) {
+  const re = /(<script[^>]+type=["']application\/ld\+json["'][^>]*>)([\s\S]*?)(<\/script>)/gi;
+  return html.replace(re, (fullMatch, open, jsonStr, close) => {
+    let data;
+    try { data = JSON.parse(jsonStr); } catch (e) { return fullMatch; }
+    const type = data['@type'];
+    if (type === 'Article') {
+      if (data.mainEntityOfPage && data.mainEntityOfPage['@id']) {
+        data.mainEntityOfPage['@id'] = extraFullUrl;
+      }
+      return open + '\n' + JSON.stringify(data, null, 2) + '\n' + close;
+    }
+    if (type === 'BreadcrumbList') {
+      const items = data.itemListElement;
+      if (Array.isArray(items) && items.length >= 2) {
+        items[items.length - 1].item = extraFullUrl;
+      }
       return open + '\n' + JSON.stringify(data, null, 2) + '\n' + close;
     }
     return fullMatch;
@@ -393,6 +455,18 @@ function applyTranslations(html, locale) {
       return /\splaceholder="[^"]*"/.test(m)
         ? m.replace(/\splaceholder="[^"]*"/, ` placeholder="${val}"`)
         : m + ` placeholder="${val}"`;
+    }
+  );
+
+  // data-i18n-alt — update alt attribute on the same tag
+  html = html.replace(
+    /(<[^\n>]*\sdata-i18n-alt="([^"]+)"[^\n>]*)/g,
+    (m, _before, key) => {
+      const val = get(locale, key);
+      if (val == null) return m;
+      return /\salt="[^"]*"/.test(m)
+        ? m.replace(/\salt="[^"]*"/, ` alt="${val}"`)
+        : m + ` alt="${val}"`;
     }
   );
 
@@ -449,10 +523,17 @@ function setCanonicalAndHreflang(html, lang, urlPath, file) {
   html = html.replace(/<link rel="canonical"[^>]*\/>\s*/g, '');
   html = html.replace(/<link rel="alternate"[^>]*\/>\s*/g, '');
 
-  const hreflang = LANGS.map(l => {
+  const hreflangLinks = [];
+  for (const l of LANGS) {
     const hreflangCode = l === 'no' ? 'nb' : l;
-    return `  <link rel="alternate" hreflang="${hreflangCode}"        href="${fullUrl(l, urlPath, file)}" />`;
-  }).join('\n');
+    hreflangLinks.push(`  <link rel="alternate" hreflang="${hreflangCode}"        href="${fullUrl(l, urlPath, file)}" />`);
+    if (l === 'de') {
+      const deUrl = fullUrl('de', urlPath, file);
+      hreflangLinks.push(`  <link rel="alternate" hreflang="de-AT" href="${deUrl}" />`);
+      hreflangLinks.push(`  <link rel="alternate" hreflang="de-CH" href="${deUrl}" />`);
+    }
+  }
+  const hreflang = hreflangLinks.join('\n');
 
   const block =
     `  <link rel="canonical" href="${canon}" />\n` +
@@ -467,6 +548,19 @@ function setCanonicalAndHreflang(html, lang, urlPath, file) {
   html = html.replace(/(content=")[^"]*("\s+property="og:url")/, `$1${canon}$2`);
 
   return html;
+}
+
+/**
+ * For lang === 'de', swap the generic og-image.png for the German og-image-de.png.
+ * Covers both og:image and twitter:image content attributes.
+ * Does nothing for all other languages.
+ */
+function localizeOgImage(html, lang) {
+  if (lang !== 'de') return html;
+  return html.replace(
+    /content="https:\/\/getlina\.app\/assets\/og-image\.png"/g,
+    'content="https://getlina.app/assets/og-image-de.png"'
+  );
 }
 
 /**
@@ -843,6 +937,7 @@ function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile, file)
   html = setHtmlLang(html, lang);
   html = setTitle(html, locale, titleKey);
   html = setDescription(html, locale, descKey);
+  html = localizeOgImage(html, lang);
   html = setCanonicalAndHreflang(html, lang, urlPath, file);
   // Asset paths are already absolute after the English root pass
   html = fixInternalLinks(html, lang);
@@ -862,6 +957,7 @@ function buildSitemap() {
 
   for (const file of SOURCE_FILES) {
     const { urlPath, priority } = file;
+    if (SITEMAP_EXCLUDE.has(urlPath)) continue;
     const enUrl = fullUrl('en', urlPath, file);
 
     if (file.langUrls) {
@@ -870,10 +966,15 @@ function buildSitemap() {
       const makeLinks = () => [
         `      <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl}"/>`,
         `      <xhtml:link rel="alternate" hreflang="en"        href="${enUrl}"/>`,
-        ...LANGS.map(l => {
+        ...LANGS.flatMap(l => {
           const hreflangCode = l === 'no' ? 'nb' : l;
           const lUrl = fullUrl(l, urlPath, file);
-          return `      <xhtml:link rel="alternate" hreflang="${hreflangCode}"        href="${lUrl}"/>`;
+          const entries = [`      <xhtml:link rel="alternate" hreflang="${hreflangCode}"        href="${lUrl}"/>`];
+          if (l === 'de') {
+            entries.push(`      <xhtml:link rel="alternate" hreflang="de-AT" href="${lUrl}"/>`);
+            entries.push(`      <xhtml:link rel="alternate" hreflang="de-CH" href="${lUrl}"/>`);
+          }
+          return entries;
         }),
       ].join('\n');
 
@@ -904,9 +1005,15 @@ function buildSitemap() {
       const links = [
         `      <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl}"/>`,
         `      <xhtml:link rel="alternate" hreflang="en"        href="${enUrl}"/>`,
-        ...LANGS.map(l => {
+        ...LANGS.flatMap(l => {
           const hreflangCode = l === 'no' ? 'nb' : l;
-          return `      <xhtml:link rel="alternate" hreflang="${hreflangCode}"        href="${pageUrl(l, urlPath)}"/>`;
+          const lUrl = pageUrl(l, urlPath);
+          const entries = [`      <xhtml:link rel="alternate" hreflang="${hreflangCode}"        href="${lUrl}"/>`];
+          if (l === 'de') {
+            entries.push(`      <xhtml:link rel="alternate" hreflang="de-AT" href="${lUrl}"/>`);
+            entries.push(`      <xhtml:link rel="alternate" hreflang="de-CH" href="${lUrl}"/>`);
+          }
+          return entries;
         }),
       ].join('\n');
 
@@ -919,6 +1026,39 @@ function buildSitemap() {
         `  </url>`
       );
     }
+  }
+
+  // ── DE extra slug entries ───────────────────────────────────────────────────
+  for (const extraEntry of DE_EXTRA_SLUGS) {
+    const baseFile = SOURCE_FILES.find(f => f.src === extraEntry.baseSrc);
+    if (!baseFile) continue;
+    const { urlPath } = baseFile;
+    const extraFullUrl = `${BASE_URL}/de${extraEntry.extraSlug}`;
+    const enUrl2 = fullUrl('en', urlPath, baseFile);
+
+    const extraLinks = [
+      `      <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl2}"/>`,
+      `      <xhtml:link rel="alternate" hreflang="en"        href="${enUrl2}"/>`,
+      ...LANGS.flatMap(l => {
+        const hreflangCode = l === 'no' ? 'nb' : l;
+        const lUrl = l === 'de' ? extraFullUrl : fullUrl(l, urlPath, baseFile);
+        const entries = [`      <xhtml:link rel="alternate" hreflang="${hreflangCode}"        href="${lUrl}"/>`];
+        if (l === 'de') {
+          entries.push(`      <xhtml:link rel="alternate" hreflang="de-AT" href="${lUrl}"/>`);
+          entries.push(`      <xhtml:link rel="alternate" hreflang="de-CH" href="${lUrl}"/>`);
+        }
+        return entries;
+      }),
+    ].join('\n');
+
+    urlEntries.push(
+      `  <url>\n` +
+      `    <loc>${extraFullUrl}</loc>\n` +
+      extraLinks + '\n' +
+      `    <changefreq>monthly</changefreq>\n` +
+      `    <priority>0.6</priority>\n` +
+      `  </url>`
+    );
   }
 
   return (
@@ -941,6 +1081,12 @@ function main() {
     const p = path.join(ROOT, 'locales', `${lang}.json`);
     locales[lang] = JSON.parse(fs.readFileSync(p, 'utf8'));
     console.log(`Loaded locale: ${lang}`);
+  }
+
+  // Warn if German OG image is missing (does not abort the build)
+  const deOgImagePath = path.join(ROOT, 'assets', 'og-image-de.png');
+  if (!fs.existsSync(deOgImagePath)) {
+    console.warn('⚠  Warning: /assets/og-image-de.png not found — German pages will use the generic og-image.png');
   }
 
   let errors = 0;
@@ -979,6 +1125,7 @@ function main() {
     }
 
     // ── Step 2: generate language versions ────────────────────────────────
+    let deHtmlForExtra = null; // captured for DE_EXTRA_SLUGS below
     for (const lang of LANGS) {
       const outHtml = buildForLang(enHtml, lang, locales[lang], urlPath, hasDropdown, src, file);
 
@@ -992,6 +1139,55 @@ function main() {
       mkdirp(path.dirname(outFile));
       fs.writeFileSync(outFile, outHtml, 'utf8');
       console.log(`  → ${outFile.replace(ROOT + path.sep, '')}`);
+
+      if (lang === 'de') deHtmlForExtra = outHtml;
+    }
+
+    // ── DE extra slugs ────────────────────────────────────────────────────
+    for (const extraEntry of DE_EXTRA_SLUGS) {
+      if (extraEntry.baseSrc !== src) continue;
+      if (!deHtmlForExtra) continue;
+
+      const extraFullUrl = `${BASE_URL}/de${extraEntry.extraSlug}`;
+      let extraHtml = deHtmlForExtra;
+
+      // Update canonical
+      extraHtml = extraHtml.replace(
+        /(<link rel="canonical" href=")[^"]*(")/,
+        `$1${extraFullUrl}$2`
+      );
+
+      // Update og:url
+      extraHtml = extraHtml.replace(
+        /(property="og:url"\s+content=")[^"]*(")/,
+        `$1${extraFullUrl}$2`
+      );
+      extraHtml = extraHtml.replace(
+        /(content=")[^"]*("\s+property="og:url")/,
+        `$1${extraFullUrl}$2`
+      );
+
+      // Update de/de-AT/de-CH hreflang to point at the extra slug URL
+      extraHtml = extraHtml.replace(
+        /(<link rel="alternate"\s+hreflang="de"\s+href=")[^"]*(")/,
+        `$1${extraFullUrl}$2`
+      );
+      extraHtml = extraHtml.replace(
+        /(<link rel="alternate"\s+hreflang="de-AT"\s+href=")[^"]*(")/,
+        `$1${extraFullUrl}$2`
+      );
+      extraHtml = extraHtml.replace(
+        /(<link rel="alternate"\s+hreflang="de-CH"\s+href=")[^"]*(")/,
+        `$1${extraFullUrl}$2`
+      );
+
+      // Update JSON-LD Article mainEntityOfPage @id and BreadcrumbList last item
+      extraHtml = updateExtraSlugJsonLd(extraHtml, extraFullUrl);
+
+      const extraOutPath = path.join(ROOT, 'de', extraEntry.extraSlug.replace(/^\//, ''), 'index.html');
+      mkdirp(path.dirname(extraOutPath));
+      fs.writeFileSync(extraOutPath, extraHtml, 'utf8');
+      console.log(`  → de${extraEntry.extraSlug}index.html (de extra slug)`);
     }
   }
 

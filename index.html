@@ -405,7 +405,9 @@
 
     .feature-block-visual .phone-frame img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
       display: block;
     }
 
@@ -997,7 +999,8 @@
     "en",
     "sv",
     "da",
-    "fi"
+    "fi",
+    "de"
   ]
 }
 </script>
@@ -1144,14 +1147,14 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
             </button>
             <div class="phone-frame" id="carousel-frame">
-              <div class="carousel-slide active"><picture><source srcset="/assets/images/locale%20screenshots/en/ThreadsScreenEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ThreadsScreenEN.png" alt="Threads" draggable="false" width="232" height="504" fetchpriority="high" loading="eager" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ThreadDetailEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ThreadDetailEN.png" alt="Thread detail" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/AlbumScreenEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/AlbumScreenEN.png" alt="Shared album" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ToolScreenEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ToolScreenEN.png" alt="Tools" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/EquipmentEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/EquipmentEN.png" alt="Equipment list" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ContactEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ContactEN.png" alt="Contacts" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ChildEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ChildEN.png" alt="Child info" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/CareScheduleEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/CareScheduleEN.png" alt="Care schedule" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide active"><picture><source srcset="/assets/images/locale%20screenshots/en/ThreadsScreenEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ThreadsScreenEN.png" alt="Threads screen" data-i18n-alt="carousel.alt.threads" draggable="false" width="232" height="504" fetchpriority="high" loading="eager" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ThreadDetailEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ThreadDetailEN.png" alt="Thread detail screen" data-i18n-alt="carousel.alt.threadDetail" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/AlbumScreenEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/AlbumScreenEN.png" alt="Shared album screen" data-i18n-alt="carousel.alt.album" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ToolScreenEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ToolScreenEN.png" alt="Tools screen" data-i18n-alt="carousel.alt.tools" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/EquipmentEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/EquipmentEN.png" alt="Equipment list screen" data-i18n-alt="carousel.alt.equipment" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ContactEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ContactEN.png" alt="Contacts screen" data-i18n-alt="carousel.alt.contacts" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/ChildEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/ChildEN.png" alt="Child information screen" data-i18n-alt="carousel.alt.childInfo" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/en/CareScheduleEN.png" type="image/png" /><img src="/assets/images/locale%20screenshots/en/CareScheduleEN.png" alt="Care schedule screen" data-i18n-alt="carousel.alt.careSchedule" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
             </div>
             <button class="carousel-arrow" id="carousel-next" aria-label="Next screenshot">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
@@ -1249,7 +1252,7 @@
         </div>
         <div class="feature-block-visual">
           <div class="phone-frame">
-            <img src="/assets/images/locale%20screenshots/en/ThreadsScreenEN.png" alt="Threads screenshot" draggable="false" />
+            <img src="/assets/images/locale%20screenshots/en/ThreadsScreenEN.png" alt="Threads screenshot" draggable="false" width="232" height="504" loading="lazy" />
           </div>
         </div>
       </div>
@@ -1266,7 +1269,7 @@
         </div>
         <div class="feature-block-visual">
           <div class="phone-frame">
-            <img src="/assets/images/locale%20screenshots/en/ThreadDetailEN.png" alt="Messages screenshot" draggable="false" />
+            <img src="/assets/images/locale%20screenshots/en/ThreadDetailEN.png" alt="Messages screenshot" draggable="false" width="232" height="504" loading="lazy" />
           </div>
         </div>
       </div>
@@ -1285,7 +1288,7 @@
         </div>
         <div class="feature-block-visual">
           <div class="phone-frame">
-            <img src="/assets/images/locale%20screenshots/en/AlbumScreenEN.png" alt="Shared album screenshot" draggable="false" />
+            <img src="/assets/images/locale%20screenshots/en/AlbumScreenEN.png" alt="Shared album screenshot" draggable="false" width="232" height="504" loading="lazy" />
           </div>
         </div>
       </div>
@@ -1494,7 +1497,7 @@
         </div>
 
         <div class="cs-promo-visual reveal reveal-delay-1" aria-hidden="true">
-          <img src="/assets/images/CareSchedule.png" alt="Care Schedule" class="cs-promo-img" />
+          <img src="/assets/images/CareSchedule.png" alt="Care Schedule" class="cs-promo-img" width="2167" height="1150" loading="lazy" />
         </div>
 
       </div>

@@ -21,7 +21,6 @@
   <title>Betreuungsplan erstellen — kostenlos | Lina</title>
   <meta name="description" content="Betreuungsplan für getrennte Eltern kostenlos erstellen. Tage zuweisen, Wochenaufteilung sehen und als PDF exportieren — direkt im Browser, ohne Anmeldung." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="de_DE" />
   <meta property="og:url" content="https://getlina.app/de/care-schedule/" />
   <meta property="og:title" content="Betreuungsplan erstellen — kostenlos | Lina" />
   <meta property="og:description" content="Betreuungsplan für getrennte Eltern kostenlos erstellen. Tage zuweisen, Wochenaufteilung sehen und als PDF exportieren — direkt im Browser, ohne Anmeldung." />
@@ -658,7 +657,27 @@
   ]
 }
 </script>
-  <script id="lina-lang-redirect">(function () {
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Lina",
+      "item": "https://getlina.app/de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Care Schedule",
+      "item": "https://getlina.app/de/care-schedule/"
+    }
+  ]
+}
+</script>
+<script id="lina-lang-redirect">(function () {
   var K = 'lina_lang';
   // Already on a non-English locale page — nothing to do
   if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
@@ -715,7 +734,7 @@
       <div class="page-header">
         <h1 data-i18n="cs.heading">Betreuungsplan</h1>
         <p id="page-subhead" data-i18n="cs.subhead">Wie Zeit zwischen den Haushalten aufgeteilt wird — Woche für Woche.</p>
-        <p data-i18n="cs.intro" style="font-size: 15px; color: var(--text-secondary); margin-top: 6px; max-width: 620px; line-height: 1.65;">Klicken Sie auf die Tage, um sie einem Elternteil zuzuweisen. Die Aufteilung aktualisiert sich automatisch, und Sie können den Plan als PDF exportieren.</p>
+        <p data-i18n="cs.intro" style="font-size: 15px; color: var(--text-secondary); margin-top: 6px; max-width: 620px; line-height: 1.65;">Klick auf die Tage, um sie einem Elternteil zuzuweisen. Die Aufteilung aktualisiert sich automatisch, und du kannst den Plan als PDF exportieren.</p>
       </div>
 
 
@@ -788,7 +807,7 @@
   <section id="cta">
     <div class="cta-inner">
       <h2 data-i18n="cta.title">Ein sicherer Kanal zwischen zwei Elternteilen.</h2>
-      <p data-i18n="cta.description">Alles, was beide Elternteile wissen müssen — an einem Ort. Laden Sie die App herunter und legen Sie in wenigen Minuten los.</p>
+      <p data-i18n="cta.description">Alles, was beide Elternteile wissen müssen — an einem Ort. Lade die App herunter und leg in wenigen Minuten los.</p>
       <div class="hero-ctas">
         <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

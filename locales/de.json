@@ -205,8 +205,13 @@
     "exportPdf": "Als PDF exportieren",
     "week": "Woche",
     "unassigned": "Nicht zugewiesen",
-    "mon": "Mo", "tue": "Di", "wed": "Mi", "thu": "Do",
-    "fri": "Fr", "sat": "Sa", "sun": "So",
+    "mon": "Mo",
+    "tue": "Di",
+    "wed": "Mi",
+    "thu": "Do",
+    "fri": "Fr",
+    "sat": "Sa",
+    "sun": "So",
     "statsTitle": "Zusammenfassung",
     "statsDaySplit": "Tagesaufteilung",
     "statsWeekendSplit": "Wochenendaufteilung (Fr–So)",
@@ -263,21 +268,55 @@
       "label": "Datenschutz",
       "title": "Sicher und privat von Grund auf",
       "description": "Lina ist mit Datenschutz als Grundlage entwickelt. Die Daten der Eltern werden verantwortungsvoll behandelt, und die App ist frei von kommerziellen Interessen. Als Fachkraft können Sie sie mit gutem Gewissen empfehlen.",
-      "point1": { "title": "Keine Werbung", "description": "Keine Anzeigen oder kommerzielle Interessen beeinflussen die Nutzungserfahrung." },
-      "point2": { "title": "Keine Datenweitergabe", "description": "Die Daten der Eltern werden nicht verkauft oder an Dritte weitergegeben." },
-      "point3": { "title": "Sichere Infrastruktur", "description": "Informationen werden durch sichere Speicherung, Zugriffskontrolle und signierte Links geschützt." },
-      "point4": { "title": "DSGVO-konform", "description": "Lina erfüllt die EU-Datenschutz-Grundverordnung (DSGVO). Die vollständige Datenschutzerklärung finden Sie unter getlina.app/privacy." }
+      "point1": {
+        "title": "Keine Werbung",
+        "description": "Keine Anzeigen oder kommerzielle Interessen beeinflussen die Nutzungserfahrung."
+      },
+      "point2": {
+        "title": "Keine Datenweitergabe",
+        "description": "Die Daten der Eltern werden nicht verkauft oder an Dritte weitergegeben."
+      },
+      "point3": {
+        "title": "Sichere Infrastruktur",
+        "description": "Informationen werden durch sichere Speicherung, Zugriffskontrolle und signierte Links geschützt."
+      },
+      "point4": {
+        "title": "DSGVO-konform",
+        "description": "Lina erfüllt die EU-Datenschutz-Grundverordnung (DSGVO). Die vollständige Datenschutzerklärung finden Sie unter getlina.app/privacy."
+      }
     },
     "features": {
       "label": "So funktioniert es in der Praxis",
       "title": "Struktur, die Reibung im Alltag reduziert",
-      "threads": { "title": "Themenbereiche", "description": "Eltern kommunizieren über ein Thema auf einmal — Logistik, Schule oder Gesundheit — ohne dass wichtige Informationen in einem langen Nachrichtenverlauf verloren gehen." },
-      "messages": { "title": "Nachrichten", "description": "Nachrichten können nicht bearbeitet oder gelöscht werden. Das schafft einen verlässlichen Kommunikationskanal und eine klare Aufzeichnung der getroffenen Vereinbarungen." },
-      "album": { "title": "Gemeinsames Album", "description": "Beide Elternteile können Fotos aus dem Alltag teilen. Das Kind ist in beiden Haushalten sichtbar." },
-      "info": { "title": "Kinderinformationen", "description": "Medizinische Informationen, Allergien und wichtige Details werden einmal eingegeben und stehen beiden Elternteilen zur Verfügung — unabhängig davon, in welchem Haushalt sich das Kind befindet." },
-      "equipment": { "title": "Ausstattungslisten", "description": "Ein klarer Überblick darüber, was das Kind in jedem Haushalt benötigt, reduziert Rückfragen und Missverständnisse rund um praktische Details." },
-      "schedule": { "title": "Betreuungsplan", "description": "Die Betreuungsregelung wird in einer gemeinsamen Ansicht angezeigt. Weniger Diskussionen darüber, bei wem das Kind wann war." },
-      "agreement": { "title": "Betreuungsvereinbarung", "description": "Die Seite zur Betreuungsvereinbarung gibt Eltern einen Überblick darüber, was die Vereinbarung umfassen sollte, mit einem Beispiel und Links zu offiziellen Ressourcen. Ein guter Ausgangspunkt vor oder nach der Beratung.", "link": "Zur Informationsseite" }
+      "threads": {
+        "title": "Themenbereiche",
+        "description": "Eltern kommunizieren über ein Thema auf einmal — Logistik, Schule oder Gesundheit — ohne dass wichtige Informationen in einem langen Nachrichtenverlauf verloren gehen."
+      },
+      "messages": {
+        "title": "Nachrichten",
+        "description": "Nachrichten können nicht bearbeitet oder gelöscht werden. Das schafft einen verlässlichen Kommunikationskanal und eine klare Aufzeichnung der getroffenen Vereinbarungen."
+      },
+      "album": {
+        "title": "Gemeinsames Album",
+        "description": "Beide Elternteile können Fotos aus dem Alltag teilen. Das Kind ist in beiden Haushalten sichtbar."
+      },
+      "info": {
+        "title": "Kinderinformationen",
+        "description": "Medizinische Informationen, Allergien und wichtige Details werden einmal eingegeben und stehen beiden Elternteilen zur Verfügung — unabhängig davon, in welchem Haushalt sich das Kind befindet."
+      },
+      "equipment": {
+        "title": "Ausstattungslisten",
+        "description": "Ein klarer Überblick darüber, was das Kind in jedem Haushalt benötigt, reduziert Rückfragen und Missverständnisse rund um praktische Details."
+      },
+      "schedule": {
+        "title": "Betreuungsplan",
+        "description": "Die Betreuungsregelung wird in einer gemeinsamen Ansicht angezeigt. Weniger Diskussionen darüber, bei wem das Kind wann war."
+      },
+      "agreement": {
+        "title": "Betreuungsvereinbarung",
+        "description": "Die Seite zur Betreuungsvereinbarung gibt Eltern einen Überblick darüber, was die Vereinbarung umfassen sollte, mit einem Beispiel und Links zu offiziellen Ressourcen. Ein guter Ausgangspunkt vor oder nach der Beratung.",
+        "link": "Zur Informationsseite"
+      }
     },
     "thoughtful": {
       "label": "Durchdachte Details",
@@ -626,43 +665,127 @@
       "description": "Lina hilft Eltern mit geteilter Betreuung, die Versorgung über zwei Haushalte zu koordinieren — gemeinsame Pläne, Nachrichten und Listen an einem ruhigen, privaten Ort."
     },
     "indexFaq": [
-      { "q": "Was ist Lina?", "a": "Lina ist eine Co-Parenting-App, die Eltern hilft, die Betreuung über zwei Haushalte zu koordinieren. Sie bringt Nachrichten, Pläne, medizinische Informationen, Kontakte, Ausstattungslisten und Fotos an einem gemeinsamen, privaten Ort zusammen." },
-      { "q": "Ist Lina kostenlos?", "a": "Lina hat einen kostenlosen Plan mit bis zu 2 Themenbereichen, 100 Fotos, Nachrichten, Kinderinformationen, Kontakten, Ausstattungslisten und einem Betreuungsplan. Lina+ kostet 7,99 €/Monat und schaltet unbegrenzte Themenbereiche, ein größeres Album, Themenbereichssuche, Themenbereichsexport und wichtige Nachrichten frei. Ein Abonnement gilt für beide Elternteile." },
-      { "q": "Müssen beide Elternteile zahlen?", "a": "Nein. Ein Lina+-Abonnement gilt für beide Elternteile. Das Elternteil, das abonniert, gibt beiden vollen Zugang — das andere Elternteil muss nie zahlen." },
-      { "q": "Ist Lina privat und sicher?", "a": "Ja. Lina hat keine Werbung, keine Datenweitergabe an Dritte und keinen Algorithmus, der entscheidet, was du siehst. Deine Informationen bleiben zwischen den beiden Elternteilen." },
-      { "q": "Können Nachrichten bearbeitet oder gelöscht werden?", "a": "Nein. Nachrichten in Lina können nach dem Senden nicht bearbeitet oder gelöscht werden. Das schafft eine klare, verlässliche Aufzeichnung dessen, was kommuniziert und vereinbart wurde." }
+      {
+        "q": "Was ist Lina?",
+        "a": "Lina ist eine Co-Parenting-App, die Eltern hilft, die Betreuung über zwei Haushalte zu koordinieren. Sie bringt Nachrichten, Pläne, medizinische Informationen, Kontakte, Ausstattungslisten und Fotos an einem gemeinsamen, privaten Ort zusammen."
+      },
+      {
+        "q": "Ist Lina kostenlos?",
+        "a": "Lina hat einen kostenlosen Plan mit bis zu 2 Themenbereichen, 100 Fotos, Nachrichten, Kinderinformationen, Kontakten, Ausstattungslisten und einem Betreuungsplan. Lina+ kostet 7,99 €/Monat und schaltet unbegrenzte Themenbereiche, ein größeres Album, Themenbereichssuche, Themenbereichsexport und wichtige Nachrichten frei. Ein Abonnement gilt für beide Elternteile."
+      },
+      {
+        "q": "Müssen beide Elternteile zahlen?",
+        "a": "Nein. Ein Lina+-Abonnement gilt für beide Elternteile. Das Elternteil, das abonniert, gibt beiden vollen Zugang — das andere Elternteil muss nie zahlen."
+      },
+      {
+        "q": "Ist Lina privat und sicher?",
+        "a": "Ja. Lina hat keine Werbung, keine Datenweitergabe an Dritte und keinen Algorithmus, der entscheidet, was du siehst. Deine Informationen bleiben zwischen den beiden Elternteilen."
+      },
+      {
+        "q": "Können Nachrichten bearbeitet oder gelöscht werden?",
+        "a": "Nein. Nachrichten in Lina können nach dem Senden nicht bearbeitet oder gelöscht werden. Das schafft eine klare, verlässliche Aufzeichnung dessen, was kommuniziert und vereinbart wurde."
+      }
     ],
     "faqFaq": [
-      { "q": "Was ist Lina?", "a": "Lina ist eine Co-Parenting-App, die praktische Details — Kinderinformationen, Nachrichten, Fotos, Kontakte und Ausstattungslisten — an einem gemeinsamen Ort zusammenbringt, der von beiden Haushalten aus zugänglich ist." },
-      { "q": "Ist Lina kostenlos?", "a": "Ja, Lina kann kostenlos heruntergeladen und genutzt werden. Es ist keine Zahlung erforderlich, um ein Konto zu erstellen oder das andere Elternteil einzuladen." },
-      { "q": "Kann ich den Betreuungsplan exportieren?", "a": "Ja, du kannst den Betreuungsplan direkt aus dem Werkzeug als PDF exportieren." },
-      { "q": "Wer kann die Informationen des Kindes sehen?", "a": "Nur die beiden Elternteile, die in Lina mit dem Kind verknüpft sind, haben Zugang zu den Informationen des Kindes." },
-      { "q": "Können Nachrichten gelöscht oder bearbeitet werden?", "a": "Nein, Nachrichten in Lina können nach dem Senden nicht bearbeitet oder gelöscht werden, was eine klare und zuverlässige Aufzeichnung schafft." }
+      {
+        "q": "Was ist Lina?",
+        "a": "Lina ist eine Co-Parenting-App, die praktische Details — Kinderinformationen, Nachrichten, Fotos, Kontakte und Ausstattungslisten — an einem gemeinsamen Ort zusammenbringt, der von beiden Haushalten aus zugänglich ist."
+      },
+      {
+        "q": "Ist Lina kostenlos?",
+        "a": "Ja, Lina kann kostenlos heruntergeladen und genutzt werden. Es ist keine Zahlung erforderlich, um ein Konto zu erstellen oder das andere Elternteil einzuladen."
+      },
+      {
+        "q": "Kann ich den Betreuungsplan exportieren?",
+        "a": "Ja, du kannst den Betreuungsplan direkt aus dem Werkzeug als PDF exportieren."
+      },
+      {
+        "q": "Wer kann die Informationen des Kindes sehen?",
+        "a": "Nur die beiden Elternteile, die in Lina mit dem Kind verknüpft sind, haben Zugang zu den Informationen des Kindes."
+      },
+      {
+        "q": "Können Nachrichten gelöscht oder bearbeitet werden?",
+        "a": "Nein, Nachrichten in Lina können nach dem Senden nicht bearbeitet oder gelöscht werden, was eine klare und zuverlässige Aufzeichnung schafft."
+      }
     ],
     "csFaq": [
-      { "q": "Was ist ein Betreuungsplan?", "a": "Ein Betreuungsplan ist eine visuelle Übersicht darüber, wie die Zeit eines Kindes Woche für Woche zwischen zwei Haushalten aufgeteilt wird." },
-      { "q": "Brauche ich ein Konto?", "a": "Nein, das Betreuungsplan-Werkzeug kann direkt im Browser ohne Konto genutzt werden." },
-      { "q": "Kann ich den Plan exportieren?", "a": "Ja, du kannst den Betreuungsplan als PDF exportieren." }
+      {
+        "q": "Was ist ein Betreuungsplan?",
+        "a": "Ein Betreuungsplan ist eine visuelle Übersicht darüber, wie die Zeit eines Kindes Woche für Woche zwischen zwei Haushalten aufgeteilt wird."
+      },
+      {
+        "q": "Brauche ich ein Konto?",
+        "a": "Nein, das Betreuungsplan-Werkzeug kann direkt im Browser ohne Konto genutzt werden."
+      },
+      {
+        "q": "Kann ich den Plan exportieren?",
+        "a": "Ja, du kannst den Betreuungsplan als PDF exportieren."
+      }
     ],
     "caFaq": [
-      { "q": "Was sollte eine Betreuungsvereinbarung umfassen?", "a": "Eine gute Betreuungsvereinbarung sollte Betreuungsmodell, Wohnort, Abholung und Bringung, Ferienaufteilung, Kostenaufteilung, Kommunikation, Reisen und Routinen für Änderungen abdecken." },
-      { "q": "Ist eine Betreuungsvereinbarung rechtsverbindlich?", "a": "Eine private Betreuungsvereinbarung beruht auf gegenseitigem Einvernehmen der Eltern. Sie ist nicht rechtsverbindlich wie ein Gerichtsbeschluss, bietet aber Struktur und Planbarkeit." },
-      { "q": "Wo kann ich eine Betreuungsvereinbarung erstellen?", "a": "In Deutschland bietet das Jugendamt Beratung und Unterstützung an. In vielen Ländern können staatliche Familiendienste oder Beratungsstellen helfen, eine Betreuungsvereinbarung zu erstellen." }
+      {
+        "q": "Was sollte eine Betreuungsvereinbarung umfassen?",
+        "a": "Eine gute Betreuungsvereinbarung sollte Betreuungsmodell, Wohnort, Abholung und Bringung, Ferienaufteilung, Kostenaufteilung, Kommunikation, Reisen und Routinen für Änderungen abdecken."
+      },
+      {
+        "q": "Ist eine Betreuungsvereinbarung rechtsverbindlich?",
+        "a": "Eine private Betreuungsvereinbarung beruht auf gegenseitigem Einvernehmen der Eltern. Sie ist nicht rechtsverbindlich wie ein Gerichtsbeschluss, bietet aber Struktur und Planbarkeit."
+      },
+      {
+        "q": "Wo kann ich eine Betreuungsvereinbarung erstellen?",
+        "a": "In Deutschland bietet das Jugendamt Beratung und Unterstützung an. In vielen Ländern können staatliche Familiendienste oder Beratungsstellen helfen, eine Betreuungsvereinbarung zu erstellen."
+      }
     ],
     "pricingFaq": [
-      { "q": "Was kostet Lina?", "a": "Lina hat einen kostenlosen Plan mit grundlegenden Funktionen. Lina+ kostet 7,99 € pro Monat mit zwei Wochen kostenlosem Test." },
-      { "q": "Muss das andere Elternteil auch zahlen?", "a": "Nein. Ein Lina+-Abonnement gilt für beide Elternteile." },
-      { "q": "Kann ich jederzeit kündigen?", "a": "Ja. Keine Mindestlaufzeit. Jederzeit über den App Store oder Google Play kündigen." },
-      { "q": "Was ist im kostenlosen Plan enthalten?", "a": "Bis zu 2 Themenbereiche, 100 Fotos, Nachrichten, Kinderinformationen, Kontakte, Ausstattungslisten und ein Betreuungsplan." }
+      {
+        "q": "Was kostet Lina?",
+        "a": "Lina hat einen kostenlosen Plan mit grundlegenden Funktionen. Lina+ kostet 7,99 € pro Monat mit zwei Wochen kostenlosem Test."
+      },
+      {
+        "q": "Muss das andere Elternteil auch zahlen?",
+        "a": "Nein. Ein Lina+-Abonnement gilt für beide Elternteile."
+      },
+      {
+        "q": "Kann ich jederzeit kündigen?",
+        "a": "Ja. Keine Mindestlaufzeit. Jederzeit über den App Store oder Google Play kündigen."
+      },
+      {
+        "q": "Was ist im kostenlosen Plan enthalten?",
+        "a": "Bis zu 2 Themenbereiche, 100 Fotos, Nachrichten, Kinderinformationen, Kontakte, Ausstattungslisten und ein Betreuungsplan."
+      }
     ],
-    "article1": { "headline": "Umgangsregelungen im Überblick", "description": "Die häufigsten Betreuungsmodelle für Kinder mit zwei Haushalten — wöchentlicher Wechsel, 3-4-4-3, 2-2-5-5 und andere Modelle. Was funktioniert für welche Altersgruppe?" },
-    "article2": { "headline": "Übergabetag — wie Übergaben leichter werden", "description": "Praktische Tipps für reibungslosere Übergaben zwischen den Haushalten — feste Routinen, neutrale Orte und was das Kind mitnehmen sollte." },
-    "article3": { "headline": "Was dein Kind in jedem Haushalt braucht", "description": "Eine praktische Checkliste für Co-Eltern — was in beiden Haushalten vorhanden sein sollte, was das Kind mitnehmen sollte und wie man den Überblick behält." },
-    "article4": { "headline": "Wechselmodell vs. Residenzmodell — was ist der Unterschied?", "description": "Der Unterschied zwischen Wechselmodell und Residenzmodell — was es im Alltag, bei Entscheidungen und für die Rechte des Kindes bedeutet." },
-    "article5": { "headline": "Kommunikation zwischen Co-Eltern", "description": "Wie man die Kommunikation sachlich und strukturiert gestaltet, wenn man die Betreuung eines Kindes teilt — praktische Tipps zu Themenbereichen, schriftlichen Vereinbarungen und klaren Grenzen." },
-    "article6": { "headline": "Sorgerecht nach Trennung — was Eltern wissen sollten", "description": "Sorgerecht nach Trennung — gemeinsames oder alleiniges Sorgerecht, was sich ändert und was bleibt. Praktische Orientierung für getrennte Eltern in Deutschland." },
-    "article7": { "headline": "Welche App hilft getrennten Eltern im Alltag?", "description": "Welche Eltern App eignet sich bei Trennung? Was eine Co-Parenting App leisten sollte — und warum normale Messenger für getrennte Eltern oft nicht ausreichen." },
-    "article8": { "headline": "Kindeswohl bei getrennten Eltern — worauf es ankommt", "description": "Kindeswohl getrennte Eltern — was Kinder nach der Trennung wirklich brauchen: Stabilität, Zugang zu beiden Elternteilen, Planungssicherheit. Was die Forschung zeigt." }
+    "article1": {
+      "headline": "Umgangsregelungen im Überblick",
+      "description": "Die häufigsten Betreuungsmodelle für Kinder mit zwei Haushalten — wöchentlicher Wechsel, 3-4-4-3, 2-2-5-5 und andere Modelle. Was funktioniert für welche Altersgruppe?"
+    },
+    "article2": {
+      "headline": "Übergabetag — wie Übergaben leichter werden",
+      "description": "Praktische Tipps für reibungslosere Übergaben zwischen den Haushalten — feste Routinen, neutrale Orte und was das Kind mitnehmen sollte."
+    },
+    "article3": {
+      "headline": "Was dein Kind in jedem Haushalt braucht",
+      "description": "Eine praktische Checkliste für Co-Eltern — was in beiden Haushalten vorhanden sein sollte, was das Kind mitnehmen sollte und wie man den Überblick behält."
+    },
+    "article4": {
+      "headline": "Wechselmodell vs. Residenzmodell — was ist der Unterschied?",
+      "description": "Der Unterschied zwischen Wechselmodell und Residenzmodell — was es im Alltag, bei Entscheidungen und für die Rechte des Kindes bedeutet."
+    },
+    "article5": {
+      "headline": "Kommunikation zwischen Co-Eltern",
+      "description": "Wie man die Kommunikation sachlich und strukturiert gestaltet, wenn man die Betreuung eines Kindes teilt — praktische Tipps zu Themenbereichen, schriftlichen Vereinbarungen und klaren Grenzen."
+    },
+    "article6": {
+      "headline": "Sorgerecht nach Trennung — was Eltern wissen sollten",
+      "description": "Sorgerecht nach Trennung — gemeinsames oder alleiniges Sorgerecht, was sich ändert und was bleibt. Praktische Orientierung für getrennte Eltern in Deutschland."
+    },
+    "article7": {
+      "headline": "Welche App hilft getrennten Eltern im Alltag?",
+      "description": "Welche Eltern App eignet sich bei Trennung? Was eine Co-Parenting App leisten sollte — und warum normale Messenger für getrennte Eltern oft nicht ausreichen."
+    },
+    "article8": {
+      "headline": "Kindeswohl bei getrennten Eltern — worauf es ankommt",
+      "description": "Kindeswohl getrennte Eltern — was Kinder nach der Trennung wirklich brauchen: Stabilität, Zugang zu beiden Elternteilen, Planungssicherheit. Was die Forschung zeigt."
+    }
   },
   "blogIndex": {
     "pageTitle": "Blog — Lina",
@@ -966,5 +1089,17 @@
     "ctaTitle": "Gemeinsam für das Kind — Koordination für beide Haushalte",
     "ctaDesc": "Wenn Eltern gut koordiniert sind, merkt das Kind es. Lina hilft, den Alltag an beiden Orten klar zu strukturieren — Betreuungszeiten, Nachrichten, Kindesinformationen, Ausstattung.",
     "ctaCta": "Lina herunterladen"
+  },
+  "carousel": {
+    "alt": {
+      "threads": "Themenansicht",
+      "threadDetail": "Nachrichtendetails",
+      "album": "Geteiltes Album",
+      "tools": "Werkzeuge",
+      "equipment": "Ausstattungsliste",
+      "contacts": "Kontakte",
+      "childInfo": "Kinderinformationen",
+      "careSchedule": "Betreuungsplan"
+    }
   }
 }

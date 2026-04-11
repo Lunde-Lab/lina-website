@@ -21,7 +21,6 @@
   <title>Lina — Getrennt gemeinsam für euer Kind</title>
   <meta name="description" content="Getrennt gemeinsam für euer Kind — Lina hilft beiden Elternteilen, den Alltag über zwei Haushalte zu koordinieren: Betreuungsplan, Nachrichten, Kinderinformationen und gemeinsames Album." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="de_DE" />
   <meta property="og:url" content="https://getlina.app/de/" />
   <meta property="og:title" content="Lina — Getrennt gemeinsam für euer Kind" />
   <meta property="og:description" content="Getrennt gemeinsam für euer Kind — Lina hilft beiden Elternteilen, den Alltag über zwei Haushalte zu koordinieren: Betreuungsplan, Nachrichten, Kinderinformationen und gemeinsames Album." />
@@ -406,7 +405,9 @@
 
     .feature-block-visual .phone-frame img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
       display: block;
     }
 
@@ -998,7 +999,8 @@
     "en",
     "sv",
     "da",
-    "fi"
+    "fi",
+    "de"
   ]
 }
 </script>
@@ -1014,6 +1016,54 @@
     "contactType": "customer support",
     "url": "https://getlina.app/contact.html"
   }
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist Lina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lina ist eine Co-Parenting-App, die Eltern hilft, die Betreuung über zwei Haushalte zu koordinieren. Sie bringt Nachrichten, Pläne, medizinische Informationen, Kontakte, Ausstattungslisten und Fotos an einem gemeinsamen, privaten Ort zusammen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist Lina kostenlos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lina hat einen kostenlosen Plan mit bis zu 2 Themenbereichen, 100 Fotos, Nachrichten, Kinderinformationen, Kontakten, Ausstattungslisten und einem Betreuungsplan. Lina+ kostet 7,99 €/Monat und schaltet unbegrenzte Themenbereiche, ein größeres Album, Themenbereichssuche, Themenbereichsexport und wichtige Nachrichten frei. Ein Abonnement gilt für beide Elternteile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Müssen beide Elternteile zahlen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Ein Lina+-Abonnement gilt für beide Elternteile. Das Elternteil, das abonniert, gibt beiden vollen Zugang — das andere Elternteil muss nie zahlen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist Lina privat und sicher?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Lina hat keine Werbung, keine Datenweitergabe an Dritte und keinen Algorithmus, der entscheidet, was du siehst. Deine Informationen bleiben zwischen den beiden Elternteilen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Können Nachrichten bearbeitet oder gelöscht werden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Nachrichten in Lina können nach dem Senden nicht bearbeitet oder gelöscht werden. Das schafft eine klare, verlässliche Aufzeichnung dessen, was kommuniziert und vereinbart wurde."
+      }
+    }
+  ]
 }
 </script>
   <script id="lina-lang-redirect">(function () {
@@ -1033,69 +1083,6 @@
     if (l) { location.replace('/' + l + '/'); return; }
   }
 }());</script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Lina",
-    "operatingSystem": "iOS, Android",
-    "applicationCategory": "LifestyleApplication",
-    "description": "Getrennt gemeinsam für euer Kind — Lina hilft beiden Elternteilen, den Alltag über zwei Haushalte zu koordinieren: Betreuungsplan, Nachrichten, Kinderinformationen und gemeinsames Album.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Was ist Lina?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Lina ist eine Co-Parenting-App, die Eltern hilft, die Betreuung über zwei Haushalte zu koordinieren. Sie bringt Nachrichten, Pläne, medizinische Informationen, Kontakte, Ausstattungslisten und Fotos an einem gemeinsamen, privaten Ort zusammen."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Ist Lina kostenlos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Lina hat einen kostenlosen Plan mit bis zu 2 Themenbereichen, 100 Fotos, Nachrichten, Kinderinformationen, Kontakten, Ausstattungslisten und einem Betreuungsplan. Lina+ kostet 7,99 €/Monat und schaltet unbegrenzte Themenbereiche, ein größeres Album, Themenbereichssuche, Themenbereichsexport und wichtige Nachrichten frei. Ein Abonnement gilt für beide Elternteile."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Müssen beide Elternteile zahlen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nein. Ein Lina+-Abonnement gilt für beide Elternteile. Das Elternteil, das abonniert, gibt beiden vollen Zugang — das andere Elternteil muss nie zahlen."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Ist Lina privat und sicher?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ja. Lina hat keine Werbung, keine Datenweitergabe an Dritte und keinen Algorithmus, der entscheidet, was du siehst. Deine Informationen bleiben zwischen den beiden Elternteilen."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Können Nachrichten bearbeitet oder gelöscht werden?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nein. Nachrichten in Lina können nach dem Senden nicht bearbeitet oder gelöscht werden. Das schafft eine klare, verlässliche Aufzeichnung dessen, was kommuniziert und vereinbart wurde."
-        }
-      }
-    ]
-  }
-  </script>
 </head>
 <body>
 
@@ -1136,8 +1123,8 @@
       <div class="hero-inner">
 
         <div class="hero-content">
-          <h1 data-i18n="hero.title">Ein gemeinsamer Ort für Ihr Kind — in beiden Haushalten</h1>
-          <p data-i18n="hero.description">Sie sollten nicht immer alles im Kopf behalten müssen. Lina gibt beiden Elternteilen denselben Überblick — Gesundheitsinformationen, Kontakte, Pläne und Ausstattung — immer aktuell, in beiden Haushalten.</p>
+          <h1 data-i18n="hero.title">Getrennt gemeinsam — ein Ort für euer Kind in beiden Haushalten</h1>
+          <p data-i18n="hero.description">Du solltest nicht immer alles im Kopf behalten müssen. Lina gibt beiden Elternteilen denselben Überblick — Gesundheitsinformationen, Kontakte, Pläne und Ausstattung — immer aktuell, in beiden Haushalten.</p>
           <div class="hero-ctas">
             <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Im App Store laden" data-i18n-aria="nav.appstoreAria">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -1160,14 +1147,14 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
             </button>
             <div class="phone-frame" id="carousel-frame">
-              <div class="carousel-slide active"><picture><source srcset="/assets/images/locale%20screenshots/de/ThreadsScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ThreadsScreenDE.png" alt="Themenbereiche in der Lina Co-Parenting App" draggable="false" width="232" height="504" fetchpriority="high" loading="eager" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ThreadDetailDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ThreadDetailDE.png" alt="Nachrichtendetail in Lina — strukturierte Kommunikation für getrennte Eltern" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/AlbumScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/AlbumScreenDE.png" alt="Gemeinsames Fotoalbum für beide Haushalte" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ToolsScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ToolsScreenDE.png" alt="Werkzeuge für die geteilte Betreuung in Lina" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/EquipmentDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/EquipmentDE.png" alt="Ausstattungsliste für zwei Haushalte" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ContactDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ContactDE.png" alt="Gemeinsame Kontakte — Kinderarzt, Schule, Hort" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ChildDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ChildDE.png" alt="Kinderinformationen — Allergien, Medikamente, Schuhgröße" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/CareScheduleDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/CareScheduleDE.png" alt="Betreuungsplan — Wochenübersicht für getrennte Eltern" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide active"><picture><source srcset="/assets/images/locale%20screenshots/de/ThreadsScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ThreadsScreenDE.png" alt="Themenansicht" data-i18n-alt="carousel.alt.threads" draggable="false" width="232" height="504" fetchpriority="high" loading="eager" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ThreadDetailDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ThreadDetailDE.png" alt="Nachrichtendetails" data-i18n-alt="carousel.alt.threadDetail" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/AlbumScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/AlbumScreenDE.png" alt="Geteiltes Album" data-i18n-alt="carousel.alt.album" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ToolsScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ToolsScreenDE.png" alt="Werkzeuge" data-i18n-alt="carousel.alt.tools" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/EquipmentDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/EquipmentDE.png" alt="Ausstattungsliste" data-i18n-alt="carousel.alt.equipment" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ContactDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ContactDE.png" alt="Kontakte" data-i18n-alt="carousel.alt.contacts" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ChildDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ChildDE.png" alt="Kinderinformationen" data-i18n-alt="carousel.alt.childInfo" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/CareScheduleDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/CareScheduleDE.png" alt="Betreuungsplan" data-i18n-alt="carousel.alt.careSchedule" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
             </div>
             <button class="carousel-arrow" id="carousel-next" aria-label="Next screenshot">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
@@ -1265,7 +1252,7 @@
         </div>
         <div class="feature-block-visual">
           <div class="phone-frame">
-            <img src="/assets/images/locale%20screenshots/de/ThreadsScreenDE.png" alt="Themenbereiche — fokussierte Kommunikation in der Lina App" draggable="false" />
+            <img src="/assets/images/locale%20screenshots/de/ThreadsScreenDE.png" alt="Threads screenshot" draggable="false" width="232" height="504" loading="lazy" />
           </div>
         </div>
       </div>
@@ -1278,11 +1265,11 @@
             </svg>
           </div>
           <h3 data-i18n="features.messages.title">Nachrichten</h3>
-          <p data-i18n="features.messages.description">Nachrichten können nicht bearbeitet oder gelöscht werden. Durchsuchen Sie Konversationen, markieren Sie Wichtiges und haben Sie immer eine klare Aufzeichnung der getroffenen Vereinbarungen.</p>
+          <p data-i18n="features.messages.description">Nachrichten können nicht bearbeitet oder gelöscht werden. Durchsuche Konversationen, markiere Wichtiges und habe immer eine klare Aufzeichnung der getroffenen Vereinbarungen.</p>
         </div>
         <div class="feature-block-visual">
           <div class="phone-frame">
-            <img src="/assets/images/locale%20screenshots/de/ThreadDetailDE.png" alt="Nachrichten — unveränderliche Aufzeichnung in der Lina App" draggable="false" />
+            <img src="/assets/images/locale%20screenshots/de/ThreadDetailDE.png" alt="Messages screenshot" draggable="false" width="232" height="504" loading="lazy" />
           </div>
         </div>
       </div>
@@ -1301,7 +1288,7 @@
         </div>
         <div class="feature-block-visual">
           <div class="phone-frame">
-            <img src="/assets/images/locale%20screenshots/de/AlbumScreenDE.png" alt="Gemeinsames Album — Fotos aus beiden Haushalten teilen" draggable="false" />
+            <img src="/assets/images/locale%20screenshots/de/AlbumScreenDE.png" alt="Shared album screenshot" draggable="false" width="232" height="504" loading="lazy" />
           </div>
         </div>
       </div>
@@ -1366,7 +1353,7 @@
             </svg>
           </div>
           <h3 data-i18n="tools.schedule.title">Betreuungsplan</h3>
-          <p data-i18n="tools.schedule.description">Erstellen Sie eine visuelle Übersicht über die Zeitaufteilung zwischen den Haushalten. Den gesamten Plan auf einen Blick sehen, Woche für Woche.</p>
+          <p data-i18n="tools.schedule.description">Erstelle eine visuelle Übersicht über die Zeitaufteilung zwischen den Haushalten. Den gesamten Plan auf einen Blick sehen, Woche für Woche.</p>
         </div>
         <div class="feature-card reveal reveal-delay-4">
           <div class="feature-icon">
@@ -1383,7 +1370,7 @@
             </svg>
           </div>
           <h3 data-i18n="tools.control.title">Auch für schwierige Tage</h3>
-          <p data-i18n="tools.control.description">Exportieren Sie alle Nachrichten zur Dokumentation. Fotos unscharf machen, um emotionale Belastung zu reduzieren. Bilder speichern, die Sie behalten möchten. Selbst bestimmen, was Sie wann sehen.</p>
+          <p data-i18n="tools.control.description">Exportiere alle Nachrichten zur Dokumentation. Fotos unscharf machen, um emotionale Belastung zu reduzieren. Bilder speichern, die du behalten möchtest. Selbst bestimmen, was du wann siehst.</p>
         </div>
       </div>
     </div>
@@ -1397,7 +1384,7 @@
 
         <div class="privacy-text reveal">
           <h2 data-i18n="privacy.title">Privatsphäre von Grund auf</h2>
-          <p class="privacy-lead" data-i18n="privacy.description">Was in Lina passiert, bleibt zwischen Ihnen beiden. Die Informationen Ihres Kindes sind privat — und niemand außerhalb hat Zugang zu dem, was Sie teilen.</p>
+          <p class="privacy-lead" data-i18n="privacy.description">Was in Lina passiert, bleibt zwischen euch beiden. Die Informationen eures Kindes sind privat — und niemand außerhalb hat Zugang zu dem, was ihr teilt.</p>
         </div>
 
         <div class="privacy-points reveal reveal-delay-1">
@@ -1409,7 +1396,7 @@
             </div>
             <div class="privacy-point-text">
               <h3 data-i18n="privacy.point1.title">Keine Werbung</h3>
-              <p data-i18n="privacy.point1.description">Ihr Erlebnis wird nie durch Werbung oder kommerzielle Interessen beeinflusst.</p>
+              <p data-i18n="privacy.point1.description">Dein Erlebnis wird nie durch Werbung oder kommerzielle Interessen beeinflusst.</p>
             </div>
           </div>
           <div class="privacy-point">
@@ -1421,7 +1408,7 @@
             </div>
             <div class="privacy-point-text">
               <h3 data-i18n="privacy.point2.title">Keine Datenweitergabe</h3>
-              <p data-i18n="privacy.point2.description">Ihre Daten gehören Ihnen. Sie werden nie an Dritte weitergegeben.</p>
+              <p data-i18n="privacy.point2.description">Deine Daten gehören dir. Sie werden nie an Dritte weitergegeben.</p>
             </div>
           </div>
           <div class="privacy-point">
@@ -1433,7 +1420,7 @@
             </div>
             <div class="privacy-point-text">
               <h3 data-i18n="privacy.point3.title">Kein Algorithmus</h3>
-              <p data-i18n="privacy.point3.description">Sie entscheiden, was Sie sehen — nicht ein Algorithmus, der auf Engagement ausgelegt ist.</p>
+              <p data-i18n="privacy.point3.description">Du entscheidest, was du siehst — nicht ein Algorithmus, der auf Engagement ausgelegt ist.</p>
             </div>
           </div>
         </div>
@@ -1480,7 +1467,7 @@
               <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
             </svg>
           </div>
-          <h3 data-i18n="storiesTeaser.s3.title">Die erste Fahrradfahrt, die Sie fast verpasst hätten</h3>
+          <h3 data-i18n="storiesTeaser.s3.title">Die erste Fahrradfahrt, die du fast verpasst hättest</h3>
           <p data-i18n="storiesTeaser.s3.description">Fotos kommen ins gemeinsame Album. Die großen und kleinen Momente werden automatisch geteilt — unabhängig davon, in welchem Haushalt sich das Kind befindet.</p>
         </div>
 
@@ -1502,7 +1489,7 @@
         <div class="cs-promo-text reveal">
           <p class="section-label" data-i18n="csSection.label">Betreuungsplan</p>
           <h2 data-i18n="csSection.title">Betreuungsplan gemeinsam gestalten</h2>
-          <p data-i18n="csSection.description">Der interaktive Betreuungsplan von Lina ermöglicht es beiden Elternteilen, die Aufteilung der Zeit über die Wochen zu planen und zu visualisieren. Sehen Sie Tagesaufteilungen, Wochenendmuster und Übergabehäufigkeiten — in einer übersichtlichen Ansicht.</p>
+          <p data-i18n="csSection.description">Der interaktive Betreuungsplan von Lina ermöglicht es beiden Elternteilen, die Aufteilung der Zeit über die Wochen zu planen und zu visualisieren. Sieh Tagesaufteilungen, Wochenendmuster und Übergabehäufigkeiten — in einer übersichtlichen Ansicht.</p>
           <a href="/de/care-schedule" class="btn-primary">
             <span data-i18n="csSection.cta">Betreuungsplan öffnen</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -1510,7 +1497,7 @@
         </div>
 
         <div class="cs-promo-visual reveal reveal-delay-1" aria-hidden="true">
-          <img src="/assets/images/CareSchedule.png" alt="Betreuungsplan für getrennte Eltern — Wochenübersicht" class="cs-promo-img" />
+          <img src="/assets/images/CareSchedule.png" alt="Care Schedule" class="cs-promo-img" width="2167" height="1150" loading="lazy" />
         </div>
 
       </div>
@@ -1522,7 +1509,7 @@
     <div class="container">
       <div class="cta-inner reveal">
         <h2 data-i18n="cta.title">Ein sicherer Kanal zwischen zwei Elternteilen.</h2>
-        <p data-i18n="cta.description">Alles, was beide Elternteile wissen müssen — an einem Ort. Laden Sie die App herunter und legen Sie in wenigen Minuten los.</p>
+        <p data-i18n="cta.description">Alles, was beide Elternteile wissen müssen — an einem Ort. Lade die App herunter und leg in wenigen Minuten los.</p>
         <div class="hero-ctas">
           <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

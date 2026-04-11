@@ -221,8 +221,13 @@
     "exportPdf": "Vie PDF:ksi",
     "week": "Viikko",
     "unassigned": "Ei määritetty",
-    "mon": "Ma", "tue": "Ti", "wed": "Ke", "thu": "To",
-    "fri": "Pe", "sat": "La", "sun": "Su",
+    "mon": "Ma",
+    "tue": "Ti",
+    "wed": "Ke",
+    "thu": "To",
+    "fri": "Pe",
+    "sat": "La",
+    "sun": "Su",
     "statsTitle": "Yhteenveto",
     "statsDaySplit": "Päivien jako",
     "statsWeekendSplit": "Viikonloppujen jako (pe–su)",
@@ -276,21 +281,55 @@
       "label": "Tietosuoja",
       "title": "Turvallinen ja yksityinen luonnostaan",
       "description": "Lina on rakennettu tietosuoja perustana. Vanhempien tietoja käsitellään vastuullisesti, ja sovellus on vapaa kaupallisista intresseistä. Ammattilaisena voit suositella sitä luottavaisin mielin.",
-      "point1": { "title": "Ei mainontaa", "description": "Mitkään mainokset tai kaupalliset intressit eivät vaikuta käyttäjäkokemukseen." },
-      "point2": { "title": "Ei tietojen jakamista", "description": "Vanhempien tietoja ei myydä eikä jaeta kolmansille osapuolille." },
-      "point3": { "title": "Turvallinen infrastruktuuri", "description": "Tiedot suojataan turvallisella tallennuksella, pääsynhallinnalla ja allekirjoitetuilla linkeillä." },
-      "point4": { "title": "GDPR-yhteensopiva", "description": "Lina noudattaa EU:n yleistä tietosuoja-asetusta (GDPR). Voit lukea koko tietosuojakäytännön osoitteessa getlina.app/privacy." }
+      "point1": {
+        "title": "Ei mainontaa",
+        "description": "Mitkään mainokset tai kaupalliset intressit eivät vaikuta käyttäjäkokemukseen."
+      },
+      "point2": {
+        "title": "Ei tietojen jakamista",
+        "description": "Vanhempien tietoja ei myydä eikä jaeta kolmansille osapuolille."
+      },
+      "point3": {
+        "title": "Turvallinen infrastruktuuri",
+        "description": "Tiedot suojataan turvallisella tallennuksella, pääsynhallinnalla ja allekirjoitetuilla linkeillä."
+      },
+      "point4": {
+        "title": "GDPR-yhteensopiva",
+        "description": "Lina noudattaa EU:n yleistä tietosuoja-asetusta (GDPR). Voit lukea koko tietosuojakäytännön osoitteessa getlina.app/privacy."
+      }
     },
     "features": {
       "label": "Miten se toimii käytännössä",
       "title": "Rakenne, joka vähentää kitkaa arjessa",
-      "threads": { "title": "Säikeet", "description": "Vanhemmat kommunikoivat yhdestä aiheesta kerrallaan – logistiikka, koulu tai terveys – ilman että tärkeä tieto hukkuu pitkään viestiketjuun." },
-      "messages": { "title": "Viestit", "description": "Viestejä ei voi muokata tai poistaa. Se luo ennustettavan viestintäkanavan ja selkeän historian siitä, mitä on sovittu." },
-      "album": { "title": "Jaettu albumi", "description": "Molemmat vanhemmat voivat jakaa kuvia arjesta. Lapsi on näkyvissä molemmissa kodeissa." },
-      "info": { "title": "Lapsen tiedot", "description": "Lääketieteelliset tiedot, allergiat ja tärkeät yksityiskohdat syötetään kerran ja ovat molempien saatavilla – riippumatta siitä, kummassa kodissa lapsi on." },
-      "equipment": { "title": "Varustelistat", "description": "Selkeä yleiskuva siitä, mitä lapsi tarvitsee kummassakin kodissa, vähentää selvitysten ja väärinkäsitysten määrää käytännön yksityiskohdissa." },
-      "schedule": { "title": "Hoitoaikataulu", "description": "Hoitoajan jakautuminen näkyy yhdessä yhteisessä näkymässä. Vähemmän keskusteluja siitä, kummalla vanhemmalla lapsi oli ja milloin." },
-      "agreement": { "title": "Huoltosopimus", "description": "Huoltosopimuksen tietosivu antaa vanhemmille yleiskuvan siitä, mitä sopimuksen tulisi sisältää, esimerkin ja linkkejä virallisiin resursseihin. Hyvä lähtökohta ennen sovittelua tai sen jälkeen.", "link": "Näytä tietosivu" }
+      "threads": {
+        "title": "Säikeet",
+        "description": "Vanhemmat kommunikoivat yhdestä aiheesta kerrallaan – logistiikka, koulu tai terveys – ilman että tärkeä tieto hukkuu pitkään viestiketjuun."
+      },
+      "messages": {
+        "title": "Viestit",
+        "description": "Viestejä ei voi muokata tai poistaa. Se luo ennustettavan viestintäkanavan ja selkeän historian siitä, mitä on sovittu."
+      },
+      "album": {
+        "title": "Jaettu albumi",
+        "description": "Molemmat vanhemmat voivat jakaa kuvia arjesta. Lapsi on näkyvissä molemmissa kodeissa."
+      },
+      "info": {
+        "title": "Lapsen tiedot",
+        "description": "Lääketieteelliset tiedot, allergiat ja tärkeät yksityiskohdat syötetään kerran ja ovat molempien saatavilla – riippumatta siitä, kummassa kodissa lapsi on."
+      },
+      "equipment": {
+        "title": "Varustelistat",
+        "description": "Selkeä yleiskuva siitä, mitä lapsi tarvitsee kummassakin kodissa, vähentää selvitysten ja väärinkäsitysten määrää käytännön yksityiskohdissa."
+      },
+      "schedule": {
+        "title": "Hoitoaikataulu",
+        "description": "Hoitoajan jakautuminen näkyy yhdessä yhteisessä näkymässä. Vähemmän keskusteluja siitä, kummalla vanhemmalla lapsi oli ja milloin."
+      },
+      "agreement": {
+        "title": "Huoltosopimus",
+        "description": "Huoltosopimuksen tietosivu antaa vanhemmille yleiskuvan siitä, mitä sopimuksen tulisi sisältää, esimerkin ja linkkejä virallisiin resursseihin. Hyvä lähtökohta ennen sovittelua tai sen jälkeen.",
+        "link": "Näytä tietosivu"
+      }
     },
     "thoughtful": {
       "label": "Harkitut yksityiskohdat",
@@ -642,40 +681,115 @@
       "description": "Lina auttaa vuoroasumisperheitä koordinoimaan arkea kahden kodin välillä — jaettu kalenteri, viestit ja listat yhdessä rauhallisessa, yksityisessä paikassa."
     },
     "indexFaq": [
-      { "q": "Mikä on Lina?", "a": "Lina on vuoroasumisperheille suunnattu sovellus, joka auttaa vanhempia koordinoimaan lapsen arkea kahden kodin välillä. Se kokoaa viestit, kalenterit, terveydelliset tiedot, yhteystiedot, tavaroihin liittyvät listat ja valokuvat yhteen jaettuun, yksityiseen paikkaan." },
-      { "q": "Onko Lina ilmainen?", "a": "Linalla on ilmainen versio, joka sisältää enintään 2 ketjua, 100 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenterin. Lina+ maksaa 7,99 €/kk ja avaa rajattomat ketjut, suuremman albumin, ketjuhaun, ketjuviennin ja tärkeät viestit. Yksi tilaus kattaa molemmat vanhemmat." },
-      { "q": "Pitääkö molempien vanhempien maksaa?", "a": "Ei. Yksi Lina+-tilaus kattaa molemmat vanhemmat. Tilaava vanhempi antaa molemmille täyden käyttöoikeuden — toisen vanhemman ei tarvitse koskaan maksaa." },
-      { "q": "Onko Lina yksityinen ja turvallinen?", "a": "Kyllä. Linassa ei ole mainoksia, tietojen jakamista kolmansille osapuolille eikä algoritmia, joka päättää mitä näet. Tietosi pysyvät vain kahden vanhemman välillä." },
-      { "q": "Voiko viestejä muokata tai poistaa?", "a": "Ei. Lina-viestejä ei voi muokata eikä poistaa lähettämisen jälkeen. Tämä luo selkeän ja ennakoitavan kirjanpidon siitä, mitä on viestitty ja sovittu." }
+      {
+        "q": "Mikä on Lina?",
+        "a": "Lina on vuoroasumisperheille suunnattu sovellus, joka auttaa vanhempia koordinoimaan lapsen arkea kahden kodin välillä. Se kokoaa viestit, kalenterit, terveydelliset tiedot, yhteystiedot, tavaroihin liittyvät listat ja valokuvat yhteen jaettuun, yksityiseen paikkaan."
+      },
+      {
+        "q": "Onko Lina ilmainen?",
+        "a": "Linalla on ilmainen versio, joka sisältää enintään 2 ketjua, 100 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenterin. Lina+ maksaa 7,99 €/kk ja avaa rajattomat ketjut, suuremman albumin, ketjuhaun, ketjuviennin ja tärkeät viestit. Yksi tilaus kattaa molemmat vanhemmat."
+      },
+      {
+        "q": "Pitääkö molempien vanhempien maksaa?",
+        "a": "Ei. Yksi Lina+-tilaus kattaa molemmat vanhemmat. Tilaava vanhempi antaa molemmille täyden käyttöoikeuden — toisen vanhemman ei tarvitse koskaan maksaa."
+      },
+      {
+        "q": "Onko Lina yksityinen ja turvallinen?",
+        "a": "Kyllä. Linassa ei ole mainoksia, tietojen jakamista kolmansille osapuolille eikä algoritmia, joka päättää mitä näet. Tietosi pysyvät vain kahden vanhemman välillä."
+      },
+      {
+        "q": "Voiko viestejä muokata tai poistaa?",
+        "a": "Ei. Lina-viestejä ei voi muokata eikä poistaa lähettämisen jälkeen. Tämä luo selkeän ja ennakoitavan kirjanpidon siitä, mitä on viestitty ja sovittu."
+      }
     ],
     "faqFaq": [
-      { "q": "Mikä on Lina?", "a": "Lina on sovellus vuoroasumisperheille. Se kokoaa käytännön tiedot — lapsen tiedot, viestit, valokuvat, yhteystiedot ja tavaroihin liittyvät listat — yhteen jaettuun paikkaan, joka on käytettävissä molemmista kodeista." },
-      { "q": "Onko Lina ilmainen?", "a": "Kyllä, Lina on ilmainen ladata ja käyttää. Tilin luominen tai toisen vanhemman kutsuminen ei vaadi maksua." },
-      { "q": "Voinko viedä kalenterin?", "a": "Kyllä, voit viedä kalenterin PDF-muodossa suoraan työkalusta." },
-      { "q": "Kuka voi nähdä lapsen tiedot?", "a": "Vain ne kaksi vanhempaa, jotka on yhdistetty lapseen Linassa, voivat käyttää lapsen tietoja." },
-      { "q": "Voiko viestejä poistaa tai muokata?", "a": "Ei, Lina-viestejä ei voi muokata eikä poistaa lähettämisen jälkeen, mikä luo selkeän ja luotettavan historiikin." }
+      {
+        "q": "Mikä on Lina?",
+        "a": "Lina on sovellus vuoroasumisperheille. Se kokoaa käytännön tiedot — lapsen tiedot, viestit, valokuvat, yhteystiedot ja tavaroihin liittyvät listat — yhteen jaettuun paikkaan, joka on käytettävissä molemmista kodeista."
+      },
+      {
+        "q": "Onko Lina ilmainen?",
+        "a": "Kyllä, Lina on ilmainen ladata ja käyttää. Tilin luominen tai toisen vanhemman kutsuminen ei vaadi maksua."
+      },
+      {
+        "q": "Voinko viedä kalenterin?",
+        "a": "Kyllä, voit viedä kalenterin PDF-muodossa suoraan työkalusta."
+      },
+      {
+        "q": "Kuka voi nähdä lapsen tiedot?",
+        "a": "Vain ne kaksi vanhempaa, jotka on yhdistetty lapseen Linassa, voivat käyttää lapsen tietoja."
+      },
+      {
+        "q": "Voiko viestejä poistaa tai muokata?",
+        "a": "Ei, Lina-viestejä ei voi muokata eikä poistaa lähettämisen jälkeen, mikä luo selkeän ja luotettavan historiikin."
+      }
     ],
     "csFaq": [
-      { "q": "Mikä on vuoroasumiskalenteri?", "a": "Vuoroasumiskalenteri on visuaalinen yleiskatsaus siitä, miten lapsen aika jaetaan kahden kodin välillä viikko viikolta." },
-      { "q": "Tarvitsenko tilin?", "a": "Ei, kalenterityökalua voi käyttää suoraan selaimessa ilman tiliä." },
-      { "q": "Voinko viedä kalenterin?", "a": "Kyllä, voit viedä kalenterin PDF-muodossa." }
+      {
+        "q": "Mikä on vuoroasumiskalenteri?",
+        "a": "Vuoroasumiskalenteri on visuaalinen yleiskatsaus siitä, miten lapsen aika jaetaan kahden kodin välillä viikko viikolta."
+      },
+      {
+        "q": "Tarvitsenko tilin?",
+        "a": "Ei, kalenterityökalua voi käyttää suoraan selaimessa ilman tiliä."
+      },
+      {
+        "q": "Voinko viedä kalenterin?",
+        "a": "Kyllä, voit viedä kalenterin PDF-muodossa."
+      }
     ],
     "caFaq": [
-      { "q": "Mitä huoltosopimuksen tulisi sisältää?", "a": "Hyvän huoltosopimuksen tulisi kattaa hoitomalli, asuinpaikka, nouto ja palautus, loma-aikojen jako, kustannusten jako, viestintä, matkat ja rutiinit muutoksia varten." },
-      { "q": "Onko huoltosopimus laillisesti sitova?", "a": "Yksityinen huoltosopimus perustuu vanhempien keskinäiseen sopimukseen. Se ei ole oikeudellisesti sitova kuten tuomioistuimen päätös, mutta se antaa rakennetta ja ennakoitavuutta." },
-      { "q": "Mistä voin tehdä huoltosopimuksen Suomessa?", "a": "Suomessa lastenvalvoja voi vahvistaa vanhempien välisen sopimuksen lapsen huollosta, asumisesta ja tapaamisoikeudesta. Palvelu on ilmainen ja lisätietoja löytyy osoitteesta suomi.fi." }
+      {
+        "q": "Mitä huoltosopimuksen tulisi sisältää?",
+        "a": "Hyvän huoltosopimuksen tulisi kattaa hoitomalli, asuinpaikka, nouto ja palautus, loma-aikojen jako, kustannusten jako, viestintä, matkat ja rutiinit muutoksia varten."
+      },
+      {
+        "q": "Onko huoltosopimus laillisesti sitova?",
+        "a": "Yksityinen huoltosopimus perustuu vanhempien keskinäiseen sopimukseen. Se ei ole oikeudellisesti sitova kuten tuomioistuimen päätös, mutta se antaa rakennetta ja ennakoitavuutta."
+      },
+      {
+        "q": "Mistä voin tehdä huoltosopimuksen Suomessa?",
+        "a": "Suomessa lastenvalvoja voi vahvistaa vanhempien välisen sopimuksen lapsen huollosta, asumisesta ja tapaamisoikeudesta. Palvelu on ilmainen ja lisätietoja löytyy osoitteesta suomi.fi."
+      }
     ],
     "pricingFaq": [
-      { "q": "Paljonko Lina maksaa?", "a": "Linalla on ilmainen versio perustoiminnoilla. Lina+ maksaa 7,99 € kuukaudessa 2 viikon ilmaisella kokeilujaksolla." },
-      { "q": "Pitääkö toisen vanhemman myös maksaa?", "a": "Ei. Yksi Lina+-tilaus kattaa molemmat vanhemmat." },
-      { "q": "Voinko peruuttaa milloin tahansa?", "a": "Kyllä. Ei sitomisaikaa. Peruuta milloin tahansa App Storen tai Google Playn kautta." },
-      { "q": "Mitä ilmainen versio sisältää?", "a": "Enintään 2 ketjua, 100 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenteri." }
+      {
+        "q": "Paljonko Lina maksaa?",
+        "a": "Linalla on ilmainen versio perustoiminnoilla. Lina+ maksaa 7,99 € kuukaudessa 2 viikon ilmaisella kokeilujaksolla."
+      },
+      {
+        "q": "Pitääkö toisen vanhemman myös maksaa?",
+        "a": "Ei. Yksi Lina+-tilaus kattaa molemmat vanhemmat."
+      },
+      {
+        "q": "Voinko peruuttaa milloin tahansa?",
+        "a": "Kyllä. Ei sitomisaikaa. Peruuta milloin tahansa App Storen tai Google Playn kautta."
+      },
+      {
+        "q": "Mitä ilmainen versio sisältää?",
+        "a": "Enintään 2 ketjua, 100 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenteri."
+      }
     ],
-    "article1": { "headline": "Asumisjärjestelyt selitettynä", "description": "Yleiskatsaus yleisimpiin asumisjärjestelyihin lapsille, joilla on kaksi kotia — vuoroviikot, 3-4-4-3, 2-2-5-5 ja muut mallit. Mikä sopii eri ikäryhmille?" },
-    "article2": { "headline": "Vaihtopäivä — näin teet siirtymisestä helpompaa", "description": "Käytännön vinkkejä sujuvampiin vaihtotilanteisiin kotien välillä — vakiintuneet rutiinit, neutraalit paikat ja mitä lapsen mukana tulisi kulkea." },
-    "article3": { "headline": "Mitä lapsi tarvitsee kummassakin kodissa", "description": "Käytännön tarkistuslista yhteishuoltajavanhemmille — mitä kummassakin kodissa pitäisi olla, minkä pitäisi kulkea lapsen mukana ja miten pitää kirjaa." },
-    "article4": { "headline": "Vuoroasuminen vs. lähivanhemmuus — mikä on ero?", "description": "Vuoroasumisen ja yhden kodin asumisen ero — mitä se tarkoittaa käytännössä arjessa, päätöksenteossa ja lapsen oikeuksissa." },
-    "article5": { "headline": "Viestintä yhteishuoltajavanhempien välillä", "description": "Miten pidät viestinnän asiallisena ja jäsenneltynä, kun jaatte lapsen huoltajuuden — käytännön vinkkejä keskusteluketjuihin, kirjallisiin sopimuksiin ja selkeisiin rajoihin." }
+    "article1": {
+      "headline": "Asumisjärjestelyt selitettynä",
+      "description": "Yleiskatsaus yleisimpiin asumisjärjestelyihin lapsille, joilla on kaksi kotia — vuoroviikot, 3-4-4-3, 2-2-5-5 ja muut mallit. Mikä sopii eri ikäryhmille?"
+    },
+    "article2": {
+      "headline": "Vaihtopäivä — näin teet siirtymisestä helpompaa",
+      "description": "Käytännön vinkkejä sujuvampiin vaihtotilanteisiin kotien välillä — vakiintuneet rutiinit, neutraalit paikat ja mitä lapsen mukana tulisi kulkea."
+    },
+    "article3": {
+      "headline": "Mitä lapsi tarvitsee kummassakin kodissa",
+      "description": "Käytännön tarkistuslista yhteishuoltajavanhemmille — mitä kummassakin kodissa pitäisi olla, minkä pitäisi kulkea lapsen mukana ja miten pitää kirjaa."
+    },
+    "article4": {
+      "headline": "Vuoroasuminen vs. lähivanhemmuus — mikä on ero?",
+      "description": "Vuoroasumisen ja yhden kodin asumisen ero — mitä se tarkoittaa käytännössä arjessa, päätöksenteossa ja lapsen oikeuksissa."
+    },
+    "article5": {
+      "headline": "Viestintä yhteishuoltajavanhempien välillä",
+      "description": "Miten pidät viestinnän asiallisena ja jäsenneltynä, kun jaatte lapsen huoltajuuden — käytännön vinkkejä keskusteluketjuihin, kirjallisiin sopimuksiin ja selkeisiin rajoihin."
+    }
   },
   "blog1": {
     "pageTitle": "Asumisjärjestelyt selitettynä — Lina",
@@ -868,5 +982,17 @@
     "ctaTitle": "Jäsenneltyä viestintää kahden kodin välillä",
     "ctaDesc": "Lina pitää keskustelut järjestettyinä erillisissä ketjuissa. Viestejä ei voi muokata tai poistaa — joten molemmilla vanhemmilla on selkeä historia siitä, mitä on sovittu.",
     "ctaCta": "Lataa Lina"
+  },
+  "carousel": {
+    "alt": {
+      "threads": "Keskustelunäkymä",
+      "threadDetail": "Keskustelun tiedot",
+      "album": "Jaettu albumi",
+      "tools": "Työkalut",
+      "equipment": "Varustelista",
+      "contacts": "Yhteystiedot",
+      "childInfo": "Lapsen tiedot",
+      "careSchedule": "Hoitovuorokalenteri"
+    }
   }
 }

@@ -21,7 +21,6 @@
   <title>Lina für Fachkräfte — Co-Parenting App für Beratungsstellen | Lina</title>
   <meta name="description" content="Lina ist eine ruhige, strukturierte App für Eltern mit geteilter Betreuung. Informationen für Familienberater, Mediatoren und Jugendamt-Mitarbeiter — mit Ein-Seiten-Info zum Herunterladen." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="de_DE" />
   <meta property="og:url" content="https://getlina.app/de/professionals.html" />
   <meta property="og:title" content="Lina für Fachkräfte — Co-Parenting App für Beratungsstellen | Lina" />
   <meta property="og:image" content="https://getlina.app/assets/og-image-de.png" />
@@ -767,7 +766,27 @@
       }
     }
   </style>
-  <script id="lina-lang-redirect">(function () {
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Lina",
+      "item": "https://getlina.app/de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Professionals",
+      "item": "https://getlina.app/de/professionals.html"
+    }
+  ]
+}
+</script>
+<script id="lina-lang-redirect">(function () {
   var K = 'lina_lang';
   // Already on a non-English locale page — nothing to do
   if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
@@ -784,16 +803,6 @@
     if (l) { location.replace('/' + l + '/'); return; }
   }
 }());</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://getlina.app/de/" },
-    { "@type": "ListItem", "position": 2, "name": "Fachkräfte", "item": "https://getlina.app/de/professionals.html" }
-  ]
-}
-</script>
 </head>
 <body>
 
@@ -850,14 +859,14 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
             </button>
             <div class="phone-frame" id="carousel-frame">
-              <div class="carousel-slide active"><picture><source srcset="/assets/images/locale%20screenshots/de/ThreadsScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ThreadsScreenDE.png" alt="Themenbereiche in der Lina Co-Parenting App" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ThreadDetailDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ThreadDetailDE.png" alt="Nachrichtendetail in Lina — strukturierte Kommunikation für getrennte Eltern" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/AlbumScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/AlbumScreenDE.png" alt="Gemeinsames Fotoalbum für beide Haushalte" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ToolsScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ToolsScreenDE.png" alt="Werkzeuge für die geteilte Betreuung in Lina" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/EquipmentDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/EquipmentDE.png" alt="Ausstattungsliste für zwei Haushalte" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ContactDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ContactDE.png" alt="Gemeinsame Kontakte — Kinderarzt, Schule, Hort" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ChildDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ChildDE.png" alt="Kinderinformationen — Allergien, Medikamente, Schuhgröße" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
-              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/CareScheduleDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/CareScheduleDE.png" alt="Betreuungsplan — Wochenübersicht für getrennte Eltern" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide active"><picture><source srcset="/assets/images/locale%20screenshots/de/ThreadsScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ThreadsScreenDE.png" alt="Themenansicht" data-i18n-alt="carousel.alt.threads" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ThreadDetailDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ThreadDetailDE.png" alt="Nachrichtendetails" data-i18n-alt="carousel.alt.threadDetail" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/AlbumScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/AlbumScreenDE.png" alt="Geteiltes Album" data-i18n-alt="carousel.alt.album" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ToolsScreenDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ToolsScreenDE.png" alt="Werkzeuge" data-i18n-alt="carousel.alt.tools" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/EquipmentDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/EquipmentDE.png" alt="Ausstattungsliste" data-i18n-alt="carousel.alt.equipment" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ContactDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ContactDE.png" alt="Kontakte" data-i18n-alt="carousel.alt.contacts" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/ChildDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/ChildDE.png" alt="Kinderinformationen" data-i18n-alt="carousel.alt.childInfo" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
+              <div class="carousel-slide"><picture><source srcset="/assets/images/locale%20screenshots/de/CareScheduleDE.png" type="image/png" /><img src="/assets/images/locale%20screenshots/de/CareScheduleDE.png" alt="Betreuungsplan" data-i18n-alt="carousel.alt.careSchedule" draggable="false" width="232" height="504" loading="lazy" /></picture></div>
             </div>
             <button class="carousel-arrow" id="carousel-next" aria-label="Next screenshot">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
@@ -1134,7 +1143,7 @@
           </a>
         </div>
         <div class="cs-promo-visual" aria-hidden="true">
-          <img src="/assets/images/CareSchedule.png" alt="Betreuungsplan in Lina" style="width: 500px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);" />
+          <img src="/assets/images/CareSchedule.png" alt="Samværsplan" style="width: 500px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);" />
         </div>
       </div>
     </div>
@@ -1150,7 +1159,7 @@
         </div>
         <div>
           <p class="fv-about-description" data-i18n="familievern.recommend.description">Wenn Sie Lina an Eltern weiterempfehlen möchten, können Sie eine kurze Übersicht herunterladen — zum Ausdrucken oder digitalen Teilen. Sie erklärt, was Lina ist, was es beinhaltet und wie man loslegt — in einfacher Sprache.</p>
-          <a href="/assets/lina-one-pager-de.pdf" download class="btn-primary" style="margin-top:20px; display:inline-flex; text-decoration:none;">
+          <a href="/assets/lina-one-pager.pdf" download class="btn-primary" style="margin-top:20px; display:inline-flex; text-decoration:none;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
             <span data-i18n="familievern.recommend.cta">One-Pager herunterladen (PDF)</span>
           </a>

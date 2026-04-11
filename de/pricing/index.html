@@ -21,7 +21,6 @@
   <title>Preise — Lina</title>
   <meta name="description" content="Lina hat einen kostenlosen Plan und Lina+ für 7,99 €/Monat. Ein Abonnement gilt für beide Elternteile. Keine Werbung, keine Datenweitergabe." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="de_DE" />
   <meta property="og:url" content="https://getlina.app/de/pricing/" />
   <meta property="og:title" content="Preise — Lina" />
   <meta property="og:description" content="Lina hat einen kostenlosen Plan und Lina+ für 7,99 €/Monat. Ein Abonnement gilt für beide Elternteile. Keine Werbung, keine Datenweitergabe." />
@@ -533,7 +532,27 @@
   ]
 }
 </script>
-  <script id="lina-lang-redirect">(function () {
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Lina",
+      "item": "https://getlina.app/de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Pricing",
+      "item": "https://getlina.app/de/pricing/"
+    }
+  ]
+}
+</script>
+<script id="lina-lang-redirect">(function () {
   var K = 'lina_lang';
   // Already on a non-English locale page — nothing to do
   if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
@@ -588,7 +607,7 @@
   <div class="pricing-hero">
     <p class="section-label" data-i18n="pricing.label">Preise</p>
     <h1 data-i18n="pricing.title">Ein Abonnement. Beide Elternteile.</h1>
-    <p data-i18n="pricing.description">Lina+ schaltet alle Funktionen mit einem einzigen Abonnement frei — für beide Haushalte. Beginnen Sie mit einer kostenlosen Testphase.</p>
+    <p data-i18n="pricing.description">Lina+ schaltet alle Funktionen mit einem einzigen Abonnement frei — für beide Haushalte. Beginne mit einer kostenlosen Testphase.</p>
   </div>
 
   <!-- Pricing Cards -->
@@ -713,7 +732,7 @@
           </div>
           <div class="why-point-text">
             <h3 data-i18n="pricing.p2.title">Keine Werbung, keine Datenweitergabe</h3>
-            <p data-i18n="pricing.p2.description">Das Abonnement finanziert die App. Ihre Daten werden nie verkauft.</p>
+            <p data-i18n="pricing.p2.description">Das Abonnement finanziert die App. Deine Daten werden nie verkauft.</p>
           </div>
         </div>
         <div class="why-point">
@@ -740,7 +759,7 @@
   <section id="cta">
     <div class="cta-inner">
       <h2 data-i18n="cta.title">Ein sicherer Kanal zwischen zwei Elternteilen.</h2>
-      <p data-i18n="cta.description">Alles, was beide Elternteile wissen müssen — an einem Ort. Laden Sie die App herunter und legen Sie in wenigen Minuten los.</p>
+      <p data-i18n="cta.description">Alles, was beide Elternteile wissen müssen — an einem Ort. Lade die App herunter und leg in wenigen Minuten los.</p>
       <div class="hero-ctas">
         <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
