@@ -156,7 +156,7 @@
       "price": "0 €",
       "period": "Aina ilmainen",
       "f1": "Enintään 2 keskusteluketjua",
-      "f2": "Enintään 100 kuvaa jaetussa albumissa",
+      "f2": "Enintään 30 kuvaa jaetussa albumissa",
       "f3": "Viestit",
       "f4": "Lapsen tiedot ja yhteystiedot",
       "f5": "Varustelistat",
@@ -687,7 +687,7 @@
       },
       {
         "q": "Onko Lina ilmainen?",
-        "a": "Linalla on ilmainen versio, joka sisältää enintään 2 ketjua, 100 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenterin. Lina+ maksaa 7,99 €/kk ja avaa rajattomat ketjut, suuremman albumin, ketjuhaun, ketjuviennin ja tärkeät viestit. Yksi tilaus kattaa molemmat vanhemmat."
+        "a": "Linalla on ilmainen versio, joka sisältää enintään 2 ketjua, 30 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenterin. Lina+ maksaa 7,99 €/kk ja avaa rajattomat ketjut, suuremman albumin, ketjuhaun, ketjuviennin ja tärkeät viestit. Yksi tilaus kattaa molemmat vanhemmat."
       },
       {
         "q": "Pitääkö molempien vanhempien maksaa?",
@@ -767,7 +767,7 @@
       },
       {
         "q": "Mitä ilmainen versio sisältää?",
-        "a": "Enintään 2 ketjua, 100 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenteri."
+        "a": "Enintään 2 ketjua, 30 valokuvaa, viestit, lapsen tiedot, yhteystiedot, tavaroihin liittyvät listat ja kalenteri."
       }
     ],
     "article1": {

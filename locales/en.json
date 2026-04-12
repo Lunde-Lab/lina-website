@@ -140,7 +140,7 @@
       "price": "€0",
       "period": "Always free",
       "f1": "Up to 2 threads",
-      "f2": "Up to 100 photos in shared album",
+      "f2": "Up to 30 photos in shared album",
       "f3": "Messages",
       "f4": "Child information and contacts",
       "f5": "Equipment lists",
@@ -671,7 +671,7 @@
       },
       {
         "q": "Is Lina free?",
-        "a": "Lina has a free plan that includes up to 2 threads, 100 photos, messages, child information, contacts, equipment lists, and a care schedule. Lina+ costs €7.99/month and unlocks unlimited threads, a larger album, thread search, thread export, and important messages. One subscription covers both parents."
+        "a": "Lina has a free plan that includes up to 2 threads, 30 photos, messages, child information, contacts, equipment lists, and a care schedule. Lina+ costs €7.99/month and unlocks unlimited threads, a larger album, thread search, thread export, and important messages. One subscription covers both parents."
       },
       {
         "q": "Do both parents need to pay?",
@@ -751,7 +751,7 @@
       },
       {
         "q": "What is included in the free plan?",
-        "a": "Up to 2 threads, 100 photos, messages, child information, contacts, equipment lists, and a care schedule."
+        "a": "Up to 2 threads, 30 photos, messages, child information, contacts, equipment lists, and a care schedule."
       }
     ]
   },

@@ -140,7 +140,7 @@
       "price": "€ 0",
       "period": "Altijd gratis",
       "f1": "Tot 2 onderwerpen",
-      "f2": "Tot 100 foto's in gedeeld album",
+      "f2": "Tot 30 foto's in gedeeld album",
       "f3": "Berichten",
       "f4": "Kindinformatie en contacten",
       "f5": "Paklijsten",
@@ -671,7 +671,7 @@
       },
       {
         "q": "Is Lina gratis?",
-        "a": "Lina heeft een gratis abonnement met tot 2 onderwerpen, 100 foto's, berichten, kindinformatie, contacten, paklijsten en een zorgschema. Lina+ kost € 7,99/maand en ontgrendelt onbeperkte onderwerpen, een groter album, zoeken in onderwerpen, onderwerpen exporteren en belangrijke berichten. Eén abonnement voor beide ouders."
+        "a": "Lina heeft een gratis abonnement met tot 2 onderwerpen, 30 foto's, berichten, kindinformatie, contacten, paklijsten en een zorgschema. Lina+ kost € 7,99/maand en ontgrendelt onbeperkte onderwerpen, een groter album, zoeken in onderwerpen, onderwerpen exporteren en belangrijke berichten. Eén abonnement voor beide ouders."
       },
       {
         "q": "Moeten beide ouders betalen?",
@@ -751,7 +751,7 @@
       },
       {
         "q": "Wat is inbegrepen in het gratis abonnement?",
-        "a": "Tot 2 onderwerpen, 100 foto's, berichten, kindinformatie, contacten, paklijsten en een zorgschema."
+        "a": "Tot 2 onderwerpen, 30 foto's, berichten, kindinformatie, contacten, paklijsten en een zorgschema."
       }
     ],
     "article1": {

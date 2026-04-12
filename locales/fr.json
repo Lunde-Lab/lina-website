@@ -140,7 +140,7 @@
       "price": "0 €",
       "period": "Toujours gratuit",
       "f1": "Jusqu'à 2 sujets",
-      "f2": "Jusqu'à 100 photos dans l'album partagé",
+      "f2": "Jusqu'à 30 photos dans l'album partagé",
       "f3": "Messages",
       "f4": "Informations sur l'enfant et contacts",
       "f5": "Listes d'équipement",
@@ -671,7 +671,7 @@
       },
       {
         "q": "Lina est-il gratuit ?",
-        "a": "Lina propose un plan gratuit qui inclut jusqu'à 2 sujets, 100 photos, messages, informations sur l'enfant, contacts, listes d'équipement et planning de garde. Lina+ coûte 7,99 €/mois et débloque des sujets illimités, un album plus grand, la recherche dans les sujets, l'exportation des sujets et les messages importants. Un abonnement couvre les deux parents."
+        "a": "Lina propose un plan gratuit qui inclut jusqu'à 2 sujets, 30 photos, messages, informations sur l'enfant, contacts, listes d'équipement et planning de garde. Lina+ coûte 7,99 €/mois et débloque des sujets illimités, un album plus grand, la recherche dans les sujets, l'exportation des sujets et les messages importants. Un abonnement couvre les deux parents."
       },
       {
         "q": "Les deux parents doivent-ils payer ?",
@@ -751,7 +751,7 @@
       },
       {
         "q": "Qu'est-ce qui est inclus dans le plan gratuit ?",
-        "a": "Jusqu'à 2 sujets, 100 photos, messages, informations sur l'enfant, contacts, listes d'équipement et planning de garde."
+        "a": "Jusqu'à 2 sujets, 30 photos, messages, informations sur l'enfant, contacts, listes d'équipement et planning de garde."
       }
     ],
     "article1": {

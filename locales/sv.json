@@ -156,7 +156,7 @@
       "price": "0 kr",
       "period": "Alltid gratis",
       "f1": "Upp till 2 trådar",
-      "f2": "Upp till 100 bilder i delat album",
+      "f2": "Upp till 30 bilder i delat album",
       "f3": "Meddelanden",
       "f4": "Barnuppgifter och kontakter",
       "f5": "Utrustningslistor",
@@ -687,7 +687,7 @@
       },
       {
         "q": "Är Lina gratis?",
-        "a": "Lina har en gratisversion som inkluderar upp till 2 trådar, 100 foton, meddelanden, barninfo, kontakter, utrustningslistor och ett omsorgsschema. Lina+ kostar 89 kr/mån och ger obegränsade trådar, större album, sökfunktion, export och viktiga meddelanden. En prenumeration täcker båda föräldrarna."
+        "a": "Lina har en gratisversion som inkluderar upp till 2 trådar, 30 foton, meddelanden, barninfo, kontakter, utrustningslistor och ett omsorgsschema. Lina+ kostar 89 kr/mån och ger obegränsade trådar, större album, sökfunktion, export och viktiga meddelanden. En prenumeration täcker båda föräldrarna."
       },
       {
         "q": "Behöver båda föräldrarna betala?",
@@ -767,7 +767,7 @@
       },
       {
         "q": "Vad ingår i gratisversionen?",
-        "a": "Upp till 2 trådar, 100 foton, meddelanden, barninfo, kontakter, utrustningslistor och omsorgsschema."
+        "a": "Upp till 2 trådar, 30 foton, meddelanden, barninfo, kontakter, utrustningslistor och omsorgsschema."
       }
     ],
     "article1": {

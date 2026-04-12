@@ -140,7 +140,7 @@
       "price": "0 €",
       "period": "Immer kostenlos",
       "f1": "Bis zu 2 Themenbereiche",
-      "f2": "Bis zu 100 Fotos im gemeinsamen Album",
+      "f2": "Bis zu 30 Fotos im gemeinsamen Album",
       "f3": "Nachrichten",
       "f4": "Kinderinformationen und Kontakte",
       "f5": "Ausstattungslisten",
@@ -671,7 +671,7 @@
       },
       {
         "q": "Ist Lina kostenlos?",
-        "a": "Lina hat einen kostenlosen Plan mit bis zu 2 Themenbereichen, 100 Fotos, Nachrichten, Kinderinformationen, Kontakten, Ausstattungslisten und einem Betreuungsplan. Lina+ kostet 7,99 €/Monat und schaltet unbegrenzte Themenbereiche, ein größeres Album, Themenbereichssuche, Themenbereichsexport und wichtige Nachrichten frei. Ein Abonnement gilt für beide Elternteile."
+        "a": "Lina hat einen kostenlosen Plan mit bis zu 2 Themenbereichen, 30 Fotos, Nachrichten, Kinderinformationen, Kontakten, Ausstattungslisten und einem Betreuungsplan. Lina+ kostet 7,99 €/Monat und schaltet unbegrenzte Themenbereiche, ein größeres Album, Themenbereichssuche, Themenbereichsexport und wichtige Nachrichten frei. Ein Abonnement gilt für beide Elternteile."
       },
       {
         "q": "Müssen beide Elternteile zahlen?",
@@ -751,7 +751,7 @@
       },
       {
         "q": "Was ist im kostenlosen Plan enthalten?",
-        "a": "Bis zu 2 Themenbereiche, 100 Fotos, Nachrichten, Kinderinformationen, Kontakte, Ausstattungslisten und ein Betreuungsplan."
+        "a": "Bis zu 2 Themenbereiche, 30 Fotos, Nachrichten, Kinderinformationen, Kontakte, Ausstattungslisten und ein Betreuungsplan."
       }
     ],
     "article1": {

@@ -156,7 +156,7 @@
       "price": "0 kr",
       "period": "Altid gratis",
       "f1": "Op til 2 tråde",
-      "f2": "Op til 100 billeder i delt album",
+      "f2": "Op til 30 billeder i delt album",
       "f3": "Beskeder",
       "f4": "Barneinformation og kontakter",
       "f5": "Udstyrslister",
@@ -687,7 +687,7 @@
       },
       {
         "q": "Er Lina gratis?",
-        "a": "Lina har en gratis plan, der inkluderer op til 2 tråde, 100 fotos, beskeder, barneinformation, kontakter, udstyrlister og en samværsplan. Lina+ koster 59 kr/md. og giver ubegrænsede tråde, større album, søgning, eksport og vigtige beskeder. Ét abonnement dækker begge forældre."
+        "a": "Lina har en gratis plan, der inkluderer op til 2 tråde, 30 fotos, beskeder, barneinformation, kontakter, udstyrlister og en samværsplan. Lina+ koster 59 kr/md. og giver ubegrænsede tråde, større album, søgning, eksport og vigtige beskeder. Ét abonnement dækker begge forældre."
       },
       {
         "q": "Skal begge forældre betale?",
@@ -767,7 +767,7 @@
       },
       {
         "q": "Hvad er inkluderet i gratisplanen?",
-        "a": "Op til 2 tråde, 100 fotos, beskeder, barneinformation, kontakter, udstyrlister og samværsplan."
+        "a": "Op til 2 tråde, 30 fotos, beskeder, barneinformation, kontakter, udstyrlister og samværsplan."
       }
     ],
     "article1": {
