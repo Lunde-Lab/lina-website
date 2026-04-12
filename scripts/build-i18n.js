@@ -470,6 +470,18 @@ function applyTranslations(html, locale) {
     }
   );
 
+  // data-i18n-href — update href attribute on the same tag
+  html = html.replace(
+    /(<[^\n>]*\sdata-i18n-href="([^"]+)"[^\n>]*)/g,
+    (m, _before, key) => {
+      const val = get(locale, key);
+      if (val == null) return m;
+      return /\shref="[^"]*"/.test(m)
+        ? m.replace(/\shref="[^"]*"/, ` href="${val}"`)
+        : m + ` href="${val}"`;
+    }
+  );
+
   return html;
 }
 

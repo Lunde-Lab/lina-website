@@ -355,7 +355,8 @@
       "label": "Lina aanbevelen",
       "title": "Iets om aan ouders te geven",
       "description": "Als je Lina wilt aanbevelen aan ouders waarmee je werkt, kun je een beknopt overzicht downloaden om te printen of digitaal te delen. Het legt uit wat Lina is, wat het bevat en hoe je begint — in duidelijke taal.",
-      "cta": "Download one-pager (PDF)"
+      "cta": "Download one-pager (PDF)",
+      "pdfUrl": "/assets/lina-one-pager-nl.pdf"
     },
     "contact": {
       "label": "Contact",

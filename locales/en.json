@@ -352,7 +352,8 @@
       "label": "Recommend Lina",
       "title": "Something to hand to parents",
       "description": "If you'd like to recommend Lina to parents you work with, you can download a one-page overview to print or share digitally. It explains what Lina is, what it includes, and how to get started — in plain language.",
-      "cta": "Download one-pager (PDF)"
+      "cta": "Download one-pager (PDF)",
+      "pdfUrl": "/assets/lina-one-pager.pdf"
     },
     "contact": {
       "label": "Contact",

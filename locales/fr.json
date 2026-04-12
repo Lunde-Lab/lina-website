@@ -352,7 +352,8 @@
       "label": "Recommander Lina",
       "title": "Quelque chose à remettre aux parents",
       "description": "Si vous souhaitez recommander Lina aux parents avec lesquels vous travaillez, vous pouvez télécharger un résumé d'une page à imprimer ou à partager numériquement. Il explique ce qu'est Lina, ce qu'elle contient et comment démarrer — dans un langage simple.",
-      "cta": "Télécharger le résumé (PDF)"
+      "cta": "Télécharger le résumé (PDF)",
+      "pdfUrl": "/assets/lina-one-pager-fr.pdf"
     },
     "contact": {
       "label": "Contact",

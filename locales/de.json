@@ -355,7 +355,8 @@
       "label": "Lina empfehlen",
       "title": "Etwas zum Weitergeben an Eltern",
       "description": "Wenn Sie Lina an Eltern weiterempfehlen möchten, können Sie eine kurze Übersicht herunterladen — zum Ausdrucken oder digitalen Teilen. Sie erklärt, was Lina ist, was es beinhaltet und wie man loslegt — in einfacher Sprache.",
-      "cta": "One-Pager herunterladen (PDF)"
+      "cta": "One-Pager herunterladen (PDF)",
+      "pdfUrl": "/assets/lina-one-pager-de.pdf"
     },
     "contact": {
       "label": "Kontakt",

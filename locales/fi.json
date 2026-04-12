@@ -368,7 +368,8 @@
       "label": "Suosittele Linaa",
       "title": "Jotain jaettavaa vanhemmille",
       "description": "Jos haluat suositella Linaa vanhemmille, joiden kanssa työskentelet, voit ladata lyhyen yhteenvedon tulostettavaksi tai jaettavaksi digitaalisesti. Se selittää, mikä Lina on, mitä se sisältää ja miten pääsee alkuun — selkeällä kielellä.",
-      "cta": "Lataa yhteenveto (PDF)"
+      "cta": "Lataa yhteenveto (PDF)",
+      "pdfUrl": "/assets/lina-one-pager-fi.pdf"
     },
     "contact": {
       "label": "Yhteystiedot",

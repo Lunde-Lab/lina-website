@@ -368,7 +368,8 @@
       "label": "Anbefal Lina",
       "title": "Noget at give til forældre",
       "description": "Hvis du gerne vil anbefale Lina til forældre, du arbejder med, kan du downloade en kort oversigt til at printe eller dele digitalt. Den forklarer, hvad Lina er, hvad den indeholder, og hvordan man kommer i gang — i et enkelt sprog.",
-      "cta": "Download one-pager (PDF)"
+      "cta": "Download one-pager (PDF)",
+      "pdfUrl": "/assets/lina-one-pager-da.pdf"
     },
     "contact": {
       "label": "Kontakt",
