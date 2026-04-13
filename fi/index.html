@@ -546,31 +546,41 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 24px;
+      gap: 32px;
     }
 
     .footer-nav {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .footer-nav-row {
-      display: flex;
-      gap: 24px;
+      flex-direction: row;
+      gap: 48px;
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    .footer-nav-row a {
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 120px;
+    }
+
+    .footer-col-heading {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .footer-col a {
       font-size: 13px;
       color: var(--text-secondary);
       text-decoration: none;
       transition: color 0.15s;
     }
 
-    .footer-nav-row a:hover {
+    .footer-col a:hover {
       color: var(--text);
     }
 
@@ -585,12 +595,8 @@
         padding: 32px 16px;
       }
 
-      .footer-nav-row {
-        gap: 16px;
-      }
-
-      .footer-nav-row a {
-        font-size: 12px;
+      .footer-nav {
+        gap: 32px;
       }
     }
 
@@ -1541,20 +1547,28 @@
     <div class="footer-inner">
       <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
       <nav class="footer-nav" aria-label="Footer navigation">
-        <div class="footer-nav-row">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupProduct">Tuote</span>
           <a href="/fi/care-schedule/" data-i18n="footer.careSchedule">Hoitoaikataulu</a>
           <a href="/fi/care-agreement/" data-i18n="footer.careAgreement">Huoltosopimus</a>
+          <a href="/fi/pricing/" data-i18n="footer.pricing">Hinta</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupExplore">Tutustu</span>
           <a href="/fi/faq/" data-i18n="footer.faq">Usein kysytyt kysymykset</a>
           <a href="/fi/professionals.html" data-i18n="footer.familievern">Ammattilaiset</a>
           <a href="/fi/stories/" data-i18n="footer.stories">Tarinoita</a>
-          <a href="/fi/pricing/" data-i18n="footer.pricing">Hinta</a>
-          <a href="/fi/about/" data-i18n="footer.about">Tietoa</a>
           <a href="/fi/blog/" data-i18n="footer.blog">Blogi</a>
         </div>
-        <div class="footer-nav-row">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupCompany">Yritys</span>
+          <a href="/fi/about/" data-i18n="footer.about">Tietoa</a>
+          <a href="/fi/contact.html" data-i18n="footer.contact">Ota yhteyttä</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupLegal">Lakiasiat</span>
           <a href="/fi/terms/" data-i18n="footer.terms">Käyttöehdot</a>
           <a href="/fi/privacy/" data-i18n="footer.privacy">Tietosuojakäytäntö</a>
-          <a href="/fi/contact.html" data-i18n="footer.contact">Ota yhteyttä</a>
           <a href="/fi/account-deletion.html" data-i18n="footer.accountDeletion">Tilin poistaminen</a>
         </div>
       </nav>

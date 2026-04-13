@@ -127,7 +127,11 @@
     "stories": "Geschichten",
     "pricing": "Preise",
     "about": "Über uns",
-    "blog": "Blog"
+    "blog": "Blog",
+    "groupProduct": "Produkt",
+    "groupExplore": "Entdecken",
+    "groupCompany": "Unternehmen",
+    "groupLegal": "Rechtliches"
   },
   "pricing": {
     "pageTitle": "Preise — Lina",

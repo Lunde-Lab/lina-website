@@ -143,7 +143,11 @@
     "stories": "Hverdagsscenarioer",
     "pricing": "Pris",
     "about": "Om Lina",
-    "blog": "Blogg"
+    "blog": "Blogg",
+    "groupProduct": "Produkt",
+    "groupExplore": "Utforsk",
+    "groupCompany": "Selskap",
+    "groupLegal": "Juridisk"
   },
   "pricing": {
     "pageTitle": "Pris — Lina",

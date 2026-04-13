@@ -606,31 +606,41 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 24px;
+      gap: 32px;
     }
 
     .footer-nav {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .footer-nav-row {
-      display: flex;
-      gap: 24px;
+      flex-direction: row;
+      gap: 48px;
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    .footer-nav-row a {
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 120px;
+    }
+
+    .footer-col-heading {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .footer-col a {
       font-size: 13px;
       color: var(--text-secondary);
       text-decoration: none;
       transition: color 0.15s;
     }
 
-    .footer-nav-row a:hover {
+    .footer-col a:hover {
       color: var(--text);
     }
 
@@ -645,12 +655,8 @@
         padding: 32px 16px;
       }
 
-      .footer-nav-row {
-        gap: 16px;
-      }
-
-      .footer-nav-row a {
-        font-size: 12px;
+      .footer-nav {
+        gap: 32px;
       }
     }
 
@@ -1205,20 +1211,28 @@
     <div class="footer-inner">
       <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
       <nav class="footer-nav" aria-label="Footer navigation">
-        <div class="footer-nav-row">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupProduct">Produit</span>
           <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
           <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+          <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupExplore">Explorer</span>
           <a href="/fr/faq/" data-i18n="footer.faq">FAQ</a>
           <a href="/fr/professionals.html" data-i18n="footer.familievern">Professionnels</a>
           <a href="/fr/stories/" data-i18n="footer.stories">Témoignages</a>
-          <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
-          <a href="/fr/about/" data-i18n="footer.about">À propos</a>
           <a href="/fr/blog/" data-i18n="footer.blog">Blog</a>
         </div>
-        <div class="footer-nav-row">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupCompany">Entreprise</span>
+          <a href="/fr/about/" data-i18n="footer.about">À propos</a>
+          <a href="/fr/contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupLegal">Juridique</span>
           <a href="/fr/terms/" data-i18n="footer.terms">Conditions d'utilisation</a>
           <a href="/fr/privacy/" data-i18n="footer.privacy">Politique de confidentialité</a>
-          <a href="/fr/contact.html" data-i18n="footer.contact">Contact</a>
           <a href="/fr/account-deletion.html" data-i18n="footer.accountDeletion">Suppression du compte</a>
         </div>
       </nav>

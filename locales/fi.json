@@ -143,7 +143,11 @@
     "stories": "Tarinoita",
     "pricing": "Hinta",
     "about": "Tietoa",
-    "blog": "Blogi"
+    "blog": "Blogi",
+    "groupProduct": "Tuote",
+    "groupExplore": "Tutustu",
+    "groupCompany": "Yritys",
+    "groupLegal": "Lakiasiat"
   },
   "pricing": {
     "pageTitle": "Hinta — Lina",

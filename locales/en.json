@@ -127,7 +127,11 @@
     "stories": "Stories",
     "pricing": "Pricing",
     "about": "About",
-    "blog": "Blog"
+    "blog": "Blog",
+    "groupProduct": "Product",
+    "groupExplore": "Explore",
+    "groupCompany": "Company",
+    "groupLegal": "Legal"
   },
   "pricing": {
     "pageTitle": "Pricing — Lina",

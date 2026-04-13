@@ -127,7 +127,11 @@
     "stories": "Témoignages",
     "pricing": "Tarifs",
     "about": "À propos",
-    "blog": "Blog"
+    "blog": "Blog",
+    "groupProduct": "Produit",
+    "groupExplore": "Explorer",
+    "groupCompany": "Entreprise",
+    "groupLegal": "Juridique"
   },
   "pricing": {
     "pageTitle": "Tarifs — Lina",
