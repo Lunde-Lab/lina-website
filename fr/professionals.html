@@ -1332,5 +1332,20 @@
   }());
   </script>
 
+<script>
+(function () {
+  var btn = document.querySelector('#fv-recommend a[download]');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    var m = location.pathname.match(/^\/(no|sv|da|fi|de|nl|fr)\//);
+    var lang = m ? m[1] : 'en';
+    fetch('https://lina-pdf-counter.cloudflare-greeter871.workers.dev/count?lang=' + lang, {
+      method: 'POST',
+      mode: 'cors',
+    }).catch(function () {});
+  });
+}());
+</script>
+
 </body>
 </html>
