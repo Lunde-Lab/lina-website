@@ -32,11 +32,10 @@ nav {
   box-shadow: none !important;
 }
 
-/* Hide "Lina Status" text next to logo, keep logo visible */
+/* Hide "Lina Status" text next to logo — aggressive approach */
 nav .navbar-brand > .navbar-item {
   font-size: 0 !important;
   color: transparent !important;
-  overflow: hidden !important;
 }
 nav .navbar-brand > .navbar-item img {
   font-size: initial !important;
@@ -46,6 +45,7 @@ nav .navbar-brand > .navbar-item span {
   display: none !important;
 }
 
+/* Nav links */
 .navbar-item, .navbar-link {
   color: #1A1E23 !important;
   font-weight: 500 !important;
