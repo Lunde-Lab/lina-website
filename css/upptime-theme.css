@@ -33,7 +33,16 @@ nav {
 }
 
 /* Hide "Lina Status" text next to logo, keep logo visible */
-nav .navbar-brand .navbar-item span {
+nav .navbar-brand > .navbar-item {
+  font-size: 0 !important;
+  color: transparent !important;
+  overflow: hidden !important;
+}
+nav .navbar-brand > .navbar-item img {
+  font-size: initial !important;
+  max-height: 28px !important;
+}
+nav .navbar-brand > .navbar-item span {
   display: none !important;
 }
 
@@ -45,11 +54,6 @@ nav .navbar-brand .navbar-item span {
 .navbar-item:hover, .navbar-link:hover {
   color: #0D6B64 !important;
   background: transparent !important;
-}
-
-/* Nav logo image sizing */
-nav .navbar-brand img {
-  max-height: 28px !important;
 }
 
 /* ── Hero / Intro section ── */
@@ -141,16 +145,35 @@ article,
 .card {
   background: #FFFFFF !important;
   border: 1px solid #E2E2DE !important;
+  border-left: 1px solid #E2E2DE !important;
+  border-image: none !important;
   border-radius: 12px !important;
   padding: 20px 24px !important;
   box-shadow: none !important;
   transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
   margin-bottom: 12px !important;
+  overflow: visible !important;
 }
 article:hover,
 .card:hover {
   border-color: #c8c8c4 !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Ensure graphs render inside cards */
+article .ct-chart,
+.card .ct-chart {
+  width: 100% !important;
+  min-height: 80px !important;
+}
+article svg,
+.card svg {
+  overflow: visible !important;
+  max-width: 100% !important;
+}
+article .column,
+.card .column {
+  overflow: visible !important;
 }
 
 /* Service name */
