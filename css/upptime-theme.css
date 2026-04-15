@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* ═══════════════════════════════════════════
+   Lina Upptime Theme
+   Matches getlina.app design language
+   ═══════════════════════════════════════════ */
+
+/* ── Design tokens ── */
+:root {
+  --body-background-color: #F8F8F6;
+  --body-text-color: #1A1E23;
+  --card-background-color: #FFFFFF;
+  --nav-background-color: #F8F8F6;
+  --nav-border-bottom-color: #E2E2DE;
+}
+
+/* ── Global typography ── */
+body, nav, article, section, footer,
+h1, h2, h3, h4, p, a, span, div, li, td, th {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Links ── */
+a { color: #0D6B64 !important; text-decoration: none !important; }
+a:hover { color: #0a5650 !important; }
+
+/* ── Nav ── */
+nav {
+  background: #F8F8F6 !important;
+  border-bottom: 1px solid #E2E2DE !important;
+  box-shadow: none !important;
+}
+
+/* Hide "Lina Status" text next to logo, keep logo visible */
+nav .navbar-brand .navbar-item span {
+  display: none !important;
+}
+
+.navbar-item, .navbar-link {
+  color: #1A1E23 !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+}
+.navbar-item:hover, .navbar-link:hover {
+  color: #0D6B64 !important;
+  background: transparent !important;
+}
+
+/* Nav logo image sizing */
+nav .navbar-brand img {
+  max-height: 28px !important;
+}
+
+/* ── Hero / Intro section ── */
+.hero {
+  background: #F8F8F6 !important;
+  padding: 48px 0 32px !important;
+}
+
+.hero .title,
+.hero-body .title {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  color: #1A1E23 !important;
+  line-height: 1.3 !important;
+}
+
+.hero .subtitle,
+.hero-body .subtitle {
+  font-size: 16px !important;
+  color: #50565E !important;
+  line-height: 1.65 !important;
+  margin-top: 8px !important;
+}
+
+/* ── "All systems operational" notification ── */
+.hero-body .notification,
+.notification {
+  background: #FFFFFF !important;
+  border: 1px solid #E2E2DE !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  padding: 16px 20px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+.notification.is-success {
+  color: #0D6B64 !important;
+}
+.notification.is-danger {
+  color: #b91c1c !important;
+}
+
+/* ── Section headings ── */
+h1 {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  color: #1A1E23 !important;
+}
+
+h2, .content h2 {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  color: #1A1E23 !important;
+  margin-top: 32px !important;
+  margin-bottom: 16px !important;
+}
+
+/* ── Tabs (24h, 7d, 30d, etc.) ── */
+.tabs {
+  margin-bottom: 16px !important;
+}
+.tabs ul {
+  border-bottom: 1px solid #E2E2DE !important;
+}
+.tabs a {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #50565E !important;
+  border-bottom: 2px solid transparent !important;
+  padding: 8px 16px !important;
+  transition: color 0.15s, border-color 0.15s !important;
+}
+.tabs a:hover {
+  color: #0D6B64 !important;
+  border-bottom-color: #c8c8c4 !important;
+}
+.tabs a.is-active,
+.tabs li.is-active a {
+  color: #0D6B64 !important;
+  border-bottom-color: #0D6B64 !important;
+  font-weight: 600 !important;
+}
+
+/* ── Service cards (articles) ── */
+article,
+.card {
+  background: #FFFFFF !important;
+  border: 1px solid #E2E2DE !important;
+  border-radius: 12px !important;
+  padding: 20px 24px !important;
+  box-shadow: none !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+  margin-bottom: 12px !important;
+}
+article:hover,
+.card:hover {
+  border-color: #c8c8c4 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Service name */
+article a,
+.card a {
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  letter-spacing: -0.01em !important;
+  color: #0D6B64 !important;
+}
+
+/* Uptime / response time text */
+article p,
+article span,
+.card p,
+.card span {
+  font-size: 14px !important;
+  color: #50565E !important;
+  line-height: 1.6 !important;
+}
+
+/* ── Status badges ── */
+.tag.is-success {
+  background-color: #EAF4F3 !important;
+  border: 1px solid #c2e0dd !important;
+  color: #0D6B64 !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+.tag.is-danger {
+  background-color: #fef2f2 !important;
+  border: 1px solid #fecaca !important;
+  color: #b91c1c !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+.tag.is-warning {
+  background-color: #fffbeb !important;
+  border: 1px solid #fde68a !important;
+  color: #92400e !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+/* ── Buttons ── */
+.button.is-primary,
+.button.is-success {
+  background-color: #0D6B64 !important;
+  border-color: #0D6B64 !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #fff !important;
+}
+.button.is-primary:hover,
+.button.is-success:hover {
+  background-color: #0a5650 !important;
+  border-color: #0a5650 !important;
+}
+
+/* ── Box / Card (Bulma) ── */
+.box {
+  box-shadow: none !important;
+  border: 1px solid #E2E2DE !important;
+  border-radius: 12px !important;
+  background: #FFFFFF !important;
+}
+
+/* ── Response time graphs ── */
+svg text {
+  fill: #50565E !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+}
+svg .ct-grid {
+  stroke: #E2E2DE !important;
+  stroke-dasharray: 4px !important;
+}
+svg .ct-series-a .ct-area {
+  fill: #0D6B64 !important;
+  fill-opacity: 0.08 !important;
+}
+svg .ct-series-a .ct-line {
+  stroke: #0D6B64 !important;
+  stroke-width: 2px !important;
+}
+svg .ct-series-a .ct-point {
+  stroke: #0D6B64 !important;
+  stroke-width: 6px !important;
+}
+svg .ct-series-a .ct-bar {
+  stroke: #0D6B64 !important;
+  stroke-width: 10px !important;
+}
+
+/* ── Footer ── */
+footer {
+  color: #50565E !important;
+  font-size: 13px !important;
+  padding: 24px 0 !important;
+}
+footer a {
+  color: #0D6B64 !important;
+}
+
+/* ── Responsive max-width ── */
+.container {
+  max-width: 1080px !important;
+}
+
+/* ── Misc Bulma overrides ── */
+.section {
+  padding: 32px 24px !important;
+}
+.columns {
+  margin: 0 !important;
+}
