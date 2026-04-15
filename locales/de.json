@@ -1,13 +1,13 @@
 {
   "page": {
     "title": "Lina — Getrennt gemeinsam für euer Kind",
-    "description": "Getrennt gemeinsam für euer Kind — Lina hilft beiden Elternteilen, den Alltag über zwei Haushalte zu koordinieren: Betreuungsplan, Nachrichten, Kinderinformationen und gemeinsames Album."
+    "description": "Getrennt gemeinsam für euer Kind — Lina hilft beiden Elternteilen, den Alltag über zwei Haushalte zu koordinieren: Umgangsplan, Nachrichten, Kinderinformationen und gemeinsames Album."
   },
   "nav": {
     "appstore": "App Store",
     "appstoreAria": "Im App Store laden",
     "langLabel": "Sprache",
-    "careSchedule": "Betreuungsplan",
+    "careSchedule": "Umgangsplan",
     "careAgreement": "Betreuungsvereinbarung",
     "faq": "FAQ"
   },
@@ -19,10 +19,10 @@
     "ctaPlayAria": "Bei Google Play laden"
   },
   "csSection": {
-    "label": "Betreuungsplan",
-    "title": "Betreuungsplan gemeinsam gestalten",
-    "description": "Der interaktive Betreuungsplan von Lina ermöglicht es beiden Elternteilen, die Aufteilung der Zeit über die Wochen zu planen und zu visualisieren. Sieh Tagesaufteilungen, Wochenendmuster und Übergabehäufigkeiten — in einer übersichtlichen Ansicht.",
-    "cta": "Betreuungsplan öffnen"
+    "label": "Umgangsplan",
+    "title": "Umgangsplan gemeinsam gestalten",
+    "description": "Der interaktive Umgangsplan von Lina ermöglicht es beiden Elternteilen, die Aufteilung der Zeit über die Wochen zu planen und zu visualisieren. Sieh Tagesaufteilungen, Wochenendmuster und Übergabehäufigkeiten — in einer übersichtlichen Ansicht.",
+    "cta": "Umgangsplan öffnen"
   },
   "how": {
     "label": "So funktioniert es",
@@ -55,7 +55,7 @@
       "title": "Gemeinsames Album",
       "description": "Ein privates Album, in dem beide Elternteile Fotos teilen können. Was in einem Haushalt passiert, ist in beiden sichtbar."
     },
-    "more": "Ebenfalls enthalten: Kontakte, Ausstattungslisten, Kinderinformationen und Betreuungsplan — damit beide Elternteile haben, was sie brauchen, wo auch immer sich das Kind befindet."
+    "more": "Ebenfalls enthalten: Kontakte, Ausstattungslisten, Kinderinformationen und Umgangsplan — damit beide Elternteile haben, was sie brauchen, wo auch immer sich das Kind befindet."
   },
   "tools": {
     "label": "Mehr in Lina",
@@ -73,7 +73,7 @@
       "description": "Geburtsdatum, Allergien, Medikamente, Schuhgröße — alle wichtigen Details an einem Ort, immer zugänglich."
     },
     "schedule": {
-      "title": "Betreuungsplan",
+      "title": "Umgangsplan",
       "description": "Erstelle eine visuelle Übersicht über die Zeitaufteilung zwischen den Haushalten. Den gesamten Plan auf einen Blick sehen, Woche für Woche."
     },
     "control": {
@@ -119,7 +119,7 @@
     "privacy": "Datenschutz",
     "contact": "Kontakt",
     "familievern": "Fachkräfte",
-    "careSchedule": "Betreuungsplan",
+    "careSchedule": "Umgangsplan",
     "careAgreement": "Betreuungsvereinbarung",
     "faq": "FAQ",
     "copy": "© 2026 Lina. Alle Rechte vorbehalten.",
@@ -148,7 +148,7 @@
       "f3": "Nachrichten",
       "f4": "Kinderinformationen und Kontakte",
       "f5": "Ausstattungslisten",
-      "f6": "Betreuungsplan"
+      "f6": "Umgangsplan"
     },
     "plus": {
       "badge": "Empfohlen",
@@ -194,9 +194,9 @@
     "successDescription": "Wir melden uns so bald wie möglich."
   },
   "cs": {
-    "pageTitle": "Betreuungsplan erstellen — kostenlos | Lina",
-    "pageDesc": "Betreuungsplan für getrennte Eltern kostenlos erstellen. Tage zuweisen, Wochenaufteilung sehen und als PDF exportieren — direkt im Browser, ohne Anmeldung.",
-    "heading": "Betreuungsplan",
+    "pageTitle": "Umgangsplan erstellen — kostenlos | Lina",
+    "pageDesc": "Umgangsplan für getrennte Eltern kostenlos erstellen. Tage zuweisen, Wochenaufteilung sehen und als PDF exportieren — direkt im Browser, ohne Anmeldung.",
+    "heading": "Umgangsplan",
     "labelParentA": "Name Elternteil A",
     "labelParentB": "Name Elternteil B",
     "labelStartDate": "Startdatum",
@@ -235,7 +235,7 @@
     "exportDesc": "Den Plan drucken oder als PDF speichern."
   },
   "nav_home": "Startseite",
-  "nav_care_schedule": "Betreuungsplan",
+  "nav_care_schedule": "Umgangsplan",
   "nav_download": "Herunterladen",
   "familievern": {
     "pageTitle": "Lina für Fachkräfte — Co-Parenting App für Beratungsstellen | Lina",
@@ -313,7 +313,7 @@
         "description": "Ein klarer Überblick darüber, was das Kind in jedem Haushalt benötigt, reduziert Rückfragen und Missverständnisse rund um praktische Details."
       },
       "schedule": {
-        "title": "Betreuungsplan",
+        "title": "Umgangsplan",
         "description": "Die Betreuungsregelung wird in einer gemeinsamen Ansicht angezeigt. Weniger Diskussionen darüber, bei wem das Kind wann war."
       },
       "agreement": {
@@ -347,13 +347,13 @@
       "label2": "Themenbereich-Detail",
       "label3": "Kinderinformationen",
       "label4": "Gemeinsames Album",
-      "label5": "Betreuungsplan"
+      "label5": "Umgangsplan"
     },
     "csPromo": {
       "label": "Werkzeuge",
-      "title": "Ein Betreuungsplan, den Eltern gemeinsam nutzen können",
-      "description": "Lina enthält einen interaktiven Betreuungsplan, der zeigt, wie Zeit Woche für Woche aufgeteilt wird. Das Werkzeug kann von Eltern allein genutzt werden oder als Ausgangspunkt für Gespräche über Betreuungsregelungen dienen.",
-      "cta": "Betreuungsplan öffnen"
+      "title": "Ein Umgangsplan, den Eltern gemeinsam nutzen können",
+      "description": "Lina enthält einen interaktiven Umgangsplan, der zeigt, wie Zeit Woche für Woche aufgeteilt wird. Das Werkzeug kann von Eltern allein genutzt werden oder als Ausgangspunkt für Gespräche über Betreuungsregelungen dienen.",
+      "cta": "Umgangsplan öffnen"
     },
     "recommend": {
       "label": "Lina empfehlen",
@@ -481,38 +481,38 @@
     "promoTitle": "Nach der Vereinbarung — der Alltag",
     "promoDesc": "Sobald die Elternvereinbarung steht, beginnt der Alltag. Lina hilft Eltern bei allem, was folgt: Nachrichten, Kinderinformationen, Fotos und Ausstattungslisten — alles an einem gemeinsamen Ort in zwei Haushalten.",
     "promoCta": "Lina herunterladen",
-    "csPromoLabel": "Betreuungsplan",
+    "csPromoLabel": "Umgangsplan",
     "csPromoTitle": "Den Plan Woche für Woche gestalten",
-    "csPromoDesc": "Sobald die Vereinbarung steht, hilft der interaktive Betreuungsplan von Lina dabei, den Alltag zu planen und zu visualisieren. Sieh Tagesaufteilungen, Wochenendmuster und Übergabehäufigkeiten — in einer übersichtlichen Ansicht.",
-    "csPromoCta": "Betreuungsplan ausprobieren"
+    "csPromoDesc": "Sobald die Vereinbarung steht, hilft der interaktive Umgangsplan von Lina dabei, den Alltag zu planen und zu visualisieren. Sieh Tagesaufteilungen, Wochenendmuster und Übergabehäufigkeiten — in einer übersichtlichen Ansicht.",
+    "csPromoCta": "Umgangsplan ausprobieren"
   },
   "faq": {
     "pageTitle": "Häufig gestellte Fragen — Lina",
-    "pageDesc": "Antworten auf häufige Fragen zu Lina — der Co-Parenting-App. Finde Antworten zu Datenschutz, Konto, Betreuungsplan und Betreuungsvereinbarung.",
+    "pageDesc": "Antworten auf häufige Fragen zu Lina — der Co-Parenting-App. Finde Antworten zu Datenschutz, Konto, Umgangsplan und Betreuungsvereinbarung.",
     "heroLabel": "FAQ",
     "heroTitle": "Häufig gestellte Fragen",
-    "heroDesc": "Finde Antworten auf die häufigsten Fragen zu Lina, dem Betreuungsplan und der Betreuungsvereinbarung.",
+    "heroDesc": "Finde Antworten auf die häufigsten Fragen zu Lina, dem Umgangsplan und der Betreuungsvereinbarung.",
     "cat1Title": "Über Lina",
     "cat1q1": "Was ist Lina?",
-    "cat1a1": "Lina bringt die praktische Seite der geteilten Elternschaft in einer App zusammen — Nachrichten, Kinderinformationen, Fotos, Kontakte, Ausstattungslisten und einen Betreuungsplan — zugänglich für beide Haushalte.",
+    "cat1a1": "Lina bringt die praktische Seite der geteilten Elternschaft in einer App zusammen — Nachrichten, Kinderinformationen, Fotos, Kontakte, Ausstattungslisten und einen Umgangsplan — zugänglich für beide Haushalte.",
     "cat1q2": "Für wen ist Lina gedacht?",
     "cat1a2": "Lina ist für Eltern gemacht, die die Betreuung eines Kindes zwischen zwei Haushalten teilen. Die App funktioniert am besten, wenn die grundlegende Co-Parenting-Beziehung funktioniert, aber mehr Struktur und Planbarkeit benötigt wird.",
     "cat1q3": "Ist Lina kostenlos?",
     "cat1a3": "Ja, Lina kann kostenlos heruntergeladen und genutzt werden. Es ist keine Zahlung erforderlich, um ein Konto zu erstellen oder das andere Elternteil einzuladen.",
     "cat1q4": "Welche Geräte unterstützt Lina?",
-    "cat1a4": "Lina ist als App für iPhone und Android verfügbar. Der Betreuungsplan auf getlina.app kann im Browser genutzt werden, ohne die App herunterzuladen.",
+    "cat1a4": "Lina ist als App für iPhone und Android verfügbar. Der Umgangsplan auf getlina.app kann im Browser genutzt werden, ohne die App herunterzuladen.",
     "cat1q5": "Müssen beide Elternteile die App nutzen?",
-    "cat1a5": "Um gemeinsame Funktionen wie Nachrichten, Fotos und Kinderinformationen nutzen zu können, benötigen beide Elternteile ein Konto. Den Betreuungsplan kann ein Elternteil allein verwenden.",
-    "cat2Title": "Betreuungsplan",
-    "cat2q1": "Was ist der Betreuungsplan in Lina?",
-    "cat2a1": "Der Betreuungsplan ist ein kostenloses Werkzeug, das du direkt im Browser nutzen kannst. Klick auf Tage, um sie einem Elternteil zuzuweisen, und sieh die Zusammenfassung sofort aktualisieren. Der Plan kann als PDF exportiert werden.",
-    "cat2q2": "Brauche ich ein Konto, um den Betreuungsplan zu nutzen?",
-    "cat2a2": "Nein, den Betreuungsplan kannst du ohne Konto direkt im Browser nutzen. Die App muss nur heruntergeladen werden, wenn du gemeinsame Funktionen wie Nachrichten und Kinderinformationen nutzen möchtest.",
-    "cat2q3": "Kann ich den Betreuungsplan exportieren?",
-    "cat2a3": "Ja, du kannst den Betreuungsplan direkt aus dem Werkzeug als PDF exportieren. Das PDF enthält eine visuelle Übersicht der Aufteilung und kann als Anhang zu einer Betreuungsvereinbarung verwendet werden.",
-    "cat2q4": "Kann ich Ferien und besondere Zeiträume im Betreuungsplan planen?",
-    "cat2a4": "Ja, der Betreuungsplan unterstützt flexible Woche-für-Woche-Planung, sodass es einfach ist, Ferienwochen und besondere Zeiträume hinzuzufügen.",
-    "cat2a4link": "Betreuungsplan hier ausprobieren",
+    "cat1a5": "Um gemeinsame Funktionen wie Nachrichten, Fotos und Kinderinformationen nutzen zu können, benötigen beide Elternteile ein Konto. Den Umgangsplan kann ein Elternteil allein verwenden.",
+    "cat2Title": "Umgangsplan",
+    "cat2q1": "Was ist der Umgangsplan in Lina?",
+    "cat2a1": "Der Umgangsplan ist ein kostenloses Werkzeug, das du direkt im Browser nutzen kannst. Klick auf Tage, um sie einem Elternteil zuzuweisen, und sieh die Zusammenfassung sofort aktualisieren. Der Plan kann als PDF exportiert werden.",
+    "cat2q2": "Brauche ich ein Konto, um den Umgangsplan zu nutzen?",
+    "cat2a2": "Nein, den Umgangsplan kannst du ohne Konto direkt im Browser nutzen. Die App muss nur heruntergeladen werden, wenn du gemeinsame Funktionen wie Nachrichten und Kinderinformationen nutzen möchtest.",
+    "cat2q3": "Kann ich den Umgangsplan exportieren?",
+    "cat2a3": "Ja, du kannst den Umgangsplan direkt aus dem Werkzeug als PDF exportieren. Das PDF enthält eine visuelle Übersicht der Aufteilung und kann als Anhang zu einer Betreuungsvereinbarung verwendet werden.",
+    "cat2q4": "Kann ich Ferien und besondere Zeiträume im Umgangsplan planen?",
+    "cat2a4": "Ja, der Umgangsplan unterstützt flexible Woche-für-Woche-Planung, sodass es einfach ist, Ferienwochen und besondere Zeiträume hinzuzufügen.",
+    "cat2a4link": "Umgangsplan hier ausprobieren",
     "cat3Title": "Datenschutz",
     "cat3q1": "Wer kann die Informationen des Kindes sehen?",
     "cat3a1": "Nur die beiden Elternteile, die in Lina mit dem Kind verbunden sind, haben Zugang zu den Informationen des Kindes. Keine anderen Nutzer oder Lina selbst hat Zugang zu den Inhalten, die ihr teilt.",
@@ -589,10 +589,10 @@
       "resolution": "Mit Lina: Fotos kommen ins gemeinsame Album. Momente werden automatisch geteilt — unabhängig davon, in welchem Haushalt sich das Kind befindet."
     },
     "s5": {
-      "label": "Betreuungsplan",
+      "label": "Umgangsplan",
       "title": "Die Übergabeverwechslung in einer Ferienwoche",
       "situation": "Ferienwochen ändern den regulären Plan. Beide Elternteile erinnern sich an eine andere Version des Plans, und das Kind gerät in die Mitte.",
-      "resolution": "Mit Lina: Der Betreuungsplan zeigt beiden Elternteilen dieselbe Übersicht. Änderungen sind sofort sichtbar, so gibt es nur eine Wahrheit."
+      "resolution": "Mit Lina: Der Umgangsplan zeigt beiden Elternteilen dieselbe Übersicht. Änderungen sind sofort sichtbar, so gibt es nur eine Wahrheit."
     },
     "s6": {
       "label": "Kontakte",
@@ -635,7 +635,7 @@
     "disclaimer": "Diese Zusammenfassung dient nur als Orientierungshilfe. Im Falle von Abweichungen gilt die englische Fassung der oben stehenden Datenschutzerklärung.",
     "p1": "Lina ist mit Datenschutz als zentralem Grundsatz entwickelt.",
     "p2": "Wir verarbeiten nur personenbezogene Daten, die zur Erbringung des Dienstes und zur Unterstützung der Zusammenarbeit zwischen Eltern notwendig sind. Wir verwenden keine Werbung, kein Tracking und keine Marketing-Cookies.",
-    "p3": "Es wird nur unbedingt notwendiger lokaler Speicher verwendet, um wesentliche Einstellungen zu speichern, etwa Präferenzen des Betreuungsplans. Die Website nutzt Cloudflare Web Analytics für anonyme Seitenaufrufstatistiken — keine Cookies, keine personenbezogenen Daten, kein seitenübergreifendes Tracking.",
+    "p3": "Es wird nur unbedingt notwendiger lokaler Speicher verwendet, um wesentliche Einstellungen zu speichern, etwa Präferenzen des Umgangsplans. Die Website nutzt Cloudflare Web Analytics für anonyme Seitenaufrufstatistiken — keine Cookies, keine personenbezogenen Daten, kein seitenübergreifendes Tracking.",
     "p4": "Wenn ein Konto gelöscht wird, werden die personenbezogenen Kontodaten entfernt. Geteilte Inhalte können dem anderen Elternteil weiterhin zugänglich sein, da sie im Rahmen des Dienstes gemeinsam genutzt werden können.",
     "p5": "Alle kindbezogenen Daten werden von Eltern oder gesetzlichen Vormündern bereitgestellt und verwaltet.",
     "p6": "Es werden keine personenbezogenen Daten für kommerzielle Zwecke verkauft oder weitergegeben.",
@@ -676,7 +676,7 @@
       },
       {
         "q": "Ist Lina kostenlos?",
-        "a": "Lina hat einen kostenlosen Plan mit bis zu 2 Themenbereichen, 30 Fotos, Nachrichten, Kinderinformationen, Kontakten, Ausstattungslisten und einem Betreuungsplan. Lina+ kostet 7,99 €/Monat und schaltet unbegrenzte Themenbereiche, ein größeres Album, Themenbereichssuche, Themenbereichsexport und wichtige Nachrichten frei. Ein Abonnement gilt für beide Elternteile."
+        "a": "Lina hat einen kostenlosen Plan mit bis zu 2 Themenbereichen, 30 Fotos, Nachrichten, Kinderinformationen, Kontakten, Ausstattungslisten und einem Umgangsplan. Lina+ kostet 7,99 €/Monat und schaltet unbegrenzte Themenbereiche, ein größeres Album, Themenbereichssuche, Themenbereichsexport und wichtige Nachrichten frei. Ein Abonnement gilt für beide Elternteile."
       },
       {
         "q": "Müssen beide Elternteile zahlen?",
@@ -701,8 +701,8 @@
         "a": "Ja, Lina kann kostenlos heruntergeladen und genutzt werden. Es ist keine Zahlung erforderlich, um ein Konto zu erstellen oder das andere Elternteil einzuladen."
       },
       {
-        "q": "Kann ich den Betreuungsplan exportieren?",
-        "a": "Ja, du kannst den Betreuungsplan direkt aus dem Werkzeug als PDF exportieren."
+        "q": "Kann ich den Umgangsplan exportieren?",
+        "a": "Ja, du kannst den Umgangsplan direkt aus dem Werkzeug als PDF exportieren."
       },
       {
         "q": "Wer kann die Informationen des Kindes sehen?",
@@ -715,16 +715,16 @@
     ],
     "csFaq": [
       {
-        "q": "Was ist ein Betreuungsplan?",
-        "a": "Ein Betreuungsplan ist eine visuelle Übersicht darüber, wie die Zeit eines Kindes Woche für Woche zwischen zwei Haushalten aufgeteilt wird."
+        "q": "Was ist ein Umgangsplan?",
+        "a": "Ein Umgangsplan ist eine visuelle Übersicht darüber, wie die Zeit eines Kindes Woche für Woche zwischen zwei Haushalten aufgeteilt wird."
       },
       {
         "q": "Brauche ich ein Konto?",
-        "a": "Nein, das Betreuungsplan-Werkzeug kann direkt im Browser ohne Konto genutzt werden."
+        "a": "Nein, das Umgangsplan-Werkzeug kann direkt im Browser ohne Konto genutzt werden."
       },
       {
         "q": "Kann ich den Plan exportieren?",
-        "a": "Ja, du kannst den Betreuungsplan als PDF exportieren."
+        "a": "Ja, du kannst den Umgangsplan als PDF exportieren."
       }
     ],
     "caFaq": [
@@ -756,7 +756,7 @@
       },
       {
         "q": "Was ist im kostenlosen Plan enthalten?",
-        "a": "Bis zu 2 Themenbereiche, 30 Fotos, Nachrichten, Kinderinformationen, Kontakte, Ausstattungslisten und ein Betreuungsplan."
+        "a": "Bis zu 2 Themenbereiche, 30 Fotos, Nachrichten, Kinderinformationen, Kontakte, Ausstattungslisten und ein Umgangsplan."
       }
     ],
     "article1": {
@@ -854,8 +854,8 @@
     "s6p2": "Es lohnt sich, das Modell mindestens einmal jährlich zu überprüfen — oder wenn sich die Lebensumstände der Familie wesentlich ändern, etwa durch eine neue Schule, einen Umzug oder ein Geschwisterkind.",
     "s6p3": "Das Wichtigste ist, dass das Kind Planungssicherheit erlebt, dass beide Elternteile erreichbar sind und dass praktische Details das Kind zwischen den Haushalten begleiten.",
     "ctaTitle": "Die Betreuungsaufteilung visualisieren",
-    "ctaDesc": "Mit dem Betreuungsplan von Lina klickst du die Tage ein und siehst, wie die Zeit Woche für Woche aufgeteilt wird — mit einer Zusammenfassung der Tagesaufteilung, Wochenendmuster und Übergabehäufigkeit.",
-    "ctaCta": "Betreuungsplan öffnen"
+    "ctaDesc": "Mit dem Umgangsplan von Lina klickst du die Tage ein und siehst, wie die Zeit Woche für Woche aufgeteilt wird — mit einer Zusammenfassung der Tagesaufteilung, Wochenendmuster und Übergabehäufigkeit.",
+    "ctaCta": "Umgangsplan öffnen"
   },
   "blog2": {
     "pageTitle": "Übergabetag — wie Übergaben leichter werden | Lina",
@@ -1089,7 +1089,7 @@
     "s5p3": "Jugendliche (ab 12 Jahren) wollen zunehmend mitentscheiden. Sie haben eigene soziale Leben und eigene Ansichten zur Betreuungsregelung. Ihnen ein Mitspracherecht zu geben — nicht die alleinige Entscheidung, aber eine Stimme — stärkt die Akzeptanz der Regelung und ihr Gefühl von Kontrolle über das eigene Leben.",
     "s6title": "Wie praktische Koordination das Wohlbefinden stützt",
     "s6p1": "Gute Alltagskoordination zwischen den Eltern hat direkte Auswirkungen auf das Kind. Wenn Übergaben reibungslos laufen, wenn beide Elternteile über denselben Stand informiert sind, wenn das Kind nicht zum Informationsträger gemacht wird, merkt das Kind das. Es muss nicht aufpassen, was es sagt. Es muss keine Seite wählen. Es kann einfach Kind sein.",
-    "s6p2": "Strukturierte Kommunikation — schriftlich, thematisch geordnet, verlässlich — senkt das Konfliktniveau. Gemeinsam zugängliche Informationen — Kinderarzt, Allergien, Medikamente, Ausstattung — reduzieren Rückfragen und Missverständnisse. Ein gemeinsamer Betreuungsplan, den beide kennen, gibt dem Kind die Vorhersehbarkeit, die es braucht.",
+    "s6p2": "Strukturierte Kommunikation — schriftlich, thematisch geordnet, verlässlich — senkt das Konfliktniveau. Gemeinsam zugängliche Informationen — Kinderarzt, Allergien, Medikamente, Ausstattung — reduzieren Rückfragen und Missverständnisse. Ein gemeinsamer Umgangsplan, den beide kennen, gibt dem Kind die Vorhersehbarkeit, die es braucht.",
     "s6p3": "Viele Familien, die mit schwierigen Trennungen begonnen haben, berichten, dass strukturierte Koordination über Zeit zu weniger Konflikt, mehr Verlässlichkeit und einem besseren Alltag für das Kind geführt hat. Der erste Schritt ist oft ein gemeinsames System, das beiden Elternteilen hilft, sachlich und informiert zu bleiben.",
     "ctaTitle": "Gemeinsam für das Kind — Koordination für beide Haushalte",
     "ctaDesc": "Wenn Eltern gut koordiniert sind, merkt das Kind es. Lina hilft, den Alltag an beiden Orten klar zu strukturieren — Betreuungszeiten, Nachrichten, Kindesinformationen, Ausstattung.",
@@ -1104,7 +1104,7 @@
       "equipment": "Ausstattungsliste",
       "contacts": "Kontakte",
       "childInfo": "Kinderinformationen",
-      "careSchedule": "Betreuungsplan"
+      "careSchedule": "Umgangsplan"
     }
   }
 }
