@@ -733,15 +733,28 @@ function localizeScreenshots(html, lang) {
   return processNonJsonLd(html, text => {
     for (const [from, to] of Object.entries(map)) {
       const toPath = base + to;
-      // Match original filename (first build pass, or EN locale not applied yet)
+      // Pass 1: match root filename in a single-value src= or srcset= attribute
       const fromPath = `/assets/images/${from}`;
       const esc = fromPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       text = text.replace(new RegExp(`((?:src|srcset)=")${esc}(")`, 'g'), `$1${toPath}$2`);
-      // Also match EN locale path (when buildRoot has already baked in EN screenshots)
+      // Pass 2: match EN locale path already baked in.
+      // Use a lookahead instead of a closing-quote match so the replacement works
+      // both in single-value attributes (src="...") and in multi-value srcset strings
+      // ("...500w.webp 500w, ...1000w.webp 1000w, ...webp 1170w").
       if (enMap[from]) {
-        const fromEn = enBase + enMap[from];
+        const enTo  = enMap[from];  // e.g. 'ThreadsScreenEN.webp'
+        const fromEn = enBase + enTo;
         const escEn  = fromEn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        text = text.replace(new RegExp(`((?:src|srcset)=")${escEn}(")`, 'g'), `$1${toPath}$2`);
+        text = text.replace(new RegExp(escEn + '(?=[ ,"])', 'g'), toPath);
+        // Also replace -500w and -1000w srcset variant paths derived from the same base name
+        if (from.endsWith('.webp')) {
+          for (const width of ['500w', '1000w']) {
+            const enVariant  = enBase + enTo.replace('.webp', `-${width}.webp`);
+            const toVariant  = toPath.replace('.webp', `-${width}.webp`);
+            const escVariant = enVariant.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            text = text.replace(new RegExp(escVariant + '(?=[ ,"])', 'g'), toVariant);
+          }
+        }
       }
     }
     // Fix type attribute on <source> elements that now reference a PNG file
