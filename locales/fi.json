@@ -834,6 +834,9 @@
     "ctaDesc": "Linan hoitoaikataulu antaa sinun klikata päivät ja nähdä, miten aika jakaantuu viikko viikolta — yhteenvetona päiväjako, viikonloppumalli ja vaihtojen määrä.",
     "ctaCta": "Avaa hoitoaikataulu"
   },
+  "blogShared": {
+    "relatedLabel": "Aiheeseen liittyvät artikkelit"
+  },
   "blogIndex": {
     "pageTitle": "Blogi — Lina",
     "pageDesc": "Käytännön tietoa asumisjärjestelyistä, sopimuksista ja arjen koordinoinnista vanhemmille, jotka jakavat huoltajuuden kahden kodin välillä.",

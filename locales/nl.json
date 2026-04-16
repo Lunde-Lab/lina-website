@@ -784,6 +784,9 @@
       "description": "Praktische gids voor de planning van de zomervakantie voor co-ouders."
     }
   },
+  "blogShared": {
+    "relatedLabel": "Gerelateerde artikelen"
+  },
   "blogIndex": {
     "pageTitle": "Blog — Lina",
     "pageDesc": "Praktische informatie over zorgverdeling, ouderschapsplannen en dagelijkse afstemming voor co-ouders die de zorg over twee huishoudens delen.",

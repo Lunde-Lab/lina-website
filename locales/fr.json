@@ -818,6 +818,9 @@
     "ctaDesc": "Le planning de garde de Lina vous permet de cliquer sur les jours et de voir comment le temps est divisé semaine par semaine — avec un résumé de la répartition des jours, des weekends et du nombre de transitions.",
     "ctaCta": "Ouvrir le planning de garde"
   },
+  "blogShared": {
+    "relatedLabel": "Articles connexes"
+  },
   "blogIndex": {
     "pageTitle": "Blog — Lina",
     "pageDesc": "Informations pratiques sur les modes de garde, les conventions et la coordination quotidienne pour les coparents partageant la garde entre deux foyers.",

@@ -796,6 +796,9 @@
       "description": "Kindeswohl getrennte Eltern — was Kinder nach der Trennung wirklich brauchen: Stabilität, Zugang zu beiden Elternteilen, Planungssicherheit. Was die Forschung zeigt."
     }
   },
+  "blogShared": {
+    "relatedLabel": "Verwandte Artikel"
+  },
   "blogIndex": {
     "pageTitle": "Blog — Lina",
     "pageDesc": "Praktische Informationen zu Betreuungsmodellen, Vereinbarungen und der Alltagskoordination für Eltern mit geteilter Betreuung über zwei Haushalte.",

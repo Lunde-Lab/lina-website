@@ -834,6 +834,9 @@
     "ctaDesc": "Linas samværsplan lar deg klikke inn dagene og se hvordan tiden fordeles uke for uke — med oppsummering av dagfordeling, helgemønstre og antall bytter.",
     "ctaCta": "Åpne samværsplanen"
   },
+  "blogShared": {
+    "relatedLabel": "Relaterte artikler"
+  },
   "blogIndex": {
     "pageTitle": "Blogg — Lina",
     "pageDesc": "Praktisk informasjon om samværsordninger, avtaler og hverdagskoordinering for foreldre som deler omsorg mellom to hjem.",

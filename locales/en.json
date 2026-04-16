@@ -794,6 +794,9 @@
     "ctaDesc": "Lina's care schedule lets you click in the days and see how time is divided week by week — with a summary of the day split, weekend patterns, and number of transitions.",
     "ctaCta": "Open the care schedule"
   },
+  "blogShared": {
+    "relatedLabel": "Related articles"
+  },
   "blogIndex": {
     "pageTitle": "Blog — Lina",
     "pageDesc": "Practical information about care arrangements, agreements, and everyday coordination for co-parents sharing care across two homes.",

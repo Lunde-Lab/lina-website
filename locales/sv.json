@@ -834,6 +834,9 @@
     "ctaDesc": "Linas omsorgsschema låter dig klicka i dagarna och se hur tiden fördelas vecka för vecka — med en sammanfattning av dagfördelning, helgmönster och antal byten.",
     "ctaCta": "Öppna omsorgsschemat"
   },
+  "blogShared": {
+    "relatedLabel": "Relaterade artiklar"
+  },
   "blogIndex": {
     "pageTitle": "Blogg — Lina",
     "pageDesc": "Praktisk information om umgängesscheman, avtal och vardagskoordinering för föräldrar som delar omsorg mellan två hem.",
