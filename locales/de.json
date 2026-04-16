@@ -837,6 +837,7 @@
     "pageTitle": "Umgangsregelungen im Überblick — Lina",
     "pageDesc": "Die häufigsten Betreuungsmodelle für Kinder mit zwei Haushalten — wöchentlicher Wechsel, 3-4-4-3, 2-2-5-5 und andere Modelle. Was funktioniert für welche Altersgruppe?",
     "label": "Geteilte Betreuung",
+    "date": "März 2026",
     "title": "Umgangsregelungen im Überblick",
     "intro": "Wenn Eltern die Betreuung eines Kindes teilen, ist das Betreuungsmodell das Erste, was geregelt werden muss. Wie wird die Zeit zwischen den Haushalten aufgeteilt? Welches Modell gibt Kindern die meiste Planungssicherheit? Hier ein Überblick über die häufigsten Modelle — was sie bedeuten und für welche Situationen sie geeignet sein können.",
     "s1title": "Wöchentlicher Wechsel (7-7)",
@@ -871,6 +872,7 @@
     "pageTitle": "Übergabetag — wie Übergaben leichter werden | Lina",
     "pageDesc": "Praktische Tipps für reibungslosere Übergaben zwischen den Haushalten — feste Routinen, neutrale Orte und was das Kind mitnehmen sollte.",
     "label": "Übergabe",
+    "date": "März 2026",
     "title": "Übergabetag — wie Übergaben leichter werden",
     "intro": "Für viele Kinder ist der Übergabetag der schwierigste Teil des Lebens mit zwei Haushalten. Nicht weil etwas nicht stimmt, sondern weil der Übergang Anpassung erfordert. Routinen, Umgebung und Regeln ändern sich — und das Kind muss sich jedes Mal neu einstellen. Hier sind praktische Tipps, wie Übergaben sicherer und vorhersehbarer werden.",
     "s1title": "Feste Zeiten und Orte",
@@ -905,6 +907,7 @@
     "pageTitle": "Was dein Kind in jedem Haushalt braucht — Lina",
     "pageDesc": "Eine praktische Checkliste für Co-Eltern — was in beiden Haushalten vorhanden sein sollte, was das Kind mitnehmen sollte und wie man den Überblick behält.",
     "label": "Ausstattung",
+    "date": "März 2026",
     "title": "Was dein Kind in jedem Haushalt braucht",
     "intro": "Wenn ein Kind zwei Haushalte hat, taucht immer wieder dieselbe Frage auf: Ist die Zahnbürste hier oder dort? Wo ist die Regenkleidung? Haben wir noch genug Windeln? Eine gut durchdachte Übersicht darüber, was wo sein sollte, spart Zeit, reduziert Frustration und gibt dem Kind einen ruhigeren Alltag.",
     "s1title": "Grundausstattung in beiden Haushalten",
@@ -939,6 +942,7 @@
     "pageTitle": "Wechselmodell vs. Residenzmodell — was ist der Unterschied? | Lina",
     "pageDesc": "Der Unterschied zwischen Wechselmodell und Residenzmodell — was es im Alltag, bei Entscheidungen und für die Rechte des Kindes bedeutet.",
     "label": "Wohnsitz",
+    "date": "März 2026",
     "title": "Wechselmodell vs. Residenzmodell — was ist der Unterschied?",
     "intro": "Wenn Eltern sich trennen, ist eine der ersten Fragen, wo das Kind wohnen wird. Die Antwort betrifft nicht nur die Anzahl der Nächte — sie beeinflusst, wer was entscheidet, wo das Kind gemeldet ist und wie der Alltag organisiert wird. Hier ein Überblick darüber, was Wechselmodell und Residenzmodell tatsächlich bedeuten.",
     "s1title": "Was ist das Wechselmodell?",
@@ -973,6 +977,7 @@
     "pageTitle": "Kommunikation zwischen Co-Eltern — Lina",
     "pageDesc": "Wie man die Kommunikation sachlich und strukturiert gestaltet, wenn man die Betreuung eines Kindes teilt — praktische Tipps zu Themenbereichen, schriftlichen Vereinbarungen und klaren Grenzen.",
     "label": "Kommunikation",
+    "date": "März 2026",
     "title": "Kommunikation zwischen Co-Eltern",
     "intro": "Für die meisten Co-Eltern ist die Kommunikation der schwierigste Teil. Nicht die großen Entscheidungen — sondern die alltäglichen Nachrichten. Wer holt ab? Was war beim Arzt? Braucht das Kind neue Regenkleidung? Wenn die Kommunikation funktioniert, funktioniert der Alltag. Wenn nicht, merkt das Kind es als Erstes.",
     "s1title": "Sachlich bleiben",
@@ -1003,7 +1008,7 @@
     "ctaDesc": "Lina hält Konversationen in getrennten Themenbereichen organisiert. Nachrichten können nicht bearbeitet oder gelöscht werden — damit beide Elternteile eine klare Aufzeichnung des Vereinbarten haben.",
     "ctaCta": "Lina herunterladen"
   },
-  "blog6": {
+  "blog7": {
     "pageTitle": "Sorgerecht nach Trennung — was Eltern wissen sollten | Lina",
     "pageDesc": "Sorgerecht nach Trennung — gemeinsames oder alleiniges Sorgerecht, was sich ändert und was bleibt. Praktische Orientierung für getrennte Eltern in Deutschland.",
     "label": "Sorgerecht",
@@ -1037,7 +1042,7 @@
     "ctaDesc": "Lina hilft beiden Elternteilen, Betreuungszeiten, Nachrichten und wichtige Kindesinformationen gemeinsam zu koordinieren — unabhängig von der Sorgerechtsregelung.",
     "ctaCta": "Lina herunterladen"
   },
-  "blog7": {
+  "blog8": {
     "pageTitle": "Welche App hilft getrennten Eltern im Alltag? | Lina",
     "pageDesc": "Welche Eltern App eignet sich bei Trennung? Was eine Co-Parenting App leisten sollte — und warum normale Messenger für getrennte Eltern oft nicht ausreichen.",
     "label": "Digitale Werkzeuge",
@@ -1071,7 +1076,7 @@
     "ctaDesc": "Lina bringt Betreuungszeiten, Nachrichten, Ausstattungslisten und Kindesinformationen an einen gemeinsamen Ort — für beide Elternteile.",
     "ctaCta": "Lina herunterladen"
   },
-  "blog8": {
+  "blog9": {
     "pageTitle": "Kindeswohl bei getrennten Eltern — worauf es ankommt | Lina",
     "pageDesc": "Kindeswohl getrennte Eltern — was Kinder nach der Trennung wirklich brauchen: Stabilität, Zugang zu beiden Elternteilen, Planungssicherheit. Was die Forschung zeigt.",
     "label": "Kindeswohl",
@@ -1109,6 +1114,7 @@
     "pageTitle": "Sommerferien mit zwei Zuhause — Lina",
     "pageDesc": "Praktischer Leitfaden für getrennte Eltern zur Ferienplanung — wie man die Sommerferien aufteilt, Reisen und Zustimmung regelt und dem Kind Sicherheit zwischen zwei Zuhause gibt.",
     "label": "Ferien",
+    "date": "April 2026",
     "title": "Sommerferien mit zwei Zuhause",
     "intro": "Der Sommer ist die längste Zeit im Jahr, in der die Alltagsroutinen pausieren. Für getrennte Eltern bedeutet das längere Phasen weg von einem Zuhause, Reisepläne über Grenzen hinweg und Entscheidungen, die Monate im Voraus halten müssen. Der erste Sommer nach einer Trennung ist oft der schwierigste — aber die Muster, die Sie jetzt setzen, begleiten jeden Sommer danach.",
     "s1title": "Warum Ferienplanung anders ist",
