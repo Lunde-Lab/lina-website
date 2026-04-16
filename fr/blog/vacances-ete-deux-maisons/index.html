@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fr" data-i18n-title="blog6.pageTitle" data-i18n-desc="blog6.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/summer-holidays/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/blog/summer-holidays/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/sommerferie-to-hjem/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/sommarlov-tva-hem/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/sommerferie-to-hjem/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/" />
+  <link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/" />
+  <link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/zomervakantie-twee-huizen/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Les vacances d'été dans deux foyers — Lina</title>
+  <meta name="description" content="Guide pratique pour les parents séparés sur la planification des vacances d'été — comment répartir les vacances, gérer les voyages et le consentement, et offrir de la stabilité à l'enfant entre deux foyers." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://getlina.app/fr/blog/vacances-ete-deux-maisons/" />
+  <meta property="og:title" content="Les vacances d'été dans deux foyers — Lina" />
+  <meta property="og:description" content="Guide pratique pour les parents séparés sur la planification des vacances d'été — comment répartir les vacances, gérer les voyages et le consentement, et offrir de la stabilité à l'enfant entre deux foyers." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Les vacances d'été dans deux foyers — Lina" />
+  <meta name="twitter:description" content="Guide pratique pour les parents séparés sur la planification des vacances d'été — comment répartir les vacances, gérer les voyages et le consentement, et offrir de la stabilité à l'enfant entre deux foyers." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 120px;
+    }
+
+    .footer-col-heading {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .footer-col a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav {
+        gap: 32px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #1a1e23;
+      color: #fff;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Les vacances d'été dans deux foyers",
+  "description": "Guide pratique pour la planification des vacances d'été pour les parents séparés.",
+  "datePublished": "2026-04-16",
+  "dateModified": "2026-04-16",
+  "author": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getlina.app/assets/logos/Logomark_1.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://getlina.app/fr/blog/vacances-ete-deux-maisons/"
+  },
+  "image": "https://getlina.app/assets/og-image.png"
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getlina.app/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://getlina.app/fr/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Les vacances d'été dans deux foyers"
+    }
+  ]
+}
+</script>
+  <script id="lina-lang-redirect">(function () {
+  var K = 'lina_lang';
+  // Already on a non-English locale page — nothing to do
+  if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
+  var s; try { s = localStorage.getItem(K); } catch (e) {}
+  // User explicitly chose English — stay
+  if (s === 'en') return;
+  // User previously chose a non-English language — redirect to same path
+  if (s) { location.replace('/' + s + location.pathname); return; }
+  // First visit: auto-detect from browser language list
+  var M = {nb:'no',nn:'no',no:'no',sv:'sv',da:'da',fi:'fi',de:'de',nl:'nl',fr:'fr'};
+  var ls = navigator.languages ? [].slice.call(navigator.languages) : [navigator.language || ''];
+  for (var i = 0; i < ls.length; i++) {
+    var l = M[(ls[i] || '').toLowerCase().split('-')[0]];
+    if (l) { location.replace('/' + l + '/'); return; }
+  }
+}());</script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/fr/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">FR</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/blog/summer-holidays/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/no/blog/sommerferie-to-hjem/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/sv/blog/sommarlov-tva-hem/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/blog/sommerferie-to-hjem/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/kesaloma-kahdessa-kodissa/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/blog/sommerferien-zwei-zuhause/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/blog/zomervakantie-twee-huizen/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option active" href="/fr/blog/vacances-ete-deux-maisons/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog6.label">Vacances</span>
+
+      <h1 data-i18n="blog6.title">Les vacances d'été dans deux foyers</h1>
+
+      <p class="article-lead" data-i18n="blog6.intro">L'été est la plus longue période de l'année où les routines quotidiennes s'arrêtent. Pour les parents séparés qui partagent la garde, cela signifie de plus longues périodes loin d'un foyer, des projets de voyage au-delà des frontières et des décisions qui doivent tenir pendant des mois. Le premier été après une séparation est souvent le plus difficile — mais les habitudes que vous établissez maintenant vous accompagneront chaque été suivant.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s1title">Pourquoi la planification estivale est différente</h2>
+        <p data-i18n="blog6.s1p1">Les arrangements quotidiens et hebdomadaires sont construits autour de l'école, du travail et des routines proches. L'été brise la plupart de tout cela — les écoles ferment pendant plusieurs semaines, les deux parents prennent généralement des vacances, les grands-parents voyagent et les colonies de vacances se remplissent tôt.</p>
+        <p data-i18n="blog6.s1p2">Le résultat est que le calendrier de garde habituel passe rarement juillet et août sans changements. La plupart des familles conviennent d'un arrangement estival séparé chaque année, documenté à l'avance.</p>
+        <p data-i18n="blog6.s1p3">Traitez le plan d'été comme un accord à part entière, pas comme une variante du calendrier hebdomadaire. Il a besoin de ses propres dates, de ses propres transitions et de sa propre version écrite à laquelle les deux parents peuvent se référer.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s2title">Commencez plus tôt que nécessaire</h2>
+        <p data-i18n="blog6.s2p1">Quand un parent pose la question de l'été fin mai, c'est souvent trop tard. Les prix des billets d'avion ont augmenté, les colonies sont complètes et les grands-parents ont fait leurs propres plans. Les semaines de vacances de l'autre parent sont peut-être déjà fixées au travail.</p>
+        <p data-i18n="blog6.s2p2">Une règle raisonnable : prenez les décisions principales avant avril. Cela signifie déterminer quelles semaines chaque parent aura l'enfant, si des voyages à l'étranger sont prévus et si des colonies ou des stages doivent être réservés.</p>
+        <p data-i18n="blog6.s2p3">Cela ne signifie pas que chaque jour doit être planifié en avril. La flexibilité est bienvenue — mais les grands blocs doivent être convenus tôt. De petits ajustements en juin sont bien plus faciles que de construire tout le plan à partir de zéro à ce moment-là.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s3title">Façons de répartir l'été</h2>
+        <p data-i18n="blog6.s3p1">Diviser l'été en deux est le plus simple — chaque parent a la moitié des vacances en un bloc continu. Cela fonctionne bien quand les deux parents veulent des voyages plus longs et que l'enfant est assez grand pour une longue période loin de chaque foyer. Des blocs alternés de deux semaines conviennent souvent mieux aux jeunes enfants, et aux parents qui vivent assez près pour que le contact pendant chaque bloc soit facile.</p>
+        <p data-i18n="blog6.s3p2">L'alternance d'étés complets est utilisée par les parents qui vivent loin l'un de l'autre — dans des pays différents ou des villes avec de longs temps de trajet. Un parent a tout l'été une année, l'autre l'année suivante. Le parent sans temps estival obtient généralement une part plus grande d'une autre période de vacances en compensation.</p>
+        <p data-i18n="blog6.s3p3">Pour les jours fériés qui tombent pendant les vacances d'été — fête nationale, ponts, jours fériés — beaucoup de familles alternent d'année en année. Le parent A a la fête nationale les années impaires, le parent B les années paires. Notez-le par écrit, pour que la question ne se repose plus.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s4title">Voyages, passeports et consentement</h2>
+        <p data-i18n="blog6.s4p1">Si l'un des parents prévoit de voyager à l'étranger avec l'enfant, un consentement écrit de l'autre parent est généralement requis — par les compagnies aériennes, par les autorités frontalières et, dans certains cas, par le pays de destination. Les exigences varient, alors vérifiez ce que les pays concernés demandent.</p>
+        <p data-i18n="blog6.s4p2">Sachez qui détient le passeport de l'enfant et vérifiez qu'il est valide pour le voyage — certains pays exigent six mois de validité après la date de retour. Une courte lettre signée du parent qui ne voyage pas, avec les dates, la destination et les informations de l'enfant, prévient les problèmes à l'enregistrement. Certaines compagnies demandent une version notariée ; d'autres acceptent un scan signé. Demandez avant le voyage, pas à la porte d'embarquement.</p>
+        <p data-i18n="blog6.s4p3">Si vous anticipez des difficultés pour obtenir le consentement, réglez la question bien à l'avance — pas la veille du départ. Attendre la dernière minute transforme une question administrative en conflit.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s5title">Ce dont l'enfant a besoin pendant la transition</h2>
+        <p data-i18n="blog6.s5p1">Les blocs estivaux plus longs peuvent être plus difficiles pour les enfants que les changements hebdomadaires habituels. Ils sont éloignés d'un foyer plus longtemps, les routines changent et les amis peuvent être à un endroit mais pas à l'autre. L'enfant devrait connaître le plan — pas chaque détail, mais la forme de l'été. L'incertitude est plus difficile pour la plupart des enfants qu'un plan qu'ils n'adorent pas.</p>
+        <p data-i18n="blog6.s5p2">L'enfant n'a pas besoin de choisir. Poser des questions comme « tu veux être chez maman ou chez papa » le met dans une position impossible. Les parents font le plan ; l'enfant est informé. Laissez des choses voyager avec l'enfant — une peluche préférée, un livre, un chargeur. De petits objets qui créent de la continuité rendent les longues périodes plus faciles.</p>
+        <p data-i18n="blog6.s5p3">Gardez les transitions calmes. Le jour de la transition vers un bloc de deux semaines n'est pas le moment pour de longues conversations sur les règles ou les attentes. Cela peut attendre un jour ou deux.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s6title">Quand vous ne parvenez pas à vous mettre d'accord</h2>
+        <p data-i18n="blog6.s6p1">L'été est souvent le moment où les désaccords apparaissent. Un parent veut un voyage que l'autre n'approuve pas. Les semaines de vacances se chevauchent au travail. Une visite aux grands-parents ne fonctionne qu'une semaine précise. Mettez la proposition par écrit — des dates précises, un plan précis. Il est plus difficile de discuter de manière constructive à l'oral que quand les deux parents peuvent regarder la même version écrite.</p>
+        <p data-i18n="blog6.s6p2">Proposez des alternatives, pas seulement des objections. « La semaine 28 ne me convient pas, mais la semaine 26 ou 29 oui » est plus facile à répondre que « ça ne marche pas pour moi. » Si la discussion directe bloque, les services de médiation familiale proposent exactement cela — souvent quelques séances ciblées sur un seul accord pratique, comme l'été.</p>
+        <p data-i18n="blog6.s6p3">Une fois l'accord atteint, mettez-le par écrit. Dates, qui a l'enfant quand, détails du voyage, horaires et lieux de transition. Un résumé écrit auquel les deux parents peuvent se référer évite de renégocier en juin quand quelqu'un se souvient d'une autre version.</p>
+      </div>
+
+
+      <section style="max-width: 640px; margin: 48px auto 0; padding: 0 24px;">
+        <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 12px;">Related articles</p>
+        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+    <li><a href="/fr/blog/jour-de-transition/" style="color: var(--primary); font-weight: 500;">Handover day — how to make transitions easier</a></li>
+    <li><a href="/fr/blog/modes-de-garde/" style="color: var(--primary); font-weight: 500;">Care arrangements explained</a></li>
+        </ul>
+      </section>
+      <div class="article-cta">
+        <h2 data-i18n="blog6.ctaTitle">Planifiez l'été ensemble</h2>
+        <p data-i18n="blog6.ctaDesc">Lina rassemble le calendrier de garde, les messages et les informations de l'enfant en un seul endroit partagé — pour que les deux parents aient la même vue d'ensemble du plan d'été, bien avant l'arrivée du mois de juin.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Télécharger sur l'App Store" data-i18n-aria="nav.appstoreAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Télécharger sur l'App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Disponible sur Google Play" data-i18n-aria="hero.ctaPlayAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Disponible sur Google Play</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupProduct">Produit</span>
+          <a href="/fr/care-schedule/" data-i18n="footer.careSchedule">Planning de garde</a>
+          <a href="/fr/care-agreement/" data-i18n="footer.careAgreement">Convention parentale</a>
+          <a href="/fr/pricing/" data-i18n="footer.pricing">Tarifs</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupExplore">Explorer</span>
+          <a href="/fr/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/fr/professionals.html" data-i18n="footer.familievern">Professionnels</a>
+          <a href="/fr/stories/" data-i18n="footer.stories">Témoignages</a>
+          <a href="/fr/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupCompany">Entreprise</span>
+          <a href="/fr/about/" data-i18n="footer.about">À propos</a>
+          <a href="/fr/contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupLegal">Juridique</span>
+          <a href="/fr/terms/" data-i18n="footer.terms">Conditions d'utilisation</a>
+          <a href="/fr/privacy/" data-i18n="footer.privacy">Politique de confidentialité</a>
+          <a href="/fr/account-deletion.html" data-i18n="footer.accountDeletion">Suppression du compte</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var K = 'lina_lang';
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    // Persist manual language selection so the redirect respects the user's choice
+    var opts = switcher.querySelectorAll('.lang-option');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].addEventListener('click', function () {
+        var m = (this.getAttribute('href') || '').match(/^\/(no|sv|da|fi|de|nl|fr)\//);
+        try { localStorage.setItem(K, m ? m[1] : 'en'); } catch (e) {}
+      });
+    }
+  }());
+  </script>
+
+</body>
+</html>

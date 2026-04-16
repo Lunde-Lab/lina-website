@@ -834,6 +834,134 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://getlina.app/blog/summer-holidays/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/sommarlov-tva-hem/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/zomervakantie-twee-huizen/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/no/blog/sommerferie-to-hjem/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/sommarlov-tva-hem/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/zomervakantie-twee-huizen/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/sv/blog/sommarlov-tva-hem/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/sommarlov-tva-hem/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/zomervakantie-twee-huizen/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/da/blog/sommerferie-to-hjem/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/sommarlov-tva-hem/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/zomervakantie-twee-huizen/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/sommarlov-tva-hem/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/zomervakantie-twee-huizen/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/de/blog/sommerferien-zwei-zuhause/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/sommarlov-tva-hem/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/zomervakantie-twee-huizen/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/nl/blog/zomervakantie-twee-huizen/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/sommarlov-tva-hem/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/zomervakantie-twee-huizen/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/fr/blog/vacances-ete-deux-maisons/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/blog/summer-holidays/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/sommarlov-tva-hem/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/sommerferie-to-hjem/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/zomervakantie-twee-huizen/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://getlina.app/de/blog/sorgerecht-nach-trennung/</loc>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/shared-vs-primary-residence/"/>
       <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/blog/shared-vs-primary-residence/"/>

@@ -778,6 +778,10 @@
     "article5": {
       "headline": "La communication entre coparents",
       "description": "Comment maintenir une communication factuelle et structurée lors du partage de la garde d'un enfant — conseils pratiques sur les sujets, les accords écrits et les limites claires."
+    },
+    "article6": {
+      "headline": "Les vacances d'été dans deux foyers",
+      "description": "Guide pratique pour la planification des vacances d'été pour les parents séparés."
     }
   },
   "blog1": {
@@ -834,7 +838,10 @@
     "a4desc": "Ce que cela signifie en pratique pour le quotidien, les prises de décision et les droits de l'enfant.",
     "a5label": "Communication",
     "a5title": "La communication entre coparents",
-    "a5desc": "Pourquoi la structure aide, et comment maintenir un ton factuel lorsqu'il s'agit de l'enfant."
+    "a5desc": "Pourquoi la structure aide, et comment maintenir un ton factuel lorsqu'il s'agit de l'enfant.",
+    "a6label": "Vacances",
+    "a6title": "Les vacances d'été dans deux foyers",
+    "a6desc": "Comment répartir les vacances, gérer les voyages et le consentement, et offrir de la stabilité à l'enfant entre deux foyers."
   },
   "blog2": {
     "pageTitle": "Le jour de transition — comment faciliter les passages entre foyers | Lina",
@@ -970,6 +977,40 @@
     "s6p3": "Si l'enfant partage quelque chose de l'autre foyer, écoutez — mais évitez de poser des questions précises. L'enfant a besoin de sentir qu'il peut parler librement sans devenir une source d'informations.",
     "ctaTitle": "Communication structurée entre deux foyers",
     "ctaDesc": "Lina garde les conversations organisées dans des sujets séparés. Les messages ne peuvent pas être modifiés ou supprimés — pour que les deux parents aient un historique clair de ce qui a été convenu.",
+    "ctaCta": "Télécharger Lina"
+  },
+  "blog6": {
+    "pageTitle": "Les vacances d'été dans deux foyers — Lina",
+    "pageDesc": "Guide pratique pour les parents séparés sur la planification des vacances d'été — comment répartir les vacances, gérer les voyages et le consentement, et offrir de la stabilité à l'enfant entre deux foyers.",
+    "label": "Vacances",
+    "title": "Les vacances d'été dans deux foyers",
+    "intro": "L'été est la plus longue période de l'année où les routines quotidiennes s'arrêtent. Pour les parents séparés qui partagent la garde, cela signifie de plus longues périodes loin d'un foyer, des projets de voyage au-delà des frontières et des décisions qui doivent tenir pendant des mois. Le premier été après une séparation est souvent le plus difficile — mais les habitudes que vous établissez maintenant vous accompagneront chaque été suivant.",
+    "s1title": "Pourquoi la planification estivale est différente",
+    "s1p1": "Les arrangements quotidiens et hebdomadaires sont construits autour de l'école, du travail et des routines proches. L'été brise la plupart de tout cela — les écoles ferment pendant plusieurs semaines, les deux parents prennent généralement des vacances, les grands-parents voyagent et les colonies de vacances se remplissent tôt.",
+    "s1p2": "Le résultat est que le calendrier de garde habituel passe rarement juillet et août sans changements. La plupart des familles conviennent d'un arrangement estival séparé chaque année, documenté à l'avance.",
+    "s1p3": "Traitez le plan d'été comme un accord à part entière, pas comme une variante du calendrier hebdomadaire. Il a besoin de ses propres dates, de ses propres transitions et de sa propre version écrite à laquelle les deux parents peuvent se référer.",
+    "s2title": "Commencez plus tôt que nécessaire",
+    "s2p1": "Quand un parent pose la question de l'été fin mai, c'est souvent trop tard. Les prix des billets d'avion ont augmenté, les colonies sont complètes et les grands-parents ont fait leurs propres plans. Les semaines de vacances de l'autre parent sont peut-être déjà fixées au travail.",
+    "s2p2": "Une règle raisonnable : prenez les décisions principales avant avril. Cela signifie déterminer quelles semaines chaque parent aura l'enfant, si des voyages à l'étranger sont prévus et si des colonies ou des stages doivent être réservés.",
+    "s2p3": "Cela ne signifie pas que chaque jour doit être planifié en avril. La flexibilité est bienvenue — mais les grands blocs doivent être convenus tôt. De petits ajustements en juin sont bien plus faciles que de construire tout le plan à partir de zéro à ce moment-là.",
+    "s3title": "Façons de répartir l'été",
+    "s3p1": "Diviser l'été en deux est le plus simple — chaque parent a la moitié des vacances en un bloc continu. Cela fonctionne bien quand les deux parents veulent des voyages plus longs et que l'enfant est assez grand pour une longue période loin de chaque foyer. Des blocs alternés de deux semaines conviennent souvent mieux aux jeunes enfants, et aux parents qui vivent assez près pour que le contact pendant chaque bloc soit facile.",
+    "s3p2": "L'alternance d'étés complets est utilisée par les parents qui vivent loin l'un de l'autre — dans des pays différents ou des villes avec de longs temps de trajet. Un parent a tout l'été une année, l'autre l'année suivante. Le parent sans temps estival obtient généralement une part plus grande d'une autre période de vacances en compensation.",
+    "s3p3": "Pour les jours fériés qui tombent pendant les vacances d'été — fête nationale, ponts, jours fériés — beaucoup de familles alternent d'année en année. Le parent A a la fête nationale les années impaires, le parent B les années paires. Notez-le par écrit, pour que la question ne se repose plus.",
+    "s4title": "Voyages, passeports et consentement",
+    "s4p1": "Si l'un des parents prévoit de voyager à l'étranger avec l'enfant, un consentement écrit de l'autre parent est généralement requis — par les compagnies aériennes, par les autorités frontalières et, dans certains cas, par le pays de destination. Les exigences varient, alors vérifiez ce que les pays concernés demandent.",
+    "s4p2": "Sachez qui détient le passeport de l'enfant et vérifiez qu'il est valide pour le voyage — certains pays exigent six mois de validité après la date de retour. Une courte lettre signée du parent qui ne voyage pas, avec les dates, la destination et les informations de l'enfant, prévient les problèmes à l'enregistrement. Certaines compagnies demandent une version notariée ; d'autres acceptent un scan signé. Demandez avant le voyage, pas à la porte d'embarquement.",
+    "s4p3": "Si vous anticipez des difficultés pour obtenir le consentement, réglez la question bien à l'avance — pas la veille du départ. Attendre la dernière minute transforme une question administrative en conflit.",
+    "s5title": "Ce dont l'enfant a besoin pendant la transition",
+    "s5p1": "Les blocs estivaux plus longs peuvent être plus difficiles pour les enfants que les changements hebdomadaires habituels. Ils sont éloignés d'un foyer plus longtemps, les routines changent et les amis peuvent être à un endroit mais pas à l'autre. L'enfant devrait connaître le plan — pas chaque détail, mais la forme de l'été. L'incertitude est plus difficile pour la plupart des enfants qu'un plan qu'ils n'adorent pas.",
+    "s5p2": "L'enfant n'a pas besoin de choisir. Poser des questions comme « tu veux être chez maman ou chez papa » le met dans une position impossible. Les parents font le plan ; l'enfant est informé. Laissez des choses voyager avec l'enfant — une peluche préférée, un livre, un chargeur. De petits objets qui créent de la continuité rendent les longues périodes plus faciles.",
+    "s5p3": "Gardez les transitions calmes. Le jour de la transition vers un bloc de deux semaines n'est pas le moment pour de longues conversations sur les règles ou les attentes. Cela peut attendre un jour ou deux.",
+    "s6title": "Quand vous ne parvenez pas à vous mettre d'accord",
+    "s6p1": "L'été est souvent le moment où les désaccords apparaissent. Un parent veut un voyage que l'autre n'approuve pas. Les semaines de vacances se chevauchent au travail. Une visite aux grands-parents ne fonctionne qu'une semaine précise. Mettez la proposition par écrit — des dates précises, un plan précis. Il est plus difficile de discuter de manière constructive à l'oral que quand les deux parents peuvent regarder la même version écrite.",
+    "s6p2": "Proposez des alternatives, pas seulement des objections. « La semaine 28 ne me convient pas, mais la semaine 26 ou 29 oui » est plus facile à répondre que « ça ne marche pas pour moi. » Si la discussion directe bloque, les services de médiation familiale proposent exactement cela — souvent quelques séances ciblées sur un seul accord pratique, comme l'été.",
+    "s6p3": "Une fois l'accord atteint, mettez-le par écrit. Dates, qui a l'enfant quand, détails du voyage, horaires et lieux de transition. Un résumé écrit auquel les deux parents peuvent se référer évite de renégocier en juin quand quelqu'un se souvient d'une autre version.",
+    "ctaTitle": "Planifiez l'été ensemble",
+    "ctaDesc": "Lina rassemble le calendrier de garde, les messages et les informations de l'enfant en un seul endroit partagé — pour que les deux parents aient la même vue d'ensemble du plan d'été, bien avant l'arrivée du mois de juin.",
     "ctaCta": "Télécharger Lina"
   },
   "carousel": {

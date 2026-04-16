@@ -794,6 +794,10 @@
     "article5": {
       "headline": "Viestintä yhteishuoltajavanhempien välillä",
       "description": "Miten pidät viestinnän asiallisena ja jäsenneltynä, kun jaatte lapsen huoltajuuden — käytännön vinkkejä keskusteluketjuihin, kirjallisiin sopimuksiin ja selkeisiin rajoihin."
+    },
+    "article6": {
+      "headline": "Kesäloma kahdessa kodissa",
+      "description": "Käytännön opas kesäloman suunnitteluun yhteishuoltajavanhemmille."
     }
   },
   "blog1": {
@@ -850,7 +854,10 @@
     "a4desc": "Mitä se tarkoittaa käytännössä arjessa, päätöksenteossa ja lapsen oikeuksissa.",
     "a5label": "Viestintä",
     "a5title": "Viestintä yhteishuoltajavanhempien välillä",
-    "a5desc": "Miksi rakenne auttaa ja miten pidät sävyn asiallisena kun kyse on lapsesta."
+    "a5desc": "Miksi rakenne auttaa ja miten pidät sävyn asiallisena kun kyse on lapsesta.",
+    "a6label": "Lomat",
+    "a6title": "Kesäloma kahdessa kodissa",
+    "a6desc": "Miten kesäloma jaetaan, miten käsitellään matkustamista ja suostumusta, ja miten lapselle annetaan turvaa kahden kodin välillä."
   },
   "blog2": {
     "pageTitle": "Vaihtopäivä — näin teet siirtymisestä helpompaa | Lina",
@@ -986,6 +993,40 @@
     "s6p3": "Jos lapsi kertoo jotain toisesta kodista, kuuntele — mutta vältä tutkivia kysymyksiä. Lapsen on saatava tuntea, että hän voi puhua vapaasti ilman, että hänestä tulee tietolähde.",
     "ctaTitle": "Jäsenneltyä viestintää kahden kodin välillä",
     "ctaDesc": "Lina pitää keskustelut järjestettyinä erillisissä ketjuissa. Viestejä ei voi muokata tai poistaa — joten molemmilla vanhemmilla on selkeä historia siitä, mitä on sovittu.",
+    "ctaCta": "Lataa Lina"
+  },
+  "blog6": {
+    "pageTitle": "Kesäloma kahdessa kodissa — Lina",
+    "pageDesc": "Käytännön opas yhteishuoltajavanhemmille kesäloman suunnitteluun — miten loma jaetaan, miten käsitellään matkustamista ja suostumusta, ja miten lapsi pidetään turvassa kahden kodin välillä.",
+    "label": "Lomat",
+    "title": "Kesäloma kahdessa kodissa",
+    "intro": "Kesä on vuoden pisin jakso, jolloin arkirutiinit pysähtyvät. Yhteishuoltajavanhemmille se tarkoittaa pidempiä jaksoja poissa toisesta kodista, matkoja rajojen yli ja päätöksiä, joiden on kestettävä kuukausia. Ensimmäinen kesä eron jälkeen on usein vaikein — mutta nyt luomanne mallit seuraavat mukana jokaiseen tulevaan kesään.",
+    "s1title": "Miksi kesäsuunnittelu on erilaista",
+    "s1p1": "Arki- ja viikkojärjestelyt rakentuvat koulun, työn ja lähirutiinien ympärille. Kesä rikkoo suurimman osan niistä — koulut sulkevat viikkojen ajaksi, molemmat vanhemmat pitävät yleensä lomaa, isovanhemmat matkustavat ja kesäleirit täyttyvät aikaisin.",
+    "s1p2": "Tuloksena on, että tavallinen vuoroasumisaikataulu harvoin kestää heinä- ja elokuun läpi ilman muutoksia. Useimmat perheet sopivat erillisestä kesäsuunnitelmasta joka vuosi, etukäteen dokumentoituna.",
+    "s1p3": "Käsittele kesäsuunnitelmaa omana sopimuksenaan, ei viikkoaikataulun muunnelmana. Se tarvitsee omat päivämääränsä, omat vaihdot ja oman kirjallisen version, johon molemmat vanhemmat voivat viitata.",
+    "s2title": "Aloita aikaisemmin kuin tuntuu tarpeelliselta",
+    "s2p1": "Kun toinen vanhempi kysyy kesästä toukokuun lopulla, on usein liian myöhäistä. Lentolippujen hinnat ovat nousseet, kesäleirit ovat täynnä ja isovanhemmat ovat varanneet omat matkansa. Toisen vanhemman lomaviikot voivat olla jo lukittuina työssä.",
+    "s2p2": "Järkevä sääntö: tee pääpäätökset huhtikuuhun mennessä. Se tarkoittaa päättämistä siitä, millä viikoilla kumpikin vanhempi pitää lasta, onko ulkomaanmatkoja suunnitteilla ja varaataanko leirejä tai kursseja.",
+    "s2p3": "Tämä ei tarkoita, että jokainen päivä pitää suunnitella huhtikuussa. Joustavuus on hyvä asia — mutta suuret lohkot pitäisi sopia aikaisin. Pienet muutokset kesäkuussa ovat paljon helpompia kuin koko suunnitelman rakentaminen tyhjästä silloin.",
+    "s3title": "Tapoja jakaa kesä",
+    "s3p1": "Kesän puolittaminen on yksinkertaisinta — kumpikin vanhempi pitää puolet lomasta yhdessä yhtenäisessä jaksossa. Se toimii hyvin, kun molemmat haluavat pidempiä matkoja ja lapsi on tarpeeksi vanha pidempään jaksoon poissa kummastakin kodista. Vuorottelevat kahden viikon jaksot sopivat usein paremmin nuoremmille lapsille ja vanhemmille, jotka asuvat tarpeeksi lähellä, jotta yhteydenpito jakson aikana on helppoa.",
+    "s3p2": "Kokonaisten kesien vuorottelu on käytössä vanhemmilla, jotka asuvat kaukana toisistaan — eri maissa tai kaupungeissa, joiden välillä on pitkä matka. Toinen vanhempi pitää koko kesän yhtenä vuonna, toinen seuraavana. Vanhempi ilman kesäaikaa saa tyypillisesti suuremman osuuden toisesta lomasta korvaukseksi.",
+    "s3p3": "Kesään osuvien juhlapyhien osalta — juhannus, kansallispäivät, arkipyhät — monet perheet vuorottelevat vuosittain. Vanhempi A pitää juhannuksen parittomina vuosina, vanhempi B parillisina. Kirjaa se ylös, niin kysymyksen ei tarvitse nousta uudelleen esiin.",
+    "s4title": "Matkustaminen, passit ja suostumus",
+    "s4p1": "Jos kumpi tahansa vanhempi suunnittelee ulkomaanmatkaa lapsen kanssa, toisen vanhemman kirjallinen suostumus vaaditaan yleensä — lentoyhtiöiden, rajaviranomaisten ja joissakin tapauksissa kohdemaan toimesta. Vaatimukset vaihtelevat, joten tarkista mitä kyseiset maat edellyttävät.",
+    "s4p2": "Tiedä kuka pitää lapsen passia hallussaan ja tarkista, että se on voimassa matkaa varten — joissakin maissa vaaditaan kuuden kuukauden voimassaoloa paluupäivän jälkeen. Lyhyt allekirjoitettu kirje ei-matkustavalta vanhemmalta, jossa on päivämäärät, määränpää ja lapsen tiedot, ehkäisee ongelmia lähtöselvityksessä. Jotkut lentoyhtiöt vaativat notarisoidun version; toiset hyväksyvät skannatun allekirjoituksen. Kysy ennen matkaa, älä portilla.",
+    "s4p3": "Jos odotat vaikeuksia suostumuksen saamisessa, ratkaise asia hyvissä ajoin — älä matkan aattona. Viime hetkeen odottaminen muuttaa paperikysymyksen konfliktiksi.",
+    "s5title": "Mitä lapsi tarvitsee vaihdon aikana",
+    "s5p1": "Pidemmät kesäjaksot voivat olla lapsille vaikeampia kuin tavalliset viikoittaiset vaihdot. He ovat poissa toisesta kodista pidempään, rutiinit muuttuvat ja ystävät voivat olla yhdessä paikassa mutta eivät toisessa. Lapsen pitäisi tietää suunnitelma — ei jokaista yksityiskohtaa, mutta kesän muoto. Epävarmuus on useimmille lapsille vaikeampaa kuin suunnitelma, josta he eivät pidä.",
+    "s5p2": "Lapsen ei tarvitse valita. Kysymysten kehystäminen muotoon \"haluatko olla äidin vai isän luona\" asettaa lapsen mahdottomaan asemaan. Vanhemmat tekevät suunnitelman; lapselle kerrotaan. Anna tavaroiden kulkea lapsen mukana — lempipehmolelu, kirja, laturi. Pienet jatkuvuutta luovat esineet tekevät pidemmistä jaksoista helpompia.",
+    "s5p3": "Pidä vaihdot rauhallisina. Vaihtopäivä kahden viikon jaksoon ei ole hetki pitkille keskusteluille säännöistä tai odotuksista. Se voi odottaa päivän tai pari.",
+    "s6title": "Kun ette pääse sopuun",
+    "s6p1": "Kesä on usein hetki, jolloin erimielisyydet nousevat pintaan. Toinen vanhempi haluaa matkan, jota toinen ei hyväksy. Lomaviikot menevät päällekkäin työssä. Isovanhempien vierailu onnistuu vain yhtenä tietyllä viikkona. Laita ehdotus kirjalliseen muotoon — tarkat päivämäärät, tarkka suunnitelma. Suullisesti on vaikeampaa keskustella rakentavasti kuin kun molemmat voivat katsoa samaa kirjallista versiota.",
+    "s6p2": "Ehdota vaihtoehtoja, älä pelkkiä vastalauseita. \"En voi viikolla 28, mutta viikko 26 tai 29 käy\" on helpompi vastata kuin \"se ei sovi minulle.\" Jos suora keskustelu jumittuu, perheneuvola tarjoaa sovittelua juuri tähän — usein muutaman kohdennetun istunnon yksittäisestä käytännön sopimuksesta, kuten kesästä.",
+    "s6p3": "Kun sopimus on syntynyt, kirjoita se ylös. Päivämäärät, kuka pitää lasta milloinkin, matkatiedot, vaihtoajat ja -paikat. Kirjallinen yhteenveto, johon molemmat voivat palata, estää uudelleenneuvottelun kesäkuussa, kun joku muistaa eri version.",
+    "ctaTitle": "Suunnitelkaa kesä yhdessä",
+    "ctaDesc": "Lina kokoaa vuoroasumisaikataulun, viestit ja lapsen tiedot yhteen jaettuun paikkaan — jotta molemmilla vanhemmilla on sama näkymä kesäsuunnitelmaan, kauan ennen kesäkuuta.",
     "ctaCta": "Lataa Lina"
   },
   "carousel": {

@@ -778,6 +778,10 @@
     "article5": {
       "headline": "Communicatie tussen co-ouders",
       "description": "Hoe u de communicatie zakelijk en gestructureerd houdt bij het delen van de zorg voor een kind — praktische tips over onderwerpen, schriftelijke afspraken en duidelijke grenzen."
+    },
+    "article6": {
+      "headline": "Zomervakantie in twee huizen",
+      "description": "Praktische gids voor de planning van de zomervakantie voor co-ouders."
     }
   },
   "blogIndex": {
@@ -800,7 +804,10 @@
     "a4desc": "Wat het betekent in de praktijk voor het dagelijks leven, besluitvorming en de rechten van het kind.",
     "a5label": "Communicatie",
     "a5title": "Communicatie tussen co-ouders",
-    "a5desc": "Waarom structuur helpt, en hoe u de toon zakelijk houdt wanneer het om het kind gaat."
+    "a5desc": "Waarom structuur helpt, en hoe u de toon zakelijk houdt wanneer het om het kind gaat.",
+    "a6label": "Vakantie",
+    "a6title": "Zomervakantie in twee huizen",
+    "a6desc": "Hoe u de vakantie verdeelt, reizen en toestemming regelt, en het kind rust geeft tussen twee huizen."
   },
   "blog1": {
     "pageTitle": "Omgangsregelingen uitgelegd — Lina",
@@ -970,6 +977,40 @@
     "s6p3": "Als het kind iets deelt vanuit het andere huishouden, luister dan — maar vermijd gerichte vragen. Het kind moet het gevoel hebben vrijuit te kunnen praten zonder een informatiebron te worden.",
     "ctaTitle": "Gestructureerde communicatie tussen twee huishoudens",
     "ctaDesc": "Lina houdt gesprekken georganiseerd in aparte onderwerpen. Berichten kunnen niet worden bewerkt of verwijderd — zodat beide ouders een duidelijk overzicht hebben van wat er is afgesproken.",
+    "ctaCta": "Download Lina"
+  },
+  "blog6": {
+    "pageTitle": "Zomervakantie in twee huizen — Lina",
+    "pageDesc": "Praktische gids voor co-ouders over de planning van de zomervakantie — hoe u de vakantie verdeelt, reizen en toestemming regelt, en het kind rust geeft tussen twee huizen.",
+    "label": "Vakantie",
+    "title": "Zomervakantie in twee huizen",
+    "intro": "De zomer is de langste periode van het jaar waarin de dagelijkse routines stoppen. Voor co-ouders betekent dat langere periodes weg van één huis, reisplannen over grenzen heen en afspraken die maanden van tevoren moeten kloppen. De eerste zomer na een scheiding is vaak het moeilijkst — maar de patronen die u nu vastlegt, werken door in iedere zomer daarna.",
+    "s1title": "Waarom vakantieplanning anders is",
+    "s1p1": "Dagelijkse en wekelijkse regelingen zijn opgebouwd rond school, werk en nabije routines. De zomer doorbreekt het meeste daarvan — scholen sluiten wekenlang, beide ouders nemen doorgaans vakantie, grootouders reizen en zomerkampen zitten snel vol.",
+    "s1p2": "Het resultaat is dat het gewone omgangsschema zelden ongewijzigd door juli en augustus komt. De meeste gezinnen maken jaarlijks een aparte zomerafspraak, vooraf vastgelegd.",
+    "s1p3": "Behandel het zomerplan als een eigen afspraak, niet als een variant van het weekschema. Het heeft eigen data nodig, eigen overdrachten en een eigen schriftelijke versie waar beide ouders naar kunnen verwijzen.",
+    "s2title": "Begin eerder dan nodig voelt",
+    "s2p1": "Tegen de tijd dat één ouder eind mei over de zomer begint, is het vaak te laat. Vliegprijzen zijn gestegen, zomerkampen zijn vol en grootouders hebben hun eigen plannen gemaakt. De vakantieweken van de andere ouder liggen misschien al vast op het werk.",
+    "s2p2": "Een redelijke regel: heb de belangrijkste beslissingen vóór april genomen. Dat betekent bepalen welke weken iedere ouder het kind heeft, of er buitenlandse reizen gepland zijn, en of er kampen of cursussen geboekt moeten worden.",
+    "s2p3": "Dit betekent niet dat iedere dag in april gepland moet zijn. Flexibiliteit is prima — maar de grote blokken moeten vroeg worden afgesproken. Kleine aanpassingen in juni zijn veel makkelijker dan het hele plan dan vanaf nul opbouwen.",
+    "s3title": "Manieren om de zomer te verdelen",
+    "s3p1": "De zomer halveren is het eenvoudigst — iedere ouder heeft de helft van de vakantie in één aaneengesloten blok. Het werkt goed wanneer beide ouders langere reizen willen en het kind oud genoeg is voor een langere periode weg van ieder huis. Afwisselende tweewekelijkse blokken passen vaak beter bij jongere kinderen, en bij ouders die dicht genoeg bij elkaar wonen dat contact tijdens ieder blok gemakkelijk is.",
+    "s3p2": "Afwisselend de hele zomer wordt gebruikt door ouders die ver uit elkaar wonen — verschillende landen, of steden met lange reistijden. De ene ouder heeft de hele zomer het ene jaar, de andere het volgende. De ouder zonder zomertijd krijgt doorgaans een groter aandeel van een andere vakantie ter compensatie.",
+    "s3p3": "Voor feestdagen die in de zomervakantie vallen — midzomer, nationale feestdagen, vrije dagen — wisselen veel gezinnen per jaar af. Ouder A heeft midzomer in oneven jaren, ouder B in even jaren. Schrijf het op, zodat de vraag niet opnieuw hoeft te worden gesteld.",
+    "s4title": "Reizen, paspoorten en toestemming",
+    "s4p1": "Als een van de ouders een buitenlandse reis met het kind plant, is doorgaans schriftelijke toestemming van de andere ouder vereist — door luchtvaartmaatschappijen, door grensautoriteiten, en in sommige gevallen door het bestemmingsland. De vereisten variëren, dus controleer wat de betreffende landen vragen.",
+    "s4p2": "Weet wie het paspoort van het kind heeft, en controleer of het geldig is voor de reis — sommige landen vereisen zes maanden geldigheid na de terugkeerdatum. Een korte ondertekende brief van de niet-reizende ouder, met data, bestemming en gegevens van het kind, voorkomt problemen bij het inchecken. Sommige luchtvaartmaatschappijen vragen een notarieel gewaarmerkte versie; andere accepteren een ondertekende scan. Vraag vóór de reis, niet bij de gate.",
+    "s4p3": "Als u moeilijkheden verwacht bij het verkrijgen van toestemming, los het dan ruim van tevoren op — niet de dag voor vertrek. Wachten tot het laatste moment maakt van een papierenkwestie een conflict.",
+    "s5title": "Wat het kind nodig heeft bij de wisseling",
+    "s5p1": "Langere zomerblokken kunnen moeilijker zijn voor kinderen dan de gewone wekelijkse wisselingen. Ze zijn langer weg van één huis, routines veranderen en vrienden zijn misschien op de ene plek maar niet op de andere. Het kind moet het plan kennen — niet ieder detail, maar de vorm van de zomer. Onzekerheid is voor de meeste kinderen moeilijker dan een plan waar ze niet dol op zijn.",
+    "s5p2": "Het kind hoeft niet te kiezen. Vragen als \"wil je bij mama of papa zijn\" plaatsen het kind in een onmogelijke positie. De ouders maken het plan; het kind wordt geïnformeerd. Laat spullen meereizen met het kind — een lievelingsknuffel, een boek, een oplader. Kleine dingen die continuïteit bieden, maken langere periodes makkelijker.",
+    "s5p3": "Houd de overgangen rustig. De overdrachtsdag bij een blok van twee weken is niet het moment voor lange gesprekken over regels of verwachtingen. Dat kan een dag of twee wachten.",
+    "s6title": "Wanneer u het niet eens wordt",
+    "s6p1": "De zomer is vaak het moment waarop meningsverschillen naar boven komen. De ene ouder wil een reis die de andere niet goedkeurt. Vakantieweken botsen op het werk. Een bezoek aan grootouders lukt alleen in één specifieke week. Zet het voorstel op papier — specifieke data, specifiek plan. Mondeling is het moeilijker om constructief te discussiëren dan wanneer beide ouders naar dezelfde schriftelijke versie kunnen kijken.",
+    "s6p2": "Stel alternatieven voor, niet alleen bezwaren. \"Week 28 lukt niet, maar week 26 of 29 wel\" is makkelijker te beantwoorden dan \"dat werkt niet voor mij.\" Als direct overleg vastloopt, bieden mediators of het Centrum voor Jeugd en Gezin bemiddeling aan voor precies dit soort kwesties — vaak een paar gerichte gesprekken over één praktische afspraak, zoals de zomer.",
+    "s6p3": "Als er een afspraak is bereikt, schrijf die dan op. Data, wie het kind wanneer heeft, reisdetails, overdrachtmomenten en -plaatsen. Een schriftelijke samenvatting waar beide ouders op terug kunnen vallen, voorkomt heronderhandeling in juni wanneer iemand een andere versie herinnert.",
+    "ctaTitle": "Plan de zomer samen",
+    "ctaDesc": "Lina brengt het omgangsschema, berichten en kindinformatie samen op één gedeelde plek — zodat beide ouders hetzelfde overzicht van het zomerplan hebben, ruim voor juni.",
     "ctaCta": "Download Lina"
   },
   "carousel": {

@@ -121,6 +121,21 @@ const SOURCE_FILES = [
     priority: '0.6',
     hasDropdown: true,
   },
+  {
+    src: 'blog/summer-holidays/index.html',
+    urlPath: '/blog/summer-holidays/',
+    langUrls: {
+      no: '/blog/sommerferie-to-hjem/',
+      sv: '/blog/sommarlov-tva-hem/',
+      da: '/blog/sommerferie-to-hjem/',
+      fi: '/blog/kesaloma-kahdessa-kodissa/',
+      de: '/blog/sommerferien-zwei-zuhause/',
+      nl: '/blog/zomervakantie-twee-huizen/',
+      fr: '/blog/vacances-ete-deux-maisons/',
+    },
+    priority: '0.6',
+    hasDropdown: true,
+  },
 ];
 
 // ─── Extra German-only blog slugs ─────────────────────────────────────────────
@@ -168,6 +183,8 @@ const INTERNAL_HREFS = [
   '/blog',
   '/blog/co-parent-communication/',
   '/blog/co-parent-communication',
+  '/blog/summer-holidays/',
+  '/blog/summer-holidays',
   '/blog/shared-vs-primary-residence/',
   '/blog/shared-vs-primary-residence',
   '/blog/what-kids-need/',
@@ -321,6 +338,7 @@ const ARTICLE_MAP = {
   'blog/what-kids-need/index.html':             'article3',
   'blog/shared-vs-primary-residence/index.html': 'article4',
   'blog/co-parent-communication/index.html':    'article5',
+  'blog/summer-holidays/index.html':            'article6',
 };
 
 /**

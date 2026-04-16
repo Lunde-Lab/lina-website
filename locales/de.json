@@ -780,14 +780,18 @@
       "description": "Wie man die Kommunikation sachlich und strukturiert gestaltet, wenn man die Betreuung eines Kindes teilt — praktische Tipps zu Themenbereichen, schriftlichen Vereinbarungen und klaren Grenzen."
     },
     "article6": {
+      "headline": "Sommerferien mit zwei Zuhause",
+      "description": "Praktischer Leitfaden zur Ferienplanung für getrennte Eltern — wie man die Ferien aufteilt, Reisen und Zustimmung regelt und dem Kind Sicherheit gibt."
+    },
+    "article7": {
       "headline": "Sorgerecht nach Trennung — was Eltern wissen sollten",
       "description": "Sorgerecht nach Trennung — gemeinsames oder alleiniges Sorgerecht, was sich ändert und was bleibt. Praktische Orientierung für getrennte Eltern in Deutschland."
     },
-    "article7": {
+    "article8": {
       "headline": "Welche App hilft getrennten Eltern im Alltag?",
       "description": "Welche Eltern App eignet sich bei Trennung? Was eine Co-Parenting App leisten sollte — und warum normale Messenger für getrennte Eltern oft nicht ausreichen."
     },
-    "article8": {
+    "article9": {
       "headline": "Kindeswohl bei getrennten Eltern — worauf es ankommt",
       "description": "Kindeswohl getrennte Eltern — was Kinder nach der Trennung wirklich brauchen: Stabilität, Zugang zu beiden Elternteilen, Planungssicherheit. Was die Forschung zeigt."
     }
@@ -813,15 +817,18 @@
     "a5label": "Kommunikation",
     "a5title": "Kommunikation zwischen Co-Eltern",
     "a5desc": "Warum Struktur hilft und wie man den Ton sachlich hält, wenn es um das Kind geht.",
-    "a6label": "Sorgerecht",
-    "a6title": "Sorgerecht nach Trennung — was Eltern wissen sollten",
-    "a6desc": "Gemeinsames oder alleiniges Sorgerecht, was sich durch die Trennung ändert und welche Rolle das Jugendamt spielt.",
-    "a7label": "Digitale Werkzeuge",
-    "a7title": "Welche App hilft getrennten Eltern im Alltag?",
-    "a7desc": "Was eine Co-Parenting-App leisten sollte — und warum normale Messenger oft nicht ausreichen.",
-    "a8label": "Kindeswohl",
-    "a8title": "Kindeswohl bei getrennten Eltern — worauf es ankommt",
-    "a8desc": "Was Kinder nach der Elterntrennung wirklich brauchen: Stabilität, Zugang zu beiden Elternteilen, Planungssicherheit."
+    "a6label": "Ferien",
+    "a6title": "Sommerferien mit zwei Zuhause",
+    "a6desc": "Wie man die Ferien aufteilt, Reisen und Zustimmung regelt und dem Kind Sicherheit zwischen zwei Zuhause gibt.",
+    "a7label": "Sorgerecht",
+    "a7title": "Sorgerecht nach Trennung — was Eltern wissen sollten",
+    "a7desc": "Gemeinsames oder alleiniges Sorgerecht, was sich durch die Trennung ändert und welche Rolle das Jugendamt spielt.",
+    "a8label": "Digitale Werkzeuge",
+    "a8title": "Welche App hilft getrennten Eltern im Alltag?",
+    "a8desc": "Was eine Co-Parenting-App leisten sollte — und warum normale Messenger oft nicht ausreichen.",
+    "a9label": "Kindeswohl",
+    "a9title": "Kindeswohl bei getrennten Eltern — worauf es ankommt",
+    "a9desc": "Was Kinder nach der Elterntrennung wirklich brauchen: Stabilität, Zugang zu beiden Elternteilen, Planungssicherheit."
   },
   "blog1": {
     "pageTitle": "Umgangsregelungen im Überblick — Lina",
@@ -1093,6 +1100,40 @@
     "s6p3": "Viele Familien, die mit schwierigen Trennungen begonnen haben, berichten, dass strukturierte Koordination über Zeit zu weniger Konflikt, mehr Verlässlichkeit und einem besseren Alltag für das Kind geführt hat. Der erste Schritt ist oft ein gemeinsames System, das beiden Elternteilen hilft, sachlich und informiert zu bleiben.",
     "ctaTitle": "Gemeinsam für das Kind — Koordination für beide Haushalte",
     "ctaDesc": "Wenn Eltern gut koordiniert sind, merkt das Kind es. Lina hilft, den Alltag an beiden Orten klar zu strukturieren — Betreuungszeiten, Nachrichten, Kindesinformationen, Ausstattung.",
+    "ctaCta": "Lina herunterladen"
+  },
+  "blog6": {
+    "pageTitle": "Sommerferien mit zwei Zuhause — Lina",
+    "pageDesc": "Praktischer Leitfaden für getrennte Eltern zur Ferienplanung — wie man die Sommerferien aufteilt, Reisen und Zustimmung regelt und dem Kind Sicherheit zwischen zwei Zuhause gibt.",
+    "label": "Ferien",
+    "title": "Sommerferien mit zwei Zuhause",
+    "intro": "Der Sommer ist die längste Zeit im Jahr, in der die Alltagsroutinen pausieren. Für getrennte Eltern bedeutet das längere Phasen weg von einem Zuhause, Reisepläne über Grenzen hinweg und Entscheidungen, die Monate im Voraus halten müssen. Der erste Sommer nach einer Trennung ist oft der schwierigste — aber die Muster, die Sie jetzt setzen, begleiten jeden Sommer danach.",
+    "s1title": "Warum Ferienplanung anders ist",
+    "s1p1": "Alltags- und Wochenvereinbarungen sind um Schule, Arbeit und nahe Routinen herum aufgebaut. Der Sommer bricht das meiste davon auf — Schulen schließen für mehrere Wochen, beide Eltern nehmen normalerweise Urlaub, Großeltern verreisen und Ferienlager sind früh ausgebucht.",
+    "s1p2": "Das Ergebnis ist, dass der reguläre Betreuungsplan selten unverändert durch Juli und August kommt. Die meisten Familien vereinbaren jedes Jahr eine separate Sommerregelung, im Voraus dokumentiert.",
+    "s1p3": "Behandeln Sie den Sommerplan als eigene Vereinbarung, nicht als Abwandlung des Wochenplans. Er braucht eigene Daten, eigene Übergaben und eine eigene schriftliche Version, auf die beide Eltern verweisen können.",
+    "s2title": "Beginnen Sie früher als nötig erscheint",
+    "s2p1": "Wenn ein Elternteil Ende Mai nach dem Sommer fragt, ist es oft zu spät. Flugpreise sind gestiegen, Ferienlager sind voll und Großeltern haben ihre eigenen Pläne gemacht. Die Urlaubswochen des anderen Elternteils sind möglicherweise bereits im Betrieb festgelegt.",
+    "s2p2": "Eine vernünftige Regel: Haben Sie die Hauptentscheidungen bis April getroffen. Das bedeutet festzulegen, welche Wochen jeder Elternteil das Kind hat, ob Auslandsreisen geplant sind und ob Camps oder Kurse gebucht werden sollen.",
+    "s2p3": "Das bedeutet nicht, dass jeder Tag im April geplant sein muss. Flexibilität ist in Ordnung — aber die großen Blöcke sollten früh vereinbart werden. Kleine Anpassungen im Juni sind viel einfacher, als den gesamten Plan dann von Grund auf aufzubauen.",
+    "s3title": "Möglichkeiten, den Sommer aufzuteilen",
+    "s3p1": "Den Sommer zu halbieren ist am einfachsten — jeder Elternteil hat die Hälfte der Ferien in einem zusammenhängenden Block. Es funktioniert gut, wenn beide längere Reisen wollen und das Kind alt genug für eine längere Zeit weg von jedem Zuhause ist. Abwechselnde Zwei-Wochen-Blöcke passen oft besser für jüngere Kinder und für Eltern, die nah genug beieinander leben, dass Kontakt während jedes Blocks einfach ist.",
+    "s3p2": "Abwechselnde ganze Sommer werden von Eltern genutzt, die weit voneinander entfernt leben — verschiedene Länder oder Städte mit langer Reisezeit. Ein Elternteil hat den ganzen Sommer ein Jahr, der andere das nächste. Der Elternteil ohne Sommerzeit bekommt typischerweise einen größeren Anteil an einem anderen Feiertag als Ausgleich.",
+    "s3p3": "Für Feiertage, die in die Sommerferien fallen — Mittsommer, Nationalfeiertage, Brückentage — wechseln viele Familien jährlich. Elternteil A hat Mittsommer in ungeraden Jahren, Elternteil B in geraden. Schreiben Sie es auf, damit die Frage nicht wieder aufkommt.",
+    "s4title": "Reisen, Pässe und Zustimmung",
+    "s4p1": "Wenn ein Elternteil eine Auslandsreise mit dem Kind plant, wird in der Regel eine schriftliche Zustimmung des anderen Elternteils verlangt — von Fluggesellschaften, von Grenzbehörden und in manchen Fällen vom Zielland. Die Anforderungen variieren, also prüfen Sie, was die betreffenden Länder verlangen.",
+    "s4p2": "Wissen Sie, wer den Pass des Kindes hat, und prüfen Sie, ob er für die Reise gültig ist — manche Länder verlangen sechs Monate Gültigkeit nach dem Rückreisedatum. Ein kurzer unterschriebener Brief des nicht reisenden Elternteils mit Daten, Reiseziel und Angaben zum Kind beugt Problemen beim Check-in vor. Manche Fluggesellschaften verlangen eine notariell beglaubigte Version; andere akzeptieren einen unterschriebenen Scan. Fragen Sie vor der Reise, nicht am Gate.",
+    "s4p3": "Wenn Sie Schwierigkeiten bei der Zustimmung erwarten, lösen Sie es frühzeitig — nicht am Tag vor der Abreise. Bis zur letzten Minute zu warten, macht aus einer Papierfrage einen Konflikt.",
+    "s5title": "Was das Kind beim Wechsel braucht",
+    "s5p1": "Längere Sommerblöcke können für Kinder schwieriger sein als die regulären wöchentlichen Wechsel. Sie sind länger von einem Zuhause weg, Routinen ändern sich und Freunde sind vielleicht an einem Ort, aber nicht am anderen. Das Kind sollte den Plan kennen — nicht jedes Detail, aber die Form des Sommers. Unsicherheit ist für die meisten Kinder schwerer als ein Plan, den sie nicht mögen.",
+    "s5p2": "Das Kind muss nicht wählen. Fragen wie \"willst du bei Mama oder Papa sein\" stellen das Kind vor eine unmögliche Situation. Die Eltern machen den Plan; das Kind wird informiert. Lassen Sie Dinge mit dem Kind mitreisen — ein Lieblingskuscheltier, ein Buch, ein Ladegerät. Kleine Dinge, die Kontinuität schaffen, machen längere Phasen leichter.",
+    "s5p3": "Halten Sie die Übergänge ruhig. Der Übergabetag in einen Zwei-Wochen-Block ist nicht der Moment für lange Gespräche über Regeln oder Erwartungen. Das kann ein oder zwei Tage warten.",
+    "s6title": "Wenn Sie sich nicht einigen können",
+    "s6p1": "Der Sommer ist oft der Punkt, an dem Meinungsverschiedenheiten aufkommen. Ein Elternteil möchte eine Reise, die der andere nicht genehmigt. Urlaubswochen kollidieren auf der Arbeit. Ein Großelternbesuch funktioniert nur in einer bestimmten Woche. Setzen Sie den Vorschlag schriftlich auf — konkrete Daten, konkreter Plan. Mündlich lässt sich schwerer konstruktiv diskutieren als wenn beide auf dieselbe schriftliche Version schauen können.",
+    "s6p2": "Schlagen Sie Alternativen vor, nicht nur Einwände. \"Woche 28 geht nicht, aber Woche 26 oder 29 würde passen\" ist leichter zu beantworten als \"das funktioniert für mich nicht.\" Wenn direkte Gespräche stocken, bieten Erziehungsberatungsstellen Mediation genau dafür an — oft einige fokussierte Sitzungen zu einer einzelnen praktischen Vereinbarung, wie dem Sommer.",
+    "s6p3": "Wenn eine Einigung erreicht ist, schreiben Sie sie auf. Daten, wer das Kind wann hat, Reisedetails, Übergabezeiten und -orte. Eine schriftliche Zusammenfassung, auf die beide zurückgreifen können, verhindert Nachverhandlungen im Juni, wenn sich jemand an eine andere Version erinnert.",
+    "ctaTitle": "Planen Sie den Sommer gemeinsam",
+    "ctaDesc": "Lina bringt den Betreuungsplan, Nachrichten und Kindesinformationen an einem gemeinsamen Ort zusammen — damit beide Eltern den gleichen Überblick über den Sommerplan haben, lange bevor der Juni kommt.",
     "ctaCta": "Lina herunterladen"
   },
   "carousel": {

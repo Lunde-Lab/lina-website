@@ -794,6 +794,10 @@
     "article5": {
       "headline": "Kommunikation mellan föräldrar med delad omsorg",
       "description": "Hur du håller kommunikationen saklig och strukturerad när ni delar omsorgen om ett barn — praktiska tips om trådar, skriftlighet och tydliga gränser."
+    },
+    "article6": {
+      "headline": "Sommarlovet i två hem",
+      "description": "Praktisk vägledning om planering av sommarlovet för föräldrar med delad omsorg."
     }
   },
   "blog1": {
@@ -850,7 +854,10 @@
     "a4desc": "Vad det innebär i praktiken för vardagen, beslutsrätt och barnets rättigheter.",
     "a5label": "Kommunikation",
     "a5title": "Kommunikation mellan föräldrar med delad omsorg",
-    "a5desc": "Varför struktur hjälper och hur du håller tonen saklig när det gäller barnet."
+    "a5desc": "Varför struktur hjälper och hur du håller tonen saklig när det gäller barnet.",
+    "a6label": "Semester",
+    "a6title": "Sommarlovet i två hem",
+    "a6desc": "Hur du delar sommarlovet, hanterar resor och samtycke, och ger barnet trygghet mellan två hem."
   },
   "blog2": {
     "pageTitle": "Överlämningsdag — så gör du bytet enklare | Lina",
@@ -986,6 +993,40 @@
     "s6p3": "Om barnet berättar något från det andra hemmet, lyssna — men undvik att ställa utforskande frågor. Barnet behöver känna att det kan prata fritt utan att bli en informationskälla.",
     "ctaTitle": "Strukturerad kommunikation mellan två hem",
     "ctaDesc": "Lina håller samtalen organiserade i separata trådar. Meddelanden kan inte redigeras eller raderas — så båda föräldrarna har en tydlig historik över vad som avtalats.",
+    "ctaCta": "Ladda ner Lina"
+  },
+  "blog6": {
+    "pageTitle": "Sommarlovet i två hem — Lina",
+    "pageDesc": "Praktisk vägledning för föräldrar med delad omsorg om planering av sommarlovet — hur ni delar lovet, hanterar resor och samtycke, och ger barnet trygghet mellan två hem.",
+    "label": "Semester",
+    "title": "Sommarlovet i två hem",
+    "intro": "Sommaren är den längsta perioden på året då vardagsrutinerna stannar upp. För föräldrar med delad omsorg innebär det längre perioder borta från ett hem, resor över gränser och beslut som måste hålla i flera månader framåt. Den första sommaren efter en separation är ofta den svåraste — men mönstren ni sätter nu följer med in i varje sommar som kommer.",
+    "s1title": "Varför sommarplanering är annorlunda",
+    "s1p1": "Vardags- och veckoarrangemang är uppbyggda kring skola, jobb och närliggande rutiner. Sommaren bryter det mesta — skolor stänger i flera veckor, båda föräldrarna tar vanligtvis semester, far- och morföräldrar reser, och sommarläger fylls tidigt.",
+    "s1p2": "Resultatet är att det vanliga umgängesschemat sällan håller genom juli och augusti utan ändringar. De flesta familjer kommer överens om ett separat sommaravtal varje år, dokumenterat i förväg.",
+    "s1p3": "Behandla sommarplanen som ett eget avtal, inte en variant av veckoschemat. Den behöver egna datum, egna överlämningar och en egen skriftlig version som båda föräldrarna kan hänvisa till.",
+    "s2title": "Börja tidigare än det känns nödvändigt",
+    "s2p1": "När den ena föräldern frågar om sommaren i slutet av maj är det ofta för sent. Flygpriserna har stigit, sommarlägren är fulla och far- och morföräldrarna har bokat sina egna planer. Den andra förälderns semesterveckor kan redan vara låsta på jobbet.",
+    "s2p2": "En rimelig regel: ha huvudbesluten klara senast i april. Det innebär att bestämma vilka veckor varje förälder har barnet, om utlandsresor planeras, och om det ska bokas läger eller kurser.",
+    "s2p3": "Det betyder inte att varje dag behöver planeras i april. Flexibilitet är bra — men de stora blocken bör avtalas tidigt. Små justeringar i juni är mycket enklare än att bygga hela planen från grunden då.",
+    "s3title": "Sätt att dela sommaren",
+    "s3p1": "Att dela sommaren på hälften är det enklaste — varje förälder har halva lovet i ett sammanhängande block. Det fungerar bra när båda vill ha längre resor och barnet är tillräckligt gammalt för längre perioder borta från varje hem. Växlande tvåveckorsblock passar ofta bättre för yngre barn, och för föräldrar som bor tillräckligt nära för att kontakt under varje block är möjlig.",
+    "s3p2": "Växlande hela somrar används av föräldrar som bor långt ifrån varandra — olika länder, eller städer med lång restid. Den ena föräldern har hela sommaren ena året, den andra nästa. Föräldern utan sommartid får vanligtvis en större del av en annan ledighet som kompensation.",
+    "s3p3": "För helgdagar som infaller under sommaren — midsommar, nationaldagar, klämdagar — växlar många familjer år för år. Förälder A har midsommar udda år, förälder B jämna år. Skriv ner det, så behöver frågan inte dyka upp igen.",
+    "s4title": "Resor, pass och samtycke",
+    "s4p1": "Om någon av föräldrarna planerar att resa utomlands med barnet krävs vanligtvis skriftligt samtycke från den andra föräldern — av flygbolag, av gränsmyndigheter, och i vissa fall av destinationslandet. Kraven varierar, så kontrollera vad de aktuella länderna kräver.",
+    "s4p2": "Vet vem som har barnets pass, och kontrollera att det är giltigt för resan — vissa länder kräver sex månaders giltighet efter returdatumet. Ett kort undertecknat brev från den förälder som inte reser, med datum, destination och barnets uppgifter, förebygger problem vid incheckningen. Vissa flygbolag kräver en notariserad version; andra godtar en inskannad signatur. Fråga före resan, inte vid gaten.",
+    "s4p3": "Om du förväntar dig svårigheter att få samtycke, lös det i god tid — inte dagen före avresa. Att vänta till sista minuten förvandlar en pappersfråga till en konflikt.",
+    "s5title": "Vad barnet behöver vid bytet",
+    "s5p1": "Längre sommarblock kan vara tuffare för barn än de vanliga veckobytena. De är borta från ett hem längre, rutinerna förändras och vännerna kanske finns på ett ställe och inte det andra. Barnet bör känna till planen — inte varje detalj, men formen på sommaren. Osäkerhet är svårare för de flesta barn än en plan de inte älskar.",
+    "s5p2": "Barnet behöver inte välja. Att ställa frågor som \"vill du vara hos mamma eller pappa\" sätter barnet i en omöjlig position. Föräldrarna gör planen; barnet informeras. Låt saker följa med barnet — ett favoritgosedjur, en bok, en laddare. Små saker som skapar sammanhang gör längre perioder lättare.",
+    "s5p3": "Håll övergångarna lugna. Överlämningsdagen in i ett tvåveckorsblock är inte rätt tillfälle för långa samtal om regler eller förväntningar. Det kan vänta en dag eller två.",
+    "s6title": "När ni inte kan enas",
+    "s6p1": "Sommaren är ofta där meningsskiljaktigheter uppstår. Den ena föräldern vill resa någonstans den andra inte godkänner. Semesterveckor krockar på jobbet. Ett besök hos far- eller morföräldrar fungerar bara en specifik vecka. Sätt förslaget på papper — specifika datum, specifik plan. Det är svårare att diskutera konstruktivt muntligt än när båda kan titta på samma skriftliga version.",
+    "s6p2": "Föreslå alternativ, inte bara invändningar. \"Jag kan inte vecka 28, men vecka 26 eller 29 fungerar\" är lättare att svara på än \"det fungerar inte för mig.\" Om direkt diskussion fastnar erbjuder familjerätten samarbetssamtal för just sådana frågor — ofta några fokuserade samtal om ett enskilt praktiskt avtal, som sommaren.",
+    "s6p3": "När ni nått en överenskommelse, skriv ner den. Datum, vem som har barnet när, resedetaljer, tider och platser för överlämning. En skriftlig sammanfattning som båda kan gå tillbaka till förhindrar omförhandling i juni när någon minns en annan version.",
+    "ctaTitle": "Planera sommaren tillsammans",
+    "ctaDesc": "Lina samlar umgängesschemat, meddelanden och barninformation på ett gemensamt ställe — så att båda föräldrarna har samma översikt av sommarplanen, långt innan juni.",
     "ctaCta": "Ladda ner Lina"
   },
   "carousel": {

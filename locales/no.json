@@ -794,6 +794,10 @@
     "article5": {
       "headline": "Kommunikasjon mellom foreldre med delt omsorg",
       "description": "Hvorfor struktur hjelper, og hvordan holde tonen saklig når det handler om barnet."
+    },
+    "article6": {
+      "headline": "Sommerferie i to hjem",
+      "description": "Praktisk veiledning om planlegging av sommerferie for foreldre med delt omsorg."
     }
   },
   "blog1": {
@@ -850,7 +854,10 @@
     "a4desc": "Hva det betyr i praksis for hverdagen, beslutningsmyndighet og barnets rettigheter.",
     "a5label": "Kommunikasjon",
     "a5title": "Kommunikasjon mellom foreldre med delt omsorg",
-    "a5desc": "Hvorfor struktur hjelper, og hvordan holde tonen saklig når det gjelder barnet."
+    "a5desc": "Hvorfor struktur hjelper, og hvordan holde tonen saklig når det gjelder barnet.",
+    "a6label": "Ferie",
+    "a6title": "Sommerferie i to hjem",
+    "a6desc": "Hvordan dele sommerferien, håndtere reiser og samtykke, og gi barnet trygghet mellom to hjem."
   },
   "blog2": {
     "pageTitle": "Byttedag — slik gjør du overleveringen enklere | Lina",
@@ -986,6 +993,40 @@
     "s6p3": "Hvis barnet forteller noe fra det andre hjemmet, lytt — men unngå å stille utforskende spørsmål. Barnet trenger å føle at det kan snakke fritt uten å bli en informasjonskilde.",
     "ctaTitle": "Strukturert kommunikasjon mellom to hjem",
     "ctaDesc": "Lina holder samtalene organisert i separate tråder. Meldinger kan ikke redigeres eller slettes — slik at begge foreldre har en tydelig historikk over hva som er avtalt.",
+    "ctaCta": "Last ned Lina"
+  },
+  "blog6": {
+    "pageTitle": "Sommerferie i to hjem — Lina",
+    "pageDesc": "Praktisk veiledning for foreldre med delt omsorg om planlegging av sommerferien — hvordan dele ferien, håndtere reiser og samtykke, og gi barnet trygghet mellom to hjem.",
+    "label": "Ferie",
+    "title": "Sommerferie i to hjem",
+    "intro": "Sommeren er den lengste perioden i året der hverdagsrutinene stopper opp. For foreldre med delt omsorg betyr det lengre perioder borte fra ett hjem, reiseplaner på tvers av landegrenser og avtaler som må holde i flere måneder. Den første sommeren etter et samlivsbrudd er ofte den vanskeligste — men mønstrene dere setter nå, følger med inn i alle somre som kommer.",
+    "s1title": "Hvorfor sommerplanlegging er annerledes",
+    "s1p1": "Hverdags- og ukeordninger er bygget rundt skole, jobb og nærrutiner. Sommeren bryter med det meste — skoler stenger i flere uker, begge foreldre tar vanligvis ferie, besteforeldre reiser, og sommerleirer fylles opp tidlig.",
+    "s1p2": "Resultatet er at den vanlige samværsordningen sjelden holder gjennom juli og august uten endringer. De fleste familier avtaler en egen sommerplan hvert år, dokumentert på forhånd.",
+    "s1p3": "Behandle sommerplanen som en egen avtale, ikke en variant av ukeplanen. Den trenger egne datoer, egne overleveringer og en egen skriftlig versjon begge foreldre kan vise til.",
+    "s2title": "Start tidligere enn det føles nødvendig",
+    "s2p1": "Når den ene forelderen spør om sommeren i slutten av mai, er det ofte for sent. Flybilletter har steget i pris, sommerleirer er fulle, og besteforeldre har lagt sine egne planer. Den andre forelderens ferieuker kan allerede være låst på jobb.",
+    "s2p2": "En rimelig tommelfingerregel: ha hovedbeslutningene klare innen april. Det betyr å avgjøre hvilke uker hver forelder har barnet, om det er planlagt utenlandsreise, og om det skal bookes leirer eller kurs.",
+    "s2p3": "Det betyr ikke at hver dag må planlegges i april. Fleksibilitet er greit — men de store blokkene bør avtales tidlig. Små justeringer i juni er mye enklere enn å bygge hele planen fra bunnen av da.",
+    "s3title": "Måter å dele sommeren på",
+    "s3p1": "Å dele sommeren i to er det enkleste — hver forelder har halve ferien i én sammenhengende blokk. Det fungerer godt når begge ønsker lengre reiser og barnet er gammelt nok til å være lenge borte fra hvert hjem. Alternerende toukers-blokker er ofte bedre for yngre barn, og for foreldre som bor nær nok til at kontakt under hver blokk er enkelt.",
+    "s3p2": "Veksling av hele sommere brukes av foreldre som bor langt fra hverandre — forskjellige land, eller byer med lang reisetid. Den ene forelderen har hele sommeren det ene året, den andre det neste. Forelderen uten sommertid får vanligvis en større del av en annen ferie som kompensasjon.",
+    "s3p3": "For helligdager som faller i sommerferien — sankthans, nasjonaldager, andre fridager — veksler mange familier år for år. Forelder A har sankthans i oddetallsår, forelder B i partallsår. Skriv det ned, så slipper spørsmålet å komme opp igjen.",
+    "s4title": "Reiser, pass og samtykke",
+    "s4p1": "Hvis en av foreldrene planlegger utenlandsreise med barnet, kreves vanligvis skriftlig samtykke fra den andre forelderen — av flyselskaper, av grensemyndigheter, og i noen tilfeller av destinasjonslandet. Kravene varierer, så sjekk hva de aktuelle landene krever.",
+    "s4p2": "Vit hvem som har barnets pass, og sjekk at det er gyldig for reisen — noen land krever seks måneders gyldighet etter planlagt hjemkomst. Et kort signert brev fra forelderen som ikke reiser, med datoer, reisemål og barnets opplysninger, forebygger problemer ved innsjekking. Noen flyselskaper krever notarisert versjon; andre godtar en signert skanning. Spør før reisen, ikke ved gaten.",
+    "s4p3": "Forventer du vanskeligheter med å få samtykke, løs det i god tid — ikke dagen før avreise. Å vente til siste minutt gjør et papirspørsmål til en konflikt.",
+    "s5title": "Hva barnet trenger under byttene",
+    "s5p1": "Lengre sommerblokker kan være tøffere for barn enn de vanlige ukentlige byttene. De er borte fra ett hjem lenger, rutiner endrer seg, og venner kan være ett sted og ikke det andre. Barnet bør kjenne planen — ikke alle detaljer, men formen på sommeren. Usikkerhet er vanskeligere for de fleste barn enn en plan de ikke elsker.",
+    "s5p2": "Barnet trenger ikke å velge. Å stille spørsmål som «vil du være hos mamma eller pappa» setter barnet i en umulig posisjon. Foreldrene lager planen; barnet informeres. La ting følge barnet — en favorittbamse, en bok, en lader. Små ting som skaper sammenheng gjør lengre perioder enklere.",
+    "s5p3": "Hold overgangene rolige. Overleveringsdagen inn i en toukers blokk er ikke øyeblikket for lange samtaler om regler eller forventninger. Det kan vente en dag eller to.",
+    "s6title": "Når dere ikke blir enige",
+    "s6p1": "Sommeren er ofte der uenigheter dukker opp. Den ene forelderen ønsker en reise den andre ikke godtar. Ferieuker kolliderer på jobb. Et besteforeldrebesøk fungerer bare i én bestemt uke. Sett forslaget skriftlig — konkrete datoer, konkret plan. Det er vanskeligere å diskutere konstruktivt muntlig enn når begge kan se samme skriftlige versjon.",
+    "s6p2": "Foreslå alternativer, ikke bare innvendinger. «Jeg kan ikke uke 28, men uke 26 eller 29 passer» er lettere å svare på enn «det fungerer ikke for meg.» Hvis direkte diskusjon stopper opp, tilbyr familievernkontoret mekling for nettopp dette — ofte noen få målrettede samtaler om én praktisk avtale, som sommeren.",
+    "s6p3": "Når avtalen er på plass, skriv den ned. Datoer, hvem som har barnet når, reisedetaljer, overleveringstider og -steder. En skriftlig oppsummering begge kan vise til, forhindrer reforhandling i juni når noen husker en annen versjon.",
+    "ctaTitle": "Planlegg sommeren sammen",
+    "ctaDesc": "Lina samler samværsplanen, meldinger og barneinformasjon på ett felles sted — slik at begge foreldre har samme oversikt over sommerplanen, lenge før juni kommer.",
     "ctaCta": "Last ned Lina"
   },
   "carousel": {

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fi" data-i18n-title="blog6.pageTitle" data-i18n-desc="blog6.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/summer-holidays/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/blog/summer-holidays/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/sommerferie-to-hjem/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/sommarlov-tva-hem/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/sommerferie-to-hjem/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/" />
+  <link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/" />
+  <link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/zomervakantie-twee-huizen/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Kesäloma kahdessa kodissa — Lina</title>
+  <meta name="description" content="Käytännön opas yhteishuoltajavanhemmille kesäloman suunnitteluun — miten loma jaetaan, miten käsitellään matkustamista ja suostumusta, ja miten lapsi pidetään turvassa kahden kodin välillä." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/" />
+  <meta property="og:title" content="Kesäloma kahdessa kodissa — Lina" />
+  <meta property="og:description" content="Käytännön opas yhteishuoltajavanhemmille kesäloman suunnitteluun — miten loma jaetaan, miten käsitellään matkustamista ja suostumusta, ja miten lapsi pidetään turvassa kahden kodin välillä." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kesäloma kahdessa kodissa — Lina" />
+  <meta name="twitter:description" content="Käytännön opas yhteishuoltajavanhemmille kesäloman suunnitteluun — miten loma jaetaan, miten käsitellään matkustamista ja suostumusta, ja miten lapsi pidetään turvassa kahden kodin välillä." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 120px;
+    }
+
+    .footer-col-heading {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .footer-col a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav {
+        gap: 32px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #1a1e23;
+      color: #fff;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Kesäloma kahdessa kodissa",
+  "description": "Käytännön opas kesäloman suunnitteluun yhteishuoltajavanhemmille.",
+  "datePublished": "2026-04-16",
+  "dateModified": "2026-04-16",
+  "author": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getlina.app/assets/logos/Logomark_1.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/"
+  },
+  "image": "https://getlina.app/assets/og-image.png"
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getlina.app/fi/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://getlina.app/fi/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Kesäloma kahdessa kodissa"
+    }
+  ]
+}
+</script>
+  <script id="lina-lang-redirect">(function () {
+  var K = 'lina_lang';
+  // Already on a non-English locale page — nothing to do
+  if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
+  var s; try { s = localStorage.getItem(K); } catch (e) {}
+  // User explicitly chose English — stay
+  if (s === 'en') return;
+  // User previously chose a non-English language — redirect to same path
+  if (s) { location.replace('/' + s + location.pathname); return; }
+  // First visit: auto-detect from browser language list
+  var M = {nb:'no',nn:'no',no:'no',sv:'sv',da:'da',fi:'fi',de:'de',nl:'nl',fr:'fr'};
+  var ls = navigator.languages ? [].slice.call(navigator.languages) : [navigator.language || ''];
+  for (var i = 0; i < ls.length; i++) {
+    var l = M[(ls[i] || '').toLowerCase().split('-')[0]];
+    if (l) { location.replace('/' + l + '/'); return; }
+  }
+}());</script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/fi/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">FI</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/blog/summer-holidays/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/no/blog/sommerferie-to-hjem/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/sv/blog/sommarlov-tva-hem/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/blog/sommerferie-to-hjem/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option active" href="/fi/blog/kesaloma-kahdessa-kodissa/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/blog/sommerferien-zwei-zuhause/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/blog/zomervakantie-twee-huizen/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option" href="/fr/blog/vacances-ete-deux-maisons/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog6.label">Lomat</span>
+
+      <h1 data-i18n="blog6.title">Kesäloma kahdessa kodissa</h1>
+
+      <p class="article-lead" data-i18n="blog6.intro">Kesä on vuoden pisin jakso, jolloin arkirutiinit pysähtyvät. Yhteishuoltajavanhemmille se tarkoittaa pidempiä jaksoja poissa toisesta kodista, matkoja rajojen yli ja päätöksiä, joiden on kestettävä kuukausia. Ensimmäinen kesä eron jälkeen on usein vaikein — mutta nyt luomanne mallit seuraavat mukana jokaiseen tulevaan kesään.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s1title">Miksi kesäsuunnittelu on erilaista</h2>
+        <p data-i18n="blog6.s1p1">Arki- ja viikkojärjestelyt rakentuvat koulun, työn ja lähirutiinien ympärille. Kesä rikkoo suurimman osan niistä — koulut sulkevat viikkojen ajaksi, molemmat vanhemmat pitävät yleensä lomaa, isovanhemmat matkustavat ja kesäleirit täyttyvät aikaisin.</p>
+        <p data-i18n="blog6.s1p2">Tuloksena on, että tavallinen vuoroasumisaikataulu harvoin kestää heinä- ja elokuun läpi ilman muutoksia. Useimmat perheet sopivat erillisestä kesäsuunnitelmasta joka vuosi, etukäteen dokumentoituna.</p>
+        <p data-i18n="blog6.s1p3">Käsittele kesäsuunnitelmaa omana sopimuksenaan, ei viikkoaikataulun muunnelmana. Se tarvitsee omat päivämääränsä, omat vaihdot ja oman kirjallisen version, johon molemmat vanhemmat voivat viitata.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s2title">Aloita aikaisemmin kuin tuntuu tarpeelliselta</h2>
+        <p data-i18n="blog6.s2p1">Kun toinen vanhempi kysyy kesästä toukokuun lopulla, on usein liian myöhäistä. Lentolippujen hinnat ovat nousseet, kesäleirit ovat täynnä ja isovanhemmat ovat varanneet omat matkansa. Toisen vanhemman lomaviikot voivat olla jo lukittuina työssä.</p>
+        <p data-i18n="blog6.s2p2">Järkevä sääntö: tee pääpäätökset huhtikuuhun mennessä. Se tarkoittaa päättämistä siitä, millä viikoilla kumpikin vanhempi pitää lasta, onko ulkomaanmatkoja suunnitteilla ja varaataanko leirejä tai kursseja.</p>
+        <p data-i18n="blog6.s2p3">Tämä ei tarkoita, että jokainen päivä pitää suunnitella huhtikuussa. Joustavuus on hyvä asia — mutta suuret lohkot pitäisi sopia aikaisin. Pienet muutokset kesäkuussa ovat paljon helpompia kuin koko suunnitelman rakentaminen tyhjästä silloin.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s3title">Tapoja jakaa kesä</h2>
+        <p data-i18n="blog6.s3p1">Kesän puolittaminen on yksinkertaisinta — kumpikin vanhempi pitää puolet lomasta yhdessä yhtenäisessä jaksossa. Se toimii hyvin, kun molemmat haluavat pidempiä matkoja ja lapsi on tarpeeksi vanha pidempään jaksoon poissa kummastakin kodista. Vuorottelevat kahden viikon jaksot sopivat usein paremmin nuoremmille lapsille ja vanhemmille, jotka asuvat tarpeeksi lähellä, jotta yhteydenpito jakson aikana on helppoa.</p>
+        <p data-i18n="blog6.s3p2">Kokonaisten kesien vuorottelu on käytössä vanhemmilla, jotka asuvat kaukana toisistaan — eri maissa tai kaupungeissa, joiden välillä on pitkä matka. Toinen vanhempi pitää koko kesän yhtenä vuonna, toinen seuraavana. Vanhempi ilman kesäaikaa saa tyypillisesti suuremman osuuden toisesta lomasta korvaukseksi.</p>
+        <p data-i18n="blog6.s3p3">Kesään osuvien juhlapyhien osalta — juhannus, kansallispäivät, arkipyhät — monet perheet vuorottelevat vuosittain. Vanhempi A pitää juhannuksen parittomina vuosina, vanhempi B parillisina. Kirjaa se ylös, niin kysymyksen ei tarvitse nousta uudelleen esiin.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s4title">Matkustaminen, passit ja suostumus</h2>
+        <p data-i18n="blog6.s4p1">Jos kumpi tahansa vanhempi suunnittelee ulkomaanmatkaa lapsen kanssa, toisen vanhemman kirjallinen suostumus vaaditaan yleensä — lentoyhtiöiden, rajaviranomaisten ja joissakin tapauksissa kohdemaan toimesta. Vaatimukset vaihtelevat, joten tarkista mitä kyseiset maat edellyttävät.</p>
+        <p data-i18n="blog6.s4p2">Tiedä kuka pitää lapsen passia hallussaan ja tarkista, että se on voimassa matkaa varten — joissakin maissa vaaditaan kuuden kuukauden voimassaoloa paluupäivän jälkeen. Lyhyt allekirjoitettu kirje ei-matkustavalta vanhemmalta, jossa on päivämäärät, määränpää ja lapsen tiedot, ehkäisee ongelmia lähtöselvityksessä. Jotkut lentoyhtiöt vaativat notarisoidun version; toiset hyväksyvät skannatun allekirjoituksen. Kysy ennen matkaa, älä portilla.</p>
+        <p data-i18n="blog6.s4p3">Jos odotat vaikeuksia suostumuksen saamisessa, ratkaise asia hyvissä ajoin — älä matkan aattona. Viime hetkeen odottaminen muuttaa paperikysymyksen konfliktiksi.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s5title">Mitä lapsi tarvitsee vaihdon aikana</h2>
+        <p data-i18n="blog6.s5p1">Pidemmät kesäjaksot voivat olla lapsille vaikeampia kuin tavalliset viikoittaiset vaihdot. He ovat poissa toisesta kodista pidempään, rutiinit muuttuvat ja ystävät voivat olla yhdessä paikassa mutta eivät toisessa. Lapsen pitäisi tietää suunnitelma — ei jokaista yksityiskohtaa, mutta kesän muoto. Epävarmuus on useimmille lapsille vaikeampaa kuin suunnitelma, josta he eivät pidä.</p>
+        <p data-i18n="blog6.s5p2">Lapsen ei tarvitse valita. Kysymysten kehystäminen muotoon "haluatko olla äidin vai isän luona" asettaa lapsen mahdottomaan asemaan. Vanhemmat tekevät suunnitelman; lapselle kerrotaan. Anna tavaroiden kulkea lapsen mukana — lempipehmolelu, kirja, laturi. Pienet jatkuvuutta luovat esineet tekevät pidemmistä jaksoista helpompia.</p>
+        <p data-i18n="blog6.s5p3">Pidä vaihdot rauhallisina. Vaihtopäivä kahden viikon jaksoon ei ole hetki pitkille keskusteluille säännöistä tai odotuksista. Se voi odottaa päivän tai pari.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s6title">Kun ette pääse sopuun</h2>
+        <p data-i18n="blog6.s6p1">Kesä on usein hetki, jolloin erimielisyydet nousevat pintaan. Toinen vanhempi haluaa matkan, jota toinen ei hyväksy. Lomaviikot menevät päällekkäin työssä. Isovanhempien vierailu onnistuu vain yhtenä tietyllä viikkona. Laita ehdotus kirjalliseen muotoon — tarkat päivämäärät, tarkka suunnitelma. Suullisesti on vaikeampaa keskustella rakentavasti kuin kun molemmat voivat katsoa samaa kirjallista versiota.</p>
+        <p data-i18n="blog6.s6p2">Ehdota vaihtoehtoja, älä pelkkiä vastalauseita. "En voi viikolla 28, mutta viikko 26 tai 29 käy" on helpompi vastata kuin "se ei sovi minulle." Jos suora keskustelu jumittuu, perheneuvola tarjoaa sovittelua juuri tähän — usein muutaman kohdennetun istunnon yksittäisestä käytännön sopimuksesta, kuten kesästä.</p>
+        <p data-i18n="blog6.s6p3">Kun sopimus on syntynyt, kirjoita se ylös. Päivämäärät, kuka pitää lasta milloinkin, matkatiedot, vaihtoajat ja -paikat. Kirjallinen yhteenveto, johon molemmat voivat palata, estää uudelleenneuvottelun kesäkuussa, kun joku muistaa eri version.</p>
+      </div>
+
+
+      <section style="max-width: 640px; margin: 48px auto 0; padding: 0 24px;">
+        <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 12px;">Related articles</p>
+        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+    <li><a href="/fi/blog/vaihtopaiva/" style="color: var(--primary); font-weight: 500;">Handover day — how to make transitions easier</a></li>
+    <li><a href="/fi/blog/vuoroasuminen/" style="color: var(--primary); font-weight: 500;">Care arrangements explained</a></li>
+        </ul>
+      </section>
+      <div class="article-cta">
+        <h2 data-i18n="blog6.ctaTitle">Suunnitelkaa kesä yhdessä</h2>
+        <p data-i18n="blog6.ctaDesc">Lina kokoaa vuoroasumisaikataulun, viestit ja lapsen tiedot yhteen jaettuun paikkaan — jotta molemmilla vanhemmilla on sama näkymä kesäsuunnitelmaan, kauan ennen kesäkuuta.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Lataa App Storesta" data-i18n-aria="nav.appstoreAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Lataa App Storesta</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Hanki Google Playsta" data-i18n-aria="hero.ctaPlayAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Hanki Google Playsta</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupProduct">Tuote</span>
+          <a href="/fi/care-schedule/" data-i18n="footer.careSchedule">Hoitoaikataulu</a>
+          <a href="/fi/care-agreement/" data-i18n="footer.careAgreement">Huoltosopimus</a>
+          <a href="/fi/pricing/" data-i18n="footer.pricing">Hinta</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupExplore">Tutustu</span>
+          <a href="/fi/faq/" data-i18n="footer.faq">Usein kysytyt kysymykset</a>
+          <a href="/fi/professionals.html" data-i18n="footer.familievern">Ammattilaiset</a>
+          <a href="/fi/stories/" data-i18n="footer.stories">Tarinoita</a>
+          <a href="/fi/blog/" data-i18n="footer.blog">Blogi</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupCompany">Yritys</span>
+          <a href="/fi/about/" data-i18n="footer.about">Tietoa</a>
+          <a href="/fi/contact.html" data-i18n="footer.contact">Ota yhteyttä</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupLegal">Lakiasiat</span>
+          <a href="/fi/terms/" data-i18n="footer.terms">Käyttöehdot</a>
+          <a href="/fi/privacy/" data-i18n="footer.privacy">Tietosuojakäytäntö</a>
+          <a href="/fi/account-deletion.html" data-i18n="footer.accountDeletion">Tilin poistaminen</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Kaikki oikeudet pidätetään.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var K = 'lina_lang';
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    // Persist manual language selection so the redirect respects the user's choice
+    var opts = switcher.querySelectorAll('.lang-option');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].addEventListener('click', function () {
+        var m = (this.getAttribute('href') || '').match(/^\/(no|sv|da|fi|de|nl|fr)\//);
+        try { localStorage.setItem(K, m ? m[1] : 'en'); } catch (e) {}
+      });
+    }
+  }());
+  </script>
+
+</body>
+</html>

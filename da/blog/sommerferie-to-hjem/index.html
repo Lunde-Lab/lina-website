@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="da" data-i18n-title="blog6.pageTitle" data-i18n-desc="blog6.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/da/blog/sommerferie-to-hjem/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/summer-holidays/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/blog/summer-holidays/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/sommerferie-to-hjem/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/sommarlov-tva-hem/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/sommerferie-to-hjem/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/kesaloma-kahdessa-kodissa/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/" />
+  <link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/" />
+  <link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/sommerferien-zwei-zuhause/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/zomervakantie-twee-huizen/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/vacances-ete-deux-maisons/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Sommerferie i to hjem — Lina</title>
+  <meta name="description" content="Praktisk vejledning for forældre med delt omsorg om planlægning af sommerferien — hvordan I deler ferien, håndterer rejser og samtykke, og giver barnet tryghed mellem to hjem." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://getlina.app/da/blog/sommerferie-to-hjem/" />
+  <meta property="og:title" content="Sommerferie i to hjem — Lina" />
+  <meta property="og:description" content="Praktisk vejledning for forældre med delt omsorg om planlægning af sommerferien — hvordan I deler ferien, håndterer rejser og samtykke, og giver barnet tryghed mellem to hjem." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sommerferie i to hjem — Lina" />
+  <meta name="twitter:description" content="Praktisk vejledning for forældre med delt omsorg om planlægning af sommerferien — hvordan I deler ferien, håndterer rejser og samtykke, og giver barnet tryghed mellem to hjem." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 120px;
+    }
+
+    .footer-col-heading {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .footer-col a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav {
+        gap: 32px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #1a1e23;
+      color: #fff;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Sommerferie i to hjem",
+  "description": "Praktisk vejledning om planlægning af sommerferien for forældre med delt omsorg.",
+  "datePublished": "2026-04-16",
+  "dateModified": "2026-04-16",
+  "author": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getlina.app/assets/logos/Logomark_1.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://getlina.app/da/blog/sommerferie-to-hjem/"
+  },
+  "image": "https://getlina.app/assets/og-image.png"
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getlina.app/da/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://getlina.app/da/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Sommerferie i to hjem"
+    }
+  ]
+}
+</script>
+  <script id="lina-lang-redirect">(function () {
+  var K = 'lina_lang';
+  // Already on a non-English locale page — nothing to do
+  if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
+  var s; try { s = localStorage.getItem(K); } catch (e) {}
+  // User explicitly chose English — stay
+  if (s === 'en') return;
+  // User previously chose a non-English language — redirect to same path
+  if (s) { location.replace('/' + s + location.pathname); return; }
+  // First visit: auto-detect from browser language list
+  var M = {nb:'no',nn:'no',no:'no',sv:'sv',da:'da',fi:'fi',de:'de',nl:'nl',fr:'fr'};
+  var ls = navigator.languages ? [].slice.call(navigator.languages) : [navigator.language || ''];
+  for (var i = 0; i < ls.length; i++) {
+    var l = M[(ls[i] || '').toLowerCase().split('-')[0]];
+    if (l) { location.replace('/' + l + '/'); return; }
+  }
+}());</script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/da/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">DA</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/blog/summer-holidays/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/no/blog/sommerferie-to-hjem/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/sv/blog/sommarlov-tva-hem/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option active" href="/da/blog/sommerferie-to-hjem/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/kesaloma-kahdessa-kodissa/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/blog/sommerferien-zwei-zuhause/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/blog/zomervakantie-twee-huizen/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option" href="/fr/blog/vacances-ete-deux-maisons/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog6.label">Ferie</span>
+
+      <h1 data-i18n="blog6.title">Sommerferie i to hjem</h1>
+
+      <p class="article-lead" data-i18n="blog6.intro">Sommeren er den længste periode på året, hvor hverdagsrutinerne holder pause. For forældre med delt omsorg betyder det længere perioder væk fra det ene hjem, rejseplaner på tværs af grænser og aftaler, der skal holde i flere måneder. Den første sommer efter en separation er ofte den sværeste — men de mønstre, I sætter nu, følger med ind i alle somre derefter.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s1title">Hvorfor sommerplanlægning er anderledes</h2>
+        <p data-i18n="blog6.s1p1">Hverdags- og ugeordninger er bygget op omkring skole, arbejde og nære rutiner. Sommeren bryder med det meste — skoler lukker i flere uger, begge forældre holder typisk ferie, bedsteforældre rejser, og sommerlejre fyldes tidligt op.</p>
+        <p data-i18n="blog6.s1p2">Resultatet er, at den almindelige samværsordning sjældent holder gennem juli og august uden ændringer. De fleste familier aftaler en separat sommerplan hvert år, dokumenteret på forhånd.</p>
+        <p data-i18n="blog6.s1p3">Behandl sommerplanen som sin egen aftale, ikke en variation af ugeplanen. Den har brug for sine egne datoer, sine egne overleveringer og sin egen skriftlige version, som begge forældre kan henvise til.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s2title">Begynd tidligere, end det føles nødvendigt</h2>
+        <p data-i18n="blog6.s2p1">Når den ene forælder spørger om sommeren i slutningen af maj, er det ofte for sent. Flypriser er steget, sommerlejre er fyldt op, og bedsteforældre har lagt deres egne planer. Den anden forælders ferieuger kan allerede være låst fast på arbejdet.</p>
+        <p data-i18n="blog6.s2p2">En rimelig tommelfingerregel: hav hovedbeslutningerne på plads inden april. Det betyder at afgøre, hvilke uger hver forælder har barnet, om der er planlagt udlandsrejse, og om der skal bookes lejre eller kurser.</p>
+        <p data-i18n="blog6.s2p3">Det betyder ikke, at hver dag skal planlægges i april. Fleksibilitet er fint — men de store blokke bør aftales tidligt. Små justeringer i juni er meget nemmere end at bygge hele planen fra bunden på det tidspunkt.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s3title">Måder at dele sommeren på</h2>
+        <p data-i18n="blog6.s3p1">At halvere sommeren er det simpleste — hver forælder har halvdelen af ferien i én sammenhængende blok. Det fungerer godt, når begge forældre ønsker længere rejser, og barnet er gammelt nok til en længere periode væk fra hvert hjem. Skiftende tougers-blokke er ofte bedre for yngre børn, og for forældre der bor tæt nok på hinanden til, at kontakt under hver blok er let.</p>
+        <p data-i18n="blog6.s3p2">Skiftende hele somre bruges af forældre, der bor langt fra hinanden — forskellige lande eller byer med lang rejsetid. Den ene forælder har hele sommeren det ene år, den anden det næste. Forælderen uden sommertid får typisk en større del af en anden ferie som kompensation.</p>
+        <p data-i18n="blog6.s3p3">For helligdage, der falder i sommerferien — sankthans, nationaldage, fridage — skifter mange familjer år for år. Forælder A har sankthans i ulige år, forælder B i lige år. Skriv det ned, så behøver spørgsmålet ikke at komme op igen.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s4title">Rejser, pas og samtykke</h2>
+        <p data-i18n="blog6.s4p1">Hvis en af forældrene planlægger at rejse til udlandet med barnet, kræves der normalt skriftligt samtykke fra den anden forælder — af flyselskaber, af grænsemyndigheder og i nogle tilfælde af destinationslandet. Kravene varierer, så tjek hvad de pågældende lande kræver.</p>
+        <p data-i18n="blog6.s4p2">Vid hvem der har barnets pas, og tjek at det er gyldigt til rejsen — nogle lande kræver seks måneders gyldighed efter hjemkomstdatoen. Et kort underskrevet brev fra den forælder, der ikke rejser, med datoer, destination og barnets oplysninger, forebygger problemer ved check-in. Nogle flyselskaber kræver en notariseret version; andre accepterer en underskrevet scanning. Spørg inden rejsen, ikke ved gaten.</p>
+        <p data-i18n="blog6.s4p3">Forventer du vanskeligheder med at få samtykke, så løs det i god tid — ikke dagen inden afrejse. At vente til sidste øjeblik gør et papirspørgsmål til en konflikt.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s5title">Hvad barnet har brug for under skiftet</h2>
+        <p data-i18n="blog6.s5p1">Længere sommerblokke kan være hårdere for børn end de normale ugentlige skift. De er væk fra det ene hjem længere, rutiner ændrer sig, og venner kan være ét sted og ikke det andet. Barnet bør kende planen — ikke alle detaljer, men formen på sommeren. Usikkerhed er sværere for de fleste børn end en plan, de ikke er vilde med.</p>
+        <p data-i18n="blog6.s5p2">Barnet behøver ikke at vælge. At stille spørgsmål som «vil du være hos mor eller far» sætter barnet i en umulig position. Forældrene laver planen; barnet informeres. Lad ting følge barnet — en yndlingsbamse, en bog, en oplader. Små ting, der skaber sammenhæng, gør længre perioder lettere.</p>
+        <p data-i18n="blog6.s5p3">Hold overgangene rolige. Overleveringsdagen ind i en tougers blok er ikke tidspunktet for lange samtaler om regler eller forventninger. Det kan vente en dag eller to.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog6.s6title">Når I ikke kan blive enige</h2>
+        <p data-i18n="blog6.s6p1">Sommeren er ofte der, hvor uenigheder dukker op. Den ene forælder ønsker en rejse, den anden ikke godkender. Ferieuger kolliderer på arbejdet. Et bedsteforældrebesøg fungerer kun i én bestemt uge. Sæt forslaget på skrift — konkrete datoer, konkret plan. Det er sværere at diskutere konstruktivt mundtligt end når begge kan se den samme skriftlige version.</p>
+        <p data-i18n="blog6.s6p2">Foreslå alternativer, ikke kun indvendinger. «Jeg kan ikke uge 28, men uge 26 eller 29 passer» er nemmere at svare på end «det fungerer ikke for mig.» Hvis direkte diskussion går i stå, tilbyder Familieretshuset mægling til netop dette — ofte et par fokuserede samtaler om én praktisk aftale, som sommeren.</p>
+        <p data-i18n="blog6.s6p3">Når aftalen er på plads, skriv den ned. Datoer, hvem der har barnet hvornår, rejsedetaljer, overleveringstider og -steder. En skriftlig opsummering, begge kan vende tilbage til, forhindrer genforhandling i juni, når nogen husker en anden version.</p>
+      </div>
+
+
+      <section style="max-width: 640px; margin: 48px auto 0; padding: 0 24px;">
+        <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 12px;">Related articles</p>
+        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+    <li><a href="/da/blog/byttedag-tips/" style="color: var(--primary); font-weight: 500;">Handover day — how to make transitions easier</a></li>
+    <li><a href="/da/blog/samvaersordning/" style="color: var(--primary); font-weight: 500;">Care arrangements explained</a></li>
+        </ul>
+      </section>
+      <div class="article-cta">
+        <h2 data-i18n="blog6.ctaTitle">Planlæg sommeren sammen</h2>
+        <p data-i18n="blog6.ctaDesc">Lina samler samværsplanen, beskeder og barneinformation ét fælles sted — så begge forældre har samme overblik over sommerplanen, længe inden juni.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Hent på App Store" data-i18n-aria="nav.appstoreAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Hent på App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Hent på Google Play" data-i18n-aria="hero.ctaPlayAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Hent på Google Play</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupProduct">Produkt</span>
+          <a href="/da/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+          <a href="/da/care-agreement/" data-i18n="footer.careAgreement">Samværsaftale</a>
+          <a href="/da/pricing/" data-i18n="footer.pricing">Pris</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupExplore">Udforsk</span>
+          <a href="/da/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/da/professionals.html" data-i18n="footer.familievern">Fagfolk</a>
+          <a href="/da/stories/" data-i18n="footer.stories">Hverdagsscenarier</a>
+          <a href="/da/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupCompany">Selskab</span>
+          <a href="/da/about/" data-i18n="footer.about">Om Lina</a>
+          <a href="/da/contact.html" data-i18n="footer.contact">Kontakt</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupLegal">Juridisk</span>
+          <a href="/da/terms/" data-i18n="footer.terms">Vilkår for brug</a>
+          <a href="/da/privacy/" data-i18n="footer.privacy">Privatlivspolitik</a>
+          <a href="/da/account-deletion.html" data-i18n="footer.accountDeletion">Sletning af konto</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var K = 'lina_lang';
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    // Persist manual language selection so the redirect respects the user's choice
+    var opts = switcher.querySelectorAll('.lang-option');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].addEventListener('click', function () {
+        var m = (this.getAttribute('href') || '').match(/^\/(no|sv|da|fi|de|nl|fr)\//);
+        try { localStorage.setItem(K, m ? m[1] : 'en'); } catch (e) {}
+      });
+    }
+  }());
+  </script>
+
+</body>
+</html>
