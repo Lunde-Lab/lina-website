@@ -244,13 +244,13 @@ const LANG_REDIRECT_SCRIPT = `(function () {
   // User explicitly chose English — stay
   if (s === 'en') return;
   // User previously chose a non-English language — redirect to same path
-  if (s) { location.replace('/' + s + location.pathname); return; }
+  if (s) { location.replace('/' + s + location.pathname + location.search + location.hash); return; }
   // First visit: auto-detect from browser language list
   var M = {nb:'no',nn:'no',no:'no',sv:'sv',da:'da',fi:'fi',de:'de',nl:'nl',fr:'fr'};
   var ls = navigator.languages ? [].slice.call(navigator.languages) : [navigator.language || ''];
   for (var i = 0; i < ls.length; i++) {
     var l = M[(ls[i] || '').toLowerCase().split('-')[0]];
-    if (l) { location.replace('/' + l + '/'); return; }
+    if (l) { location.replace('/' + l + location.pathname + location.search + location.hash); return; }
   }
 }());`;
 
@@ -792,11 +792,13 @@ function localizeScreenshots(html, lang) {
  * to their browser language, while respecting manual language overrides.
  */
 function injectLangRedirect(html) {
-  if (html.includes('lina-lang-redirect')) return html; // already injected
-  return html.replace(
-    '</head>',
-    `  <script id="lina-lang-redirect">${LANG_REDIRECT_SCRIPT}</script>\n</head>`
-  );
+  const tag = `  <script id="lina-lang-redirect">${LANG_REDIRECT_SCRIPT}</script>`;
+  // If a previous build already injected the script, replace it so script
+  // updates propagate on rebuild. Otherwise insert before </head>.
+  if (/<script id="lina-lang-redirect">[\s\S]*?<\/script>/.test(html)) {
+    return html.replace(/[ \t]*<script id="lina-lang-redirect">[\s\S]*?<\/script>/, tag);
+  }
+  return html.replace('</head>', `${tag}\n</head>`);
 }
 
 /**
