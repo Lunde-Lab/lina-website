@@ -108,7 +108,9 @@
       "title": "Geen algoritme",
       "description": "U bepaalt wat u ziet — niet een algoritme dat is gericht op betrokkenheid."
     },
-    "tagline": "Gestructureerd voor samenwerking. Privé van meet af aan."
+    "tagline": "Gestructureerd voor samenwerking. Privé van meet af aan.",
+    "pageTitle": "Privacybeleid — Lina | AVG-conforme co-ouderschap-app",
+    "pageDesc": "Lina is gebouwd met privacy als uitgangspunt voor co-ouderschap-gezinnen. AVG-conform, geen advertenties en absoluut geen datadeling met derden."
   },
   "cta": {
     "title": "Één veilig kanaal tussen twee ouders.",
@@ -1033,5 +1035,9 @@
       "childInfo": "Kindinformatie",
       "careSchedule": "Zorgschema"
     }
+  },
+  "terms": {
+    "pageTitle": "Gebruiksvoorwaarden — Lina | App voor co-ouderschap",
+    "pageDesc": "De voorwaarden voor het gebruik van Lina — rechten, verantwoord gebruik, accountbeheer en contact. Heldere en eerlijke voorwaarden voor ouders."
   }
 }

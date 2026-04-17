@@ -108,7 +108,9 @@
       "title": "Kein Algorithmus",
       "description": "Du entscheidest, was du siehst — nicht ein Algorithmus, der auf Engagement ausgelegt ist."
     },
-    "tagline": "Strukturiert für die Zusammenarbeit. Privat von Anfang an."
+    "tagline": "Strukturiert für die Zusammenarbeit. Privat von Anfang an.",
+    "pageTitle": "Datenschutz — Lina | DSGVO-konforme Co-Parenting-App",
+    "pageDesc": "Lina ist mit Datenschutz im Kern für Co-Parenting-Familien entwickelt. DSGVO-konform, ohne Werbung und ohne jegliche Datenweitergabe an Dritte."
   },
   "cta": {
     "title": "Ein sicherer Kanal zwischen zwei Elternteilen.",
@@ -1156,5 +1158,9 @@
       "childInfo": "Kinderinformationen",
       "careSchedule": "Umgangsplan"
     }
+  },
+  "terms": {
+    "pageTitle": "Nutzungsbedingungen — Lina | App für getrennte Eltern",
+    "pageDesc": "Die Nutzungsbedingungen für Lina — Rechte, verantwortungsvolle Nutzung, Kontoverwaltung und Kontakt. Klare und faire Bedingungen für Eltern."
   }
 }

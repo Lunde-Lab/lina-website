@@ -108,7 +108,9 @@
       "title": "Pas d'algorithme",
       "description": "Vous décidez ce que vous voyez — pas un algorithme optimisant pour l'engagement."
     },
-    "tagline": "Structuré pour la coopération. Privé par défaut."
+    "tagline": "Structuré pour la coopération. Privé par défaut.",
+    "pageTitle": "Politique de confidentialité — Lina | Conforme RGPD",
+    "pageDesc": "Lina est conçu avec la confidentialité au cœur pour les familles en coparentalité. Conforme RGPD, sans publicité ni partage de données avec des tiers."
   },
   "cta": {
     "title": "Un lien sécurisé entre deux parents.",
@@ -1033,5 +1035,9 @@
       "childInfo": "Informations enfant",
       "careSchedule": "Calendrier de garde"
     }
+  },
+  "terms": {
+    "pageTitle": "Conditions d'utilisation — Lina | App de coparentalité",
+    "pageDesc": "Les conditions d'utilisation de Lina — droits, usage responsable, gestion de compte et contact. Conditions claires et justes pour les parents."
   }
 }

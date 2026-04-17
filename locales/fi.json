@@ -124,7 +124,9 @@
       "title": "Ei algoritmia",
       "description": "Sinä päätät mitä näet — ei algoritmi, joka optimoi sitoutumista varten."
     },
-    "tagline": "Jäsennelty yhteistyöhön. Yksityinen oletuksena."
+    "tagline": "Jäsennelty yhteistyöhön. Yksityinen oletuksena.",
+    "pageTitle": "Tietosuojakäytäntö — Lina | GDPR-yhteensopiva sovellus",
+    "pageDesc": "Lina on rakennettu yksityisyys edellä yhteishuoltajuutta varten. GDPR-yhteensopiva, ei mainoksia eikä tietojen jakoa kolmansille osapuolille."
   },
   "cta": {
     "title": "Turvallinen yhteys kahden vanhemman välillä.",
@@ -1049,5 +1051,9 @@
       "childInfo": "Lapsen tiedot",
       "careSchedule": "Hoitovuorokalenteri"
     }
+  },
+  "terms": {
+    "pageTitle": "Käyttöehdot — Lina | Yhteishuoltajuuden sovellus",
+    "pageDesc": "Linan käyttöehdot — oikeudet, vastuullinen käyttö, tilin hallinta ja yhteystiedot. Selkeät ja reilut ehdot, jotka on kirjoitettu vanhemmille."
   }
 }

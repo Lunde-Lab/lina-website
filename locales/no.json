@@ -124,7 +124,9 @@
       "title": "Ingen algoritme",
       "description": "Du bestemmer hva du ser — ikke en algoritme som optimerer for engasjement."
     },
-    "tagline": "Strukturert for samarbeid. Privat som standard."
+    "tagline": "Strukturert for samarbeid. Privat som standard.",
+    "pageTitle": "Personvernerklæring — Lina | GDPR-trygg samværs-app",
+    "pageDesc": "Lina er bygget med personvern i kjernen for samværsfamilier. GDPR-kompatibel, uten annonser og uten deling av personopplysninger med tredjeparter."
   },
   "cta": {
     "title": "En trygg linje mellom to foreldre.",
@@ -1049,5 +1051,9 @@
       "childInfo": "Barneinformasjon",
       "careSchedule": "Samværsplan"
     }
+  },
+  "terms": {
+    "pageTitle": "Vilkår for bruk — Lina | Samværs-app for foreldre",
+    "pageDesc": "Vilkårene for bruk av Lina — rettigheter, ansvarlig bruk, kontohåndtering og kontaktinformasjon. Klare og rettferdige vilkår skrevet for foreldre."
   }
 }
