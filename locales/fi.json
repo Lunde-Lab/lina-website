@@ -1055,5 +1055,15 @@
   "terms": {
     "pageTitle": "Käyttöehdot — Lina | Yhteishuoltajuuden sovellus",
     "pageDesc": "Linan käyttöehdot — oikeudet, vastuullinen käyttö, tilin hallinta ja yhteystiedot. Selkeät ja reilut ehdot, jotka on kirjoitettu vanhemmille."
+  },
+  "notfound": {
+    "meta": {
+      "title": "Sivua ei löytynyt — Lina",
+      "description": "Etsimääsi sivua ei ole olemassa tai se on siirretty. Palaa etusivulle tai ota yhteyttä — autamme sinua löytämään etsimäsi."
+    },
+    "heading": "Sivua ei löytynyt",
+    "body": "Etsimääsi sivua ei ole — ehkä se on siirretty, tai linkissä on pieni virhe. Autamme sinut takaisin oikeille raiteille.",
+    "cta_home": "Etusivulle",
+    "cta_contact": "Ota yhteyttä"
   }
 }

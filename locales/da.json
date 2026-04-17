@@ -1055,5 +1055,15 @@
   "terms": {
     "pageTitle": "Brugervilkår — Lina | Co-parenting-app for forældre",
     "pageDesc": "Vilkårene for brug af Lina — rettigheder, ansvarlig brug, kontohåndtering og kontaktinformation. Klare og fair vilkår skrevet til alle forældre."
+  },
+  "notfound": {
+    "meta": {
+      "title": "Siden findes ikke — Lina",
+      "description": "Denne side findes ikke eller er flyttet. Gå tilbage til forsiden, eller tag kontakt — vi hjælper dig med at finde det, du leder efter."
+    },
+    "heading": "Siden findes ikke",
+    "body": "Siden du ledte efter findes ikke — den kan være flyttet, eller linket er bare lidt forkert. Lad os hjælpe dig tilbage på sporet.",
+    "cta_home": "Til forsiden",
+    "cta_contact": "Kontakt os"
   }
 }

@@ -1162,5 +1162,15 @@
   "terms": {
     "pageTitle": "Nutzungsbedingungen — Lina | App für getrennte Eltern",
     "pageDesc": "Die Nutzungsbedingungen für Lina — Rechte, verantwortungsvolle Nutzung, Kontoverwaltung und Kontakt. Klare und faire Bedingungen für Eltern."
+  },
+  "notfound": {
+    "meta": {
+      "title": "Seite nicht gefunden — Lina",
+      "description": "Diese Seite existiert nicht oder wurde verschoben. Zurück zur Startseite, oder kontaktieren Sie uns — wir helfen gern weiter."
+    },
+    "heading": "Seite nicht gefunden",
+    "body": "Die Seite, die Sie suchen, gibt es nicht — vielleicht wurde sie verschoben, oder der Link stimmt nicht ganz. Wir helfen Ihnen zurück.",
+    "cta_home": "Zur Startseite",
+    "cta_contact": "Kontakt aufnehmen"
   }
 }

@@ -45,6 +45,7 @@ const SOURCE_FILES = [
   { src: 'terms/index.html',          urlPath: '/terms/',              priority: '0.3' },
   { src: 'privacy/index.html',        urlPath: '/privacy/',            priority: '0.3' },
   { src: 'account-deletion.html',     urlPath: '/account-deletion.html', priority: '0.3' },
+  { src: '404.html',                  urlPath: '/404.html',              priority: '0.1' },
   { src: 'blog/index.html',           urlPath: '/blog/',                 priority: '0.5', hasDropdown: true },
   {
     src: 'blog/custody-schedules/index.html',
@@ -163,6 +164,7 @@ const DE_EXTRA_SLUGS = [
 const SITEMAP_EXCLUDE = new Set([
   '/account-deletion.html',
   '/email-changed.html',
+  '/404.html',
 ]);
 
 // Exact internal hrefs that should receive a /LANG/ prefix in generated files.

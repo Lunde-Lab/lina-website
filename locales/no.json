@@ -1055,5 +1055,15 @@
   "terms": {
     "pageTitle": "Vilkår for bruk — Lina | Samværs-app for foreldre",
     "pageDesc": "Vilkårene for bruk av Lina — rettigheter, ansvarlig bruk, kontohåndtering og kontaktinformasjon. Klare og rettferdige vilkår skrevet for foreldre."
+  },
+  "notfound": {
+    "meta": {
+      "title": "Siden finnes ikke — Lina",
+      "description": "Denne siden finnes ikke eller er flyttet. Gå tilbake til forsiden, eller ta kontakt — vi hjelper deg å finne det du leter etter."
+    },
+    "heading": "Siden finnes ikke",
+    "body": "Siden du lette etter finnes ikke — den kan ha blitt flyttet, eller så er lenken bare litt feil. La oss få deg tilbake på rett spor.",
+    "cta_home": "Gå til forsiden",
+    "cta_contact": "Kontakt oss"
   }
 }

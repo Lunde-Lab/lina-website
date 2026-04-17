@@ -1039,5 +1039,15 @@
   "terms": {
     "pageTitle": "Conditions d'utilisation — Lina | App de coparentalité",
     "pageDesc": "Les conditions d'utilisation de Lina — droits, usage responsable, gestion de compte et contact. Conditions claires et justes pour les parents."
+  },
+  "notfound": {
+    "meta": {
+      "title": "Page introuvable — Lina",
+      "description": "Cette page n'existe pas ou a été déplacée. Retournez à l'accueil, ou contactez-nous — nous vous aiderons à trouver ce que vous cherchez."
+    },
+    "heading": "Page introuvable",
+    "body": "La page que vous cherchez n'existe pas — elle a peut-être été déplacée, ou le lien est légèrement erroné. Nous allons vous remettre sur la voie.",
+    "cta_home": "Aller à l'accueil",
+    "cta_contact": "Nous contacter"
   }
 }

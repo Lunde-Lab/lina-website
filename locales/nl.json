@@ -1039,5 +1039,15 @@
   "terms": {
     "pageTitle": "Gebruiksvoorwaarden — Lina | App voor co-ouderschap",
     "pageDesc": "De voorwaarden voor het gebruik van Lina — rechten, verantwoord gebruik, accountbeheer en contact. Heldere en eerlijke voorwaarden voor ouders."
+  },
+  "notfound": {
+    "meta": {
+      "title": "Pagina niet gevonden — Lina",
+      "description": "Deze pagina bestaat niet of is verplaatst. Ga terug naar de homepage, of neem contact op — we helpen je graag verder."
+    },
+    "heading": "Pagina niet gevonden",
+    "body": "De pagina die je zocht bestaat niet — misschien is deze verplaatst of klopt de link net niet. We helpen je graag terug op weg.",
+    "cta_home": "Naar de homepage",
+    "cta_contact": "Neem contact op"
   }
 }

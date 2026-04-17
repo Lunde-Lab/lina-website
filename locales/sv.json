@@ -1055,5 +1055,15 @@
   "terms": {
     "pageTitle": "Användarvillkor — Lina | Appen för delat föräldraskap",
     "pageDesc": "Villkoren för att använda Lina — rättigheter, ansvarsfull användning, kontohantering och kontaktuppgifter. Tydliga villkor skrivna för föräldrar."
+  },
+  "notfound": {
+    "meta": {
+      "title": "Sidan hittades inte — Lina",
+      "description": "Den här sidan finns inte eller har flyttats. Gå tillbaka till startsidan, eller hör av dig — vi hjälper dig att hitta rätt."
+    },
+    "heading": "Sidan hittades inte",
+    "body": "Sidan du letade efter finns inte — den kan ha flyttats, eller så är länken bara lite fel. Låt oss hjälpa dig tillbaka på rätt spår.",
+    "cta_home": "Till startsidan",
+    "cta_contact": "Kontakta oss"
   }
 }

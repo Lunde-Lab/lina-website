@@ -1015,5 +1015,15 @@
   "terms": {
     "pageTitle": "Terms of Service — Lina | Using the co-parenting app",
     "pageDesc": "The terms for using Lina — your rights, responsible use, account management, and how to reach us. Clear and fair terms written for co-parents."
+  },
+  "notfound": {
+    "meta": {
+      "title": "Page not found — Lina",
+      "description": "This page doesn't exist or has moved. Head back to the homepage or get in touch and we'll help you find what you need."
+    },
+    "heading": "Page not found",
+    "body": "The page you were looking for doesn't exist — it may have moved, or the link is just a little off. Let's get you back on track.",
+    "cta_home": "Go to homepage",
+    "cta_contact": "Contact us"
   }
 }
