@@ -124,7 +124,9 @@
       "title": "Ingen algoritme",
       "description": "Du bestemmer, hvad du ser — ikke en algoritme, der optimerer for engagement."
     },
-    "tagline": "Struktureret til samarbejde. Privat som standard."
+    "tagline": "Struktureret til samarbejde. Privat som standard.",
+    "pageTitle": "Privatlivspolitik — Lina | GDPR-sikker samværs-app",
+    "pageDesc": "Lina er bygget med privatliv i fokus for samværsfamilier. GDPR-kompatibel, ingen annoncer og ingen deling af data med tredjeparter overhovedet."
   },
   "cta": {
     "title": "En sikker linje mellem to forældre.",
@@ -1049,5 +1051,19 @@
       "childInfo": "Barneinformation",
       "careSchedule": "Samværsplan"
     }
+  },
+  "terms": {
+    "pageTitle": "Brugervilkår — Lina | Co-parenting-app for forældre",
+    "pageDesc": "Vilkårene for brug af Lina — rettigheder, ansvarlig brug, kontohåndtering og kontaktinformation. Klare og fair vilkår skrevet til alle forældre."
+  },
+  "notfound": {
+    "meta": {
+      "title": "Siden findes ikke — Lina",
+      "description": "Denne side findes ikke eller er flyttet. Gå tilbage til forsiden, eller tag kontakt — vi hjælper dig med at finde det, du leder efter."
+    },
+    "heading": "Siden findes ikke",
+    "body": "Siden du ledte efter findes ikke — den kan være flyttet, eller linket er bare lidt forkert. Lad os hjælpe dig tilbage på sporet.",
+    "cta_home": "Til forsiden",
+    "cta_contact": "Kontakt os"
   }
 }

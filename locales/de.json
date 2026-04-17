@@ -108,7 +108,9 @@
       "title": "Kein Algorithmus",
       "description": "Du entscheidest, was du siehst — nicht ein Algorithmus, der auf Engagement ausgelegt ist."
     },
-    "tagline": "Strukturiert für die Zusammenarbeit. Privat von Anfang an."
+    "tagline": "Strukturiert für die Zusammenarbeit. Privat von Anfang an.",
+    "pageTitle": "Datenschutz — Lina | DSGVO-konforme Co-Parenting-App",
+    "pageDesc": "Lina ist mit Datenschutz im Kern für Co-Parenting-Familien entwickelt. DSGVO-konform, ohne Werbung und ohne jegliche Datenweitergabe an Dritte."
   },
   "cta": {
     "title": "Ein sicherer Kanal zwischen zwei Elternteilen.",
@@ -1156,5 +1158,19 @@
       "childInfo": "Kinderinformationen",
       "careSchedule": "Umgangsplan"
     }
+  },
+  "terms": {
+    "pageTitle": "Nutzungsbedingungen — Lina | App für getrennte Eltern",
+    "pageDesc": "Die Nutzungsbedingungen für Lina — Rechte, verantwortungsvolle Nutzung, Kontoverwaltung und Kontakt. Klare und faire Bedingungen für Eltern."
+  },
+  "notfound": {
+    "meta": {
+      "title": "Seite nicht gefunden — Lina",
+      "description": "Diese Seite existiert nicht oder wurde verschoben. Zurück zur Startseite, oder kontaktieren Sie uns — wir helfen gern weiter."
+    },
+    "heading": "Seite nicht gefunden",
+    "body": "Die Seite, die Sie suchen, gibt es nicht — vielleicht wurde sie verschoben, oder der Link stimmt nicht ganz. Wir helfen Ihnen zurück.",
+    "cta_home": "Zur Startseite",
+    "cta_contact": "Kontakt aufnehmen"
   }
 }

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="da" data-i18n-title="notfound.meta.title" data-i18n-desc="notfound.meta.description">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/da/404.html" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/404.html" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/404.html" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/no/404.html" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/404.html" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/404.html" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/404.html" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/404.html" />
+  <link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/404.html" />
+  <link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/404.html" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/404.html" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/404.html" />
+
+  <meta name="description" content="Denne side findes ikke eller er flyttet. Gå tilbage til forsiden, eller tag kontakt — vi hjælper dig med at finde det, du leder efter." />
+  <meta name="robots" content="noindex, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Lina" />
+  <meta property="og:url" content="https://getlina.app/da/404.html" />
+  <meta property="og:title" content="Siden findes ikke — Lina" />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Siden findes ikke — Lina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── 404 content ── */
+    .notfound-main {
+      padding: 80px 24px 120px;
+      min-height: calc(100vh - 64px - 280px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .notfound-container {
+      max-width: 640px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .notfound-code {
+      font-size: 120px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .notfound-container h1 {
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .notfound-body {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+      max-width: 520px;
+    }
+
+    .notfound-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 8px;
+      padding: 12px 22px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: background 0.15s;
+    }
+
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-primary svg { flex-shrink: 0; }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 22px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--text);
+      color: var(--text);
+    }
+
+    .btn-secondary svg { flex-shrink: 0; }
+
+    @media (max-width: 599px) {
+      .notfound-main { padding: 48px 16px 80px; }
+      .notfound-code { font-size: 88px; }
+      .notfound-container h1 { font-size: 26px; }
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 120px;
+    }
+
+    .footer-col-heading {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .footer-col a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover { color: var(--text); }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer { padding: 32px 16px; }
+      .footer-nav { gap: 32px; }
+    }
+  </style>
+  <script id="lina-lang-redirect">(function () {
+  var K = 'lina_lang';
+  // Already on a non-English locale page — nothing to do
+  if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
+  var s; try { s = localStorage.getItem(K); } catch (e) {}
+  // User explicitly chose English — stay
+  if (s === 'en') return;
+  // User previously chose a non-English language — redirect to same path
+  if (s) { location.replace('/' + s + location.pathname); return; }
+  // First visit: auto-detect from browser language list
+  var M = {nb:'no',nn:'no',no:'no',sv:'sv',da:'da',fi:'fi',de:'de',nl:'nl',fr:'fr'};
+  var ls = navigator.languages ? [].slice.call(navigator.languages) : [navigator.language || ''];
+  for (var i = 0; i < ls.length; i++) {
+    var l = M[(ls[i] || '').toLowerCase().split('-')[0]];
+    if (l) { location.replace('/' + l + '/'); return; }
+  }
+}());</script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/da/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+    </div>
+  </nav>
+
+  <main class="notfound-main">
+    <div class="notfound-container">
+      <p class="notfound-code" aria-hidden="true">404</p>
+      <h1 data-i18n="notfound.heading">Siden findes ikke</h1>
+      <p class="notfound-body" data-i18n="notfound.body">Siden du ledte efter findes ikke — den kan være flyttet, eller linket er bare lidt forkert. Lad os hjælpe dig tilbage på sporet.</p>
+      <div class="notfound-ctas">
+        <a href="/da/" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          </svg>
+          <span data-i18n="notfound.cta_home">Til forsiden</span>
+        </a>
+        <a href="/da/contact.html" class="btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <span data-i18n="notfound.cta_contact">Kontakt os</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupProduct">Produkt</span>
+          <a href="/da/care-schedule/" data-i18n="footer.careSchedule">Samværsplan</a>
+          <a href="/da/care-agreement/" data-i18n="footer.careAgreement">Samværsaftale</a>
+          <a href="/da/pricing/" data-i18n="footer.pricing">Pris</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupExplore">Udforsk</span>
+          <a href="/da/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/da/professionals.html" data-i18n="footer.familievern">Fagfolk</a>
+          <a href="/da/stories/" data-i18n="footer.stories">Hverdagsscenarier</a>
+          <a href="/da/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupCompany">Selskab</span>
+          <a href="/da/about/" data-i18n="footer.about">Om Lina</a>
+          <a href="/da/contact.html" data-i18n="footer.contact">Kontakt</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupLegal">Juridisk</span>
+          <a href="/da/terms/" data-i18n="footer.terms">Vilkår for brug</a>
+          <a href="/da/privacy/" data-i18n="footer.privacy">Privatlivspolitik</a>
+          <a href="/da/account-deletion.html" data-i18n="footer.accountDeletion">Sletning af konto</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+</body>
+</html>

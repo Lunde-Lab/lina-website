@@ -108,7 +108,9 @@
       "title": "No algorithm",
       "description": "You decide what you see — not an algorithm optimizing for engagement."
     },
-    "tagline": "Structured for cooperation. Private by default."
+    "tagline": "Structured for cooperation. Private by default.",
+    "pageTitle": "Privacy Policy — Lina | GDPR-compliant co-parenting app",
+    "pageDesc": "Lina is built privacy-first for co-parenting families. GDPR-compliant, no ads, and no data sharing with third parties. Learn how we protect you."
   },
   "cta": {
     "title": "One safe line between two parents.",
@@ -1009,5 +1011,19 @@
       "childInfo": "Child information screen",
       "careSchedule": "Care schedule screen"
     }
+  },
+  "terms": {
+    "pageTitle": "Terms of Service — Lina | Using the co-parenting app",
+    "pageDesc": "The terms for using Lina — your rights, responsible use, account management, and how to reach us. Clear and fair terms written for co-parents."
+  },
+  "notfound": {
+    "meta": {
+      "title": "Page not found — Lina",
+      "description": "This page doesn't exist or has moved. Head back to the homepage or get in touch and we'll help you find what you need."
+    },
+    "heading": "Page not found",
+    "body": "The page you were looking for doesn't exist — it may have moved, or the link is just a little off. Let's get you back on track.",
+    "cta_home": "Go to homepage",
+    "cta_contact": "Contact us"
   }
 }
