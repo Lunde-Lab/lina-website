@@ -1,10 +1,15 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.getlina.lina",
-      "sha256_cert_fingerprints": ["CD:80:DB:CF:FD:BE:07:D6:CB:CC:FC:5C:F4:FA:70:BD:56:69:D5:D2:37:D0:D2:2F:3D:6C:24:9C:6A:3B:49:20"]
+      "sha256_cert_fingerprints": [
+        "CD:80:DB:CF:FD:BE:07:D6:CB:CC:FC:5C:F4:FA:70:BD:56:69:D5:D2:37:D0:D2:2F:3D:6C:24:9C:6A:3B:49:20",
+        "2A:B5:0F:DB:67:EA:92:C6:2D:25:9E:41:AC:DE:7E:34:D1:D7:D2:39:31:37:77:E3:74:0E:91:A3:97:3F:51:43"
+      ]
     }
   }
 ]
