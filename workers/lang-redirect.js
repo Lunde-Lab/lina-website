@@ -13,7 +13,19 @@ addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request));
 });
 
-// Paths that must never be redirected (exact or prefix match)
+// Transaksjonelle sider nådd fra e-post / deep link. Aldri omdiriger disse.
+const BYPASS_EXACT = new Set([
+  '/confirm-deletion',
+  '/confirm-deletion.html',
+  '/cancel-deletion',
+  '/cancel-deletion.html',
+  '/account-deletion.html',
+  '/account-deletion-scheduled.html',
+  '/account-deletion-cancelled.html',
+  '/email-changed.html',
+]);
+
+// Kataloger som må slippe gjennom uendret.
 const BYPASS_PREFIXES = [
   '/.well-known/', // assetlinks.json, apple-app-site-association, etc.
   '/invite',       // invite links must reach the app unmodified (/invite, /invite/, /invite/*)
@@ -23,7 +35,12 @@ async function handleRequest(request) {
   const url = new URL(request.url);
   const path = url.pathname;
 
-  // 0. System / deep-link paths → pass through unconditionally
+  // 0a. Transaksjonelle sider (eksakt match) → pass through unconditionally
+  if (BYPASS_EXACT.has(path)) {
+    return fetch(request);
+  }
+
+  // 0b. System / deep-link katalog-paths → pass through unconditionally
   if (BYPASS_PREFIXES.some(p => {
     const prefix = p.endsWith('/') ? p : p + '/';
     return path === p || path.startsWith(prefix);
