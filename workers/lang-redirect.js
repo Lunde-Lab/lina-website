@@ -13,9 +13,23 @@ addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request));
 });
 
+// Paths that must never be redirected (exact or prefix match)
+const BYPASS_PREFIXES = [
+  '/.well-known/', // assetlinks.json, apple-app-site-association, etc.
+  '/invite',       // invite links must reach the app unmodified (/invite, /invite/, /invite/*)
+];
+
 async function handleRequest(request) {
   const url = new URL(request.url);
   const path = url.pathname;
+
+  // 0. System / deep-link paths → pass through unconditionally
+  if (BYPASS_PREFIXES.some(p => {
+    const prefix = p.endsWith('/') ? p : p + '/';
+    return path === p || path.startsWith(prefix);
+  })) {
+    return fetch(request);
+  }
 
   // 1. Already on a language-prefixed path → pass through
   if (LANG_PREFIXES.some(p => path.startsWith(p))) {
