@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="nl" data-i18n-title="blog9.pageTitle" data-i18n-desc="blog9.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/nl/blog/verjaardag-twee-huizen/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/birthdays-two-homes/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/blog/birthdays-two-homes/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/bursdag-to-hjem/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/fodelsedag-tva-hem/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/fodselsdag-to-hjem/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/syntymapaiva-kahdessa-kodissa/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/geburtstag-zwei-zuhause/" />
+  <link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/geburtstag-zwei-zuhause/" />
+  <link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/geburtstag-zwei-zuhause/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/verjaardag-twee-huizen/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/anniversaire-deux-maisons/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Verjaardagen tussen twee huizen | Lina</title>
+  <meta name="description" content="Hoe u een verjaardag plant wanneer een kind twee huizen heeft — de dag verdelen, vieringen organiseren en de aandacht bij het kind houden." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Lina" />
+  <meta property="og:url" content="https://getlina.app/nl/blog/verjaardag-twee-huizen/" />
+  <meta property="og:title" content="Verjaardagen tussen twee huizen | Lina" />
+  <meta property="og:description" content="Hoe u een verjaardag plant wanneer een kind twee huizen heeft — de dag verdelen, vieringen organiseren en de aandacht bij het kind houden." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Verjaardagen tussen twee huizen | Lina" />
+  <meta name="twitter:description" content="Hoe u een verjaardag plant wanneer een kind twee huizen heeft — de dag verdelen, vieringen organiseren en de aandacht bij het kind houden." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 120px;
+    }
+
+    .footer-col-heading {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .footer-col a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav {
+        gap: 32px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .article-date {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #1a1e23;
+      color: #fff;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Verjaardagen tussen twee huizen",
+  "description": "Hoe u een verjaardag plant wanneer een kind twee huizen heeft — de dag verdelen, vieringen organiseren en de aandacht bij het kind houden.",
+  "datePublished": "2026-04-19",
+  "dateModified": "2026-04-19",
+  "author": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getlina.app/assets/logos/Logomark_1.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://getlina.app/nl/blog/verjaardag-twee-huizen/"
+  },
+  "image": "https://getlina.app/assets/og-image.png"
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getlina.app/nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://getlina.app/nl/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Verjaardagen tussen twee huizen"
+    }
+  ]
+}
+</script>
+  <script id="lina-lang-redirect">(function () {
+  var K = 'lina_lang';
+  // Already on a non-English locale page — nothing to do
+  if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
+  var s; try { s = localStorage.getItem(K); } catch (e) {}
+  // User explicitly chose English — stay
+  if (s === 'en') return;
+  // User previously chose a non-English language — redirect to same path
+  if (s) { location.replace('/' + s + location.pathname + location.search + location.hash); return; }
+  // First visit: auto-detect from browser language list
+  var M = {nb:'no',nn:'no',no:'no',sv:'sv',da:'da',fi:'fi',de:'de',nl:'nl',fr:'fr'};
+  var ls = navigator.languages ? [].slice.call(navigator.languages) : [navigator.language || ''];
+  for (var i = 0; i < ls.length; i++) {
+    var l = M[(ls[i] || '').toLowerCase().split('-')[0]];
+    if (l) { location.replace('/' + l + location.pathname + location.search + location.hash); return; }
+  }
+}());</script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/nl/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">NL</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/blog/birthdays-two-homes/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/no/blog/bursdag-to-hjem/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/sv/blog/fodelsedag-tva-hem/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/blog/fodselsdag-to-hjem/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/syntymapaiva-kahdessa-kodissa/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/blog/geburtstag-zwei-zuhause/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option active" href="/nl/blog/verjaardag-twee-huizen/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option" href="/fr/blog/anniversaire-deux-maisons/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog9.label">Verjaardag</span>
+
+      <h1 data-i18n="blog9.title">Verjaardagen tussen twee huizen</h1>
+      <p class="article-date" data-i18n="blog9.date">april 2026</p>
+
+      <p class="article-lead" data-i18n="blog9.intro">Verjaardagen kunnen een van de meest beladen dagen van het jaar worden wanneer een kind twee huizen heeft. Ze horen over het kind te gaan — en toch gaan ze vaak alles weerspiegelen wat tussen de ouders nog onopgelost is. Een beetje structuur en veel terughoudendheid kunnen de dag laten waar hij hoort: bij het kind.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog9.s1title">Beslis op tijd, voordat het kind ernaar vraagt</h2>
+        <p data-i18n="blog9.s1p1">Kinderen denken weken van tevoren al aan hun verjaardag. Als de twee ouders niet hebben afgesproken hoe de dag eruitziet, eindigt het kind als boodschapper. Beslis voordat dat gebeurt.</p>
+        <p data-i18n="blog9.s1p2">Kijk het plan elk jaar opnieuw door. Jonge kinderen willen beide ouders op dezelfde plek; oudere kinderen geven vaak de voorkeur aan twee kleinere vieringen; tieners hebben meestal hun eigen mening.</p>
+        <p data-i18n="blog9.s1p3">Leg de afspraak vast, al is het kort. "Dit jaar: taart op zaterdag bij het ene huis, feest op zondag bij het andere" is genoeg.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog9.s2title">Eén viering of twee</h2>
+        <p data-i18n="blog9.s2p1">Er is geen goed antwoord. Twee vieringen kunnen royaal aanvoelen — of als dezelfde dag twee keer opvoeren. Eén gezamenlijke viering kan inclusief aanvoelen — of een beetje geforceerd.</p>
+        <p data-i18n="blog9.s2p2">Lees het kind. Voor jongere kinderen is één rustige viering met beide ouders erbij vaak het makkelijkst. Voor oudere kinderen kunnen twee aparte vieringen ruimte geven om elk zonder spanning van te genieten.</p>
+        <p data-i18n="blog9.s2p3">Wat u ook kiest, houd het in verhouding. Twee feestjes mogen geen wedstrijd worden.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog9.s3title">De dag zelf delen</h2>
+        <p data-i18n="blog9.s3p1">Als de verjaardag op een schooldag valt, is het eenvoudigste patroon dat het kind bij de ene ouder wakker wordt en bij de andere eet of taart krijgt. Ochtend en avond, geen touwtrekken ertussenin.</p>
+        <p data-i18n="blog9.s3p2">Als de verjaardag in het weekend of op een feestdag valt, overweeg dan de dag in twee helften te splitsen — elke ouder krijgt een duidelijk blok in plaats van iets dat verschuift.</p>
+        <p data-i18n="blog9.s3p3">Wisselmomenten op een verjaardag mogen extra zacht zijn. Geen overdracht van frustratie — alleen het kind, zijn spullen en een rustige overgang.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog9.s4title">Cadeaus zonder vergelijking</h2>
+        <p data-i18n="blog9.s4p1">Cadeaus worden een plaatsvervanger voor veel andere dingen als ouders niet oppassen. Spreek een ongeveer bedrag af, of in elk geval wat het grote cadeau is en welke ouder het geeft.</p>
+        <p data-i18n="blog9.s4p2">Vermijd dubbele grote cadeaus. Een kind heeft geen twee fietsen nodig, en het tweede voelt altijd als tweede plaats.</p>
+        <p data-i18n="blog9.s4p3">Als familie iets wil geven, stem dan losjes af zodat het kind geen vijf vergelijkbare dingen krijgt. Een gedeelde lijst werkt hier goed.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog9.s5title">Feestjes, vrienden en uitnodigingen</h2>
+        <p data-i18n="blog9.s5p1">Als u een vriendjesfeest organiseert, neemt meestal één ouder de leiding — maar de andere zou de datum, gastenlijst en logistiek moeten weten. Verrassing is hier geen pluspunt.</p>
+        <p data-i18n="blog9.s5p2">Denk na of beide ouders erbij zijn. Jongere kinderen hebben er meestal baat bij dat allebei aanwezig zijn bij de hoofdviering, zolang de sfeer rustig blijft. Oudere kinderen hebben soms liever maar één van beiden.</p>
+        <p data-i18n="blog9.s5p3">Als er maar één ouder bij is, houd de ander op de hoogte. Een foto of een kort bericht achteraf betekent dat de afwezige ouder niet als laatste hoort hoe de dag van het kind was.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog9.s6title">Wanneer het kind in het andere huis is</h2>
+        <p data-i18n="blog9.s6p1">Als de verjaardag in de week van de andere ouder valt, weersta de neiging om een deel van de dag terug te eisen. De agenda is niet alles. Een telefoontje in de ochtend, een kaart of een kort bezoek betekent vaak meer dan evenveel uren.</p>
+        <p data-i18n="blog9.s6p2">Stuur cadeaus op tijd over, niet op het laatste moment. Het kind hoort niet iets in handen geduwd te krijgen wat in haast is gekomen.</p>
+        <p data-i18n="blog9.s6p3">Vertrouw erop dat de andere ouder de dag goed maakt. Uw rol kan juist op deze dag de stille zijn — en het kind zal ook dat opmerken.</p>
+      </div>
+
+
+      <section style="max-width: 640px; margin: 48px auto 0; padding: 0 24px;">
+        <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 12px;" data-i18n="blogShared.relatedLabel">Gerelateerde artikelen</p>
+        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+    <li><a href="/nl/blog/zomervakantie-twee-huizen/" style="color: var(--primary); font-weight: 500;" data-i18n="blog6.title">Zomervakantie in twee huizen</a></li>
+    <li><a href="/nl/blog/wisseldag/" style="color: var(--primary); font-weight: 500;" data-i18n="blog2.title">Wisseldag — hoe maakt u overgangen soepeler</a></li>
+        </ul>
+      </section>
+      <div class="article-cta">
+        <h2 data-i18n="blog9.ctaTitle">Een rustigere verjaardag, vanuit beide huizen</h2>
+        <p data-i18n="blog9.ctaDesc">Lina houdt verjaardagen, contacten en gedeelde plannen op één plek — zodat beide ouders de dag kunnen voorbereiden zonder coördinatie op het laatste moment, en het kind in het middelpunt blijft.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download in de App Store" data-i18n-aria="nav.appstoreAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Download in de App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Verkrijgbaar bij Google Play" data-i18n-aria="hero.ctaPlayAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Verkrijgbaar bij Google Play</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupProduct">Product</span>
+          <a href="/nl/care-schedule/" data-i18n="footer.careSchedule">Zorgschema</a>
+          <a href="/nl/care-agreement/" data-i18n="footer.careAgreement">Ouderschapsplan</a>
+          <a href="/nl/pricing/" data-i18n="footer.pricing">Prijzen</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupExplore">Verkennen</span>
+          <a href="/nl/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/nl/professionals.html" data-i18n="footer.familievern">Professionals</a>
+          <a href="/nl/stories/" data-i18n="footer.stories">Verhalen</a>
+          <a href="/nl/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupCompany">Bedrijf</span>
+          <a href="/nl/about/" data-i18n="footer.about">Over ons</a>
+          <a href="/nl/contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupLegal">Juridisch</span>
+          <a href="/nl/terms/" data-i18n="footer.terms">Gebruiksvoorwaarden</a>
+          <a href="/nl/privacy/" data-i18n="footer.privacy">Privacybeleid</a>
+          <a href="/nl/account-deletion.html" data-i18n="footer.accountDeletion">Account verwijderen</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var K = 'lina_lang';
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    // Persist manual language selection so the redirect respects the user's choice
+    var opts = switcher.querySelectorAll('.lang-option');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].addEventListener('click', function () {
+        var m = (this.getAttribute('href') || '').match(/^\/(no|sv|da|fi|de|nl|fr)\//);
+        try { localStorage.setItem(K, m ? m[1] : 'en'); } catch (e) {}
+      });
+    }
+  }());
+  </script>
+
+</body>
+</html>

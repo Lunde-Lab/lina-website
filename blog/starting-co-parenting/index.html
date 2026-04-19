@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="blog7.pageTitle" data-i18n-desc="blog7.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/blog/starting-co-parenting/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/starting-co-parenting/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/blog/starting-co-parenting/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/samarbeid-etter-samlivsbrudd/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/samarbete-efter-separation/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/samarbejde-efter-separation/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/eron-jalkeen-yhteistyo/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/co-parenting-nach-trennung/" />
+  <link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/co-parenting-nach-trennung/" />
+  <link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/co-parenting-nach-trennung/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/co-ouderschap-na-scheiding/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/coparentalite-apres-separation/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>The first months as co-parents — finding your footing | Lina</title>
+  <meta name="description" content="Practical guidance for parents navigating the first months after separation — how to set up routines, communicate clearly, and protect your child through the transition." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Lina" />
+  <meta property="og:url" content="https://getlina.app/blog/starting-co-parenting/" />
+  <meta property="og:title" content="The first months as co-parents — finding your footing | Lina" />
+  <meta property="og:description" content="Practical guidance for parents navigating the first months after separation — how to set up routines, communicate clearly, and protect your child through the transition." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The first months as co-parents — finding your footing | Lina" />
+  <meta name="twitter:description" content="Practical guidance for parents navigating the first months after separation — how to set up routines, communicate clearly, and protect your child through the transition." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 120px;
+    }
+
+    .footer-col-heading {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .footer-col a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav {
+        gap: 32px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .article-date {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #1a1e23;
+      color: #fff;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The first months as co-parents — finding your footing",
+  "description": "Practical guidance for parents navigating the first months after separation — how to set up routines, communicate clearly, and protect your child through the transition.",
+  "datePublished": "2026-04-19",
+  "dateModified": "2026-04-19",
+  "author": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getlina.app/assets/logos/Logomark_1.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://getlina.app/blog/starting-co-parenting/"
+  },
+  "image": "https://getlina.app/assets/og-image.png"
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getlina.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://getlina.app/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The first months as co-parents — finding your footing"
+    }
+  ]
+}
+</script>
+  <script id="lina-lang-redirect">(function () {
+  var K = 'lina_lang';
+  // Already on a non-English locale page — nothing to do
+  if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
+  var s; try { s = localStorage.getItem(K); } catch (e) {}
+  // User explicitly chose English — stay
+  if (s === 'en') return;
+  // User previously chose a non-English language — redirect to same path
+  if (s) { location.replace('/' + s + location.pathname + location.search + location.hash); return; }
+  // First visit: auto-detect from browser language list
+  var M = {nb:'no',nn:'no',no:'no',sv:'sv',da:'da',fi:'fi',de:'de',nl:'nl',fr:'fr'};
+  var ls = navigator.languages ? [].slice.call(navigator.languages) : [navigator.language || ''];
+  for (var i = 0; i < ls.length; i++) {
+    var l = M[(ls[i] || '').toLowerCase().split('-')[0]];
+    if (l) { location.replace('/' + l + location.pathname + location.search + location.hash); return; }
+  }
+}());</script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option active" href="/blog/starting-co-parenting/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/no/blog/samarbeid-etter-samlivsbrudd/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/sv/blog/samarbete-efter-separation/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/blog/samarbejde-efter-separation/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/eron-jalkeen-yhteistyo/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/blog/co-parenting-nach-trennung/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/blog/co-ouderschap-na-scheiding/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option" href="/fr/blog/coparentalite-apres-separation/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog7.label">Getting started</span>
+
+      <h1 data-i18n="blog7.title">The first months as co-parents — finding your footing</h1>
+      <p class="article-date" data-i18n="blog7.date">April 2026</p>
+
+      <p class="article-lead" data-i18n="blog7.intro">The first few months after a separation are often the hardest — practically, emotionally, and logistically. Your child needs predictability, you need to rebuild routines, and the two of you need to find a working rhythm without a clear template. Here is what tends to help in the early weeks, and what to focus on first.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog7.s1title">Start with the child's everyday life</h2>
+        <p data-i18n="blog7.s1p1">When everything changes at once, the child benefits most from small, stable anchors. Keep bedtimes, meal times, and school routines as close to normal as possible in both homes.</p>
+        <p data-i18n="blog7.s1p2">It is easier to add structure later than to rebuild it after chaos. The first weeks are not the time to introduce big changes — even if something feels overdue.</p>
+        <p data-i18n="blog7.s1p3">Protect what already works. If the child has a regular sport, activity, or caregiver, try to keep that constant through the move between homes.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog7.s2title">Agree on a temporary rhythm</h2>
+        <p data-i18n="blog7.s2p1">You do not need the final arrangement in week one. A workable temporary schedule — even a rough one — gives the child something to rely on while you figure out what fits long-term.</p>
+        <p data-i18n="blog7.s2p2">Many families start with a simple week-on/week-off or every-other-weekend pattern and adjust after a month or two. The point is predictability, not precision.</p>
+        <p data-i18n="blog7.s2p3">Write down whatever you agree on, even informally. It prevents the natural drift that happens when everything is spoken but nothing is recorded.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog7.s3title">Keep communication narrow and practical</h2>
+        <p data-i18n="blog7.s3p1">In the early weeks, limit communication to what concerns the child: pickups, school, health, equipment. Everything else can wait.</p>
+        <p data-i18n="blog7.s3p2">Short messages are better than long ones. Facts over feelings. Questions over accusations.</p>
+        <p data-i18n="blog7.s3p3">Avoid discussing the relationship through the child, and avoid discussing the child through the relationship. Keep the two channels separate from day one.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog7.s4title">Let the child see both homes function</h2>
+        <p data-i18n="blog7.s4p1">Children read calm more than they read words. If each home runs smoothly on its own, the child borrows that calm.</p>
+        <p data-i18n="blog7.s4p2">You do not need to present a united front on everything. You need to present a stable one each.</p>
+        <p data-i18n="blog7.s4p3">Small things matter: a drawer that is theirs, a toothbrush waiting for them, a parent who is ready when they arrive.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog7.s5title">Make the handovers gentle, not perfect</h2>
+        <p data-i18n="blog7.s5p1">The first handovers rarely feel natural. That is normal. The goal is not a perfect transition but a predictable one.</p>
+        <p data-i18n="blog7.s5p2">Keep goodbyes short, avoid loaded language, and let the other parent take over without commentary. A visible handover to a calm adult is better than a drawn-out farewell.</p>
+        <p data-i18n="blog7.s5p3">If the child struggles, do not read it as failure. Transitions take time to settle.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog7.s6title">Get help before you need it</h2>
+        <p data-i18n="blog7.s6p1">If something feels stuck — a pattern you cannot break, a conversation you cannot have — a family counsellor or mediator can help early, before it hardens into conflict.</p>
+        <p data-i18n="blog7.s6p2">The threshold for reaching out is lower than people think. Early support tends to cost less time, not more.</p>
+        <p data-i18n="blog7.s6p3">You do not have to figure this out alone, and the child will not remember the specifics of the first few months — only whether they felt safe.</p>
+      </div>
+
+
+      <section style="max-width: 640px; margin: 48px auto 0; padding: 0 24px;">
+        <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 12px;" data-i18n="blogShared.relatedLabel">Related articles</p>
+        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+    <li><a href="/blog/custody-schedules/" style="color: var(--primary); font-weight: 500;" data-i18n="blog1.title">Care arrangements explained</a></li>
+    <li><a href="/blog/co-parent-communication/" style="color: var(--primary); font-weight: 500;" data-i18n="blog5.title">Communication between co-parents</a></li>
+        </ul>
+      </section>
+      <div class="article-cta">
+        <h2 data-i18n="blog7.ctaTitle">Somewhere steady to start</h2>
+        <p data-i18n="blog7.ctaDesc">Lina gives both parents a shared place for schedules, equipment, and contacts — so the practical side of the first months takes less effort, and the child has one less thing to carry between homes.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download on the App Store" data-i18n-aria="nav.appstoreAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Download on the App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Get it on Google Play" data-i18n-aria="hero.ctaPlayAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Get on Google Play</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupProduct">Product</span>
+          <a href="/care-schedule/" data-i18n="footer.careSchedule">Care Schedule</a>
+          <a href="/care-agreement/" data-i18n="footer.careAgreement">Care Agreement</a>
+          <a href="/pricing/" data-i18n="footer.pricing">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupExplore">Explore</span>
+          <a href="/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/professionals.html" data-i18n="footer.familievern">Professionals</a>
+          <a href="/stories/" data-i18n="footer.stories">Stories</a>
+          <a href="/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupCompany">Company</span>
+          <a href="/about/" data-i18n="footer.about">About</a>
+          <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupLegal">Legal</span>
+          <a href="/terms/" data-i18n="footer.terms">Terms of Service</a>
+          <a href="/privacy/" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="/account-deletion.html" data-i18n="footer.accountDeletion">Account deletion</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var K = 'lina_lang';
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    // Persist manual language selection so the redirect respects the user's choice
+    var opts = switcher.querySelectorAll('.lang-option');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].addEventListener('click', function () {
+        var m = (this.getAttribute('href') || '').match(/^\/(no|sv|da|fi|de|nl|fr)\//);
+        try { localStorage.setItem(K, m ? m[1] : 'en'); } catch (e) {}
+      });
+    }
+  }());
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="nl" data-i18n-title="blog8.pageTitle" data-i18n-desc="blog8.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/nl/blog/ouderschapsplan/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/blog/writing-care-agreement/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/blog/writing-care-agreement/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/no/blog/samvaersavtale/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/blog/varnadsavtal/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/blog/samvaersaftale/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/blog/huoltosopimus/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/blog/umgangsvereinbarung/" />
+  <link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/blog/umgangsvereinbarung/" />
+  <link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/blog/umgangsvereinbarung/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/blog/ouderschapsplan/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/blog/convention-parentale/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Een ouderschapsplan opstellen — wat erin moet staan | Lina</title>
+  <meta name="description" content="Een praktische gids voor wat er in een schriftelijk ouderschapsplan tussen co-ouders thuishoort — schema, vakanties, beslissingen en de dagelijkse praktijk." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Lina" />
+  <meta property="og:url" content="https://getlina.app/nl/blog/ouderschapsplan/" />
+  <meta property="og:title" content="Een ouderschapsplan opstellen — wat erin moet staan | Lina" />
+  <meta property="og:description" content="Een praktische gids voor wat er in een schriftelijk ouderschapsplan tussen co-ouders thuishoort — schema, vakanties, beslissingen en de dagelijkse praktijk." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Een ouderschapsplan opstellen — wat erin moet staan | Lina" />
+  <meta name="twitter:description" content="Een praktische gids voor wat er in een schriftelijk ouderschapsplan tussen co-ouders thuishoort — schema, vakanties, beslissingen en de dagelijkse praktijk." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 120px;
+    }
+
+    .footer-col-heading {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .footer-col a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover {
+      color: var(--text);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 16px;
+      }
+
+      .footer-nav {
+        gap: 32px;
+      }
+    }
+
+    /* ── Article content ── */
+    .article-main { padding: 56px 24px 96px; }
+
+    .article-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-container h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .article-date {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .article-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .article-section {
+      margin-bottom: 36px;
+    }
+
+    .article-section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .article-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .article-section p:last-child { margin-bottom: 0; }
+
+    .article-cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .article-cta h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .article-cta p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #1a1e23;
+      color: #fff;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .btn-appstore:hover { background: #2c333b; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    @media (max-width: 599px) {
+      .article-main { padding: 40px 16px 64px; }
+      .article-container h1 { font-size: 24px; }
+      .article-cta { padding: 24px 20px; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Een ouderschapsplan opstellen — wat erin moet staan",
+  "description": "Een praktische gids voor wat in een schriftelijk ouderschapsplan tussen co-ouders thuishoort — schema, vakanties, beslissingen en de dagelijkse praktijk.",
+  "datePublished": "2026-04-19",
+  "dateModified": "2026-04-19",
+  "author": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lina",
+    "url": "https://getlina.app",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getlina.app/assets/logos/Logomark_1.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://getlina.app/nl/blog/ouderschapsplan/"
+  },
+  "image": "https://getlina.app/assets/og-image.png"
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getlina.app/nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://getlina.app/nl/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Een ouderschapsplan opstellen — wat erin moet staan"
+    }
+  ]
+}
+</script>
+  <script id="lina-lang-redirect">(function () {
+  var K = 'lina_lang';
+  // Already on a non-English locale page — nothing to do
+  if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
+  var s; try { s = localStorage.getItem(K); } catch (e) {}
+  // User explicitly chose English — stay
+  if (s === 'en') return;
+  // User previously chose a non-English language — redirect to same path
+  if (s) { location.replace('/' + s + location.pathname + location.search + location.hash); return; }
+  // First visit: auto-detect from browser language list
+  var M = {nb:'no',nn:'no',no:'no',sv:'sv',da:'da',fi:'fi',de:'de',nl:'nl',fr:'fr'};
+  var ls = navigator.languages ? [].slice.call(navigator.languages) : [navigator.language || ''];
+  for (var i = 0; i < ls.length; i++) {
+    var l = M[(ls[i] || '').toLowerCase().split('-')[0]];
+    if (l) { location.replace('/' + l + location.pathname + location.search + location.hash); return; }
+  }
+}());</script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/nl/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">NL</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option" href="/blog/writing-care-agreement/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/no/blog/samvaersavtale/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/sv/blog/varnadsavtal/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/blog/samvaersaftale/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/blog/huoltosopimus/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/blog/umgangsvereinbarung/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option active" href="/nl/blog/ouderschapsplan/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option" href="/fr/blog/convention-parentale/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <span class="section-label" data-i18n="blog8.label">Ouderschapsplan</span>
+
+      <h1 data-i18n="blog8.title">Een ouderschapsplan opstellen — wat erin moet staan</h1>
+      <p class="article-date" data-i18n="blog8.date">april 2026</p>
+
+      <p class="article-lead" data-i18n="blog8.intro">Een ouderschapsplan is in de meeste gevallen geen juridisch document — het is een gedeeld begrip op papier. Het beschrijft hoe twee ouders de zorg verdelen, beslissingen nemen en de gewone weken laten lopen. Een goed plan voorkomt heronderhandeling later en geeft het kind de voorspelbaarheid die u nu probeert te bouwen. Hier is wat er doorgaans in zou moeten staan.</p>
+
+      <div class="article-section">
+        <h2 data-i18n="blog8.s1title">Het omgangsschema</h2>
+        <p data-i18n="blog8.s1p1">Het hart van het plan is wie het kind wanneer heeft. Begin met het basisritme — week-op-week-af, 2-2-5-5, een weekendregeling — en zet vast op welke dagen en tijden de overdrachten plaatsvinden. Wees concreet: "vrijdag 16:00 op school" werkt beter dan "vrijdagmiddag."</p>
+        <p data-i18n="blog8.s1p2">Beschrijf ook wie het kind in welke vakantieperiodes heeft. Schoolvakanties verdienen een aparte regel — herfst, kerst, voorjaar, mei en zomer — met een patroon dat vooruit kan, bijvoorbeeld even jaren bij de ene ouder, oneven jaren bij de andere. Zo hoeft u dat gesprek niet elk jaar opnieuw te voeren.</p>
+        <p data-i18n="blog8.s1p3">Noteer hoe wijzigingen worden afgehandeld. Hoeveel dagen vooraf moet een verzoek komen? Wat gebeurt er bij ziekte of werkverplichtingen? Een eenvoudige regel — "verzoeken minimaal twee weken vooraf, behalve bij ziekte" — voorkomt later veel ad-hoc onderhandelen.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog8.s2title">Vakanties en bijzondere dagen</h2>
+        <p data-i18n="blog8.s2p1">Naast de schoolvakanties zijn er dagen die elk jaar terugkomen en die voor één of beide ouders veel betekenen — verjaardag van het kind, verjaardagen van de ouders, religieuze feestdagen, Sinterklaas, Koningsdag. Leg vast hoe die worden verdeeld of gedeeld.</p>
+        <p data-i18n="blog8.s2p2">Een veelgebruikte regel: de verjaardag van het kind wordt afwisselend gevierd, of de dag wordt in tweeën gedeeld. Verjaardagen van ouders worden bij die ouder doorgebracht, ongeacht het schema. Sinterklaasavond en eerste kerstdag worden om en om gewisseld. Zet zulke regels op papier — niet omdat u ze zult vergeten, maar omdat de andere ouder ze net iets anders kan onthouden.</p>
+        <p data-i18n="blog8.s2p3">Reizen naar het buitenland verdient een eigen regel. Wie geeft toestemming, hoeveel vooraf, en wat wordt er gedeeld over de bestemming en het verblijfsadres? Een paspoort dat bij de ene ouder ligt en een reis die door de andere wordt geboekt, is een klassiek wrijvingspunt — voor te zijn met een korte afspraak.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog8.s3title">Hoe u beslissingen samen neemt</h2>
+        <p data-i18n="blog8.s3p1">Veel beslissingen kunnen ouders elk apart nemen tijdens hun eigen tijd — wat het kind eet, wanneer het naar bed gaat, of het mag logeren bij een vriendje. Schrijf op welke beslissingen daar wel onder vallen, zodat het kind niet in twee versies van "vraag het de ander maar" terechtkomt.</p>
+        <p data-i18n="blog8.s3p2">Andere beslissingen vragen om gezamenlijk overleg: schoolkeuze, verhuizing buiten de regio, medische ingrepen, religieuze opvoeding, behandeling door een psycholoog of jeugdhulp. Leg vast dat die beslissingen samen worden genomen, en hoe u eruit komt als u het niet eens wordt — bijvoorbeeld door eerst een gezamenlijk gesprek met de huisarts of school, en zo nodig daarna mediation.</p>
+        <p data-i18n="blog8.s3p3">Vermeld ook praktische zaken: wie houdt het zorgverzekeringspasje, wie geeft het kind op voor sport, wie is contactpersoon op school. Niet om alles vast te leggen, maar om dubbele aanmeldingen of een vergeten ouderavond te voorkomen.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog8.s4title">Dagelijkse praktijk</h2>
+        <p data-i18n="blog8.s4p1">Het schema regelt het grote ritme. De praktijk van een gewone week zit in de details: wie haalt op, wie brengt, wat reist mee tussen de huizen, wie regelt de zwemspullen, wie houdt de schoolagenda bij. Zet de basisafspraken op papier zodat ze niet elke week opnieuw verzonnen hoeven te worden.</p>
+        <p data-i18n="blog8.s4p2">Spullen verdienen een aparte regel. Sommige gezinnen werken met twee complete sets — kleren, tandenborstel, knuffel — die in elk huis blijven. Andere gezinnen laten alles meereizen in één tas. Beide werkt; mengen werkt zelden. Kies één lijn en houd die aan.</p>
+        <p data-i18n="blog8.s4p3">Hoe communiceert u over praktische zaken — appgroep, gedeelde agenda, e-mail? Veel ouders kiezen één kanaal voor logistiek en houden het persoonlijke daarbuiten. Het maakt minder uit welk kanaal u kiest dan dat u er één afspreekt en die volhoudt.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog8.s5title">Geld en kosten</h2>
+        <p data-i18n="blog8.s5p1">Naast eventuele kinderalimentatie zijn er gewone kosten die in beide huizen terugkomen — kleding, schoolspullen, sport, zwemles, verjaardagscadeaus voor klasgenoten. Leg vast hoe die worden verdeeld: vijftig-vijftig, naar inkomen, of via een kinderbudget waar beide ouders aan bijdragen.</p>
+        <p data-i18n="blog8.s5p2">Grotere uitgaven verdienen aparte aandacht: orthodontie, een schoolreis naar het buitenland, een nieuwe fiets, een laptop. Spreek af vanaf welk bedrag u eerst overlegt en hoe u verdeelt. Een drempel van bijvoorbeeld honderd euro per uitgave voorkomt zowel verrassingen als eindeloos overleg over kleine bedragen.</p>
+        <p data-i18n="blog8.s5p3">Houd het simpel. Een gedeeld notitie of spreadsheet waarin beide ouders bonnetjes opnemen, met één keer per maand of per kwartaal verrekenen, werkt voor de meeste gezinnen beter dan elke uitgave op het moment zelf bespreken.</p>
+      </div>
+
+      <div class="article-section">
+        <h2 data-i18n="blog8.s6title">Hoe u het plan onderhoudt</h2>
+        <p data-i18n="blog8.s6p1">Een ouderschapsplan is geen vast document. Kinderen worden ouder, werk verandert, een van de ouders verhuist, een nieuwe partner komt erbij. Plan vooraf in dat u het plan jaarlijks doorneemt — bijvoorbeeld in januari of rond de zomervakantie — en kleine bijstellingen doet voor het komende jaar.</p>
+        <p data-i18n="blog8.s6p2">Wanneer u er samen niet uitkomt over een wijziging, kan een mediator helpen. Mediation is bedoeld voor precies dit soort kwesties: één onderwerp, twee ouders, een neutraal persoon die helpt structuur in het gesprek te brengen. Vaak zijn een of twee gesprekken voldoende.</p>
+        <p data-i18n="blog8.s6p3">Bewaar het plan ergens waar u het allebei kunt vinden, en deel grote wijzigingen ook met andere belangrijke volwassenen rond het kind — school, oppas, grootouders die regelmatig oppassen. Niet de details, maar wel het ritme. Zo loopt iedereen rond het kind in dezelfde richting.</p>
+      </div>
+
+
+      <section style="max-width: 640px; margin: 48px auto 0; padding: 0 24px;">
+        <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 12px;" data-i18n="blogShared.relatedLabel">Gerelateerde artikelen</p>
+        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+    <li><a href="/nl/blog/omgangsregeling/" style="color: var(--primary); font-weight: 500;" data-i18n="blog1.title">Omgangsregelingen uitgelegd</a></li>
+    <li><a href="/nl/blog/co-ouderschap-na-scheiding/" style="color: var(--primary); font-weight: 500;" data-i18n="blog7.title">De eerste maanden als co-ouders — uw houvast vinden</a></li>
+        </ul>
+      </section>
+      <div class="article-cta">
+        <h2 data-i18n="blog8.ctaTitle">Het plan op één plek</h2>
+        <p data-i18n="blog8.ctaDesc">Lina brengt het schema, de afspraken en de praktische details samen op één gedeelde plek — zodat beide ouders dezelfde versie van het ouderschapsplan bij de hand hebben, ook als de week druk is.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lina-co-parenting/id6757200671" class="btn-appstore" aria-label="Download in de App Store" data-i18n-aria="nav.appstoreAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="hero.cta">Download in de App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.getlina.lina" class="btn-appstore" aria-label="Verkrijgbaar bij Google Play" data-i18n-aria="hero.ctaPlayAria">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76c.35.2.74.24 1.11.12l12.5-7.21-2.79-2.79-10.82 9.88zm-1.15-20.39A1.99 1.99 0 0 0 1.75 5v14c0 .61.27 1.16.7 1.54l.08.07 7.84-7.84v-.19L3.03 3.37zm17.09 9.1-2.67-1.54-3.07 3.07 3.07 3.07 2.69-1.55c.77-.44.77-1.6-.02-2.05zM4.29.12 16.79 7.33l-2.79 2.79L3.18.24A1.76 1.76 0 0 1 4.29.12z"/>
+            </svg>
+            <span data-i18n="hero.ctaPlay">Verkrijgbaar bij Google Play</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupProduct">Product</span>
+          <a href="/nl/care-schedule/" data-i18n="footer.careSchedule">Zorgschema</a>
+          <a href="/nl/care-agreement/" data-i18n="footer.careAgreement">Ouderschapsplan</a>
+          <a href="/nl/pricing/" data-i18n="footer.pricing">Prijzen</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupExplore">Verkennen</span>
+          <a href="/nl/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/nl/professionals.html" data-i18n="footer.familievern">Professionals</a>
+          <a href="/nl/stories/" data-i18n="footer.stories">Verhalen</a>
+          <a href="/nl/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupCompany">Bedrijf</span>
+          <a href="/nl/about/" data-i18n="footer.about">Over ons</a>
+          <a href="/nl/contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupLegal">Juridisch</span>
+          <a href="/nl/terms/" data-i18n="footer.terms">Gebruiksvoorwaarden</a>
+          <a href="/nl/privacy/" data-i18n="footer.privacy">Privacybeleid</a>
+          <a href="/nl/account-deletion.html" data-i18n="footer.accountDeletion">Account verwijderen</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var K = 'lina_lang';
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    // Persist manual language selection so the redirect respects the user's choice
+    var opts = switcher.querySelectorAll('.lang-option');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].addEventListener('click', function () {
+        var m = (this.getAttribute('href') || '').match(/^\/(no|sv|da|fi|de|nl|fr)\//);
+        try { localStorage.setItem(K, m ? m[1] : 'en'); } catch (e) {}
+      });
+    }
+  }());
+  </script>
+
+</body>
+</html>

@@ -137,6 +137,51 @@ const SOURCE_FILES = [
     priority: '0.6',
     hasDropdown: true,
   },
+  {
+    src: 'blog/starting-co-parenting/index.html',
+    urlPath: '/blog/starting-co-parenting/',
+    langUrls: {
+      no: '/blog/samarbeid-etter-samlivsbrudd/',
+      sv: '/blog/samarbete-efter-separation/',
+      da: '/blog/samarbejde-efter-separation/',
+      fi: '/blog/eron-jalkeen-yhteistyo/',
+      de: '/blog/co-parenting-nach-trennung/',
+      nl: '/blog/co-ouderschap-na-scheiding/',
+      fr: '/blog/coparentalite-apres-separation/',
+    },
+    priority: '0.6',
+    hasDropdown: true,
+  },
+  {
+    src: 'blog/writing-care-agreement/index.html',
+    urlPath: '/blog/writing-care-agreement/',
+    langUrls: {
+      no: '/blog/samvaersavtale/',
+      sv: '/blog/varnadsavtal/',
+      da: '/blog/samvaersaftale/',
+      fi: '/blog/huoltosopimus/',
+      de: '/blog/umgangsvereinbarung/',
+      nl: '/blog/ouderschapsplan/',
+      fr: '/blog/convention-parentale/',
+    },
+    priority: '0.6',
+    hasDropdown: true,
+  },
+  {
+    src: 'blog/birthdays-two-homes/index.html',
+    urlPath: '/blog/birthdays-two-homes/',
+    langUrls: {
+      no: '/blog/bursdag-to-hjem/',
+      sv: '/blog/fodelsedag-tva-hem/',
+      da: '/blog/fodselsdag-to-hjem/',
+      fi: '/blog/syntymapaiva-kahdessa-kodissa/',
+      de: '/blog/geburtstag-zwei-zuhause/',
+      nl: '/blog/verjaardag-twee-huizen/',
+      fr: '/blog/anniversaire-deux-maisons/',
+    },
+    priority: '0.6',
+    hasDropdown: true,
+  },
 ];
 
 // ─── Extra German-only blog slugs ─────────────────────────────────────────────
@@ -185,6 +230,12 @@ const INTERNAL_HREFS = [
   '/blog',
   '/blog/co-parent-communication/',
   '/blog/co-parent-communication',
+  '/blog/starting-co-parenting/',
+  '/blog/starting-co-parenting',
+  '/blog/writing-care-agreement/',
+  '/blog/writing-care-agreement',
+  '/blog/birthdays-two-homes/',
+  '/blog/birthdays-two-homes',
   '/blog/summer-holidays/',
   '/blog/summer-holidays',
   '/blog/shared-vs-primary-residence/',
@@ -341,6 +392,9 @@ const ARTICLE_MAP = {
   'blog/shared-vs-primary-residence/index.html': 'article4',
   'blog/co-parent-communication/index.html':    'article5',
   'blog/summer-holidays/index.html':            'article6',
+  'blog/starting-co-parenting/index.html':      'article7',
+  'blog/writing-care-agreement/index.html':     'article8',
+  'blog/birthdays-two-homes/index.html':        'article9',
 };
 
 /**
