@@ -31,6 +31,7 @@ const LANG_HTMLCODE = { en: 'en', no: 'nb', sv: 'sv', da: 'da', fi: 'fi', de: 'd
 const LANG_LABEL    = { en: 'EN', no: 'NO', sv: 'SV', da: 'DA', fi: 'FI', de: 'DE', nl: 'NL', fr: 'FR' };
 const LANG_FLAG     = { en: '🇬🇧', no: '🇳🇴', sv: '🇸🇪', da: '🇩🇰', fi: '🇫🇮', de: '🇩🇪', nl: '🇳🇱', fr: '🇫🇷' };
 const LANG_NAME     = { en: 'English', no: 'Norsk', sv: 'Svenska', da: 'Dansk', fi: 'Suomi', de: 'Deutsch', nl: 'Nederlands', fr: 'Français' };
+const OG_LOCALE     = { en: 'en_US', no: 'nb_NO', sv: 'sv_SE', da: 'da_DK', fi: 'fi_FI', de: 'de_DE', nl: 'nl_NL', fr: 'fr_FR' };
 
 const SOURCE_FILES = [
   { src: 'index.html',                urlPath: '/',                   priority: '1.0', hasDropdown: true  },
@@ -654,6 +655,25 @@ function setCanonicalAndHreflang(html, lang, urlPath, file) {
 }
 
 /**
+ * Set og:locale for the current lang and og:locale:alternate for all others.
+ * Removes any existing og:locale / og:locale:alternate tags first, then inserts
+ * a fresh block immediately after <meta property="og:type" ... />.
+ */
+function setOgLocale(html, lang) {
+  html = html.replace(/\s*<meta property="og:locale(?::alternate)?"[^>]*\/>/g, '');
+  const primary = OG_LOCALE[lang];
+  const alternates = ALL_LANGS
+    .filter(l => l !== lang)
+    .map(l => `  <meta property="og:locale:alternate" content="${OG_LOCALE[l]}" />`)
+    .join('\n');
+  const block = `\n  <meta property="og:locale" content="${primary}" />\n${alternates}`;
+  return html.replace(
+    /(<meta property="og:type"[^>]*\/>)/,
+    `$1${block}`
+  );
+}
+
+/**
  * For lang === 'de', swap the generic og-image.png for the German og-image-de.png.
  * Covers both og:image and twitter:image content attributes.
  * Does nothing for all other languages.
@@ -1036,6 +1056,7 @@ function buildRoot(srcHtml, urlPath, hasDropdown, locale, srcFile, file) {
   let html = srcHtml;
   html = localizeJsonLd(html, locale, srcFile, 'en', file);
   html = setCanonicalAndHreflang(html, 'en', urlPath, file);
+  html = setOgLocale(html, 'en');
   html = fixAssetPaths(html);
   html = localizeScreenshots(html, 'en');
   html = fixBlogLinksForRoot(html);
@@ -1057,6 +1078,7 @@ function buildForLang(noHtml, lang, locale, urlPath, hasDropdown, srcFile, file)
   html = setDescription(html, locale, descKey);
   html = localizeOgImage(html, lang);
   html = setCanonicalAndHreflang(html, lang, urlPath, file);
+  html = setOgLocale(html, lang);
   // Asset paths are already absolute after the English root pass
   html = fixInternalLinks(html, lang);
   html = fixBlogLinks(html, lang);
