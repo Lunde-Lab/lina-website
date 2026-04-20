@@ -55,6 +55,14 @@ Always follow the branding guidelines defined in the project docs:
 - `docs/colors/color-system.md` — color palette
 - `docs/colors/color-usage.md` — color usage rules
 
+## Writing user-facing content
+
+For all blog posts, landing pages, marketing copy, and other user-facing text: read `/docs/writing-style.md` before drafting or editing. The guide is authoritative.
+
+Do not rely on existing articles as tonal templates. Blog posts 1, 4, and 6 (`custody-schedules`, `shared-vs-primary-residence`, `summer-holidays`) are reasonable references. Blog posts 7, 8, and 9 (`starting-co-parenting`, `writing-care-agreement`, `birthdays-two-homes`) contain AI-slop patterns that the style guide explicitly rejects — do not mimic their cadence.
+
+The guiding principle: a rougher, more direct article beats a polished one that reads as AI-generated. When in doubt, cut the sentence rather than rewrite it.
+
 ## i18n
 
 - Pre-rendered HTML per language: English on root (`/`), Norwegian under `/no/`, others under `/sv/`, `/da/`, `/fi/`, `/de/`, `/nl/`, `/fr/`
