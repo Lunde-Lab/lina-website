@@ -1,6 +1,6 @@
 {
   "page": {
-    "title": "Lina — Co-parenting, simplified",
+    "title": "Lina — Co-parenting, simplified | App for two homes",
     "description": "Lina helps co-parents coordinate everyday life across two homes — care schedule, messages, child information, and shared album in one app."
   },
   "nav": {
@@ -136,7 +136,7 @@
     "groupLegal": "Legal"
   },
   "pricing": {
-    "pageTitle": "Pricing — Lina",
+    "pageTitle": "Pricing — Lina co-parenting app for two homes",
     "pageDesc": "Lina has a free plan and Lina+ at €7.99/month. One subscription covers both parents. No ads, no data sharing.",
     "label": "Pricing",
     "title": "One subscription. Both parents.",
@@ -184,7 +184,7 @@
     }
   },
   "contact": {
-    "pageTitle": "Contact — Lina",
+    "pageTitle": "Contact Lina — Questions about the co-parenting app",
     "pageDesc": "Have a question about Lina? Get in touch — we'll get back to you as soon as we can.",
     "heading": "Contact",
     "intro": "Have a question about Lina or need help with your account? We're here to help — send us a message and we'll get back to you as soon as we can.",
@@ -196,7 +196,7 @@
     "successDescription": "We'll get back to you as soon as we can."
   },
   "cs": {
-    "pageTitle": "Care Schedule — Lina",
+    "pageTitle": "Care Schedule — plan shared custody with Lina",
     "pageDesc": "Plan and visualize your child's care schedule between two homes. Free tool with day splits, weekend overview, and PDF export.",
     "heading": "Care Schedule",
     "labelParentA": "Parent A name",
@@ -237,7 +237,7 @@
     "exportDesc": "Print or save the schedule as a PDF."
   },
   "familievern": {
-    "pageTitle": "Professionals — Lina",
+    "pageTitle": "For Professionals — Lina co-parenting app",
     "pageDesc": "Lina helps co-parents coordinate everyday life across two homes. Information about the app for family counselors and professionals.",
     "hero": {
       "label": "For professionals",
@@ -489,7 +489,7 @@
     "csPromoCta": "Try the Care Schedule"
   },
   "faq": {
-    "pageTitle": "Frequently Asked Questions — Lina",
+    "pageTitle": "Frequently Asked Questions — Lina co-parenting app",
     "pageDesc": "Answers to common questions about Lina — the co-parenting app. Find answers about privacy, account, care schedule, and care agreement.",
     "heroLabel": "FAQ",
     "heroTitle": "Frequently asked questions",
@@ -548,8 +548,8 @@
     "cat5a4": "Lina offers an information page about what a care agreement should include, with an example and links to official resources in Norway, Sweden, Denmark, and Finland."
   },
   "about": {
-    "pageTitle": "About — Lina",
-    "pageDesc": "Lina was built for co-parents who want a calm, structured tool for everyday coordination. Designed and built in Norway.",
+    "pageTitle": "About Lina — The co-parenting app built for two homes",
+    "pageDesc": "Lina was built for co-parents who want a calm, structured tool for everyday coordination across two homes. Designed and built in Norway for shared custody.",
     "heading": "About Lina",
     "lead": "Lina is a co-parenting app for parents who share care of a child across two homes. The same overview, the same information — regardless of which home the child is in.",
     "whyTitle": "Why Lina exists",
@@ -600,7 +600,7 @@
     "closing": "More studies will be added over time, including Swedish, Danish, Finnish, and German parallels to the Nordic literature summarised here."
   },
   "stories": {
-    "pageTitle": "How parents use Lina",
+    "pageTitle": "How parents use Lina — co-parenting stories",
     "pageDesc": "Small, everyday situations where Lina makes the difference. See how parents use the app to share information, photos, and equipment lists across homes.",
     "label": "Everyday scenarios",
     "title": "How parents use Lina",
@@ -852,7 +852,7 @@
     "relatedLabel": "Related articles"
   },
   "blogIndex": {
-    "pageTitle": "Blog — Lina",
+    "pageTitle": "Blog — Co-parenting advice and shared-care tips | Lina",
     "pageDesc": "Practical information about care arrangements, agreements, and everyday coordination for co-parents sharing care across two homes.",
     "label": "Co-parenting",
     "title": "Guides for co-parents",

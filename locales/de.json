@@ -1,6 +1,6 @@
 {
   "page": {
-    "title": "Lina — Getrennt gemeinsam für euer Kind",
+    "title": "Lina — Getrennt gemeinsam für euer Kind | Co-Parenting App",
     "description": "Getrennt gemeinsam für euer Kind — Lina hilft beiden Elternteilen, den Alltag über zwei Haushalte zu koordinieren: Umgangsplan, Nachrichten, Kinderinformationen und gemeinsames Album."
   },
   "nav": {
@@ -136,7 +136,7 @@
     "groupLegal": "Rechtliches"
   },
   "pricing": {
-    "pageTitle": "Preise — Lina",
+    "pageTitle": "Preise — Lina Co-Parenting App für getrennte Eltern",
     "pageDesc": "Lina hat einen kostenlosen Plan und Lina+ für 7,99 €/Monat. Ein Abonnement gilt für beide Elternteile. Keine Werbung, keine Datenweitergabe.",
     "label": "Preise",
     "title": "Ein Abonnement. Beide Elternteile.",
@@ -184,7 +184,7 @@
     }
   },
   "contact": {
-    "pageTitle": "Kontakt — Lina",
+    "pageTitle": "Kontakt — Lina Co-Parenting App für zwei Zuhause",
     "pageDesc": "Hast du eine Frage zu Lina? Nimm Kontakt auf — wir melden uns so bald wie möglich.",
     "heading": "Kontakt",
     "intro": "Hast du eine Frage zu Lina oder benötigst du Hilfe mit deinem Konto? Wir helfen gerne — schreib uns eine Nachricht und wir melden uns so bald wie möglich.",
@@ -489,7 +489,7 @@
     "csPromoCta": "Umgangsplan ausprobieren"
   },
   "faq": {
-    "pageTitle": "Häufig gestellte Fragen — Lina",
+    "pageTitle": "Häufig gestellte Fragen — Lina Co-Parenting App",
     "pageDesc": "Antworten auf häufige Fragen zu Lina — der Co-Parenting-App. Finde Antworten zu Datenschutz, Konto, Umgangsplan und Betreuungsvereinbarung.",
     "heroLabel": "FAQ",
     "heroTitle": "Häufig gestellte Fragen",
@@ -548,7 +548,7 @@
     "cat5a4": "Lina bietet eine Informationsseite darüber, was eine Betreuungsvereinbarung umfassen sollte, mit einem Beispiel und Links zu offiziellen Ressourcen in Norwegen, Schweden, Dänemark, Finnland und Deutschland."
   },
   "about": {
-    "pageTitle": "Über uns — Lina",
+    "pageTitle": "Über uns — Die Co-Parenting App für zwei Zuhause",
     "pageDesc": "Lina wurde für Eltern mit geteilter Betreuung entwickelt, die ein ruhiges, strukturiertes Werkzeug für die Alltagskoordination möchten. Gestaltet und entwickelt in Norwegen.",
     "heading": "Über Lina",
     "lead": "Lina ist eine Co-Parenting-App für Eltern, die die Betreuung eines Kindes auf zwei Haushalte teilen. Die gleiche Übersicht, die gleichen Informationen — unabhängig davon, in welchem Haushalt sich das Kind befindet.",
@@ -600,7 +600,7 @@
     "closing": "Weitere Studien werden nach und nach aufgenommen, darunter schwedische, dänische, finnische und deutsche Entsprechungen zur hier zusammengefassten nordischen Literatur."
   },
   "stories": {
-    "pageTitle": "Wie Eltern Lina nutzen",
+    "pageTitle": "Wie Eltern Lina nutzen — Geschichten aus zwei Zuhause",
     "pageDesc": "Kleine, alltägliche Situationen, in denen Lina den Unterschied macht. Erfahre, wie Eltern die App nutzen, um Informationen, Fotos und Ausstattungslisten über zwei Haushalte hinweg zu teilen.",
     "label": "Alltagssituationen",
     "title": "Wie Eltern Lina nutzen",
@@ -841,7 +841,7 @@
     "relatedLabel": "Verwandte Artikel"
   },
   "blogIndex": {
-    "pageTitle": "Blog — Lina",
+    "pageTitle": "Blog — Tipps zum Co-Parenting und Wechselmodell | Lina",
     "pageDesc": "Praktische Informationen zu Betreuungsmodellen, Vereinbarungen und der Alltagskoordination für Eltern mit geteilter Betreuung über zwei Haushalte.",
     "label": "Co-Parenting",
     "title": "Ratgeber für Co-Eltern",
