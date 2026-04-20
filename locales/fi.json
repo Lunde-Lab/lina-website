@@ -576,6 +576,45 @@
     "focusText2": "Algoritmeja, mainoksia tai sosiaalisia ominaisuuksia ei ole. Lina on suunniteltu käytettäväksi tarvittaessa ja pysymään poissa tieltä muulloin.",
     "origin": "Suunniteltu ja rakennettu Norjassa."
   },
+  "research": {
+    "pageTitle": "Tutkimusta yhteishuoltajuudesta ja lasten hyvinvoinnista — Lina",
+    "pageDesc": "Kasvava kokoelma vertaisarvioitua tutkimusta siitä, mikä auttaa lapsia, kun vanhemmat jakavat hoivan kahden kodin välillä, tiivistettynä selkeällä kielellä.",
+    "label": "Tutkimus",
+    "heading": "Tutkimusta yhteishuoltajuudesta ja lasten hyvinvoinnista",
+    "lead": "Kasvava kokoelma vertaisarvioituja tutkimuksia siitä, mikä auttaa lapsia, kun vanhemmat jakavat hoivan kahden kodin välillä. Jokainen merkintä on kirjoitettu omin sanoin selkeällä kielellä, ja se sisältää linkin alkuperäisjulkaisuun, joka on aina ensisijainen lähde.",
+    "findings": {
+      "title": "Mitä tutkimus toistuvasti osoittaa",
+      "p1": "Tässä koottujen tutkimusten perusteella mikään yksittäinen asumisjärjestely ei nouse lapsille yleisesti parempana esiin kuin toinen. Tulokset vaihtelevat monien tekijöiden mukaan, ja itse järjestely on vain yksi niistä.",
+      "p2": "Kirjallisuus viittaa toistuvasti perheenjäsenten välisten suhteiden laatuun — vanhempien välillä sekä jokaisen vanhemman ja lapsen välillä — vähintään yhtä tärkeänä kuin siihen, miten aika jakautuu. Vanhempien välinen viestintä ja ristiriitojen taso ovat toistuvia tekijöitä, jotka ovat yhteydessä siihen, miten lapset kokevat tilanteen.",
+      "p3": "Lasten omat kokemukset samasta järjestelystä voivat poiketa merkittävästi. Perheen lähtökohdat, kuten kummankin vanhemman terveys ja taloudellinen tilanne, vaikuttavat myös lopputuloksiin. Tutkimus piirtää kuvan, joka on kullekin perheelle erityinen, ei niinkään yhtä oikeaa vastausta."
+    },
+    "featured": {
+      "title": "Esitelty tutkimus",
+      "studyTitle": "Samværs- og bostedsordninger etter samlivsbrudd: betydninger for barn og unge",
+      "studyTitleEn": "Custody and living arrangements after parents separate: implications for children and adolescents",
+      "authorsLabel": "Tekijät",
+      "authorsValue": "Trine Bjerke Johansen, Heid Nøkleby, Lars Jørun Langøien, Tiril C. Borge",
+      "institutionLabel": "Instituutio",
+      "institutionValue": "Norjan kansanterveyslaitos (Folkehelseinstituttet / FHI) Norjan lasten, nuorten ja perheiden asioiden viraston (Bufdir) toimeksiannosta",
+      "publishedLabel": "Julkaistu",
+      "publishedValue": "Marraskuu 2022",
+      "typeLabel": "Tyyppi",
+      "typeValue": "Järjestelmällinen katsaus",
+      "scopeLabel": "Laajuus",
+      "scopeValue": "40 pohjoismaista tutkimusta koottuna kolmen tutkimuskysymyksen (seuraukset, kokemukset ja tekijät) näkökulmasta",
+      "summaryP1": "FHI tarkasteli, miten erilaiset asumis- ja tapaamisjärjestelyt — mukaan lukien vuoroasuminen ja erilaiset tapaamisaikataulut — ovat yhteydessä lasten hyvinvointiin, mielenterveyteen, perhesuhteisiin ja vanhempien väliseen yhteistyöhön. 40 pohjoismaisen tutkimuksen pohjalta katsaus ei voinut todeta yhden järjestelyn olevan johdonmukaisesti parempi lapsille kuin toisen.",
+      "summaryP2": "Sekä laadulliset että määrälliset tutkimukset nostivat esiin perheen sisäisten suhteiden merkityksen, vanhempien välillä sekä kunkin vanhemman ja lapsen välillä. Vanhempien välinen viestintä ja ristiriitojen taso olivat toistuvia tekijöitä, jotka olivat yhteydessä lasten vointiin. Perheen lähtökohdat, kuten vanhempien terveys ja talous, vaikuttivat myös tuloksiin.",
+      "summaryP3": "Raportti huomauttaa, että yksittäiset lapset voivat kokea saman järjestelyn hyvin eri tavoin, ja ehdottaa, että eroavia perheitä kohtaavat palvelut lähtevät kunkin perheen omasta tilanteesta sen sijaan, että suosittelisivat yhtä järjestelyä oletuksena.",
+      "linkText": "Lue alkuperäinen raportti FHI:n sivuilla"
+    },
+    "about": {
+      "title": "Näistä tiivistelmistä",
+      "p1": "Kirjoitamme jokaisen tutkimuksen omin sanoin emmekä toista alkuperäistä tekstiä. Jokainen merkintä linkittää alkuperäiseen julkaisuun, joka on ensisijainen lähde, jos tiivistelmä ja alkuperäinen poikkeavat toisistaan.",
+      "p2": "Olemme tuotetiimi, joka tiivistää julkaistua tutkimusta auttaakseen vanhempia ja ammattilaisia löytämään sen — emme tutkimuksen tekijöitä. Jos huomaat, että jokin tutkimus on esitetty väärin, otamme mielellämme vastaan korjausehdotuksia.",
+      "contactLink": "Lähetä korjausehdotus"
+    },
+    "closing": "Lisää tutkimuksia lisätään ajan myötä, mukaan lukien ruotsalaiset, tanskalaiset, suomalaiset ja saksalaiset vastineet tässä tiivistetylle pohjoismaiselle kirjallisuudelle."
+  },
   "stories": {
     "pageTitle": "Näin vanhemmat käyttävät Linaa",
     "pageDesc": "Pieniä, arkisia tilanteita, joissa Lina tekee eron. Katso miten vanhemmat käyttävät sovellusta tietojen, kuvien ja varustelistojen jakamiseen kotien välillä.",

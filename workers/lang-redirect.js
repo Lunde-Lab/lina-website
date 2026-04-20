@@ -31,6 +31,115 @@ const BYPASS_PREFIXES = [
   '/invite',       // invite links must reach the app unmodified (/invite, /invite/, /invite/*)
 ];
 
+// Per-locale slug map for pages whose URL path differs between locales.
+// SOURCE OF TRUTH: scripts/build-i18n.js — SOURCE_FILES[...].langUrls
+// When adding a new page with localised slugs to the build script, mirror it here.
+// Pages with identical slugs across locales do NOT need entries here —
+// the naive concat fallback handles them correctly.
+const SLUG_MAP = {
+  '/research/': {
+    no: '/no/forskning/',
+    sv: '/sv/forskning/',
+    da: '/da/forskning/',
+    fi: '/fi/tutkimus/',
+    de: '/de/forschung/',
+    nl: '/nl/onderzoek/',
+    fr: '/fr/recherche/',
+  },
+  '/blog/custody-schedules/': {
+    no: '/no/blog/samvaersordninger/',
+    sv: '/sv/blog/umgangesschema/',
+    da: '/da/blog/samvaersordning/',
+    fi: '/fi/blog/vuoroasuminen/',
+    de: '/de/blog/umgangsregelung/',
+    nl: '/nl/blog/omgangsregeling/',
+    fr: '/fr/blog/modes-de-garde/',
+  },
+  '/blog/handover-day/': {
+    no: '/no/blog/byttedag/',
+    sv: '/sv/blog/overlamningsdag/',
+    da: '/da/blog/byttedag-tips/',
+    fi: '/fi/blog/vaihtopaiva/',
+    de: '/de/blog/uebergabetag/',
+    nl: '/nl/blog/wisseldag/',
+    fr: '/fr/blog/jour-de-transition/',
+  },
+  '/blog/what-kids-need/': {
+    no: '/no/blog/utstyr-to-hjem/',
+    sv: '/sv/blog/vad-barnet-behover/',
+    da: '/da/blog/hvad-barnet-har-brug-for/',
+    fi: '/fi/blog/mita-lapsi-tarvitsee/',
+    de: '/de/blog/was-kinder-brauchen/',
+    nl: '/nl/blog/wat-kinderen-nodig-hebben/',
+    fr: '/fr/blog/ce-dont-lenfant-a-besoin/',
+  },
+  '/blog/shared-vs-primary-residence/': {
+    no: '/no/blog/delt-bosted/',
+    sv: '/sv/blog/vaxelvis-vs-fast-boende/',
+    da: '/da/blog/delt-vs-fast-bopael/',
+    fi: '/fi/blog/vuoroasuminen-vs-lahivanhemmuus/',
+    de: '/de/blog/wechselmodell-vs-residenzmodell/',
+    nl: '/nl/blog/co-ouderschap-vs-hoofdverblijf/',
+    fr: '/fr/blog/residence-alternee-vs-principale/',
+  },
+  '/blog/co-parent-communication/': {
+    no: '/no/blog/kommunikasjon/',
+    sv: '/sv/blog/kommunikation-delad-omsorg/',
+    da: '/da/blog/kommunikation-delt-omsorg/',
+    fi: '/fi/blog/yhteishuoltajuus-viestinta/',
+    de: '/de/blog/kommunikation-getrennte-eltern/',
+    nl: '/nl/blog/communicatie-gescheiden-ouders/',
+    fr: '/fr/blog/communication-entre-coparents/',
+  },
+  '/blog/summer-holidays/': {
+    no: '/no/blog/sommerferie-to-hjem/',
+    sv: '/sv/blog/sommarlov-tva-hem/',
+    da: '/da/blog/sommerferie-to-hjem/',
+    fi: '/fi/blog/kesaloma-kahdessa-kodissa/',
+    de: '/de/blog/sommerferien-zwei-zuhause/',
+    nl: '/nl/blog/zomervakantie-twee-huizen/',
+    fr: '/fr/blog/vacances-ete-deux-maisons/',
+  },
+  '/blog/starting-co-parenting/': {
+    no: '/no/blog/samarbeid-etter-samlivsbrudd/',
+    sv: '/sv/blog/samarbete-efter-separation/',
+    da: '/da/blog/samarbejde-efter-separation/',
+    fi: '/fi/blog/eron-jalkeen-yhteistyo/',
+    de: '/de/blog/co-parenting-nach-trennung/',
+    nl: '/nl/blog/co-ouderschap-na-scheiding/',
+    fr: '/fr/blog/coparentalite-apres-separation/',
+  },
+  '/blog/writing-care-agreement/': {
+    no: '/no/blog/samvaersavtale/',
+    sv: '/sv/blog/varnadsavtal/',
+    da: '/da/blog/samvaersaftale/',
+    fi: '/fi/blog/huoltosopimus/',
+    de: '/de/blog/umgangsvereinbarung/',
+    nl: '/nl/blog/ouderschapsplan/',
+    fr: '/fr/blog/convention-parentale/',
+  },
+  '/blog/birthdays-two-homes/': {
+    no: '/no/blog/bursdag-to-hjem/',
+    sv: '/sv/blog/fodelsedag-tva-hem/',
+    da: '/da/blog/fodselsdag-to-hjem/',
+    fi: '/fi/blog/syntymapaiva-kahdessa-kodissa/',
+    de: '/de/blog/geburtstag-zwei-zuhause/',
+    nl: '/nl/blog/verjaardag-twee-huizen/',
+    fr: '/fr/blog/anniversaire-deux-maisons/',
+  },
+  // Add future per-locale-slug pages here
+};
+
+// Reverse map built from SLUG_MAP: fixes legacy bad links the worker may have
+// produced previously via naive concat, e.g. /de/research/ → /de/forschung/.
+// Built once at module load.
+const LEGACY_PATH_FIX = new Map();
+for (const [enPath, langs] of Object.entries(SLUG_MAP)) {
+  for (const [lang, localePath] of Object.entries(langs)) {
+    LEGACY_PATH_FIX.set(`/${lang}${enPath}`, localePath);
+  }
+}
+
 async function handleRequest(request) {
   const url = new URL(request.url);
   const path = url.pathname;
@@ -46,6 +155,21 @@ async function handleRequest(request) {
     return path === p || path.startsWith(prefix);
   })) {
     return fetch(request);
+  }
+
+  // 0c. Legacy bad path from earlier worker version (naive concat of English
+  //     slug onto a language prefix) → 301 to the correct localised slug.
+  //     Must run BEFORE the lang-prefix pass-through, since these paths
+  //     already start with /{lang}/ but point to a non-existent file.
+  const legacyTarget = LEGACY_PATH_FIX.get(path);
+  if (legacyTarget) {
+    return new Response(null, {
+      status: 301,
+      headers: {
+        'Location': `${url.origin}${legacyTarget}${url.search}`,
+        'Cache-Control': 'no-store',
+      },
+    });
   }
 
   // 1. Already on a language-prefixed path → pass through
@@ -94,8 +218,22 @@ async function handleRequest(request) {
     return newResponse;
   }
 
-  // 6. Redirect to language-prefixed version of the same page
-  const redirectPath = `/${targetLang}${path === '/' ? '/' : path}`;
+  // 6. Redirect to language version of the same page.
+  //
+  // Expected behavior:
+  //   GET /research/ with Accept-Language: de → 302 /de/forschung/
+  //   GET /research/ with Accept-Language: no → 302 /no/forskning/
+  //   GET /research/ with Accept-Language: fi → 302 /fi/tutkimus/
+  //   GET /research/ with Accept-Language: en → pass through (handled above)
+  //   GET /about/ with Accept-Language: de → 302 /de/about/ (naive concat)
+  //   GET /de/forschung/ with Accept-Language: en → pass through (lang-prefixed)
+  //   GET /de/research/ (legacy bad link) → 301 /de/forschung/ (handled at 0c)
+  //   GET /.well-known/assetlinks.json → pass through (BYPASS_PREFIXES)
+  //   GET /invite/abc123 → pass through (BYPASS_PREFIXES)
+  //
+  // SLUG_MAP wins when the page has a localised slug; otherwise naive concat.
+  const mapped = SLUG_MAP[path]?.[targetLang];
+  const redirectPath = mapped ?? `/${targetLang}${path === '/' ? '/' : path}`;
   const redirectUrl = `${url.origin}${redirectPath}${url.search}`;
 
   return new Response(null, {

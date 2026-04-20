@@ -560,6 +560,45 @@
     "focusText2": "Il n'y a pas d'algorithmes, pas de publicités et pas de fonctionnalités sociales. Lina est conçu pour être utilisé quand on en a besoin et pour rester discret quand ce n'est pas le cas.",
     "origin": "Conçu et développé en Norvège."
   },
+  "research": {
+    "pageTitle": "Recherche sur la coparentalité et le bien-être des enfants — Lina",
+    "pageDesc": "Un recueil en croissance de recherches évaluées par les pairs sur ce qui aide les enfants lorsque les parents se partagent la garde entre deux foyers, résumées dans un langage clair.",
+    "label": "Recherche",
+    "heading": "Recherche sur la coparentalité et le bien-être des enfants",
+    "lead": "Un recueil en croissance d'études évaluées par les pairs sur ce qui aide les enfants lorsque les parents se partagent la garde entre deux foyers. Chaque entrée est reformulée dans un langage clair, avec un lien vers la publication originale, qui reste la source de référence.",
+    "findings": {
+      "title": "Ce que la recherche montre régulièrement",
+      "p1": "Parmi les études résumées ici, aucun mode de résidence ne se distingue comme universellement meilleur pour les enfants qu'un autre. Les résultats varient selon de nombreux facteurs, et le mode de résidence lui-même n'en est qu'un parmi d'autres.",
+      "p2": "La littérature met en avant, à de nombreuses reprises, la qualité des relations — entre les deux parents, et entre chaque parent et l'enfant — comme au moins aussi importante que la façon dont le temps est partagé. La communication entre parents et le niveau de conflit sont des facteurs récurrents associés à la manière dont les enfants vivent la situation.",
+      "p3": "Les expériences propres des enfants d'un même mode de résidence peuvent différer de manière marquée. Les conditions familiales, comme la santé et la situation financière de chaque parent, pèsent également sur les résultats. La recherche dresse un tableau propre à chaque famille plutôt qu'une réponse unique."
+    },
+    "featured": {
+      "title": "Étude en avant",
+      "studyTitle": "Samværs- og bostedsordninger etter samlivsbrudd: betydninger for barn og unge",
+      "studyTitleEn": "Custody and living arrangements after parents separate: implications for children and adolescents",
+      "authorsLabel": "Auteurs",
+      "authorsValue": "Trine Bjerke Johansen, Heid Nøkleby, Lars Jørun Langøien, Tiril C. Borge",
+      "institutionLabel": "Institution",
+      "institutionValue": "Institut norvégien de santé publique (Folkehelseinstituttet / FHI), à la demande de la Direction norvégienne des enfants, de la jeunesse et des affaires familiales (Bufdir)",
+      "publishedLabel": "Publication",
+      "publishedValue": "Novembre 2022",
+      "typeLabel": "Type",
+      "typeValue": "Revue systématique",
+      "scopeLabel": "Portée",
+      "scopeValue": "40 études nordiques rassemblées autour de trois questions de recherche (conséquences, expériences et facteurs)",
+      "summaryP1": "Le FHI a examiné la manière dont différents modes de garde et d'hébergement — notamment la résidence alternée et divers rythmes de contact — sont liés au bien-être des enfants, à leur santé mentale, aux relations familiales et à la coopération parentale. À partir de 40 études nordiques, la revue n'a pas pu conclure qu'un mode serait systématiquement meilleur qu'un autre pour les enfants.",
+      "summaryP2": "Les études qualitatives comme quantitatives ont souligné l'importance des relations au sein de la famille, entre les deux parents et entre chaque parent et l'enfant. La communication entre parents et le niveau de conflit étaient des facteurs récurrents liés au vécu des enfants. Les conditions familiales, comme la santé et la situation financière des parents, influaient également sur les résultats.",
+      "summaryP3": "Le rapport note que des enfants peuvent vivre très différemment un même mode de résidence et suggère que les services accompagnant des familles en séparation partent de la situation propre à chaque famille plutôt que de recommander un mode comme référence.",
+      "linkText": "Lire le rapport original sur le site du FHI"
+    },
+    "about": {
+      "title": "À propos de ces résumés",
+      "p1": "Nous reformulons chaque étude avec nos propres mots plutôt que de reproduire le texte d'origine. Chaque entrée renvoie à la publication originale, qui constitue la source de référence si le résumé et l'original diffèrent.",
+      "p2": "Nous sommes une équipe produit qui résume des travaux publiés pour aider parents et professionnels à les trouver, et non les auteurs de ces recherches. Si vous constatez qu'une étude est mal représentée, les corrections sont les bienvenues.",
+      "contactLink": "Nous signaler une correction"
+    },
+    "closing": "D'autres études viendront s'ajouter avec le temps, dont des équivalents suédois, danois, finlandais et allemands à la littérature nordique résumée ici."
+  },
   "stories": {
     "pageTitle": "Comment les parents utilisent Lina",
     "pageDesc": "De petites situations quotidiennes où Lina fait la différence. Voyez comment les parents utilisent l'application pour partager des informations, des photos et des listes d'équipement entre les foyers.",
