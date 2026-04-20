@@ -152,7 +152,7 @@
     "groupLegal": "Lakiasiat"
   },
   "pricing": {
-    "pageTitle": "Hinta — Lina",
+    "pageTitle": "Hinta — Lina-sovellus vanhemmille kahdessa kodissa",
     "pageDesc": "Linalla on ilmainen versio ja Lina+ hintaan 7,99 €/kk. Yksi tilaus kattaa molemmat vanhemmat. Ei mainoksia, ei tietojen jakamista.",
     "label": "Hinta",
     "title": "Yksi tilaus. Molemmat vanhemmat.",
@@ -200,7 +200,7 @@
     }
   },
   "contact": {
-    "pageTitle": "Ota yhteyttä — Lina",
+    "pageTitle": "Ota yhteyttä — kysymyksiä Lina-sovelluksesta",
     "pageDesc": "Onko sinulla kysyttävää Linasta? Ota yhteyttä — vastaamme mahdollisimman pian.",
     "heading": "Ota yhteyttä",
     "intro": "Onko sinulla kysyttävää Linasta tai tarvitsetko apua tilisi kanssa? Olemme täällä auttamassa — lähetä meille viesti, niin vastaamme mahdollisimman pian.",
@@ -212,7 +212,7 @@
     "successDescription": "Palaamme asiaan mahdollisimman pian."
   },
   "cs": {
-    "pageTitle": "Hoitoaikataulu — Lina",
+    "pageTitle": "Hoitoaikataulu — suunnittele yhteishuoltajuus Linalla",
     "pageDesc": "Suunnittele ja visualisoi lapsen hoitoaikataulu kahden kodin välillä. Ilmainen työkalu päiväjaolla, viikonloppukatsauksella ja PDF-viennillä.",
     "heading": "Hoitoaikataulu",
     "labelParentA": "Vanhempi A:n nimi",
@@ -253,7 +253,7 @@
     "exportDesc": "Tulosta tai tallenna aikataulu PDF-tiedostona."
   },
   "familievern": {
-    "pageTitle": "Ammattilaiset — Lina",
+    "pageTitle": "Ammattilaisille — Lina yhteishuoltajuussovellus",
     "pageDesc": "Lina auttaa yhteishuoltajia koordinoimaan arkea. Tietoa sovelluksesta lastenvalvojille ja perheneuvonnan ammattilaisille.",
     "hero": {
       "label": "Ammattilaisille",
@@ -505,7 +505,7 @@
     "csPromoCta": "Kokeile hoitoaikataulua"
   },
   "faq": {
-    "pageTitle": "Usein kysytyt kysymykset — Lina",
+    "pageTitle": "Usein kysytyt kysymykset — Lina yhteishuoltajille",
     "pageDesc": "Vastauksia yleisimpiin kysymyksiin Linasta — sovelluksesta vanhemmille, jotka jakavat lapsen huollon. Löydä vastauksia tietosuojasta, tilistä, hoitoaikataulusta ja huoltosopimuksesta.",
     "heroLabel": "FAQ",
     "heroTitle": "Usein kysytyt kysymykset",
@@ -564,7 +564,7 @@
     "cat5a4": "Lina tarjoaa tietosivun siitä, mitä huoltosopimuksen tulisi sisältää, esimerkin kanssa ja linkkejä virallisiin resursseihin Norjassa, Ruotsissa, Tanskassa ja Suomessa."
   },
   "about": {
-    "pageTitle": "Tietoa Linasta — Lina",
+    "pageTitle": "Tietoa Linasta — Yhteishuoltajuuden sovellus kahteen kotiin",
     "pageDesc": "Lina luotiin yhteishuoltajille, jotka haluavat rauhallisen, jäsennellyn työkalun arjen koordinointiin. Suunniteltu ja rakennettu Norjassa.",
     "heading": "Tietoa Linasta",
     "lead": "Lina on sovellus vanhemmille, jotka jakavat lapsen hoidon kahden kodin välillä. Sama kokonaiskuva, sama tieto — riippumatta siitä, kumman luona lapsi on.",
@@ -616,7 +616,7 @@
     "closing": "Lisää tutkimuksia lisätään ajan myötä, mukaan lukien ruotsalaiset, tanskalaiset, suomalaiset ja saksalaiset vastineet tässä tiivistetylle pohjoismaiselle kirjallisuudelle."
   },
   "stories": {
-    "pageTitle": "Näin vanhemmat käyttävät Linaa",
+    "pageTitle": "Näin vanhemmat käyttävät Linaa — yhteishuoltajuustarinoita",
     "pageDesc": "Pieniä, arkisia tilanteita, joissa Lina tekee eron. Katso miten vanhemmat käyttävät sovellusta tietojen, kuvien ja varustelistojen jakamiseen kotien välillä.",
     "label": "Arjen tilanteita",
     "title": "Näin vanhemmat käyttävät Linaa",
@@ -892,7 +892,7 @@
     "relatedLabel": "Aiheeseen liittyvät artikkelit"
   },
   "blogIndex": {
-    "pageTitle": "Blogi — Lina",
+    "pageTitle": "Blogi — Neuvoja yhteishuoltajuuteen ja vuoroasumiseen | Lina",
     "pageDesc": "Käytännön tietoa asumisjärjestelyistä, sopimuksista ja arjen koordinoinnista vanhemmille, jotka jakavat huoltajuuden kahden kodin välillä.",
     "label": "Yhteishuoltajuus",
     "title": "Oppaita yhteishuoltajavanhemmille",

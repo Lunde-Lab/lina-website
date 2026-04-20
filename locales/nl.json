@@ -1,6 +1,6 @@
 {
   "page": {
-    "title": "Lina — co-ouderschap, vereenvoudigd",
+    "title": "Lina — co-ouderschap, vereenvoudigd | App voor twee huizen",
     "description": "Lina helpt co-ouders de dagelijkse gang van zaken over twee huishoudens te coördineren — zorgschema, berichten, kindinformatie en gedeeld album in één app."
   },
   "nav": {
@@ -136,7 +136,7 @@
     "groupLegal": "Juridisch"
   },
   "pricing": {
-    "pageTitle": "Prijzen — Lina",
+    "pageTitle": "Prijzen — Lina co-ouderschap-app voor twee huizen",
     "pageDesc": "Lina heeft een gratis abonnement en Lina+ voor € 7,99/maand. Eén abonnement voor beide ouders. Geen reclame, geen gegevensdeling.",
     "label": "Prijzen",
     "title": "Eén abonnement. Beide ouders.",
@@ -184,7 +184,7 @@
     }
   },
   "contact": {
-    "pageTitle": "Contact — Lina",
+    "pageTitle": "Contact Lina — vragen over de co-ouderschap-app",
     "pageDesc": "Heeft u een vraag over Lina? Neem contact op — we reageren zo snel mogelijk.",
     "heading": "Contact",
     "intro": "Heeft u een vraag over Lina of heeft u hulp nodig bij uw account? We helpen u graag — stuur ons een bericht en we reageren zo snel mogelijk.",
@@ -196,7 +196,7 @@
     "successDescription": "We reageren zo snel mogelijk."
   },
   "cs": {
-    "pageTitle": "Zorgschema — Lina",
+    "pageTitle": "Zorgschema — plan gedeeld ouderschap met Lina",
     "pageDesc": "Plan en visualiseer het zorgschema van uw kind tussen twee huishoudens. Gratis tool met dagverdeling, weekendoverzicht en PDF-export.",
     "heading": "Zorgschema",
     "labelParentA": "Naam ouder A",
@@ -240,7 +240,7 @@
   "nav_care_schedule": "Zorgschema",
   "nav_download": "Downloaden",
   "familievern": {
-    "pageTitle": "Professionals — Lina",
+    "pageTitle": "Voor professionals — Lina co-ouderschap-app",
     "pageDesc": "Lina helpt co-ouders de dagelijkse gang van zaken over twee huishoudens te coördineren. Informatie over de app voor mediators en andere professionals.",
     "hero": {
       "label": "Voor professionals",
@@ -489,7 +489,7 @@
     "csPromoCta": "Probeer het zorgschema"
   },
   "faq": {
-    "pageTitle": "Veelgestelde vragen — Lina",
+    "pageTitle": "Veelgestelde vragen — Lina co-ouderschap-app",
     "pageDesc": "Antwoorden op veelgestelde vragen over Lina — de co-ouderschapsapp. Vind antwoorden over privacy, account, zorgschema en ouderschapsplan.",
     "heroLabel": "FAQ",
     "heroTitle": "Veelgestelde vragen",
@@ -548,7 +548,7 @@
     "cat5a4": "Lina biedt een informatiepagina over wat een ouderschapsplan moet bevatten, met een voorbeeld en links naar officiële bronnen in Noorwegen, Zweden, Denemarken, Finland en Nederland."
   },
   "about": {
-    "pageTitle": "Over ons — Lina",
+    "pageTitle": "Over ons — de co-ouderschap-app voor twee huizen",
     "pageDesc": "Lina is gebouwd voor co-ouders die een rustige, gestructureerde tool willen voor de dagelijkse coördinatie. Ontworpen en gebouwd in Noorwegen.",
     "heading": "Over Lina",
     "lead": "Lina is een co-ouderschapsapp voor ouders die de zorg voor een kind delen over twee huishoudens. Hetzelfde overzicht, dezelfde informatie — ongeacht in welk huishouden het kind zich bevindt.",
@@ -600,7 +600,7 @@
     "closing": "Er worden met de tijd meer studies toegevoegd, waaronder Zweedse, Deense, Finse en Duitse tegenhangers van de hier samengevatte Noordse literatuur."
   },
   "stories": {
-    "pageTitle": "Hoe ouders Lina gebruiken",
+    "pageTitle": "Hoe ouders Lina gebruiken — verhalen uit twee huizen",
     "pageDesc": "Kleine, alledaagse situaties waarin Lina het verschil maakt. Zie hoe ouders de app gebruiken om informatie, foto's en paklijsten te delen tussen de huishoudens.",
     "label": "Alledaagse situaties",
     "title": "Hoe ouders Lina gebruiken",
@@ -841,7 +841,7 @@
     "relatedLabel": "Gerelateerde artikelen"
   },
   "blogIndex": {
-    "pageTitle": "Blog — Lina",
+    "pageTitle": "Blog — Tips voor co-ouderschap en gedeelde zorg | Lina",
     "pageDesc": "Praktische informatie over zorgverdeling, ouderschapsplannen en dagelijkse afstemming voor co-ouders die de zorg over twee huishoudens delen.",
     "label": "Co-ouderschap",
     "title": "Gidsen voor co-ouders",

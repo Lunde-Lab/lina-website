@@ -1,6 +1,6 @@
 {
   "page": {
-    "title": "Lina — Delat föräldraskap, förenklat",
+    "title": "Lina — Delat föräldraskap, förenklat | App för två hem",
     "description": "Lina hjälper föräldrar som delar omsorg att koordinera vardagen över två hem — omsorgsschema, meddelanden, barnuppgifter och delat album i en app."
   },
   "nav": {
@@ -152,7 +152,7 @@
     "groupLegal": "Juridisk"
   },
   "pricing": {
-    "pageTitle": "Pris — Lina",
+    "pageTitle": "Pris — Lina app för delat föräldraskap",
     "pageDesc": "Lina har en gratisplan och Lina+ för 89 kr/mån. Ett abonnemang täcker båda föräldrarna. Ingen reklam, ingen datadelning.",
     "label": "Pris",
     "title": "Ett abonnemang. Båda föräldrarna.",
@@ -200,7 +200,7 @@
     }
   },
   "contact": {
-    "pageTitle": "Kontakt — Lina",
+    "pageTitle": "Kontakta Lina — frågor om appen för delat föräldraskap",
     "pageDesc": "Har du frågor om Lina? Kontakta oss — vi svarar så snart vi kan.",
     "heading": "Kontakt",
     "intro": "Har du frågor om Lina eller behöver hjälp med ditt konto? Vi finns här — skicka ett meddelande så svarar vi så snart vi kan.",
@@ -212,7 +212,7 @@
     "successDescription": "Vi återkommer så snart vi kan."
   },
   "cs": {
-    "pageTitle": "Omsorgsschema — Lina",
+    "pageTitle": "Omsorgsschema — planera delad omsorg med Lina",
     "pageDesc": "Planera och visualisera barnets omsorgsschema mellan två hem. Gratis verktyg med dagfördelning, helgöversikt och PDF-export.",
     "heading": "Omsorgsschema",
     "labelParentA": "Namn förälder A",
@@ -253,7 +253,7 @@
     "exportDesc": "Skriv ut eller spara schemat som PDF."
   },
   "familievern": {
-    "pageTitle": "Yrkespersoner — Lina",
+    "pageTitle": "För yrkespersoner — Lina app för delat föräldraskap",
     "pageDesc": "Lina hjälper föräldrar med delad omsorg att koordinera vardagen. Information om appen för yrkespersoner inom familjerätt och rådgivning.",
     "hero": {
       "label": "För yrkespersoner",
@@ -505,7 +505,7 @@
     "csPromoCta": "Prova omsorgsschemat"
   },
   "faq": {
-    "pageTitle": "Vanliga frågor — Lina",
+    "pageTitle": "Vanliga frågor — Lina för delat föräldraskap",
     "pageDesc": "Svar på vanliga frågor om Lina — appen för föräldrar som delar omsorg. Hitta svar om integritet, konto, omsorgsschema och samarbetsavtal.",
     "heroLabel": "FAQ",
     "heroTitle": "Vanliga frågor",
@@ -564,7 +564,7 @@
     "cat5a4": "Lina erbjuder en informationssida om vad ett samarbetsavtal bör innehålla, med exempel och länkar till officiella resurser i Norge, Sverige, Danmark och Finland."
   },
   "about": {
-    "pageTitle": "Om Lina — Lina",
+    "pageTitle": "Om Lina — Appen för delat föräldraskap i två hem",
     "pageDesc": "Lina skapades för föräldrar som delar omsorg och vill ha ett lugnt, strukturerat verktyg för vardagskoordinering. Designad och byggd i Norge.",
     "heading": "Om Lina",
     "lead": "Lina är en app för föräldrar som delar omsorgen om ett barn mellan två hem. Samma översikt, samma information — oavsett vem barnet är hos.",
@@ -616,7 +616,7 @@
     "closing": "Fler studier läggs till över tid, inklusive svenska, danska, finska och tyska paralleller till den nordiska litteratur som sammanfattas här."
   },
   "stories": {
-    "pageTitle": "Så använder föräldrar Lina",
+    "pageTitle": "Så använder föräldrar Lina — berättelser om delad omsorg",
     "pageDesc": "Små, vardagliga situationer där Lina gör skillnaden. Se hur föräldrar använder appen för att dela information, bilder och utrustningslistor mellan hemmen.",
     "label": "Vardagsscenarier",
     "title": "Så använder föräldrar Lina",
@@ -892,7 +892,7 @@
     "relatedLabel": "Relaterade artiklar"
   },
   "blogIndex": {
-    "pageTitle": "Blogg — Lina",
+    "pageTitle": "Blogg — Råd om delat föräldraskap och umgänge | Lina",
     "pageDesc": "Praktisk information om umgängesscheman, avtal och vardagskoordinering för föräldrar som delar omsorg mellan två hem.",
     "label": "Delat föräldraskap",
     "title": "Guider för föräldrar med delad omsorg",

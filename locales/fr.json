@@ -1,6 +1,6 @@
 {
   "page": {
-    "title": "Lina — La coparentalité simplifiée",
+    "title": "Lina — La coparentalité simplifiée | App pour deux foyers",
     "description": "Lina aide les coparents à coordonner le quotidien entre deux foyers — planning de garde, messages, informations sur l'enfant et album partagé dans une seule application."
   },
   "nav": {
@@ -136,7 +136,7 @@
     "groupLegal": "Juridique"
   },
   "pricing": {
-    "pageTitle": "Tarifs — Lina",
+    "pageTitle": "Tarifs — Lina app de coparentalité pour deux foyers",
     "pageDesc": "Lina propose un plan gratuit et Lina+ à 7,99 €/mois. Un abonnement couvre les deux parents. Pas de publicité, pas de partage de données.",
     "label": "Tarifs",
     "title": "Un abonnement. Les deux parents.",
@@ -184,7 +184,7 @@
     }
   },
   "contact": {
-    "pageTitle": "Contact — Lina",
+    "pageTitle": "Contacter Lina — questions sur l'app de coparentalité",
     "pageDesc": "Une question sur Lina ? Contactez-nous — nous vous répondrons dès que possible.",
     "heading": "Contact",
     "intro": "Vous avez une question sur Lina ou besoin d'aide avec votre compte ? Nous sommes là pour vous aider — envoyez-nous un message et nous vous répondrons dès que possible.",
@@ -196,7 +196,7 @@
     "successDescription": "Nous vous répondrons dès que possible."
   },
   "cs": {
-    "pageTitle": "Planning de garde — Lina",
+    "pageTitle": "Planning de garde — planifiez la garde alternée avec Lina",
     "pageDesc": "Planifiez et visualisez le planning de garde de votre enfant entre deux foyers. Outil gratuit avec répartition des jours, aperçu des weekends et export PDF.",
     "heading": "Planning de garde",
     "labelParentA": "Nom du parent A",
@@ -237,7 +237,7 @@
     "exportDesc": "Imprimez ou enregistrez le planning en PDF."
   },
   "familievern": {
-    "pageTitle": "Professionnels — Lina",
+    "pageTitle": "Pour les professionnels — Lina app de coparentalité",
     "pageDesc": "Lina aide les coparents à coordonner le quotidien entre deux foyers. Informations sur l'application pour les médiateurs familiaux, conseillers conjugaux et autres professionnels de la famille.",
     "hero": {
       "label": "Pour les professionnels",
@@ -489,7 +489,7 @@
     "csPromoCta": "Essayer le planning de garde"
   },
   "faq": {
-    "pageTitle": "Foire aux questions — Lina",
+    "pageTitle": "Foire aux questions — Lina app de coparentalité",
     "pageDesc": "Réponses aux questions courantes sur Lina — l'application de coparentalité. Trouvez des réponses sur la confidentialité, le compte, le planning de garde et la convention parentale.",
     "heroLabel": "FAQ",
     "heroTitle": "Questions fréquemment posées",
@@ -548,7 +548,7 @@
     "cat5a4": "Lina propose une page d'informations sur ce qu'une convention parentale doit inclure, avec un exemple et des liens vers des ressources officielles en Norvège, Suède, Danemark, Finlande et France."
   },
   "about": {
-    "pageTitle": "À propos — Lina",
+    "pageTitle": "À propos — L'app de coparentalité pour deux foyers",
     "pageDesc": "Lina a été créé pour les coparents qui souhaitent un outil calme et structuré pour la coordination quotidienne. Conçu et développé en Norvège.",
     "heading": "À propos de Lina",
     "lead": "Lina est une application de coparentalité pour les parents qui partagent la garde d'un enfant entre deux foyers. Le même aperçu, les mêmes informations — quel que soit le foyer où se trouve l'enfant.",
@@ -600,7 +600,7 @@
     "closing": "D'autres études viendront s'ajouter avec le temps, dont des équivalents suédois, danois, finlandais et allemands à la littérature nordique résumée ici."
   },
   "stories": {
-    "pageTitle": "Comment les parents utilisent Lina",
+    "pageTitle": "Comment les parents utilisent Lina — garde alternée",
     "pageDesc": "De petites situations quotidiennes où Lina fait la différence. Voyez comment les parents utilisent l'application pour partager des informations, des photos et des listes d'équipement entre les foyers.",
     "label": "Situations du quotidien",
     "title": "Comment les parents utilisent Lina",
@@ -876,7 +876,7 @@
     "relatedLabel": "Articles connexes"
   },
   "blogIndex": {
-    "pageTitle": "Blog — Lina",
+    "pageTitle": "Blog — Conseils sur la coparentalité et la garde | Lina",
     "pageDesc": "Informations pratiques sur les modes de garde, les conventions et la coordination quotidienne pour les coparents partageant la garde entre deux foyers.",
     "label": "Coparentalité",
     "title": "Guides pour coparents",

@@ -1,6 +1,6 @@
 {
   "page": {
-    "title": "Lina — Delt forældreskab, forenklet",
+    "title": "Lina — Delt forældreskab, forenklet | App til to hjem",
     "description": "Lina hjælper forældre med delt omsorg med at koordinere hverdagen på tværs af to hjem — samværsplan, beskeder, barneinformation og delt album i én app."
   },
   "nav": {
@@ -152,7 +152,7 @@
     "groupLegal": "Juridisk"
   },
   "pricing": {
-    "pageTitle": "Pris — Lina",
+    "pageTitle": "Pris — Lina samværs-app for forældre",
     "pageDesc": "Lina har en gratis plan og Lina+ til 59 kr/md. Ét abonnement dækker begge forældre. Ingen reklame, ingen datadeling.",
     "label": "Pris",
     "title": "Ét abonnement. Begge forældre.",
@@ -200,7 +200,7 @@
     }
   },
   "contact": {
-    "pageTitle": "Kontakt — Lina",
+    "pageTitle": "Kontakt Lina — spørgsmål om samværs-appen",
     "pageDesc": "Har du spørgsmål om Lina? Kontakt os — vi vender tilbage hurtigst muligt.",
     "heading": "Kontakt",
     "intro": "Har du spørgsmål om Lina eller brug for hjælp med din konto? Vi er her for at hjælpe — send os en besked, så vender vi tilbage hurtigst muligt.",
@@ -212,7 +212,7 @@
     "successDescription": "Vi vender tilbage hurtigst muligt."
   },
   "cs": {
-    "pageTitle": "Samværsplan — Lina",
+    "pageTitle": "Samværsplan — planlæg delt omsorg med Lina",
     "pageDesc": "Planlæg og visualiser barnets samværsplan mellem to hjem. Gratis værktøj med dagfordeling, weekendoversigt og PDF-eksport.",
     "heading": "Samværsplan",
     "labelParentA": "Navn på forælder A",
@@ -253,7 +253,7 @@
     "exportDesc": "Udskriv eller gem planen som PDF."
   },
   "familievern": {
-    "pageTitle": "Fagfolk — Lina",
+    "pageTitle": "For fagfolk — Lina samværs-app for familier",
     "pageDesc": "Lina hjælper forældre med delt omsorg med at koordinere hverdagen. Information om appen for fagpersoner ved familierådgivning.",
     "hero": {
       "label": "For fagpersoner",
@@ -505,7 +505,7 @@
     "csPromoCta": "Prøv samværsplanen"
   },
   "faq": {
-    "pageTitle": "Ofte stillede spørgsmål — Lina",
+    "pageTitle": "Ofte stillede spørgsmål — Lina samværs-app",
     "pageDesc": "Svar på almindelige spørgsmål om Lina — appen til forældre med delt omsorg. Find svar om privatlivsbeskyttelse, konto, samværsplan og samværsaftale.",
     "heroLabel": "FAQ",
     "heroTitle": "Ofte stillede spørgsmål",
@@ -564,7 +564,7 @@
     "cat5a4": "Lina tilbyder en informationsside om, hvad en samværsaftale bør indeholde, med eksempel og links til officielle ressourcer i Norge, Sverige, Danmark og Finland."
   },
   "about": {
-    "pageTitle": "Om Lina — Lina",
+    "pageTitle": "Om Lina — Samværs-appen bygget til to hjem",
     "pageDesc": "Lina blev skabt til forældre med delt omsorg, der ønsker et roligt, struktureret værktøj til hverdagskoordinering. Designet og udviklet i Norge.",
     "heading": "Om Lina",
     "lead": "Lina er en app til forældre, der deler omsorgen for et barn mellem to hjem. Samme overblik, samme information — uanset hvem barnet er hos.",
@@ -616,7 +616,7 @@
     "closing": "Flere studier tilføjes over tid, herunder svenske, danske, finske og tyske paralleller til den nordiske litteratur, der er sammenfattet her."
   },
   "stories": {
-    "pageTitle": "Sådan bruger forældre Lina",
+    "pageTitle": "Sådan bruger forældre Lina — historier om delt omsorg",
     "pageDesc": "Små, hverdagslige situationer, hvor Lina gør forskellen. Se hvordan forældre bruger appen til at dele information, billeder og udstyrslister på tværs af hjem.",
     "label": "Hverdagsscenarier",
     "title": "Sådan bruger forældre Lina",
@@ -892,7 +892,7 @@
     "relatedLabel": "Relaterede artikler"
   },
   "blogIndex": {
-    "pageTitle": "Blog — Lina",
+    "pageTitle": "Blog — Råd om delt forældreskab og samvær | Lina",
     "pageDesc": "Praktisk information om samværsordninger, aftaler og hverdagskoordinering for forældre, der deler omsorg mellem to hjem.",
     "label": "Delt forældreskab",
     "title": "Guides til forældre med delt omsorg",
