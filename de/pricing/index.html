@@ -414,8 +414,8 @@
 
     /* ── CTA ── */
     #cta {
-      background: var(--primary);
-      padding: 72px 24px;
+      background: #fff;
+      padding: 80px 24px 96px;
     }
 
     .cta-inner {
@@ -423,8 +423,8 @@
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
+      align-items: flex-start;
+      text-align: left;
       gap: 16px;
     }
 
@@ -432,12 +432,12 @@
       font-size: clamp(24px, 3vw, 36px);
       font-weight: 600;
       letter-spacing: -0.02em;
-      color: #fff;
+      color: var(--text);
     }
 
     #cta p {
       font-size: 16px;
-      color: rgba(255, 255, 255, 0.75);
+      color: var(--text-secondary);
       margin-bottom: 8px;
     }
 
@@ -517,7 +517,6 @@
       #why-paid { padding: 48px 16px; }
       #why-paid h2 { font-size: 22px; }
       .why-paid-inner { grid-template-columns: 1fr; gap: 40px; }
-      #cta { padding: 48px 16px; }
       .hero-ctas { flex-direction: column; align-items: stretch; }
       .btn-appstore { width: 100%; justify-content: center; }
       footer { padding: 32px 16px; }

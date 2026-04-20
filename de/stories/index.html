@@ -315,14 +315,16 @@
 
     /* ── CTA ── */
     #cta {
-      background: var(--primary);
+      background: #fff;
+      padding-top: 80px;
+      padding-bottom: 96px;
     }
 
     .cta-inner {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
+      align-items: flex-start;
+      text-align: left;
       gap: 16px;
     }
 
@@ -330,12 +332,12 @@
       font-size: clamp(24px, 3vw, 36px);
       font-weight: 600;
       letter-spacing: -0.02em;
-      color: #fff;
+      color: var(--text);
     }
 
     #cta p {
       font-size: 16px;
-      color: rgba(255, 255, 255, 0.75);
+      color: var(--text-secondary);
       margin-bottom: 8px;
     }
 
