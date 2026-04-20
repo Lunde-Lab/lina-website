@@ -290,6 +290,18 @@
     /* ── How it works ── */
     #how-it-works {
       background: #fff;
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+
+    #features {
+      padding-top: 88px;
+      padding-bottom: 88px;
+    }
+
+    #more-tools {
+      padding-top: 48px;
+      padding-bottom: 48px;
     }
 
     #how-it-works h2,
@@ -660,6 +672,8 @@
     /* ── Care Schedule Promo ── */
     #cs-promo {
       background: var(--bg);
+      padding-top: 88px;
+      padding-bottom: 88px;
     }
 
     #ca-promo {
@@ -843,48 +857,11 @@
       }
     }
 
-    /* ── Subtle section accents ── */
-    .accent-left {
-      position: relative;
-    }
-
-    .accent-left::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(to right, rgba(13, 107, 100, 0.06), transparent);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .accent-right {
-      position: relative;
-    }
-
-    .accent-right::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(to left, rgba(13, 107, 100, 0.06), transparent);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .accent-left > .container,
-    .accent-right > .container {
-      position: relative;
-      z-index: 1;
-    }
-
     /* ── Stories teaser ── */
     #stories-teaser {
       background: var(--bg);
+      padding-top: 48px;
+      padding-bottom: 48px;
     }
 
     #stories-teaser h2 {
@@ -908,17 +885,6 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-    }
-
-    .story-teaser-card .scenario-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      background: #EAF4F3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
     }
 
     .story-teaser-card h3 {
@@ -1278,7 +1244,7 @@
 
 
   <!-- Features -->
-  <section id="features" class="accent-left">
+  <section id="features">
     <div class="container">
       <p class="section-label" data-i18n="features.label">Features</p>
       <h2 data-i18n="features.title">All the details, shared with the other home</h2>
@@ -1419,7 +1385,7 @@
   </section>
 
   <!-- Privacy -->
-  <section id="privacy" class="accent-right">
+  <section id="privacy">
     <div class="container">
       <p class="section-label" data-i18n="privacy.label">Privacy</p>
       <div class="privacy-inner">
@@ -1431,35 +1397,18 @@
 
         <div class="privacy-points reveal reveal-delay-1">
           <div class="privacy-point">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
             <div class="privacy-point-text">
               <h3 data-i18n="privacy.point1.title">No advertising</h3>
               <p data-i18n="privacy.point1.description">Your experience is never shaped by ads or commercial interests.</p>
             </div>
           </div>
           <div class="privacy-point">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-              </svg>
-            </div>
             <div class="privacy-point-text">
               <h3 data-i18n="privacy.point2.title">No data sharing</h3>
               <p data-i18n="privacy.point2.description">Your data stays yours. It is never shared with third parties.</p>
             </div>
           </div>
           <div class="privacy-point">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
-              </svg>
-            </div>
             <div class="privacy-point-text">
               <h3 data-i18n="privacy.point3.title">No algorithm</h3>
               <p data-i18n="privacy.point3.description">You decide what you see — not an algorithm optimizing for engagement.</p>
@@ -1473,42 +1422,23 @@
   </section>
 
   <!-- Stories teaser -->
-  <section id="stories-teaser" class="accent-right reveal">
+  <section id="stories-teaser" class="reveal">
     <div class="container">
       <p class="section-label" data-i18n="storiesTeaser.label">Everyday moments</p>
       <h2 data-i18n="storiesTeaser.title">Built for the moments that matter</h2>
       <div class="stories-grid">
 
         <div class="story-teaser-card reveal">
-          <div class="scenario-icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
-            </svg>
-          </div>
           <h3 data-i18n="storiesTeaser.s1.title">The allergy the other home did not know about</h3>
           <p data-i18n="storiesTeaser.s1.description">One parent updates the child's medical information. The other sees it immediately — no separate text needed.</p>
         </div>
 
         <div class="story-teaser-card reveal reveal-delay-1">
-          <div class="scenario-icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
-              <rect x="9" y="3" width="6" height="4" rx="1"/>
-              <path d="m9 12 2 2 4-4"/>
-            </svg>
-          </div>
           <h3 data-i18n="storiesTeaser.s2.title">The rain jacket that is always at the wrong house</h3>
           <p data-i18n="storiesTeaser.s2.description">Shared equipment lists show what is at each home. Updates are visible right away, so the jacket follows the child.</p>
         </div>
 
         <div class="story-teaser-card reveal reveal-delay-2">
-          <div class="scenario-icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D6B64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2"/>
-              <circle cx="9" cy="9" r="2"/>
-              <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
-            </svg>
-          </div>
           <h3 data-i18n="storiesTeaser.s3.title">The first bicycle ride you almost missed</h3>
           <p data-i18n="storiesTeaser.s3.description">Photos go into the shared album. The big and small moments are shared automatically — regardless of which home the child is in.</p>
         </div>
@@ -1524,7 +1454,7 @@
   </section>
 
   <!-- Care Schedule Promo -->
-  <section id="cs-promo" class="accent-left">
+  <section id="cs-promo">
     <div class="container">
       <div class="cs-promo-inner">
 
