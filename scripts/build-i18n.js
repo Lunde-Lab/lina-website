@@ -655,6 +655,18 @@ function setCanonicalAndHreflang(html, lang, urlPath, file) {
 }
 
 /**
+ * Ensure <link rel="manifest" href="/manifest.json" /> is present, inserted
+ * directly after the favicon.ico link. Idempotent: if already present, no-op.
+ */
+function injectManifestLink(html) {
+  if (/<link rel="manifest"[^>]*>/.test(html)) return html;
+  return html.replace(
+    /(<link rel="icon" href="\/favicon\.ico"[^>]*\/>)/,
+    `$1\n  <link rel="manifest" href="/manifest.json" />`
+  );
+}
+
+/**
  * Set og:locale for the current lang and og:locale:alternate for all others.
  * Removes any existing og:locale / og:locale:alternate tags first, then inserts
  * a fresh block immediately after <meta property="og:type" ... />.
@@ -1057,6 +1069,7 @@ function buildRoot(srcHtml, urlPath, hasDropdown, locale, srcFile, file) {
   html = localizeJsonLd(html, locale, srcFile, 'en', file);
   html = setCanonicalAndHreflang(html, 'en', urlPath, file);
   html = setOgLocale(html, 'en');
+  html = injectManifestLink(html);
   html = fixAssetPaths(html);
   html = localizeScreenshots(html, 'en');
   html = fixBlogLinksForRoot(html);

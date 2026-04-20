@@ -1,0 +1,25 @@
+{
+  "name": "Lina",
+  "short_name": "Lina",
+  "description": "Lina helps co-parents coordinate everyday life across two homes — care schedule, messages, child information, and shared album in one app.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F8F8F6",
+  "theme_color": "#0D6B64",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/assets/logos/Logomark_1.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
