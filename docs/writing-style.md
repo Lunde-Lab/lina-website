@@ -37,17 +37,26 @@ Sections without at least one concrete anchor should be rewritten until they hav
 
 These are banned outright, in every language, without exception. Apply the rule to translations too, not only the English source.
 
-### 1. The "Not X, but Y" construction (and its variants)
+### 1. Aphoristic contrast constructions
 
-This is the single most recognizable AI cadence. Every instance must be rephrased as either a direct positive statement, or split into two sentences with the negation removed.
+The "Not X, but Y" pattern is banned only when it produces an aphoristic fortune-cookie effect. Legitimate pedagogical contrast — where the rejected alternative is a genuine misunderstanding the reader might have — is fine and often clarifies meaning.
+
+**Banned (aphoristic slop):**
 
 - Wrong: "The point is predictability, not precision."
 - Wrong: "Not a winner, but a process."
 - Wrong: "The goal is not perfection but consistency."
-- Right: "The goal is predictability." (just delete the contrast)
-- Right: "Aim for consistency." (drop the contrast entirely)
+- Wrong: "A process, not a rule."
 
-Includes close variants: "X, not Y", "not A — B", "less about X, more about Y".
+Test: if the construction is the *end* of a paragraph and summarises in abstract terms, delete it. If both sides of the contrast are short abstract nouns (4 words or fewer), it is probably slop.
+
+**Allowed (pedagogical contrast):**
+
+- Fine: "Not because something is wrong, but because the transition requires adjustment."
+- Fine: "This does not mean everything has to be clinical. Friendly and factual can coexist."
+- Fine: "The child should not be the messenger — practical information should go directly between parents."
+
+Test: if the rejected alternative is a specific misconception the reader might actually hold, the contrast earns its place. If it exists only to create a rhetorical flourish, cut it.
 
 ### 2. Aphoristic paragraph endings (fortune-cookie lines)
 
@@ -71,19 +80,17 @@ Two short sentences with mirrored structure, usually placed at the end of a para
 
 Replace with a single sentence that states the actual content, or with an inclusion/exclusion list that is concrete.
 
-### 4. Em-dash overuse
+### 4. Em-dashes
 
-Em-dashes are one of the most visible AI fingerprints in long-form text. Budget strictly.
+Em-dashes are not inherently AI-slop. The Lina article corpus uses them widely and well. What matters is how they are used, not how many there are.
 
-- **Maximum 6 em-dashes per article body.** Count in the source HTML; exclude template boilerplate and titles.
-- **Never in headings.** Use a colon instead: "Communication: how and how often", not "Communication — how and how often".
-- **Never for dramatic pause.** Split into two sentences or use a period.
-- **Never in the "Not X — Y" construction.** (See rule 1; this is double-banned.)
-- Em-dashes are allowed only when:
-  - (a) The inserted phrase is a genuine parenthetical aside the reader could skip without losing the sentence, OR
-  - (b) A comma would cause real grammatical ambiguity.
+- **Em-dashes in H1 titles are fine.** The "X — how to Y" / "X — what it means" title pattern is established across all articles and matches journalistic convention.
+- **Em-dashes in H2 section headings are not.** Use a colon instead: "Communication: how and how often", not "Communication — how and how often". H2s are plainer and more scannable without them.
+- **Em-dashes for genuine parenthetical asides are fine** — the kind a reader could skip without losing the sentence, as in this sentence.
+- **Em-dashes in place of a period for "dramatic pause" are slop.** If you could replace the em-dash with a period and lose nothing, use the period.
+- **Never stack multiple em-dashes in the same sentence.** One per sentence, maximum. Two is always rewritable to one or zero.
 
-If a sentence contains more than one em-dash, rewrite it until only one remains, or none.
+The slop-check tool flags articles with more than 15 em-dashes in the body as a WARNING — not because 15 is a magic number, but because it signals the writer may be reaching for em-dashes by default rather than by judgment. Skim the article when this warning fires; reduce only if it reads better that way.
 
 ### 5. Faux-folksy imperatives
 
@@ -124,6 +131,39 @@ Specific translation guidance:
 - Em-dashes are used less frequently in Nordic languages than in English. The budget is still 6, but 2–3 is more natural.
 - The "Not X, but Y" construction reads as AI in every language — in German ("nicht X, sondern Y"), in French ("pas X, mais Y"), in Dutch ("niet X, maar Y"). Apply the rule equally.
 
+## Cross-locale terminology
+
+A small set of locked vocabulary choices, per language. These override translator preference and are not subject to per-post re-litigation. Add new entries here when inconsistency is observed across the actual Lina content, not proactively.
+
+### French
+
+- **"two homes" → "deux maisons"**, not "deux foyers".
+  Reason: Lina voice is plain, not poetic. "Foyer" is more literary and carries overtones of "hearth" or "household origin"; "maison" is the practical everyday word for "house" or "home". The blog9 URL slug already uses "maisons" (anniversaire-deux-maisons), so this also aligns text with URL structure.
+  Exception: Fixed expressions like "foyer d'accueil" (a specific legal/institutional term) keep "foyer". When in doubt, default to "maison".
+
+### German
+
+- **"two homes" → "zwei Zuhause"**, not "zwei Heime" or "zwei Haushalte".
+  Reason: "Zuhause" carries the emotional register Lina wants — a child's home, not a building or a fiscal unit. "Heim" skews institutional (Kinderheim, Altersheim). "Haushalt" skews administrative. The blog6 URL slug uses "zwei-zuhause" and this locks the choice.
+
+### Dutch
+
+- **"two homes" → "twee huizen"**, not "twee thuizen" or "twee gezinnen".
+  Reason: "Huis" is the plain, direct word for "home" when talking about a physical residence the child moves between. "Thuis" is more emotional ("feeling at home") and works in singular but awkward in plural. "Gezin" means "family unit", which shifts the subject from the home to the people. The blog2 URL slug "wisseldag" and blog9 "verjaardag-twee-huizen" both already use "huizen".
+
+### When to add an entry
+
+Add a new terminology rule to this section when:
+1. The same concept has been translated two or more different ways across the corpus
+2. The inconsistency has been confirmed by reading actual locale content, not assumed
+3. There is a principled reason (voice, URL alignment, register) to prefer one over the other
+
+Do NOT add rules proactively based on what a translator might choose in the future. This section is a log of decisions made, not a style-guide wishlist.
+
+### Propagating a decision
+
+When a new entry is locked, the existing occurrences across the locale file should be updated. The update can be deferred (scheduled as its own task) but should not be forgotten. A grep of the locale file for the deprecated term gives the list of touchpoints.
+
 ## Structural rules
 
 - Aim for 6 sections in a full blog post, each with 2–3 short paragraphs. Blog1 through blog6 set the established structure.
@@ -136,11 +176,10 @@ Specific translation guidance:
 When asking Claude Code to write or edit blog content, always include "Follow /docs/writing-style.md" in the prompt. Do not rely on Claude Code reading existing articles as templates — several of them contain the exact slop patterns this guide rejects.
 
 When reviewing Claude-generated drafts, check in this order:
-1. Count the em-dashes. If more than 6, cut before reading further.
-2. Read each paragraph's closing sentence. Delete every aphoristic line.
-3. Search for "not X, but Y" / "X, not Y" constructions. Rephrase each.
-4. Check that every section has a concrete anchor. Add one where missing.
-5. Only then read for tone and flow.
+1. Read each paragraph's closing sentence. Delete every aphoristic line.
+2. Search for "not X, but Y" / "X, not Y" constructions. Rephrase each.
+3. Check that every section has a concrete anchor. Add one where missing.
+4. Only then read for tone and flow.
 
 ## When to break the rules
 
