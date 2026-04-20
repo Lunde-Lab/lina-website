@@ -560,6 +560,45 @@
     "focusText2": "Er zijn geen algoritmen, geen reclame en geen sociale functies. Lina is ontworpen om gebruikt te worden wanneer het nodig is en uit de weg te blijven wanneer dat niet het geval is.",
     "origin": "Ontworpen en gebouwd in Noorwegen."
   },
+  "research": {
+    "pageTitle": "Onderzoek over co-ouderschap en het welzijn van kinderen — Lina",
+    "pageDesc": "Een groeiende verzameling peer-reviewed onderzoek over wat kinderen helpt wanneer ouders de zorg over twee huizen delen, in heldere taal samengevat.",
+    "label": "Onderzoek",
+    "heading": "Onderzoek over co-ouderschap en het welzijn van kinderen",
+    "lead": "Een groeiende verzameling peer-reviewed studies over wat kinderen helpt wanneer ouders de zorg over twee huizen delen. Elke bijdrage is in eigen woorden samengevat, met een link terug naar de oorspronkelijke publicatie, die altijd de gezaghebbende bron blijft.",
+    "findings": {
+      "title": "Wat het onderzoek telkens weer laat zien",
+      "p1": "Uit de hier samengevatte studies komt geen enkele verblijfsregeling naar voren als algemeen beter voor kinderen dan een andere. Uitkomsten hangen af van veel factoren, en de regeling zelf is daar maar één van.",
+      "p2": "De literatuur wijst telkens weer op de kwaliteit van de relaties — tussen de beide ouders en tussen elke ouder en het kind — als minstens zo belangrijk als de manier waarop de tijd verdeeld is. De communicatie tussen ouders en het conflictniveau zijn terugkerende factoren die samenhangen met hoe kinderen de situatie ervaren.",
+      "p3": "De eigen ervaringen van kinderen met dezelfde regeling kunnen sterk verschillen. Uitgangspunten in het gezin, zoals de gezondheid en financiële situatie van elke ouder, beïnvloeden de uitkomsten eveneens. Het onderzoek schetst een beeld dat specifiek is voor elk gezin, in plaats van één met één juist antwoord."
+    },
+    "featured": {
+      "title": "Uitgelichte studie",
+      "studyTitle": "Samværs- og bostedsordninger etter samlivsbrudd: betydninger for barn og unge",
+      "studyTitleEn": "Custody and living arrangements after parents separate: implications for children and adolescents",
+      "authorsLabel": "Auteurs",
+      "authorsValue": "Trine Bjerke Johansen, Heid Nøkleby, Lars Jørun Langøien, Tiril C. Borge",
+      "institutionLabel": "Instelling",
+      "institutionValue": "Noors Instituut voor Volksgezondheid (Folkehelseinstituttet / FHI), in opdracht van het Noorse Directoraat voor Kinderen, Jeugd en Gezinszaken (Bufdir)",
+      "publishedLabel": "Gepubliceerd",
+      "publishedValue": "November 2022",
+      "typeLabel": "Type",
+      "typeValue": "Systematisch overzicht",
+      "scopeLabel": "Omvang",
+      "scopeValue": "40 Noordse studies samengebracht over drie onderzoeksvragen (gevolgen, ervaringen en factoren)",
+      "summaryP1": "Het FHI onderzocht hoe verschillende zorg- en omgangsregelingen — waaronder co-ouderschap en uiteenlopende omgangsschema's — samenhangen met het welzijn, de mentale gezondheid, familierelaties en de samenwerking tussen ouders. Op basis van 40 Noordse studies kon het overzicht niet concluderen dat de ene regeling voor kinderen consistent beter is dan de andere.",
+      "summaryP2": "Zowel kwalitatieve als kwantitatieve studies wezen op het belang van de relaties binnen het gezin, tussen de beide ouders en tussen elke ouder en het kind. De communicatie tussen ouders en het conflictniveau waren terugkerende factoren die samenhingen met hoe het de kinderen verging. Uitgangspunten in het gezin, zoals de gezondheid en financiële situatie van de ouders, hadden ook invloed op de uitkomsten.",
+      "summaryP3": "Het rapport merkt op dat individuele kinderen dezelfde regeling heel verschillend kunnen ervaren, en stelt voor dat instanties die scheidende gezinnen begeleiden uitgaan van de specifieke situatie van elk gezin in plaats van één regeling als standaard aan te bevelen.",
+      "linkText": "Lees het oorspronkelijke rapport bij FHI"
+    },
+    "about": {
+      "title": "Over deze samenvattingen",
+      "p1": "We vatten elke studie in eigen woorden samen en nemen de oorspronkelijke tekst niet over. Elke vermelding linkt naar de oorspronkelijke publicatie, die de gezaghebbende bron is wanneer samenvatting en origineel van elkaar afwijken.",
+      "p2": "We zijn een productteam dat gepubliceerd onderzoek samenvat om ouders en professionals te helpen het te vinden, niet de auteurs van het onderzoek zelf. Mocht je zien dat een studie onjuist wordt weergegeven, dan ontvangen we correcties graag.",
+      "contactLink": "Correctie doorgeven"
+    },
+    "closing": "Er worden met de tijd meer studies toegevoegd, waaronder Zweedse, Deense, Finse en Duitse tegenhangers van de hier samengevatte Noordse literatuur."
+  },
   "stories": {
     "pageTitle": "Hoe ouders Lina gebruiken",
     "pageDesc": "Kleine, alledaagse situaties waarin Lina het verschil maakt. Zie hoe ouders de app gebruiken om informatie, foto's en paklijsten te delen tussen de huishoudens.",

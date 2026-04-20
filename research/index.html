@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="research.pageTitle" data-i18n-desc="research.pageDesc">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://getlina.app/research/" />
+  <link rel="alternate" hreflang="x-default" href="https://getlina.app/research/" />
+  <link rel="alternate" hreflang="en"        href="https://getlina.app/research/" />
+  <link rel="alternate" hreflang="nb"        href="https://getlina.app/no/forskning/" />
+  <link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/forskning/" />
+  <link rel="alternate" hreflang="da"        href="https://getlina.app/da/forskning/" />
+  <link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/tutkimus/" />
+  <link rel="alternate" hreflang="de"        href="https://getlina.app/de/forschung/" />
+  <link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/forschung/" />
+  <link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/forschung/" />
+  <link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/onderzoek/" />
+  <link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/recherche/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/Logomark_1.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <title>Research on co-parenting and child wellbeing — Lina</title>
+  <meta name="description" content="A growing collection of peer-reviewed research on what helps children when parents share care across two homes, summarised in plain language." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Lina" />
+  <meta property="og:url" content="https://getlina.app/research/" />
+  <meta property="og:title" content="Research on co-parenting and child wellbeing — Lina" />
+  <meta property="og:description" content="A growing collection of peer-reviewed research on what helps children when parents share care across two homes, summarised in plain language." />
+  <meta property="og:image" content="https://getlina.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Research on co-parenting and child wellbeing — Lina" />
+  <meta name="twitter:description" content="A growing collection of peer-reviewed research on what helps children when parents share care across two homes, summarised in plain language." />
+  <meta name="twitter:image" content="https://getlina.app/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #0D6B64;
+      --primary-dark: #0a5650;
+      --bg: #F8F8F6;
+      --text: #1A1E23;
+      --text-secondary: #50565E;
+      --border: #E2E2DE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ── Language switcher ── */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: 7px;
+      padding: 6px 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+    .lang-btn svg { flex-shrink: 0; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 160px;
+      z-index: 200;
+    }
+    .lang-switcher.open .lang-dropdown { display: block; }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 14px;
+      background: transparent;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s;
+    }
+    .lang-option:hover { background: var(--bg); }
+    .lang-option.active { color: var(--primary); font-weight: 500; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    /* ── Research content ── */
+    .research-main { padding: 56px 24px 96px; }
+
+    .research-container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .research-container .section-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .research-container h1 {
+      font-size: clamp(28px, 4vw, 36px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .research-lead {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 48px;
+    }
+
+    .research-section {
+      margin-bottom: 48px;
+    }
+
+    .research-section h2 {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .research-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+
+    .research-section p:last-child { margin-bottom: 0; }
+
+    /* Featured study card — mirrors feature-card / privacy pattern */
+    .study-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      margin-top: 8px;
+    }
+
+    .study-card h3 {
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+
+    .study-card .study-title-en {
+      font-size: 14px;
+      color: var(--text-secondary);
+      font-style: italic;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .study-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+
+    .study-meta-row {
+      display: flex;
+      gap: 10px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .study-meta-label {
+      color: var(--text);
+      font-weight: 600;
+      min-width: 110px;
+      flex-shrink: 0;
+    }
+
+    .study-meta-value {
+      color: var(--text-secondary);
+    }
+
+    .study-summary p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+
+    .study-summary p:last-child { margin-bottom: 0; }
+
+    .study-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--primary);
+      transition: color 0.15s;
+    }
+
+    .study-link:hover { color: var(--primary-dark); }
+
+    .study-link svg { flex-shrink: 0; }
+
+    .research-closing {
+      margin-top: 16px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    .research-contact-link {
+      color: var(--primary);
+      font-size: 15px;
+      text-decoration: underline;
+      transition: color 0.15s;
+    }
+
+    .research-contact-link:hover { color: var(--primary-dark); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 120px;
+    }
+
+    .footer-col-heading {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .footer-col a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover { color: var(--text); }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 599px) {
+      footer { padding: 32px 16px; }
+      .footer-nav { gap: 32px; }
+      .research-main { padding: 40px 16px 64px; }
+      .study-card { padding: 24px; }
+      .study-meta-row { flex-direction: column; gap: 2px; }
+      .study-meta-label { min-width: 0; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Lina",
+      "item": "https://getlina.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Research",
+      "item": "https://getlina.app/research/"
+    }
+  ]
+}
+</script>
+  <script id="lina-lang-redirect">(function () {
+  var K = 'lina_lang';
+  // Already on a non-English locale page — nothing to do
+  if (/^\/(no|sv|da|fi|de|nl|fr)(\/|$)/.test(location.pathname)) return;
+  var s; try { s = localStorage.getItem(K); } catch (e) {}
+  // User explicitly chose English — stay
+  if (s === 'en') return;
+  // User previously chose a non-English language — redirect to same path
+  if (s) { location.replace('/' + s + location.pathname + location.search + location.hash); return; }
+  // First visit: auto-detect from browser language list
+  var M = {nb:'no',nn:'no',no:'no',sv:'sv',da:'da',fi:'fi',de:'de',nl:'nl',fr:'fr'};
+  var ls = navigator.languages ? [].slice.call(navigator.languages) : [navigator.language || ''];
+  for (var i = 0; i < ls.length; i++) {
+    var l = M[(ls[i] || '').toLowerCase().split('-')[0]];
+    if (l) { location.replace('/' + l + location.pathname + location.search + location.hash); return; }
+  }
+}());</script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/"><img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="32" /></a>
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="lang-current">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a class="lang-option active" href="/research/" role="menuitem"><span class="lang-flag">🇬🇧</span> English</a>
+            <a class="lang-option" href="/no/forskning/" role="menuitem"><span class="lang-flag">🇳🇴</span> Norsk</a>
+            <a class="lang-option" href="/sv/forskning/" role="menuitem"><span class="lang-flag">🇸🇪</span> Svenska</a>
+            <a class="lang-option" href="/da/forskning/" role="menuitem"><span class="lang-flag">🇩🇰</span> Dansk</a>
+            <a class="lang-option" href="/fi/tutkimus/" role="menuitem"><span class="lang-flag">🇫🇮</span> Suomi</a>
+            <a class="lang-option" href="/de/forschung/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+            <a class="lang-option" href="/nl/onderzoek/" role="menuitem"><span class="lang-flag">🇳🇱</span> Nederlands</a>
+            <a class="lang-option" href="/fr/recherche/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="research-main">
+    <div class="research-container">
+
+      <p class="section-label" data-i18n="research.label">Research</p>
+      <h1 data-i18n="research.heading">Research on co-parenting and child wellbeing</h1>
+      <p class="research-lead" data-i18n="research.lead">A growing collection of peer-reviewed studies on what helps children when parents share care across two homes. Each entry is paraphrased in plain language, with a link back to the original publication, which is always the authoritative source.</p>
+
+      <div class="research-section">
+        <h2 data-i18n="research.findings.title">What the research consistently finds</h2>
+        <p data-i18n="research.findings.p1">Across the studies summarised here, no single living arrangement emerges as universally better for children than another. Outcomes vary with many factors, and the arrangement itself is only one of them.</p>
+        <p data-i18n="research.findings.p2">The literature points again and again to the quality of relationships — between the two parents, and between each parent and the child — as at least as important as how time is divided. Parental communication and the level of conflict between parents are recurring variables associated with how children experience the situation.</p>
+        <p data-i18n="research.findings.p3">Children's own experiences of the same arrangement can differ significantly. Family preconditions, such as each parent's health and financial situation, also shape outcomes. Research tends to describe a picture that is specific to each family, rather than one with a single correct answer.</p>
+      </div>
+
+      <div class="research-section">
+        <h2 data-i18n="research.featured.title">Featured study</h2>
+        <div class="study-card">
+          <h3 data-i18n="research.featured.studyTitle">Samværs- og bostedsordninger etter samlivsbrudd: betydninger for barn og unge</h3>
+          <p class="study-title-en" data-i18n="research.featured.studyTitleEn">Custody and living arrangements after parents separate: implications for children and adolescents</p>
+
+          <div class="study-meta">
+            <div class="study-meta-row">
+              <span class="study-meta-label" data-i18n="research.featured.authorsLabel">Authors</span>
+              <span class="study-meta-value" data-i18n="research.featured.authorsValue">Trine Bjerke Johansen, Heid Nøkleby, Lars Jørun Langøien, Tiril C. Borge</span>
+            </div>
+            <div class="study-meta-row">
+              <span class="study-meta-label" data-i18n="research.featured.institutionLabel">Institution</span>
+              <span class="study-meta-value" data-i18n="research.featured.institutionValue">Norwegian Institute of Public Health (Folkehelseinstituttet / FHI), commissioned by the Norwegian Directorate for Children, Youth and Family Affairs (Bufdir)</span>
+            </div>
+            <div class="study-meta-row">
+              <span class="study-meta-label" data-i18n="research.featured.publishedLabel">Published</span>
+              <span class="study-meta-value" data-i18n="research.featured.publishedValue">November 2022</span>
+            </div>
+            <div class="study-meta-row">
+              <span class="study-meta-label" data-i18n="research.featured.typeLabel">Type</span>
+              <span class="study-meta-value" data-i18n="research.featured.typeValue">Systematic review</span>
+            </div>
+            <div class="study-meta-row">
+              <span class="study-meta-label" data-i18n="research.featured.scopeLabel">Scope</span>
+              <span class="study-meta-value" data-i18n="research.featured.scopeValue">40 Nordic studies synthesised across three research questions (consequences, experiences, and factors)</span>
+            </div>
+          </div>
+
+          <div class="study-summary">
+            <p data-i18n="research.featured.summaryP1">FHI examined how different custody and contact arrangements — including joint physical custody and various contact schedules — relate to children's wellbeing, mental health, family relationships, and parental cooperation. Drawing on 40 Nordic studies, the review could not conclude that one arrangement is consistently better for children than another.</p>
+            <p data-i18n="research.featured.summaryP2">Both qualitative and quantitative studies pointed to the significance of relationships within the family, between the two parents, and between each parent and the child. Parental communication and the level of conflict between parents were recurring factors associated with how children fared. Family preconditions, such as parental health and finances, also influenced outcomes.</p>
+            <p data-i18n="research.featured.summaryP3">The report notes that individual children can experience the same arrangement very differently, and suggests that services meeting separating families work from each family's specifics rather than recommend one arrangement as a default.</p>
+          </div>
+
+          <a class="study-link" href="https://www.fhi.no/publ/2022/samvars--og-bostedsordninger-etter-samlivsbrudd-betydninger-for-barn-og-ung/" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="research.featured.linkText">Read the original report at FHI</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H8M17 7v9"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="research-section">
+        <h2 data-i18n="research.about.title">About these summaries</h2>
+        <p data-i18n="research.about.p1">We paraphrase each study rather than reproduce the original text. Every entry links to the original publication, which is the authoritative source if the summary and the original differ.</p>
+        <p data-i18n="research.about.p2">We are a product team summarising published work to help parents and professionals find it, not the authors of the research. If you spot anything that misrepresents a study, corrections are welcome.</p>
+        <p><a href="/contact.html" class="research-contact-link" data-i18n="research.about.contactLink">Contact us with corrections</a></p>
+      </div>
+
+      <p class="research-closing" data-i18n="research.closing">More studies will be added over time, including Swedish, Danish, Finnish, and German parallels to the Nordic literature summarised here.</p>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logos/Logomark_1.svg" alt="Lina logo" height="24" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupProduct">Product</span>
+          <a href="/care-schedule/" data-i18n="footer.careSchedule">Care Schedule</a>
+          <a href="/care-agreement/" data-i18n="footer.careAgreement">Care Agreement</a>
+          <a href="/pricing/" data-i18n="footer.pricing">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupExplore">Explore</span>
+          <a href="/faq/" data-i18n="footer.faq">FAQ</a>
+          <a href="/professionals.html" data-i18n="footer.familievern">Professionals</a>
+          <a href="/stories/" data-i18n="footer.stories">Stories</a>
+          <a href="/blog/" data-i18n="footer.blog">Blog</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupCompany">Company</span>
+          <a href="/about/" data-i18n="footer.about">About</a>
+          <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-heading" data-i18n="footer.groupLegal">Legal</span>
+          <a href="/terms/" data-i18n="footer.terms">Terms of Service</a>
+          <a href="/privacy/" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="/account-deletion.html" data-i18n="footer.accountDeletion">Account deletion</a>
+        </div>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Lina. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script>
+  (function () {
+    var K = 'lina_lang';
+    var switcher = document.getElementById('lang-switcher');
+    var btn = document.getElementById('lang-btn');
+    if (!switcher || !btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = switcher.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function(e) {
+      if (!switcher.contains(e.target)) {
+        switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    // Persist manual language selection so the redirect respects the user's choice
+    var opts = switcher.querySelectorAll('.lang-option');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].addEventListener('click', function () {
+        var m = (this.getAttribute('href') || '').match(/^\/(no|sv|da|fi|de|nl|fr)\//);
+        try { localStorage.setItem(K, m ? m[1] : 'en'); } catch (e) {}
+      });
+    }
+  }());
+  </script>
+
+</body>
+</html>

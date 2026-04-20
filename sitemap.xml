@@ -114,6 +114,134 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://getlina.app/research/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/tutkimus/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/onderzoek/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/recherche/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/no/forskning/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/tutkimus/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/onderzoek/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/recherche/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/sv/forskning/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/tutkimus/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/onderzoek/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/recherche/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/da/forskning/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/tutkimus/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/onderzoek/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/recherche/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/fi/tutkimus/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/tutkimus/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/onderzoek/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/recherche/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/de/forschung/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/tutkimus/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/onderzoek/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/recherche/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/nl/onderzoek/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/tutkimus/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/onderzoek/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/recherche/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://getlina.app/fr/recherche/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/research/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/forskning/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/tutkimus/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/forschung/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/onderzoek/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/recherche/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://getlina.app/professionals.html</loc>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/professionals.html"/>
       <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/professionals.html"/>

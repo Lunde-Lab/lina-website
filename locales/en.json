@@ -560,6 +560,45 @@
     "focusText2": "There are no algorithms, no ads, and no social features. Lina is designed to be used when needed and to stay out of the way when it is not.",
     "origin": "Designed and built in Norway."
   },
+  "research": {
+    "pageTitle": "Research on co-parenting and child wellbeing — Lina",
+    "pageDesc": "A growing collection of peer-reviewed research on what helps children when parents share care across two homes, summarised in plain language.",
+    "label": "Research",
+    "heading": "Research on co-parenting and child wellbeing",
+    "lead": "A growing collection of peer-reviewed studies on what helps children when parents share care across two homes. Each entry is paraphrased in plain language, with a link back to the original publication, which is always the authoritative source.",
+    "findings": {
+      "title": "What the research consistently finds",
+      "p1": "Across the studies summarised here, no single living arrangement emerges as universally better for children than another. Outcomes vary with many factors, and the arrangement itself is only one of them.",
+      "p2": "The literature points again and again to the quality of relationships — between the two parents, and between each parent and the child — as at least as important as how time is divided. Parental communication and the level of conflict between parents are recurring variables associated with how children experience the situation.",
+      "p3": "Children's own experiences of the same arrangement can differ significantly. Family preconditions, such as each parent's health and financial situation, also shape outcomes. Research tends to describe a picture that is specific to each family, rather than one with a single correct answer."
+    },
+    "featured": {
+      "title": "Featured study",
+      "studyTitle": "Samværs- og bostedsordninger etter samlivsbrudd: betydninger for barn og unge",
+      "studyTitleEn": "Custody and living arrangements after parents separate: implications for children and adolescents",
+      "authorsLabel": "Authors",
+      "authorsValue": "Trine Bjerke Johansen, Heid Nøkleby, Lars Jørun Langøien, Tiril C. Borge",
+      "institutionLabel": "Institution",
+      "institutionValue": "Norwegian Institute of Public Health (Folkehelseinstituttet / FHI), commissioned by the Norwegian Directorate for Children, Youth and Family Affairs (Bufdir)",
+      "publishedLabel": "Published",
+      "publishedValue": "November 2022",
+      "typeLabel": "Type",
+      "typeValue": "Systematic review",
+      "scopeLabel": "Scope",
+      "scopeValue": "40 Nordic studies synthesised across three research questions (consequences, experiences, and factors)",
+      "summaryP1": "FHI examined how different custody and contact arrangements — including joint physical custody and various contact schedules — relate to children's wellbeing, mental health, family relationships, and parental cooperation. Drawing on 40 Nordic studies, the review could not conclude that one arrangement is consistently better for children than another.",
+      "summaryP2": "Both qualitative and quantitative studies pointed to the significance of relationships within the family, between the two parents, and between each parent and the child. Parental communication and the level of conflict between parents were recurring factors associated with how children fared. Family preconditions, such as parental health and finances, also influenced outcomes.",
+      "summaryP3": "The report notes that individual children can experience the same arrangement very differently, and suggests that services meeting separating families work from each family's specifics rather than recommend one arrangement as a default.",
+      "linkText": "Read the original report at FHI"
+    },
+    "about": {
+      "title": "About these summaries",
+      "p1": "We paraphrase each study rather than reproduce the original text. Every entry links to the original publication, which is the authoritative source if the summary and the original differ.",
+      "p2": "We are a product team summarising published work to help parents and professionals find it, not the authors of the research. If you spot anything that misrepresents a study, corrections are welcome.",
+      "contactLink": "Contact us with corrections"
+    },
+    "closing": "More studies will be added over time, including Swedish, Danish, Finnish, and German parallels to the Nordic literature summarised here."
+  },
   "stories": {
     "pageTitle": "How parents use Lina",
     "pageDesc": "Small, everyday situations where Lina makes the difference. See how parents use the app to share information, photos, and equipment lists across homes.",

@@ -576,6 +576,45 @@
     "focusText2": "Der er ingen algoritmer, ingen annoncer og ingen sociale funktioner. Lina er designet til at bruges, når der er behov for det, og holde sig i baggrunden, når der ikke er.",
     "origin": "Designet og udviklet i Norge."
   },
+  "research": {
+    "pageTitle": "Forskning om fælles forældreskab og børns trivsel — Lina",
+    "pageDesc": "En voksende samling fagfællebedømt forskning om, hvad der hjælper børn, når forældre deler omsorgen mellem to hjem, sammenfattet i et klart sprog.",
+    "label": "Forskning",
+    "heading": "Forskning om fælles forældreskab og børns trivsel",
+    "lead": "En voksende samling fagfællebedømte studier om, hvad der hjælper børn, når forældre deler omsorgen mellem to hjem. Hvert bidrag er omskrevet i et klart sprog med et link tilbage til den oprindelige publikation, som altid er den autoritative kilde.",
+    "findings": {
+      "title": "Det forskningen gentagne gange finder",
+      "p1": "På tværs af de studier, der er sammenfattet her, træder ingen enkelt bo- eller samværsordning frem som universelt bedre for børn end andre. Udfaldene varierer med mange faktorer, og ordningen i sig selv er kun én af dem.",
+      "p2": "Litteraturen peger igen og igen på kvaliteten af relationerne — mellem de to forældre og mellem hver forælder og barnet — som mindst lige så vigtig som, hvordan tiden fordeles. Forældrenes kommunikation og konfliktniveauet mellem dem er tilbagevendende faktorer, der hænger sammen med, hvordan børn oplever situationen.",
+      "p3": "Børns egne oplevelser af den samme ordning kan variere betydeligt. Familieforudsætninger som hver forælders helbred og økonomi præger også udfaldene. Forskningen tegner et billede, der er specifikt for den enkelte familie, snarere end ét med ét rigtigt svar."
+    },
+    "featured": {
+      "title": "Udvalgt studie",
+      "studyTitle": "Samværs- og bostedsordninger etter samlivsbrudd: betydninger for barn og unge",
+      "studyTitleEn": "Custody and living arrangements after parents separate: implications for children and adolescents",
+      "authorsLabel": "Forfattere",
+      "authorsValue": "Trine Bjerke Johansen, Heid Nøkleby, Lars Jørun Langøien, Tiril C. Borge",
+      "institutionLabel": "Institution",
+      "institutionValue": "Norges Folkesundhedsinstitut (Folkehelseinstituttet / FHI) på bestilling af det norske Direktorat for Børn, Unge og Familier (Bufdir)",
+      "publishedLabel": "Udgivet",
+      "publishedValue": "November 2022",
+      "typeLabel": "Type",
+      "typeValue": "Systematisk oversigt",
+      "scopeLabel": "Omfang",
+      "scopeValue": "40 nordiske studier sammenfattet på tværs af tre forskningsspørgsmål (konsekvenser, erfaringer og faktorer)",
+      "summaryP1": "FHI undersøgte, hvordan forskellige bopæls- og samværsordninger — herunder delt bopæl og forskellige samværsmønstre — hænger sammen med børns trivsel, psykiske helbred, familierelationer og forældresamarbejde. På grundlag af 40 nordiske studier kunne oversigten ikke konkludere, at én ordning konsekvent er bedre for børn end en anden.",
+      "summaryP2": "Både kvalitative og kvantitative studier pegede på betydningen af relationerne i familien, mellem de to forældre og mellem hver forælder og barnet. Forældrenes kommunikation og konfliktniveauet mellem dem var tilbagevendende faktorer, der hang sammen med, hvordan børnene trivedes. Familieforudsætninger som forældrenes helbred og økonomi påvirkede også udfaldene.",
+      "summaryP3": "Rapporten bemærker, at individuelle børn kan opleve den samme ordning meget forskelligt, og foreslår, at tjenester, der møder familier i brud, tager udgangspunkt i den enkelte families situation i stedet for at anbefale én ordning som standard.",
+      "linkText": "Læs den oprindelige rapport hos FHI"
+    },
+    "about": {
+      "title": "Om disse sammenfatninger",
+      "p1": "Vi omskriver hvert studie i stedet for at gengive den oprindelige tekst. Hvert bidrag linker til den oprindelige publikation, som er den autoritative kilde, hvis sammenfatningen og originalen skulle afvige.",
+      "p2": "Vi er et produktteam, der sammenfatter publiceret forskning for at hjælpe forældre og fagfolk med at finde den, ikke forfatterne af forskningen. Hvis du opdager noget, der fremstiller et studie forkert, tager vi gerne imod rettelser.",
+      "contactLink": "Kontakt os med rettelser"
+    },
+    "closing": "Flere studier tilføjes over tid, herunder svenske, danske, finske og tyske paralleller til den nordiske litteratur, der er sammenfattet her."
+  },
   "stories": {
     "pageTitle": "Sådan bruger forældre Lina",
     "pageDesc": "Små, hverdagslige situationer, hvor Lina gør forskellen. Se hvordan forældre bruger appen til at dele information, billeder og udstyrslister på tværs af hjem.",
