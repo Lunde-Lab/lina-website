@@ -228,6 +228,14 @@ const SITEMAP_EXCLUDE = new Set([
   '/404.html',
 ]);
 
+// Pages whose localized versions canonical to the English URL.
+// Legal pages have English body text across all locales, so we consolidate
+// them with Google rather than have duplicate-content warnings.
+const CROSS_LANG_CANONICAL = new Set([
+  '/terms/',
+  '/privacy/',
+]);
+
 // Exact internal hrefs that should receive a /LANG/ prefix in generated files.
 // Order: longer/specific paths before shorter ones to avoid partial overlaps.
 const INTERNAL_HREFS = [
@@ -620,8 +628,11 @@ function setDescription(html, locale, descKey) {
 
 /** Remove all existing canonical + alternate links, insert correct block */
 function setCanonicalAndHreflang(html, lang, urlPath, file) {
-  const canon  = fullUrl(lang, urlPath, file);
   const enUrl  = fullUrl('en', urlPath, file);
+  // Legal pages: non-English versions canonical to the English URL.
+  const canon  = (lang !== 'en' && CROSS_LANG_CANONICAL.has(urlPath))
+    ? enUrl
+    : fullUrl(lang, urlPath, file);
 
   // Wipe existing (handles duplicates automatically)
   html = html.replace(/<link rel="canonical"[^>]*\/>\s*/g, '');
