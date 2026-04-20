@@ -7,6 +7,36 @@
    ================================================================ */
 
 
+/* ── Shared CTA section — single source of truth ── */
+#cta {
+  background: #fff;
+  padding: 80px 24px 96px;
+}
+
+.cta-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 16px;
+}
+
+#cta h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+#cta p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+
 /* ── Nav ────────────────────────────────────────────────── */
 
 .nav-right {
