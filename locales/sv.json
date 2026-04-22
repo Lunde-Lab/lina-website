@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "En gemensam översikt — i båda hemmen",
-    "description": "Du ska inte alltid vara den som minns allt. Lina ger båda föräldrarna samma översikt — medicinsk info, kontakter, scheman och utrustning — alltid uppdaterad, i båda hemmen.",
+    "description": "Du ska inte alltid vara den som minns allt. Lina ger båda föräldrarna samma översikt över medicinsk info, kontakter, scheman och utrustning, alltid uppdaterad i båda hemmen.",
     "cta": "Ladda ner på App Store",
     "ctaPlay": "Hämta på Google Play",
     "ctaPlayAria": "Hämta på Google Play"
@@ -21,7 +21,7 @@
   "csSection": {
     "label": "Omsorgsschema",
     "title": "Planera vårdtiden tillsammans",
-    "description": "Linas interaktiva omsorgsschema låter båda föräldrarna planera och visualisera hur tid fördelas mellan hemmen vecka för vecka. Se dagfördelning, helgmönster och överlämningsfrekvens — allt i en tydlig vy.",
+    "description": "Linas interaktiva omsorgsschema låter båda föräldrarna planera och visualisera hur tid fördelas mellan hemmen vecka för vecka. Se dagfördelning, helgmönster och överlämningsfrekvens, allt i en tydlig vy.",
     "cta": "Öppna omsorgsschema"
   },
   "how": {
@@ -94,7 +94,7 @@
     },
     "control": {
       "title": "Byggt för svåra dagar också",
-      "description": "Exportera alla meddelanden för dokumentation. Sudda ut foton för att minska den känslomässiga belastningen. Spara de bilder du vill behålla. Kontrollera vad du ser och när."
+      "description": "Exportera alla meddelanden för dokumentation. Sudda ut foton för att minska den känslomässiga belastningen. Spara de bilder du vill behålla."
     }
   },
   "problem": {
@@ -111,7 +111,7 @@
   "privacy": {
     "label": "Integritet",
     "title": "Privat från grunden",
-    "description": "Det som händer i Lina stannar mellan er två. Barnets information är privat — och ingen utomstående har insyn i det ni delar.",
+    "description": "Det som händer i Lina stannar mellan er två. Barnets information är privat. Ingen utomstående har insyn i det ni delar.",
     "point1": {
       "title": "Ingen reklam",
       "description": "Din upplevelse formas aldrig av annonser eller kommersiella intressen."
@@ -122,15 +122,15 @@
     },
     "point3": {
       "title": "Ingen algoritm",
-      "description": "Du bestämmer vad du ser — inte en algoritm som optimerar för engagemang."
+      "description": "Du bestämmer vad du ser, inte en algoritm som optimerar för engagemang."
     },
-    "tagline": "Strukturerad för samarbete. Privat som standard.",
+    "tagline": "Strukturerad för samarbete, privat som standard.",
     "pageTitle": "Integritetspolicy — Lina | GDPR-säker co-parenting-app",
     "pageDesc": "Lina är byggd med integritet i centrum för föräldrar som delar omsorgen. GDPR-säker, inga annonser och ingen datadelning med tredje part alls."
   },
   "cta": {
     "title": "En säker linje mellan två föräldrar.",
-    "description": "Allt båda föräldrar behöver veta — på ett ställe. Ladda ner och kom igång på minuter."
+    "description": "Allt båda föräldrar behöver veta, på ett ställe. Ladda ner och kom igång på minuter."
   },
   "footer": {
     "terms": "Användarvillkor",
@@ -501,7 +501,7 @@
     "promoCta": "Ladda ner Lina",
     "csPromoLabel": "Omsorgsschema",
     "csPromoTitle": "Planera omsorgstiden vecka för vecka",
-    "csPromoDesc": "När avtalet är klart hjälper Linas interaktiva omsorgsschema er att planera och visualisera vardagen. Se dagfördelning, helgmönster och överlämningsfrekvens — allt i en tydlig vy.",
+    "csPromoDesc": "När avtalet är klart hjälper Linas interaktiva omsorgsschema er att planera och visualisera vardagen. Se dagfördelning, helgmönster och överlämningsfrekvens, allt i en tydlig vy.",
     "csPromoCta": "Prova omsorgsschemat"
   },
   "faq": {
@@ -710,7 +710,7 @@
     "title": "Byggd för stunderna som betyder något",
     "s1": {
       "title": "Allergin som det andra hemmet inte kände till",
-      "description": "En förälder uppdaterar barnets hälsoinformation. Den andra ser det direkt — inget extra meddelande behövs."
+      "description": "En förälder uppdaterar barnets hälsoinformation. Den andra ser det direkt. Inget extra meddelande behövs."
     },
     "s2": {
       "title": "Regnjackan som alltid är i fel hus",
@@ -718,7 +718,7 @@
     },
     "s3": {
       "title": "Den första cykelturen du nästan missade",
-      "description": "Bilderna läggs i det delade albumet. De stora och små stunderna delas automatiskt — oavsett vilket hem barnet är i."
+      "description": "Bilderna läggs i det delade albumet. De stora och små stunderna delas automatiskt, oavsett vilket hem barnet är i."
     },
     "cta": "Läs fler berättelser"
   },

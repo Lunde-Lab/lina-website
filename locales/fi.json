@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Yhteinen kokonaiskuva — kotien välillä",
-    "description": "Sinun ei tarvitse aina olla se, joka muistaa kaiken. Lina antaa molemmille vanhemmille saman kokonaiskuvan — lääketieteelliset tiedot, yhteystiedot, aikataulut ja varusteet — aina ajan tasalla, molemmissa kodeissa.",
+    "description": "Sinun ei tarvitse aina olla se, joka muistaa kaiken. Lina antaa molemmille vanhemmille saman kokonaiskuvan lääketieteellisistä tiedoista, yhteystiedoista, aikatauluista ja varusteista, aina ajan tasalla molemmissa kodeissa.",
     "cta": "Lataa App Storesta",
     "ctaPlay": "Hanki Google Playsta",
     "ctaPlayAria": "Hanki Google Playsta"
@@ -21,7 +21,7 @@
   "csSection": {
     "label": "Hoitoaikataulu",
     "title": "Suunnittele hoitoaikataulu yhdessä",
-    "description": "Linan interaktiivinen hoitoaikataulu antaa molempien vanhempien suunnitella ja visualisoida, miten aika jakautuu kotien välillä viikko viikolta. Näe päivien jako, viikonloppumallit ja luovutusten tiheys — kaikki yhdessä selkeässä näkymässä.",
+    "description": "Linan interaktiivinen hoitoaikataulu antaa molempien vanhempien suunnitella ja visualisoida, miten aika jakautuu kotien välillä viikko viikolta. Näe päivien jako, viikonloppumallit ja luovutusten tiheys, kaikki yhdessä selkeässä näkymässä.",
     "cta": "Avaa hoitoaikataulu"
   },
   "how": {
@@ -94,7 +94,7 @@
     },
     "control": {
       "title": "Rakennettu myös vaikeille päiville",
-      "description": "Vie kaikki viestit dokumentaatiota varten. Sumentaa kuvia emotionaalisen kuorman vähentämiseksi. Tallenna haluamasi kuvat. Hallitse mitä näet ja milloin."
+      "description": "Vie kaikki viestit dokumentaatiota varten. Sumentaa kuvia emotionaalisen kuorman vähentämiseksi. Tallenna haluamasi kuvat."
     }
   },
   "problem": {
@@ -111,7 +111,7 @@
   "privacy": {
     "label": "Yksityisyys",
     "title": "Yksityinen rakenteesta alkaen",
-    "description": "Mitä Linassa tapahtuu, jää teidän kahden välille. Lapsen tiedot ovat yksityisiä — eikä kukaan ulkopuolinen pääse käsiksi siihen, mitä jaatte.",
+    "description": "Mitä Linassa tapahtuu, jää teidän kahden välille. Lapsen tiedot ovat yksityisiä. Kukaan ulkopuolinen ei pääse käsiksi siihen, mitä jaatte.",
     "point1": {
       "title": "Ei mainontaa",
       "description": "Kokemustasi ei koskaan muokkaa mainokset tai kaupalliset intressit."
@@ -122,15 +122,15 @@
     },
     "point3": {
       "title": "Ei algoritmia",
-      "description": "Sinä päätät mitä näet — ei algoritmi, joka optimoi sitoutumista varten."
+      "description": "Sinä päätät mitä näet, ei algoritmi, joka optimoi sitoutumista varten."
     },
-    "tagline": "Jäsennelty yhteistyöhön. Yksityinen oletuksena.",
+    "tagline": "Jäsennelty yhteistyöhön, yksityinen oletuksena.",
     "pageTitle": "Tietosuojakäytäntö — Lina | GDPR-yhteensopiva sovellus",
     "pageDesc": "Lina on rakennettu yksityisyys edellä yhteishuoltajuutta varten. GDPR-yhteensopiva, ei mainoksia eikä tietojen jakoa kolmansille osapuolille."
   },
   "cta": {
     "title": "Turvallinen yhteys kahden vanhemman välillä.",
-    "description": "Kaikki mitä molempien vanhempien täytyy tietää — yhdessä paikassa. Lataa ja aloita muutamassa minuutissa."
+    "description": "Kaikki mitä molempien vanhempien täytyy tietää, yhdessä paikassa. Lataa ja aloita muutamassa minuutissa."
   },
   "footer": {
     "terms": "Käyttöehdot",
@@ -501,7 +501,7 @@
     "promoCta": "Lataa Lina",
     "csPromoLabel": "Hoitoaikataulu",
     "csPromoTitle": "Suunnittele hoitoaikataulu viikko viikolta",
-    "csPromoDesc": "Kun sopimus on tehty, Linan interaktiivinen hoitoaikataulu auttaa suunnittelemaan ja visualisoimaan arjen. Näe päivien jako, viikonloppumallit ja luovutusten tiheys — kaikki yhdessä selkeässä näkymässä.",
+    "csPromoDesc": "Kun sopimus on tehty, Linan interaktiivinen hoitoaikataulu auttaa suunnittelemaan ja visualisoimaan arjen. Näe päivien jako, viikonloppumallit ja luovutusten tiheys, kaikki yhdessä selkeässä näkymässä.",
     "csPromoCta": "Kokeile hoitoaikataulua"
   },
   "faq": {
@@ -710,7 +710,7 @@
     "title": "Rakennettu hetkille, joilla on merkitystä",
     "s1": {
       "title": "Allergia, josta toinen koti ei tiennyt",
-      "description": "Toinen vanhempi päivittää lapsen terveystiedot. Toinen näkee sen heti — erillistä viestiä ei tarvita."
+      "description": "Toinen vanhempi päivittää lapsen terveystiedot. Toinen näkee sen heti. Erillistä viestiä ei tarvita."
     },
     "s2": {
       "title": "Sadetakki, joka on aina väärässä kodissa",
@@ -718,7 +718,7 @@
     },
     "s3": {
       "title": "Ensimmäinen pyöräretki, josta miltei jäit paitsi",
-      "description": "Kuvat menevät jaettuun albumiin. Suuret ja pienet hetket jakautuvat automaattisesti — riippumatta siitä, missä kodissa lapsi on."
+      "description": "Kuvat menevät jaettuun albumiin. Suuret ja pienet hetket jakautuvat automaattisesti, riippumatta siitä, missä kodissa lapsi on."
     },
     "cta": "Lue lisää tarinoita"
   },

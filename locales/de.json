@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Getrennt gemeinsam — ein Ort für euer Kind in beiden Haushalten",
-    "description": "Du solltest nicht immer alles im Kopf behalten müssen. Lina gibt beiden Elternteilen denselben Überblick — Gesundheitsinformationen, Kontakte, Pläne und Ausstattung — immer aktuell, in beiden Haushalten.",
+    "description": "Du solltest nicht immer alles im Kopf behalten müssen. Lina gibt beiden Elternteilen denselben Überblick über Gesundheitsinformationen, Kontakte, Pläne und Ausstattung, immer aktuell in beiden Haushalten.",
     "cta": "Im App Store laden",
     "ctaPlay": "Bei Google Play laden",
     "ctaPlayAria": "Bei Google Play laden"
@@ -21,7 +21,7 @@
   "csSection": {
     "label": "Umgangsplan",
     "title": "Umgangsplan gemeinsam gestalten",
-    "description": "Der interaktive Umgangsplan von Lina ermöglicht es beiden Elternteilen, die Aufteilung der Zeit über die Wochen zu planen und zu visualisieren. Sieh Tagesaufteilungen, Wochenendmuster und Übergabehäufigkeiten — in einer übersichtlichen Ansicht.",
+    "description": "Der interaktive Umgangsplan von Lina ermöglicht es beiden Elternteilen, die Aufteilung der Zeit über die Wochen zu planen und zu visualisieren. Sieh Tagesaufteilungen, Wochenendmuster und Übergabehäufigkeiten, in einer übersichtlichen Ansicht.",
     "cta": "Umgangsplan öffnen"
   },
   "how": {
@@ -78,7 +78,7 @@
     },
     "control": {
       "title": "Auch für schwierige Tage",
-      "description": "Exportiere alle Nachrichten zur Dokumentation. Fotos unscharf machen, um emotionale Belastung zu reduzieren. Bilder speichern, die du behalten möchtest. Selbst bestimmen, was du wann siehst."
+      "description": "Exportiere alle Nachrichten zur Dokumentation. Fotos unscharf machen, um emotionale Belastung zu reduzieren. Bilder speichern, die du behalten möchtest."
     }
   },
   "problem": {
@@ -95,7 +95,7 @@
   "privacy": {
     "label": "Datenschutz",
     "title": "Privatsphäre von Grund auf",
-    "description": "Was in Lina passiert, bleibt zwischen euch beiden. Die Informationen eures Kindes sind privat — und niemand außerhalb hat Zugang zu dem, was ihr teilt.",
+    "description": "Was in Lina passiert, bleibt zwischen euch beiden. Die Informationen eures Kindes sind privat. Niemand außerhalb hat Zugang zu dem, was ihr teilt.",
     "point1": {
       "title": "Keine Werbung",
       "description": "Dein Erlebnis wird nie durch Werbung oder kommerzielle Interessen beeinflusst."
@@ -106,15 +106,15 @@
     },
     "point3": {
       "title": "Kein Algorithmus",
-      "description": "Du entscheidest, was du siehst — nicht ein Algorithmus, der auf Engagement ausgelegt ist."
+      "description": "Du entscheidest, was du siehst, nicht ein Algorithmus, der auf Engagement ausgelegt ist."
     },
-    "tagline": "Strukturiert für die Zusammenarbeit. Privat von Anfang an.",
+    "tagline": "Strukturiert für die Zusammenarbeit, privat von Anfang an.",
     "pageTitle": "Datenschutz — Lina | DSGVO-konforme Co-Parenting-App",
     "pageDesc": "Lina ist mit Datenschutz im Kern für Co-Parenting-Familien entwickelt. DSGVO-konform, ohne Werbung und ohne jegliche Datenweitergabe an Dritte."
   },
   "cta": {
     "title": "Ein sicherer Kanal zwischen zwei Elternteilen.",
-    "description": "Alles, was beide Elternteile wissen müssen — an einem Ort. Lade die App herunter und leg in wenigen Minuten los."
+    "description": "Alles, was beide Elternteile wissen müssen, an einem Ort. Lade die App herunter und leg in wenigen Minuten los."
   },
   "footer": {
     "terms": "Nutzungsbedingungen",
@@ -485,7 +485,7 @@
     "promoCta": "Lina herunterladen",
     "csPromoLabel": "Umgangsplan",
     "csPromoTitle": "Den Plan Woche für Woche gestalten",
-    "csPromoDesc": "Sobald die Vereinbarung steht, hilft der interaktive Umgangsplan von Lina dabei, den Alltag zu planen und zu visualisieren. Sieh Tagesaufteilungen, Wochenendmuster und Übergabehäufigkeiten — in einer übersichtlichen Ansicht.",
+    "csPromoDesc": "Sobald die Vereinbarung steht, hilft der interaktive Umgangsplan von Lina dabei, den Alltag zu planen und zu visualisieren. Sieh Tagesaufteilungen, Wochenendmuster und Übergabehäufigkeiten, in einer übersichtlichen Ansicht.",
     "csPromoCta": "Umgangsplan ausprobieren"
   },
   "faq": {
@@ -648,7 +648,7 @@
     "title": "Für die Momente, die zählen",
     "s1": {
       "title": "Die Allergie, von der der andere Haushalt nichts wusste",
-      "description": "Ein Elternteil aktualisiert die medizinischen Informationen des Kindes. Das andere sieht es sofort — kein separates Schreiben nötig."
+      "description": "Ein Elternteil aktualisiert die medizinischen Informationen des Kindes. Das andere sieht es sofort. Kein separates Schreiben nötig."
     },
     "s2": {
       "title": "Die Regenjacke, die immer im falschen Haushalt ist",
@@ -656,7 +656,7 @@
     },
     "s3": {
       "title": "Die erste Fahrradfahrt, die du fast verpasst hättest",
-      "description": "Fotos kommen ins gemeinsame Album. Die großen und kleinen Momente werden automatisch geteilt — unabhängig davon, in welchem Haushalt sich das Kind befindet."
+      "description": "Fotos kommen ins gemeinsame Album. Die großen und kleinen Momente werden automatisch geteilt, unabhängig davon, in welchem Haushalt sich das Kind befindet."
     },
     "cta": "Mehr Geschichten lesen"
   },

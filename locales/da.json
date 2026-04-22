@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Én samlet oversigt på tværs af hjem",
-    "description": "Du skal ikke altid være den, der husker alt. Lina giver begge forældre det samme overblik — medicinsk info, kontakter, planer og udstyr — altid opdateret, i begge hjem.",
+    "description": "Du skal ikke altid være den, der husker alt. Lina giver begge forældre det samme overblik over medicinsk info, kontakter, planer og udstyr, altid opdateret i begge hjem.",
     "cta": "Hent på App Store",
     "ctaPlay": "Hent på Google Play",
     "ctaPlayAria": "Hent på Google Play"
@@ -21,7 +21,7 @@
   "csSection": {
     "label": "Samværsplan",
     "title": "Planlæg samværet sammen",
-    "description": "Linas interaktive samværsplan lader begge forældre planlægge og visualisere, hvordan tid fordeles mellem hjemmene uge for uge. Se dagfordeling, weekendmønstre og overdragelsesfrekvens — alt i ét klart overblik.",
+    "description": "Linas interaktive samværsplan lader begge forældre planlægge og visualisere, hvordan tid fordeles mellem hjemmene uge for uge. Se dagfordeling, weekendmønstre og overdragelsesfrekvens, alt i ét klart overblik.",
     "cta": "Åbn samværsplan"
   },
   "how": {
@@ -94,7 +94,7 @@
     },
     "control": {
       "title": "Bygget til svære dage også",
-      "description": "Eksporter alle beskeder til dokumentation. Slør billeder for at reducere følelsesmæssig belastning. Gem de billeder, du vil beholde. Kontroller, hvad du ser og hvornår."
+      "description": "Eksporter alle beskeder til dokumentation. Slør billeder for at reducere følelsesmæssig belastning. Gem de billeder, du vil beholde."
     }
   },
   "problem": {
@@ -111,7 +111,7 @@
   "privacy": {
     "label": "Privatliv",
     "title": "Privat fra grunden",
-    "description": "Det, der sker i Lina, forbliver mellem jer to. Barnets information er privat — og ingen udenforstående har adgang til det, I deler.",
+    "description": "Det, der sker i Lina, forbliver mellem jer to. Barnets information er privat. Ingen udenforstående har adgang til det, I deler.",
     "point1": {
       "title": "Ingen reklame",
       "description": "Din oplevelse formes aldrig af annoncer eller kommercielle interesser."
@@ -122,15 +122,15 @@
     },
     "point3": {
       "title": "Ingen algoritme",
-      "description": "Du bestemmer, hvad du ser — ikke en algoritme, der optimerer for engagement."
+      "description": "Du bestemmer, hvad du ser, ikke en algoritme, der optimerer for engagement."
     },
-    "tagline": "Struktureret til samarbejde. Privat som standard.",
+    "tagline": "Struktureret til samarbejde, privat som standard.",
     "pageTitle": "Privatlivspolitik — Lina | GDPR-sikker samværs-app",
     "pageDesc": "Lina er bygget med privatliv i fokus for samværsfamilier. GDPR-kompatibel, ingen annoncer og ingen deling af data med tredjeparter overhovedet."
   },
   "cta": {
     "title": "En sikker linje mellem to forældre.",
-    "description": "Alt begge forældre har brug for at vide — på ét sted. Download og kom i gang på minutter."
+    "description": "Alt begge forældre har brug for at vide, på ét sted. Download og kom i gang på minutter."
   },
   "footer": {
     "terms": "Vilkår for brug",
@@ -501,7 +501,7 @@
     "promoCta": "Download Lina",
     "csPromoLabel": "Samværsplan",
     "csPromoTitle": "Planlæg samværet uge for uge",
-    "csPromoDesc": "Når aftalen er på plads, hjælper Linas interaktive samværsplan jer med at planlægge og visualisere hverdagen. Se dagfordeling, weekendmønstre og overdragelsesfrekvens — alt i ét klart overblik.",
+    "csPromoDesc": "Når aftalen er på plads, hjælper Linas interaktive samværsplan jer med at planlægge og visualisere hverdagen. Se dagfordeling, weekendmønstre og overdragelsesfrekvens, alt i ét klart overblik.",
     "csPromoCta": "Prøv samværsplanen"
   },
   "faq": {
@@ -710,7 +710,7 @@
     "title": "Bygget til de øjeblikke, der betyder noget",
     "s1": {
       "title": "Allergien det andet hjem ikke kendte til",
-      "description": "Én forælder opdaterer barnets helbredsoplysninger. Den anden ser det med det samme — ingen ekstra besked nødvendig."
+      "description": "Én forælder opdaterer barnets helbredsoplysninger. Den anden ser det med det samme. Ingen ekstra besked nødvendig."
     },
     "s2": {
       "title": "Regnjakken der altid er i det forkerte hus",
@@ -718,7 +718,7 @@
     },
     "s3": {
       "title": "Den første cykeltur du næsten gik glip af",
-      "description": "Billederne lægges i det delte album. De store og små øjeblikke deles automatisk — uanset hvilket hjem barnet er i."
+      "description": "Billederne lægges i det delte album. De store og små øjeblikke deles automatisk, uanset hvilket hjem barnet er i."
     },
     "cta": "Læs flere historier"
   },

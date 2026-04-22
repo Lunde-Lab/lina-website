@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Un espace partagé pour votre enfant — entre deux foyers",
-    "description": "Vous ne devriez pas avoir à tout retenir. Lina donne aux deux parents la même vue d'ensemble — informations médicales, contacts, plannings et affaires — toujours à jour, dans les deux foyers.",
+    "description": "Vous ne devriez pas avoir à tout retenir. Lina donne aux deux parents la même vue d'ensemble des informations médicales, contacts, plannings et affaires, toujours à jour dans les deux maisons.",
     "cta": "Télécharger sur l'App Store",
     "ctaPlay": "Disponible sur Google Play",
     "ctaPlayAria": "Disponible sur Google Play"
@@ -21,7 +21,7 @@
   "csSection": {
     "label": "Planning de garde",
     "title": "Planifiez votre planning de garde ensemble",
-    "description": "Le planning de garde interactif de Lina permet aux deux parents de planifier et de visualiser le partage du temps semaine après semaine. Consultez la répartition des jours, les weekends et la fréquence des transitions — dans une vue claire.",
+    "description": "Le planning de garde interactif de Lina permet aux deux parents de planifier et de visualiser le partage du temps semaine après semaine. Consultez la répartition des jours, les weekends et la fréquence des transitions, dans une vue claire.",
     "cta": "Ouvrir le planning de garde"
   },
   "how": {
@@ -78,7 +78,7 @@
     },
     "control": {
       "title": "Pensé pour les jours difficiles aussi",
-      "description": "Exportez tous les messages pour la documentation. Floutez les photos pour réduire la charge émotionnelle. Enregistrez les images que vous souhaitez conserver. Contrôlez ce que vous voyez et quand."
+      "description": "Exportez tous les messages pour la documentation. Floutez les photos pour réduire la charge émotionnelle. Enregistrez les images que vous souhaitez conserver."
     }
   },
   "problem": {
@@ -95,7 +95,7 @@
   "privacy": {
     "label": "Confidentialité",
     "title": "Privé par conception",
-    "description": "Ce qui se passe dans Lina reste entre vous deux. Les informations de votre enfant sont privées — et personne à l'extérieur n'a accès à ce que vous partagez.",
+    "description": "Ce qui se passe dans Lina reste entre vous deux. Les informations de votre enfant sont privées. Personne à l'extérieur n'a accès à ce que vous partagez.",
     "point1": {
       "title": "Pas de publicité",
       "description": "Votre expérience n'est jamais influencée par des publicités ou des intérêts commerciaux."
@@ -106,15 +106,15 @@
     },
     "point3": {
       "title": "Pas d'algorithme",
-      "description": "Vous décidez ce que vous voyez — pas un algorithme optimisant pour l'engagement."
+      "description": "Vous décidez ce que vous voyez, pas un algorithme optimisant pour l'engagement."
     },
-    "tagline": "Structuré pour la coopération. Privé par défaut.",
+    "tagline": "Structuré pour la coopération, privé par défaut.",
     "pageTitle": "Politique de confidentialité — Lina | Conforme RGPD",
     "pageDesc": "Lina est conçu avec la confidentialité au cœur pour les familles en coparentalité. Conforme RGPD, sans publicité ni partage de données avec des tiers."
   },
   "cta": {
     "title": "Un lien sécurisé entre deux parents.",
-    "description": "Tout ce que les deux parents ont besoin de savoir — en un seul endroit. Téléchargez et commencez en quelques minutes."
+    "description": "Tout ce que les deux parents ont besoin de savoir, en un seul endroit. Téléchargez et commencez en quelques minutes."
   },
   "footer": {
     "terms": "Conditions d'utilisation",
@@ -485,7 +485,7 @@
     "promoCta": "Télécharger Lina",
     "csPromoLabel": "Planning de garde",
     "csPromoTitle": "Planifiez le calendrier semaine par semaine",
-    "csPromoDesc": "Une fois la convention en place, le planning de garde interactif de Lina vous aide à planifier et visualiser le quotidien. Consultez la répartition des jours, les weekends et la fréquence des transitions — dans une vue claire.",
+    "csPromoDesc": "Une fois la convention en place, le planning de garde interactif de Lina vous aide à planifier et visualiser le quotidien. Consultez la répartition des jours, les weekends et la fréquence des transitions, dans une vue claire.",
     "csPromoCta": "Essayer le planning de garde"
   },
   "faq": {
@@ -694,7 +694,7 @@
     "title": "Conçu pour les moments qui comptent",
     "s1": {
       "title": "L'allergie que l'autre foyer ne connaissait pas",
-      "description": "Un parent met à jour les informations médicales de l'enfant. L'autre le voit immédiatement — pas besoin d'un texto séparé."
+      "description": "Un parent met à jour les informations médicales de l'enfant. L'autre le voit immédiatement. Pas besoin d'un texto séparé."
     },
     "s2": {
       "title": "La veste de pluie toujours dans le mauvais foyer",
@@ -702,7 +702,7 @@
     },
     "s3": {
       "title": "Le premier tour de vélo que vous avez failli manquer",
-      "description": "Les photos vont dans l'album partagé. Les grands et petits moments sont partagés automatiquement — quel que soit le foyer où se trouve l'enfant."
+      "description": "Les photos vont dans l'album partagé. Les grands et petits moments sont partagés automatiquement, quelle que soit la maison où se trouve l'enfant."
     },
     "cta": "Lire plus de témoignages"
   },

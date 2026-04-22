@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Één gedeelde plek voor uw kind — in beide huishoudens",
-    "description": "U hoeft niet altijd degene te zijn die alles onthoudt. Lina geeft beide ouders hetzelfde overzicht — medische informatie, contacten, schema's en spullen — altijd actueel, in beide huishoudens.",
+    "description": "U hoeft niet altijd degene te zijn die alles onthoudt. Lina geeft beide ouders hetzelfde overzicht van medische informatie, contacten, schema's en spullen, altijd actueel in beide huishoudens.",
     "cta": "Download in de App Store",
     "ctaPlay": "Verkrijgbaar bij Google Play",
     "ctaPlayAria": "Verkrijgbaar bij Google Play"
@@ -21,7 +21,7 @@
   "csSection": {
     "label": "Zorgschema",
     "title": "Plan uw zorgschema samen",
-    "description": "Het interactieve zorgschema van Lina stelt beide ouders in staat te plannen en te visualiseren hoe de tijd over de weken wordt verdeeld. Zie dagverdelingen, weekendpatronen en de frequentie van wisselmomenten — in één duidelijk overzicht.",
+    "description": "Het interactieve zorgschema van Lina stelt beide ouders in staat te plannen en te visualiseren hoe de tijd over de weken wordt verdeeld. Zie dagverdelingen, weekendpatronen en de frequentie van wisselmomenten, in één duidelijk overzicht.",
     "cta": "Open zorgschema"
   },
   "how": {
@@ -78,7 +78,7 @@
     },
     "control": {
       "title": "Ook voor moeilijke dagen",
-      "description": "Exporteer alle berichten voor documentatie. Foto's vervagen om de emotionele belasting te verminderen. Bewaar de afbeeldingen die u wilt bewaren. Bepaal zelf wat u ziet en wanneer."
+      "description": "Exporteer alle berichten voor documentatie. Foto's vervagen om de emotionele belasting te verminderen. Bewaar de afbeeldingen die u wilt bewaren."
     }
   },
   "problem": {
@@ -95,7 +95,7 @@
   "privacy": {
     "label": "Privacy",
     "title": "Privacy als uitgangspunt",
-    "description": "Wat er in Lina gebeurt, blijft tussen u beiden. De informatie over uw kind is privé — en niemand buiten u heeft toegang tot wat u deelt.",
+    "description": "Wat er in Lina gebeurt, blijft tussen u beiden. De informatie over uw kind is privé. Niemand buiten u heeft toegang tot wat u deelt.",
     "point1": {
       "title": "Geen reclame",
       "description": "Uw ervaring wordt nooit beïnvloed door advertenties of commerciële belangen."
@@ -106,15 +106,15 @@
     },
     "point3": {
       "title": "Geen algoritme",
-      "description": "U bepaalt wat u ziet — niet een algoritme dat is gericht op betrokkenheid."
+      "description": "U bepaalt wat u ziet, niet een algoritme dat is gericht op betrokkenheid."
     },
-    "tagline": "Gestructureerd voor samenwerking. Privé van meet af aan.",
+    "tagline": "Gestructureerd voor samenwerking, privé van meet af aan.",
     "pageTitle": "Privacybeleid — Lina | AVG-conforme co-ouderschap-app",
     "pageDesc": "Lina is gebouwd met privacy als uitgangspunt voor co-ouderschap-gezinnen. AVG-conform, geen advertenties en absoluut geen datadeling met derden."
   },
   "cta": {
     "title": "Één veilig kanaal tussen twee ouders.",
-    "description": "Alles wat beide ouders moeten weten — op één plek. Download de app en begin binnen enkele minuten."
+    "description": "Alles wat beide ouders moeten weten, op één plek. Download de app en begin binnen enkele minuten."
   },
   "footer": {
     "terms": "Gebruiksvoorwaarden",
@@ -485,7 +485,7 @@
     "promoCta": "Download Lina",
     "csPromoLabel": "Zorgschema",
     "csPromoTitle": "Plan het schema week voor week",
-    "csPromoDesc": "Zodra het plan er is, helpt het interactieve zorgschema van Lina u te plannen en te visualiseren hoe het dagelijks leven eruitziet. Zie dagverdelingen, weekendpatronen en de frequentie van wisselmomenten — in één duidelijk overzicht.",
+    "csPromoDesc": "Zodra het plan er is, helpt het interactieve zorgschema van Lina u te plannen en te visualiseren hoe het dagelijks leven eruitziet. Zie dagverdelingen, weekendpatronen en de frequentie van wisselmomenten, in één duidelijk overzicht.",
     "csPromoCta": "Probeer het zorgschema"
   },
   "faq": {
@@ -648,7 +648,7 @@
     "title": "Gebouwd voor de momenten die ertoe doen",
     "s1": {
       "title": "De allergie die het andere huishouden niet kende",
-      "description": "Eén ouder werkt de medische informatie van het kind bij. De andere ziet het direct — geen apart bericht nodig."
+      "description": "Eén ouder werkt de medische informatie van het kind bij. De andere ziet het direct. Geen apart bericht nodig."
     },
     "s2": {
       "title": "De regenjas dat altijd in het verkeerde huishouden is",
@@ -656,7 +656,7 @@
     },
     "s3": {
       "title": "De eerste fietsrit die u bijna had gemist",
-      "description": "Foto's gaan naar het gedeelde album. De grote en kleine momenten worden automatisch gedeeld — ongeacht in welk huishouden het kind zich bevindt."
+      "description": "Foto's gaan naar het gedeelde album. De grote en kleine momenten worden automatisch gedeeld, ongeacht in welk huishouden het kind zich bevindt."
     },
     "cta": "Meer verhalen lezen"
   },
