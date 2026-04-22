@@ -242,13 +242,13 @@
     "hero": {
       "label": "For professionals",
       "title": "A tool you can recommend to parents who share care",
-      "description": "Lina helps parents keep the practical details of everyday co-parenting organized and accessible across two homes. This page is intended for professionals.",
+      "description": "Lina helps parents keep the practical details of everyday co-parenting organised and accessible across two homes. This page is intended for professionals.",
       "cta": "Get in touch"
     },
     "about": {
       "label": "About the app",
-      "title": "One shared place for the child — across homes",
-      "description": "Many parents who share care lack a common structure for everyday cooperation. Information is scattered across texts, emails, and verbal agreements, and one parent ends up coordinating everything. Lina brings the practical details — medical information, contacts, equipment lists, photos, and messages — into one shared space accessible in both homes.",
+      "title": "One shared place for the child: across homes",
+      "description": "Many parents who share care lack a common structure for everyday cooperation. Information is scattered across texts, emails, and verbal agreements, and one parent ends up coordinating everything. Lina brings the practical details of medical information, contacts, equipment lists, photos, and messages into one shared space accessible in both homes.",
       "download": "Download:"
     },
     "when": {
@@ -293,7 +293,7 @@
       "title": "Structure that reduces friction in everyday life",
       "threads": {
         "title": "Threads",
-        "description": "Parents communicate about one topic at a time — logistics, school, or health — without important information getting lost in a long message thread."
+        "description": "Parents communicate about one topic at a time, whether logistics, school, or health, without important information getting lost in a long message thread."
       },
       "messages": {
         "title": "Messages",
@@ -305,7 +305,7 @@
       },
       "info": {
         "title": "Child information",
-        "description": "Medical information, allergies, and important details are entered once and available to both parents — regardless of which home the child is in."
+        "description": "Medical information, allergies, and important details are entered once and available to both parents, regardless of which home the child is in."
       },
       "equipment": {
         "title": "Equipment lists",
@@ -330,11 +330,11 @@
       },
       "blurMessages": {
         "title": "Blur messages",
-        "description": "Parents can blur message content in a thread. The message is still there, but can be revealed when the reader is ready — reducing pressure in difficult conversations."
+        "description": "Parents can blur message content in a thread. The message is still there, but can be revealed when the reader is ready, reducing pressure in difficult conversations."
       },
       "markImportant": {
         "title": "Mark important",
-        "description": "Important messages can be marked and stay easy to find. Agreements, schedules, and key decisions are always accessible — not buried in a long thread."
+        "description": "Important messages can be marked and stay easy to find. Agreements, schedules, and key decisions are always accessible, not buried in a long thread."
       },
       "export": {
         "title": "Export conversations",
@@ -357,7 +357,7 @@
     "recommend": {
       "label": "Recommend Lina",
       "title": "Something to hand to parents",
-      "description": "If you'd like to recommend Lina to parents you work with, you can download a one-page overview to print or share digitally. It explains what Lina is, what it includes, and how to get started — in plain language.",
+      "description": "If you'd like to recommend Lina to parents you work with, you can download a one-page overview to print or share digitally. It explains what Lina is, what it includes, and how to get started, in plain language.",
       "cta": "Download one-pager (PDF)",
       "pdfUrl": "/assets/lina-one-pager.pdf"
     },

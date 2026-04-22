@@ -242,13 +242,13 @@
     "hero": {
       "label": "Pour les professionnels",
       "title": "Un outil que vous pouvez recommander aux parents qui partagent la garde",
-      "description": "Lina aide les parents à organiser et rendre accessibles les détails pratiques du quotidien de la coparentalité entre deux foyers. Cette page est destinée aux médiateurs familiaux, conseillers conjugaux et autres professionnels de l'enfance.",
+      "description": "Lina aide les parents à organiser et rendre accessibles les détails pratiques du quotidien de la coparentalité entre deux maisons. Cette page est destinée aux médiateurs familiaux, conseillers conjugaux et autres professionnels de l'enfance.",
       "cta": "Nous contacter"
     },
     "about": {
       "label": "À propos de l'application",
-      "title": "Un espace partagé pour l'enfant — entre les foyers",
-      "description": "De nombreux parents qui partagent la garde n'ont pas de structure commune pour la coordination quotidienne. Les informations sont éparpillées entre textos, e-mails et accords verbaux, et un parent finit par tout coordonner. Lina rassemble les détails pratiques — informations médicales, contacts, listes d'équipement, photos et messages — dans un espace partagé accessible dans les deux foyers.",
+      "title": "Un espace partagé pour l'enfant : entre les maisons",
+      "description": "De nombreux parents qui partagent la garde n'ont pas de structure commune pour la coordination quotidienne. Les informations sont éparpillées entre textos, e-mails et accords verbaux, et un parent finit par tout coordonner. Lina rassemble les détails pratiques : informations médicales, contacts, listes d'équipement, photos et messages dans un espace partagé accessible dans les deux maisons.",
       "download": "Télécharger :"
     },
     "when": {
@@ -293,7 +293,7 @@
       "title": "Une structure qui réduit les frictions au quotidien",
       "threads": {
         "title": "Sujets",
-        "description": "Les parents communiquent sur un sujet à la fois — logistique, école ou santé — sans que les informations importantes se perdent dans un long fil de messages."
+        "description": "Les parents communiquent sur un sujet à la fois, qu'il s'agisse de logistique, d'école ou de santé, sans que les informations importantes se perdent dans un long fil de messages."
       },
       "messages": {
         "title": "Messages",
@@ -305,7 +305,7 @@
       },
       "info": {
         "title": "Informations sur l'enfant",
-        "description": "Les informations médicales, les allergies et les détails importants sont saisis une seule fois et disponibles pour les deux parents — quel que soit le foyer où se trouve l'enfant."
+        "description": "Les informations médicales, les allergies et les détails importants sont saisis une seule fois et disponibles pour les deux parents, quelle que soit la maison où se trouve l'enfant."
       },
       "equipment": {
         "title": "Listes d'équipement",
@@ -330,11 +330,11 @@
       },
       "blurMessages": {
         "title": "Flouter les messages",
-        "description": "Les parents peuvent flouter le contenu d'un message dans un fil. Le message reste présent, mais peut être révélé quand le lecteur est prêt — cela réduit la pression dans les conversations difficiles."
+        "description": "Les parents peuvent flouter le contenu d'un message dans un fil. Le message reste présent, mais peut être révélé quand le lecteur est prêt. Cela réduit la pression dans les conversations difficiles."
       },
       "markImportant": {
         "title": "Marquer comme important",
-        "description": "Les messages importants peuvent être marqués et restent faciles à trouver. Les accords, les plannings et les décisions clés sont toujours accessibles — pas enfouis dans un long fil."
+        "description": "Les messages importants peuvent être marqués et restent faciles à trouver. Les accords, les plannings et les décisions clés sont toujours accessibles, pas enfouis dans un long fil."
       },
       "export": {
         "title": "Exporter les conversations",
@@ -357,7 +357,7 @@
     "recommend": {
       "label": "Recommander Lina",
       "title": "Quelque chose à remettre aux parents",
-      "description": "Si vous souhaitez recommander Lina aux parents avec lesquels vous travaillez, vous pouvez télécharger un résumé d'une page à imprimer ou à partager numériquement. Il explique ce qu'est Lina, ce qu'elle contient et comment démarrer — dans un langage simple.",
+      "description": "Si vous souhaitez recommander Lina aux parents avec lesquels vous travaillez, vous pouvez télécharger un résumé d'une page à imprimer ou à partager numériquement. Il explique ce qu'est Lina, ce qu'elle contient et comment démarrer, dans un langage simple.",
       "cta": "Télécharger le résumé (PDF)",
       "pdfUrl": "/assets/lina-one-pager-fr.pdf"
     },

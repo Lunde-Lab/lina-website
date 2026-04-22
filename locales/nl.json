@@ -250,8 +250,8 @@
     },
     "about": {
       "label": "Over de app",
-      "title": "Één gedeelde plek voor het kind — in beide huizen",
-      "description": "Veel ouders die de zorg delen, missen een gemeenschappelijke structuur voor de dagelijkse samenwerking. Informatie is verspreid over berichten, e-mails en mondelinge afspraken, en één ouder eindigt met alles coördineren. Lina brengt de praktische details — medische informatie, contacten, paklijsten, foto's en berichten — samen op één gedeelde plek die in beide huizen toegankelijk is.",
+      "title": "Één gedeelde plek voor het kind: in beide huizen",
+      "description": "Veel ouders die de zorg delen, missen een gemeenschappelijke structuur voor de dagelijkse samenwerking. Informatie is verspreid over berichten, e-mails en mondelinge afspraken, en één ouder eindigt met alles coördineren. Lina brengt de praktische details: medische informatie, contacten, paklijsten, foto's en berichten samen op één gedeelde plek die in beide huizen toegankelijk is.",
       "download": "Downloaden:"
     },
     "when": {
@@ -296,7 +296,7 @@
       "title": "Structuur die wrijving in het dagelijks leven vermindert",
       "threads": {
         "title": "Onderwerpen",
-        "description": "Ouders communiceren over één onderwerp tegelijk — logistiek, school of gezondheid — zonder dat belangrijke informatie verloren raakt in een lange berichtenstroom."
+        "description": "Ouders communiceren over één onderwerp tegelijk, of het nu logistiek, school of gezondheid is, zonder dat belangrijke informatie verloren raakt in een lange berichtenstroom."
       },
       "messages": {
         "title": "Berichten",
@@ -308,7 +308,7 @@
       },
       "info": {
         "title": "Kindinformatie",
-        "description": "Medische informatie, allergieën en belangrijke details worden eenmalig ingevoerd en zijn beschikbaar voor beide ouders — ongeacht in welk huis het kind zich bevindt."
+        "description": "Medische informatie, allergieën en belangrijke details worden eenmalig ingevoerd en zijn beschikbaar voor beide ouders, ongeacht in welk huis het kind zich bevindt."
       },
       "equipment": {
         "title": "Paklijsten",
@@ -333,11 +333,11 @@
       },
       "blurMessages": {
         "title": "Berichten vervagen",
-        "description": "Ouders kunnen de inhoud van een bericht vervagen. Het bericht blijft bewaard, maar kan worden onthuld wanneer de lezer er klaar voor is — dat vermindert de druk bij moeilijke gesprekken."
+        "description": "Ouders kunnen de inhoud van een bericht vervagen. Het bericht blijft bewaard, maar kan worden onthuld wanneer de lezer er klaar voor is. Dat vermindert de druk bij moeilijke gesprekken."
       },
       "markImportant": {
         "title": "Markeer als belangrijk",
-        "description": "Belangrijke berichten kunnen worden gemarkeerd en blijven makkelijk te vinden. Afspraken, schema's en belangrijke beslissingen zijn altijd toegankelijk — niet begraven in een lang gesprek."
+        "description": "Belangrijke berichten kunnen worden gemarkeerd en blijven makkelijk te vinden. Afspraken, schema's en belangrijke beslissingen zijn altijd toegankelijk, niet begraven in een lang gesprek."
       },
       "export": {
         "title": "Gesprekken exporteren",
@@ -360,7 +360,7 @@
     "recommend": {
       "label": "Lina aanbevelen",
       "title": "Iets om aan ouders te geven",
-      "description": "Als je Lina wilt aanbevelen aan ouders waarmee je werkt, kun je een beknopt overzicht downloaden om te printen of digitaal te delen. Het legt uit wat Lina is, wat het bevat en hoe je begint — in duidelijke taal.",
+      "description": "Als je Lina wilt aanbevelen aan ouders waarmee je werkt, kun je een beknopt overzicht downloaden om te printen of digitaal te delen. Het legt uit wat Lina is, wat het bevat en hoe je begint, in duidelijke taal.",
       "cta": "Download one-pager (PDF)",
       "pdfUrl": "/assets/lina-one-pager-nl.pdf"
     },

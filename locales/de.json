@@ -250,8 +250,8 @@
     },
     "about": {
       "label": "Über die App",
-      "title": "Ein gemeinsamer Ort für das Kind — in beiden Zuhause",
-      "description": "Vielen Eltern mit geteilter Betreuung fehlt eine gemeinsame Struktur für den Alltag. Informationen verteilen sich auf Nachrichten, E-Mails und mündliche Absprachen, und ein Elternteil übernimmt am Ende die gesamte Koordination. Lina bringt die praktischen Details — medizinische Informationen, Kontakte, Ausstattungslisten, Fotos und Nachrichten — an einen gemeinsamen Ort, der in beiden Zuhause zugänglich ist.",
+      "title": "Ein gemeinsamer Ort für das Kind: in beiden Zuhause",
+      "description": "Vielen Eltern mit geteilter Betreuung fehlt eine gemeinsame Struktur für den Alltag. Informationen verteilen sich auf Nachrichten, E-Mails und mündliche Absprachen, und ein Elternteil übernimmt am Ende die gesamte Koordination. Lina bringt die praktischen Details: medizinische Informationen, Kontakte, Ausstattungslisten, Fotos und Nachrichten an einen gemeinsamen Ort, der in beiden Zuhause zugänglich ist.",
       "download": "Herunterladen:"
     },
     "when": {
@@ -296,7 +296,7 @@
       "title": "Struktur, die Reibung im Alltag reduziert",
       "threads": {
         "title": "Themenbereiche",
-        "description": "Eltern kommunizieren über ein Thema auf einmal — Logistik, Schule oder Gesundheit — ohne dass wichtige Informationen in einem langen Nachrichtenverlauf verloren gehen."
+        "description": "Eltern kommunizieren über ein Thema auf einmal, sei es Logistik, Schule oder Gesundheit, ohne dass wichtige Informationen in einem langen Nachrichtenverlauf verloren gehen."
       },
       "messages": {
         "title": "Nachrichten",
@@ -308,7 +308,7 @@
       },
       "info": {
         "title": "Kinderinformationen",
-        "description": "Medizinische Informationen, Allergien und wichtige Details werden einmal eingegeben und stehen beiden Elternteilen zur Verfügung — unabhängig davon, in welchem Zuhause sich das Kind befindet."
+        "description": "Medizinische Informationen, Allergien und wichtige Details werden einmal eingegeben und stehen beiden Elternteilen zur Verfügung, unabhängig davon, in welchem Zuhause sich das Kind befindet."
       },
       "equipment": {
         "title": "Ausstattungslisten",
@@ -333,11 +333,11 @@
       },
       "blurMessages": {
         "title": "Nachrichten unscharf stellen",
-        "description": "Eltern können den Inhalt einer Nachricht unscharf stellen. Die Nachricht bleibt erhalten, kann aber eingeblendet werden, wenn der Leser bereit ist — das reduziert den Druck in schwierigen Gesprächen."
+        "description": "Eltern können den Inhalt einer Nachricht unscharf stellen. Die Nachricht bleibt erhalten, kann aber eingeblendet werden, wenn der Leser bereit ist. Das reduziert den Druck in schwierigen Gesprächen."
       },
       "markImportant": {
         "title": "Als wichtig markieren",
-        "description": "Wichtige Nachrichten können markiert werden und bleiben leicht auffindbar. Vereinbarungen, Pläne und wichtige Entscheidungen sind immer zugänglich — nicht in einem langen Verlauf vergraben."
+        "description": "Wichtige Nachrichten können markiert werden und bleiben leicht auffindbar. Vereinbarungen, Pläne und wichtige Entscheidungen sind immer zugänglich, nicht in einem langen Verlauf vergraben."
       },
       "export": {
         "title": "Gespräche exportieren",
@@ -360,7 +360,7 @@
     "recommend": {
       "label": "Lina empfehlen",
       "title": "Etwas zum Weitergeben an Eltern",
-      "description": "Wenn Sie Lina an Eltern weiterempfehlen möchten, können Sie eine kurze Übersicht herunterladen — zum Ausdrucken oder digitalen Teilen. Sie erklärt, was Lina ist, was es beinhaltet und wie man loslegt — in einfacher Sprache.",
+      "description": "Wenn Sie Lina an Eltern weiterempfehlen möchten, können Sie eine kurze Übersicht herunterladen, zum Ausdrucken oder digitalen Teilen. Sie erklärt, was Lina ist, was es beinhaltet und wie man loslegt, in einfacher Sprache.",
       "cta": "One-Pager herunterladen (PDF)",
       "pdfUrl": "/assets/lina-one-pager-de.pdf"
     },

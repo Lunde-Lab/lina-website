@@ -263,8 +263,8 @@
     },
     "about": {
       "label": "Om appen",
-      "title": "Ét fælles sted for barnet – på tværs af hjem",
-      "description": "Mange forældre, der deler omsorg, mangler en fælles struktur for hverdagssamarbejdet. Information spredes over SMS, e-mail og mundtlige aftaler, og én forælder ender med at koordinere det hele. Lina samler det praktiske — medicinsk information, kontakter, udstyrslister, billeder og beskeder — på ét delt sted, tilgængeligt i begge hjem.",
+      "title": "Ét fælles sted for barnet: på tværs af hjem",
+      "description": "Mange forældre, der deler omsorg, mangler en fælles struktur for hverdagssamarbejdet. Information spredes over SMS, e-mail og mundtlige aftaler, og én forælder ender med at koordinere det hele. Lina samler det praktiske: medicinsk information, kontakter, udstyrslister, billeder og beskeder på ét delt sted, tilgængeligt i begge hjem.",
       "download": "Download:"
     },
     "when": {
@@ -309,7 +309,7 @@
       "title": "Struktur der reducerer friktion i hverdagen",
       "threads": {
         "title": "Tråde",
-        "description": "Forældre kommunikerer om ét emne ad gangen – logistik, skole eller sundhed – uden at vigtig information forsvinder i en lang beskedtråd."
+        "description": "Forældre kommunikerer om ét emne ad gangen, hvad enten det er logistik, skole eller sundhed, uden at vigtig information forsvinder i en lang beskedtråd."
       },
       "messages": {
         "title": "Beskeder",
@@ -321,7 +321,7 @@
       },
       "info": {
         "title": "Barneinformation",
-        "description": "Medicinsk information, allergier og vigtige detaljer registreres én gang og er tilgængelige for begge – uanset hvilket hjem barnet befinder sig i."
+        "description": "Medicinsk information, allergier og vigtige detaljer registreres én gang og er tilgængelige for begge, uanset hvilket hjem barnet befinder sig i."
       },
       "equipment": {
         "title": "Udstyrlister",
@@ -346,11 +346,11 @@
       },
       "blurMessages": {
         "title": "Sløre beskeder",
-        "description": "Forældre kan sløre beskedindhold i en tråd. Beskeden er stadig der, men kan afsløres, når læseren er klar — det mindsker presset i svære samtaler."
+        "description": "Forældre kan sløre beskedindhold i en tråd. Beskeden er stadig der, men kan afsløres, når læseren er klar. Det mindsker presset i svære samtaler."
       },
       "markImportant": {
         "title": "Markér som vigtig",
-        "description": "Vigtige beskeder kan markeres og holdes lette at finde. Aftaler, planer og vigtige beslutninger er altid tilgængelige — ikke begravet i en lang tråd."
+        "description": "Vigtige beskeder kan markeres og holdes lette at finde. Aftaler, planer og vigtige beslutninger er altid tilgængelige, ikke begravet i en lang tråd."
       },
       "export": {
         "title": "Eksportér samtaler",
@@ -373,7 +373,7 @@
     "recommend": {
       "label": "Anbefal Lina",
       "title": "Noget at give til forældre",
-      "description": "Hvis du gerne vil anbefale Lina til forældre, du arbejder med, kan du downloade en kort oversigt til at printe eller dele digitalt. Den forklarer, hvad Lina er, hvad den indeholder, og hvordan man kommer i gang — i et enkelt sprog.",
+      "description": "Hvis du gerne vil anbefale Lina til forældre, du arbejder med, kan du downloade en kort oversigt til at printe eller dele digitalt. Den forklarer, hvad Lina er, hvad den indeholder, og hvordan man kommer i gang, i et enkelt sprog.",
       "cta": "Download one-pager (PDF)",
       "pdfUrl": "/assets/lina-one-pager-da.pdf"
     },

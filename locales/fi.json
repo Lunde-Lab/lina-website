@@ -263,8 +263,8 @@
     },
     "about": {
       "label": "Sovelluksesta",
-      "title": "Yksi yhteinen paikka lapselle – kotien välillä",
-      "description": "Monilta huolenpidon jakavalta vanhemmalta puuttuu yhteinen rakenne arjen yhteistyölle. Tieto hajaantuu tekstiviesteihin, sähköposteihin ja suullisiin sopimuksiin, ja yksi vanhemmista päätyy koordinoimaan kaiken. Lina kokoaa käytännön asiat — lääketieteelliset tiedot, yhteystiedot, varustelistat, kuvat ja viestit — yhteen jaettuun paikkaan, joka on saatavilla molemmissa kodeissa.",
+      "title": "Yksi yhteinen paikka lapselle: kotien välillä",
+      "description": "Monilta huolenpidon jakavalta vanhemmalta puuttuu yhteinen rakenne arjen yhteistyölle. Tieto hajaantuu tekstiviesteihin, sähköposteihin ja suullisiin sopimuksiin, ja yksi vanhemmista päätyy koordinoimaan kaiken. Lina kokoaa käytännön asiat: lääketieteelliset tiedot, yhteystiedot, varustelistat, kuvat ja viestit yhteen jaettuun paikkaan, joka on saatavilla molemmissa kodeissa.",
       "download": "Lataa:"
     },
     "when": {
@@ -309,7 +309,7 @@
       "title": "Rakenne, joka vähentää kitkaa arjessa",
       "threads": {
         "title": "Säikeet",
-        "description": "Vanhemmat kommunikoivat yhdestä aiheesta kerrallaan – logistiikka, koulu tai terveys – ilman että tärkeä tieto hukkuu pitkään viestiketjuun."
+        "description": "Vanhemmat kommunikoivat yhdestä aiheesta kerrallaan, oli kyseessä logistiikka, koulu tai terveys, ilman että tärkeä tieto hukkuu pitkään viestiketjuun."
       },
       "messages": {
         "title": "Viestit",
@@ -321,7 +321,7 @@
       },
       "info": {
         "title": "Lapsen tiedot",
-        "description": "Lääketieteelliset tiedot, allergiat ja tärkeät yksityiskohdat syötetään kerran ja ovat molempien saatavilla – riippumatta siitä, kummassa kodissa lapsi on."
+        "description": "Lääketieteelliset tiedot, allergiat ja tärkeät yksityiskohdat syötetään kerran ja ovat molempien saatavilla, riippumatta siitä, kummassa kodissa lapsi on."
       },
       "equipment": {
         "title": "Varustelistat",
@@ -346,11 +346,11 @@
       },
       "blurMessages": {
         "title": "Sumenna viestit",
-        "description": "Vanhemmat voivat sumentaa viestin sisällön keskustelussa. Viesti on edelleen tallessa, mutta sen voi paljastaa, kun lukija on valmis — se vähentää painetta vaikeissa keskusteluissa."
+        "description": "Vanhemmat voivat sumentaa viestin sisällön keskustelussa. Viesti on edelleen tallessa, mutta sen voi paljastaa, kun lukija on valmis. Se vähentää painetta vaikeissa keskusteluissa."
       },
       "markImportant": {
         "title": "Merkitse tärkeäksi",
-        "description": "Tärkeät viestit voidaan merkitä ja ne pysyvät helposti löydettävinä. Sopimukset, aikataulut ja keskeiset päätökset ovat aina saatavilla — eivät hautaudu pitkään viestiketjuun."
+        "description": "Tärkeät viestit voidaan merkitä ja ne pysyvät helposti löydettävinä. Sopimukset, aikataulut ja keskeiset päätökset ovat aina saatavilla, eivät hautaudu pitkään viestiketjuun."
       },
       "export": {
         "title": "Vie keskustelut",
@@ -373,7 +373,7 @@
     "recommend": {
       "label": "Suosittele Linaa",
       "title": "Jotain jaettavaa vanhemmille",
-      "description": "Jos haluat suositella Linaa vanhemmille, joiden kanssa työskentelet, voit ladata lyhyen yhteenvedon tulostettavaksi tai jaettavaksi digitaalisesti. Se selittää, mikä Lina on, mitä se sisältää ja miten pääsee alkuun — selkeällä kielellä.",
+      "description": "Jos haluat suositella Linaa vanhemmille, joiden kanssa työskentelet, voit ladata lyhyen yhteenvedon tulostettavaksi tai jaettavaksi digitaalisesti. Se selittää, mikä Lina on, mitä se sisältää ja miten pääsee alkuun, selkeällä kielellä.",
       "cta": "Lataa yhteenveto (PDF)",
       "pdfUrl": "/assets/lina-one-pager-fi.pdf"
     },

@@ -263,8 +263,8 @@
     },
     "about": {
       "label": "Om appen",
-      "title": "Én delt plass for barnet — på tvers av hjem",
-      "description": "Mange foreldre som deler omsorg mangler en felles struktur for hverdagssamarbeidet. Informasjon spres over SMS, e-post og muntlige avtaler, og én forelder ender opp med å koordinere alt. Lina samler det praktiske — medisinsk informasjon, kontakter, utstyrslister, bilder og meldinger — i én delt løsning som er tilgjengelig i begge hjem.",
+      "title": "Én delt plass for barnet: på tvers av hjem",
+      "description": "Mange foreldre som deler omsorg mangler en felles struktur for hverdagssamarbeidet. Informasjon spres over SMS, e-post og muntlige avtaler, og én forelder ender opp med å koordinere alt. Lina samler det praktiske: medisinsk informasjon, kontakter, utstyrslister, bilder og meldinger i én delt løsning som er tilgjengelig i begge hjem.",
       "download": "Last ned:"
     },
     "when": {
@@ -309,7 +309,7 @@
       "title": "Struktur som reduserer friksjon i hverdagen",
       "threads": {
         "title": "Tråder",
-        "description": "Foreldre kommuniserer om ett tema av gangen — logistikk, skole eller helse — uten at viktig informasjon går tapt i en lang meldingstråd."
+        "description": "Foreldre kommuniserer om ett tema av gangen, enten logistikk, skole eller helse, uten at viktig informasjon går tapt i en lang meldingstråd."
       },
       "messages": {
         "title": "Meldinger",
@@ -321,7 +321,7 @@
       },
       "info": {
         "title": "Barneinformasjon",
-        "description": "Medisinsk informasjon, allergier og viktige detaljer legges inn én gang og er tilgjengelig for begge — uavhengig av hvem barnet er hos."
+        "description": "Medisinsk informasjon, allergier og viktige detaljer legges inn én gang og er tilgjengelig for begge, uavhengig av hvem barnet er hos."
       },
       "equipment": {
         "title": "Utstyrslister",
@@ -346,7 +346,7 @@
       },
       "blurMessages": {
         "title": "Sløre meldinger",
-        "description": "Foreldre kan sløre innholdet i en melding. Meldingen er fortsatt der, men kan avdekkes når leseren er klar — det reduserer presset i vanskelige samtaler."
+        "description": "Foreldre kan sløre innholdet i en melding. Meldingen er fortsatt der, men kan avdekkes når leseren er klar. Det reduserer presset i vanskelige samtaler."
       },
       "markImportant": {
         "title": "Merk som viktig",
@@ -373,7 +373,7 @@
     "recommend": {
       "label": "Anbefal Lina",
       "title": "Noe å gi til foreldre",
-      "description": "Hvis du ønsker å anbefale Lina til foreldre du jobber med, kan du laste ned en kortfattet oversikt som kan skrives ut eller deles digitalt. Den forklarer hva Lina er, hva den inneholder og hvordan man kommer i gang — i et enkelt språk.",
+      "description": "Hvis du ønsker å anbefale Lina til foreldre du jobber med, kan du laste ned en kortfattet oversikt som kan skrives ut eller deles digitalt. Den forklarer hva Lina er, hva den inneholder og hvordan man kommer i gang, i et enkelt språk.",
       "cta": "Last ned one-pager (PDF)",
       "pdfUrl": "/assets/lina-one-pager-nb.pdf"
     },

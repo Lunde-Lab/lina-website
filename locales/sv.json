@@ -263,8 +263,8 @@
     },
     "about": {
       "label": "Om appen",
-      "title": "En gemensam plats för barnet – över hem",
-      "description": "Många föräldrar som delar omsorg saknar en gemensam struktur för vardagssamarbetet. Information sprids över SMS, e-post och muntliga överenskommelser, och en förälder hamnar med att koordinera allt. Lina samlar det praktiska — medicinsk information, kontakter, utrustningslistor, foton och meddelanden — på ett delat ställe som är tillgängligt i båda hemmen.",
+      "title": "En gemensam plats för barnet: över hem",
+      "description": "Många föräldrar som delar omsorg saknar en gemensam struktur för vardagssamarbetet. Information sprids över SMS, e-post och muntliga överenskommelser, och en förälder hamnar med att koordinera allt. Lina samlar det praktiska: medicinsk information, kontakter, utrustningslistor, foton och meddelanden på ett delat ställe som är tillgängligt i båda hemmen.",
       "download": "Ladda ned:"
     },
     "when": {
@@ -309,7 +309,7 @@
       "title": "Struktur som minskar friktion i vardagen",
       "threads": {
         "title": "Trådar",
-        "description": "Föräldrar kommunicerar om ett ämne i taget – logistik, skola eller hälsa – utan att viktig information går förlorad i en lång meddelandetråd."
+        "description": "Föräldrar kommunicerar om ett ämne i taget, oavsett om det är logistik, skola eller hälsa, utan att viktig information går förlorad i en lång meddelandetråd."
       },
       "messages": {
         "title": "Meddelanden",
@@ -321,7 +321,7 @@
       },
       "info": {
         "title": "Barnuppgifter",
-        "description": "Medicinsk information, allergier och viktiga detaljer registreras en gång och är tillgängliga för båda – oavsett vilket hem barnet befinner sig i."
+        "description": "Medicinsk information, allergier och viktiga detaljer registreras en gång och är tillgängliga för båda, oavsett vilket hem barnet befinner sig i."
       },
       "equipment": {
         "title": "Utrustningslistor",
@@ -346,11 +346,11 @@
       },
       "blurMessages": {
         "title": "Sudda meddelanden",
-        "description": "Föräldrar kan sudda meddelandeinnehåll i en tråd. Meddelandet finns kvar, men kan visas när läsaren är redo — det minskar pressen i svåra samtal."
+        "description": "Föräldrar kan sudda meddelandeinnehåll i en tråd. Meddelandet finns kvar, men kan visas när läsaren är redo. Det minskar pressen i svåra samtal."
       },
       "markImportant": {
         "title": "Markera som viktig",
-        "description": "Viktiga meddelanden kan markeras och bli lätta att hitta. Överenskommelser, scheman och viktiga beslut är alltid tillgängliga — inte begravda i en lång tråd."
+        "description": "Viktiga meddelanden kan markeras och bli lätta att hitta. Överenskommelser, scheman och viktiga beslut är alltid tillgängliga, inte begravda i en lång tråd."
       },
       "export": {
         "title": "Exportera konversationer",
@@ -373,7 +373,7 @@
     "recommend": {
       "label": "Rekommendera Lina",
       "title": "Något att ge till föräldrar",
-      "description": "Om du vill rekommendera Lina till föräldrar du arbetar med kan du ladda ned en kort översikt att skriva ut eller dela digitalt. Den förklarar vad Lina är, vad den innehåller och hur man kommer igång — på ett enkelt språk.",
+      "description": "Om du vill rekommendera Lina till föräldrar du arbetar med kan du ladda ned en kort översikt att skriva ut eller dela digitalt. Den förklarar vad Lina är, vad den innehåller och hur man kommer igång, på ett enkelt språk.",
       "cta": "Ladda ned one-pager (PDF)",
       "pdfUrl": "/assets/lina-one-pager-sv.pdf"
     },
