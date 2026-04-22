@@ -1,7 +1,7 @@
 {
   "page": {
     "title": "Lina — co-ouderschap, vereenvoudigd | App voor twee huizen",
-    "description": "Lina helpt co-ouders de dagelijkse gang van zaken over twee huishoudens te coördineren — zorgschema, berichten, kindinformatie en gedeeld album in één app."
+    "description": "Lina helpt co-ouders de dagelijkse gang van zaken over twee huizen te coördineren — zorgschema, berichten, kindinformatie en gedeeld album in één app."
   },
   "nav": {
     "appstore": "App Store",
@@ -12,7 +12,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Één gedeelde plek voor uw kind — in beide huishoudens",
+    "title": "Één gedeelde plek voor uw kind — in beide huizen",
     "description": "U hoeft niet altijd degene te zijn die alles onthoudt. Lina geeft beide ouders hetzelfde overzicht van medische informatie, contacten, schema's en spullen, altijd actueel in beide huizen.",
     "cta": "Download in de App Store",
     "ctaPlay": "Verkrijgbaar bij Google Play",
@@ -33,16 +33,16 @@
     },
     "step2": {
       "title": "Voeg toe wat belangrijk is",
-      "description": "Medische informatie, allergieën, contacten, paklijsten — eenmalig toevoegen, en het is beschikbaar in beide huishoudens."
+      "description": "Medische informatie, allergieën, contacten, paklijsten — eenmalig toevoegen, en het is beschikbaar in beide huizen."
     },
     "step3": {
       "title": "Niemand hoeft twee keer te vragen",
-      "description": "Updates zijn in real time zichtbaar voor beide ouders. Niet meer herhalen, niet meer raden of het andere huishouden de laatste informatie heeft."
+      "description": "Updates zijn in real time zichtbaar voor beide ouders. Niet meer herhalen, niet meer raden of het andere huis de laatste informatie heeft."
     }
   },
   "features": {
     "label": "Functies",
-    "title": "Alle details, gedeeld met het andere huishouden",
+    "title": "Alle details, gedeeld met het andere huis",
     "threads": {
       "title": "Onderwerpen",
       "description": "Aparte gesprekken voor elk onderwerp — logistiek, school, gezondheid. Niets raakt verloren in één lange chat."
@@ -53,7 +53,7 @@
     },
     "album": {
       "title": "Gedeeld album",
-      "description": "Een privéalbum waar beide ouders foto's kunnen delen. De momenten die in het ene huishouden plaatsvinden, zijn in beide zichtbaar."
+      "description": "Een privéalbum waar beide ouders foto's kunnen delen. De momenten die in het ene huis plaatsvinden, zijn in beide zichtbaar."
     },
     "more": "Ook inbegrepen: contacten, paklijsten, kindinformatie en zorgschema — zodat beide ouders hebben wat ze nodig hebben, waar het kind ook is."
   },
@@ -66,7 +66,7 @@
     },
     "equipment": {
       "title": "Paklijsten",
-      "description": "Regenlaarsjes, sporttas, allergiemedicatie — gedeelde lijsten maken het makkelijker bij te houden wat het kind mee moet nemen tussen de huishoudens."
+      "description": "Regenlaarsjes, sporttas, allergiemedicatie — gedeelde lijsten maken het makkelijker bij te houden wat het kind mee moet nemen tussen de huizen."
     },
     "childinfo": {
       "title": "Kindinformatie",
@@ -74,7 +74,7 @@
     },
     "schedule": {
       "title": "Zorgschema",
-      "description": "Maak een visueel overzicht van hoe de tijd tussen de huishoudens wordt verdeeld. Zie het volledige schema in één oogopslag, week voor week."
+      "description": "Maak een visueel overzicht van hoe de tijd tussen de huizen wordt verdeeld. Zie het volledige schema in één oogopslag, week voor week."
     },
     "control": {
       "title": "Ook voor moeilijke dagen",
@@ -83,12 +83,12 @@
   },
   "problem": {
     "label": "Waarom Lina",
-    "title": "Als de zorg over twee huishoudens verdeeld is, raken details verloren",
+    "title": "Als de zorg over twee huizen verdeeld is, raken details verloren",
     "description": "Als plannen, berichten en foto's in verschillende apps leven, vallen belangrijke zaken tussen de wal en het schip. Lina brengt alles in één gedeelde structuur — rustig, duidelijk en voorspelbaar."
   },
   "forWhom": {
     "forTitle": "Voor wie Lina bedoeld is",
-    "forDescription": "Ouders die de zorg over twee huishoudens delen en minder wrijving willen in de dagelijkse samenwerking. Voor wie structuur stelt boven ruis en duidelijkheid boven constant berichtenverkeer.",
+    "forDescription": "Ouders die de zorg over twee huizen delen en minder wrijving willen in de dagelijkse samenwerking. Voor wie structuur stelt boven ruis en duidelijkheid boven constant berichtenverkeer.",
     "notTitle": "Wat Lina niet is",
     "notDescription": "Geen sociaal netwerk, geen algemene familiechat en niet gebouwd voor eindeloze gesprekken. Lina is een gericht hulpmiddel dat specifiek is ontworpen voor de samenwerking rondom uw kind."
   },
@@ -140,7 +140,7 @@
     "pageDesc": "Lina heeft een gratis abonnement en Lina+ voor € 7,99/maand. Eén abonnement voor beide ouders. Geen reclame, geen gegevensdeling.",
     "label": "Prijzen",
     "title": "Eén abonnement. Beide ouders.",
-    "description": "Lina+ ontgrendelt alle functies met één abonnement — voor beide huishoudens. Begin met een gratis proefperiode.",
+    "description": "Lina+ ontgrendelt alle functies met één abonnement — voor beide huizen. Begin met een gratis proefperiode.",
     "free": {
       "name": "Gratis",
       "price": "€ 0",
@@ -197,7 +197,7 @@
   },
   "cs": {
     "pageTitle": "Zorgschema — plan gedeeld ouderschap met Lina",
-    "pageDesc": "Plan en visualiseer het zorgschema van uw kind tussen twee huishoudens. Gratis tool met dagverdeling, weekendoverzicht en PDF-export.",
+    "pageDesc": "Plan en visualiseer het zorgschema van uw kind tussen twee huizen. Gratis tool met dagverdeling, weekendoverzicht en PDF-export.",
     "heading": "Zorgschema",
     "labelParentA": "Naam ouder A",
     "labelParentB": "Naam ouder B",
@@ -225,7 +225,7 @@
     "statsSwitches": "Totaal wisselmomenten",
     "days": "dagen",
     "of": "van",
-    "subhead": "Zie hoe de tijd wordt verdeeld tussen de huishoudens — week voor week.",
+    "subhead": "Zie hoe de tijd wordt verdeeld tussen de huizen — week voor week.",
     "intro": "Klik op de dagen om ze aan een ouder toe te wijzen. De verdeling wordt automatisch bijgewerkt en u kunt het schema exporteren als PDF.",
     "howTitle": "Hoe te gebruiken",
     "step1": "Voer de namen van beide ouders in",
@@ -241,17 +241,17 @@
   "nav_download": "Downloaden",
   "familievern": {
     "pageTitle": "Voor professionals — Lina co-ouderschap-app",
-    "pageDesc": "Lina helpt co-ouders de dagelijkse gang van zaken over twee huishoudens te coördineren. Informatie over de app voor mediators en andere professionals.",
+    "pageDesc": "Lina helpt co-ouders de dagelijkse gang van zaken over twee huizen te coördineren. Informatie over de app voor mediators en andere professionals.",
     "hero": {
       "label": "Voor professionals",
       "title": "Een tool die u kunt aanbevelen aan ouders die de zorg delen",
-      "description": "Lina helpt ouders de praktische details van het dagelijkse co-ouderschap georganiseerd en toegankelijk te houden in beide huishoudens. Deze pagina is bedoeld voor professionals.",
+      "description": "Lina helpt ouders de praktische details van het dagelijkse co-ouderschap georganiseerd en toegankelijk te houden in beide huizen. Deze pagina is bedoeld voor professionals.",
       "cta": "Neem contact op"
     },
     "about": {
       "label": "Over de app",
-      "title": "Één gedeelde plek voor het kind — in beide huishoudens",
-      "description": "Veel ouders die de zorg delen, missen een gemeenschappelijke structuur voor de dagelijkse samenwerking. Informatie is verspreid over berichten, e-mails en mondelinge afspraken, en één ouder eindigt met alles coördineren. Lina brengt de praktische details — medische informatie, contacten, paklijsten, foto's en berichten — samen op één gedeelde plek die in beide huishoudens toegankelijk is.",
+      "title": "Één gedeelde plek voor het kind — in beide huizen",
+      "description": "Veel ouders die de zorg delen, missen een gemeenschappelijke structuur voor de dagelijkse samenwerking. Informatie is verspreid over berichten, e-mails en mondelinge afspraken, en één ouder eindigt met alles coördineren. Lina brengt de praktische details — medische informatie, contacten, paklijsten, foto's en berichten — samen op één gedeelde plek die in beide huizen toegankelijk is.",
       "download": "Downloaden:"
     },
     "when": {
@@ -261,7 +261,7 @@
         "item1": "een in principe werkbare co-ouderschapsrelatie hebben maar moeite hebben met de praktische coördinatie",
         "item2": "meer structuur en voorspelbaarheid in hun dagelijkse routines willen",
         "item3": "een gedeeld communicatiekanaal nodig hebben dat de samenwerking gefocust houdt",
-        "item4": "willen zorgen dat belangrijke informatie over het kind in beide huishoudens beschikbaar is"
+        "item4": "willen zorgen dat belangrijke informatie over het kind in beide huizen beschikbaar is"
       },
       "notFits": {
         "title": "Lina is niet geschikt wanneer",
@@ -304,15 +304,15 @@
       },
       "album": {
         "title": "Gedeeld album",
-        "description": "Beide ouders kunnen foto's uit het dagelijks leven delen. Het kind is zichtbaar in beide huishoudens."
+        "description": "Beide ouders kunnen foto's uit het dagelijks leven delen. Het kind is zichtbaar in beide huizen."
       },
       "info": {
         "title": "Kindinformatie",
-        "description": "Medische informatie, allergieën en belangrijke details worden eenmalig ingevoerd en zijn beschikbaar voor beide ouders — ongeacht in welk huishouden het kind zich bevindt."
+        "description": "Medische informatie, allergieën en belangrijke details worden eenmalig ingevoerd en zijn beschikbaar voor beide ouders — ongeacht in welk huis het kind zich bevindt."
       },
       "equipment": {
         "title": "Paklijsten",
-        "description": "Een duidelijk overzicht van wat het kind in elk huishouden nodig heeft, vermindert het aantal vragen en misverstanden rond praktische details."
+        "description": "Een duidelijk overzicht van wat het kind in elk huis nodig heeft, vermindert het aantal vragen en misverstanden rond praktische details."
       },
       "schedule": {
         "title": "Zorgschema",
@@ -383,11 +383,11 @@
     "pageDesc": "Lees wat een goed ouderschapsplan moet omvatten. Bekijk een voorbeeld, krijg tips voor het proces en vind links naar officiële bronnen.",
     "label": "Ouderschapsplan",
     "heroTitle": "Wat moet een ouderschapsplan bevatten?",
-    "heroDesc": "Een ouderschapsplan helpt ouders duidelijkheid te creëren voor het kind wanneer de zorg over twee huishoudens wordt verdeeld. Hier vindt u een overzicht van wat het plan moet bevatten, een voorbeeld en links naar officiële bronnen.",
+    "heroDesc": "Een ouderschapsplan helpt ouders duidelijkheid te creëren voor het kind wanneer de zorg over twee huizen wordt verdeeld. Hier vindt u een overzicht van wat het plan moet bevatten, een voorbeeld en links naar officiële bronnen.",
     "heroCta": "Maak een plan",
     "aboutLabel": "De basis",
     "aboutTitle": "Een plan dat meegroeit met het kind",
-    "aboutDesc": "Een ouderschapsplan is een schriftelijke afspraak tussen ouders over hoe de zorg voor het kind over twee huishoudens is georganiseerd. In Nederland is een ouderschapsplan verplicht bij echtscheiding wanneer er minderjarige kinderen zijn. Een goed plan weerspiegelt het dagelijks leven van het kind — en moet worden aangepast naarmate het kind opgroeit.",
+    "aboutDesc": "Een ouderschapsplan is een schriftelijke afspraak tussen ouders over hoe de zorg voor het kind over twee huizen is georganiseerd. In Nederland is een ouderschapsplan verplicht bij echtscheiding wanneer er minderjarige kinderen zijn. Een goed plan weerspiegelt het dagelijks leven van het kind — en moet worden aangepast naarmate het kind opgroeit.",
     "point1Title": "Wettelijk verplicht bij scheiding in Nederland",
     "point1Desc": "In Nederland is een ouderschapsplan verplicht als er minderjarige kinderen zijn. Als u er niet uitkomt, kan een familiemediator helpen.",
     "point2Title": "Het belang van het kind centraal",
@@ -481,7 +481,7 @@
     "tmplDisclaimer": "Dit is een voorbeeld. Pas de inhoud aan aan uw eigen situatie.",
     "promoLabel": "De Lina-app",
     "promoTitle": "Na het plan — het dagelijks leven",
-    "promoDesc": "Zodra het ouderschapsplan er is, begint het dagelijks leven. Lina helpt ouders met de rest: berichten, kindinformatie, foto's en paklijsten — allemaal op één gedeelde plek in twee huishoudens.",
+    "promoDesc": "Zodra het ouderschapsplan er is, begint het dagelijks leven. Lina helpt ouders met de rest: berichten, kindinformatie, foto's en paklijsten — allemaal op één gedeelde plek in twee huizen.",
     "promoCta": "Download Lina",
     "csPromoLabel": "Zorgschema",
     "csPromoTitle": "Plan het schema week voor week",
@@ -496,9 +496,9 @@
     "heroDesc": "Vind antwoorden op de meest gestelde vragen over Lina, het zorgschema en het ouderschapsplan.",
     "cat1Title": "Over Lina",
     "cat1q1": "Wat is Lina?",
-    "cat1a1": "Lina brengt de praktische kant van co-ouderschap samen in één app — berichten, kindinformatie, foto's, contacten, paklijsten en een zorgschema — toegankelijk voor beide huishoudens.",
+    "cat1a1": "Lina brengt de praktische kant van co-ouderschap samen in één app — berichten, kindinformatie, foto's, contacten, paklijsten en een zorgschema — toegankelijk voor beide huizen.",
     "cat1q2": "Voor wie is Lina bedoeld?",
-    "cat1a2": "Lina is gemaakt voor ouders die de zorg voor een kind delen over twee huishoudens. De app werkt het beste wanneer de basisrelatie voor co-ouderschap functioneel is, maar meer structuur en voorspelbaarheid nodig is.",
+    "cat1a2": "Lina is gemaakt voor ouders die de zorg voor een kind delen over twee huizen. De app werkt het beste wanneer de basisrelatie voor co-ouderschap functioneel is, maar meer structuur en voorspelbaarheid nodig is.",
     "cat1q3": "Is Lina gratis?",
     "cat1a3": "Ja, Lina kan gratis worden gedownload en gebruikt. Er is geen betaling vereist om een account aan te maken of de andere ouder uit te nodigen.",
     "cat1q4": "Welke apparaten ondersteunt Lina?",
@@ -551,12 +551,12 @@
     "pageTitle": "Over ons — de co-ouderschap-app voor twee huizen",
     "pageDesc": "Lina is gebouwd voor co-ouders die een rustige, gestructureerde tool willen voor de dagelijkse coördinatie. Ontworpen en gebouwd in Noorwegen.",
     "heading": "Over Lina",
-    "lead": "Lina is een co-ouderschapsapp voor ouders die de zorg voor een kind delen over twee huishoudens. Hetzelfde overzicht, dezelfde informatie — ongeacht in welk huishouden het kind zich bevindt.",
+    "lead": "Lina is een co-ouderschapsapp voor ouders die de zorg voor een kind delen over twee huizen. Hetzelfde overzicht, dezelfde informatie — ongeacht in welk huis het kind zich bevindt.",
     "whyTitle": "Waarom Lina bestaat",
     "whyText1": "Lina is ontstaan omdat er geen co-ouderschapsapp bestond die rustig en gefocust aanvoelde. De meeste tools waren gebouwd rond conflict of juridische processen. Lina is iets anders — een rustige, gestructureerde ruimte voor de dagelijkse coördinatie tussen twee ouders.",
     "whyText2": "Het doel is de mentale belasting te verminderen die gepaard gaat met gedeelde zorg. Wanneer beide ouders toegang hebben tot dezelfde schema's, lijsten en updates, hoeft niemand alles alleen te dragen.",
     "focusTitle": "Waar Lina zich op richt",
-    "focusText1": "Lina is gebouwd rond gestructureerde communicatie en praktische tools. Onderwerpen houden gesprekken georganiseerd. Gedeelde lijsten, contacten en informatie over het kind zijn altijd beschikbaar — zichtbaar in beide huishoudens.",
+    "focusText1": "Lina is gebouwd rond gestructureerde communicatie en praktische tools. Onderwerpen houden gesprekken georganiseerd. Gedeelde lijsten, contacten en informatie over het kind zijn altijd beschikbaar — zichtbaar in beide huizen.",
     "focusText2": "Er zijn geen algoritmen, geen reclame en geen sociale functies. Lina is ontworpen om gebruikt te worden wanneer het nodig is en uit de weg te blijven wanneer dat niet het geval is.",
     "origin": "Ontworpen en gebouwd in Noorwegen."
   },
@@ -601,21 +601,21 @@
   },
   "stories": {
     "pageTitle": "Hoe ouders Lina gebruiken — verhalen uit twee huizen",
-    "pageDesc": "Kleine, alledaagse situaties waarin Lina het verschil maakt. Zie hoe ouders de app gebruiken om informatie, foto's en paklijsten te delen tussen de huishoudens.",
+    "pageDesc": "Kleine, alledaagse situaties waarin Lina het verschil maakt. Zie hoe ouders de app gebruiken om informatie, foto's en paklijsten te delen tussen de huizen.",
     "label": "Alledaagse situaties",
     "title": "Hoe ouders Lina gebruiken",
     "description": "Kleine, alledaagse momenten waarbij één gedeelde plek het verschil maakt. Dit zijn de situaties waarvoor Lina is gebouwd.",
     "s1": {
       "label": "Kindinformatie",
-      "title": "De allergie die het andere huishouden niet kende",
-      "situation": "Een kind krijgt bij de dokter de diagnose van een nieuwe voedselallergie. De informatie moet het andere huishouden bereiken voor het volgende wisselmoment.",
+      "title": "De allergie die het andere huis niet kende",
+      "situation": "Een kind krijgt bij de dokter de diagnose van een nieuwe voedselallergie. De informatie moet het andere huis bereiken voor het volgende wisselmoment.",
       "resolution": "Met Lina: De ouder werkt eenmalig de medische informatie van het kind bij. De andere ouder ziet het direct — geen apart bericht of telefoontje nodig."
     },
     "s2": {
       "label": "Paklijsten",
-      "title": "De regenjas dat altijd in het verkeerde huishouden is",
-      "situation": "Een kind komt zonder regenkleding op school aan omdat niemand zeker wist in welk huishouden het was. Kleine dingen als deze zorgen voor onnodige wrijving.",
-      "resolution": "Met Lina: Gedeelde paklijsten laten zien wat in elk huishouden is. De lijst blijft actueel, zodat de jas het kind volgt."
+      "title": "De regenjas dat altijd in het verkeerde huis is",
+      "situation": "Een kind komt zonder regenkleding op school aan omdat niemand zeker wist in welk huis het was. Kleine dingen als deze zorgen voor onnodige wrijving.",
+      "resolution": "Met Lina: Gedeelde paklijsten laten zien wat in elk huis is. De lijst blijft actueel, zodat de jas het kind volgt."
     },
     "s3": {
       "label": "Onderwerpen",
@@ -626,8 +626,8 @@
     "s4": {
       "label": "Gedeeld album",
       "title": "De eerste fietsrit die u bijna had gemist",
-      "situation": "Een kind leert fietsen in het ene huishouden. De andere ouder hoort er pas dagen later van en ziet het moment nooit.",
-      "resolution": "Met Lina: Foto's gaan naar het gedeelde album. Momenten worden automatisch gedeeld — ongeacht in welk huishouden het kind zich bevindt."
+      "situation": "Een kind leert fietsen in het ene huis. De andere ouder hoort er pas dagen later van en ziet het moment nooit.",
+      "resolution": "Met Lina: Foto's gaan naar het gedeelde album. Momenten worden automatisch gedeeld — ongeacht in welk huis het kind zich bevindt."
     },
     "s5": {
       "label": "Zorgschema",
@@ -638,7 +638,7 @@
     "s6": {
       "label": "Contacten",
       "title": "Het tandartsnummer dat niemand kon vinden",
-      "situation": "Een kind heeft kiespijn in het ene huishouden. De ouder moet de tandarts bellen maar heeft het nummer niet — het was opgeslagen in de telefoon van de andere ouder.",
+      "situation": "Een kind heeft kiespijn in het ene huis. De ouder moet de tandarts bellen maar heeft het nummer niet — het was opgeslagen in de telefoon van de andere ouder.",
       "resolution": "Met Lina: Gedeelde contacten betekenen dat beide ouders de nummers van tandarts, huisarts en school altijd beschikbaar hebben."
     },
     "closing": "Dit zijn geen dramatische problemen. Het zijn de stille, alledaagse momenten waarbij een gedeeld overzicht tijd bespaart, stress vermindert en de focus op het kind houdt."
@@ -647,12 +647,12 @@
     "label": "Alledaagse momenten",
     "title": "Gebouwd voor de momenten die ertoe doen",
     "s1": {
-      "title": "De allergie die het andere huishouden niet kende",
+      "title": "De allergie die het andere huis niet kende",
       "description": "Eén ouder werkt de medische informatie van het kind bij. De andere ziet het direct. Geen apart bericht nodig."
     },
     "s2": {
-      "title": "De regenjas dat altijd in het verkeerde huishouden is",
-      "description": "Gedeelde paklijsten laten zien wat in elk huishouden is. Updates zijn direct zichtbaar, zodat de jas het kind volgt."
+      "title": "De regenjas dat altijd in het verkeerde huis is",
+      "description": "Gedeelde paklijsten laten zien wat in elk huis is. Updates zijn direct zichtbaar, zodat de jas het kind volgt."
     },
     "s3": {
       "title": "De eerste fietsrit die u bijna had gemist",
@@ -708,12 +708,12 @@
   },
   "jsonLd": {
     "app": {
-      "description": "Lina helpt co-ouders de zorg over twee huishoudens te coördineren — gedeelde schema's, berichten en lijsten op één rustige, privéplek."
+      "description": "Lina helpt co-ouders de zorg over twee huizen te coördineren — gedeelde schema's, berichten en lijsten op één rustige, privéplek."
     },
     "indexFaq": [
       {
         "q": "Wat is Lina?",
-        "a": "Lina is een co-ouderschapsapp die ouders helpt de zorg over twee huishoudens te coördineren. Het brengt berichten, schema's, medische informatie, contacten, paklijsten en foto's samen op één gedeelde, privéplek."
+        "a": "Lina is een co-ouderschapsapp die ouders helpt de zorg over twee huizen te coördineren. Het brengt berichten, schema's, medische informatie, contacten, paklijsten en foto's samen op één gedeelde, privéplek."
       },
       {
         "q": "Is Lina gratis?",
@@ -735,7 +735,7 @@
     "faqFaq": [
       {
         "q": "Wat is Lina?",
-        "a": "Lina is een co-ouderschapsapp die praktische details — kindinformatie, berichten, foto's, contacten en paklijsten — samenbrengt op één gedeelde plek die toegankelijk is vanuit beide huishoudens."
+        "a": "Lina is een co-ouderschapsapp die praktische details — kindinformatie, berichten, foto's, contacten en paklijsten — samenbrengt op één gedeelde plek die toegankelijk is vanuit beide huizen."
       },
       {
         "q": "Is Lina gratis?",
@@ -757,7 +757,7 @@
     "csFaq": [
       {
         "q": "Wat is een zorgschema?",
-        "a": "Een zorgschema is een visueel overzicht van hoe de tijd van een kind week voor week wordt verdeeld tussen twee huishoudens."
+        "a": "Een zorgschema is een visueel overzicht van hoe de tijd van een kind week voor week wordt verdeeld tussen twee huizen."
       },
       {
         "q": "Heb ik een account nodig?",
@@ -802,15 +802,15 @@
     ],
     "article1": {
       "headline": "Omgangsregelingen uitgelegd",
-      "description": "Een overzicht van de meest gebruikelijke zorgverdeling voor kinderen met twee huishoudens — week-op-week-af, 3-4-4-3, 2-2-5-5 en andere regelingen. Wat werkt voor verschillende leeftijdsgroepen?"
+      "description": "Een overzicht van de meest gebruikelijke zorgverdeling voor kinderen met twee huizen — week-op-week-af, 3-4-4-3, 2-2-5-5 en andere regelingen. Wat werkt voor verschillende leeftijdsgroepen?"
     },
     "article2": {
       "headline": "Wisseldag — hoe maakt u overgangen soepeler",
       "description": "Praktische tips voor soepelere wisselmomenten — vaste routines, neutrale locaties en wat met het kind mee moet gaan."
     },
     "article3": {
-      "headline": "Wat uw kind in elk huishouden nodig heeft",
-      "description": "Een praktische checklist voor co-ouders — wat moet er in beide huishoudens zijn, wat gaat met het kind mee, en hoe houdt u dat bij?"
+      "headline": "Wat uw kind in elk huis nodig heeft",
+      "description": "Een praktische checklist voor co-ouders — wat moet er in beide huizen zijn, wat gaat met het kind mee, en hoe houdt u dat bij?"
     },
     "article4": {
       "headline": "Co-ouderschap vs. hoofdverblijf — wat is het verschil?",
@@ -842,19 +842,19 @@
   },
   "blogIndex": {
     "pageTitle": "Blog — Tips voor co-ouderschap en gedeelde zorg | Lina",
-    "pageDesc": "Praktische informatie over zorgverdeling, ouderschapsplannen en dagelijkse afstemming voor co-ouders die de zorg over twee huishoudens delen.",
+    "pageDesc": "Praktische informatie over zorgverdeling, ouderschapsplannen en dagelijkse afstemming voor co-ouders die de zorg over twee huizen delen.",
     "label": "Co-ouderschap",
     "title": "Gidsen voor co-ouders",
-    "description": "Praktische informatie over zorgverdeling, ouderschapsplannen en dagelijkse afstemming tussen twee huishoudens.",
+    "description": "Praktische informatie over zorgverdeling, ouderschapsplannen en dagelijkse afstemming tussen twee huizen.",
     "a1label": "Omgangsregeling",
     "a1title": "Omgangsregelingen uitgelegd",
     "a1desc": "Een overzicht van de meest gebruikelijke regelingen — week-op-week-af, 3-4-4-3, 2-2-5-5 en andere. Wat werkt voor verschillende leeftijden?",
     "a2label": "Wisselmoment",
     "a2title": "Wisseldag — hoe maakt u overgangen soepeler",
-    "a2desc": "Praktische tips voor soepelere wisselmomenten tussen huishoudens.",
+    "a2desc": "Praktische tips voor soepelere wisselmomenten tussen huizen.",
     "a3label": "Spullen",
-    "a3title": "Wat uw kind in elk huishouden nodig heeft",
-    "a3desc": "Een praktische checklist — wat moet er in beide huishoudens zijn, en wat gaat met het kind mee?",
+    "a3title": "Wat uw kind in elk huis nodig heeft",
+    "a3desc": "Een praktische checklist — wat moet er in beide huizen zijn, en wat gaat met het kind mee?",
     "a4label": "Verblijfplaats",
     "a4title": "Co-ouderschap vs. hoofdverblijf — wat is het verschil?",
     "a4desc": "Wat het betekent in de praktijk voor het dagelijks leven, besluitvorming en de rechten van het kind.",
@@ -876,15 +876,15 @@
   },
   "blog1": {
     "pageTitle": "Omgangsregelingen uitgelegd — Lina",
-    "pageDesc": "Een overzicht van de meest gebruikelijke zorgverdeling voor kinderen met twee huishoudens — week-op-week-af, 3-4-4-3, 2-2-5-5 en andere regelingen. Wat werkt voor verschillende leeftijdsgroepen?",
+    "pageDesc": "Een overzicht van de meest gebruikelijke zorgverdeling voor kinderen met twee huizen — week-op-week-af, 3-4-4-3, 2-2-5-5 en andere regelingen. Wat werkt voor verschillende leeftijdsgroepen?",
     "label": "Gedeelde zorg",
     "date": "maart 2026",
     "title": "Omgangsregelingen uitgelegd",
     "intro": "Als ouders de zorg voor een kind delen, is de omgangsregeling de eerste praktische stap. Gezinnen kiezen meestal uit een aantal vaste patronen, met elk hun afwegingen rond hoe vaak er gewisseld wordt, hoe stabiel de doordeweekse dagen zijn, en hoelang een kind een van de ouders niet ziet. Dit overzicht loopt de meest gebruikte modellen langs en wat in welke leeftijd vaak werkt.",
     "s1title": "Week-op-week-af (7-7)",
     "s1p1": "Het kind woont een week bij elke ouder, met een vaste wisseldag — doorgaans maandag of vrijdag. Het is een van de meest gebruikte regelingen wanneer ouders de zorg ongeveer gelijk delen.",
-    "s1p2": "Het voordeel is een duidelijke structuur en voorspelbaarheid. Het kind weet altijd naar welk huishouden het gaat. Het nadeel is dat een volledige week weg van één ouder lang kan aanvoelen, zeker voor jongere kinderen.",
-    "s1p3": "Werkt het beste voor: Schoolgaande kinderen die langere periodes weg van één ouder aankunnen. Vereist dat beide huishoudens redelijk dicht bij school en activiteiten liggen. In Nederland is co-ouderschap een veelgekozen regeling na scheiding — en het verplichte ouderschapsplan is de aangewezen plek om de gemaakte afspraken vast te leggen.",
+    "s1p2": "Het voordeel is een duidelijke structuur en voorspelbaarheid. Het kind weet altijd naar welk huis het gaat. Het nadeel is dat een volledige week weg van één ouder lang kan aanvoelen, zeker voor jongere kinderen.",
+    "s1p3": "Werkt het beste voor: Schoolgaande kinderen die langere periodes weg van één ouder aankunnen. Vereist dat beide huizen redelijk dicht bij school en activiteiten liggen. In Nederland is co-ouderschap een veelgekozen regeling na scheiding — en het verplichte ouderschapsplan is de aangewezen plek om de gemaakte afspraken vast te leggen.",
     "s2title": "De 3-4-4-3 regeling",
     "s2p1": "Het kind is 3 dagen bij de ene ouder, 4 bij de andere, dan 4 en 3 in de volgende week. Het patroon herhaalt zich over twee weken en geeft een gelijke 50/50-verdeling.",
     "s2p2": "Deze regeling zorgt voor vaker contact met beide ouders dan week-op-week-af. Het kind is nooit langer dan 4 dagen achter elkaar weg van één ouder. Het nadeel is meer wisselmomenten — wat veeleisend kan zijn als de samenwerking moeizaam verloopt.",
@@ -900,7 +900,7 @@
     "s5title": "Wat werkt voor verschillende leeftijden",
     "s5p1": "De leeftijd van het kind is een belangrijke factor bij het kiezen van een regeling. Jonge kinderen (0–3) hebben vaak kortere periodes en meer wisselingen nodig — wat betekent dat 2-2-5-5 of een maatwerkarrangement beter kan werken dan week-op-week-af.",
     "s5p2": "Peuters (3–6) kunnen doorgaans 3–4 dagen weg van één ouder. Vanaf schoolleeftijd (6+) werkt week-op-week-af voor veel gezinnen goed, omdat kinderen zelfstandiger zijn en langere afwezigheid aankunnen.",
-    "s5p3": "Tieners (12+) moeten inspraak hebben in de regeling. Veel jongeren geven de voorkeur aan langere periodes in elk huishouden in plaats van frequente overgangen, omdat dit meer stabiliteit in hun sociale leven geeft.",
+    "s5p3": "Tieners (12+) moeten inspraak hebben in de regeling. Veel jongeren geven de voorkeur aan langere periodes in elk huis in plaats van frequente overgangen, omdat dit meer stabiliteit in hun sociale leven geeft.",
     "s6title": "Wanneer de regeling herzien moet worden",
     "s6p1": "Een omgangsregeling staat niet vast. De behoeften van een kind veranderen naarmate het ouder wordt, en een regeling die op vierjarige leeftijd goed werkte, past mogelijk niet meer bij een tienjarige.",
     "s6p2": "Het is de moeite waard de regeling minimaal eenmaal per jaar te herzien — of wanneer er belangrijke veranderingen zijn in de gezinssituatie, zoals een nieuwe school, een verhuizing of een nieuw broertje of zusje.",
@@ -915,7 +915,7 @@
     "label": "Wisselmoment",
     "date": "maart 2026",
     "title": "Wisseldag — hoe maakt u overgangen soepeler",
-    "intro": "Voor veel kinderen is de wisseldag het moeilijkste deel van twee huishoudens hebben. Niet omdat er iets mis is, maar omdat de overgang aanpassing vraagt. Routines, omgeving en regels veranderen — en het kind moet elke keer weer wennen. Hier zijn praktische tips om wisselmomenten veiliger en voorspelbaarder te maken.",
+    "intro": "Voor veel kinderen is de wisseldag het moeilijkste deel van twee huizen hebben. Niet omdat er iets mis is, maar omdat de overgang aanpassing vraagt. Routines, omgeving en regels veranderen — en het kind moet elke keer weer wennen. Hier zijn praktische tips om wisselmomenten veiliger en voorspelbaarder te maken.",
     "s1title": "Vaste tijden en plaatsen",
     "s1p1": "Kinderen gaan beter om met wisselmomenten wanneer tijd en plek hetzelfde blijven. Een vaste routine betekent dat het kind zich niet hoeft af te vragen wat er gaat gebeuren.",
     "s1p2": "Gebruikelijke tijden zijn na het kinderdagverblijf of de school — de overgang verloopt natuurlijk, zonder dat het kind een directe overdracht tussen ouders ervaart.",
@@ -923,13 +923,13 @@
     "s2title": "Houd het wisselmoment kort en rustig",
     "s2p1": "Lange wisselmomenten geven het kind de tijd om onrustig te worden. Een korte, vriendelijke uitwisseling is beter dan een lange met uitgebreide gesprekken tussen ouders.",
     "s2p2": "Bespreek geen praktische of gevoelige onderwerpen bij het wisselmoment. Het kind voelt spanning tussen ouders, ook als het gesprek neutraal lijkt.",
-    "s2p3": "Een eenvoudig 'veel plezier' en een glimlach is vaak genoeg. Laat het kind in het nieuwe huishouden settelen zonder de communicatie van de ouders mee te dragen.",
+    "s2p3": "Een eenvoudig 'veel plezier' en een glimlach is vaak genoeg. Laat het kind in het nieuwe huis settelen zonder de communicatie van de ouders mee te dragen.",
     "s3title": "Wat het kind van tevoren moet weten",
     "s3p1": "Kinderen die weten wat ze kunnen verwachten, gaan beter om met overgangen. Vertel het kind van tevoren wat het plan is: wie haalt op, wanneer dat gebeurt en wat daarna volgt.",
     "s3p2": "Vermijd 'we zien wel' of 'misschien.' Kinderen hebben duidelijke antwoorden nodig, ook als ze er niet direct naar vragen.",
     "s3p3": "Voor jongere kinderen kan een visuele kalender met een eigen kleur voor elk huis helpen om het patroon te begrijpen en grip op de week te voelen.",
     "s4title": "Wat met het kind mee moet gaan",
-    "s4p1": "Een van de meest voorkomende frustratiebronnen is iets dat in het verkeerde huishouden ligt. Schooltas, regenkleding, knuffel, medicijnen — alles wat het kind dagelijks nodig heeft, moet bij elk wisselmoment meegaan.",
+    "s4p1": "Een van de meest voorkomende frustratiebronnen is iets dat in het verkeerde huis ligt. Schooltas, regenkleding, knuffel, medicijnen — alles wat het kind dagelijks nodig heeft, moet bij elk wisselmoment meegaan.",
     "s4p2": "Maak een gedeelde paklijst die beide ouders kunnen inzien — een gedeeld document of een coördinatie-app zoals Lina werken allebei. Loop die door vóór elk wisselmoment en pas hem aan naarmate de behoeften veranderen.",
     "s4p3": "Sommige gezinnen lossen dit op door essentiële spullen te verdubbelen — tandenborstel, oplader, gymschoenen. Anderen geven de voorkeur aan één lijst die met het kind meegaat.",
     "s5title": "Wanneer het wisselmoment niet goed gaat",
@@ -939,44 +939,44 @@
     "s6title": "Samenwerking maakt wisselmomenten soepeler",
     "s6p1": "Het kind past zich beter aan als beide ouders op één lijn zitten. Dit betekent niet dat u het over alles eens hoeft te zijn — maar wel dat het kind ervaart dat beide ouders de regeling steunen.",
     "s6p2": "Deel praktische informatie van tevoren — iets ongebruikelijks van de afgelopen dagen, of spullen die in de tas ontbreken.",
-    "s6p3": "Een gedeeld overzicht van spullen, medische informatie en contacten vermindert het aantal vragen bij elk wisselmoment — en zorgt ervoor dat het kind niet meer de boodschapper hoeft te zijn tussen huishoudens.",
-    "ctaTitle": "Houd alles bij in beide huishoudens",
+    "s6p3": "Een gedeeld overzicht van spullen, medische informatie en contacten vermindert het aantal vragen bij elk wisselmoment — en zorgt ervoor dat het kind niet meer de boodschapper hoeft te zijn tussen huizen.",
+    "ctaTitle": "Houd alles bij in beide huizen",
     "ctaDesc": "Lina brengt paklijsten, kindinformatie en contacten samen op één gedeelde plek — zodat beide ouders bij elk wisselmoment hebben wat ze nodig hebben.",
     "ctaCta": "Download Lina"
   },
   "blog3": {
-    "pageTitle": "Wat uw kind in elk huishouden nodig heeft — Lina",
-    "pageDesc": "Een praktische checklist voor co-ouders — wat moet er in beide huishoudens zijn, wat gaat met het kind mee, en hoe houdt u dat bij?",
+    "pageTitle": "Wat uw kind in elk huis nodig heeft — Lina",
+    "pageDesc": "Een praktische checklist voor co-ouders — wat moet er in beide huizen zijn, wat gaat met het kind mee, en hoe houdt u dat bij?",
     "label": "Spullen",
     "date": "maart 2026",
-    "title": "Wat uw kind in elk huishouden nodig heeft",
-    "intro": "Als een kind twee huishoudens heeft, duikt dezelfde vraag keer op keer op: is de tandenborstel hier of daar? Waar is de regenjas? Hebben we genoeg luiers? Een goed doordacht overzicht van wat waar moet zijn, bespaart tijd, vermindert frustratie en geeft het kind een rustiger dagelijks leven.",
-    "s1title": "Basisspullen in beide huishoudens",
-    "s1p1": "Sommige dingen moeten in beide huishoudens aanwezig zijn, zodat het kind niet hoeft na te denken over het inpakken van het essentiële. Het idee is dat het kind in elk huishouden kan aankomen en heeft wat het nodig heeft — zonder een grote tas.",
+    "title": "Wat uw kind in elk huis nodig heeft",
+    "intro": "Als een kind twee huizen heeft, duikt dezelfde vraag keer op keer op: is de tandenborstel hier of daar? Waar is de regenjas? Hebben we genoeg luiers? Een goed doordacht overzicht van wat waar moet zijn, bespaart tijd, vermindert frustratie en geeft het kind een rustiger dagelijks leven.",
+    "s1title": "Basisspullen in beide huizen",
+    "s1p1": "Sommige dingen moeten in beide huizen aanwezig zijn, zodat het kind niet hoeft na te denken over het inpakken van het essentiële. Het idee is dat het kind in elk huis kan aankomen en heeft wat het nodig heeft — zonder een grote tas.",
     "s1p2": "Typische basisspullen: tandenborstel en tandpasta, haarborstel, eigen beddengoed, handdoeken, een paar gymschoenen, voldoende kleding voor het verblijf (inclusief ondergoed en sokken), en een oplader voor telefoon of tablet indien van toepassing.",
     "s1p3": "Voor jongere kinderen: luiers, speen, drinkfles, een favoriet boek of knuffel (als het kind er meerdere heeft) en kinderbeveiliging waar nodig.",
     "s2title": "Spullen die met het kind meegaan",
     "s2p1": "Alles wat maar één keer beschikbaar is — en het kind dagelijks nodig heeft — moet bij elk wisselmoment meegaan. Dit zijn doorgaans de schooltas, lunchbox, specifieke kleding voor activiteiten en medische hulpmiddelen.",
-    "s2p2": "Medicijnen en allergiemateriaal zijn extra belangrijk. Beide ouders moeten weten welke medicijnen het kind gebruikt, de dosering en waar het materiaal is. Idealiter is het in beide huishoudens aanwezig — maar als dat niet zo is, moet het altijd met het kind meegaan.",
-    "s2p3": "De favoriete knuffel of veiligheidsdeken is makkelijk te vergeten — maar kan een groot verschil maken voor het gevoel van veiligheid van het kind, zeker bij het slapengaan in het andere huishouden.",
+    "s2p2": "Medicijnen en allergiemateriaal zijn extra belangrijk. Beide ouders moeten weten welke medicijnen het kind gebruikt, de dosering en waar het materiaal is. Idealiter is het in beide huizen aanwezig — maar als dat niet zo is, moet het altijd met het kind meegaan.",
+    "s2p3": "De favoriete knuffel of veiligheidsdeken is makkelijk te vergeten — maar kan een groot verschil maken voor het gevoel van veiligheid van het kind, zeker bij het slapengaan in het andere huis.",
     "s3title": "Seizoensgebonden spullen",
     "s3p1": "Behoeften veranderen met de seizoenen. Sneeuwpak, wanten en muts in de winter. Zwemkleding en zonnebrand in de zomer. Regenkleding en laarzen in voor- en najaar.",
-    "s3p2": "Niet alles hoeft dubbel aanwezig te zijn — maar het helpt om bij de seizoenswisseling te bekijken wat er in elk huishouden nodig is. Een snelle check in september en maart kan veel ochtenden voorkomen waarop de juiste winterjas ontbreekt.",
-    "s3p3": "Schrijf op wat er in elk huishouden is en update de lijst als spullen verplaatst worden of vervangen.",
+    "s3p2": "Niet alles hoeft dubbel aanwezig te zijn — maar het helpt om bij de seizoenswisseling te bekijken wat er in elk huis nodig is. Een snelle check in september en maart kan veel ochtenden voorkomen waarop de juiste winterjas ontbreekt.",
+    "s3p3": "Schrijf op wat er in elk huis is en update de lijst als spullen verplaatst worden of vervangen.",
     "s4title": "Leeftijdsgebonden lijsten",
     "s4p1": "Behoeften veranderen naarmate het kind opgroeit. Een klein kind heeft luiers en een speen nodig. Een schoolkind heeft een rugzak, gymspullen en misschien een instrument nodig. Een tiener heeft een oplader, sleutels en ov-geld nodig.",
     "s4p2": "Betrek het kind bij het proces als het oud genoeg is. Kinderen van een jaar of zeven, acht kunnen een eigen kleine checklist hebben om vóór elk wisselmoment te gebruiken.",
     "s4p3": "Tieners kunnen dit grotendeels zelf regelen, maar het helpt nog steeds voor ouders om een gedeeld overzicht te hebben — zeker voor medisch materiaal, documenten en dingen die duur zijn om te vervangen.",
     "s5title": "Maak het kind niet de boodschapper",
-    "s5p1": "Een veelvoorkomend patroon is dat het kind degene wordt die informatie onthoudt en overdraagt tussen huishoudens. 'Zeg tegen papa dat…' of 'vergeet niet mee te nemen…' legt verantwoordelijkheid bij het kind die eigenlijk bij de ouders hoort.",
+    "s5p1": "Een veelvoorkomend patroon is dat het kind degene wordt die informatie onthoudt en overdraagt tussen huizen. 'Zeg tegen papa dat…' of 'vergeet niet mee te nemen…' legt verantwoordelijkheid bij het kind die eigenlijk bij de ouders hoort.",
     "s5p2": "Een gedeelde paklijst die beide ouders kunnen zien en bijhouden, neemt deze last van het kind. De ouders controleren de lijst — het kind hoeft niet alles te onthouden.",
     "s5p3": "Hetzelfde geldt voor berichten. Praktische informatie moet rechtstreeks tussen ouders worden gedeeld, niet via het kind.",
     "s6title": "Hoe u het bijhoudt",
-    "s6p1": "Het sleutelwoord is één gedeelde plek waar beide ouders kunnen zien wat er in elk huishouden is. Of het nu een app is, een spreadsheet of een eenvoudige lijst op de koelkast — wat telt is dat beiden toegang hebben.",
+    "s6p1": "Het sleutelwoord is één gedeelde plek waar beide ouders kunnen zien wat er in elk huis is. Of het nu een app is, een spreadsheet of een eenvoudige lijst op de koelkast — wat telt is dat beiden toegang hebben.",
     "s6p2": "Update de lijst regelmatig. Te kleine kleding, kapot materiaal en seizoenswijzigingen moeten worden opgemerkt voordat ze op een drukke ochtend een probleem worden.",
-    "s6p3": "Behandel de lijst als een praktisch hulpmiddel — niet als controle. Het doel is dat het kind heeft wat het nodig heeft, ongeacht in welk huishouden het is.",
-    "ctaTitle": "Gedeelde paklijsten voor beide huishoudens",
-    "ctaDesc": "De gedeelde paklijsten van Lina laten beide ouders zien wat er in elk huishouden is — en in real time bijwerken. Zodat de spullen met het kind meegaan.",
+    "s6p3": "Behandel de lijst als een praktisch hulpmiddel — niet als controle. Het doel is dat het kind heeft wat het nodig heeft, ongeacht in welk huis het is.",
+    "ctaTitle": "Gedeelde paklijsten voor beide huizen",
+    "ctaDesc": "De gedeelde paklijsten van Lina laten beide ouders zien wat er in elk huis is — en in real time bijwerken. Zodat de spullen met het kind meegaan.",
     "ctaCta": "Download Lina"
   },
   "blog4": {
@@ -988,7 +988,7 @@
     "intro": "Als ouders uit elkaar gaan, is een van de eerste vragen waar het kind gaat wonen. Het antwoord gaat niet alleen over het aantal nachten — het heeft invloed op wie wat beslist, waar het kind staat ingeschreven en hoe het dagelijks leven wordt georganiseerd. Hier is een overzicht van wat co-ouderschap en hoofdverblijf in de praktijk betekenen.",
     "s1title": "Wat is co-ouderschap?",
     "s1p1": "Co-ouderschap (gedeeld verblijf) betekent dat het kind gelijkelijk bij beide ouders woont. Beide hebben gelijk gezag over zaken die het dagelijks leven van het kind betreffen — zoals activiteiten, medische afspraken en dagelijkse routines.",
-    "s1p2": "In de praktijk betekent dit doorgaans een verdeling van ongeveer 50/50, bijvoorbeeld week-op-week-af of een 3-4-4-3 patroon. Het kind heeft twee huishoudens, niet één thuis en een bezoekadres.",
+    "s1p2": "In de praktijk betekent dit doorgaans een verdeling van ongeveer 50/50, bijvoorbeeld week-op-week-af of een 3-4-4-3 patroon. Het kind heeft twee huizen, niet één thuis en een bezoekadres.",
     "s1p3": "Co-ouderschap vereist dat ouders goed genoeg samenwerken om doorlopende beslissingen samen te nemen. In Nederland is co-ouderschap een veelgekozen regeling na scheiding — en het ouderschapsplan, dat verplicht is bij scheiding met minderjarige kinderen, biedt de aangewezen plek om de gemaakte afspraken vast te leggen.",
     "s2title": "Wat is hoofdverblijf?",
     "s2p1": "Hoofdverblijf betekent dat het kind één hoofdwoning heeft. De inwonende ouder heeft het dagelijks gezag en het kind staat bij dat adres ingeschreven.",
@@ -999,12 +999,12 @@
     "s3p2": "Bij hoofdverblijf kan de inwonende ouder dagelijkse beslissingen zelfstandig nemen. De inwonende ouder kan in principe binnenlands verhuizen met het kind, maar moet de andere ouder informeren.",
     "s3p3": "Gezamenlijk ouderlijk gezag blijft bestaan ongeacht de verblijfsregeling — tenzij een rechter anders beslist. Ouderlijk gezag omvat belangrijke beslissingen zoals paspoorten, medische behandelingen en geloofsopvoeding.",
     "s4title": "Wat het betekent in de praktijk",
-    "s4p1": "Bij co-ouderschap delen de ouders de dagelijkse taken: kleding, spullen, huiswerk, medische afspraken. Beide huishoudens moeten volledig uitgerust zijn en beide ouders moeten beschikbaar zijn voor het dagelijks leven.",
+    "s4p1": "Bij co-ouderschap delen de ouders de dagelijkse taken: kleding, spullen, huiswerk, medische afspraken. Beide huizen moeten volledig uitgerust zijn en beide ouders moeten beschikbaar zijn voor het dagelijks leven.",
     "s4p2": "Bij hoofdverblijf is het dagelijks leven voor het kind voorspelbaarder — één wijk, één set routines, één schoolroute. Maar het vereist extra inspanning om de omgangsouder betrokken te houden bij het leven van het kind.",
-    "s4p3": "Geen van beide regelingen is objectief beter dan de andere. Wat werkt, hangt af van de leeftijd van het kind, de situatie van de ouders, de afstand tussen huishoudens en de kwaliteit van de samenwerking.",
+    "s4p3": "Geen van beide regelingen is objectief beter dan de andere. Wat werkt, hangt af van de leeftijd van het kind, de situatie van de ouders, de afstand tussen huizen en de kwaliteit van de samenwerking.",
     "s5title": "Wat onderzoek zegt",
     "s5p1": "Onderzoek uit Scandinavië laat zien dat kinderen in co-ouderschap over het algemeen gelijk of beter welbevinden rapporteren in vergelijking met kinderen die voornamelijk bij één ouder wonen — mits het conflictniveau tussen ouders laag is.",
-    "s5p2": "Voor kinderen in situaties met veel conflict is het beeld complexer. Frequente overgangen tussen twee huishoudens kunnen stress verhogen als ouders niet in staat zijn het kind af te schermen van het conflict.",
+    "s5p2": "Voor kinderen in situaties met veel conflict is het beeld complexer. Frequente overgangen tussen twee huizen kunnen stress verhogen als ouders niet in staat zijn het kind af te schermen van het conflict.",
     "s5p3": "Ongeacht de regeling is het de kwaliteit van de samenwerking tussen ouders — en niet het aantal nachten — dat het meest bepalend is voor het welbevinden van het kind.",
     "s6title": "Officiële bronnen",
     "s6p1": "De keuze voor een verblijfsregeling moet worden gemaakt met het belang van het kind voorop. Als u er niet uitkomt, kan familiebemiddeling helpen.",
@@ -1043,9 +1043,9 @@
     "s5p3": "Als directe communicatie te moeilijk is, kan een gestructureerd hulpmiddel met schriftelijke berichten en een permanente berichtengeschiedenis helpen. Berichten die niet kunnen worden bewerkt of verwijderd, geven beide ouders de zekerheid dat wat afgesproken is ook daadwerkelijk gedocumenteerd is.",
     "s6title": "Het kind mag niet de boodschapper zijn",
     "s6p1": "Een van de meest voorkomende fouten is het kind gebruiken als communicatiekanaal. 'Zeg tegen mama dat…' of 'vraag papa of…' plaatst het kind in een onmogelijke positie.",
-    "s6p2": "Het kind hoeft geen berichten door te sturen, afspraken te onderhandelen of verslag te doen vanuit het andere huishouden. Alle praktische communicatie moet rechtstreeks tussen ouders verlopen.",
-    "s6p3": "Als het kind iets deelt vanuit het andere huishouden, luister dan — maar vermijd gerichte vragen. Het kind moet het gevoel hebben vrijuit te kunnen praten zonder een informatiebron te worden.",
-    "ctaTitle": "Gestructureerde communicatie tussen twee huishoudens",
+    "s6p2": "Het kind hoeft geen berichten door te sturen, afspraken te onderhandelen of verslag te doen vanuit het andere huis. Alle praktische communicatie moet rechtstreeks tussen ouders verlopen.",
+    "s6p3": "Als het kind iets deelt vanuit het andere huis, luister dan — maar vermijd gerichte vragen. Het kind moet het gevoel hebben vrijuit te kunnen praten zonder een informatiebron te worden.",
+    "ctaTitle": "Gestructureerde communicatie tussen twee huizen",
     "ctaDesc": "Lina houdt gesprekken georganiseerd in aparte onderwerpen. Berichten kunnen niet worden bewerkt of verwijderd — zodat beide ouders een duidelijk overzicht hebben van wat er is afgesproken.",
     "ctaCta": "Download Lina"
   },

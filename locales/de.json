@@ -1,7 +1,7 @@
 {
   "page": {
     "title": "Lina — Getrennt gemeinsam für euer Kind | Co-Parenting App",
-    "description": "Getrennt gemeinsam für euer Kind — Lina hilft beiden Elternteilen, den Alltag über zwei Haushalte zu koordinieren: Umgangsplan, Nachrichten, Kinderinformationen und gemeinsames Album."
+    "description": "Getrennt gemeinsam für euer Kind — Lina hilft beiden Elternteilen, den Alltag über zwei Zuhause zu koordinieren: Umgangsplan, Nachrichten, Kinderinformationen und gemeinsames Album."
   },
   "nav": {
     "appstore": "App Store",
@@ -12,7 +12,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Getrennt gemeinsam — ein Ort für euer Kind in beiden Haushalten",
+    "title": "Getrennt gemeinsam — ein Ort für euer Kind in beiden Zuhause",
     "description": "Du solltest nicht immer alles im Kopf behalten müssen. Lina gibt beiden Elternteilen denselben Überblick über Gesundheitsinformationen, Kontakte, Pläne und Ausstattung, immer aktuell in beiden Zuhause.",
     "cta": "Im App Store laden",
     "ctaPlay": "Bei Google Play laden",
@@ -33,16 +33,16 @@
     },
     "step2": {
       "title": "Wichtiges hinzufügen",
-      "description": "Medizinische Informationen, Allergien, Kontakte, Ausstattungslisten — einmal hinzufügen, und es ist in beiden Haushalten verfügbar."
+      "description": "Medizinische Informationen, Allergien, Kontakte, Ausstattungslisten — einmal hinzufügen, und es ist in beiden Zuhause verfügbar."
     },
     "step3": {
       "title": "Niemand muss zweimal fragen",
-      "description": "Aktualisierungen sind für beide Elternteile in Echtzeit sichtbar. Kein Wiederholen mehr, kein Rätseln, ob der andere Haushalt die neuesten Informationen hat."
+      "description": "Aktualisierungen sind für beide Elternteile in Echtzeit sichtbar. Kein Wiederholen mehr, kein Rätseln, ob der andere Zuhause die neuesten Informationen hat."
     }
   },
   "features": {
     "label": "Funktionen",
-    "title": "Alle Details, geteilt mit dem anderen Haushalt",
+    "title": "Alle Details, geteilt mit dem anderen Zuhause",
     "threads": {
       "title": "Themenbereiche",
       "description": "Getrennte Konversationen für jedes Thema — Logistik, Schule, Gesundheit. Nichts geht in einem langen Chat unter."
@@ -53,7 +53,7 @@
     },
     "album": {
       "title": "Gemeinsames Album",
-      "description": "Ein privates Album, in dem beide Elternteile Fotos teilen können. Was in einem Haushalt passiert, ist in beiden sichtbar."
+      "description": "Ein privates Album, in dem beide Elternteile Fotos teilen können. Was in einem Zuhause passiert, ist in beiden sichtbar."
     },
     "more": "Ebenfalls enthalten: Kontakte, Ausstattungslisten, Kinderinformationen und Umgangsplan — damit beide Elternteile haben, was sie brauchen, wo auch immer sich das Kind befindet."
   },
@@ -66,7 +66,7 @@
     },
     "equipment": {
       "title": "Ausstattungslisten",
-      "description": "Gummistiefel, Sporttasche, Allergiemittel — gemeinsame Listen erleichtern den Überblick darüber, was das Kind zwischen den Haushalten mitnehmen muss."
+      "description": "Gummistiefel, Sporttasche, Allergiemittel — gemeinsame Listen erleichtern den Überblick darüber, was das Kind zwischen den Zuhause mitnehmen muss."
     },
     "childinfo": {
       "title": "Kinderinformationen",
@@ -74,7 +74,7 @@
     },
     "schedule": {
       "title": "Umgangsplan",
-      "description": "Erstelle eine visuelle Übersicht über die Zeitaufteilung zwischen den Haushalten. Den gesamten Plan auf einen Blick sehen, Woche für Woche."
+      "description": "Erstelle eine visuelle Übersicht über die Zeitaufteilung zwischen den Zuhause. Den gesamten Plan auf einen Blick sehen, Woche für Woche."
     },
     "control": {
       "title": "Auch für schwierige Tage",
@@ -83,12 +83,12 @@
   },
   "problem": {
     "label": "Warum Lina",
-    "title": "Wenn die Betreuung auf zwei Haushalte aufgeteilt ist, gehen Details verloren",
+    "title": "Wenn die Betreuung auf zwei Zuhause aufgeteilt ist, gehen Details verloren",
     "description": "Wenn Pläne, Nachrichten und Fotos in verschiedenen Apps gespeichert sind, fallen wichtige Dinge durch das Raster. Lina bringt alles in eine gemeinsame Struktur — ruhig, klar und verlässlich."
   },
   "forWhom": {
     "forTitle": "Für wen Lina gedacht ist",
-    "forDescription": "Eltern, die die Betreuung über zwei Haushalte teilen und weniger Reibung im alltäglichen Miteinander möchten. Für diejenigen, die Struktur über Lärm und Klarheit über ständige Nachrichten stellen.",
+    "forDescription": "Eltern, die die Betreuung über zwei Zuhause teilen und weniger Reibung im alltäglichen Miteinander möchten. Für diejenigen, die Struktur über Lärm und Klarheit über ständige Nachrichten stellen.",
     "notTitle": "Was Lina nicht ist",
     "notDescription": "Kein soziales Netzwerk, kein allgemeiner Familienchat und nicht für endlose Unterhaltungen gemacht. Lina ist ein fokussiertes Werkzeug, das speziell für die Zusammenarbeit rund um euer Kind entwickelt wurde."
   },
@@ -140,7 +140,7 @@
     "pageDesc": "Lina hat einen kostenlosen Plan und Lina+ für 7,99 €/Monat. Ein Abonnement gilt für beide Elternteile. Keine Werbung, keine Datenweitergabe.",
     "label": "Preise",
     "title": "Ein Abonnement. Beide Elternteile.",
-    "description": "Lina+ schaltet alle Funktionen mit einem einzigen Abonnement frei — für beide Haushalte. Beginne mit einer kostenlosen Testphase.",
+    "description": "Lina+ schaltet alle Funktionen mit einem einzigen Abonnement frei — für beide Zuhause. Beginne mit einer kostenlosen Testphase.",
     "free": {
       "name": "Kostenlos",
       "price": "0 €",
@@ -225,7 +225,7 @@
     "statsSwitches": "Übergaben gesamt",
     "days": "Tage",
     "of": "von",
-    "subhead": "Wie Zeit zwischen den Haushalten aufgeteilt wird — Woche für Woche.",
+    "subhead": "Wie Zeit zwischen den Zuhause aufgeteilt wird — Woche für Woche.",
     "intro": "Klick auf die Tage, um sie einem Elternteil zuzuweisen. Die Aufteilung aktualisiert sich automatisch, und du kannst den Plan als PDF exportieren.",
     "howTitle": "So verwendest du den Plan",
     "step1": "Namen beider Elternteile eingeben",
@@ -245,13 +245,13 @@
     "hero": {
       "label": "Für Fachkräfte",
       "title": "Ein Werkzeug, das Sie Eltern mit geteilter Betreuung empfehlen können",
-      "description": "Lina hilft Eltern, die praktischen Details des Alltags bei geteilter Elternschaft übersichtlich und zugänglich zu halten — in beiden Haushalten. Diese Seite richtet sich an Fachleute.",
+      "description": "Lina hilft Eltern, die praktischen Details des Alltags bei geteilter Elternschaft übersichtlich und zugänglich zu halten — in beiden Zuhause. Diese Seite richtet sich an Fachleute.",
       "cta": "Kontakt aufnehmen"
     },
     "about": {
       "label": "Über die App",
-      "title": "Ein gemeinsamer Ort für das Kind — in beiden Haushalten",
-      "description": "Vielen Eltern mit geteilter Betreuung fehlt eine gemeinsame Struktur für den Alltag. Informationen verteilen sich auf Nachrichten, E-Mails und mündliche Absprachen, und ein Elternteil übernimmt am Ende die gesamte Koordination. Lina bringt die praktischen Details — medizinische Informationen, Kontakte, Ausstattungslisten, Fotos und Nachrichten — an einen gemeinsamen Ort, der in beiden Haushalten zugänglich ist.",
+      "title": "Ein gemeinsamer Ort für das Kind — in beiden Zuhause",
+      "description": "Vielen Eltern mit geteilter Betreuung fehlt eine gemeinsame Struktur für den Alltag. Informationen verteilen sich auf Nachrichten, E-Mails und mündliche Absprachen, und ein Elternteil übernimmt am Ende die gesamte Koordination. Lina bringt die praktischen Details — medizinische Informationen, Kontakte, Ausstattungslisten, Fotos und Nachrichten — an einen gemeinsamen Ort, der in beiden Zuhause zugänglich ist.",
       "download": "Herunterladen:"
     },
     "when": {
@@ -261,7 +261,7 @@
         "item1": "eine grundsätzlich funktionierende Co-Parenting-Beziehung haben, aber Schwierigkeiten mit der praktischen Koordination",
         "item2": "mehr Struktur und Planbarkeit in ihrem Alltag möchten",
         "item3": "einen gemeinsamen Kommunikationskanal benötigen, der die Zusammenarbeit fokussiert hält",
-        "item4": "sicherstellen möchten, dass wichtige Informationen über das Kind in beiden Haushalten verfügbar sind"
+        "item4": "sicherstellen möchten, dass wichtige Informationen über das Kind in beiden Zuhause verfügbar sind"
       },
       "notFits": {
         "title": "Lina ist nicht geeignet, wenn",
@@ -304,15 +304,15 @@
       },
       "album": {
         "title": "Gemeinsames Album",
-        "description": "Beide Elternteile können Fotos aus dem Alltag teilen. Das Kind ist in beiden Haushalten sichtbar."
+        "description": "Beide Elternteile können Fotos aus dem Alltag teilen. Das Kind ist in beiden Zuhause sichtbar."
       },
       "info": {
         "title": "Kinderinformationen",
-        "description": "Medizinische Informationen, Allergien und wichtige Details werden einmal eingegeben und stehen beiden Elternteilen zur Verfügung — unabhängig davon, in welchem Haushalt sich das Kind befindet."
+        "description": "Medizinische Informationen, Allergien und wichtige Details werden einmal eingegeben und stehen beiden Elternteilen zur Verfügung — unabhängig davon, in welchem Zuhause sich das Kind befindet."
       },
       "equipment": {
         "title": "Ausstattungslisten",
-        "description": "Ein klarer Überblick darüber, was das Kind in jedem Haushalt benötigt, reduziert Rückfragen und Missverständnisse rund um praktische Details."
+        "description": "Ein klarer Überblick darüber, was das Kind in jedem Zuhause benötigt, reduziert Rückfragen und Missverständnisse rund um praktische Details."
       },
       "schedule": {
         "title": "Umgangsplan",
@@ -383,11 +383,11 @@
     "pageDesc": "Was gehört in eine Betreuungsvereinbarung? Überblick über Inhalte, Beispiel zum Anpassen und Links zu offiziellen Stellen in Deutschland.",
     "label": "Elternvereinbarung",
     "heroTitle": "Was sollte eine Elternvereinbarung umfassen?",
-    "heroDesc": "Eine Elternvereinbarung hilft Eltern, für das Kind Planungssicherheit zu schaffen, wenn die Betreuung auf zwei Haushalte aufgeteilt ist. Hier findest du einen Überblick darüber, was die Vereinbarung abdecken sollte, ein Beispiel und Links zu offiziellen Ressourcen.",
+    "heroDesc": "Eine Elternvereinbarung hilft Eltern, für das Kind Planungssicherheit zu schaffen, wenn die Betreuung auf zwei Zuhause aufgeteilt ist. Hier findest du einen Überblick darüber, was die Vereinbarung abdecken sollte, ein Beispiel und Links zu offiziellen Ressourcen.",
     "heroCta": "Vereinbarung erstellen",
     "aboutLabel": "Die Grundlage",
     "aboutTitle": "Eine Vereinbarung, die mit dem Kind wächst",
-    "aboutDesc": "Eine Elternvereinbarung ist eine freiwillige, schriftliche Absprache zwischen Eltern, in der beschrieben wird, wie die Betreuung des Kindes auf zwei Haushalte aufgeteilt ist. Sie ist nicht in gleicher Weise rechtsverbindlich wie ein Gerichtsbeschluss, gibt der Familie aber einen gemeinsamen Rahmen, an dem sie sich orientieren kann. Eine gute Vereinbarung spiegelt den Alltag des Kindes wider — und sollte angepasst werden, wenn das Kind älter wird.",
+    "aboutDesc": "Eine Elternvereinbarung ist eine freiwillige, schriftliche Absprache zwischen Eltern, in der beschrieben wird, wie die Betreuung des Kindes auf zwei Zuhause aufgeteilt ist. Sie ist nicht in gleicher Weise rechtsverbindlich wie ein Gerichtsbeschluss, gibt der Familie aber einen gemeinsamen Rahmen, an dem sie sich orientieren kann. Eine gute Vereinbarung spiegelt den Alltag des Kindes wider — und sollte angepasst werden, wenn das Kind älter wird.",
     "point1Title": "Nicht rechtsverbindlich wie ein Gerichtsbeschluss",
     "point1Desc": "Die Vereinbarung ist privat und beruht auf gegenseitigem Einvernehmen der Eltern. Wenn ihr euch nicht einigen könnt, kann das Jugendamt oder eine Familienberatungsstelle helfen.",
     "point2Title": "Das Wohl des Kindes im Mittelpunkt",
@@ -481,7 +481,7 @@
     "tmplDisclaimer": "Dies ist ein Beispiel. Passt den Inhalt an eure eigene Situation an.",
     "promoLabel": "Die Lina-App",
     "promoTitle": "Nach der Vereinbarung — der Alltag",
-    "promoDesc": "Sobald die Elternvereinbarung steht, beginnt der Alltag. Lina hilft Eltern bei allem, was folgt: Nachrichten, Kinderinformationen, Fotos und Ausstattungslisten — alles an einem gemeinsamen Ort in zwei Haushalten.",
+    "promoDesc": "Sobald die Elternvereinbarung steht, beginnt der Alltag. Lina hilft Eltern bei allem, was folgt: Nachrichten, Kinderinformationen, Fotos und Ausstattungslisten — alles an einem gemeinsamen Ort in zwei Zuhause.",
     "promoCta": "Lina herunterladen",
     "csPromoLabel": "Umgangsplan",
     "csPromoTitle": "Den Plan Woche für Woche gestalten",
@@ -496,9 +496,9 @@
     "heroDesc": "Finde Antworten auf die häufigsten Fragen zu Lina, dem Umgangsplan und der Betreuungsvereinbarung.",
     "cat1Title": "Über Lina",
     "cat1q1": "Was ist Lina?",
-    "cat1a1": "Lina bringt die praktische Seite der geteilten Elternschaft in einer App zusammen — Nachrichten, Kinderinformationen, Fotos, Kontakte, Ausstattungslisten und einen Umgangsplan — zugänglich für beide Haushalte.",
+    "cat1a1": "Lina bringt die praktische Seite der geteilten Elternschaft in einer App zusammen — Nachrichten, Kinderinformationen, Fotos, Kontakte, Ausstattungslisten und einen Umgangsplan — zugänglich für beide Zuhause.",
     "cat1q2": "Für wen ist Lina gedacht?",
-    "cat1a2": "Lina ist für Eltern gemacht, die die Betreuung eines Kindes zwischen zwei Haushalten teilen. Die App funktioniert am besten, wenn die grundlegende Co-Parenting-Beziehung funktioniert, aber mehr Struktur und Planbarkeit benötigt wird.",
+    "cat1a2": "Lina ist für Eltern gemacht, die die Betreuung eines Kindes zwischen zwei Zuhause teilen. Die App funktioniert am besten, wenn die grundlegende Co-Parenting-Beziehung funktioniert, aber mehr Struktur und Planbarkeit benötigt wird.",
     "cat1q3": "Ist Lina kostenlos?",
     "cat1a3": "Ja, Lina kann kostenlos heruntergeladen und genutzt werden. Es ist keine Zahlung erforderlich, um ein Konto zu erstellen oder das andere Elternteil einzuladen.",
     "cat1q4": "Welche Geräte unterstützt Lina?",
@@ -551,21 +551,21 @@
     "pageTitle": "Über uns — Die Co-Parenting App für zwei Zuhause",
     "pageDesc": "Lina wurde für Eltern mit geteilter Betreuung entwickelt, die ein ruhiges, strukturiertes Werkzeug für die Alltagskoordination möchten. Gestaltet und entwickelt in Norwegen.",
     "heading": "Über Lina",
-    "lead": "Lina ist eine Co-Parenting-App für Eltern, die die Betreuung eines Kindes auf zwei Haushalte teilen. Die gleiche Übersicht, die gleichen Informationen — unabhängig davon, in welchem Haushalt sich das Kind befindet.",
+    "lead": "Lina ist eine Co-Parenting-App für Eltern, die die Betreuung eines Kindes auf zwei Zuhause teilen. Die gleiche Übersicht, die gleichen Informationen — unabhängig davon, in welchem Zuhause sich das Kind befindet.",
     "whyTitle": "Warum Lina entstanden ist",
     "whyText1": "Lina wurde entwickelt, weil es keine Co-Parenting-App gab, die sich ruhig und fokussiert anfühlte. Die meisten Tools waren rund um Konflikt oder rechtliche Prozesse aufgebaut. Lina ist etwas anderes — ein ruhiger, strukturierter Ort für die Alltagskoordination zwischen zwei Elternteilen.",
     "whyText2": "Das Ziel ist, die mentale Belastung zu reduzieren, die mit geteilter Betreuung einhergeht. Wenn beide Elternteile Zugang zu denselben Plänen, Listen und Aktualisierungen haben, muss niemand alles alleine tragen.",
     "focusTitle": "Worauf Lina sich konzentriert",
-    "focusText1": "Lina ist um strukturierte Kommunikation und praktische Werkzeuge herum aufgebaut. Themenbereiche halten Konversationen organisiert. Gemeinsame Listen, Kontakte und Informationen über das Kind sind immer verfügbar — in beiden Haushalten einsehbar.",
+    "focusText1": "Lina ist um strukturierte Kommunikation und praktische Werkzeuge herum aufgebaut. Themenbereiche halten Konversationen organisiert. Gemeinsame Listen, Kontakte und Informationen über das Kind sind immer verfügbar — in beiden Zuhause einsehbar.",
     "focusText2": "Es gibt keine Algorithmen, keine Werbung und keine sozialen Funktionen. Lina ist so gestaltet, dass es genutzt wird, wenn man es braucht, und aus dem Weg geht, wenn nicht.",
     "origin": "Gestaltet und entwickelt in Norwegen."
   },
   "research": {
     "pageTitle": "Forschung zu getrennten Eltern und dem Wohlergehen von Kindern — Lina",
-    "pageDesc": "Eine wachsende Sammlung peer-reviewter Forschung dazu, was Kindern hilft, wenn Eltern die Betreuung auf zwei Haushalte aufteilen — zusammengefasst in klarer Sprache.",
+    "pageDesc": "Eine wachsende Sammlung peer-reviewter Forschung dazu, was Kindern hilft, wenn Eltern die Betreuung auf zwei Zuhause aufteilen — zusammengefasst in klarer Sprache.",
     "label": "Forschung",
     "heading": "Forschung zu getrennten Eltern und dem Wohlergehen von Kindern",
-    "lead": "Eine wachsende Sammlung peer-reviewter Studien dazu, was Kindern hilft, wenn Eltern die Betreuung auf zwei Haushalte aufteilen. Jeder Beitrag ist in klarer Sprache zusammengefasst und mit einem Link zur Originalveröffentlichung versehen, die immer die maßgebliche Quelle bleibt.",
+    "lead": "Eine wachsende Sammlung peer-reviewter Studien dazu, was Kindern hilft, wenn Eltern die Betreuung auf zwei Zuhause aufteilen. Jeder Beitrag ist in klarer Sprache zusammengefasst und mit einem Link zur Originalveröffentlichung versehen, die immer die maßgebliche Quelle bleibt.",
     "findings": {
       "title": "Was die Forschung immer wieder findet",
       "p1": "In den hier zusammengefassten Studien zeigt sich kein einzelnes Betreuungsmodell als allgemein besser für Kinder als ein anderes. Die Ergebnisse hängen von vielen Faktoren ab, und das Modell selbst ist nur einer davon.",
@@ -601,21 +601,21 @@
   },
   "stories": {
     "pageTitle": "Wie Eltern Lina nutzen — Geschichten aus zwei Zuhause",
-    "pageDesc": "Kleine, alltägliche Situationen, in denen Lina den Unterschied macht. Erfahre, wie Eltern die App nutzen, um Informationen, Fotos und Ausstattungslisten über zwei Haushalte hinweg zu teilen.",
+    "pageDesc": "Kleine, alltägliche Situationen, in denen Lina den Unterschied macht. Erfahre, wie Eltern die App nutzen, um Informationen, Fotos und Ausstattungslisten über zwei Zuhause hinweg zu teilen.",
     "label": "Alltagssituationen",
     "title": "Wie Eltern Lina nutzen",
     "description": "Kleine, alltägliche Momente, in denen ein gemeinsamer Ort den Unterschied macht. Das sind die Situationen, für die Lina entwickelt wurde.",
     "s1": {
       "label": "Kinderinformationen",
-      "title": "Die Allergie, von der der andere Haushalt nichts wusste",
-      "situation": "Ein Kind erhält beim Arzt die Diagnose einer neuen Lebensmittelallergie. Die Information muss den anderen Haushalt vor der nächsten Übergabe erreichen.",
+      "title": "Die Allergie, von der der andere Zuhause nichts wusste",
+      "situation": "Ein Kind erhält beim Arzt die Diagnose einer neuen Lebensmittelallergie. Die Information muss den anderen Zuhause vor der nächsten Übergabe erreichen.",
       "resolution": "Mit Lina: Das Elternteil aktualisiert einmal die medizinischen Informationen des Kindes. Das andere sieht es sofort — kein separates Schreiben oder Anruf nötig."
     },
     "s2": {
       "label": "Ausstattungslisten",
-      "title": "Die Regenjacke, die immer im falschen Haushalt ist",
-      "situation": "Ein Kind kommt ohne Regenkleidung in der Schule an, weil niemand wusste, in welchem Haushalt sie war. Solche Kleinigkeiten erzeugen unnötige Reibung.",
-      "resolution": "Mit Lina: Gemeinsame Ausstattungslisten zeigen, was in welchem Haushalt ist. Die Liste bleibt aktuell, so folgt die Jacke dem Kind."
+      "title": "Die Regenjacke, die immer im falschen Zuhause ist",
+      "situation": "Ein Kind kommt ohne Regenkleidung in der Schule an, weil niemand wusste, in welchem Zuhause sie war. Solche Kleinigkeiten erzeugen unnötige Reibung.",
+      "resolution": "Mit Lina: Gemeinsame Ausstattungslisten zeigen, was in welchem Zuhause ist. Die Liste bleibt aktuell, so folgt die Jacke dem Kind."
     },
     "s3": {
       "label": "Themenbereiche",
@@ -626,8 +626,8 @@
     "s4": {
       "label": "Gemeinsames Album",
       "title": "Die erste Fahrradfahrt, die du fast verpasst hättest",
-      "situation": "Ein Kind lernt in einem Haushalt Fahrrad fahren. Das andere Elternteil hört erst Tage später davon und sieht den Moment nie.",
-      "resolution": "Mit Lina: Fotos kommen ins gemeinsame Album. Momente werden automatisch geteilt — unabhängig davon, in welchem Haushalt sich das Kind befindet."
+      "situation": "Ein Kind lernt in einem Zuhause Fahrrad fahren. Das andere Elternteil hört erst Tage später davon und sieht den Moment nie.",
+      "resolution": "Mit Lina: Fotos kommen ins gemeinsame Album. Momente werden automatisch geteilt — unabhängig davon, in welchem Zuhause sich das Kind befindet."
     },
     "s5": {
       "label": "Umgangsplan",
@@ -638,7 +638,7 @@
     "s6": {
       "label": "Kontakte",
       "title": "Die Zahnarzt-Nummer, die niemand finden konnte",
-      "situation": "Ein Kind hat in einem Haushalt Zahnschmerzen. Das Elternteil muss den Zahnarzt anrufen, hat die Nummer aber nicht — sie war im Telefon des anderen Elternteils gespeichert.",
+      "situation": "Ein Kind hat in einem Zuhause Zahnschmerzen. Das Elternteil muss den Zahnarzt anrufen, hat die Nummer aber nicht — sie war im Telefon des anderen Elternteils gespeichert.",
       "resolution": "Mit Lina: Gemeinsame Kontakte bedeuten, dass beide Elternteile die Nummern von Zahnarzt, Arzt und Schule jederzeit verfügbar haben."
     },
     "closing": "Das sind keine dramatischen Probleme. Es sind die stillen, alltäglichen Momente, in denen eine gemeinsame Übersicht Zeit spart, Stress reduziert und den Fokus auf das Kind richtet."
@@ -647,12 +647,12 @@
     "label": "Alltagsmomente",
     "title": "Für die Momente, die zählen",
     "s1": {
-      "title": "Die Allergie, von der der andere Haushalt nichts wusste",
+      "title": "Die Allergie, von der der andere Zuhause nichts wusste",
       "description": "Ein Elternteil aktualisiert die medizinischen Informationen des Kindes. Das andere sieht es sofort. Kein separates Schreiben nötig."
     },
     "s2": {
-      "title": "Die Regenjacke, die immer im falschen Haushalt ist",
-      "description": "Gemeinsame Ausstattungslisten zeigen, was in welchem Haushalt ist. Aktualisierungen sind sofort sichtbar, so folgt die Jacke dem Kind."
+      "title": "Die Regenjacke, die immer im falschen Zuhause ist",
+      "description": "Gemeinsame Ausstattungslisten zeigen, was in welchem Zuhause ist. Aktualisierungen sind sofort sichtbar, so folgt die Jacke dem Kind."
     },
     "s3": {
       "title": "Die erste Fahrradfahrt, die du fast verpasst hättest",
@@ -708,12 +708,12 @@
   },
   "jsonLd": {
     "app": {
-      "description": "Lina hilft Eltern mit geteilter Betreuung, die Versorgung über zwei Haushalte zu koordinieren — gemeinsame Pläne, Nachrichten und Listen an einem ruhigen, privaten Ort."
+      "description": "Lina hilft Eltern mit geteilter Betreuung, die Versorgung über zwei Zuhause zu koordinieren — gemeinsame Pläne, Nachrichten und Listen an einem ruhigen, privaten Ort."
     },
     "indexFaq": [
       {
         "q": "Was ist Lina?",
-        "a": "Lina ist eine Co-Parenting-App, die Eltern hilft, die Betreuung über zwei Haushalte zu koordinieren. Sie bringt Nachrichten, Pläne, medizinische Informationen, Kontakte, Ausstattungslisten und Fotos an einem gemeinsamen, privaten Ort zusammen."
+        "a": "Lina ist eine Co-Parenting-App, die Eltern hilft, die Betreuung über zwei Zuhause zu koordinieren. Sie bringt Nachrichten, Pläne, medizinische Informationen, Kontakte, Ausstattungslisten und Fotos an einem gemeinsamen, privaten Ort zusammen."
       },
       {
         "q": "Ist Lina kostenlos?",
@@ -735,7 +735,7 @@
     "faqFaq": [
       {
         "q": "Was ist Lina?",
-        "a": "Lina ist eine Co-Parenting-App, die praktische Details — Kinderinformationen, Nachrichten, Fotos, Kontakte und Ausstattungslisten — an einem gemeinsamen Ort zusammenbringt, der von beiden Haushalten aus zugänglich ist."
+        "a": "Lina ist eine Co-Parenting-App, die praktische Details — Kinderinformationen, Nachrichten, Fotos, Kontakte und Ausstattungslisten — an einem gemeinsamen Ort zusammenbringt, der von beiden Zuhause aus zugänglich ist."
       },
       {
         "q": "Ist Lina kostenlos?",
@@ -757,7 +757,7 @@
     "csFaq": [
       {
         "q": "Was ist ein Umgangsplan?",
-        "a": "Ein Umgangsplan ist eine visuelle Übersicht darüber, wie die Zeit eines Kindes Woche für Woche zwischen zwei Haushalten aufgeteilt wird."
+        "a": "Ein Umgangsplan ist eine visuelle Übersicht darüber, wie die Zeit eines Kindes Woche für Woche zwischen zwei Zuhause aufgeteilt wird."
       },
       {
         "q": "Brauche ich ein Konto?",
@@ -802,15 +802,15 @@
     ],
     "article1": {
       "headline": "Umgangsregelungen im Überblick",
-      "description": "Die häufigsten Betreuungsmodelle für Kinder mit zwei Haushalten — wöchentlicher Wechsel, 3-4-4-3, 2-2-5-5 und andere Modelle. Was funktioniert für welche Altersgruppe?"
+      "description": "Die häufigsten Betreuungsmodelle für Kinder mit zwei Zuhause — wöchentlicher Wechsel, 3-4-4-3, 2-2-5-5 und andere Modelle. Was funktioniert für welche Altersgruppe?"
     },
     "article2": {
       "headline": "Übergabetag — wie Übergaben leichter werden",
-      "description": "Praktische Tipps für reibungslosere Übergaben zwischen den Haushalten — feste Routinen, neutrale Orte und was das Kind mitnehmen sollte."
+      "description": "Praktische Tipps für reibungslosere Übergaben zwischen den Zuhause — feste Routinen, neutrale Orte und was das Kind mitnehmen sollte."
     },
     "article3": {
-      "headline": "Was dein Kind in jedem Haushalt braucht",
-      "description": "Eine praktische Checkliste für Co-Eltern — was in beiden Haushalten vorhanden sein sollte, was das Kind mitnehmen sollte und wie man den Überblick behält."
+      "headline": "Was dein Kind in jedem Zuhause braucht",
+      "description": "Eine praktische Checkliste für Co-Eltern — was in beiden Zuhause vorhanden sein sollte, was das Kind mitnehmen sollte und wie man den Überblick behält."
     },
     "article4": {
       "headline": "Wechselmodell vs. Residenzmodell — was ist der Unterschied?",
@@ -842,19 +842,19 @@
   },
   "blogIndex": {
     "pageTitle": "Blog — Tipps zum Co-Parenting und Wechselmodell | Lina",
-    "pageDesc": "Praktische Informationen zu Betreuungsmodellen, Vereinbarungen und der Alltagskoordination für Eltern mit geteilter Betreuung über zwei Haushalte.",
+    "pageDesc": "Praktische Informationen zu Betreuungsmodellen, Vereinbarungen und der Alltagskoordination für Eltern mit geteilter Betreuung über zwei Zuhause.",
     "label": "Co-Parenting",
     "title": "Ratgeber für Co-Eltern",
-    "description": "Praktische Informationen zu Betreuungsmodellen, Vereinbarungen und der Alltagskoordination über zwei Haushalte.",
+    "description": "Praktische Informationen zu Betreuungsmodellen, Vereinbarungen und der Alltagskoordination über zwei Zuhause.",
     "a1label": "Betreuungsmodell",
     "a1title": "Umgangsregelungen im Überblick",
     "a1desc": "Die häufigsten Modelle — wöchentlicher Wechsel, 3-4-4-3, 2-2-5-5 und andere. Was funktioniert für welche Altersgruppe?",
     "a2label": "Übergabe",
     "a2title": "Übergabetag — wie Übergaben leichter werden",
-    "a2desc": "Praktische Tipps für reibungslosere Übergaben zwischen den Haushalten.",
+    "a2desc": "Praktische Tipps für reibungslosere Übergaben zwischen den Zuhause.",
     "a3label": "Ausstattung",
-    "a3title": "Was dein Kind in jedem Haushalt braucht",
-    "a3desc": "Eine praktische Checkliste — was in beiden Haushalten vorhanden sein sollte und was das Kind mitnehmen sollte.",
+    "a3title": "Was dein Kind in jedem Zuhause braucht",
+    "a3desc": "Eine praktische Checkliste — was in beiden Zuhause vorhanden sein sollte und was das Kind mitnehmen sollte.",
     "a4label": "Wohnsitz",
     "a4title": "Wechselmodell vs. Residenzmodell — was ist der Unterschied?",
     "a4desc": "Was es im Alltag, bei Entscheidungen und für die Rechte des Kindes bedeutet.",
@@ -876,15 +876,15 @@
   },
   "blog1": {
     "pageTitle": "Umgangsregelungen im Überblick — Lina",
-    "pageDesc": "Die häufigsten Betreuungsmodelle für Kinder mit zwei Haushalten — wöchentlicher Wechsel, 3-4-4-3, 2-2-5-5 und andere Modelle. Was funktioniert für welche Altersgruppe?",
+    "pageDesc": "Die häufigsten Betreuungsmodelle für Kinder mit zwei Zuhause — wöchentlicher Wechsel, 3-4-4-3, 2-2-5-5 und andere Modelle. Was funktioniert für welche Altersgruppe?",
     "label": "Geteilte Betreuung",
     "date": "März 2026",
     "title": "Umgangsregelungen im Überblick",
     "intro": "Wenn Eltern die Betreuung eines Kindes teilen, ist das Betreuungsmodell das Erste, was geregelt werden muss. Familien wählen meist zwischen einigen etablierten Mustern, die jeweils Abwägungen zwischen Wechselhäufigkeit, einer stabilen Wochenstruktur und der Zeit, die ein Kind ohne einen Elternteil verbringt, mit sich bringen. Dieser Überblick geht die häufigsten Modelle durch und was in welchem Alter oft passt.",
     "s1title": "Wöchentlicher Wechsel (7-7)",
     "s1p1": "Das Kind lebt jeweils eine Woche bei einem Elternteil und wechselt an einem festen Tag — meist Montag oder Freitag. Es ist eines der am weitesten verbreiteten Modelle, wenn Eltern die Betreuung etwa gleichmäßig teilen.",
-    "s1p2": "Der Vorteil ist eine einfache Struktur und Planungssicherheit. Das Kind weiß immer, zu welchem Haushalt es als Nächstes geht. Der Nachteil ist, dass eine volle Woche für jüngere Kinder lang sein kann — ohne den anderen Elternteil zu sehen.",
-    "s1p3": "Am besten geeignet für: Schulkinder, die längere Phasen bei einem Haushalt gut bewältigen können. Setzt voraus, dass beide Haushalte in vertretbarer Nähe zur Schule und zu Freizeitaktivitäten liegen.",
+    "s1p2": "Der Vorteil ist eine einfache Struktur und Planungssicherheit. Das Kind weiß immer, zu welchem Zuhause es als Nächstes geht. Der Nachteil ist, dass eine volle Woche für jüngere Kinder lang sein kann — ohne den anderen Elternteil zu sehen.",
+    "s1p3": "Am besten geeignet für: Schulkinder, die längere Phasen bei einem Zuhause gut bewältigen können. Setzt voraus, dass beide Zuhause in vertretbarer Nähe zur Schule und zu Freizeitaktivitäten liegen.",
     "s2title": "Das 3-4-4-3-Modell",
     "s2p1": "Das Kind ist 3 Tage bei einem Elternteil, 4 Tage beim anderen, dann in der nächsten Woche 4 und 3. Das Muster wiederholt sich über zwei Wochen und ergibt eine gleichmäßige 50/50-Aufteilung.",
     "s2p2": "Dieses Modell ermöglicht häufigere Kontakte mit beiden Elternteilen als der wöchentliche Wechsel. Das Kind ist nie länger als 4 Tage am Stück von einem Elternteil getrennt. Der Nachteil sind mehr Übergaben — was bei schwieriger Kooperation belastend sein kann.",
@@ -896,11 +896,11 @@
     "s4title": "Jedes zweite Wochenende plus ein Wochentag",
     "s4p1": "Das Kind lebt hauptsächlich bei einem Elternteil und verbringt jedes zweite Wochenende (meist Freitag bis Sonntag) sowie einen festen Wochentag beim anderen. Die Aufteilung beträgt typischerweise 70/30 oder 60/40.",
     "s4p2": "Dieses Modell passt zu Situationen, in denen das Kind einen Hauptwohnsitz hat — zum Beispiel weil das andere Elternteil weit entfernt wohnt oder das alltägliche Leben des Kindes eng mit einem Stadtviertel oder einer Schule verbunden ist.",
-    "s4p3": "Am besten geeignet für: Situationen, in denen eine gleichmäßige Aufteilung praktisch nicht umsetzbar ist. Kann für Kinder jeden Alters gut funktionieren, solange das nicht im Haushalt lebende Elternteil während der Woche sinnvollen Kontakt hat.",
+    "s4p3": "Am besten geeignet für: Situationen, in denen eine gleichmäßige Aufteilung praktisch nicht umsetzbar ist. Kann für Kinder jeden Alters gut funktionieren, solange das nicht im Zuhause lebende Elternteil während der Woche sinnvollen Kontakt hat.",
     "s5title": "Was für verschiedene Altersgruppen funktioniert",
     "s5p1": "Das Alter des Kindes ist ein wichtiger Faktor bei der Wahl des Modells. Kleine Kinder (0–3) brauchen oft kürzere Phasen und häufigere Übergaben — was bedeuten kann, dass ein 2-2-5-5- oder ein maßgeschneidertes Modell besser geeignet ist als der wöchentliche Wechsel.",
     "s5p2": "Kinder im Vorschulalter (3–6) können in der Regel 3–4 Tage bei einem Elternteil gut auskommen. Ab dem Schulalter (ab 6) funktioniert der wöchentliche Wechsel für viele Familien gut, da Kinder mehr Selbstständigkeit entwickelt haben und längere Phasen besser bewältigen.",
-    "s5p3": "Jugendliche (ab 12) sollten bei der Regelung ein Mitspracherecht haben. Viele Jugendliche bevorzugen längere Phasen in jedem Haushalt statt häufiger Übergaben, da ihnen das mehr Stabilität im sozialen Leben gibt.",
+    "s5p3": "Jugendliche (ab 12) sollten bei der Regelung ein Mitspracherecht haben. Viele Jugendliche bevorzugen längere Phasen in jedem Zuhause statt häufiger Übergaben, da ihnen das mehr Stabilität im sozialen Leben gibt.",
     "s6title": "Wann sollte das Modell überprüft werden",
     "s6p1": "Eine Betreuungsregelung ist nicht in Stein gemeißelt. Die Bedürfnisse eines Kindes verändern sich mit dem Alter, und ein Modell, das mit vier Jahren gut funktioniert hat, passt mit zehn Jahren möglicherweise nicht mehr.",
     "s6p2": "Es lohnt sich, das Modell mindestens einmal jährlich zu überprüfen — oder wenn sich die Lebensumstände der Familie wesentlich ändern, etwa durch eine neue Schule, einen Umzug oder ein Geschwisterkind.",
@@ -911,11 +911,11 @@
   },
   "blog2": {
     "pageTitle": "Übergabetag — wie Übergaben leichter werden | Lina",
-    "pageDesc": "Praktische Tipps für reibungslosere Übergaben zwischen den Haushalten — feste Routinen, neutrale Orte und was das Kind mitnehmen sollte.",
+    "pageDesc": "Praktische Tipps für reibungslosere Übergaben zwischen den Zuhause — feste Routinen, neutrale Orte und was das Kind mitnehmen sollte.",
     "label": "Übergabe",
     "date": "März 2026",
     "title": "Übergabetag — wie Übergaben leichter werden",
-    "intro": "Für viele Kinder ist der Übergabetag der schwierigste Teil des Lebens mit zwei Haushalten. Nicht weil etwas nicht stimmt, sondern weil der Übergang Anpassung erfordert. Routinen, Umgebung und Regeln ändern sich — und das Kind muss sich jedes Mal neu einstellen. Hier sind praktische Tipps, wie Übergaben sicherer und vorhersehbarer werden.",
+    "intro": "Für viele Kinder ist der Übergabetag der schwierigste Teil des Lebens mit zwei Zuhause. Nicht weil etwas nicht stimmt, sondern weil der Übergang Anpassung erfordert. Routinen, Umgebung und Regeln ändern sich — und das Kind muss sich jedes Mal neu einstellen. Hier sind praktische Tipps, wie Übergaben sicherer und vorhersehbarer werden.",
     "s1title": "Feste Zeiten und Orte",
     "s1p1": "Kinder kommen mit Übergaben besser zurecht, wenn Zeit und Ort gleich bleiben. Eine feste Routine bedeutet, dass das Kind nicht rätseln muss, was als Nächstes passiert.",
     "s1p2": "Übliche Zeiten sind nach der Kita oder Schule — der Übergang erfolgt dann auf natürliche Weise, ohne dass das Kind eine direkte Übergabe zwischen den Elternteilen erlebt.",
@@ -923,13 +923,13 @@
     "s2title": "Übergabe kurz und ruhig halten",
     "s2p1": "Lange Übergaben geben dem Kind Zeit, sich unruhig zu fühlen. Ein kurzer, freundlicher Austausch ist besser als ein langer mit ausgedehntem Gespräch zwischen den Elternteilen.",
     "s2p2": "Vermeidet es, bei der Übergabe praktische oder heikle Themen anzusprechen. Das Kind spürt die Spannung zwischen den Elternteilen, auch wenn das Gespräch scheinbar neutral ist.",
-    "s2p3": "Ein einfaches 'Viel Spaß' und ein Lächeln reichen oft aus. Lasst das Kind im neuen Haushalt ankommen, ohne die Kommunikation der Eltern mitzutragen.",
+    "s2p3": "Ein einfaches 'Viel Spaß' und ein Lächeln reichen oft aus. Lasst das Kind im neuen Zuhause ankommen, ohne die Kommunikation der Eltern mitzutragen.",
     "s3title": "Was das Kind im Voraus wissen sollte",
     "s3p1": "Kinder, die wissen, was sie erwartet, bewältigen Übergaben besser. Sagt dem Kind im Voraus, was der Plan ist: Wer holt ab, wann passiert es und was kommt danach.",
     "s3p2": "Vermeidet 'Wir sehen mal' oder 'Vielleicht'. Kinder brauchen klare Antworten, auch wenn sie nicht direkt fragen.",
     "s3p3": "Für jüngere Kinder kann ein visueller Kalender mit einer eigenen Farbe für jedes Zuhause helfen, das Muster zu verstehen und die eigene Woche im Blick zu haben.",
     "s4title": "Was das Kind mitnehmen sollte",
-    "s4p1": "Eine der häufigsten Quellen von Frustration ist etwas, das im falschen Haushalt fehlt. Schulrucksack, Regenkleidung, Kuscheltier, Medikamente — alles, was das Kind täglich braucht, sollte bei jeder Übergabe mitgenommen werden.",
+    "s4p1": "Eine der häufigsten Quellen von Frustration ist etwas, das im falschen Zuhause fehlt. Schulrucksack, Regenkleidung, Kuscheltier, Medikamente — alles, was das Kind täglich braucht, sollte bei jeder Übergabe mitgenommen werden.",
     "s4p2": "Erstellt eine gemeinsame Packliste, auf die beide Elternteile zugreifen können — ein geteiltes Dokument oder eine Koordinations-App wie Lina funktionieren beide. Geht sie vor jeder Übergabe durch und aktualisiert sie, wenn sich die Bedürfnisse ändern.",
     "s4p3": "Manche Familien lösen es, indem sie das Wesentliche doppelt anschaffen — Zahnbürste, Ladekabel, Hausschuhe. Andere bevorzugen eine Liste, die das Kind begleitet.",
     "s5title": "Wenn die Übergabe nicht funktioniert",
@@ -939,44 +939,44 @@
     "s6title": "Kooperation macht Übergaben leichter",
     "s6p1": "Das Kind passt sich besser an, wenn beide Elternteile an einem Strang ziehen. Das bedeutet nicht, in allem einer Meinung zu sein — sondern dass das Kind erlebt, dass beide Elternteile die Regelung mittragen.",
     "s6p2": "Teilt im Voraus praktische Informationen — etwas Ungewöhnliches aus den letzten Tagen oder Dinge, die in der Tasche fehlen.",
-    "s6p3": "Eine gemeinsame Übersicht über Ausstattung, medizinische Informationen und Kontakte reduziert die Anzahl der Fragen bei jeder Übergabe — und befreit das Kind davon, als Nachrichtenüberbringer zwischen den Haushalten zu fungieren.",
-    "ctaTitle": "Den Überblick über beide Haushalte behalten",
+    "s6p3": "Eine gemeinsame Übersicht über Ausstattung, medizinische Informationen und Kontakte reduziert die Anzahl der Fragen bei jeder Übergabe — und befreit das Kind davon, als Nachrichtenüberbringer zwischen den Zuhause zu fungieren.",
+    "ctaTitle": "Den Überblick über beide Zuhause behalten",
     "ctaDesc": "Lina bringt Ausstattungslisten, Kinderinformationen und Kontakte an einem gemeinsamen Ort zusammen — damit beide Elternteile bei jeder Übergabe haben, was sie brauchen.",
     "ctaCta": "Lina herunterladen"
   },
   "blog3": {
-    "pageTitle": "Was dein Kind in jedem Haushalt braucht — Lina",
-    "pageDesc": "Eine praktische Checkliste für Co-Eltern — was in beiden Haushalten vorhanden sein sollte, was das Kind mitnehmen sollte und wie man den Überblick behält.",
+    "pageTitle": "Was dein Kind in jedem Zuhause braucht — Lina",
+    "pageDesc": "Eine praktische Checkliste für Co-Eltern — was in beiden Zuhause vorhanden sein sollte, was das Kind mitnehmen sollte und wie man den Überblick behält.",
     "label": "Ausstattung",
     "date": "März 2026",
-    "title": "Was dein Kind in jedem Haushalt braucht",
-    "intro": "Wenn ein Kind zwei Haushalte hat, taucht immer wieder dieselbe Frage auf: Ist die Zahnbürste hier oder dort? Wo ist die Regenkleidung? Haben wir noch genug Windeln? Eine gut durchdachte Übersicht darüber, was wo sein sollte, spart Zeit, reduziert Frustration und gibt dem Kind einen ruhigeren Alltag.",
-    "s1title": "Grundausstattung in beiden Haushalten",
-    "s1p1": "Einige Dinge sollten in beiden Haushalten vorhanden sein, damit das Kind nicht daran denken muss, das Wesentliche einzupacken. Die Idee ist, dass das Kind in jedem Haushalt ankommen und alles haben kann, was es braucht — ohne große Tasche.",
+    "title": "Was dein Kind in jedem Zuhause braucht",
+    "intro": "Wenn ein Kind zwei Zuhause hat, taucht immer wieder dieselbe Frage auf: Ist die Zahnbürste hier oder dort? Wo ist die Regenkleidung? Haben wir noch genug Windeln? Eine gut durchdachte Übersicht darüber, was wo sein sollte, spart Zeit, reduziert Frustration und gibt dem Kind einen ruhigeren Alltag.",
+    "s1title": "Grundausstattung in beiden Zuhause",
+    "s1p1": "Einige Dinge sollten in beiden Zuhause vorhanden sein, damit das Kind nicht daran denken muss, das Wesentliche einzupacken. Die Idee ist, dass das Kind in jedem Zuhause ankommen und alles haben kann, was es braucht — ohne große Tasche.",
     "s1p2": "Typische Grundausstattung: Zahnbürste und Zahnpasta, Haarbürste, eigene Bettwäsche, Handtücher, ein Paar Hausschuhe, genug Kleidung für den Aufenthalt (einschließlich Unterwäsche und Socken) und ein Ladekabel für Handy oder Tablet falls zutreffend.",
     "s1p3": "Für jüngere Kinder: Windeln, Schnuller, Trinkflasche, ein Lieblingsbuch oder Kuscheltier (wenn das Kind mehrere hat) und Kindersicherungen wo nötig.",
     "s2title": "Was das Kind mitnehmen sollte",
     "s2p1": "Alles, was nur einmal vorhanden ist — und das Kind täglich braucht — sollte bei jeder Übergabe mitgenommen werden. Dazu gehören typischerweise der Schulrucksack, die Brotdose, spezifische Kleidung für Aktivitäten und medizinische Ausrüstung.",
-    "s2p2": "Medikamente und Allergiebedarf sind besonders wichtig. Beide Elternteile sollten wissen, welche Medikamente das Kind einnimmt, die Dosierung und wo die Ausrüstung ist. Idealerweise sollte sie in beiden Haushalten vorhanden sein — aber wenn nicht, muss sie immer das Kind begleiten.",
-    "s2p3": "Das Lieblingsplüschtier oder die Kuscheldecke ist leicht zu vergessen — kann aber einen großen Unterschied für das Sicherheitsgefühl des Kindes machen, besonders beim Einschlafen im anderen Haushalt.",
+    "s2p2": "Medikamente und Allergiebedarf sind besonders wichtig. Beide Elternteile sollten wissen, welche Medikamente das Kind einnimmt, die Dosierung und wo die Ausrüstung ist. Idealerweise sollte sie in beiden Zuhause vorhanden sein — aber wenn nicht, muss sie immer das Kind begleiten.",
+    "s2p3": "Das Lieblingsplüschtier oder die Kuscheldecke ist leicht zu vergessen — kann aber einen großen Unterschied für das Sicherheitsgefühl des Kindes machen, besonders beim Einschlafen im anderen Zuhause.",
     "s3title": "Saisonale Ausstattung",
     "s3p1": "Die Bedürfnisse ändern sich mit den Jahreszeiten. Schneeanzug, Handschuhe und Mütze im Winter. Badekleidung und Sonnenschutz im Sommer. Regenkleidung und Gummistiefel im Frühling und Herbst.",
-    "s3p2": "Nicht alles muss doppelt vorhanden sein — aber es hilft, beim Jahreswechsel zu überprüfen, was in jedem Haushalt benötigt wird. Eine kurze Überprüfung im September und März kann viele Morgen ohne die richtige Winterjacke ersparen.",
-    "s3p3": "Schreibt auf, was in welchem Haushalt ist, und aktualisiert die Liste, wenn Dinge umziehen oder ersetzt werden.",
+    "s3p2": "Nicht alles muss doppelt vorhanden sein — aber es hilft, beim Jahreswechsel zu überprüfen, was in jedem Zuhause benötigt wird. Eine kurze Überprüfung im September und März kann viele Morgen ohne die richtige Winterjacke ersparen.",
+    "s3p3": "Schreibt auf, was in welchem Zuhause ist, und aktualisiert die Liste, wenn Dinge umziehen oder ersetzt werden.",
     "s4title": "Altersgerechte Listen",
     "s4p1": "Die Bedürfnisse ändern sich, wenn das Kind größer wird. Ein kleines Kind braucht Windeln und einen Schnuller. Ein Schulkind braucht einen Rucksack, Sportuniform und vielleicht ein Instrument. Ein Teenager braucht ein Ladekabel, Schlüssel und Fahrgeld.",
     "s4p2": "Lass das Kind am Prozess teilhaben, wenn es alt genug ist. Kinder ab etwa sieben oder acht Jahren können eine eigene kleine Checkliste haben, die sie vor jeder Übergabe verwenden.",
     "s4p3": "Teenager sollten das größtenteils selbst verwalten, aber es hilft dennoch, wenn die Eltern eine gemeinsame Übersicht haben — besonders für medizinische Ausrüstung, Dokumente und Dinge, die teuer zu ersetzen sind.",
     "s5title": "Das Kind nicht als Nachrichtenüberbringer nutzen",
-    "s5p1": "Ein häufiges Muster ist, dass das Kind zum Merkenden und Träger von Informationen zwischen den Haushalten wird. 'Sag Papa, dass...' oder 'Denk daran mitzubringen...' legt Verantwortung auf das Kind, die eigentlich bei den Eltern liegt.",
+    "s5p1": "Ein häufiges Muster ist, dass das Kind zum Merkenden und Träger von Informationen zwischen den Zuhause wird. 'Sag Papa, dass...' oder 'Denk daran mitzubringen...' legt Verantwortung auf das Kind, die eigentlich bei den Eltern liegt.",
     "s5p2": "Eine gemeinsame Ausstattungsliste, die beide Elternteile sehen und aktualisieren können, nimmt diese Last vom Kind. Die Eltern überprüfen die Liste — das Kind muss sich nicht an alles erinnern.",
     "s5p3": "Dasselbe gilt für Nachrichten. Praktische Informationen sollten direkt zwischen den Elternteilen fließen, nicht über das Kind.",
     "s6title": "Wie man den Überblick behält",
-    "s6p1": "Der Schlüssel ist ein gemeinsamer Ort, an dem beide Elternteile sehen können, was in welchem Haushalt ist. Ob eine App, eine Tabelle oder eine einfache Liste am Kühlschrank — was zählt, ist, dass beide Zugang haben.",
+    "s6p1": "Der Schlüssel ist ein gemeinsamer Ort, an dem beide Elternteile sehen können, was in welchem Zuhause ist. Ob eine App, eine Tabelle oder eine einfache Liste am Kühlschrank — was zählt, ist, dass beide Zugang haben.",
     "s6p2": "Aktualisiert die Liste regelmäßig. Zu kleine Kleidung, kaputte Ausrüstung und Saisonwechsel sollten bemerkt werden, bevor sie an einem vollen Morgen zum Problem werden.",
-    "s6p3": "Behandelt die Liste als praktisches Werkzeug — nicht als Kontrollmittel. Das Ziel ist, dass das Kind hat, was es braucht, unabhängig davon, in welchem Haushalt es sich befindet.",
-    "ctaTitle": "Gemeinsame Ausstattungslisten für beide Haushalte",
-    "ctaDesc": "Die gemeinsamen Ausstattungslisten von Lina ermöglichen es beiden Elternteilen zu sehen, was in welchem Haushalt ist — und in Echtzeit zu aktualisieren. So folgt die Ausstattung dem Kind.",
+    "s6p3": "Behandelt die Liste als praktisches Werkzeug — nicht als Kontrollmittel. Das Ziel ist, dass das Kind hat, was es braucht, unabhängig davon, in welchem Zuhause es sich befindet.",
+    "ctaTitle": "Gemeinsame Ausstattungslisten für beide Zuhause",
+    "ctaDesc": "Die gemeinsamen Ausstattungslisten von Lina ermöglichen es beiden Elternteilen zu sehen, was in welchem Zuhause ist — und in Echtzeit zu aktualisieren. So folgt die Ausstattung dem Kind.",
     "ctaCta": "Lina herunterladen"
   },
   "blog4": {
@@ -988,8 +988,8 @@
     "intro": "Wenn Eltern sich trennen, ist eine der ersten Fragen, wo das Kind wohnen wird. Die Antwort betrifft nicht nur die Anzahl der Nächte — sie beeinflusst, wer was entscheidet, wo das Kind gemeldet ist und wie der Alltag organisiert wird. Hier ein Überblick darüber, was Wechselmodell und Residenzmodell tatsächlich bedeuten.",
     "s1title": "Was ist das Wechselmodell?",
     "s1p1": "Beim Wechselmodell lebt das Kind zu gleichen Teilen bei beiden Elternteilen. Beide haben gleiches Entscheidungsrecht in Fragen, die den Alltag des Kindes betreffen — wie Aktivitäten, Arzttermine und alltägliche Routinen.",
-    "s1p2": "In der Praxis bedeutet das meist eine etwa 50/50-Aufteilung der Zeit, zum Beispiel im wöchentlichen Wechsel oder im 3-4-4-3-Muster. Das Kind hat zwei Haushalte, nicht einen Haushalt und eine Besuchsadresse.",
-    "s1p3": "Das Wechselmodell setzt voraus, dass die Eltern gut genug kooperieren, um laufend gemeinsam Entscheidungen zu treffen. Es erfordert außerdem, dass die Haushalte nah genug beieinander liegen, damit das Kind Schule, Freunde und Aktivitäten von beiden Orten aus wahrnehmen kann.",
+    "s1p2": "In der Praxis bedeutet das meist eine etwa 50/50-Aufteilung der Zeit, zum Beispiel im wöchentlichen Wechsel oder im 3-4-4-3-Muster. Das Kind hat zwei Zuhause, nicht ein Zuhause und eine Besuchsadresse.",
+    "s1p3": "Das Wechselmodell setzt voraus, dass die Eltern gut genug kooperieren, um laufend gemeinsam Entscheidungen zu treffen. Es erfordert außerdem, dass die Zuhause nah genug beieinander liegen, damit das Kind Schule, Freunde und Aktivitäten von beiden Orten aus wahrnehmen kann.",
     "s2title": "Was ist das Residenzmodell?",
     "s2p1": "Beim Residenzmodell hat das Kind einen Hauptwohnsitz. Das hauptsächlich betreuende Elternteil hat das Entscheidungsrecht in alltäglichen Fragen, und das Kind ist an dieser Adresse gemeldet.",
     "s2p2": "Das andere Elternteil — das Umgangselternteil — hat Umgang nach einer Vereinbarung, zum Beispiel jedes zweite Wochenende und einem Wochentag. Das Umgangselternteil hat weiterhin das gemeinsame Sorgerecht, aber alltägliche Entscheidungen trifft das betreuende Elternteil.",
@@ -999,12 +999,12 @@
     "s3p2": "Beim Residenzmodell kann das betreuende Elternteil alltägliche Entscheidungen allein treffen. Das betreuende Elternteil kann grundsätzlich innerhalb Deutschlands mit dem Kind umziehen, muss das andere Elternteil aber informieren.",
     "s3p3": "Das gemeinsame Sorgerecht bleibt unabhängig von der Wohnregelung bestehen — außer ein Gericht entscheidet anders. Das Sorgerecht umfasst wichtige Entscheidungen wie Reisepass, medizinische Behandlungen und Religion.",
     "s4title": "Was es in der Praxis bedeutet",
-    "s4p1": "Beim Wechselmodell teilen die Eltern die alltäglichen Aufgaben: Kleidung, Ausstattung, Hausaufgaben, Arzttermine. Beide Haushalte müssen vollständig ausgestattet sein, und beide Elternteile müssen für den Alltag verfügbar sein.",
+    "s4p1": "Beim Wechselmodell teilen die Eltern die alltäglichen Aufgaben: Kleidung, Ausstattung, Hausaufgaben, Arzttermine. Beide Zuhause müssen vollständig ausgestattet sein, und beide Elternteile müssen für den Alltag verfügbar sein.",
     "s4p2": "Beim Residenzmodell ist der Alltag für das Kind vorhersehbarer — ein Stadtviertel, ein Tagesablauf, ein Schulweg. Das erfordert aber besonderes Engagement, um sicherzustellen, dass das Umgangselternteil im Leben des Kindes präsent bleibt.",
-    "s4p3": "Kein Modell ist objektiv besser als das andere. Was funktioniert, hängt vom Alter des Kindes, der Situation der Eltern, der Entfernung zwischen den Haushalten und der Qualität der Kooperation ab.",
+    "s4p3": "Kein Modell ist objektiv besser als das andere. Was funktioniert, hängt vom Alter des Kindes, der Situation der Eltern, der Entfernung zwischen den Zuhause und der Qualität der Kooperation ab.",
     "s5title": "Was die Forschung sagt",
     "s5p1": "Studien aus Skandinavien zeigen, dass Kinder im Wechselmodell insgesamt ein gleiches oder besseres Wohlbefinden berichten als Kinder, die hauptsächlich bei einem Elternteil leben — vorausgesetzt, das Konfliktniveau zwischen den Eltern ist niedrig.",
-    "s5p2": "Bei Kindern in Hochkonfliktsituationen ist das Bild komplexer. Häufige Übergaben zwischen zwei Haushalten können Stress erhöhen, wenn die Eltern nicht in der Lage sind, das Kind vor dem Konflikt zu schützen.",
+    "s5p2": "Bei Kindern in Hochkonfliktsituationen ist das Bild komplexer. Häufige Übergaben zwischen zwei Zuhause können Stress erhöhen, wenn die Eltern nicht in der Lage sind, das Kind vor dem Konflikt zu schützen.",
     "s5p3": "Unabhängig vom Modell ist es die Qualität der elterlichen Kooperation — nicht die Anzahl der Nächte — die für das Wohlbefinden des Kindes am meisten zählt.",
     "s6title": "Offizielle Ressourcen",
     "s6p1": "Die Wahl des Modells sollte im Sinne des Kindeswohls getroffen werden. Wenn ihr euch nicht einigen könnt, können Familienberatungsstellen helfen.",
@@ -1043,9 +1043,9 @@
     "s5p3": "Wenn direkte Kommunikation zu schwierig ist, kann ein strukturiertes Werkzeug mit schriftlichen Nachrichten und dauerhaftem Nachrichtenverlauf helfen. Nachrichten, die nicht bearbeitet oder gelöscht werden können, geben beiden Elternteilen die Sicherheit, dass das Vereinbarte tatsächlich dokumentiert ist.",
     "s6title": "Das Kind sollte kein Nachrichtenüberbringer sein",
     "s6p1": "Einer der häufigsten Fehler ist, das Kind als Kommunikationskanal zu nutzen. 'Sag Mama, dass...' oder 'Frag Papa nach...' bringt das Kind in eine unmögliche Position.",
-    "s6p2": "Das Kind sollte keine Nachrichten übermitteln, Vereinbarungen aushandeln oder aus dem anderen Haushalt berichten. Jede praktische Kommunikation sollte direkt zwischen den Elternteilen laufen.",
-    "s6p3": "Wenn das Kind etwas aus dem anderen Haushalt erzählt, hört zu — aber vermeidet es, bohrende Fragen zu stellen. Das Kind muss sich sicher fühlen, frei sprechen zu können, ohne zur Informationsquelle zu werden.",
-    "ctaTitle": "Strukturierte Kommunikation zwischen zwei Haushalten",
+    "s6p2": "Das Kind sollte keine Nachrichten übermitteln, Vereinbarungen aushandeln oder aus dem anderen Zuhause berichten. Jede praktische Kommunikation sollte direkt zwischen den Elternteilen laufen.",
+    "s6p3": "Wenn das Kind etwas aus dem anderen Zuhause erzählt, hört zu — aber vermeidet es, bohrende Fragen zu stellen. Das Kind muss sich sicher fühlen, frei sprechen zu können, ohne zur Informationsquelle zu werden.",
+    "ctaTitle": "Strukturierte Kommunikation zwischen zwei Zuhause",
     "ctaDesc": "Lina hält Konversationen in getrennten Themenbereichen organisiert. Nachrichten können nicht bearbeitet oder gelöscht werden — damit beide Elternteile eine klare Aufzeichnung des Vereinbarten haben.",
     "ctaCta": "Lina herunterladen"
   },
@@ -1057,9 +1057,9 @@
     "title": "Die ersten Monate als Co-Eltern — Halt finden",
     "intro": "Die ersten Monate nach einer Trennung sind oft die schwierigsten — praktisch, emotional und logistisch. Das Kind braucht Verlässlichkeit, Sie müssen neue Routinen aufbauen, und Sie beide müssen einen funktionierenden Rhythmus ohne klare Vorlage finden. Hier ist, was in den ersten Wochen meist hilft, und worauf Sie zuerst Ihren Fokus legen sollten.",
     "s1title": "Beginnen Sie mit dem Alltag des Kindes",
-    "s1p1": "Wenn sich alles auf einmal ändert, profitieren Kinder von kleinen, stabilen Ankerpunkten. Halten Sie Schlafenszeiten, Mahlzeiten und den Weg zur Schule oder Kita in beiden Haushalten so nah am Gewohnten wie möglich. Die Bringzeit in der Kita muss sich nicht ändern, nur weil das andere Elternteil bringt.",
+    "s1p1": "Wenn sich alles auf einmal ändert, profitieren Kinder von kleinen, stabilen Ankerpunkten. Halten Sie Schlafenszeiten, Mahlzeiten und den Weg zur Schule oder Kita in beiden Zuhause so nah am Gewohnten wie möglich. Die Bringzeit in der Kita muss sich nicht ändern, nur weil das andere Elternteil bringt.",
     "s1p2": "Es ist leichter, später Struktur hinzuzufügen, als sie nach Chaos wieder aufzubauen. Die ersten Wochen sind nicht die Zeit für große Veränderungen — auch wenn etwas überfällig erscheint.",
-    "s1p3": "Hat das Kind einen festen Sport, eine Aktivität oder eine vertraute Bezugsperson, versuchen Sie, das durch den Wechsel zwischen den Haushalten unverändert zu lassen. Das Fußballtraining am Dienstag muss nicht aufhören, nur weil die Logistik schwieriger geworden ist.",
+    "s1p3": "Hat das Kind einen festen Sport, eine Aktivität oder eine vertraute Bezugsperson, versuchen Sie, das durch den Wechsel zwischen den Zuhause unverändert zu lassen. Das Fußballtraining am Dienstag muss nicht aufhören, nur weil die Logistik schwieriger geworden ist.",
     "s2title": "Einigen Sie sich auf einen vorläufigen Rhythmus",
     "s2p1": "Sie brauchen die endgültige Regelung nicht in der ersten Woche. Ein tragfähiger vorläufiger Plan, auch ein grober, gibt dem Kind etwas, woran es sich halten kann, während Sie herausfinden, was langfristig passt. Die meisten Familien brauchen 4–6 Wochen, bevor sie wissen, was tatsächlich funktioniert.",
     "s2p2": "Viele Familien beginnen mit einem Wochenwechsel oder dem Wochenendmodell und justieren nach ein oder zwei Monaten.",
@@ -1068,8 +1068,8 @@
     "s3p1": "Beschränken Sie die Kommunikation in den ersten Wochen auf das, was das Kind betrifft: Abholungen, Schule, Gesundheit, Ausstattung. Alles andere kann warten.",
     "s3p2": "Kurze Nachrichten funktionieren besser als lange. Eine Frage lässt sich leichter beantworten als ein Absatz, und eine Nachricht zu Zeit und Ort lässt sich leichter umsetzen als eine Reflexion.",
     "s3p3": "Halten Sie Nachrichten über das Kind getrennt von Nachrichten über die Beziehung. Die Abholzeit des Kindes, die Notiz der Ärztin, die Brotdose — nur praktische Dinge. Alles andere kann warten oder gehört in ein ganz anderes Gespräch.",
-    "s4title": "Lassen Sie das Kind sehen, dass beide Haushalte funktionieren",
-    "s4p1": "Die Haushalte müssen nicht gleich aussehen. Beide müssen funktionieren. Mahlzeiten werden gekocht, die Wäsche wird gemacht, die Hausaufgaben werden überprüft. Kinder spüren den Unterschied zwischen einem Zuhause, das läuft, und einem, das kaum zusammenhält.",
+    "s4title": "Lassen Sie das Kind sehen, dass beide Zuhause funktionieren",
+    "s4p1": "Die Zuhause müssen nicht gleich aussehen. Beide müssen funktionieren. Mahlzeiten werden gekocht, die Wäsche wird gemacht, die Hausaufgaben werden überprüft. Kinder spüren den Unterschied zwischen einem Zuhause, das läuft, und einem, das kaum zusammenhält.",
     "s4p3": "Kleine Dinge zählen: eine Schublade, die ihnen gehört, eine Zahnbürste, die wartet, ein Elternteil, das bereit ist, wenn sie ankommen.",
     "s5title": "Behutsame Übergaben, keine perfekten",
     "s5p1": "Die ersten Übergaben fühlen sich selten natürlich an. Halten Sie den Abschied kurz und den Ton neutral. „Hab eine gute Zeit, bis Donnerstag“ trägt weiter als ein langer Abschied.",
@@ -1080,7 +1080,7 @@
     "s6p2": "Die Wartezeiten sind kürzer, als viele Eltern erwarten — oft wenige Wochen statt Monate. Früh einen Termin zu buchen kostet weniger Zeit, als zu warten, bis etwas bereits zerbrochen ist.",
     "s6p3": "Sie müssen das nicht allein herausfinden. Kinder erinnern sich selten an die Einzelheiten der ersten Monate nach einer Trennung. Woran sie sich erinnern, ist, ob sie sich sicher gefühlt haben, und ob die Erwachsenen um sie herum es im Griff hatten.",
     "ctaTitle": "Ein ruhiger Ort zum Beginnen",
-    "ctaDesc": "Lina gibt beiden Eltern einen gemeinsamen Ort für Betreuungsplan, Ausstattung und Kontakte — damit das Praktische in den ersten Monaten weniger Aufwand macht und das Kind eine Sache weniger zwischen den Haushalten zu tragen hat.",
+    "ctaDesc": "Lina gibt beiden Eltern einen gemeinsamen Ort für Betreuungsplan, Ausstattung und Kontakte — damit das Praktische in den ersten Monaten weniger Aufwand macht und das Kind eine Sache weniger zwischen den Zuhause zu tragen hat.",
     "ctaCta": "Lina herunterladen"
   },
   "blog8": {
@@ -1099,9 +1099,9 @@
     "s2p2": "Einigen Sie sich im Voraus, wie die Ferien aufgeteilt werden: jährlich wechselnd, halbe Ferien, oder nach festgelegten Tagen. Schreiben Sie auf, welcher Elternteil welchen Feiertag in ungeraden und in geraden Jahren hat. Ohne das wird jedes Jahr zu einer neuen Verhandlung.",
     "s2p3": "Beziehen Sie Reisen ein. Wer informiert wen, wie viel Vorlauf nötig ist, und welche Zustimmung für Reisen über Grenzen erforderlich ist. Viele Fluggesellschaften und Grenzbehörden verlangen ein unterschriebenes Einverständnisschreiben des nicht reisenden Elternteils — Name, Daten, Reiseziel und beide Passnummern.",
     "s3title": "Entscheidungen, große und kleine",
-    "s3p1": "Trennen Sie Alltagsentscheidungen von größeren. Jeder Elternteil entscheidet Bildschirmzeit, Schlafenszeiten, Snacks und wochentägliche Aktivitäten im eigenen Haushalt. Schulwahl, Passanträge, kieferorthopädische Behandlung, religiöse Erziehung und Umzug werden gemeinsam entschieden.",
+    "s3p1": "Trennen Sie Alltagsentscheidungen von größeren. Jeder Elternteil entscheidet Bildschirmzeit, Schlafenszeiten, Snacks und wochentägliche Aktivitäten im eigenen Zuhause. Schulwahl, Passanträge, kieferorthopädische Behandlung, religiöse Erziehung und Umzug werden gemeinsam entschieden.",
     "s3p2": "Benennen Sie, was passiert, wenn Sie uneins sind. Ein Ablauf funktioniert besser als eine Regel: zuerst sprechen, bei festgefahrenem Gespräch einen Mediator hinzuziehen, das Ergebnis schriftlich festhalten.",
-    "s3p3": "Gesundheitsinformationen sollten frei zwischen den Haushalten fließen. Arztbesuche, Verschreibungen und nennenswerte Symptome gehören innerhalb von ein oder zwei Tagen in den gemeinsamen Kanal.",
+    "s3p3": "Gesundheitsinformationen sollten frei zwischen den Zuhause fließen. Arztbesuche, Verschreibungen und nennenswerte Symptome gehören innerhalb von ein oder zwei Tagen in den gemeinsamen Kanal.",
     "s4title": "Geld und gemeinsame Kosten",
     "s4p1": "Eine Vereinbarung muss den gesetzlichen Kindesunterhalt nicht ersetzen. Sie profitiert davon, festzuhalten, was darüber hinaus geteilt wird: Aktivitäten, Ausstattung, Klassenfahrten, Winterkleidung, Handys und Gesundheitskosten oberhalb der Erstattungsgrenze.",
     "s4p2": "Seien Sie konkret bei Schwellenwerten. „Wir besprechen alles über 50 Euro“ ist einfacher zu befolgen als „größere Ausgaben“.",
@@ -1114,7 +1114,7 @@
     "s6p1": "Eine Vereinbarung ist ein lebendes Dokument. Setzen Sie eine jährliche Überprüfung in den Kalender, idealerweise im August vor dem neuen Schuljahr, und gehen Sie sie gemeinsam durch. Passen Sie an, was nicht mehr passt.",
     "s6p2": "Halten Sie Änderungen schriftlich fest, sobald sie vereinbart sind. Eine kurze Nachricht im gemeinsamen Kanal mit „ab 1. November verschiebt sich die Mittwochabholung auf 15:30 Uhr“ reicht. Passen Sie die Hauptvereinbarung bei der jährlichen Überprüfung an.",
     "ctaTitle": "Legen Sie die Vereinbarung dorthin, wo Sie beide sie sehen",
-    "ctaDesc": "Lina hält den Betreuungsplan, gemeinsame Entscheidungen und Alltagsinformationen an einem Ort — damit die schriftliche Vereinbarung lebendig bleibt und für beide Haushalte zugänglich ist.",
+    "ctaDesc": "Lina hält den Betreuungsplan, gemeinsame Entscheidungen und Alltagsinformationen an einem Ort — damit die schriftliche Vereinbarung lebendig bleibt und für beide Zuhause zugänglich ist.",
     "ctaCta": "Lina herunterladen"
   },
   "blog9": {
