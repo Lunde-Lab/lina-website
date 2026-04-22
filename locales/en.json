@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "One shared place for your child — across homes",
-    "description": "You should not have to be the one who always remembers. Lina gives both parents the same overview — medical info, contacts, schedules, and belongings — always up to date, in both homes.",
+    "description": "You should not have to be the one who always remembers. Lina gives both parents the same overview of medical info, contacts, schedules, and belongings, always up to date in both homes.",
     "cta": "Download on the App Store",
     "ctaPlay": "Get on Google Play",
     "ctaPlayAria": "Get it on Google Play"
@@ -21,7 +21,7 @@
   "csSection": {
     "label": "Care Schedule",
     "title": "Plan your care schedule together",
-    "description": "Lina's interactive care schedule lets both parents plan and visualize how time is shared across weeks. See day splits, weekend patterns, and handover frequency — all in one clear view.",
+    "description": "Lina's interactive care schedule lets both parents plan and visualise how time is shared across weeks. See day splits, weekend patterns, and handover frequency, all in one clear view.",
     "cta": "Open Care Schedule"
   },
   "how": {
@@ -62,7 +62,7 @@
     "title": "Tools built for shared care",
     "contacts": {
       "title": "Shared contacts",
-      "description": "Pediatrician, teacher, after-school program — important contacts in one place, always up to date."
+      "description": "Paediatrician, teacher, after-school program — important contacts in one place, always up to date."
     },
     "equipment": {
       "title": "Equipment lists",
@@ -78,7 +78,7 @@
     },
     "control": {
       "title": "Built for difficult days too",
-      "description": "Export all messages for documentation. Blur photos to reduce emotional weight. Save the images you want to keep. Control what you see and when."
+      "description": "Export all messages for documentation. Blur photos to reduce emotional weight. Save the images you want to keep."
     }
   },
   "problem": {
@@ -95,7 +95,7 @@
   "privacy": {
     "label": "Privacy",
     "title": "Private by design",
-    "description": "What happens in Lina stays between the two of you. Your child's information is private — and no one outside has access to what you share.",
+    "description": "What happens in Lina stays between the two of you. Your child's information is private. No one outside has access to what you share.",
     "point1": {
       "title": "No advertising",
       "description": "Your experience is never shaped by ads or commercial interests."
@@ -106,15 +106,15 @@
     },
     "point3": {
       "title": "No algorithm",
-      "description": "You decide what you see — not an algorithm optimizing for engagement."
+      "description": "You decide what you see, not an algorithm optimising for engagement."
     },
-    "tagline": "Structured for cooperation. Private by default.",
+    "tagline": "Structured for cooperation, private by default.",
     "pageTitle": "Privacy Policy — Lina | GDPR-compliant co-parenting app",
     "pageDesc": "Lina is built privacy-first for co-parenting families. GDPR-compliant, no ads, and no data sharing with third parties. Learn how we protect you."
   },
   "cta": {
     "title": "One safe line between two parents.",
-    "description": "Everything both parents need to know — in one place. Download and get started in minutes."
+    "description": "Everything both parents need to know, in one place. Download and get started in minutes."
   },
   "footer": {
     "terms": "Terms of Service",
@@ -694,7 +694,7 @@
     "title": "Built for the moments that matter",
     "s1": {
       "title": "The allergy the other home did not know about",
-      "description": "One parent updates the child's medical information. The other sees it immediately — no separate text needed."
+      "description": "One parent updates the child's medical information. The other sees it immediately. No separate text needed."
     },
     "s2": {
       "title": "The rain jacket that is always at the wrong house",
@@ -702,7 +702,7 @@
     },
     "s3": {
       "title": "The first bicycle ride you almost missed",
-      "description": "Photos go into the shared album. The big and small moments are shared automatically — regardless of which home the child is in."
+      "description": "Photos go into the shared album. The big and small moments are shared automatically, regardless of which home the child is in."
     },
     "cta": "Read more stories"
   },
