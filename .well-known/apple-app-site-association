@@ -6,7 +6,9 @@
         "appID": "2L4NURG2G7.com.getlina.lina",
         "paths": [
           "/invite*",
-          "/*/invite*"
+          "/*/invite*",
+          "/auth/callback*",
+          "/*/auth/callback*"
         ]
       }
     ]
