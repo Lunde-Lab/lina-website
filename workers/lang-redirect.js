@@ -172,6 +172,19 @@ async function handleRequest(request) {
     });
   }
 
+  // 1a. Strip legacy /en/ prefix → 301 to root-equivalent path.
+  //     English lives at root; /en/* paths are bad legacy/external links.
+  if (path === '/en' || path.startsWith('/en/')) {
+    const stripped = path === '/en' ? '/' : (path.slice(3) || '/');
+    return new Response(null, {
+      status: 301,
+      headers: {
+        'Location': `${url.origin}${stripped}${url.search}`,
+        'Cache-Control': 'no-store',
+      },
+    });
+  }
+
   // 1. Already on a language-prefixed path → pass through
   if (LANG_PREFIXES.some(p => path.startsWith(p))) {
     return fetch(request);
