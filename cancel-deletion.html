@@ -277,9 +277,18 @@
           if (res.ok) {
             return res.json().then(function (data) {
               if (data && typeof data.redirect === 'string') {
-                window.location.assign(data.redirect);
+                try {
+                  var dest = new URL(data.redirect, window.location.origin);
+                  var allowed = ['getlina.app', 'www.getlina.app', 'app.getlina.app'];
+                  if (dest.origin === window.location.origin || allowed.indexOf(dest.hostname) !== -1) {
+                    window.location.assign(dest.href);
+                  } else {
+                    window.location.assign('/account-deletion-cancelled.html');
+                  }
+                } catch (_) {
+                  window.location.assign('/account-deletion-cancelled.html');
+                }
               } else {
-                // Fallback if redirect field missing
                 window.location.assign('/account-deletion-cancelled.html');
               }
             });

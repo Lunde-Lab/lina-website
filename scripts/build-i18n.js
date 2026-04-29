@@ -552,6 +552,10 @@ function updateExtraSlugJsonLd(html, extraFullUrl) {
  *   data-i18n-aria     → update aria-label
  *   data-i18n-placeholder → update placeholder
  */
+function escapeAttr(s) {
+  return String(s ?? '').replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+}
+
 function applyTranslations(html, locale) {
   // data-i18n text content  — [^<]* stops at the first child tag (safe)
   html = html.replace(
@@ -568,9 +572,10 @@ function applyTranslations(html, locale) {
     (m, _before, key) => {
       const val = get(locale, key);
       if (val == null) return m;
+      const escaped = escapeAttr(val);
       return /\saria-label="[^"]*"/.test(m)
-        ? m.replace(/\saria-label="[^"]*"/, ` aria-label="${val}"`)
-        : m + ` aria-label="${val}"`;
+        ? m.replace(/\saria-label="[^"]*"/, ` aria-label="${escaped}"`)
+        : m + ` aria-label="${escaped}"`;
     }
   );
 
@@ -580,9 +585,10 @@ function applyTranslations(html, locale) {
     (m, _before, key) => {
       const val = get(locale, key);
       if (val == null) return m;
+      const escaped = escapeAttr(val);
       return /\splaceholder="[^"]*"/.test(m)
-        ? m.replace(/\splaceholder="[^"]*"/, ` placeholder="${val}"`)
-        : m + ` placeholder="${val}"`;
+        ? m.replace(/\splaceholder="[^"]*"/, ` placeholder="${escaped}"`)
+        : m + ` placeholder="${escaped}"`;
     }
   );
 
@@ -592,9 +598,10 @@ function applyTranslations(html, locale) {
     (m, _before, key) => {
       const val = get(locale, key);
       if (val == null) return m;
+      const escaped = escapeAttr(val);
       return /\salt="[^"]*"/.test(m)
-        ? m.replace(/\salt="[^"]*"/, ` alt="${val}"`)
-        : m + ` alt="${val}"`;
+        ? m.replace(/\salt="[^"]*"/, ` alt="${escaped}"`)
+        : m + ` alt="${escaped}"`;
     }
   );
 
@@ -604,9 +611,10 @@ function applyTranslations(html, locale) {
     (m, _before, key) => {
       const val = get(locale, key);
       if (val == null) return m;
+      const escaped = escapeAttr(val);
       return /\shref="[^"]*"/.test(m)
-        ? m.replace(/\shref="[^"]*"/, ` href="${val}"`)
-        : m + ` href="${val}"`;
+        ? m.replace(/\shref="[^"]*"/, ` href="${escaped}"`)
+        : m + ` href="${escaped}"`;
     }
   );
 
