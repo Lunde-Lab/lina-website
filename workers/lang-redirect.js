@@ -172,6 +172,21 @@ async function handleRequest(request) {
     });
   }
 
+  // 0d. Legacy .html → /dir/ refactor for /professionals and /contact.
+  //     Catches /professionals.html, /contact.html, and all 7 language
+  //     variants like /no/professionals.html. 301 to the directory URL.
+  if (path === '/professionals.html' || path === '/contact.html' ||
+      /^\/(no|sv|da|fi|de|nl|fr)\/(professionals|contact)\.html$/.test(path)) {
+    const newPath = path.replace(/\.html$/, '/');
+    return new Response(null, {
+      status: 301,
+      headers: {
+        'Location': `${url.origin}${newPath}${url.search}`,
+        'Cache-Control': 'no-store',
+      },
+    });
+  }
+
   // 1a. Strip legacy /en/ prefix → 301 to root-equivalent path.
   //     English lives at root; /en/* paths are bad legacy/external links.
   if (path === '/en' || path.startsWith('/en/')) {
