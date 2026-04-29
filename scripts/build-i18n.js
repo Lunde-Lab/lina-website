@@ -401,6 +401,17 @@ function outPath(src, lang, file) {
   return path.join(ROOT, lang, src);
 }
 
+/** Get YYYY-MM-DD lastmod string for a source file's mtime */
+function getLastMod(srcRelPath) {
+  try {
+    const fullPath = path.join(ROOT, srcRelPath);
+    const stat = fs.statSync(fullPath);
+    return stat.mtime.toISOString().slice(0, 10);
+  } catch {
+    return new Date().toISOString().slice(0, 10);
+  }
+}
+
 /** Count occurrences of a plain string */
 function countStr(html, needle) {
   let n = 0, pos = 0;
@@ -1198,6 +1209,7 @@ function buildSitemap() {
         `  <url>\n` +
         `    <loc>${enUrl}</loc>\n` +
         makeLinks() + '\n' +
+        `    <lastmod>${getLastMod(file.src)}</lastmod>\n` +
         `    <changefreq>monthly</changefreq>\n` +
         `    <priority>${priority}</priority>\n` +
         `  </url>`
@@ -1210,6 +1222,7 @@ function buildSitemap() {
           `  <url>\n` +
           `    <loc>${lUrl}</loc>\n` +
           makeLinks() + '\n' +
+          `    <lastmod>${getLastMod(file.src)}</lastmod>\n` +
           `    <changefreq>monthly</changefreq>\n` +
           `    <priority>${priority}</priority>\n` +
           `  </url>`
@@ -1236,6 +1249,7 @@ function buildSitemap() {
         `  <url>\n` +
         `    <loc>${enUrl}</loc>\n` +
         links + '\n' +
+        `    <lastmod>${getLastMod(file.src)}</lastmod>\n` +
         `    <changefreq>monthly</changefreq>\n` +
         `    <priority>${priority}</priority>\n` +
         `  </url>`
@@ -1270,6 +1284,7 @@ function buildSitemap() {
       `  <url>\n` +
       `    <loc>${extraFullUrl}</loc>\n` +
       extraLinks + '\n' +
+      `    <lastmod>${getLastMod(baseFile.src)}</lastmod>\n` +
       `    <changefreq>monthly</changefreq>\n` +
       `    <priority>0.6</priority>\n` +
       `  </url>`
