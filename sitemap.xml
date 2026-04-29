@@ -257,35 +257,35 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://getlina.app/professionals.html</loc>
-      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/professionals.html"/>
-      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/professionals.html"/>
-      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/professionals.html"/>
-      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/professionals.html"/>
-      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/professionals.html"/>
-      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/professionals.html"/>
-      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/professionals.html"/>
-      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/professionals.html"/>
-      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/professionals.html"/>
-      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/professionals.html"/>
-      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/professionals.html"/>
+    <loc>https://getlina.app/professionals/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/professionals/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/professionals/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/professionals/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/professionals/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/professionals/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/professionals/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/professionals/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/professionals/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/professionals/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/professionals/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/professionals/"/>
     <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getlina.app/contact.html</loc>
-      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/contact.html"/>
-      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/contact.html"/>
-      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/contact.html"/>
-      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/contact.html"/>
-      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/contact.html"/>
-      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/contact.html"/>
-      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/contact.html"/>
-      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/contact.html"/>
-      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/contact.html"/>
-      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/contact.html"/>
-      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/contact.html"/>
+    <loc>https://getlina.app/contact/</loc>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://getlina.app/contact/"/>
+      <xhtml:link rel="alternate" hreflang="en"        href="https://getlina.app/contact/"/>
+      <xhtml:link rel="alternate" hreflang="nb"        href="https://getlina.app/no/contact/"/>
+      <xhtml:link rel="alternate" hreflang="sv"        href="https://getlina.app/sv/contact/"/>
+      <xhtml:link rel="alternate" hreflang="da"        href="https://getlina.app/da/contact/"/>
+      <xhtml:link rel="alternate" hreflang="fi"        href="https://getlina.app/fi/contact/"/>
+      <xhtml:link rel="alternate" hreflang="de"        href="https://getlina.app/de/contact/"/>
+      <xhtml:link rel="alternate" hreflang="de-AT" href="https://getlina.app/de/contact/"/>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://getlina.app/de/contact/"/>
+      <xhtml:link rel="alternate" hreflang="nl"        href="https://getlina.app/nl/contact/"/>
+      <xhtml:link rel="alternate" hreflang="fr"        href="https://getlina.app/fr/contact/"/>
     <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
