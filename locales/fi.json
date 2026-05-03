@@ -851,6 +851,10 @@
     "article9": {
       "headline": "Syntymäpäivät kahdessa kodissa",
       "description": "Miten suunnitella syntymäpäivä, kun lapsella on kaksi kotia — päivän jakaminen, juhlien järjestäminen ja huomion pitäminen lapsessa."
+    },
+    "article10": {
+      "headline": "Kulujen jakaminen kahdessa kodissa",
+      "description": "Käytännön ohjeita siitä, mitkä kustannukset lasketaan yhteisiksi, miten kuluja seurataan ja miten raha pysyy poissa arjen konfliktien lähteistä."
     }
   },
   "blog1": {
@@ -923,7 +927,10 @@
     "a8desc": "Käytännön opas siihen, mitä vanhempien väliseen kirjalliseen huoltosopimukseen kuuluu.",
     "a9label": "Syntymäpäivä",
     "a9title": "Syntymäpäivät kahdessa kodissa",
-    "a9desc": "Miten suunnitella syntymäpäivä, kun lapsella on kaksi kotia — päivän jakaminen, juhliminen ja huomion pitäminen lapsessa."
+    "a9desc": "Miten suunnitella syntymäpäivä, kun lapsella on kaksi kotia — päivän jakaminen, juhliminen ja huomion pitäminen lapsessa.",
+    "a10label": "Talous",
+    "a10title": "Kulujen jakaminen kahdessa kodissa",
+    "a10desc": "Mitä lasketaan yhteisiksi kuluiksi, miten jakaminen onnistuu reilusti ja miten raha-asiat pidetään erillään arjen viesteistä."
   },
   "blog2": {
     "pageTitle": "Vaihtopäivä — näin teet siirtymisestä helpompaa | Lina",
@@ -1201,6 +1208,41 @@
     "s6p3": "Luottakaa siihen, että toinen vanhempi tekee päivästä hyvän. Roolinne juuri tänä päivänä voi olla hiljainen.",
     "ctaTitle": "Rauhallisempi syntymäpäivä, molemmista kodeista",
     "ctaDesc": "Lina pitää syntymäpäivät, yhteystiedot ja yhteiset suunnitelmat yhdessä paikassa — niin että molemmat vanhemmat voivat valmistautua päivään ilman viime hetken koordinointia, ja lapsi pysyy keskiössä.",
+    "ctaCta": "Lataa Lina"
+  },
+  "blog10": {
+    "pageTitle": "Kulujen jakaminen kahdessa kodissa | Lina",
+    "pageDesc": "Käytännön ohjeita siitä, mitkä kustannukset lasketaan yhteisiksi, miten kuluja seurataan ja miten raha pysyy poissa arjen konfliktien lähteistä.",
+    "label": "Talous",
+    "title": "Kulujen jakaminen kahdessa kodissa",
+    "date": "toukokuu 2026",
+    "intro": "Raha on yksi luotettavimmista kitkanlähteistä vanhempien välillä, kun he jakavat lasten hoidon. Summat ovat usein vähemmän tärkeitä kuin epäselvyys niiden ympärillä — kuka maksaa minkä, mikä lasketaan yhteiseksi kustannukseksi, miten suuremmista hankinnoista päätetään. Yksinkertainen järjestelmä, josta on sovittu kerran ja kirjattu ylös, poistaa suurimman osan näistä keskusteluista arjesta.",
+    "s1title": "Elatusapu kattaa arjen, ei kaikkea",
+    "s1p1": "Useimmissa maissa on elatusapujärjestelmä, joka siirtää säännöllisen summan toiselta vanhemmalta toiselle. Juridiset yksityiskohdat vaihtelevat maittain, mutta logiikka on sama: elatusapu on tarkoitettu kattamaan arjen kustannukset — ruoka, vaatteet, kotitalous, sähkö — kodissa, jossa lapsi asuu suurimman osan ajasta.",
+    "s1p2": "Elatusapu ei ole harvoin suunniteltu kattamaan kaikkea. Harrastukset, kouluretkipäivät, suuremmat tarvikkeet, terveydenhuoltokulut ja kertaluonteiset hankinnat jäävät yleensä ulkopuolelle — ja siitä useimmat erimielisyydet alkavat, koska rajaa ei ole kirjattu ylös.",
+    "s1p3": "Riippumatta siitä, mikä järjestelmä teidän maassanne on, käytännön tehtävä on sama: sopikaa kirjallisesti, mitä elatusapu kattaa, ja asettakaa kynnysraja — esimerkiksi että yli 100 euron kulut, joista molemmat ovat sopineet, lasketaan yhteisiksi.",
+    "s2title": "Sopikaa, mitä lasketaan yhteiseksi kuluksi",
+    "s2p1": "Erimielisyydet rahasta eivät juuri koskaan koske maksamista sinänsä. Ne koskevat sitä, kuuluuko jokin ylipäätään yhteiseen altaaseen. Altaan määrittäminen etukäteen estää useimmat riidat.",
+    "s2p2": "Kohtuullinen lista yhteisistä kuluista sisältää yleensä harrastusmaksut ja -varusteet, koulu- ja leiriretkikulut, hammas- ja terveydenhuoltokulut, joita julkinen terveydenhuolto ei kata, sekä suuremmat hankinnat, jotka seuraavat lasta kodista toiseen.",
+    "s2p3": "Mitä ei yleensä jaeta: pienet ostokset kaupasta, arjen vaatteet, jotka elatusapu jo kattaa, ja päätökset, jotka toinen vanhempi tekee yksin — esimerkiksi yksityistunnit, joihin toinen ei ole suostunut. Käytännöllinen testi: jos vain toinen vanhempi päätti hankinnasta, toinen ei yleensä ole velvollinen maksamaan puolta.",
+    "s3title": "Sopikaa, miten jaatte kulut",
+    "s3p1": "Tasan puoliksi jakaminen on standardi ja helpoin hallita. Se toimii, kun molemmilla vanhemmilla on samankaltaiset tulot ja kulut ovat ennakoitavissa.",
+    "s3p2": "Kun tulot eroavat merkittävästi, jotkut jakavat suhteessa tuloihin — esimerkiksi kaksi kolmasosaa ja yksi kolmasosa nettotulosta. Tämä tapa tuntuu useimmiten reilummalta pitkällä aikavälillä, mutta vaatii sopimuksen tarkistaa jako, kun tulot muuttuvat.",
+    "s3p3": "Kolmas malli on vuorotteleva: toinen vanhempi maksaa harrastuksen A, toinen harrastuksen B, suurin piirtein saman suuruisina. Vähemmän paperityötä, mutta edellyttää suurin piirtein tasapainoa. Mitä tahansa valitsette, kirjatkaa se ylös.",
+    "s4title": "Seuratkaa kuluja tekemättä siitä taistelukenttää",
+    "s4p1": "Yhteinen lista riittää useimmille perheille — taulukkolaskenta, jaettu muistiinpano tai vanhemmuuden jakamisen sovellus. Kun molemmat vanhemmat näkevät samat luvut, erimielisyydet siitä, kuka on jo maksanut puolensa, häviävät suurimmaksi osaksi.",
+    "s4p2": "Sopikaa kiinteä rytmi listan läpikäymiseen. Kuukausittainen on yleensä riittävä. Neljännesvuosittainen toimii, kun yhteiset kulut ovat vähäisiä. Lisätkää merkintä, liittäkää kuitti tai kirjatkaa summa, selvittäkää saldo ja jatkakaa eteenpäin.",
+    "s4p3": "Pitäkää lista lyhyenä. Se on vain yhteisiä kuluja varten — ei toisen vanhemman menojen seuraamiseen heidän omassa kodissaan.",
+    "s5title": "Suuremmat hankinnat: sopikaa ennen ostamista",
+    "s5p1": "Polkupyörä, koulumatka, hammaskorjaus — sellaisista on sovittava etukäteen, ei jälkikäteen. Yleisin rahariidat jaetun hoidon yhteydessä johtuvat siitä, että toinen vanhempi esittää kuitin jostakin, josta toinen ei tiennyt päätettävän.",
+    "s5p2": "Molempien sopiman rajan ylittävistä hankinnoista keskustellaan ennen ostamista. Rajan alle, käyttäkää harkintaa.",
+    "s5p3": "Kirjatkaa sopimus ylös, edes lyhyesti. Lyhyt viesti — \"sovittu: koululeiri 280 euroa, jaetaan 50/50, minä maksan ja laskutan puolet\" — riittää ja antaa molemmille viitteen, jos muistot eroavat myöhemmin.",
+    "s6title": "Pitäkää raha-asiat erillään arjesta",
+    "s6p1": "Älkää ottako maksamattomia kuluja puheeksi vaihtotilanteessa, syntymäpäivänä tai vaikealla hetkellä. Raha-asioille tarvitaan oma rauhallinen kanava — kirjallinen viesti, kuukausittainen katsaus — ei kommentti, kun tunteet ovat jo pinnassa.",
+    "s6p2": "Tämä on useimmin rikottu sääntö ja vahingollisin. Lapsen ei pidä kuulla kommentteja maksamattomista laskuista ovella.",
+    "s6p3": "Jos keskustelu jumiutuu, perheasiain sovittelupalvelut voivat auttaa jäsentämään yhteiset kulut ilman oikeudenkäyntiä. Neutraali pohja voi ratkaista lukkiutuneen tilanteen, johon suorat viestit eivät tepsi.",
+    "ctaTitle": "Talous omassa viestiketjussaan, ei arjen virrassa",
+    "ctaDesc": "Lina pitää erilliset ketjut eri aiheille pysyvällä viestihistorialla. Taloudelliset sopimukset, kuitit ja toistuvat kulut saavat oman paikkansa — erillään vaihtoihin ja viikoittaiseen logistiikkaan liittyvistä viesteistä.",
     "ctaCta": "Lataa Lina"
   },
   "carousel": {

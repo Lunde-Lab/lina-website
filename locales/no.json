@@ -851,6 +851,10 @@
     "article9": {
       "headline": "Bursdager i to hjem",
       "description": "Hvordan planlegge bursdagen når barnet har to hjem — å dele dagen, holde feiringen og la fokuset bli på barnet."
+    },
+    "article10": {
+      "headline": "Dele utgifter mellom to hjem",
+      "description": "Praktisk veiledning om hva som regnes som felles kostnader, hvordan dokumentere utgifter, og hvordan unngå at penger blir kilde til konflikt mellom foreldre."
     }
   },
   "blog1": {
@@ -923,7 +927,10 @@
     "a8desc": "En praktisk gjennomgang av hva som hører hjemme i en skriftlig samværsavtale mellom foreldre.",
     "a9label": "Bursdag",
     "a9title": "Bursdager i to hjem",
-    "a9desc": "Hvordan planlegge bursdagen når barnet har to hjem — å dele dagen, feire og la fokuset bli på barnet."
+    "a9desc": "Hvordan planlegge bursdagen når barnet har to hjem — å dele dagen, feire og la fokuset bli på barnet.",
+    "a10label": "Økonomi",
+    "a10title": "Dele utgifter mellom to hjem",
+    "a10desc": "Hva som regnes som felles kostnad, hvordan dele rettferdig, og hvordan unngå at penger blander seg inn i hverdagsmeldingene."
   },
   "blog2": {
     "pageTitle": "Byttedag — slik gjør du overleveringen enklere | Lina",
@@ -1201,6 +1208,41 @@
     "s6p3": "Stol på at den andre forelderen vil gjøre dagen god. Din rolle, akkurat denne dagen, kan være den stille.",
     "ctaTitle": "En roligere bursdag, fra begge hjem",
     "ctaDesc": "Lina holder bursdager, kontakter og felles planer på ett sted — slik at begge foreldre kan forberede dagen uten koordinering i siste liten, og barnet får beholde fokuset.",
+    "ctaCta": "Last ned Lina"
+  },
+  "blog10": {
+    "pageTitle": "Dele utgifter mellom to hjem | Lina",
+    "pageDesc": "Praktisk veiledning om hva som regnes som felles kostnader, hvordan dokumentere utgifter, og hvordan unngå at penger blir kilde til konflikt mellom foreldre.",
+    "label": "Økonomi",
+    "title": "Dele utgifter mellom to hjem",
+    "date": "Mai 2026",
+    "intro": "Penger er en av de vanligste kildene til friksjon mellom foreldre som deler omsorg. Beløpene er ofte mindre viktige enn mangelen på tydelighet rundt dem — hvem som betaler hva, hva som regnes som felles kostnad, hvordan større innkjøp avgjøres. Et enkelt system, avtalt én gang og skrevet ned, fjerner mesteparten av disse samtalene fra hverdagen.",
+    "s1title": "Barnebidrag dekker hverdagen, ikke alt",
+    "s1p1": "De fleste land har en bidragsordning som overfører et fast beløp fra én forelder til den andre. De juridiske detaljene varierer fra land til land, men logikken er den samme: barnebidrag er ment å dekke hverdagskostnader — mat, klær, husholdning, strøm — i hjemmet der barnet bor mest av tiden.",
+    "s1p2": "Barnebidrag er sjelden ment å dekke alt. Aktiviteter, skoleturer, større utstyr, helseutgifter og engangskostnader faller som regel utenfor — og det er der de fleste uenighetene begynner, fordi grensen sjelden er skrevet ned.",
+    "s1p3": "Uansett hvilken ordning som gjelder der dere bor, er den praktiske oppgaven den samme: avtal hva bidraget er ment å dekke, og sett en grense skriftlig — for eksempel at utgifter over 1000 kr som begge er enige om, regnes som felles.",
+    "s2title": "Bli enige om hva som er felles kostnad",
+    "s2p1": "Uenigheter om penger handler nesten aldri om å betale i seg selv. De handler om hvorvidt noe i det hele tatt hører hjemme i den felles potten. Å definere den potten på forhånd forhindrer mesteparten av kranglene.",
+    "s2p2": "En rimelig liste over felles kostnader inkluderer som regel medlemskontingent og utstyr til faste aktiviteter, skoleturer og leirer, helse- og tannlegeutgifter som ikke dekkes av det offentlige, og større ting som følger barnet mellom hjemmene.",
+    "s2p3": "Det som vanligvis ikke deles: små kjøp i butikken, daglige klær som allerede dekkes av bidraget, og avgjørelser én forelder tar alene — for eksempel privattimer den andre ikke har samtykket til. En enkel test: hvis bare én forelder bestemte kjøpet, skylder den andre som regel ikke halvparten.",
+    "s3title": "Avtal hvordan dere fordeler",
+    "s3p1": "Lik fordeling er standarden og det enkleste å administrere. Det fungerer når begge foreldrene har lignende inntekt og kostnadene er forutsigbare.",
+    "s3p2": "Når inntektene er svært forskjellige, velger noen å dele forholdsmessig — for eksempel to tredjedeler og én tredjedel basert på nettoinntekt. Denne tilnærmingen oppleves ofte som mer rettferdig over tid, men krever en avtale om å revurdere når inntektene endres.",
+    "s3p3": "Et tredje mønster er å bytte på: én forelder betaler for aktivitet A, den andre for aktivitet B, av omtrent samme størrelse. Mindre papirarbeid, men forutsetter rimelig balanse. Uansett hva dere velger, skriv det ned.",
+    "s4title": "Før regnskap uten at det blir en kamparena",
+    "s4p1": "En felles oversikt holder for de fleste familier — et regneark, en delt notat, eller en samværsapp. Når begge foreldrene ser de samme tallene, forsvinner de fleste diskusjonene om hvem som har betalt for hva.",
+    "s4p2": "Avtal en fast rytme for å gå gjennom listen. Månedlig holder vanligvis. Kvartalsvis fungerer hvis felleskostnadene er lave. Legg inn posten, fest kvitteringen eller noter beløpet, gjør opp balansen, og gå videre.",
+    "s4p3": "Hold listen kort. Den er for felles kostnader — ikke for å følge med på hva den andre forelderen bruker penger på i sitt eget hjem.",
+    "s5title": "Større innkjøp: avtal på forhånd",
+    "s5p1": "En sykkel, en skoletur, regulering — slike ting må avtales på forhånd, ikke i etterkant. Den vanligste pengetvisten ved delt omsorg er at én forelder presenterer en kvittering for noe den andre ikke visste skulle avgjøres.",
+    "s5p2": "Over en sum som begge er enige om, snakk sammen før kjøp. Under den summen, bruk skjønn.",
+    "s5p3": "Skriv ned avtalen, selv kort. En melding på noen linjer — \"enige: skoleleir 2800 kr, deler 50/50, jeg betaler og fakturerer halvparten\" — er nok, og gir begge en referanse hvis hukommelsen spriker senere.",
+    "s6title": "Hold økonomi adskilt fra hverdagen",
+    "s6p1": "Ikke ta opp ubetalte utgifter ved bytte, på en bursdag, eller i et vanskelig øyeblikk. Pengesamtaler trenger sin egen rolige kanal — en skriftlig melding, en månedlig gjennomgang — ikke en kommentar når følelsene allerede er på topp.",
+    "s6p2": "Dette er den oftest brutte regelen og den mest skadelige. Et barn skal ikke høre kommentarer om ubetalte regninger i døra.",
+    "s6p3": "Hvis samtalen står fast, kan familievernkontoret eller mekling hjelpe med å strukturere felles utgifter uten å gå rettens vei. En nøytral mal kan løse en låst situasjon som direkte meldinger ikke klarer.",
+    "ctaTitle": "Penger i sin egen tråd, ikke i hverdagsflyten",
+    "ctaDesc": "Lina holder ulike temaer i separate tråder, med permanent meldingshistorikk. Økonomiske avtaler, kvitteringer og faste utgifter får sin egen plass — atskilt fra meldinger om bytte og ukentlig logistikk.",
     "ctaCta": "Last ned Lina"
   },
   "carousel": {

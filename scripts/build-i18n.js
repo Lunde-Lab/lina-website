@@ -198,6 +198,21 @@ const SOURCE_FILES = [
     priority: '0.6',
     hasDropdown: true,
   },
+  {
+    src: 'blog/sharing-expenses/index.html',
+    urlPath: '/blog/sharing-expenses/',
+    langUrls: {
+      no: '/blog/dele-utgifter/',
+      sv: '/blog/dela-kostnader/',
+      da: '/blog/dele-udgifter/',
+      fi: '/blog/kulujen-jakaminen/',
+      de: '/blog/geteilte-kosten/',
+      nl: '/blog/kosten-delen/',
+      fr: '/blog/partager-frais/',
+    },
+    priority: '0.6',
+    hasDropdown: true,
+  },
 ];
 
 // ─── Extra German-only blog slugs ─────────────────────────────────────────────
@@ -262,6 +277,8 @@ const INTERNAL_HREFS = [
   '/blog/starting-co-parenting',
   '/blog/writing-care-agreement/',
   '/blog/writing-care-agreement',
+  '/blog/sharing-expenses/',
+  '/blog/sharing-expenses',
   '/blog/birthdays-two-homes/',
   '/blog/birthdays-two-homes',
   '/blog/summer-holidays/',
@@ -462,6 +479,7 @@ const ARTICLE_MAP = {
   'blog/starting-co-parenting/index.html':      'article7',
   'blog/writing-care-agreement/index.html':     'article8',
   'blog/birthdays-two-homes/index.html':        'article9',
+  'blog/sharing-expenses/index.html':           'article10',
 };
 
 /**

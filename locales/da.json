@@ -851,6 +851,10 @@
     "article9": {
       "headline": "Fødselsdage i to hjem",
       "description": "Hvordan I planlægger fødselsdagen, når barnet har to hjem — at dele dagen, holde fejringer og lade fokus blive på barnet."
+    },
+    "article10": {
+      "headline": "Dele udgifter mellem to hjem",
+      "description": "Praktisk vejledning om, hvad der regnes som fælles udgifter, hvordan I dokumenterer dem, og hvordan I undgår, at penge bliver en kilde til konflikt."
     }
   },
   "blog1": {
@@ -923,7 +927,10 @@
     "a8desc": "En praktisk gennemgang af, hvad der hører hjemme i en skriftlig samværsaftale mellem forældre.",
     "a9label": "Fødselsdag",
     "a9title": "Fødselsdage i to hjem",
-    "a9desc": "Hvordan I planlægger fødselsdagen, når barnet har to hjem — at dele dagen, fejre og lade fokus blive på barnet."
+    "a9desc": "Hvordan I planlægger fødselsdagen, når barnet har to hjem — at dele dagen, fejre og lade fokus blive på barnet.",
+    "a10label": "Økonomi",
+    "a10title": "Dele udgifter mellem to hjem",
+    "a10desc": "Hvad der regnes som fælles udgift, hvordan I fordeler rimeligt, og hvordan I undgår, at penge blander sig ind i hverdagsbeskederne."
   },
   "blog2": {
     "pageTitle": "Byttedagen — sådan gør du overleveringen nemmere | Lina",
@@ -1201,6 +1208,41 @@
     "s6p3": "Stol på, at den anden forælder vil gøre dagen god. Din rolle, netop denne dag, kan være den stille.",
     "ctaTitle": "En roligere fødselsdag, fra begge hjem",
     "ctaDesc": "Lina samler fødselsdage, kontakter og fælles planer ét sted — så begge forældre kan forberede dagen uden koordinering i sidste øjeblik, og barnet beholder fokus.",
+    "ctaCta": "Download Lina"
+  },
+  "blog10": {
+    "pageTitle": "Dele udgifter mellem to hjem | Lina",
+    "pageDesc": "Praktisk vejledning om, hvad der regnes som fælles udgifter, hvordan I dokumenterer dem, og hvordan I undgår, at penge bliver en kilde til konflikt.",
+    "label": "Økonomi",
+    "title": "Dele udgifter mellem to hjem",
+    "date": "maj 2026",
+    "intro": "Penge er en af de mest pålidelige kilder til friktion mellem forældre, der deler omsorg. Beløbene betyder ofte mindre end manglen på klarhed om dem — hvem der betaler hvad, hvad der regnes som en fælles udgift, hvordan større køb besluttes. Et enkelt system, aftalt én gang og skrevet ned, fjerner de fleste af disse samtaler fra hverdagen.",
+    "s1title": "Børnebidrag dækker hverdagen, ikke alt",
+    "s1p1": "De fleste lande har et bidragssystem, der overfører et fast beløb fra den ene forælder til den anden. De juridiske detaljer varierer fra land til land, men logikken er den samme: børnebidrag er ment til at dække hverdagskostnader — mad, tøj, husholdning, el — i det hjem, hvor barnet bor størstedelen af tiden.",
+    "s1p2": "Børnebidrag er sjældent ment til at dække alt. Aktiviteter, skoleudflugter, større udstyr, sundhedsudgifter og engangsindkøb falder som regel uden for — og det er her de fleste uenigheder starter, fordi grænsen sjældent er skrevet ned.",
+    "s1p3": "Uanset hvilken ordning der gælder der, hvor I bor, er den praktiske opgave den samme: aftal hvad bidraget dækker, og skriv en grænse ned — for eksempel at udgifter over 1000 kr, som I begge er enige om, regnes som fælles.",
+    "s2title": "Bliv enige om, hvad der er fælles udgift",
+    "s2p1": "Uenigheder om penge handler næsten aldrig om at betale i sig selv. De handler om, hvorvidt noget overhovedet hører hjemme i den fælles pulje. At definere den pulje på forhånd forhindrer de fleste skænderier.",
+    "s2p2": "En rimelig liste over fælles udgifter inkluderer typisk kontingent og udstyr til faste aktiviteter, skoleudflugter og lejre, sundheds- og tandlægeudgifter som ikke dækkes af det offentlige, og større ting, der følger barnet mellem hjemmene.",
+    "s2p3": "Det der normalt ikke deles: småindkøb i butikken, dagligt tøj som allerede dækkes af bidraget, og beslutninger én forælder tager alene — for eksempel privattimer den anden ikke har samtykket til. En enkel test: hvis kun én forælder besluttede købet, skylder den anden som regel ikke halvdelen.",
+    "s3title": "Aftal, hvordan I fordeler",
+    "s3p1": "Halvt og halvt er standarden og nemmest at administrere. Det fungerer, når begge forældre har lignende indkomster, og udgifterne er forudsigelige.",
+    "s3p2": "Når indkomsterne er meget forskellige, vælger nogle at dele forholdsmæssigt — for eksempel to tredjedele og en tredjedel baseret på nettoindkomst. Denne tilgang føles ofte mere retfærdig over tid, men kræver en aftale om at genvurdere, når indkomsterne ændrer sig.",
+    "s3p3": "Et tredje mønster er at skifte: én forælder betaler for aktivitet A, den anden for aktivitet B, af omtrent samme størrelse. Mindre papirarbejde, men det forudsætter nogenlunde balance. Uanset hvad I vælger, skriv det ned.",
+    "s4title": "Hold styr på udgifterne uden at det bliver en slagmark",
+    "s4p1": "En fælles oversigt holder for de fleste familier — et regneark, en delt note eller en samværsapp. Når begge forældre kan se de samme tal, forsvinder de fleste diskussioner om, hvem der har betalt hvad.",
+    "s4p2": "Aftal en fast rytme for at gennemgå listen. Månedligt er som regel nok. Kvartalsvist fungerer, hvis fællesudgifterne er lave. Tilføj posten, vedhæft kvitteringen eller noter beløbet, gør balancen op og gå videre.",
+    "s4p3": "Hold listen kort. Den er til fælles udgifter — ikke til at følge med i, hvad den anden forælder bruger i sit eget hjem.",
+    "s5title": "Store indkøb: aftal inden I køber",
+    "s5p1": "En cykel, en skoletur, tandregulering — sådant skal aftales på forhånd, ikke bagefter. Den mest almindelige pengestrid ved delt omsorg er, at én forælder præsenterer en kvittering for noget, den anden ikke vidste var ved at blive besluttet.",
+    "s5p2": "Over et beløb, som begge er enige om, tal sammen før køb. Under det beløb, brug skøn.",
+    "s5p3": "Skriv aftalen ned, om så bare kort. En kort besked — \"aftalt: skolelejr 2800 kr, deler 50/50, jeg betaler og fakturerer halvdelen\" — er nok og giver begge en reference, hvis hukommelsen afviger.",
+    "s6title": "Hold økonomi adskilt fra hverdagen",
+    "s6p1": "Tag ikke ubetalte udgifter op ved aflevering, på en fødselsdag eller i et vanskeligt øjeblik. Pengesamtaler har brug for deres egen rolige kanal — en skriftlig besked, en månedlig gennemgang — ikke en kommentar, når følelserne allerede er høje.",
+    "s6p2": "Det er den oftest brudte regel og den mest skadelige. Et barn skal ikke høre kommentarer om ubetalte kvitteringer i døren.",
+    "s6p3": "Hvis samtalen er gået i stå, kan familierådgivning og mægling hjælpe med at strukturere fælles udgifter uden at gå rettens vej. En neutral skabelon kan løse en fastlåst situation, som direkte beskeder ikke kan.",
+    "ctaTitle": "Økonomi i sin egen tråd, ikke i hverdagens flow",
+    "ctaDesc": "Lina holder separate tråde for forskellige emner med permanent beskedhistorik. Økonomiske aftaler, kvitteringer og faste udgifter får sin egen plads — adskilt fra beskeder om aflevering og ugentlig logistik.",
     "ctaCta": "Download Lina"
   },
   "carousel": {

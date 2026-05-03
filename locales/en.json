@@ -811,6 +811,10 @@
     "article9": {
       "headline": "Birthdays across two homes",
       "description": "How to plan birthdays when a child has two homes — splitting the day, hosting celebrations, and keeping the focus on the child."
+    },
+    "article10": {
+      "headline": "Splitting expenses across two homes",
+      "description": "Practical guidance on what counts as a shared cost, how to track expenses, and how to keep money from becoming a source of friction between co-parents."
     }
   },
   "blog1": {
@@ -883,7 +887,10 @@
     "a8desc": "A practical guide to what belongs in a written care agreement between co-parents.",
     "a9label": "Birthdays",
     "a9title": "Birthdays across two homes",
-    "a9desc": "How to plan birthdays when a child has two homes — splitting the day, celebrations, and keeping the focus on the child."
+    "a9desc": "How to plan birthdays when a child has two homes — splitting the day, celebrations, and keeping the focus on the child.",
+    "a10label": "Money",
+    "a10title": "Splitting expenses across two homes",
+    "a10desc": "What counts as a shared cost, how to split it fairly, and how to keep money conversations from spilling into everyday messages."
   },
   "blog2": {
     "pageTitle": "Handover day — how to make transitions easier | Lina",
@@ -1161,6 +1168,41 @@
     "s6p3": "On a birthday that falls in the other parent's week, the active role belongs to that household. Sending good wishes through the child or by message in the evening tends to land better than asking for additional contact.",
     "ctaTitle": "A calmer birthday, from both homes",
     "ctaDesc": "Lina keeps birthdays, contacts, and shared plans in one place — so both parents can prepare the day without last-minute coordination, and the child keeps the focus.",
+    "ctaCta": "Download Lina"
+  },
+  "blog10": {
+    "pageTitle": "Splitting expenses across two homes | Lina",
+    "pageDesc": "Practical guidance on what counts as a shared cost, how to track expenses, and how to keep money from becoming a source of friction between co-parents.",
+    "label": "Money",
+    "date": "May 2026",
+    "title": "Splitting expenses across two homes",
+    "intro": "Money is one of the most reliable sources of friction between co-parents. The amounts often matter less than the lack of clarity around them — who pays for what, what counts as a shared cost, how big purchases get decided. A simple system, agreed once and written down, removes most of these conversations from the day-to-day.",
+    "s1title": "Maintenance covers daily costs, not everything",
+    "s1p1": "Most countries have a maintenance or child-support framework that transfers a regular amount from one parent to the other. The legal details vary by country, but the underlying logic is similar: maintenance is meant to cover everyday costs — food, clothing, household supplies, utilities — in the home where the child lives most of the time.",
+    "s1p2": "Maintenance is rarely designed to cover everything. Activities, school trips, larger equipment, medical costs, and one-off purchases usually sit outside it — and that is where most disagreements start, because the boundary is rarely written down.",
+    "s1p3": "Whatever framework applies in your country, the practical task is the same: decide what maintenance covers, and agree a threshold in writing — for example, \"any single cost above €100 agreed by both parents counts as a shared expense.\"",
+    "s2title": "Decide what counts as a shared cost",
+    "s2p1": "Disagreements about money are almost never about whether to pay. They are about whether something belongs in the shared bucket at all. Defining that bucket upfront prevents most of the arguments.",
+    "s2p2": "A reasonable list of shared costs usually includes registered activity fees and equipment, school trips and camps, medical and dental costs not covered by public health, and major items that follow the child between homes.",
+    "s2p3": "What is not usually shared: snacks at the supermarket, day-to-day clothing already covered by maintenance, and decisions one parent makes alone — a private music lesson the other did not agree to. A useful test: if only one parent decided on the spend, the other does not usually owe half.",
+    "s3title": "Agree on how you split",
+    "s3p1": "Equal halves are the default and the easiest to administer. It works when both parents have similar incomes and the costs are predictable.",
+    "s3p2": "When incomes differ significantly, some parents split proportionally — for example, two-thirds and one-third based on net income. This approach tends to feel fairer over time, but requires an agreement to revisit when incomes change.",
+    "s3p3": "A third pattern is alternating: one parent pays for activity A, the other for activity B, of roughly equal cost. Less paperwork, but it depends on rough parity. Whichever you pick, write it down.",
+    "s4title": "Track expenses without making it a battleground",
+    "s4p1": "A shared list is enough for most families — a spreadsheet, a shared note, or a co-parenting app. When both parents can see the same numbers, the \"I already paid for half of that\" arguments mostly disappear.",
+    "s4p2": "Settle on a regular rhythm for reviewing the list. Monthly is usually enough. Quarterly works when shared costs are low. Add the entry, attach the receipt or note the amount, settle the balance, and move on.",
+    "s4p3": "Keep the list short. It is for shared costs only — not for tracking the other parent's spending in their own home.",
+    "s5title": "Larger purchases: agree before buying",
+    "s5p1": "A bicycle, a school trip, orthodontics — these need to be agreed before, not after. The most common money disagreement in shared care is one parent presenting a receipt for something the other did not know was being decided.",
+    "s5p2": "Above a threshold both parents agree on, discuss before purchasing. Below that, use judgment.",
+    "s5p3": "Document the agreement, even briefly. A short message — \"agreed: school camp 280, splitting 50/50, I'll pay and invoice half\" — is enough, and gives both parents a reference if memory diverges later.",
+    "s6title": "Keep money separate from the day",
+    "s6p1": "Do not bring up unpaid expenses at handover, on a birthday, or during a difficult moment. Money conversations need a calm channel of their own — a written message, a monthly review — not a remark when emotions are already high.",
+    "s6p2": "This is the most often-broken rule and the most damaging. A child should not overhear comments about unpaid receipts at the front door.",
+    "s6p3": "If the conversation gets stuck, family counselling and mediation services can help structure shared expenses without going to court. A neutral template often breaks a deadlock that direct messaging cannot.",
+    "ctaTitle": "Money in its own thread, not the everyday flow",
+    "ctaDesc": "Lina keeps separate threads for different topics, with permanent message history. Financial agreements, receipts, and recurring costs stay in one organised place — and out of handover and weekly logistics messages.",
     "ctaCta": "Download Lina"
   },
   "carousel": {

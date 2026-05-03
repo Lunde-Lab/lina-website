@@ -835,6 +835,10 @@
     "article9": {
       "headline": "Verjaardagen tussen twee huizen",
       "description": "Hoe u een verjaardag plant wanneer een kind twee huizen heeft — de dag verdelen, vieringen organiseren en de aandacht bij het kind houden."
+    },
+    "article10": {
+      "headline": "Kosten delen tussen twee huizen",
+      "description": "Praktische uitleg over wat als gedeelde kosten geldt, hoe u uitgaven bijhoudt en hoe u voorkomt dat geld een bron van wrijving wordt tussen co-ouders."
     }
   },
   "blogShared": {
@@ -872,7 +876,10 @@
     "a8desc": "Een praktische gids voor wat er in een schriftelijk ouderschapsplan tussen co-ouders thuishoort.",
     "a9label": "Verjaardag",
     "a9title": "Verjaardagen tussen twee huizen",
-    "a9desc": "Hoe u een verjaardag plant wanneer een kind twee huizen heeft — de dag verdelen, vieren en de aandacht bij het kind houden."
+    "a9desc": "Hoe u een verjaardag plant wanneer een kind twee huizen heeft — de dag verdelen, vieren en de aandacht bij het kind houden.",
+    "a10label": "Financiën",
+    "a10title": "Kosten delen tussen twee huizen",
+    "a10desc": "Wat als gedeelde kosten geldt, hoe u eerlijk verdeelt en hoe u voorkomt dat geld in de dagelijkse berichten belandt."
   },
   "blog1": {
     "pageTitle": "Omgangsregelingen uitgelegd — Lina",
@@ -1185,6 +1192,41 @@
     "s6p3": "Vertrouw erop dat de andere ouder de dag goed maakt. Uw rol kan juist op deze dag de stille zijn.",
     "ctaTitle": "Een rustigere verjaardag, vanuit beide huizen",
     "ctaDesc": "Lina houdt verjaardagen, contacten en gedeelde plannen op één plek — zodat beide ouders de dag kunnen voorbereiden zonder coördinatie op het laatste moment, en het kind in het middelpunt blijft.",
+    "ctaCta": "Download Lina"
+  },
+  "blog10": {
+    "pageTitle": "Kosten delen tussen twee huizen | Lina",
+    "pageDesc": "Praktische uitleg over wat als gedeelde kosten geldt, hoe u uitgaven bijhoudt en hoe u voorkomt dat geld een bron van wrijving wordt tussen co-ouders.",
+    "label": "Financiën",
+    "title": "Kosten delen tussen twee huizen",
+    "date": "mei 2026",
+    "intro": "Geld is een van de meest betrouwbare bronnen van wrijving tussen ouders die de zorg delen. De bedragen doen er vaak minder toe dan het gebrek aan duidelijkheid erover — wie betaalt wat, wat telt als gedeelde kosten, hoe grote aankopen worden beslist. Een eenvoudig systeem, één keer afgesproken en opgeschreven, haalt de meeste van deze gesprekken uit het dagelijks leven.",
+    "s1title": "Alimentatie dekt het dagelijks leven, niet alles",
+    "s1p1": "De meeste landen hebben een alimentatiestelsel dat een regelmatig bedrag overdraagt van de ene naar de andere ouder. De juridische details verschillen per land, maar de logica is dezelfde: alimentatie is bedoeld om de dagelijkse kosten te dekken — eten, kleding, huishouden, energie — in het huis waar het kind het grootste deel van de tijd verblijft.",
+    "s1p2": "Alimentatie is zelden bedoeld om alles te dekken. Activiteiten, schoolreisjes, grotere uitrusting, medische kosten en eenmalige aankopen vallen er doorgaans buiten — en daar beginnen de meeste meningsverschillen, omdat de grens zelden op papier staat.",
+    "s1p3": "Welke regeling er ook in uw land geldt, de praktische taak is dezelfde: leg schriftelijk vast wat de alimentatie dekt en stel een grens — bijvoorbeeld dat kosten boven €100, waarmee beide ouders hebben ingestemd, als gedeelde kosten gelden.",
+    "s2title": "Bepaal wat als gedeelde kosten geldt",
+    "s2p1": "Meningsverschillen over geld gaan bijna nooit over het betalen zelf. Ze gaan over de vraag of iets überhaupt in de gemeenschappelijke pot hoort. Door die pot van tevoren te definiëren voorkomt u de meeste ruzies.",
+    "s2p2": "Een redelijke lijst van gedeelde kosten omvat doorgaans contributie en uitrusting voor vaste activiteiten, schoolreisjes en kampen, gezondheids- en tandheelkundige kosten die niet door de basisverzekering worden gedekt, en grote aanschaffingen die het kind tussen de huizen meeneemt.",
+    "s2p3": "Wat doorgaans niet gedeeld wordt: kleine boodschappen, alledaagse kleding die al door de alimentatie wordt gedekt, en beslissingen die één ouder alleen neemt — bijvoorbeeld privélessen waar de ander niet mee heeft ingestemd. Een eenvoudige test: als slechts één ouder heeft beslist, is de andere doorgaans niet verplicht de helft te betalen.",
+    "s3title": "Spreek af hoe u verdeelt",
+    "s3p1": "Gelijke helften zijn de standaard en het makkelijkst te beheren. Het werkt wanneer beide ouders vergelijkbare inkomens hebben en de kosten voorspelbaar zijn.",
+    "s3p2": "Wanneer de inkomens aanzienlijk verschillen, kiezen sommige ouders voor een proportionele verdeling — bijvoorbeeld tweederde en eenderde op basis van het netto-inkomen. Deze aanpak voelt met de tijd vaak eerlijker, maar vereist een afspraak om te herzien wanneer de inkomens veranderen.",
+    "s3p3": "Een derde patroon is beurtelings: de ene ouder betaalt voor activiteit A, de andere voor activiteit B, van ongeveer gelijke waarde. Minder administratie, maar het vereist een globaal evenwicht. Wat u ook kiest — schrijf het op.",
+    "s4title": "Uitgaven bijhouden zonder het een strijdtoneel te maken",
+    "s4p1": "Een gedeelde lijst is genoeg voor de meeste gezinnen — een spreadsheet, een gedeelde notitie of een co-ouderschap-app. Wanneer beide ouders dezelfde cijfers zien, verdwijnen de meeste discussies over wie wat al heeft betaald.",
+    "s4p2": "Spreek een vaste regelmaat af voor het doornemen van de lijst. Maandelijks volstaat doorgaans. Elk kwartaal werkt wanneer de gedeelde kosten laag zijn. Voeg de post toe, voeg de bon bij of noteer het bedrag, veref het saldo en ga verder.",
+    "s4p3": "Houd de lijst kort. Die is alleen voor gedeelde kosten — niet om bij te houden wat de andere ouder in zijn of haar eigen huis uitgeeft.",
+    "s5title": "Grotere aankopen: bespreek voor u koopt",
+    "s5p1": "Een fiets, een schoolreis, een beugel — die moeten van tevoren worden besproken, niet achteraf. Het meest voorkomende geldgeschil bij gedeelde zorg is dat één ouder een bon presenteert voor iets waarvan de ander niet wist dat het werd besloten.",
+    "s5p2": "Boven een drempel die beide ouders zijn overeengekomen, bespreekt u het voor de aankoop. Eronder gebruikt u uw oordeel.",
+    "s5p3": "Leg de afspraak vast, al is het maar kort. Een kort bericht — \"afgesproken: schoolkamp 280 euro, 50/50 verdelen, ik betaal en factureer de helft\" — is genoeg en geeft beiden een referentie als de herinneringen later uiteenlopen.",
+    "s6title": "Houd geld los van het dagelijks leven",
+    "s6p1": "Breng onbetaalde uitgaven niet ter sprake bij het wisselen, op een verjaardag of in een moeilijk moment. Gesprekken over geld hebben hun eigen rustige kanaal nodig — een schriftelijk bericht, een maandelijkse bespreking — geen opmerking wanneer de emoties al hoog oplopen.",
+    "s6p2": "Dit is de regel die het vaakst wordt gebroken en die het meeste schade aanricht. Een kind mag aan de voordeur geen opmerkingen horen over onbetaalde bonnen.",
+    "s6p3": "Als het gesprek vastloopt, kunnen gezinsmediation en bemiddeling helpen om de gedeelde kosten te structureren zonder naar de rechter te gaan. Een neutrale structuur kan een impasse doorbreken die directe berichten niet kunnen.",
+    "ctaTitle": "Financiën in een eigen thread, niet in de dagelijkse stroom",
+    "ctaDesc": "Lina houdt afzonderlijke threads bij voor verschillende onderwerpen, met permanente berichtgeschiedenis. Financiële afspraken, bonnen en terugkerende kosten krijgen hun eigen plek — buiten de berichten over wissels en wekelijkse logistiek.",
     "ctaCta": "Download Lina"
   },
   "carousel": {

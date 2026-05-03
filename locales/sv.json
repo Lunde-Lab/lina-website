@@ -851,6 +851,10 @@
     "article9": {
       "headline": "Födelsedagar i två hem",
       "description": "Hur ni planerar födelsedagen när barnet har två hem — att dela dagen, hålla firanden och låta fokus stanna på barnet."
+    },
+    "article10": {
+      "headline": "Dela kostnader mellan två hem",
+      "description": "Praktisk vägledning om vad som räknas som gemensamma kostnader, hur ni dokumenterar utgifter och hur ni undviker att pengar blir en källa till konflikt."
     }
   },
   "blog1": {
@@ -923,7 +927,10 @@
     "a8desc": "En praktisk genomgång av vad som hör hemma i ett skriftligt vårdnadsavtal mellan föräldrar.",
     "a9label": "Födelsedag",
     "a9title": "Födelsedagar i två hem",
-    "a9desc": "Hur ni planerar födelsedagen när barnet har två hem — att dela dagen, fira och låta fokus stanna på barnet."
+    "a9desc": "Hur ni planerar födelsedagen när barnet har två hem — att dela dagen, fira och låta fokus stanna på barnet.",
+    "a10label": "Ekonomi",
+    "a10title": "Dela kostnader mellan två hem",
+    "a10desc": "Vad som räknas som gemensam kostnad, hur ni fördelar rättvist och hur ni undviker att pengar blandas in i vardagens meddelanden."
   },
   "blog2": {
     "pageTitle": "Överlämningsdag — så gör du bytet enklare | Lina",
@@ -1201,6 +1208,41 @@
     "s6p3": "Lita på att den andra föräldern gör dagen bra. Din roll, just denna dag, kan vara den tysta.",
     "ctaTitle": "En lugnare födelsedag, från båda hemmen",
     "ctaDesc": "Lina samlar födelsedagar, kontakter och gemensamma planer på ett ställe — så att båda föräldrarna kan förbereda dagen utan koordinering i sista stund, och barnet får behålla fokuset.",
+    "ctaCta": "Ladda ner Lina"
+  },
+  "blog10": {
+    "pageTitle": "Dela kostnader mellan två hem | Lina",
+    "pageDesc": "Praktisk vägledning om vad som räknas som gemensamma kostnader, hur ni dokumenterar utgifter och hur ni undviker att pengar blir en källa till konflikt.",
+    "label": "Ekonomi",
+    "title": "Dela kostnader mellan två hem",
+    "date": "maj 2026",
+    "intro": "Pengar är en av de vanligaste källorna till friktion mellan föräldrar som delar omsorg. Beloppen spelar ofta mindre roll än bristen på tydlighet kring dem — vem som betalar vad, vad som räknas som gemensam kostnad, hur stora köp beslutas. Ett enkelt system, bestämt en gång och nedskrivet, tar bort de flesta av dessa samtal från vardagen.",
+    "s1title": "Underhåll täcker vardagen, inte allt",
+    "s1p1": "De flesta länder har ett underhållssystem som överför ett regelbundet belopp från den ena föräldern till den andra. De juridiska detaljerna varierar mellan länder, men logiken är densamma: underhåll är avsett att täcka vardagliga kostnader — mat, kläder, hushåll, el — i det hem där barnet bor större delen av tiden.",
+    "s1p2": "Underhåll är sällan avsett att täcka allt. Aktiviteter, skolresor, större utrustning, hälsokostnader och engångsköp faller vanligtvis utanför — och det är där de flesta oenigheter börjar, eftersom gränsen sällan är nedskriven.",
+    "s1p3": "Vilket system som gäller i ert land, den praktiska uppgiften är densamma: bestäm vad underhållet täcker och skriv ner en gräns — till exempel att kostnader över 1000 kr som ni båda är överens om räknas som gemensamma.",
+    "s2title": "Bestäm vad som räknas som gemensam kostnad",
+    "s2p1": "Oenigheter om pengar handlar nästan aldrig om att betala i sig. De handlar om huruvida något alls hör hemma i den gemensamma potten. Att definiera den potten i förväg förhindrar de flesta grälen.",
+    "s2p2": "En rimlig lista över gemensamma kostnader inkluderar vanligtvis terminsavgifter och utrustning för fasta aktiviteter, skolresor och läger, hälso- och tandvårdskostnader som inte täcks av det offentliga, och större saker som följer barnet mellan hemmen.",
+    "s2p3": "Det som vanligtvis inte delas: småköp i butiken, vardagskläder som redan täcks av underhållet, och beslut som en förälder tar ensam — till exempel privatlektioner den andra inte samtyckt till. Ett enkelt test: om bara en förälder fattade beslutet om köpet är den andra vanligtvis inte skyldig att betala hälften.",
+    "s3title": "Bestäm hur ni fördelar",
+    "s3p1": "Lika hälfter är standarden och enklast att administrera. Det fungerar när båda föräldrarna har liknande inkomster och kostnaderna är förutsägbara.",
+    "s3p2": "När inkomsterna skiljer sig avsevärt väljer en del att dela proportionellt — till exempel två tredjedelar och en tredjedel baserat på nettoinkomst. Det här upplever de flesta som mer rättvist med tiden, men kräver en överenskommelse om att revidera när inkomsterna förändras.",
+    "s3p3": "Ett tredje mönster är växelvis: en förälder betalar för aktivitet A, den andra för aktivitet B, av ungefär samma värde. Mindre pappersarbete, men det förutsätter ungefär balans. Vad ni än väljer, skriv ner det.",
+    "s4title": "Håll koll på utgifter utan att det blir en stridsskåda",
+    "s4p1": "En gemensam lista räcker för de flesta familjer — ett kalkylblad, en delad anteckning eller en samapp. När båda föräldrarna ser samma siffror försvinner de flesta diskussionerna om vem som har betalat vad.",
+    "s4p2": "Bestäm en fast rytm för att gå igenom listan. Månadsvis brukar räcka. Kvartalsvis fungerar om de gemensamma kostnaderna är låga. Lägg in posten, bifoga kvittot eller notera beloppet, reglera balansen och gå vidare.",
+    "s4p3": "Håll listan kort. Den är för gemensamma kostnader — inte för att följa upp vad den andra föräldern spenderar i sitt eget hem.",
+    "s5title": "Större inköp: bestäm innan ni köper",
+    "s5p1": "En cykel, en skolresa, tandreglering — sådant behöver avtalas i förväg, inte i efterhand. Den vanligaste pengatvisten vid delad omsorg är att en förälder presenterar ett kvitto för något den andra inte visste skulle beslutas.",
+    "s5p2": "Över ett belopp som båda är överens om, prata ihop er innan köp. Under det beloppet, använd omdöme.",
+    "s5p3": "Dokumentera överenskommelsen, om så bara kort. Ett kort meddelande — \"klart: skolläger 2800 kr, delar 50/50, jag betalar och fakturerar hälften\" — räcker och ger båda en referens om minnet skiljer sig åt senare.",
+    "s6title": "Håll ekonomin separerad från vardagen",
+    "s6p1": "Ta inte upp obetalda utgifter vid överlämning, på en födelsedag eller i ett svårt ögonblick. Penningsamtal behöver en egen lugn kanal — ett skriftligt meddelande, en månadsgenomgång — inte en kommentar när känslorna redan är höga.",
+    "s6p2": "Det här är den regel som bryts mest och skadar mest. Ett barn ska inte höra kommentarer om obetalda kvitton vid dörren.",
+    "s6p3": "Om samtalet kört fast kan familjerådgivning och medling hjälpa till att strukturera gemensamma utgifter utan att gå domstolsvägen. En neutral mall kan lösa en låst situation som direktmeddelanden inte klarar av.",
+    "ctaTitle": "Ekonomi i sin egen tråd, inte i vardagsflödet",
+    "ctaDesc": "Lina håller separata trådar för olika ämnen, med permanent meddelandehistorik. Ekonomiska överenskommelser, kvitton och fasta kostnader får sin egen plats — utanför meddelandena om överlämning och veckoplanering.",
     "ctaCta": "Ladda ner Lina"
   },
   "carousel": {

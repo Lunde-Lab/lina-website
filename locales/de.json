@@ -835,6 +835,10 @@
     "article9": {
       "headline": "Geburtstage in zwei Zuhause",
       "description": "Wie Sie den Geburtstag planen, wenn ein Kind zwei Zuhause hat — den Tag aufteilen, Feiern ausrichten und den Fokus beim Kind halten."
+    },
+    "article10": {
+      "headline": "Geteilte Kosten in zwei Zuhause",
+      "description": "Praktische Orientierung, was als gemeinsame Kosten gilt, wie Sie Ausgaben dokumentieren und wie Sie verhindern, dass Geld zur Konfliktquelle zwischen Eltern wird."
     }
   },
   "blogShared": {
@@ -872,7 +876,10 @@
     "a8desc": "Ein praktischer Leitfaden, was in eine schriftliche Umgangsvereinbarung zwischen Co-Eltern gehört.",
     "a9label": "Geburtstag",
     "a9title": "Geburtstage in zwei Zuhause",
-    "a9desc": "Wie Sie den Geburtstag planen, wenn ein Kind zwei Zuhause hat — den Tag aufteilen, Feiern und den Fokus beim Kind halten."
+    "a9desc": "Wie Sie den Geburtstag planen, wenn ein Kind zwei Zuhause hat — den Tag aufteilen, Feiern und den Fokus beim Kind halten.",
+    "a10label": "Finanzen",
+    "a10title": "Geteilte Kosten in zwei Zuhause",
+    "a10desc": "Was als gemeinsame Ausgabe gilt, wie Sie fair aufteilen und wie Sie verhindern, dass Geld in die Alltagsnachrichten einfließt."
   },
   "blog1": {
     "pageTitle": "Umgangsregelungen im Überblick — Lina",
@@ -1150,6 +1157,41 @@
     "s6p3": "Vertrauen Sie darauf, dass der andere Elternteil den Tag gut macht. Ihre Rolle kann an genau diesem Tag die stille sein.",
     "ctaTitle": "Ein ruhigerer Geburtstag, aus beiden Zuhausen",
     "ctaDesc": "Lina hält Geburtstage, Kontakte und gemeinsame Pläne an einem Ort — damit beide Eltern den Tag ohne Last-Minute-Koordination vorbereiten können und das Kind den Fokus behält.",
+    "ctaCta": "Lina herunterladen"
+  },
+  "blog10": {
+    "pageTitle": "Geteilte Kosten in zwei Zuhause | Lina",
+    "pageDesc": "Praktische Orientierung, was als gemeinsame Kosten gilt, wie Sie Ausgaben dokumentieren und wie Sie verhindern, dass Geld zur Konfliktquelle zwischen Eltern wird.",
+    "label": "Finanzen",
+    "title": "Geteilte Kosten in zwei Zuhause",
+    "date": "Mai 2026",
+    "intro": "Geld ist eine der verlässlichsten Reibungsquellen zwischen Eltern, die die Betreuung teilen. Die Beträge spielen oft eine geringere Rolle als fehlende Klarheit darüber — wer was bezahlt, was als gemeinsame Ausgabe gilt, wie größere Anschaffungen entschieden werden. Ein einfaches System, einmal vereinbart und schriftlich festgehalten, nimmt die meisten dieser Gespräche aus dem Alltag.",
+    "s1title": "Unterhalt deckt den Alltag, nicht alles",
+    "s1p1": "Die meisten Länder haben eine Unterhaltsregelung, die einen regelmäßigen Betrag von einem Elternteil zum anderen überträgt. Die rechtlichen Details unterscheiden sich je nach Land, aber die Logik ist dieselbe: Unterhalt soll die Alltagskosten abdecken — Essen, Kleidung, Haushalt, Nebenkosten — im Zuhause, in dem das Kind die meiste Zeit lebt.",
+    "s1p2": "Unterhalt ist selten darauf ausgelegt, alles zu decken. Aktivitäten, Schulausflüge, größere Ausstattung, medizinische Kosten und einmalige Anschaffungen fallen in der Regel heraus — und dort beginnen die meisten Uneinigkeiten, weil die Grenze selten schriftlich festgehalten ist.",
+    "s1p3": "Welche Regelung auch in Ihrem Land gilt — die praktische Aufgabe ist dieselbe: legen Sie schriftlich fest, was der Unterhalt abdeckt, und vereinbaren Sie eine Grenze — zum Beispiel, dass Ausgaben über 100 Euro, denen beide zugestimmt haben, als gemeinsame Kosten gelten.",
+    "s2title": "Legen Sie fest, was als gemeinsame Kosten gilt",
+    "s2p1": "Uneinigkeiten über Geld drehen sich fast nie darum, ob man bezahlt. Sie drehen sich darum, ob etwas überhaupt in die gemeinsame Kasse gehört. Diesen Rahmen vorab zu definieren verhindert die meisten Streitigkeiten.",
+    "s2p2": "Eine vernünftige Liste gemeinsamer Kosten umfasst üblicherweise Vereinsbeiträge und Ausstattung für feste Aktivitäten, Schulausflüge und Ferienlager, Gesundheits- und Zahnarztkosten, die nicht von der Krankenversicherung übernommen werden, sowie größere Anschaffungen, die das Kind zwischen den Zuhausen begleiten.",
+    "s2p3": "Was üblicherweise nicht geteilt wird: kleine Einkäufe im Supermarkt, alltägliche Kleidung, die bereits vom Unterhalt abgedeckt ist, und Entscheidungen, die ein Elternteil allein trifft — zum Beispiel Privatstunden, denen der andere nicht zugestimmt hat. Ein einfacher Test: Hätte nur ein Elternteil die Entscheidung getroffen, ist der andere in der Regel nicht zur Hälfte verpflichtet.",
+    "s3title": "Einigen Sie sich auf die Aufteilung",
+    "s3p1": "Gleiche Hälften sind der Standard und am leichtesten zu verwalten. Es funktioniert, wenn beide Elternteile ähnliche Einkommen haben und die Kosten vorhersehbar sind.",
+    "s3p2": "Wenn die Einkommen deutlich auseinandergehen, teilen manche Eltern proportional — etwa zwei Drittel und ein Drittel auf Basis des Nettoeinkommens. Diese Lösung wirkt mit der Zeit oft fairer, erfordert aber eine Vereinbarung zur Überprüfung, wenn sich die Einkommen ändern.",
+    "s3p3": "Ein drittes Muster ist der Wechsel: Ein Elternteil bezahlt Aktivität A, der andere Aktivität B, von ungefähr gleichem Wert. Weniger Verwaltungsaufwand, setzt aber ein grobes Gleichgewicht voraus. Was auch immer Sie wählen — halten Sie es schriftlich fest.",
+    "s4title": "Ausgaben dokumentieren, ohne dass es zum Schlachtfeld wird",
+    "s4p1": "Eine gemeinsame Liste reicht für die meisten Familien — eine Tabelle, eine geteilte Notiz oder eine Co-Parenting-App. Wenn beide Elternteile dieselben Zahlen sehen, entfallen die meisten Diskussionen darüber, wer schon die Hälfte bezahlt hat.",
+    "s4p2": "Legen Sie einen festen Rhythmus fest, um die Liste zu überprüfen. Monatlich reicht meistens. Quartalsweise funktioniert, wenn die gemeinsamen Kosten gering sind. Tragen Sie den Posten ein, fügen Sie den Beleg bei oder notieren Sie den Betrag, begleichen Sie den Saldo und machen Sie weiter.",
+    "s4p3": "Halten Sie die Liste kurz. Sie ist nur für gemeinsame Kosten — nicht um die Ausgaben des anderen Elternteils in seinem eigenen Zuhause zu verfolgen.",
+    "s5title": "Größere Anschaffungen: vor dem Kauf besprechen",
+    "s5p1": "Ein Fahrrad, ein Schulausflug, eine Kieferkorrektur — darüber muss vorher gesprochen werden, nicht hinterher. Die häufigste Geldstreitigkeit bei geteilter Betreuung entsteht, wenn ein Elternteil eine Quittung für etwas präsentiert, von dem der andere nicht wusste, dass darüber entschieden wurde.",
+    "s5p2": "Über einem Betrag, den beide Elternteile vereinbart haben, sprechen Sie vor dem Kauf. Darunter nutzen Sie Ihr Urteilsvermögen.",
+    "s5p3": "Halten Sie die Vereinbarung schriftlich fest, auch nur kurz. Eine kurze Nachricht — \"abgesprochen: Schulfahrt 280 Euro, teilen wir 50/50, ich zahle und stelle die Hälfte in Rechnung\" — reicht aus und gibt beiden eine Referenz, falls die Erinnerungen später auseinandergehen.",
+    "s6title": "Geld vom Alltag trennen",
+    "s6p1": "Bringen Sie unbezahlte Ausgaben nicht beim Übergabetermin, an einem Geburtstag oder in einem schwierigen Moment zur Sprache. Gespräche über Geld brauchen einen eigenen ruhigen Kanal — eine schriftliche Nachricht, eine monatliche Durchsicht — keine Bemerkung, wenn die Emotionen bereits hochkochen.",
+    "s6p2": "Das ist die am häufigsten gebrochene und die schädlichste Regel. Ein Kind sollte an der Haustür keine Kommentare über unbezahlte Belege mitbekommen.",
+    "s6p3": "Wenn das Gespräch feststeckt, können Familienberatung und Mediation helfen, die gemeinsamen Ausgaben zu strukturieren, ohne den Rechtsweg zu gehen. Eine neutrale Vorlage kann einen Stillstand lösen, den direkte Nachrichten nicht überwinden können.",
+    "ctaTitle": "Finanzen in einem eigenen Thread, nicht im Alltagsstrom",
+    "ctaDesc": "Lina hält für verschiedene Themen getrennte Threads mit dauerhafter Nachrichtenhistorie. Finanzielle Vereinbarungen, Belege und wiederkehrende Kosten bekommen ihren eigenen Platz — getrennt von Nachrichten zu Übergaben und wöchentlicher Alltagslogistik.",
     "ctaCta": "Lina herunterladen"
   },
   "blog6": {

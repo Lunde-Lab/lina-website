@@ -835,6 +835,10 @@
     "article9": {
       "headline": "Les anniversaires entre deux maisons",
       "description": "Comment organiser un anniversaire quand un enfant a deux maisons — partager la journée, accueillir les fêtes et garder l'attention sur l'enfant."
+    },
+    "article10": {
+      "headline": "Partager les frais entre deux maisons",
+      "description": "Des repères pratiques pour savoir ce qui constitue une dépense commune, comment suivre les frais et éviter que l'argent devienne source de tensions entre coparents."
     }
   },
   "blog1": {
@@ -907,7 +911,10 @@
     "a8desc": "Un guide pratique de ce qui a sa place dans une convention parentale écrite entre coparents.",
     "a9label": "Anniversaire",
     "a9title": "Les anniversaires entre deux maisons",
-    "a9desc": "Comment organiser un anniversaire quand un enfant a deux maisons — partager la journée, fêter et garder l'attention sur l'enfant."
+    "a9desc": "Comment organiser un anniversaire quand un enfant a deux maisons — partager la journée, fêter et garder l'attention sur l'enfant.",
+    "a10label": "Finances",
+    "a10title": "Partager les frais entre deux maisons",
+    "a10desc": "Ce qui constitue une dépense commune, comment répartir équitablement et comment éviter que l'argent s'invite dans les messages du quotidien."
   },
   "blog2": {
     "pageTitle": "Le jour de transition — comment faciliter les passages entre foyers | Lina",
@@ -1185,6 +1192,41 @@
     "s6p3": "Faites confiance à l'autre parent pour que la journée soit belle. Votre rôle, ce jour-là, peut être le plus discret.",
     "ctaTitle": "Un anniversaire plus apaisé, depuis les deux maisons",
     "ctaDesc": "Lina garde les anniversaires, les contacts et les plans communs au même endroit — pour que les deux parents puissent préparer la journée sans coordination de dernière minute, et que l'enfant reste au centre.",
+    "ctaCta": "Télécharger Lina"
+  },
+  "blog10": {
+    "pageTitle": "Partager les frais entre deux maisons | Lina",
+    "pageDesc": "Des repères pratiques pour savoir ce qui constitue une dépense commune, comment suivre les frais et éviter que l'argent devienne source de tensions entre coparents.",
+    "label": "Finances",
+    "title": "Partager les frais entre deux maisons",
+    "date": "mai 2026",
+    "intro": "L'argent est l'une des sources de friction les plus fréquentes entre coparents. Les montants importent souvent moins que le manque de clarté autour d'eux — qui paie quoi, ce qui compte comme frais commun, comment les grandes dépenses sont décidées. Un système simple, convenu une fois et mis par écrit, supprime la plupart de ces conversations du quotidien.",
+    "s1title": "La pension alimentaire couvre le quotidien, pas tout",
+    "s1p1": "La plupart des pays disposent d'un cadre de pension alimentaire qui transfère un montant régulier d'un parent à l'autre. Les détails juridiques varient selon les pays, mais la logique sous-jacente est la même : la pension alimentaire est destinée à couvrir les dépenses courantes — alimentation, vêtements, charges du foyer, énergie — dans le domicile où l'enfant vit la plupart du temps.",
+    "s1p2": "La pension alimentaire est rarement conçue pour tout couvrir. Les activités, les sorties scolaires, le matériel plus coûteux, les frais médicaux et les achats ponctuels en sont généralement exclus — et c'est là que commencent la plupart des désaccords, car la frontière est rarement établie par écrit.",
+    "s1p3": "Quel que soit le cadre en vigueur dans votre pays, la tâche pratique est la même : définissez par écrit ce que la pension couvre et fixez un seuil — par exemple que toute dépense supérieure à 100 € approuvée par les deux parents est considérée comme commune.",
+    "s2title": "Définissez ce qui constitue une dépense commune",
+    "s2p1": "Les désaccords sur l'argent ne portent presque jamais sur le fait de payer. Ils portent sur la question de savoir si quelque chose appartient au budget commun. Définir ce budget à l'avance prévient la plupart des conflits.",
+    "s2p2": "Une liste raisonnable de dépenses communes comprend généralement les cotisations et le matériel pour les activités régulières, les sorties et séjours scolaires, les frais médicaux et dentaires non remboursés, et les achats importants qui suivent l'enfant d'une maison à l'autre.",
+    "s2p3": "Ce qui n'est généralement pas partagé : les achats courants au supermarché, les vêtements du quotidien déjà couverts par la pension alimentaire, et les décisions prises par un seul parent — par exemple des cours particuliers auxquels l'autre n'a pas consenti. Un test simple : si un seul parent a décidé de la dépense, l'autre n'est généralement pas tenu d'en payer la moitié.",
+    "s3title": "Convenez de la répartition",
+    "s3p1": "Les moitiés égales sont la règle par défaut et la plus facile à gérer. Elles fonctionnent quand les deux parents ont des revenus similaires et que les coûts sont prévisibles.",
+    "s3p2": "Quand les revenus diffèrent sensiblement, certains parents optent pour une répartition proportionnelle — par exemple deux tiers et un tiers selon le revenu net. Cette approche paraît souvent plus équitable sur la durée, mais nécessite de convenir de la réviser lorsque les revenus changent.",
+    "s3p3": "Un troisième schéma consiste à alterner : un parent prend en charge l'activité A, l'autre l'activité B, de valeur à peu près équivalente. Moins de gestion, mais cela suppose un équilibre approximatif. Quelle que soit la formule choisie — mettez-la par écrit.",
+    "s4title": "Suivre les dépenses sans en faire un champ de bataille",
+    "s4p1": "Une liste partagée suffit pour la plupart des familles — un tableur, une note partagée ou une application de coparentalité. Quand les deux parents voient les mêmes chiffres, la plupart des discussions sur qui a déjà payé quoi disparaissent.",
+    "s4p2": "Fixez un rythme régulier pour revoir la liste. Une fois par mois suffit en général. Tous les trimestres fonctionne quand les frais communs sont faibles. Ajoutez le poste, joignez le justificatif ou notez le montant, soldez le solde et avancez.",
+    "s4p3": "Gardez la liste courte. Elle concerne uniquement les frais communs — pas le suivi de ce que dépense l'autre parent dans son propre foyer.",
+    "s5title": "Dépenses importantes : décidez avant d'acheter",
+    "s5p1": "Un vélo, une sortie scolaire, un appareil dentaire — ces décisions doivent être prises avant, pas après. Le désaccord financier le plus fréquent en garde partagée vient d'un parent qui présente un reçu pour quelque chose que l'autre ignorait être en cours de décision.",
+    "s5p2": "Au-delà d'un seuil convenu par les deux parents, discutez avant d'acheter. En dessous, faites confiance au bon sens de chacun.",
+    "s5p3": "Consignez l'accord, même brièvement. Un court message — « convenu : séjour scolaire 280 euros, on partage en deux, je paie et facture la moitié » — suffit et donne à chacun une référence si les souvenirs divergent par la suite.",
+    "s6title": "Séparez l'argent du quotidien",
+    "s6p1": "Ne soulevez pas de frais impayés lors d'un échange, un jour d'anniversaire ou dans un moment difficile. Les conversations sur l'argent ont besoin de leur propre canal calme — un message écrit, une revue mensuelle — pas un commentaire quand les émotions sont déjà vives.",
+    "s6p2": "C'est la règle la plus souvent enfreinte et la plus dommageable. Un enfant ne devrait pas entendre de commentaires sur des notes impayées devant la porte.",
+    "s6p3": "Si la discussion est bloquée, la médiation familiale peut aider à structurer les frais communs sans passer par le tribunal. Un cadre neutre peut souvent dénouer une impasse que les messages directs ne parviennent pas à résoudre.",
+    "ctaTitle": "Les finances dans leur propre fil, pas dans le flux quotidien",
+    "ctaDesc": "Lina maintient des fils distincts pour chaque sujet, avec un historique permanent. Les accords financiers, les justificatifs et les frais récurrents ont leur propre espace — séparé des messages sur les échanges et la logistique hebdomadaire.",
     "ctaCta": "Télécharger Lina"
   },
   "carousel": {
